@@ -1,0 +1,14 @@
+{
+  "id": "a2-u4",
+  "title": "Past and storytelling",
+  "grammar": "Past Simple (regular and irregular verbs)",
+  "vocabulary": "Holiday activities, transport, weather",
+  "function": "Tell what you did yesterday or last weekend",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn the Past Simple tense to talk about finished actions in the past. You will see regular verbs (played) and irregular verbs (went, saw)." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. Yesterday I visited my grandmother. Last summer we went to Italy. She saw a beautiful sunset. Notice how regular verbs end in -ed and irregular verbs change completely." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "Last weekend we ___ to the beach.", "options": ["go", "goed", "went", "gone"], "correct": 2, "explanation": "Go is irregular. Its Past Simple form is went." },
+    { "name": "Free practice", "type": "task", "prompt": "Write 3 sentences about what you did last weekend." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "She ___ a great film yesterday.", "options": ["watch", "watched", "watching", "watches"], "correct": 1, "explanation": "With regular verbs we add -ed in Past Simple." }
+  ]
+}

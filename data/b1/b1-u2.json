@@ -1,0 +1,14 @@
+{
+  "id": "b1-u2",
+  "title": "Past narration",
+  "grammar": "Past Continuous, Past Simple vs Past Continuous",
+  "vocabulary": "Emotions, reactions, scene description",
+  "function": "Tell a story with detail",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn to combine Past Simple and Past Continuous to tell stories with background and interruptions." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. I was walking home when I saw an old friend. They were cooking dinner while we were watching TV. Notice: Past Continuous for background, Past Simple for interruption." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "I ___ TV when the phone ___.", "options": ["watched / rang", "was watching / rang", "watched / was ringing", "was watching / was ringing"], "correct": 1, "explanation": "Background action in Past Continuous, interruption in Past Simple." },
+    { "name": "Free practice", "type": "task", "prompt": "Write a short story (5 sentences) using Past Simple and Past Continuous." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "While she ___ , the lights ___ off.", "options": ["read / went", "was reading / went", "read / were going", "was reading / were going"], "correct": 1, "explanation": "Background in Past Continuous, sudden event in Past Simple." }
+  ]
+}

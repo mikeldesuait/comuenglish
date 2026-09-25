@@ -1,0 +1,14 @@
+{
+  "id": "b1-u1",
+  "title": "Experiences and achievements",
+  "grammar": "Present Perfect, Present Perfect vs Past Simple",
+  "vocabulary": "Travel, experiences, personal achievements",
+  "function": "Talk about what you have done in your life",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn the Present Perfect tense to talk about life experiences. You will also compare it with the Past Simple." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. I have visited Paris three times. She has never eaten sushi. We went to Rome last year. Notice: Present Perfect when time is not specific, Past Simple when it is." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "I ___ never ___ to Japan.", "options": ["have / been", "has / been", "have / went", "did / go"], "correct": 0, "explanation": "With I we use have + past participle." },
+    { "name": "Free practice", "type": "task", "prompt": "Write 3 sentences about things you have done in your life and 3 about things you did last year." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "She ___ her keys this morning.", "options": ["has lost", "lost", "loses", "is losing"], "correct": 1, "explanation": "This morning is finished time, so we use Past Simple." }
+  ]
+}

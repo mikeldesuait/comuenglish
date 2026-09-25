@@ -1,0 +1,14 @@
+{
+  "level": "a2",
+  "units": [
+    { "id": "a2-u1", "title": "Introducing yourself and describing people", "file": "a2-u1.json", "phases": 5 },
+    { "id": "a2-u2", "title": "Daily routines and free time", "file": "a2-u2.json", "phases": 5 },
+    { "id": "a2-u3", "title": "Here and now", "file": "a2-u3.json", "phases": 5 },
+    { "id": "a2-u4", "title": "Past and storytelling", "file": "a2-u4.json", "phases": 5 },
+    { "id": "a2-u5", "title": "Plans and future", "file": "a2-u5.json", "phases": 5 },
+    { "id": "a2-u6", "title": "Likes and preferences", "file": "a2-u6.json", "phases": 5 },
+    { "id": "a2-u7", "title": "Comparing and describing", "file": "a2-u7.json", "phases": 5 },
+    { "id": "a2-u8", "title": "Obligation and permission", "file": "a2-u8.json", "phases": 5 },
+    { "id": "a2-u9", "title": "Existence and quantity", "file": "a2-u9.json", "phases": 5 }
+  ]
+}

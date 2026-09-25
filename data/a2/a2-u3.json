@@ -1,0 +1,14 @@
+{
+  "id": "a2-u3",
+  "title": "Here and now",
+  "grammar": "Present Continuous, contrast with Present Simple",
+  "vocabulary": "Clothes, colours, everyday actions",
+  "function": "Describe what is happening now",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn the Present Continuous tense to describe actions happening right now. You will also compare it with the Present Simple." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. I am reading a book. She is wearing a red dress. They are playing football. Notice the structure: am/is/are + verb-ing." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "Look! The baby ___ .", "options": ["cries", "is crying", "cry", "cried"], "correct": 1, "explanation": "For actions happening now we use Present Continuous: is + verb-ing." },
+    { "name": "Free practice", "type": "task", "prompt": "Look around you and write 3 sentences about what people are doing right now." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "I usually ___ coffee, but today I ___ tea.", "options": ["drink / am drinking", "am drinking / drink", "drink / drink", "am drinking / am drinking"], "correct": 0, "explanation": "Usually goes with Present Simple, today with Present Continuous." }
+  ]
+}

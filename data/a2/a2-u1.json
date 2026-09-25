@@ -1,0 +1,40 @@
+{
+  "id": "a2-u1",
+  "title": "Introducing yourself and describing people",
+  "grammar": "Verb To Be, possessive adjectives, Have got",
+  "vocabulary": "Family, body parts, describing adjectives",
+  "function": "Say name, age, nationality, job",
+  "phases": [
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn how to introduce yourself and describe other people. You will see how to use the verb To Be (am/is/are), possessive adjectives (my/your/his/her) and the verb Have got to talk about what you have."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Read these sentences and pay attention to the words in bold. My name is Ana. I am 25 years old. I have got two brothers. She is from Spain. Her name is Lucia. Notice how My, Her and His change depending on who is speaking."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "___ name is Ana.",
+      "options": ["I", "My", "Me", "Mine"],
+      "correct": 1,
+      "explanation": "We use My as a possessive adjective before a noun."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Write 3 sentences introducing yourself: your name, your age and something you have."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "She ___ from Italy.",
+      "options": ["am", "is", "are", "be"],
+      "correct": 1,
+      "explanation": "With she we use is."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "a2-u6",
+  "title": "Likes and preferences",
+  "grammar": "Like + gerund/infinitive, Would like",
+  "vocabulary": "Food, drink, restaurants, music",
+  "function": "Express what you like and dislike",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn how to express likes, dislikes and preferences using like, love, hate and would like." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. I like reading books. She loves dancing. They hate waiting. I would like a coffee, please. Notice like/love/hate can be followed by -ing, and would like by a noun or to + verb." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "I love ___ to music.", "options": ["listen", "listening", "to listen", "listened"], "correct": 1, "explanation": "After love, like, hate we usually use the -ing form." },
+    { "name": "Free practice", "type": "task", "prompt": "Write 3 sentences about things you like, love or hate." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "I ___ like a glass of water, please.", "options": ["would", "will", "am", "do"], "correct": 0, "explanation": "Would like is the polite form to ask for something." }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "b1-u4",
+  "title": "Obligation and advice",
+  "grammar": "Must, Have to, Should, Must not, Do not have to",
+  "vocabulary": "Social rules, health, work",
+  "function": "Give advice, express obligation",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn how to express obligation, prohibition and advice using must, have to, should and their negatives." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. You must wear a seatbelt. I have to work on Saturday. You should see a doctor. You must not smoke here. You do not have to come. Notice: must = personal obligation, have to = external rule, should = advice, must not = prohibition, do not have to = no obligation." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "You ___ smoke in the hospital. It is forbidden.", "options": ["do not have to", "must not", "should not", "can"], "correct": 1, "explanation": "Must not expresses prohibition." },
+    { "name": "Free practice", "type": "task", "prompt": "Write 3 pieces of advice for someone visiting your country for the first time." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "I ___ go to work tomorrow. It is a holiday.", "options": ["must not", "do not have to", "should not", "cannot"], "correct": 1, "explanation": "Do not have to means no obligation." }
+  ]
+}

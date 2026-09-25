@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambridge Prep - A2 / B1 / B2</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/widgets.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar__brand">
+      <span class="topbar__logo">CP</span>
+      <h1 class="topbar__title">Cambridge Prep</h1>
+    </div>
+
+    <nav class="topbar__nav" id="main-nav">
+      <button class="nav-btn is-active" data-route="home">Home</button>
+      <button class="nav-btn" data-route="fundamentals">Fundamentals</button>
+      <button class="nav-btn" data-route="comprehension">Comprehension</button>
+      <button class="nav-btn" data-route="production">Production</button>
+      <button class="nav-btn" data-route="mock">Mock Exam</button>
+    </nav>
+
+    <div class="topbar__level">
+      <label for="level-select">Level</label>
+      <select id="level-select">
+        <option value="a2">A2 Key</option>
+        <option value="b1">B1 Preliminary</option>
+        <option value="b2">B2 First</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="app-shell">
+
+    <aside class="sidebar" id="sidebar">
+      <p class="sidebar__placeholder">Select a module to view its units.</p>
+    </aside>
+
+    <main class="content" id="view">
+      <p class="content__placeholder">Loading...</p>
+    </main>
+
+  </div>
+
+  <footer class="statusbar">
+    <div class="statusbar__progress">
+      <div class="bar"><div class="bar__fill" id="global-progress"></div></div>
+      <span id="progress-label">0%</span>
+    </div>
+    <div class="statusbar__scale">
+      Cambridge Scale: <strong id="cambridge-score">--</strong>
+    </div>
+  </footer>
+
+  <dialog id="settings-modal" class="modal">
+    <h2 class="modal__title">DeepSeek Settings</h2>
+    <label class="modal__label" for="deepseek-key">API Key</label>
+    <input class="modal__input" type="password" id="deepseek-key" placeholder="sk-...">
+    <p class="modal__hint">The key is stored only in this browser.</p>
+    <div class="modal__actions">
+      <button class="btn btn--primary" id="save-key">Save</button>
+      <button class="btn btn--ghost" id="close-settings">Close</button>
+    </div>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>

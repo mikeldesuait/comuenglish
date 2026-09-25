@@ -1,0 +1,14 @@
+{
+  "id": "b2-u1",
+  "title": "Speculation and deduction",
+  "grammar": "Must, Might, Could, Cannot (deduction), Modal perfects",
+  "vocabulary": "Hypothetical situations, mystery, evidence",
+  "function": "Speculate about the present and the past",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn to speculate and make deductions about present and past situations using modal verbs and modal perfects." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. He must be at work. She might have forgotten. They cannot have left already. Notice: must/might/cannot for deduction, must have/might have/cannot have for past deduction." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "The lights are off. They ___ gone out.", "options": ["must have", "might have", "cannot have", "should have"], "correct": 0, "explanation": "When we are almost certain about the past, we use must have + past participle." },
+    { "name": "Free practice", "type": "task", "prompt": "Your neighbour is playing loud music at 2 am. Write 3 speculations about why." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "She ___ the message. She was not at home.", "options": ["must have received", "cannot have received", "might receive", "should receive"], "correct": 1, "explanation": "Cannot have + past participle expresses impossibility in the past." }
+  ]
+}

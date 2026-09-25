@@ -1,0 +1,16 @@
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-3) var(--space-5); background: var(--bg); color: #fff; box-shadow: var(--shadow-md); position: sticky; top: 0; z-index: 10; }
+.topbar__brand { display: flex; align-items: center; gap: var(--space-2); }
+.topbar__logo { background: var(--primary); color: #fff; padding: 4px 10px; border-radius: var(--radius); font-weight: bold; }
+.topbar__nav { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.nav-btn { padding: var(--space-2) var(--space-3); border-radius: var(--radius); color: #cbd5e1; transition: background .15s, color .15s; }
+.nav-btn:hover, .nav-btn.is-active { background: var(--primary); color: #fff; }
+.topbar__level { display: flex; align-items: center; gap: var(--space-2); color: #cbd5e1; }
+.topbar__level select { padding: var(--space-2); border-radius: var(--radius); border: 1px solid #334155; background: var(--bg-elev); color: #fff; }
+.app-shell { display: grid; grid-template-columns: 280px 1fr; gap: var(--space-5); padding: var(--space-5); flex: 1; max-width: 1400px; width: 100%; margin: 0 auto; }
+.sidebar { background: var(--surface); border-radius: var(--radius); padding: var(--space-4); box-shadow: var(--shadow-sm); height: fit-content; position: sticky; top: 80px; }
+.content { background: var(--surface); border-radius: var(--radius); padding: var(--space-5); box-shadow: var(--shadow-sm); min-height: 400px; }
+.statusbar { display: flex; justify-content: space-between; align-items: center; padding: var(--space-3) var(--space-5); background: var(--bg); color: #cbd5e1; font-size: .9rem; }
+.statusbar__progress { display: flex; align-items: center; gap: var(--space-3); flex: 1; max-width: 500px; }
+.bar { flex: 1; height: 8px; background: #334155; border-radius: 4px; overflow: hidden; }
+.bar__fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--primary), var(--success)); transition: width .3s ease; }
+@media (max-width: 900px) { .app-shell { grid-template-columns: 1fr; } .sidebar { position: static; } }

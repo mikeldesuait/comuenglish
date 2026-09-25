@@ -1,0 +1,14 @@
+{
+  "id": "b1-u9",
+  "title": "Connectors and cohesion",
+  "grammar": "Linking words (however, although, because, so that, in order to)",
+  "vocabulary": "Discourse markers",
+  "function": "Link ideas and give coherence to the text",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn the most common linking words to connect ideas and make your writing more coherent." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. I stayed home because it was raining. Although he was tired, he finished the race. She studied hard, so she passed. Notice: because = reason, although = contrast, so = result." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "___ it was late, we decided to keep working.", "options": ["Because", "Although", "So", "Therefore"], "correct": 1, "explanation": "Although introduces a contrast." },
+    { "name": "Free practice", "type": "task", "prompt": "Write a short paragraph about a difficult day using at least 3 linking words." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "I studied a lot, ___ I passed the exam.", "options": ["although", "because", "so", "however"], "correct": 2, "explanation": "So introduces a result." }
+  ]
+}

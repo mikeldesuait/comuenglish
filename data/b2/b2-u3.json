@@ -1,0 +1,14 @@
+{
+  "id": "b2-u3",
+  "title": "Advanced passive voice",
+  "grammar": "Passive with modals, It is said that, He is believed to",
+  "vocabulary": "News, science, processes",
+  "function": "Express ideas impersonally",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn advanced passive structures used in formal and journalistic English." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. The report must be submitted by Friday. It is said that he is very rich. He is believed to be abroad. Notice the impersonal passive with it is said / believed." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "The meeting ___ postponed until next week.", "options": ["has", "has been", "is been", "was being"], "correct": 1, "explanation": "Present perfect passive: has/have been + past participle." },
+    { "name": "Free practice", "type": "task", "prompt": "Rewrite 3 news headlines using the impersonal passive." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "It ___ that the company will close next month.", "options": ["says", "is said", "said", "is saying"], "correct": 1, "explanation": "Impersonal passive: It is said that ..." }
+  ]
+}

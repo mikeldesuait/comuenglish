@@ -1,0 +1,14 @@
+{
+  "id": "a2-u8",
+  "title": "Obligation and permission",
+  "grammar": "Can/Can not, Must/Must not, Imperatives",
+  "vocabulary": "Rules, signs, instructions",
+  "function": "Give orders, ask permission, express prohibition",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn how to talk about rules, permission and obligation using can, must and imperatives." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. You can sit here. You must not smoke. Turn off your phone. Notice: can = permission, must not = prohibition, imperative = direct instruction." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "You ___ park here. It is forbidden.", "options": ["can", "must not", "must", "should"], "correct": 1, "explanation": "Must not expresses prohibition." },
+    { "name": "Free practice", "type": "task", "prompt": "Write 3 rules for your classroom using can, must, must not." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "___ I open the window, please?", "options": ["Can", "Must", "Should", "Do"], "correct": 0, "explanation": "Can I ... is used to ask for permission." }
+  ]
+}

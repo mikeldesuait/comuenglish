@@ -1,0 +1,14 @@
+{
+  "id": "b2-u8",
+  "title": "Advanced connectors and cohesion",
+  "grammar": "Contrast, cause, consequence, purpose connectors",
+  "vocabulary": "Formal discourse markers",
+  "function": "Argue with logic and cohesion",
+  "phases": [
+    { "name": "Presentation", "type": "text", "content": "In this unit you will learn advanced connectors to structure formal arguments and essays." },
+    { "name": "Discovery", "type": "text", "content": "Read these sentences. Despite the rain, we went out. She studied hard so as to pass. The project failed due to poor planning. Notice the register: despite, so as to, due to are more formal." },
+    { "name": "Guided practice", "type": "exercise", "prompt": "___ the bad weather, the event was a success.", "options": ["Although", "Despite", "Because", "So"], "correct": 1, "explanation": "Despite + noun phrase (not a clause)." },
+    { "name": "Free practice", "type": "task", "prompt": "Write a short argumentative paragraph using at least 4 formal connectors." },
+    { "name": "Mini-test", "type": "exercise", "prompt": "The delay was ___ to technical problems.", "options": ["because", "due", "although", "despite"], "correct": 1, "explanation": "Due to is a formal way to express cause." }
+  ]
+}
