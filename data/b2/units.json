@@ -1,15 +1,65 @@
 {
   "level": "b2",
   "units": [
-    { "id": "b2-u1", "title": "Speculation and deduction", "file": "b2-u1.json", "phases": 5 },
-    { "id": "b2-u2", "title": "Mixed conditionals and hypotheses", "file": "b2-u2.json", "phases": 5 },
-    { "id": "b2-u3", "title": "Advanced passive voice", "file": "b2-u3.json", "phases": 5 },
-    { "id": "b2-u4", "title": "Advanced reported speech", "file": "b2-u4.json", "phases": 5 },
-    { "id": "b2-u5", "title": "Inversion and emphasis", "file": "b2-u5.json", "phases": 5 },
-    { "id": "b2-u6", "title": "Subjunctive and formal structures", "file": "b2-u6.json", "phases": 5 },
-    { "id": "b2-u7", "title": "Phrasal verbs and collocations", "file": "b2-u7.json", "phases": 5 },
-    { "id": "b2-u8", "title": "Advanced connectors and cohesion", "file": "b2-u8.json", "phases": 5 },
-    { "id": "b2-u9", "title": "Word formation", "file": "b2-u9.json", "phases": 5 },
-    { "id": "b2-u10", "title": "Register and style", "file": "b2-u10.json", "phases": 5 }
+    {
+      "id": "b2-u1",
+      "title": "Speculation and deduction",
+      "file": "b2-u1.json",
+      "phases": 5
+    },
+    {
+      "id": "b2-u2",
+      "title": "Mixed conditionals and hypotheses",
+      "file": "b2-u2.json",
+      "phases": 5
+    },
+    {
+      "id": "b2-u3",
+      "title": "Advanced passive voice",
+      "file": "b2-u3.json",
+      "phases": 5
+    },
+    {
+      "id": "b2-u4",
+      "title": "Advanced reported speech",
+      "file": "b2-u4.json",
+      "phases": 5
+    },
+    {
+      "id": "b2-u5",
+      "title": "Inversion and emphasis",
+      "file": "b2-u5.json",
+      "phases": 5
+    },
+    {
+      "id": "b2-u6",
+      "title": "Subjunctive and formal structures",
+      "file": "b2-u6.json",
+      "phases": 5
+    },
+    {
+      "id": "b2-u7",
+      "title": "Phrasal verbs and collocations",
+      "file": "b2-u7.json",
+      "phases": 5
+    },
+    {
+      "id": "b2-u8",
+      "title": "Advanced connectors and cohesion",
+      "file": "b2-u8.json",
+      "phases": 5
+    },
+    {
+      "id": "b2-u9",
+      "title": "Word formation",
+      "file": "b2-u9.json",
+      "phases": 5
+    },
+    {
+      "id": "b2-u10",
+      "title": "Register and style",
+      "file": "b2-u10.json",
+      "phases": 5
+    }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "level": "b1",
+  "tasks": [
+    {
+      "id": "b1-w1",
+      "type": "email",
+      "title": "Email with 4 notes",
+      "minWords": 100,
+      "prompt": "Your friend Chris has sent you an email. Read the email and write a reply. In your email you must: thank Chris for the invitation, explain why you cannot come, suggest another day, and ask about Chris holiday plans.",
+      "notes": [
+        "Thank Chris",
+        "Explain why you cannot come",
+        "Suggest another day",
+        "Ask about holiday plans"
+      ],
+      "sample": "Hi Chris, Thanks so much for inviting me to your birthday party. I would love to come but unfortunately I will be away that weekend. My parents are taking me to visit my grandparents in Scotland. Could we meet the following Saturday instead? I am free all day. By the way, how are your holiday plans going? Are you still thinking of going to Italy? Let me know, Emma."
+    },
+    {
+      "id": "b1-w2",
+      "type": "article",
+      "title": "Article about free time",
+      "minWords": 100,
+      "prompt": "You have seen this announcement in an international magazine: What do you like doing in your free time? Write us an article about your favourite free-time activity and why you enjoy it. Write 100 words or more.",
+      "sample": "My favourite free-time activity is reading. I discovered my love for books when I was a child, and since then I have read hundreds of novels. Reading allows me to travel to different worlds without leaving my room. I especially enjoy mystery stories because they keep me guessing until the last page. Sometimes I read for hours without noticing the time. I would recommend reading to anyone looking for a relaxing and enriching hobby."
+    }
+  ]
+}

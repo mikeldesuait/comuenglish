@@ -1,0 +1,111 @@
+{
+  "level": "b1",
+  "texts": [
+    {
+      "id": "b1-r1",
+      "type": "article",
+      "title": "The benefits of learning a second language",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Learning a second language is one of the most rewarding things you can do. Research shows that bilingual people often have better memory and problem-solving skills than those who speak only one language. In addition, speaking another language opens up career opportunities. Many companies prefer employees who can communicate with international clients. However, learning a language requires time and patience. It is not something you can achieve overnight. Experts recommend practising a little every day rather than studying for hours once a week. The most important thing is to enjoy the process, because motivation is the key to success.",
+      "questions": [
+        {
+          "question": "What does the article say about bilingual people?",
+          "options": [
+            "They often have better memory skills",
+            "They never forget things",
+            "They cannot learn a third language",
+            "They are always more intelligent"
+          ],
+          "correct": 0,
+          "explanation": "The article says bilingual people often have better memory and problem-solving skills."
+        },
+        {
+          "question": "According to the article, what do many companies prefer?",
+          "options": [
+            "Employees who can talk to international clients",
+            "Employees with university degrees",
+            "Employees who work overtime",
+            "Employees who speak only English"
+          ],
+          "correct": 0,
+          "explanation": "The article says many companies prefer employees who can communicate with international clients."
+        },
+        {
+          "question": "What do experts recommend?",
+          "options": [
+            "Only learning grammar",
+            "Waiting until you are older",
+            "Practising a little every day",
+            "Studying for hours once a week"
+          ],
+          "correct": 2,
+          "explanation": "The article says experts recommend practising a little every day."
+        },
+        {
+          "question": "What is the key to success according to the article?",
+          "options": [
+            "Time",
+            "Motivation",
+            "Money",
+            "Talent"
+          ],
+          "correct": 1,
+          "explanation": "The article says motivation is the key to success."
+        }
+      ]
+    },
+    {
+      "id": "b1-r2",
+      "type": "email",
+      "title": "A work email",
+      "instructions": "Read the email and choose the best answer A, B, C or D.",
+      "text": "Dear Mr. Johnson, I am writing to confirm our meeting next Thursday at 10 AM in the main conference room. I have prepared a presentation about the new marketing strategy. Could you please bring the sales figures from last quarter? I would also like to invite Ms. Garcia from the design team, as her input would be very valuable. The meeting should last approximately one hour. If you have any questions before then, please do not hesitate to contact me. Best regards, Anna Smith",
+      "questions": [
+        {
+          "question": "Why is Anna writing this email?",
+          "options": [
+            "To confirm a meeting",
+            "To complain about a colleague",
+            "To cancel a meeting",
+            "To request a holiday"
+          ],
+          "correct": 0,
+          "explanation": "The email says: I am writing to confirm our meeting next Thursday."
+        },
+        {
+          "question": "What does Anna ask Mr. Johnson to bring?",
+          "options": [
+            "The marketing strategy",
+            "The design files",
+            "The sales figures",
+            "The meeting notes"
+          ],
+          "correct": 2,
+          "explanation": "The email says: Could you please bring the sales figures from last quarter?"
+        },
+        {
+          "question": "Why does Anna want Ms. Garcia to attend?",
+          "options": [
+            "To bring coffee",
+            "Because her input would be valuable",
+            "To take notes",
+            "Because she is the manager"
+          ],
+          "correct": 1,
+          "explanation": "The email says: her input would be very valuable."
+        },
+        {
+          "question": "How long will the meeting last?",
+          "options": [
+            "All day",
+            "Two hours",
+            "30 minutes",
+            "About an hour"
+          ],
+          "correct": 3,
+          "explanation": "The email says: The meeting should last approximately one hour."
+        }
+      ]
+    }
+  ]
+}

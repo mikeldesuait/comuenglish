@@ -1,0 +1,47 @@
+{
+  "level": "b2",
+  "audios": [
+    {
+      "id": "b2-l1",
+      "title": "An interview with a marine biologist",
+      "instructions": "Listen to the interview and choose the correct answer A, B, C or D.",
+      "transcript": "People often assume my passion for the ocean started because I grew up by the sea, but actually I lived in a city. My parents were not particularly interested in nature either. It was really a TV documentary I watched when I was about ten. It showed a coral reef in Australia and I was completely hooked. Climate change gets all the attention, and rising temperatures are certainly a huge problem, but in my opinion the most damaging factor is actually agricultural pollution. Overfishing is also a concern, but pollution is what is killing reefs fastest.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "How did the biologist become interested in the ocean?",
+          "options": [
+            "Living near the coast",
+            "Her parents encouraged her",
+            "A school project",
+            "Watching a TV documentary"
+          ],
+          "correct": 3,
+          "explanation": "She says: It was really a TV documentary I watched when I was about ten."
+        },
+        {
+          "question": "What does she consider the biggest threat to coral reefs?",
+          "options": [
+            "Tourism",
+            "Agricultural pollution",
+            "Rising sea temperatures",
+            "Overfishing"
+          ],
+          "correct": 1,
+          "explanation": "She says: the most damaging factor is actually agricultural pollution."
+        },
+        {
+          "question": "What does she say about overfishing?",
+          "options": [
+            "It is a concern but not the biggest",
+            "It is the main problem",
+            "It only affects certain species",
+            "It is not a concern"
+          ],
+          "correct": 0,
+          "explanation": "She says: Overfishing is also a concern, but pollution is what is killing reefs fastest."
+        }
+      ]
+    }
+  ]
+}

@@ -5,10 +5,46 @@
   "vocabulary": "Preferences, opinions, likes",
   "function": "Compare and express preferences with nuance",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn advanced comparison structures and how to express preferences using both, either, neither and question tags." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. She is not as tall as her sister. Both films were good. I do not like either. Neither of them came. You are Spanish, are not you? Notice the different structures." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "This book is ___ interesting ___ that one.", "options": ["as / as", "so / as", "more / as", "as / than"], "correct": 0, "explanation": "Equality: as + adjective + as." },
-    { "name": "Free practice", "type": "task", "prompt": "Compare two friends or family members using both, either, neither." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "You are coming, ___ ?", "options": ["are you", "aren not you", "do you", "are not you"], "correct": 3, "explanation": "Question tags use the opposite auxiliary." }
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn advanced comparison structures and how to express preferences using both, either, neither and question tags."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Read these sentences. She is not as tall as her sister. Both films were good. I do not like either. Neither of them came. You are Spanish, are not you? Notice the different structures."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "This book is ___ interesting ___ that one.",
+      "options": [
+        "as / as",
+        "so / as",
+        "more / as",
+        "as / than"
+      ],
+      "correct": 0,
+      "explanation": "Equality: as + adjective + as."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Compare two friends or family members using both, either, neither."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "You are coming, ___ ?",
+      "options": [
+        "are you",
+        "aren not you",
+        "do you",
+        "are not you"
+      ],
+      "correct": 3,
+      "explanation": "Question tags use the opposite auxiliary."
+    }
   ]
 }

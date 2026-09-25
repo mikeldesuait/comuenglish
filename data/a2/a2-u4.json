@@ -5,10 +5,221 @@
   "vocabulary": "Holiday activities, transport, weather",
   "function": "Tell what you did yesterday or last weekend",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn the Past Simple tense to talk about finished actions in the past. You will see regular verbs (played) and irregular verbs (went, saw)." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. Yesterday I visited my grandmother. Last summer we went to Italy. She saw a beautiful sunset. Notice how regular verbs end in -ed and irregular verbs change completely." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "Last weekend we ___ to the beach.", "options": ["go", "goed", "went", "gone"], "correct": 2, "explanation": "Go is irregular. Its Past Simple form is went." },
-    { "name": "Free practice", "type": "task", "prompt": "Write 3 sentences about what you did last weekend." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "She ___ a great film yesterday.", "options": ["watch", "watched", "watching", "watches"], "correct": 1, "explanation": "With regular verbs we add -ed in Past Simple." }
+    {
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "What is the Past Simple?",
+          "body": "The Past Simple is used to talk about finished actions in the past. It is very common when telling stories, talking about holidays or describing what happened yesterday."
+        },
+        {
+          "heading": "Regular verbs",
+          "body": "Regular verbs add -ed in the past.",
+          "tableHeader": true,
+          "table": [
+            ["Infinitive", "Past", "Example"],
+            ["play", "played", "I played football yesterday."],
+            ["watch", "watched", "She watched TV last night."],
+            ["study", "studied", "We studied English last year."],
+            ["stop", "stopped", "The bus stopped at 8."]
+          ]
+        },
+        {
+          "heading": "Irregular verbs",
+          "body": "Irregular verbs do not follow the -ed rule. You have to learn them.",
+          "tableHeader": true,
+          "table": [
+            ["Infinitive", "Past", "Example"],
+            ["go", "went", "I went to Italy last summer."],
+            ["see", "saw", "She saw a film yesterday."],
+            ["eat", "ate", "We ate paella in Spain."],
+            ["have", "had", "He had a big breakfast."],
+            ["do", "did", "I did my homework."],
+            ["come", "came", "They came to my party."],
+            ["get", "got", "I got a new phone."],
+            ["make", "made", "She made a cake."],
+            ["take", "took", "We took a lot of photos."],
+            ["give", "gave", "He gave me a present."]
+          ]
+        },
+        {
+          "heading": "Negative",
+          "body": "Use did not (didn't) + base verb.",
+          "list": [
+            "I did not go to school yesterday.",
+            "She did not like the film.",
+            "They did not come to the party."
+          ]
+        },
+        {
+          "heading": "Questions",
+          "body": "Use Did + subject + base verb.",
+          "list": [
+            "Did you watch the match?",
+            "Did she visit her grandmother?",
+            "Where did they go last weekend?"
+          ]
+        },
+        {
+          "heading": "Time expressions",
+          "list": [
+            "yesterday, last night, last week, last year",
+            "two days ago, a month ago",
+            "in 2020, in summer",
+            "when I was young"
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not use 'did' with past simple: 'I did went' is wrong. Say 'I went'.",
+            "Do not use the base form after 'did': 'Did you went?' is wrong. Say 'Did you go?'.",
+            "Learn the irregular verbs by heart."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Holiday activities",
+          "list": [
+            { "term": "go to the beach", "definition": "We went to the beach every day." },
+            { "term": "swim in the sea", "definition": "I swam in the sea in July." },
+            { "term": "visit a museum", "definition": "She visited a museum in Paris." },
+            { "term": "take photos", "definition": "I took many photos on holiday." },
+            { "term": "go sightseeing", "definition": "We went sightseeing in Rome." },
+            { "term": "eat in a restaurant", "definition": "They ate in a nice restaurant." },
+            { "term": "buy souvenirs", "definition": "I bought some souvenirs for my family." },
+            { "term": "meet new people", "definition": "We met new people at the hotel." },
+            { "term": "go for a walk", "definition": "We went for a walk in the park." },
+            { "term": "relax", "definition": "I relaxed on the beach all day." }
+          ]
+        },
+        {
+          "heading": "Transport",
+          "list": [
+            { "term": "by car", "definition": "We travelled by car to France." },
+            { "term": "by train", "definition": "They went by train to London." },
+            { "term": "by plane", "definition": "I flew by plane to Greece." },
+            { "term": "by bus", "definition": "We went by bus to the city centre." },
+            { "term": "by boat", "definition": "They crossed the river by boat." },
+            { "term": "on foot", "definition": "We went on foot to the market." }
+          ]
+        },
+        {
+          "heading": "Weather",
+          "list": [
+            { "term": "sunny", "definition": "It was sunny every day." },
+            { "term": "rainy", "definition": "It was rainy on Monday." },
+            { "term": "cloudy", "definition": "The sky was cloudy." },
+            { "term": "windy", "definition": "It was windy at the beach." },
+            { "term": "hot", "definition": "It was very hot in summer." },
+            { "term": "cold", "definition": "It was cold in the morning." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discovery",
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "Yesterday I visited my grandmother.",
+        "Last summer we went to Italy.",
+        "She saw a beautiful sunset.",
+        "They did not come to the party.",
+        "Did you enjoy the film?",
+        "I played football on Saturday.",
+        "He ate pizza for dinner.",
+        "We took a lot of photos."
+      ],
+      "questions": [
+        "In sentences 1 and 6, what ending do regular verbs have?",
+        "In sentences 2, 3 and 7, do the verbs follow the -ed rule? Why not?",
+        "In sentence 4, how do we make the negative?",
+        "In sentence 5, how do we make a question?",
+        "In sentence 8, what is the past form of 'take'?"
+      ]
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "Last weekend we ___ to the beach.", "options": ["go", "goed", "went", "gone"], "correct": 2, "explanation": "Go is irregular. Its Past Simple is 'went'."},
+        {"prompt": "She ___ a great film yesterday.", "options": ["watch", "watched", "watching", "watches"], "correct": 1, "explanation": "Regular verb: watch → watched."},
+        {"prompt": "I ___ my homework last night.", "options": ["do", "did", "does", "done"], "correct": 1, "explanation": "Do is irregular. Past: did."},
+        {"prompt": "They ___ not come to the party.", "options": ["do", "does", "did", "are"], "correct": 2, "explanation": "Past negative: did not + base verb."},
+        {"prompt": "___ you visit your grandmother?", "options": ["Do", "Does", "Did", "Are"], "correct": 2, "explanation": "Past question: Did + subject + base verb."},
+        {"prompt": "We ___ a lot of photos on holiday.", "options": ["take", "taked", "took", "taken"], "correct": 2, "explanation": "Take is irregular. Past: took."},
+        {"prompt": "He ___ pizza for dinner last night.", "options": ["eat", "eated", "ate", "eaten"], "correct": 2, "explanation": "Eat is irregular. Past: ate."},
+        {"prompt": "The weather ___ sunny all week.", "options": ["is", "was", "were", "be"], "correct": 1, "explanation": "Past of 'to be' with singular: was."},
+        {"prompt": "We ___ by train to London.", "options": ["go", "went", "goes", "gone"], "correct": 1, "explanation": "Past of 'go' is 'went'."},
+        {"prompt": "I ___ my keys yesterday.", "options": ["lose", "losed", "lost", "losen"], "correct": 2, "explanation": "Lose is irregular. Past: lost."}
+      ]
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompts": [
+        "Write 5 sentences about what you did last weekend. Use the Past Simple.",
+        "Write a short paragraph (6-8 sentences) about your last holiday. Include where you went, how you travelled, what you did and the weather.",
+        "Write 3 things you did yesterday and 3 things you did not do."
+      ]
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "I ___ to the cinema last night.", "options": ["go", "went", "goes", "gone"], "correct": 1, "explanation": "Past of 'go' is 'went'."},
+        {"prompt": "She ___ a new dress for the party.", "options": ["buy", "buyed", "bought", "buying"], "correct": 2, "explanation": "Buy is irregular. Past: bought."},
+        {"prompt": "We ___ not see the match.", "options": ["do", "does", "did", "are"], "correct": 2, "explanation": "Past negative: did not."},
+        {"prompt": "___ they arrive on time?", "options": ["Do", "Does", "Did", "Are"], "correct": 2, "explanation": "Past question: Did + subject."},
+        {"prompt": "He ___ a letter to his friend.", "options": ["write", "writed", "wrote", "written"], "correct": 2, "explanation": "Write is irregular. Past: wrote."},
+        {"prompt": "The children ___ in the park all afternoon.", "options": ["play", "played", "playing", "plays"], "correct": 1, "explanation": "Regular verb: play → played."},
+        {"prompt": "I ___ my grandmother last Sunday.", "options": ["visit", "visited", "visiting", "visits"], "correct": 1, "explanation": "Regular verb: visit → visited."},
+        {"prompt": "It ___ cold and rainy yesterday.", "options": ["is", "was", "were", "be"], "correct": 1, "explanation": "Past of 'to be' (singular): was."},
+        {"prompt": "They ___ a delicious meal at the restaurant.", "options": ["have", "has", "had", "having"], "correct": 2, "explanation": "Have is irregular. Past: had."},
+        {"prompt": "Where ___ you go on holiday?", "options": ["do", "does", "did", "are"], "correct": 2, "explanation": "Past question: did + subject + base verb."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Regular verbs: add -ed (played, watched, studied).",
+            "Irregular verbs: change completely (go → went, see → saw, eat → ate).",
+            "Negative: did not + base verb.",
+            "Questions: Did + subject + base verb?",
+            "Time expressions: yesterday, last night, two days ago, in 2020."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not mix 'did' with past: 'I did went' is wrong.",
+            "Do not use base form after 'did' in questions: 'Did you went?' is wrong.",
+            "Learn the most common irregular verbs by heart."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "Yesterday I...",
+            "Last weekend we...",
+            "Two days ago she...",
+            "Did you...?",
+            "I did not...",
+            "It was... (weather)"
+          ]
+        }
+      ]
+    }
   ]
 }

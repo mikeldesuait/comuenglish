@@ -1,0 +1,63 @@
+{
+  "level": "a2",
+  "audios": [
+    {
+      "id": "a2-l1",
+      "title": "At the train station",
+      "instructions": "Listen to the conversation and choose the correct answer A, B or C.",
+      "transcript": "Excuse me, what time does the train to London leave? The next one is at quarter past nine, no wait, sorry, that is the one to Manchester. The London train leaves at ten past ten. Ten past ten? OK, thanks. Actually, you need to be on the platform at ten to ten.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What time does the London train leave?",
+          "options": [
+            "9:50",
+            "9:15",
+            "10:10"
+          ],
+          "correct": 2,
+          "explanation": "The man says: The London train leaves at ten past ten."
+        },
+        {
+          "question": "When should the passenger be on the platform?",
+          "options": [
+            "At 9:50",
+            "At 10:15",
+            "At 10:10"
+          ],
+          "correct": 0,
+          "explanation": "The man says: you need to be on the platform at ten to ten, which is 9:50."
+        }
+      ]
+    },
+    {
+      "id": "a2-l2",
+      "title": "A phone call",
+      "instructions": "Listen to the phone call and choose the correct answer A, B or C.",
+      "transcript": "Hello, this is Maria. I am calling about the party on Saturday. Can you bring some drinks? And could you also bring your speaker? Mine is broken. The party starts at 8, but you can come at 7:30 to help me set up. See you then!",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What does Maria ask her friend to bring?",
+          "options": [
+            "Drinks and a speaker",
+            "Food and drinks",
+            "Only a speaker"
+          ],
+          "correct": 0,
+          "explanation": "Maria asks for drinks and a speaker."
+        },
+        {
+          "question": "What time does the party start?",
+          "options": [
+            "8:00",
+            "7:30",
+            "8:30"
+          ],
+          "correct": 0,
+          "explanation": "Maria says: The party starts at 8."
+        }
+      ]
+    }
+  ]
+}

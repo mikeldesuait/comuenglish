@@ -1,0 +1,611 @@
+{
+  "id": "a2-u13",
+  "title": "Prepositions and questions",
+  "grammar": "In/on/at, question words, adverbs of manner",
+  "vocabulary": "Time, places, daily expressions",
+  "function": "Ask and answer questions about time and place",
+  "phases": [
+    {
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Prepositions of time",
+          "body": "In / on / at are used with time expressions. The choice depends on how specific the time is.",
+          "tableHeader": true,
+          "table": [
+            [
+              "Preposition",
+              "Use",
+              "Example"
+            ],
+            [
+              "at",
+              "exact time, holidays",
+              "at 7 o'clock, at Christmas, at night"
+            ],
+            [
+              "on",
+              "days and dates",
+              "on Monday, on 5th May, on my birthday"
+            ],
+            [
+              "in",
+              "months, years, seasons, parts of day",
+              "in July, in 2024, in summer, in the morning"
+            ]
+          ]
+        },
+        {
+          "heading": "Prepositions of place",
+          "tableHeader": true,
+          "table": [
+            [
+              "Preposition",
+              "Meaning",
+              "Example"
+            ],
+            [
+              "in",
+              "inside",
+              "in the box, in the room"
+            ],
+            [
+              "on",
+              "on a surface",
+              "on the table, on the wall"
+            ],
+            [
+              "at",
+              "at a point, event",
+              "at the bus stop, at the party, at home"
+            ],
+            [
+              "under",
+              "below",
+              "under the table"
+            ],
+            [
+              "next to",
+              "beside",
+              "next to the bank"
+            ],
+            [
+              "between",
+              "in the middle"
+            ],
+            [
+              "in front of",
+              "before",
+              "in front of the school"
+            ],
+            [
+              "behind",
+              "at the back",
+              "behind the door"
+            ]
+          ]
+        },
+        {
+          "heading": "Question words",
+          "tableHeader": true,
+          "table": [
+            [
+              "Word",
+              "Asks about",
+              "Example"
+            ],
+            [
+              "What",
+              "things",
+              "What is your name?"
+            ],
+            [
+              "Where",
+              "places",
+              "Where do you live?"
+            ],
+            [
+              "When",
+              "time",
+              "When is your birthday?"
+            ],
+            [
+              "Who",
+              "people",
+              "Who is your teacher?"
+            ],
+            [
+              "Why",
+              "reason",
+              "Why are you late?"
+            ],
+            [
+              "How",
+              "manner",
+              "How do you go to school?"
+            ],
+            [
+              "How often",
+              "frequency",
+              "How often do you play football?"
+            ],
+            [
+              "How much",
+              "price, uncountable",
+              "How much is this?"
+            ],
+            [
+              "How many",
+              "countable",
+              "How many brothers do you have?"
+            ]
+          ]
+        },
+        {
+          "heading": "Adverbs of manner",
+          "body": "Adverbs of manner describe how an action happens. They usually end in -ly. They come after the verb.",
+          "tableHeader": true,
+          "table": [
+            [
+              "Adjective",
+              "Adverb",
+              "Example"
+            ],
+            [
+              "quick",
+              "quickly",
+              "She runs quickly."
+            ],
+            [
+              "slow",
+              "slowly",
+              "He speaks slowly."
+            ],
+            [
+              "careful",
+              "carefully",
+              "Drive carefully."
+            ],
+            [
+              "quiet",
+              "quietly",
+              "Please speak quietly."
+            ],
+            [
+              "good",
+              "well",
+              "She sings well. (irregular)"
+            ],
+            [
+              "fast",
+              "fast",
+              "He drives fast. (irregular)"
+            ],
+            [
+              "happy",
+              "happily",
+              "They lived happily."
+            ]
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'in Monday'. Say 'on Monday'.",
+            "Do not say 'on July'. Say 'in July'.",
+            "Do not say 'I speak English good'. Say 'I speak English well'.",
+            "Do not put the adverb before the verb: 'She quickly runs' is unusual."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Time expressions",
+          "list": [
+            {
+              "term": "in the morning",
+              "definition": "I get up early in the morning."
+            },
+            {
+              "term": "in the afternoon",
+              "definition": "We have classes in the afternoon."
+            },
+            {
+              "term": "in the evening",
+              "definition": "She reads in the evening."
+            },
+            {
+              "term": "at night",
+              "definition": "The stars shine at night."
+            },
+            {
+              "term": "at the weekend",
+              "definition": "We relax at the weekend."
+            },
+            {
+              "term": "on Monday morning",
+              "definition": "I have English on Monday morning."
+            },
+            {
+              "term": "at noon",
+              "definition": "We eat at noon."
+            },
+            {
+              "term": "at midnight",
+              "definition": "The party ended at midnight."
+            }
+          ]
+        },
+        {
+          "heading": "Places and directions",
+          "list": [
+            {
+              "term": "at home",
+              "definition": "I am at home right now."
+            },
+            {
+              "term": "at school",
+              "definition": "She is at school."
+            },
+            {
+              "term": "at work",
+              "definition": "My father is at work."
+            },
+            {
+              "term": "in the city centre",
+              "definition": "The shops are in the city centre."
+            },
+            {
+              "term": "on the left",
+              "definition": "The bank is on the left."
+            },
+            {
+              "term": "on the right",
+              "definition": "The park is on the right."
+            },
+            {
+              "term": "next to",
+              "definition": "The café is next to the bank."
+            },
+            {
+              "term": "opposite",
+              "definition": "The cinema is opposite the museum."
+            }
+          ]
+        },
+        {
+          "heading": "Asking for information",
+          "list": [
+            {
+              "term": "Excuse me, where is...?",
+              "definition": "Excuse me, where is the station?"
+            },
+            {
+              "term": "How do I get to...?",
+              "definition": "How do I get to the airport?"
+            },
+            {
+              "term": "Is it far?",
+              "definition": "Is it far from here?"
+            },
+            {
+              "term": "How long does it take?",
+              "definition": "How long does it take by bus?"
+            },
+            {
+              "term": "Thank you very much.",
+              "definition": "Thank you very much for your help."
+            },
+            {
+              "term": "You're welcome.",
+              "definition": "You're welcome."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discovery",
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "I get up at 7 o'clock in the morning.",
+        "My birthday is on 5th May.",
+        "We go on holiday in July.",
+        "The book is on the table.",
+        "She is at home now.",
+        "Where do you live?",
+        "How often do you play football?",
+        "She speaks English very well."
+      ],
+      "questions": [
+        "In sentences 1, 2 and 3, why do we use 'at', 'on' and 'in' differently?",
+        "In sentences 4 and 5, what is the difference between 'on' and 'at' for places?",
+        "In sentences 6 and 7, what question word is used and why?",
+        "In sentence 8, why do we use 'well' and not 'good'?"
+      ]
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "questions": [
+        {
+          "prompt": "My birthday is ___ 5th May.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": 1,
+          "explanation": "With dates we use 'on'."
+        },
+        {
+          "prompt": "We go on holiday ___ July.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": 0,
+          "explanation": "With months we use 'in'."
+        },
+        {
+          "prompt": "I get up ___ 7 o'clock.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": 2,
+          "explanation": "With exact times we use 'at'."
+        },
+        {
+          "prompt": "The keys are ___ the table.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": 1,
+          "explanation": "On a surface: on."
+        },
+        {
+          "prompt": "She is ___ home right now.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": 2,
+          "explanation": "At home: fixed expression."
+        },
+        {
+          "prompt": "___ do you live?",
+          "options": [
+            "What",
+            "Where",
+            "When",
+            "Who"
+          ],
+          "correct": 1,
+          "explanation": "Where asks about place."
+        },
+        {
+          "prompt": "___ is your birthday?",
+          "options": [
+            "What",
+            "Where",
+            "When",
+            "Who"
+          ],
+          "correct": 2,
+          "explanation": "When asks about time."
+        },
+        {
+          "prompt": "___ often do you play football?",
+          "options": [
+            "What",
+            "Where",
+            "When",
+            "How"
+          ],
+          "correct": 3,
+          "explanation": "How often asks about frequency."
+        },
+        {
+          "prompt": "She speaks English very ___ .",
+          "options": [
+            "good",
+            "well",
+            "goodly",
+            "better"
+          ],
+          "correct": 1,
+          "explanation": "Adverb of manner: well."
+        },
+        {
+          "prompt": "He drives very ___ .",
+          "options": [
+            "careful",
+            "carefully",
+            "carefuly",
+            "care"
+          ],
+          "correct": 1,
+          "explanation": "Adverb of manner: carefully."
+        }
+      ]
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompts": [
+        "Write 5 sentences using in / on / at with time expressions (birthday, holiday, weekend, morning, 8 o'clock).",
+        "Write 5 sentences about where things are in your house using prepositions of place.",
+        "Write a short dialogue asking for directions to a place in your city. Use question words and prepositions."
+      ]
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "questions": [
+        {
+          "prompt": "I have English class ___ Monday.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": 1,
+          "explanation": "With days we use 'on'."
+        },
+        {
+          "prompt": "We usually go to the beach ___ summer.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": 0,
+          "explanation": "With seasons we use 'in'."
+        },
+        {
+          "prompt": "The cat is ___ the sofa.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": 1,
+          "explanation": "On a surface: on."
+        },
+        {
+          "prompt": "She lives ___ Madrid.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "correct": 0,
+          "explanation": "With cities we use 'in'."
+        },
+        {
+          "prompt": "___ is your favourite colour?",
+          "options": [
+            "What",
+            "Where",
+            "When",
+            "Who"
+          ],
+          "correct": 0,
+          "explanation": "What asks about things."
+        },
+        {
+          "prompt": "___ is your best friend?",
+          "options": [
+            "What",
+            "Where",
+            "When",
+            "Who"
+          ],
+          "correct": 3,
+          "explanation": "Who asks about people."
+        },
+        {
+          "prompt": "___ many books do you have?",
+          "options": [
+            "What",
+            "Where",
+            "How",
+            "Who"
+          ],
+          "correct": 2,
+          "explanation": "How many asks about quantity."
+        },
+        {
+          "prompt": "He speaks very ___ .",
+          "options": [
+            "slow",
+            "slowly",
+            "slowness",
+            "slower"
+          ],
+          "correct": 1,
+          "explanation": "Adverb of manner: slowly."
+        },
+        {
+          "prompt": "She dances very ___ .",
+          "options": [
+            "good",
+            "well",
+            "goodly",
+            "best"
+          ],
+          "correct": 1,
+          "explanation": "Adverb of manner: well."
+        },
+        {
+          "prompt": "The cinema is ___ the bank.",
+          "options": [
+            "next",
+            "next to",
+            "next of",
+            "next at"
+          ],
+          "correct": 1,
+          "explanation": "Next to means beside."
+        }
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "At + exact time (at 7, at night).",
+            "On + days and dates (on Monday, on 5th May).",
+            "In + months, years, seasons, parts of day (in July, in the morning).",
+            "In / on / at for places: in (inside), on (surface), at (point).",
+            "Question words: what, where, when, who, why, how.",
+            "Adverbs of manner usually end in -ly."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'in Monday'. Say 'on Monday'.",
+            "Do not say 'I speak English good'. Say 'I speak English well'.",
+            "Do not forget the -ly in adverbs."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "At 7 o'clock, at night, at the weekend.",
+            "On Monday, on my birthday.",
+            "In July, in 2024, in the morning.",
+            "Where is...? How do I get to...?",
+            "How often...? How much...? How many...?",
+            "She speaks English well."
+          ]
+        }
+      ]
+    }
+  ]
+}

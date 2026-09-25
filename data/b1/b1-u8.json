@@ -5,10 +5,46 @@
   "vocabulary": "Conversations, messages, rumours",
   "function": "Report what someone said",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn how to report what other people said, using reported speech." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. I am tired. She said she was tired. Where do you live? He asked where I lived. Close the door. She told me to close the door. Notice how tenses shift back." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "He said he ___ busy.", "options": ["is", "was", "will be", "be"], "correct": 1, "explanation": "Present Simple becomes Past Simple in reported speech." },
-    { "name": "Free practice", "type": "task", "prompt": "Imagine a conversation with a friend. Report 3 things they said." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "She asked me ___ I liked pizza.", "options": ["that", "if", "what", "which"], "correct": 1, "explanation": "Yes/no questions are reported with if or whether." }
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn how to report what other people said, using reported speech."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Read these sentences. I am tired. She said she was tired. Where do you live? He asked where I lived. Close the door. She told me to close the door. Notice how tenses shift back."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "He said he ___ busy.",
+      "options": [
+        "is",
+        "was",
+        "will be",
+        "be"
+      ],
+      "correct": 1,
+      "explanation": "Present Simple becomes Past Simple in reported speech."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Imagine a conversation with a friend. Report 3 things they said."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "She asked me ___ I liked pizza.",
+      "options": [
+        "that",
+        "if",
+        "what",
+        "which"
+      ],
+      "correct": 1,
+      "explanation": "Yes/no questions are reported with if or whether."
+    }
   ]
 }

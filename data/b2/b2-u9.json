@@ -5,10 +5,46 @@
   "vocabulary": "Word families",
   "function": "Expand vocabulary from known roots",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn how to form new words using prefixes, suffixes and compounding. This is essential for the Use of English paper." },
-    { "name": "Discovery", "type": "text", "content": "Read these examples. Happy - unhappy - happiness. Care - careful - careless - carelessly. Notice how the same root produces different words." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "His ___ (care) caused the accident.", "options": ["care", "careful", "careless", "carelessly"], "correct": 2, "explanation": "We need an adjective describing a person: careless." },
-    { "name": "Free practice", "type": "task", "prompt": "Take 5 words and write their noun, verb, adjective and adverb forms." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "The ___ (decide) was very difficult to make.", "options": ["decide", "deciding", "decision", "decisive"], "correct": 2, "explanation": "The noun form of decide is decision." }
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn how to form new words using prefixes, suffixes and compounding. This is essential for the Use of English paper."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Read these examples. Happy - unhappy - happiness. Care - careful - careless - carelessly. Notice how the same root produces different words."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "His ___ (care) caused the accident.",
+      "options": [
+        "care",
+        "careful",
+        "careless",
+        "carelessly"
+      ],
+      "correct": 2,
+      "explanation": "We need an adjective describing a person: careless."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Take 5 words and write their noun, verb, adjective and adverb forms."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "The ___ (decide) was very difficult to make.",
+      "options": [
+        "decide",
+        "deciding",
+        "decision",
+        "decisive"
+      ],
+      "correct": 2,
+      "explanation": "The noun form of decide is decision."
+    }
   ]
 }

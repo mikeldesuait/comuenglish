@@ -1,0 +1,594 @@
+{
+  "id": "a2-u15",
+  "title": "Health and emotions",
+  "grammar": "Body, illness, feelings",
+  "vocabulary": "Body parts, symptoms, emotions",
+  "function": "Talk about how you feel and health problems",
+  "phases": [
+    {
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Talking about health",
+          "body": "To talk about health problems we use 'have got' or 'have' + a noun. We also use 'I feel...' to describe how we feel.",
+          "tableHeader": true,
+          "table": [
+            [
+              "Structure",
+              "Example"
+            ],
+            [
+              "I have got a + noun",
+              "I have got a headache."
+            ],
+            [
+              "He / She has got a + noun",
+              "She has got a cold."
+            ],
+            [
+              "I feel + adjective",
+              "I feel tired."
+            ],
+            [
+              "I don't feel + adjective",
+              "I don't feel well."
+            ]
+          ]
+        },
+        {
+          "heading": "Should and shouldn't",
+          "body": "Use 'should' to give advice and 'shouldn't' to say what is not a good idea.",
+          "list": [
+            "You should see a doctor.",
+            "You should drink a lot of water.",
+            "You shouldn't eat too much sugar.",
+            "You shouldn't go to work if you are ill."
+          ]
+        },
+        {
+          "heading": "At the doctor's",
+          "list": [
+            "What's the matter?",
+            "I don't feel well.",
+            "I have got a pain in my...",
+            "It hurts here.",
+            "I have got a temperature.",
+            "You should take this medicine twice a day."
+          ]
+        },
+        {
+          "heading": "Describing feelings",
+          "body": "Adjectives for emotions. Remember: -ed for how YOU feel, -ing for what causes the feeling.",
+          "tableHeader": true,
+          "table": [
+            [
+              "Feeling",
+              "Example"
+            ],
+            [
+              "happy",
+              "I am happy today."
+            ],
+            [
+              "sad",
+              "She feels sad."
+            ],
+            [
+              "tired",
+              "He is very tired."
+            ],
+            [
+              "angry",
+              "I am angry with my brother."
+            ],
+            [
+              "excited",
+              "We are excited about the trip."
+            ],
+            [
+              "worried",
+              "She is worried about the exam."
+            ],
+            [
+              "bored",
+              "The students are bored."
+            ],
+            [
+              "surprised",
+              "I am surprised to see you."
+            ],
+            [
+              "scared",
+              "He is scared of dogs."
+            ]
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'I have pain in the head'. Say 'I have got a headache'.",
+            "Do not say 'I am boring'. Say 'I am bored'.",
+            "Do not confuse 'should' (advice) with 'must' (obligation)."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Body parts",
+          "list": [
+            {
+              "term": "head",
+              "definition": "My head hurts."
+            },
+            {
+              "term": "eye",
+              "definition": "My eyes are tired."
+            },
+            {
+              "term": "ear",
+              "definition": "I have got a pain in my ear."
+            },
+            {
+              "term": "nose",
+              "definition": "My nose is blocked."
+            },
+            {
+              "term": "mouth",
+              "definition": "Open your mouth, please."
+            },
+            {
+              "term": "tooth / teeth",
+              "definition": "I have got toothache."
+            },
+            {
+              "term": "throat",
+              "definition": "I have got a sore throat."
+            },
+            {
+              "term": "stomach",
+              "definition": "My stomach hurts."
+            },
+            {
+              "term": "arm",
+              "definition": "I broke my arm."
+            },
+            {
+              "term": "leg",
+              "definition": "My leg hurts."
+            },
+            {
+              "term": "back",
+              "definition": "I have got backache."
+            },
+            {
+              "term": "hand",
+              "definition": "My hands are cold."
+            },
+            {
+              "term": "foot / feet",
+              "definition": "My feet hurt."
+            }
+          ]
+        },
+        {
+          "heading": "Health problems",
+          "list": [
+            {
+              "term": "headache",
+              "definition": "I have got a headache."
+            },
+            {
+              "term": "stomachache",
+              "definition": "She has got a stomachache."
+            },
+            {
+              "term": "toothache",
+              "definition": "I have got toothache."
+            },
+            {
+              "term": "backache",
+              "definition": "He has got backache."
+            },
+            {
+              "term": "a cold",
+              "definition": "I have got a cold."
+            },
+            {
+              "term": "a cough",
+              "definition": "She has got a bad cough."
+            },
+            {
+              "term": "a temperature",
+              "definition": "The child has got a temperature."
+            },
+            {
+              "term": "the flu",
+              "definition": "I had the flu last week."
+            },
+            {
+              "term": "a sore throat",
+              "definition": "I have got a sore throat."
+            }
+          ]
+        },
+        {
+          "heading": "Remedies and advice",
+          "list": [
+            {
+              "term": "take medicine",
+              "definition": "You should take this medicine."
+            },
+            {
+              "term": "see a doctor",
+              "definition": "You should see a doctor."
+            },
+            {
+              "term": "rest",
+              "definition": "You should rest for two days."
+            },
+            {
+              "term": "drink water",
+              "definition": "You should drink a lot of water."
+            },
+            {
+              "term": "stay in bed",
+              "definition": "You should stay in bed."
+            },
+            {
+              "term": "go to the pharmacy",
+              "definition": "You should go to the pharmacy."
+            }
+          ]
+        },
+        {
+          "heading": "Emotions",
+          "list": [
+            {
+              "term": "happy",
+              "definition": "I am happy today."
+            },
+            {
+              "term": "sad",
+              "definition": "She feels sad."
+            },
+            {
+              "term": "tired",
+              "definition": "I am very tired."
+            },
+            {
+              "term": "angry",
+              "definition": "He is angry."
+            },
+            {
+              "term": "excited",
+              "definition": "We are excited about the trip."
+            },
+            {
+              "term": "worried",
+              "definition": "She is worried about the exam."
+            },
+            {
+              "term": "bored",
+              "definition": "The children are bored."
+            },
+            {
+              "term": "surprised",
+              "definition": "I am surprised."
+            },
+            {
+              "term": "scared",
+              "definition": "He is scared of spiders."
+            },
+            {
+              "term": "nervous",
+              "definition": "I am nervous before the exam."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discovery",
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "I have got a headache.",
+        "She has got a sore throat.",
+        "You should see a doctor.",
+        "You shouldn't eat too much sugar.",
+        "I feel tired today.",
+        "He is worried about the exam.",
+        "She is excited about the trip.",
+        "My back hurts."
+      ],
+      "questions": [
+        "In sentences 1 and 2, what expression do we use for health problems?",
+        "In sentences 3 and 4, what is the difference between 'should' and 'shouldn't'?",
+        "In sentence 5, why do we use 'feel' and not 'have got'?",
+        "In sentences 6 and 7, why is one person 'worried' and the other 'excited'?",
+        "In sentence 8, what does 'hurts' mean?"
+      ]
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "questions": [
+        {
+          "prompt": "I have got a ___ . My head hurts.",
+          "options": [
+            "headache",
+            "stomachache",
+            "toothache",
+            "backache"
+          ],
+          "correct": 0,
+          "explanation": "A pain in the head is a headache."
+        },
+        {
+          "prompt": "She has got a ___ . She can't speak well.",
+          "options": [
+            "headache",
+            "sore throat",
+            "backache",
+            "cold"
+          ],
+          "correct": 1,
+          "explanation": "A sore throat affects the voice."
+        },
+        {
+          "prompt": "You ___ see a doctor.",
+          "options": [
+            "should",
+            "shouldn't",
+            "must",
+            "can't"
+          ],
+          "correct": 0,
+          "explanation": "Should gives advice."
+        },
+        {
+          "prompt": "You ___ eat too much sugar.",
+          "options": [
+            "should",
+            "shouldn't",
+            "must",
+            "can"
+          ],
+          "correct": 1,
+          "explanation": "Shouldn't gives negative advice."
+        },
+        {
+          "prompt": "I ___ tired today.",
+          "options": [
+            "feel",
+            "have got",
+            "am got",
+            "get"
+          ],
+          "correct": 0,
+          "explanation": "Feel + adjective for emotions."
+        },
+        {
+          "prompt": "She is ___ about the exam.",
+          "options": [
+            "worried",
+            "exciting",
+            "boring",
+            "interesting"
+          ],
+          "correct": 0,
+          "explanation": "Worried = preocupada."
+        },
+        {
+          "prompt": "He is ___ about the trip.",
+          "options": [
+            "excited",
+            "exciting",
+            "bored",
+            "boring"
+          ],
+          "correct": 0,
+          "explanation": "Excited = emocionado (how he feels)."
+        },
+        {
+          "prompt": "My back ___ .",
+          "options": [
+            "hurt",
+            "hurts",
+            "hurting",
+            "is hurt"
+          ],
+          "correct": 1,
+          "explanation": "With 'my back' (it): hurts."
+        },
+        {
+          "prompt": "I have got a ___ . I need to go to the dentist.",
+          "options": [
+            "headache",
+            "stomachache",
+            "toothache",
+            "backache"
+          ],
+          "correct": 2,
+          "explanation": "Toothache = dolor de muelas."
+        },
+        {
+          "prompt": "You should ___ in bed.",
+          "options": [
+            "stay",
+            "stays",
+            "staying",
+            "stayed"
+          ],
+          "correct": 0,
+          "explanation": "After 'should' we use the base form."
+        }
+      ]
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompts": [
+        "Write 5 sentences about how you feel today. Use adjectives like happy, tired, worried, excited.",
+        "Write 5 pieces of advice for someone who has a cold. Use 'should' and 'shouldn't'.",
+        "Write a short dialogue at the doctor's. Use 'I have got...', 'It hurts' and 'You should...'."
+      ]
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "questions": [
+        {
+          "prompt": "I have got a ___ . I can't eat.",
+          "options": [
+            "headache",
+            "stomachache",
+            "toothache",
+            "backache"
+          ],
+          "correct": 1,
+          "explanation": "Stomachache affects eating."
+        },
+        {
+          "prompt": "She has got a ___ . She is coughing.",
+          "options": [
+            "cold",
+            "cough",
+            "headache",
+            "toothache"
+          ],
+          "correct": 1,
+          "explanation": "A cough makes you cough."
+        },
+        {
+          "prompt": "You ___ drink a lot of water.",
+          "options": [
+            "should",
+            "shouldn't",
+            "mustn't",
+            "can't"
+          ],
+          "correct": 0,
+          "explanation": "Should for advice."
+        },
+        {
+          "prompt": "You ___ go to work if you are ill.",
+          "options": [
+            "should",
+            "shouldn't",
+            "must",
+            "can"
+          ],
+          "correct": 1,
+          "explanation": "Shouldn't = not a good idea."
+        },
+        {
+          "prompt": "I am ___ about the exam.",
+          "options": [
+            "nervous",
+            "exciting",
+            "boring",
+            "interesting"
+          ],
+          "correct": 0,
+          "explanation": "Nervous = nervous."
+        },
+        {
+          "prompt": "He is ___ of dogs.",
+          "options": [
+            "scared",
+            "scaring",
+            "scary",
+            "scare"
+          ],
+          "correct": 0,
+          "explanation": "Scared of = tener miedo de."
+        },
+        {
+          "prompt": "My head ___ .",
+          "options": [
+            "hurt",
+            "hurts",
+            "hurting",
+            "is hurt"
+          ],
+          "correct": 1,
+          "explanation": "With 'my head' (it): hurts."
+        },
+        {
+          "prompt": "I have got a ___ . I need to rest.",
+          "options": [
+            "headache",
+            "temperature",
+            "toothache",
+            "backache"
+          ],
+          "correct": 1,
+          "explanation": "A temperature means you are hot and probably ill."
+        },
+        {
+          "prompt": "You should ___ this medicine twice a day.",
+          "options": [
+            "take",
+            "takes",
+            "taking",
+            "took"
+          ],
+          "correct": 0,
+          "explanation": "After 'should' the base form."
+        },
+        {
+          "prompt": "The children are ___ .",
+          "options": [
+            "bored",
+            "boring",
+            "bore",
+            "boredly"
+          ],
+          "correct": 0,
+          "explanation": "Bored = aburridos (how they feel)."
+        }
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "I have got a + health problem.",
+            "I feel + adjective for emotions.",
+            "Should + verb for advice. Shouldn't for negative advice.",
+            "-ed adjectives describe how you feel (bored, excited).",
+            "-ing adjectives describe what causes the feeling (boring, exciting)."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'I have pain in the head'. Say 'I have got a headache'.",
+            "Do not say 'I am boring'. Say 'I am bored'.",
+            "Do not confuse 'should' (advice) with 'must' (obligation)."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "I have got a headache / a cold / a cough.",
+            "I feel tired / happy / worried.",
+            "It hurts here.",
+            "You should see a doctor.",
+            "You shouldn't eat too much sugar.",
+            "What's the matter?"
+          ]
+        }
+      ]
+    }
+  ]
+}

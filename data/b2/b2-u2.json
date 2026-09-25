@@ -5,10 +5,46 @@
   "vocabulary": "Regrets, decisions, consequences",
   "function": "Talk about hypotheses and regrets",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn mixed conditionals and structures with I wish / If only to express hypotheses and regrets." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. If I had studied medicine, I would be a doctor now. I wish I had more time. If only I had listened. Notice how conditionals can mix past and present." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "If I ___ born earlier, I would be retired now.", "options": ["was", "were", "had been", "have been"], "correct": 2, "explanation": "Mixed conditional: past condition, present result. Use had + past participle." },
-    { "name": "Free practice", "type": "task", "prompt": "Write 3 sentences with I wish about things you would change in your life." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "I wish I ___ how to play the piano.", "options": ["know", "knew", "have known", "would know"], "correct": 1, "explanation": "For present regrets we use I wish + Past Simple." }
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn mixed conditionals and structures with I wish / If only to express hypotheses and regrets."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Read these sentences. If I had studied medicine, I would be a doctor now. I wish I had more time. If only I had listened. Notice how conditionals can mix past and present."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "If I ___ born earlier, I would be retired now.",
+      "options": [
+        "was",
+        "were",
+        "had been",
+        "have been"
+      ],
+      "correct": 2,
+      "explanation": "Mixed conditional: past condition, present result. Use had + past participle."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Write 3 sentences with I wish about things you would change in your life."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "I wish I ___ how to play the piano.",
+      "options": [
+        "know",
+        "knew",
+        "have known",
+        "would know"
+      ],
+      "correct": 1,
+      "explanation": "For present regrets we use I wish + Past Simple."
+    }
   ]
 }

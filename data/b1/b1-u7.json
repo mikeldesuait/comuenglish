@@ -5,10 +5,46 @@
   "vocabulary": "Processes, inventions, history",
   "function": "Describe processes and actions without mentioning the agent",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn the passive voice to describe processes and actions when the doer is unknown or unimportant." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. The window is cleaned every day. The book was written in 1990. English is spoken all over the world. Notice: be + past participle." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "This bridge ___ in 1890.", "options": ["built", "was built", "is built", "builds"], "correct": 1, "explanation": "Past passive: was/were + past participle." },
-    { "name": "Free practice", "type": "task", "prompt": "Describe the process of making coffee using the passive voice." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "The letters ___ every morning.", "options": ["deliver", "are delivered", "delivered", "is delivered"], "correct": 1, "explanation": "Present passive: am/is/are + past participle." }
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn the passive voice to describe processes and actions when the doer is unknown or unimportant."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Read these sentences. The window is cleaned every day. The book was written in 1990. English is spoken all over the world. Notice: be + past participle."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "This bridge ___ in 1890.",
+      "options": [
+        "built",
+        "was built",
+        "is built",
+        "builds"
+      ],
+      "correct": 1,
+      "explanation": "Past passive: was/were + past participle."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Describe the process of making coffee using the passive voice."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "The letters ___ every morning.",
+      "options": [
+        "deliver",
+        "are delivered",
+        "delivered",
+        "is delivered"
+      ],
+      "correct": 1,
+      "explanation": "Present passive: am/is/are + past participle."
+    }
   ]
 }

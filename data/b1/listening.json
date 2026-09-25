@@ -1,0 +1,47 @@
+{
+  "level": "b1",
+  "audios": [
+    {
+      "id": "b1-l1",
+      "title": "A job interview",
+      "instructions": "Listen to the interview and choose the correct answer A, B, C or D.",
+      "transcript": "So, tell me about your previous experience. Well, I worked for three years at a marketing company in Madrid. I was responsible for social media campaigns. Interesting. And why did you leave? The company moved to another city and I did not want to relocate. I see. And what are you looking for in this role? I would like more responsibility and the chance to work with international clients.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "How long did the candidate work at the marketing company?",
+          "options": [
+            "Five years",
+            "Two years",
+            "Three years",
+            "One year"
+          ],
+          "correct": 2,
+          "explanation": "The candidate says: I worked for three years."
+        },
+        {
+          "question": "Why did the candidate leave the previous job?",
+          "options": [
+            "Bad colleagues",
+            "Health problems",
+            "The company moved",
+            "Low salary"
+          ],
+          "correct": 2,
+          "explanation": "The candidate says: The company moved to another city."
+        },
+        {
+          "question": "What does the candidate want in the new role?",
+          "options": [
+            "A shorter commute",
+            "More responsibility",
+            "More holidays",
+            "A higher salary"
+          ],
+          "correct": 1,
+          "explanation": "The candidate says: I would like more responsibility."
+        }
+      ]
+    }
+  ]
+}

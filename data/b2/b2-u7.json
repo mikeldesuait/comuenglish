@@ -5,10 +5,46 @@
   "vocabulary": "High-frequency phrasal verbs",
   "function": "Use natural and precise language",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn phrasal verbs and collocations, key for natural English at B2 level." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. Please turn off the light. Please turn the light off. I ran into an old friend. Notice: some phrasal verbs are separable (turn off), some are not (run into)." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "I ___ my old teacher at the supermarket yesterday.", "options": ["ran into", "ran out of", "ran over", "ran away"], "correct": 0, "explanation": "Run into means to meet by chance." },
-    { "name": "Free practice", "type": "task", "prompt": "Write 5 sentences using phrasal verbs you have learned recently." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "We have ___ milk. Can you buy some?", "options": ["run into", "run out of", "run over", "run away"], "correct": 1, "explanation": "Run out of means to have no more of something." }
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn phrasal verbs and collocations, key for natural English at B2 level."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Read these sentences. Please turn off the light. Please turn the light off. I ran into an old friend. Notice: some phrasal verbs are separable (turn off), some are not (run into)."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "I ___ my old teacher at the supermarket yesterday.",
+      "options": [
+        "ran into",
+        "ran out of",
+        "ran over",
+        "ran away"
+      ],
+      "correct": 0,
+      "explanation": "Run into means to meet by chance."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Write 5 sentences using phrasal verbs you have learned recently."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "We have ___ milk. Can you buy some?",
+      "options": [
+        "run into",
+        "run out of",
+        "run over",
+        "run away"
+      ],
+      "correct": 1,
+      "explanation": "Run out of means to have no more of something."
+    }
   ]
 }

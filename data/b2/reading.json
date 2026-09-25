@@ -1,0 +1,69 @@
+{
+  "level": "b2",
+  "texts": [
+    {
+      "id": "b2-r1",
+      "type": "article",
+      "title": "The rise of remote work",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "The shift towards remote work, accelerated by the global pandemic, has fundamentally changed how companies operate. While many employers initially feared a drop in productivity, studies have consistently shown the opposite. Employees working from home often report higher job satisfaction and better work-life balance. Nevertheless, remote work is not without its challenges. Isolation and the blurring of boundaries between professional and personal life are common complaints. Some companies have responded by adopting hybrid models, allowing employees to split their time between the office and home. This approach appears to offer the best of both worlds, though it requires careful management to ensure team cohesion is maintained. The future of work, it seems, will be defined by flexibility rather than rigid structures.",
+      "questions": [
+        {
+          "question": "What did many employers initially fear about remote work?",
+          "options": [
+            "Employee resignations",
+            "Higher costs",
+            "Legal problems",
+            "A drop in productivity"
+          ],
+          "correct": 3,
+          "explanation": "The article says employers initially feared a drop in productivity."
+        },
+        {
+          "question": "What do employees working from home often report?",
+          "options": [
+            "More stress",
+            "Better work-life balance",
+            "Lower motivation",
+            "Higher salaries"
+          ],
+          "correct": 1,
+          "explanation": "The article says employees report higher job satisfaction and better work-life balance."
+        },
+        {
+          "question": "What is a common complaint about remote work?",
+          "options": [
+            "Feeling isolated",
+            "Higher taxes",
+            "Too many meetings",
+            "Poor internet connection"
+          ],
+          "correct": 0,
+          "explanation": "The article mentions isolation as a common complaint."
+        },
+        {
+          "question": "What does the article say about hybrid models?",
+          "options": [
+            "They eliminate all problems",
+            "They are always better",
+            "They are cheaper for companies",
+            "They offer the best of both worlds"
+          ],
+          "correct": 3,
+          "explanation": "The article says hybrid models appear to offer the best of both worlds."
+        },
+        {
+          "question": "What will define the future of work according to the article?",
+          "options": [
+            "Less technology",
+            "Longer hours",
+            "Flexibility",
+            "Rigid structures"
+          ],
+          "correct": 2,
+          "explanation": "The article says the future of work will be defined by flexibility."
+        }
+      ]
+    }
+  ]
+}

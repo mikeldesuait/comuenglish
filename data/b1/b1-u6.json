@@ -5,10 +5,46 @@
   "vocabulary": "Environment, decisions, consequences",
   "function": "Talk about conditions and hypothetical results",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn the zero, first and second conditionals to talk about real and hypothetical situations." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. If you heat water, it boils. If it rains, I will stay at home. If I had more money, I would travel. Notice: zero = general truth, first = real future, second = imaginary present." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "If I ___ you, I would apologise.", "options": ["am", "was", "were", "will be"], "correct": 2, "explanation": "In second conditional with I/he/she we use were." },
-    { "name": "Free practice", "type": "task", "prompt": "Write 3 sentences using first conditional about your plans and 3 using second conditional about hypothetical situations." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "If you study hard, you ___ the exam.", "options": ["pass", "will pass", "would pass", "passed"], "correct": 1, "explanation": "First conditional: if + present, will + verb." }
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn the zero, first and second conditionals to talk about real and hypothetical situations."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Read these sentences. If you heat water, it boils. If it rains, I will stay at home. If I had more money, I would travel. Notice: zero = general truth, first = real future, second = imaginary present."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "If I ___ you, I would apologise.",
+      "options": [
+        "am",
+        "was",
+        "were",
+        "will be"
+      ],
+      "correct": 2,
+      "explanation": "In second conditional with I/he/she we use were."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Write 3 sentences using first conditional about your plans and 3 using second conditional about hypothetical situations."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "If you study hard, you ___ the exam.",
+      "options": [
+        "pass",
+        "will pass",
+        "would pass",
+        "passed"
+      ],
+      "correct": 1,
+      "explanation": "First conditional: if + present, will + verb."
+    }
   ]
 }

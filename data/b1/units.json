@@ -1,15 +1,65 @@
 {
   "level": "b1",
   "units": [
-    { "id": "b1-u1", "title": "Experiences and achievements", "file": "b1-u1.json", "phases": 5 },
-    { "id": "b1-u2", "title": "Past narration", "file": "b1-u2.json", "phases": 5 },
-    { "id": "b1-u3", "title": "Plans and predictions", "file": "b1-u3.json", "phases": 5 },
-    { "id": "b1-u4", "title": "Obligation and advice", "file": "b1-u4.json", "phases": 5 },
-    { "id": "b1-u5", "title": "Possibility and deduction", "file": "b1-u5.json", "phases": 5 },
-    { "id": "b1-u6", "title": "Conditionals and consequences", "file": "b1-u6.json", "phases": 5 },
-    { "id": "b1-u7", "title": "Passive voice and processes", "file": "b1-u7.json", "phases": 5 },
-    { "id": "b1-u8", "title": "Reported speech", "file": "b1-u8.json", "phases": 5 },
-    { "id": "b1-u9", "title": "Connectors and cohesion", "file": "b1-u9.json", "phases": 5 },
-    { "id": "b1-u10", "title": "Comparisons and preferences", "file": "b1-u10.json", "phases": 5 }
+    {
+      "id": "b1-u1",
+      "title": "Experiences and achievements",
+      "file": "b1-u1.json",
+      "phases": 5
+    },
+    {
+      "id": "b1-u2",
+      "title": "Past narration",
+      "file": "b1-u2.json",
+      "phases": 5
+    },
+    {
+      "id": "b1-u3",
+      "title": "Plans and predictions",
+      "file": "b1-u3.json",
+      "phases": 5
+    },
+    {
+      "id": "b1-u4",
+      "title": "Obligation and advice",
+      "file": "b1-u4.json",
+      "phases": 5
+    },
+    {
+      "id": "b1-u5",
+      "title": "Possibility and deduction",
+      "file": "b1-u5.json",
+      "phases": 5
+    },
+    {
+      "id": "b1-u6",
+      "title": "Conditionals and consequences",
+      "file": "b1-u6.json",
+      "phases": 5
+    },
+    {
+      "id": "b1-u7",
+      "title": "Passive voice and processes",
+      "file": "b1-u7.json",
+      "phases": 5
+    },
+    {
+      "id": "b1-u8",
+      "title": "Reported speech",
+      "file": "b1-u8.json",
+      "phases": 5
+    },
+    {
+      "id": "b1-u9",
+      "title": "Connectors and cohesion",
+      "file": "b1-u9.json",
+      "phases": 5
+    },
+    {
+      "id": "b1-u10",
+      "title": "Comparisons and preferences",
+      "file": "b1-u10.json",
+      "phases": 5
+    }
   ]
 }

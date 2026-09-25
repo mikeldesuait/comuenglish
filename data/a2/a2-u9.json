@@ -5,10 +5,236 @@
   "vocabulary": "House, furniture, food, quantities",
   "function": "Describe what exists in a place",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn how to say what exists in a place and talk about quantities using there is/are, some/any and how much/how many." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. There is a cat on the sofa. There are two books on the table. Is there any milk? How many apples do you want? Notice: there is for singular, there are for plural." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "___ three chairs in the room.", "options": ["There is", "There are", "It is", "They are"], "correct": 1, "explanation": "With plural nouns we use There are." },
-    { "name": "Free practice", "type": "task", "prompt": "Describe your living room: what furniture is there?" },
-    { "name": "Mini-test", "type": "exercise", "prompt": "How ___ money do you have?", "options": ["many", "much", "some", "any"], "correct": 1, "explanation": "Money is uncountable, so we use How much." }
+    {
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "There is / There are",
+          "body": "We use 'there is' and 'there are' to say that something exists or is present. 'There is' is for singular, 'there are' for plural.",
+          "tableHeader": true,
+          "table": [
+            ["Form", "Use", "Example"],
+            ["There is", "singular", "There is a cat on the sofa."],
+            ["There are", "plural", "There are two books on the table."],
+            ["There isn't", "singular negative", "There isn't any milk."],
+            ["There aren't", "plural negative", "There aren't any chairs."],
+            ["Is there...?", "singular question", "Is there a bank near here?"],
+            ["Are there...?", "plural question", "Are there any apples?"]
+          ]
+        },
+        {
+          "heading": "Some and any",
+          "body": "We use 'some' in positive sentences and 'any' in negatives and questions. Both can be used with countable and uncountable nouns.",
+          "tableHeader": true,
+          "table": [
+            ["Type", "Example"],
+            ["Positive", "There is some milk. There are some apples."],
+            ["Negative", "There isn't any milk. There aren't any apples."],
+            ["Question", "Is there any milk? Are there any apples?"]
+          ]
+        },
+        {
+          "heading": "How much / How many",
+          "body": "We use 'how much' with uncountable nouns and 'how many' with countable nouns.",
+          "tableHeader": true,
+          "table": [
+            ["Question", "Noun type", "Example"],
+            ["How much", "uncountable", "How much money do you have?"],
+            ["How many", "countable", "How many students are there?"]
+          ]
+        },
+        {
+          "heading": "Countable and uncountable nouns",
+          "body": "Countable nouns can be counted (one apple, two apples). Uncountable nouns cannot (water, rice, money).",
+          "list": [
+            "Countable: apple, book, chair, friend, car, house",
+            "Uncountable: water, milk, rice, money, time, bread, cheese",
+            "We use 'a few' with countable and 'a little' with uncountable.",
+            "We use 'many' with countable and 'much' with uncountable."
+          ]
+        },
+        {
+          "heading": "Quantifiers",
+          "tableHeader": true,
+          "table": [
+            ["Quantifier", "Use", "Example"],
+            ["a lot of / lots of", "countable + uncountable", "There are a lot of people."],
+            ["many", "countable", "There aren't many chairs."],
+            ["much", "uncountable", "There isn't much time."],
+            ["a few", "countable", "I have a few friends here."],
+            ["a little", "uncountable", "There is a little milk."],
+            ["enough", "both", "We have enough food."]
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'There is two books'. Say 'There are two books'.",
+            "Do not use 'much' with countable nouns.",
+            "Do not use 'many' with uncountable nouns.",
+            "Remember: 'some' in positive, 'any' in negative and questions."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "House",
+          "list": [
+            { "term": "living room", "definition": "There is a sofa in the living room." },
+            { "term": "bedroom", "definition": "There are two beds in the bedroom." },
+            { "term": "kitchen", "definition": "The kitchen is next to the living room." },
+            { "term": "bathroom", "definition": "There is a shower in the bathroom." },
+            { "term": "garden", "definition": "There are some flowers in the garden." },
+            { "term": "garage", "definition": "There is a car in the garage." },
+            { "term": "hall", "definition": "The hall is small." },
+            { "term": "balcony", "definition": "There are two chairs on the balcony." }
+          ]
+        },
+        {
+          "heading": "Furniture",
+          "list": [
+            { "term": "sofa", "definition": "There is a big sofa in the living room." },
+            { "term": "table", "definition": "There are some plates on the table." },
+            { "term": "chair", "definition": "There are four chairs in the kitchen." },
+            { "term": "bed", "definition": "There is a bed in each room." },
+            { "term": "wardrobe", "definition": "There are some clothes in the wardrobe." },
+            { "term": "bookshelf", "definition": "There are many books on the bookshelf." },
+            { "term": "desk", "definition": "There is a lamp on the desk." },
+            { "term": "mirror", "definition": "There is a big mirror in the bathroom." }
+          ]
+        },
+        {
+          "heading": "Food and drink",
+          "list": [
+            { "term": "bread", "definition": "There is some bread on the table. (uncountable)" },
+            { "term": "milk", "definition": "There isn't any milk in the fridge. (uncountable)" },
+            { "term": "apple", "definition": "There are some apples in the basket. (countable)" },
+            { "term": "egg", "definition": "How many eggs do we have? (countable)" },
+            { "term": "cheese", "definition": "There is a little cheese. (uncountable)" },
+            { "term": "water", "definition": "How much water do you drink? (uncountable)" },
+            { "term": "rice", "definition": "There is some rice in the cupboard. (uncountable)" },
+            { "term": "orange", "definition": "There are three oranges. (countable)" }
+          ]
+        },
+        {
+          "heading": "Quantities and containers",
+          "list": [
+            { "term": "a bottle of", "definition": "A bottle of water." },
+            { "term": "a glass of", "definition": "A glass of milk." },
+            { "term": "a cup of", "definition": "A cup of tea." },
+            { "term": "a piece of", "definition": "A piece of cake." },
+            { "term": "a slice of", "definition": "A slice of bread." },
+            { "term": "a kilo of", "definition": "A kilo of apples." },
+            { "term": "a packet of", "definition": "A packet of biscuits." },
+            { "term": "a can of", "definition": "A can of cola." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discovery",
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "There is a cat on the sofa.",
+        "There are two books on the table.",
+        "Is there any milk in the fridge?",
+        "There aren't any apples.",
+        "There is some cheese on the plate.",
+        "How many students are there?",
+        "How much money do you have?",
+        "There are a lot of people in the park."
+      ],
+      "questions": [
+        "In sentences 1 and 2, when do we use 'there is' and when 'there are'?",
+        "In sentences 3 and 4, when do we use 'some' and when 'any'?",
+        "In sentences 6 and 7, what is the difference between 'how many' and 'how much'?",
+        "In sentence 8, why can we use 'a lot of' with both countable and uncountable?",
+        "Look at all the sentences: what type of noun follows 'much'? What type follows 'many'?"
+      ]
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "___ three chairs in the room.", "options": ["There is", "There are", "It is", "They are"], "correct": 1, "explanation": "With plural nouns we use 'There are'."},
+        {"prompt": "There ___ a book on the table.", "options": ["is", "are", "have", "has"], "correct": 0, "explanation": "Singular: there is."},
+        {"prompt": "How ___ money do you have?", "options": ["many", "much", "some", "any"], "correct": 1, "explanation": "Money is uncountable: how much."},
+        {"prompt": "How ___ apples are there?", "options": ["many", "much", "some", "any"], "correct": 0, "explanation": "Apples are countable: how many."},
+        {"prompt": "There isn't ___ bread.", "options": ["some", "any", "many", "much"], "correct": 1, "explanation": "Negative: any."},
+        {"prompt": "There is ___ milk in the fridge.", "options": ["some", "any", "many", "a"], "correct": 0, "explanation": "Positive: some."},
+        {"prompt": "Are there ___ chairs in the kitchen?", "options": ["some", "any", "much", "a"], "correct": 1, "explanation": "Question: any."},
+        {"prompt": "I have ___ friends in London.", "options": ["a little", "a few", "much", "any"], "correct": 1, "explanation": "Countable: a few."},
+        {"prompt": "There is ___ water in the bottle.", "options": ["a few", "a little", "many", "some"], "correct": 1, "explanation": "Uncountable: a little."},
+        {"prompt": "There ___ a lot of people in the park.", "options": ["is", "are", "have", "has"], "correct": 1, "explanation": "'People' is plural in English: there are."}
+      ]
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompts": [
+        "Describe your living room. Write 5 sentences with 'there is' and 'there are'.",
+        "Write a shopping list. Include 5 countable and 5 uncountable items.",
+        "Look at your kitchen. Write 5 sentences using 'some', 'any', 'how much' and 'how many'."
+      ]
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "There ___ some milk in the glass.", "options": ["is", "are", "have", "has"], "correct": 0, "explanation": "Milk is uncountable: there is."},
+        {"prompt": "There ___ four bedrooms in my house.", "options": ["is", "are", "have", "has"], "correct": 1, "explanation": "Plural: there are."},
+        {"prompt": "How ___ sugar do you want?", "options": ["many", "much", "some", "any"], "correct": 1, "explanation": "Sugar is uncountable: how much."},
+        {"prompt": "How ___ eggs are there?", "options": ["many", "much", "some", "any"], "correct": 0, "explanation": "Eggs are countable: how many."},
+        {"prompt": "There isn't ___ cheese.", "options": ["some", "any", "many", "much"], "correct": 1, "explanation": "Negative: any."},
+        {"prompt": "Are there ___ books on the shelf?", "options": ["some", "any", "much", "a"], "correct": 1, "explanation": "Question: any."},
+        {"prompt": "There are ___ chairs in the garden.", "options": ["a little", "a few", "much", "any"], "correct": 1, "explanation": "Countable: a few."},
+        {"prompt": "There is ___ bread on the table.", "options": ["a few", "a little", "many", "few"], "correct": 1, "explanation": "Uncountable: a little."},
+        {"prompt": "How ___ time do we have?", "options": ["many", "much", "some", "few"], "correct": 1, "explanation": "Time is uncountable: how much."},
+        {"prompt": "There ___ a lot of students in the classroom.", "options": ["is", "are", "have", "has"], "correct": 1, "explanation": "Students is plural: there are."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "There is + singular. There are + plural.",
+            "Some: positive sentences. Any: negatives and questions.",
+            "How much + uncountable. How many + countable.",
+            "A few + countable. A little + uncountable.",
+            "A lot of can be used with both countable and uncountable."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'There is two books'. Say 'There are two books'.",
+            "Do not use 'much' with countable nouns.",
+            "Do not use 'many' with uncountable nouns.",
+            "Remember: 'some' positive, 'any' negative and questions."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "There is a...",
+            "There are some...",
+            "Is there any...?",
+            "There isn't any...",
+            "How much...?",
+            "How many...?",
+            "A few, a little, a lot of."
+          ]
+        }
+      ]
+    }
   ]
 }

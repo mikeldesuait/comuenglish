@@ -5,10 +5,46 @@
   "vocabulary": "Idioms, academic language",
   "function": "Adapt language to context",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn to adapt your language to different registers, from informal emails to formal reports and essays." },
-    { "name": "Discovery", "type": "text", "content": "Compare these sentences. Thanks for your help! I would like to express my gratitude for your assistance. Notice how formality changes vocabulary, structure and tone." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "Which is formal? I am writing to ___ my interest in the position.", "options": ["say", "express", "tell", "speak"], "correct": 1, "explanation": "Express is the formal choice." },
-    { "name": "Free practice", "type": "task", "prompt": "Rewrite an informal message as a formal email." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "Choose the informal option: I would appreciate it if / Thanks a lot for", "options": ["I would appreciate it if", "Thanks a lot for", "It would be appreciated if", "We kindly request"], "correct": 1, "explanation": "Thanks a lot is informal; the others are formal." }
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn to adapt your language to different registers, from informal emails to formal reports and essays."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Compare these sentences. Thanks for your help! I would like to express my gratitude for your assistance. Notice how formality changes vocabulary, structure and tone."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "Which is formal? I am writing to ___ my interest in the position.",
+      "options": [
+        "say",
+        "express",
+        "tell",
+        "speak"
+      ],
+      "correct": 1,
+      "explanation": "Express is the formal choice."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Rewrite an informal message as a formal email."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "Choose the informal option: I would appreciate it if / Thanks a lot for",
+      "options": [
+        "I would appreciate it if",
+        "Thanks a lot for",
+        "It would be appreciated if",
+        "We kindly request"
+      ],
+      "correct": 1,
+      "explanation": "Thanks a lot is informal; the others are formal."
+    }
   ]
 }

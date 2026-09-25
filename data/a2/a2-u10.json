@@ -1,0 +1,216 @@
+{
+  "id": "a2-u10",
+  "title": "Future predictions",
+  "grammar": "Will, won't",
+  "vocabulary": "Weather, predictions, future events",
+  "function": "Make predictions and talk about the future",
+  "phases": [
+    {
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Will for predictions",
+          "body": "'Will' is used to make predictions about the future. It is also used for promises, offers and instant decisions. It does not change form."
+        },
+        {
+          "heading": "Form",
+          "tableHeader": true,
+          "table": [
+            ["Subject", "Form", "Example"],
+            ["I / You / He / She / It / We / They", "will + verb", "I will help you."],
+            ["All subjects", "won't + verb", "She won't come to the party."],
+            ["Question", "Will + subject + verb?", "Will you be at home?"]
+          ]
+        },
+        {
+          "heading": "Will vs Going to",
+          "body": "Use 'will' for predictions based on opinion or belief. Use 'going to' for predictions based on evidence.",
+          "tableHeader": true,
+          "table": [
+            ["Structure", "Use", "Example"],
+            ["will", "prediction (opinion)", "I think it will rain tomorrow."],
+            ["going to", "prediction (evidence)", "Look at those clouds! It's going to rain."]
+          ]
+        },
+        {
+          "heading": "Common uses of will",
+          "list": [
+            "Predictions: I think she will pass the exam.",
+            "Promises: I will call you tomorrow.",
+            "Offers: I will help you with your bags.",
+            "Instant decisions: I will have the soup, please.",
+            "Facts about the future: The sun will rise at 6 am."
+          ]
+        },
+        {
+          "heading": "Time expressions",
+          "list": [
+            "tomorrow, the day after tomorrow",
+            "next week, next month, next year",
+            "in 2050, in the future, soon",
+            "I think... / I don't think... / Maybe..."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not use 'will' with 'to': 'I will to go' is wrong. Say 'I will go'.",
+            "Do not add -s to 'will': 'She wills come' is wrong.",
+            "Do not confuse 'will' (opinion prediction) with 'going to' (evidence)."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Weather predictions",
+          "list": [
+            { "term": "it will rain", "definition": "It will rain tomorrow." },
+            { "term": "it will snow", "definition": "It will snow in the mountains." },
+            { "term": "it will be sunny", "definition": "It will be sunny at the weekend." },
+            { "term": "it will be cloudy", "definition": "It will be cloudy in the morning." },
+            { "term": "it will be windy", "definition": "It will be windy on the coast." },
+            { "term": "it will be cold", "definition": "It will be cold at night." }
+          ]
+        },
+        {
+          "heading": "Future events",
+          "list": [
+            { "term": "exam", "definition": "I will have an exam next week." },
+            { "term": "party", "definition": "She will go to a party on Saturday." },
+            { "term": "holiday", "definition": "We will travel to Italy next summer." },
+            { "term": "wedding", "definition": "My cousin will get married in June." },
+            { "term": "birthday", "definition": "It will be my birthday soon." },
+            { "term": "meeting", "definition": "There will be a meeting tomorrow." }
+          ]
+        },
+        {
+          "heading": "Predictions about life",
+          "list": [
+            { "term": "will be rich", "definition": "He thinks he will be rich one day." },
+            { "term": "will be famous", "definition": "She will be a famous singer." },
+            { "term": "will have children", "definition": "They will have two children." },
+            { "term": "will live abroad", "definition": "I will live in another country." },
+            { "term": "will learn", "definition": "You will learn English very well." },
+            { "term": "will change", "definition": "The world will change a lot." }
+          ]
+        },
+        {
+          "heading": "Expressions for predictions",
+          "list": [
+            { "term": "I think...", "definition": "I think it will be a good year." },
+            { "term": "I don't think...", "definition": "I don't think it will rain." },
+            { "term": "Maybe...", "definition": "Maybe she will come later." },
+            { "term": "Probably...", "definition": "He will probably arrive late." },
+            { "term": "I hope...", "definition": "I hope you will visit us soon." },
+            { "term": "I'm sure...", "definition": "I'm sure they will win." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discovery",
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "I think it will rain tomorrow.",
+        "Look at those clouds! It's going to rain.",
+        "She will be a famous singer one day.",
+        "I will help you with your homework.",
+        "Will you come to my party?",
+        "I won't be at home tonight.",
+        "I promise I will call you later.",
+        "Maybe we will travel to Spain next year."
+      ],
+      "questions": [
+        "In sentences 1 and 2, what is the difference between 'will' and 'going to'?",
+        "In sentence 3, why can we use 'will' for a prediction?",
+        "In sentence 4, what use of 'will' is it (prediction, offer, promise)?",
+        "In sentence 5, how do we make a question with 'will'?",
+        "In sentence 6, how do we make the negative?",
+        "In sentence 7, what use of 'will' is it (prediction, offer, promise)?"
+      ]
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "I think it ___ rain tomorrow.", "options": ["will", "wills", "is", "does"], "correct": 0, "explanation": "For predictions we use 'will'."},
+        {"prompt": "She ___ come to the party. She has other plans.", "options": ["will", "won't", "isn't", "doesn't"], "correct": 1, "explanation": "Negative: won't."},
+        {"prompt": "___ you help me with this?", "options": ["Will", "Do", "Are", "Is"], "correct": 0, "explanation": "Question with 'will': Will + subject + verb."},
+        {"prompt": "Look at those clouds! It ___ rain.", "options": ["will", "is going to", "is", "does"], "correct": 1, "explanation": "Based on evidence we use 'going to'."},
+        {"prompt": "I promise I ___ call you tomorrow.", "options": ["will", "am", "do", "going to"], "correct": 0, "explanation": "Promises use 'will'."},
+        {"prompt": "I ___ have the soup, please.", "options": ["will", "am", "do", "going"], "correct": 0, "explanation": "Instant decisions use 'will'."},
+        {"prompt": "Maybe we ___ travel to Italy next summer.", "options": ["will", "wills", "are", "do"], "correct": 0, "explanation": "Predictions and possibilities use 'will'."},
+        {"prompt": "I don't think it ___ snow tomorrow.", "options": ["will", "wills", "is", "does"], "correct": 0, "explanation": "After 'I don't think', we use 'will'."},
+        {"prompt": "She ___ probably arrive late.", "options": ["will", "is", "does", "going"], "correct": 0, "explanation": "Predictions with 'probably' use 'will'."},
+        {"prompt": "They ___ win the match. They are the best team.", "options": ["will", "won't", "aren't", "don't"], "correct": 0, "explanation": "Positive prediction."}
+      ]
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompts": [
+        "Write 5 predictions about your life in 10 years using 'will'.",
+        "Write 5 predictions about the weather for this week using 'will' and 'going to'.",
+        "Write 5 sentences about your plans for next weekend. Use 'will' for decisions and 'going to' for plans."
+      ]
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "I think she ___ pass the exam.", "options": ["will", "wills", "is", "does"], "correct": 0, "explanation": "Prediction with 'will'."},
+        {"prompt": "I ___ be at home tonight. I have a meeting.", "options": ["will", "won't", "am not", "don't"], "correct": 1, "explanation": "Negative prediction: won't."},
+        {"prompt": "___ you come to the cinema with us?", "options": ["Will", "Do", "Are", "Is"], "correct": 0, "explanation": "Question with 'will'."},
+        {"prompt": "Look! The glass ___ fall!", "options": ["will", "is going to", "is", "does"], "correct": 1, "explanation": "Evidence-based prediction: going to."},
+        {"prompt": "I ___ help you carry those bags.", "options": ["will", "am", "do", "going"], "correct": 0, "explanation": "Offer with 'will'."},
+        {"prompt": "They ___ probably be late.", "options": ["will", "are", "do", "going"], "correct": 0, "explanation": "Prediction with 'will' + probably."},
+        {"prompt": "In 2050, cars ___ fly.", "options": ["will", "are", "do", "going"], "correct": 0, "explanation": "Future fact or prediction with 'will'."},
+        {"prompt": "I don't think he ___ come.", "options": ["will", "wills", "is", "does"], "correct": 0, "explanation": "After 'I don't think', use 'will'."},
+        {"prompt": "She ___ be a doctor when she grows up.", "options": ["will", "is", "does", "going"], "correct": 0, "explanation": "Prediction with 'will'."},
+        {"prompt": "I'm sure you ___ like this film.", "options": ["will", "are", "do", "going"], "correct": 0, "explanation": "Prediction with 'will'."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Will + base verb for predictions, promises and offers.",
+            "Won't = will not (negative).",
+            "Question: Will + subject + verb?",
+            "Will for opinion predictions; going to for evidence-based predictions.",
+            "Will does not change form (no -s with he/she/it)."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not use 'to' after 'will': 'I will to go' is wrong.",
+            "Do not add -s to 'will': 'She wills come' is wrong.",
+            "Do not confuse 'will' with 'going to'."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "I think it will...",
+            "I don't think she will...",
+            "Will you...?",
+            "I won't...",
+            "I promise I will...",
+            "Maybe we will...",
+            "She will probably..."
+          ]
+        }
+      ]
+    }
+  ]
+}

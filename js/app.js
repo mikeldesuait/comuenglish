@@ -1,7 +1,7 @@
-// Punto de arranque de la app.
+// Bootstrap the app.
 import { getState, setLevel, on } from "./state.js";
 import { navigate, render, bindNav } from "./router.js";
-import { initSettingsModal } from "./widgets/settings-modal.js";
+import { initSettingsModal, openSettingsModal } from "./widgets/settings-modal.js";
 
 function bootstrap() {
   const levelSelect = document.getElementById("level-select");
@@ -12,6 +12,11 @@ function bootstrap() {
       setLevel(e.target.value);
       render();
     });
+  }
+
+  const settingsBtn = document.getElementById("open-settings");
+  if (settingsBtn) {
+    settingsBtn.addEventListener("click", () => openSettingsModal());
   }
 
   initSettingsModal();

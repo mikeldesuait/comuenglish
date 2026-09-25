@@ -5,10 +5,46 @@
   "vocabulary": "Conversations, speeches, rumours",
   "function": "Report what others said with nuance",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn advanced reported speech structures, including reporting verbs like admit, deny, suggest, warn." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. He admitted stealing the money. She denied having seen him. They suggested going to the cinema. Notice how reporting verbs change the structure." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "She ___ me to close the window.", "options": ["said", "told", "asked", "suggested"], "correct": 1, "explanation": "Tell is used with an object pronoun: tell someone to do something." },
-    { "name": "Free practice", "type": "task", "prompt": "Report a conversation you had recently using 3 different reporting verbs." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "He ___ having broken the vase.", "options": ["denied", "refused", "admitted", "suggested"], "correct": 0, "explanation": "Deny + gerund means to say that you did not do something." }
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn advanced reported speech structures, including reporting verbs like admit, deny, suggest, warn."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Read these sentences. He admitted stealing the money. She denied having seen him. They suggested going to the cinema. Notice how reporting verbs change the structure."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "She ___ me to close the window.",
+      "options": [
+        "said",
+        "told",
+        "asked",
+        "suggested"
+      ],
+      "correct": 1,
+      "explanation": "Tell is used with an object pronoun: tell someone to do something."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Report a conversation you had recently using 3 different reporting verbs."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "He ___ having broken the vase.",
+      "options": [
+        "denied",
+        "refused",
+        "admitted",
+        "suggested"
+      ],
+      "correct": 0,
+      "explanation": "Deny + gerund means to say that you did not do something."
+    }
   ]
 }

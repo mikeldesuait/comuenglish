@@ -1,0 +1,23 @@
+{
+  "level": "b2",
+  "tasks": [
+    {
+      "id": "b2-w1",
+      "type": "essay",
+      "title": "Essay about social media",
+      "minWords": 140,
+      "maxWords": 190,
+      "prompt": "Your class has been discussing the impact of social media on young people. Your teacher has asked you to write an essay. Write about: 1) the advantages of social media, 2) the disadvantages, and 3) your own opinion. Write 140-190 words.",
+      "sample": "Social media has become an essential part of daily life for young people. While it offers clear benefits, it also presents significant challenges. On the one hand, platforms like Instagram and TikTok allow teenagers to stay connected with friends and express their creativity. On the other hand, excessive use can lead to anxiety, low self-esteem and problems concentrating. In my opinion, social media is neither good nor bad in itself. The key is moderation. Parents and schools should teach young people how to use these platforms responsibly, rather than banning them completely."
+    },
+    {
+      "id": "b2-w2",
+      "type": "review",
+      "title": "A film review",
+      "minWords": 140,
+      "maxWords": 190,
+      "prompt": "You have seen a film that you would like to recommend to other students. Write a review for your school magazine. Describe the film, explain what you liked or disliked, and say who you would recommend it to. Write 140-190 words.",
+      "sample": "Last week I watched Oppenheimer, a biographical film directed by Christopher Nolan. The film tells the story of J. Robert Oppenheimer, the physicist who led the development of the atomic bomb. What I liked most was the acting. Cillian Murphy delivers a powerful performance. The music and cinematography are also outstanding. However, the film is quite long and some scenes move slowly. I would recommend Oppenheimer to anyone interested in history, science or thoughtful drama."
+    }
+  ]
+}

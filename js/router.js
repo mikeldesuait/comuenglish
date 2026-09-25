@@ -4,6 +4,7 @@ import { renderHome } from "./views/home.js";
 import { renderFundamentals } from "./views/fundamentals.js";
 import { renderComprehension } from "./views/comprehension.js";
 import { renderProduction } from "./views/production.js";
+import { renderMock } from "./views/mock.js";
 import { openSettingsModal } from "./widgets/settings-modal.js";
 
 const routes = {
@@ -34,15 +35,6 @@ export function render() {
   });
 }
 
-function renderMock(view) {
-  const h2 = document.createElement("h2");
-  h2.textContent = "Mock Exam";
-  view.appendChild(h2);
-
-  const p = document.createElement("p");
-  p.textContent = "Full timed mock exam for the selected level will run here.";
-  view.appendChild(p);
-}
 
 export function bindNav() {
   document.addEventListener("click", e => {

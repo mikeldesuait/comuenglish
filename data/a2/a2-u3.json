@@ -5,10 +5,224 @@
   "vocabulary": "Clothes, colours, everyday actions",
   "function": "Describe what is happening now",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn the Present Continuous tense to describe actions happening right now. You will also compare it with the Present Simple." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. I am reading a book. She is wearing a red dress. They are playing football. Notice the structure: am/is/are + verb-ing." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "Look! The baby ___ .", "options": ["cries", "is crying", "cry", "cried"], "correct": 1, "explanation": "For actions happening now we use Present Continuous: is + verb-ing." },
-    { "name": "Free practice", "type": "task", "prompt": "Look around you and write 3 sentences about what people are doing right now." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "I usually ___ coffee, but today I ___ tea.", "options": ["drink / am drinking", "am drinking / drink", "drink / drink", "am drinking / am drinking"], "correct": 0, "explanation": "Usually goes with Present Simple, today with Present Continuous." }
+    {
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "What is the Present Continuous?",
+          "body": "The Present Continuous is used to talk about actions happening right now, at this moment. It is also used for temporary situations and future arrangements."
+        },
+        {
+          "heading": "Form",
+          "body": "Subject + am / is / are + verb-ing",
+          "tableHeader": true,
+          "table": [
+            ["Subject", "Verb", "Example"],
+            ["I", "am working", "I am working now."],
+            ["You / We / They", "are working", "They are playing football."],
+            ["He / She / It", "is working", "She is reading a book."]
+          ]
+        },
+        {
+          "heading": "Spelling rules for -ing",
+          "list": [
+            "Most verbs add -ing: work → working, play → playing",
+            "Verbs ending in -e drop the -e: write → writing, make → making",
+            "Short verbs ending in consonant-vowel-consonant double the last letter: run → running, sit → sitting, swim → swimming"
+          ]
+        },
+        {
+          "heading": "Negative",
+          "body": "Add 'not' after am / is / are.",
+          "list": [
+            "I am not sleeping.",
+            "She is not working today.",
+            "They are not listening."
+          ]
+        },
+        {
+          "heading": "Questions",
+          "body": "Put am / is / are before the subject.",
+          "list": [
+            "Are you studying?",
+            "Is he working?",
+            "What are they doing?"
+          ]
+        },
+        {
+          "heading": "Present Simple vs Present Continuous",
+          "tableHeader": true,
+          "table": [
+            ["Tense", "Use", "Example"],
+            ["Present Simple", "habits, routines", "I usually drink coffee."],
+            ["Present Continuous", "now, at this moment", "I am drinking tea now."]
+          ]
+        },
+        {
+          "heading": "Time expressions",
+          "list": [
+            "now, right now, at the moment",
+            "today, this week, this morning (temporary)",
+            "Look! Listen! (to introduce something happening now)"
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not forget the verb 'to be': 'I working' is wrong. Say 'I am working'.",
+            "Do not use Present Continuous for habits: 'I am usually getting up at 7' is wrong.",
+            "Remember the spelling rules for -ing."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Clothes",
+          "list": [
+            { "term": "shirt", "definition": "He is wearing a blue shirt." },
+            { "term": "T-shirt", "definition": "I am wearing a white T-shirt." },
+            { "term": "trousers", "definition": "She is wearing black trousers." },
+            { "term": "jeans", "definition": "I am wearing my new jeans." },
+            { "term": "dress", "definition": "She is wearing a red dress." },
+            { "term": "skirt", "definition": "My sister is wearing a long skirt." },
+            { "term": "jacket", "definition": "He is wearing a warm jacket." },
+            { "term": "coat", "definition": "I am wearing my winter coat." },
+            { "term": "shoes", "definition": "They are wearing new shoes." },
+            { "term": "hat", "definition": "She is wearing a summer hat." }
+          ]
+        },
+        {
+          "heading": "Colours",
+          "list": [
+            { "term": "red", "definition": "The dress is red." },
+            { "term": "blue", "definition": "His jacket is blue." },
+            { "term": "green", "definition": "The tree is green." },
+            { "term": "yellow", "definition": "The sun is yellow." },
+            { "term": "black", "definition": "My shoes are black." },
+            { "term": "white", "definition": "The shirt is white." },
+            { "term": "brown", "definition": "Her hair is brown." },
+            { "term": "pink", "definition": "The flowers are pink." }
+          ]
+        },
+        {
+          "heading": "Everyday actions",
+          "list": [
+            { "term": "walk", "definition": "He is walking to school." },
+            { "term": "run", "definition": "The dog is running in the park." },
+            { "term": "eat", "definition": "She is eating an apple." },
+            { "term": "drink", "definition": "I am drinking water." },
+            { "term": "read", "definition": "My father is reading a newspaper." },
+            { "term": "write", "definition": "The students are writing a test." },
+            { "term": "sleep", "definition": "The baby is sleeping." },
+            { "term": "talk", "definition": "We are talking on the phone." },
+            { "term": "listen", "definition": "I am listening to music." },
+            { "term": "watch", "definition": "They are watching a film." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discovery",
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "I am reading a book right now.",
+        "She is wearing a red dress today.",
+        "They are playing football at the moment.",
+        "Look! The baby is crying.",
+        "I usually drink coffee, but today I am drinking tea.",
+        "He is not working this week.",
+        "Are you listening to me?",
+        "What is she doing?"
+      ],
+      "questions": [
+        "In sentences 1, 2 and 3, which structure do we use to describe actions happening now?",
+        "In sentence 4, why do we use Present Continuous after 'Look!'?",
+        "In sentence 5, why are two different tenses used in the same sentence?",
+        "In sentence 6, how do we make the negative?",
+        "In sentences 7 and 8, how do we make questions?"
+      ]
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "Look! The baby ___ .", "options": ["cries", "is crying", "cry", "cried"], "correct": 1, "explanation": "For actions happening now we use Present Continuous: is + verb-ing."},
+        {"prompt": "She ___ a red dress today.", "options": ["wear", "wears", "is wearing", "wore"], "correct": 2, "explanation": "Temporary situations use Present Continuous."},
+        {"prompt": "They ___ football at the moment.", "options": ["play", "plays", "are playing", "played"], "correct": 2, "explanation": "With 'they' we use 'are + verb-ing'."},
+        {"prompt": "I ___ to music right now.", "options": ["listen", "am listening", "listens", "listened"], "correct": 1, "explanation": "Present Continuous with 'I': am + verb-ing."},
+        {"prompt": "He ___ not working today.", "options": ["am", "are", "is", "be"], "correct": 2, "explanation": "With 'he' we use 'is'."},
+        {"prompt": "___ you listening to me?", "options": ["Do", "Does", "Are", "Is"], "correct": 2, "explanation": "With 'you' we use 'Are' in Present Continuous questions."},
+        {"prompt": "What ___ she doing?", "options": ["do", "does", "is", "are"], "correct": 2, "explanation": "With 'she' we use 'is'."},
+        {"prompt": "I usually ___ coffee, but today I ___ tea.", "options": ["drink / am drinking", "am drinking / drink", "drink / drink", "am drinking / am drinking"], "correct": 0, "explanation": "Usually goes with Present Simple, today with Present Continuous."},
+        {"prompt": "The children ___ in the garden.", "options": ["play", "plays", "are playing", "is playing"], "correct": 2, "explanation": "With plural 'children' we use 'are playing'."},
+        {"prompt": "She ___ a book at the moment.", "options": ["read", "reads", "is reading", "reading"], "correct": 2, "explanation": "Present Continuous with 'she': is + verb-ing."}
+      ]
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompts": [
+        "Look around you and write 5 sentences about what people are doing right now.",
+        "Write 5 sentences about what your family members are doing at this moment.",
+        "Compare your usual routine with what you are doing today. Write 5 sentences using 'usually' and 'today'."
+      ]
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "Look! It ___ outside.", "options": ["rains", "is raining", "rained", "rain"], "correct": 1, "explanation": "Something happening now: is + verb-ing."},
+        {"prompt": "I ___ TV every evening.", "options": ["watch", "am watching", "watched", "watches"], "correct": 0, "explanation": "Habits use Present Simple."},
+        {"prompt": "She ___ her homework at the moment.", "options": ["do", "does", "is doing", "did"], "correct": 2, "explanation": "Now: is + verb-ing."},
+        {"prompt": "They ___ not playing tennis now.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'they' we use 'are not'."},
+        {"prompt": "What ___ you ___ now?", "options": ["do / do", "are / doing", "is / doing", "do / doing"], "correct": 1, "explanation": "Question: are + subject + verb-ing."},
+        {"prompt": "My mother ___ dinner right now.", "options": ["cook", "cooks", "is cooking", "cooked"], "correct": 2, "explanation": "At this moment: is + verb-ing."},
+        {"prompt": "We usually ___ to school, but today we ___ the bus.", "options": ["walk / take", "walk / are taking", "are walking / take", "are walking / are taking"], "correct": 1, "explanation": "Usually = Present Simple, today = Present Continuous."},
+        {"prompt": "Listen! Someone ___ .", "options": ["sings", "is singing", "sang", "sing"], "correct": 1, "explanation": "After 'Listen!' we use Present Continuous."},
+        {"prompt": "He ___ wearing a blue shirt today.", "options": ["am", "are", "is", "be"], "correct": 2, "explanation": "With 'he' we use 'is'."},
+        {"prompt": "I ___ reading a very good book this week.", "options": ["am", "is", "are", "be"], "correct": 0, "explanation": "With 'I' we use 'am'."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Present Continuous: am / is / are + verb-ing.",
+            "Use it for actions happening now, temporary situations and future arrangements.",
+            "Negative: add 'not' after am / is / are.",
+            "Questions: put am / is / are before the subject.",
+            "Spelling: drop -e (write → writing), double consonant (run → running)."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Forgetting 'to be': 'I working' is wrong. Say 'I am working'.",
+            "Using Present Continuous for habits: 'I am usually waking up at 7' is wrong.",
+            "Forgetting the -ing form."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "I am ... -ing right now.",
+            "She is ... -ing at the moment.",
+            "Look! ... is ... -ing.",
+            "Listen! ... is ... -ing.",
+            "What are you doing?",
+            "I usually ..., but today I am ..."
+          ]
+        }
+      ]
+    }
   ]
 }

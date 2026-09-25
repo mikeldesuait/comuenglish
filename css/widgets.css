@@ -1,5 +1,8 @@
 .unit-card { border: 1px solid var(--border); border-radius: var(--radius); padding: var(--space-4); margin-bottom: var(--space-3); cursor: pointer; transition: border-color .15s, transform .15s; background: #fff; }
 .unit-card:hover { border-color: var(--primary); transform: translateY(-1px); }
+.unit-card__header { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2); }
+.unit-card__title { font-weight: 600; }
+.unit-card__badge { font-size: .75rem; padding: 2px 8px; border-radius: 999px; background: #eff6ff; color: var(--primary); }
 .btn { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-4); border-radius: var(--radius); font-weight: 500; transition: background .15s; }
 .btn--primary { background: var(--primary); color: #fff; }
 .btn--primary:hover { background: var(--primary-hover); }
@@ -16,6 +19,10 @@
 .feedback--correct { background: #f0fdf4; border-left: 4px solid var(--success); }
 .feedback--wrong { background: #fef2f2; border-left: 4px solid var(--danger); }
 .feedback--info { background: #eff6ff; border-left: 4px solid var(--primary); }
+.phase-nav { display: flex; gap: var(--space-2); margin-bottom: var(--space-4); flex-wrap: wrap; }
+.phase-nav button { padding: var(--space-2) var(--space-4); border-radius: var(--radius); border: 1px solid var(--border); background: #fff; font-size: .9rem; font-weight: 500; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+.phase-nav button:hover { background: #f1f5f9; border-color: var(--primary); }
+.phase-nav button.is-active { background: var(--primary); color: #fff; border-color: var(--primary); }
 dialog { padding: var(--space-5); border-radius: var(--radius); border: 1px solid var(--border); max-width: 500px; }
 dialog::backdrop { background: rgba(0,0,0,.5); }
 .modal__input { width: 100%; padding: var(--space-2); border: 1px solid var(--border); border-radius: var(--radius); margin-top: var(--space-2); }

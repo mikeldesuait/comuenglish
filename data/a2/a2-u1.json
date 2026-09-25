@@ -6,35 +6,587 @@
   "function": "Say name, age, nationality, job",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn how to introduce yourself and describe other people. You will see how to use the verb To Be (am/is/are), possessive adjectives (my/your/his/her) and the verb Have got to talk about what you have."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "What is the verb To Be?",
+          "body": "The verb 'to be' is used to say who you are, how you feel, and where you are from."
+        },
+        {
+          "heading": "Form",
+          "tableHeader": true,
+          "table": [
+            [
+              "Subject",
+              "Verb",
+              "Example"
+            ],
+            [
+              "I",
+              "am",
+              "I am Maria."
+            ],
+            [
+              "You",
+              "are",
+              "You are my friend."
+            ],
+            [
+              "He",
+              "is",
+              "He is my brother."
+            ],
+            [
+              "She",
+              "is",
+              "She is my sister."
+            ],
+            [
+              "It",
+              "is",
+              "It is a dog."
+            ],
+            [
+              "We",
+              "are",
+              "We are students."
+            ],
+            [
+              "They",
+              "are",
+              "They are from Italy."
+            ]
+          ]
+        },
+        {
+          "heading": "Negative",
+          "body": "Add 'not' after the verb.",
+          "list": [
+            "I am not tall.",
+            "He is not a teacher.",
+            "They are not at home."
+          ]
+        },
+        {
+          "heading": "Questions",
+          "body": "Put the verb before the subject.",
+          "list": [
+            "Are you from Spain?",
+            "Is she your friend?",
+            "Are they students?"
+          ]
+        },
+        {
+          "heading": "Possessive adjectives",
+          "body": "They show who owns something.",
+          "tableHeader": true,
+          "table": [
+            [
+              "Subject",
+              "Possessive",
+              "Example"
+            ],
+            [
+              "I",
+              "my",
+              "My name is Tom."
+            ],
+            [
+              "You",
+              "your",
+              "Your car is new."
+            ],
+            [
+              "He",
+              "his",
+              "His eyes are green."
+            ],
+            [
+              "She",
+              "her",
+              "Her mother is a nurse."
+            ],
+            [
+              "It",
+              "its",
+              "Its tail is short."
+            ],
+            [
+              "We",
+              "our",
+              "Our house is big."
+            ],
+            [
+              "They",
+              "their",
+              "Their children are young."
+            ]
+          ]
+        },
+        {
+          "heading": "Have got",
+          "body": "Used for possession, family and body parts.",
+          "tableHeader": true,
+          "table": [
+            [
+              "Subject",
+              "Verb",
+              "Example"
+            ],
+            [
+              "I / You / We / They",
+              "have got",
+              "I have got two brothers."
+            ],
+            [
+              "He / She / It",
+              "has got",
+              "She has got long hair."
+            ]
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'I have 12 years'. Say 'I am 12'.",
+            "Do not say 'He have got'. Say 'He has got'.",
+            "Do not confuse 'its' (possession) and 'it's' (it is)."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Family",
+          "list": [
+            {
+              "term": "mother",
+              "definition": "My mother is a doctor."
+            },
+            {
+              "term": "father",
+              "definition": "His father works in a bank."
+            },
+            {
+              "term": "sister",
+              "definition": "I have got one sister."
+            },
+            {
+              "term": "brother",
+              "definition": "My brother is ten years old."
+            },
+            {
+              "term": "grandmother",
+              "definition": "My grandmother lives with us."
+            },
+            {
+              "term": "grandfather",
+              "definition": "Her grandfather is from Canada."
+            },
+            {
+              "term": "aunt",
+              "definition": "My aunt has got two children."
+            },
+            {
+              "term": "uncle",
+              "definition": "His uncle is very funny."
+            },
+            {
+              "term": "cousin",
+              "definition": "I play with my cousin every weekend."
+            },
+            {
+              "term": "parents",
+              "definition": "My parents are teachers."
+            }
+          ]
+        },
+        {
+          "heading": "Body parts",
+          "list": [
+            {
+              "term": "head",
+              "definition": "Put your hat on your head."
+            },
+            {
+              "term": "hair",
+              "definition": "She has got long hair."
+            },
+            {
+              "term": "eye",
+              "definition": "He has got blue eyes."
+            },
+            {
+              "term": "ear",
+              "definition": "I have got small ears."
+            },
+            {
+              "term": "nose",
+              "definition": "My nose is cold."
+            },
+            {
+              "term": "mouth",
+              "definition": "Open your mouth, please."
+            },
+            {
+              "term": "arm",
+              "definition": "My arm hurts."
+            },
+            {
+              "term": "leg",
+              "definition": "The dog has got four legs."
+            },
+            {
+              "term": "hand",
+              "definition": "Wash your hands."
+            },
+            {
+              "term": "foot",
+              "definition": "My foot is big."
+            }
+          ]
+        },
+        {
+          "heading": "Describing adjectives",
+          "list": [
+            {
+              "term": "tall",
+              "definition": "My father is tall."
+            },
+            {
+              "term": "short",
+              "definition": "She is short and friendly."
+            },
+            {
+              "term": "young",
+              "definition": "My cousin is young."
+            },
+            {
+              "term": "old",
+              "definition": "My grandfather is old."
+            },
+            {
+              "term": "slim",
+              "definition": "My sister is slim."
+            },
+            {
+              "term": "beautiful",
+              "definition": "Your mother is beautiful."
+            },
+            {
+              "term": "handsome",
+              "definition": "He is a handsome man."
+            },
+            {
+              "term": "friendly",
+              "definition": "Our teacher is friendly."
+            },
+            {
+              "term": "funny",
+              "definition": "My uncle is very funny."
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Read these sentences and pay attention to the words in bold. My name is Ana. I am 25 years old. I have got two brothers. She is from Spain. Her name is Lucia. Notice how My, Her and His change depending on who is speaking."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "I am from Brazil.",
+        "She is my sister.",
+        "They are students.",
+        "My name is Ana.",
+        "His eyes are green.",
+        "We have got a big family.",
+        "He has got short hair.",
+        "Her mother is a nurse."
+      ],
+      "questions": [
+        "In sentences 1, 2 and 3, which verb do we use to say who someone is or where they are from?",
+        "In sentences 4 and 5, which words show who owns something?",
+        "In sentences 6 and 7, which verb do we use to talk about family and body parts?",
+        "What changes from 'we have got' to 'he has got'?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "___ name is Ana.",
-      "options": ["I", "My", "Me", "Mine"],
-      "correct": 1,
-      "explanation": "We use My as a possessive adjective before a noun."
+      "questions": [
+        {
+          "prompt": "I ___ from Mexico.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 0,
+          "explanation": "With 'I', we use 'am'."
+        },
+        {
+          "prompt": "She ___ my cousin.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 1,
+          "explanation": "With 'she', we use 'is'."
+        },
+        {
+          "prompt": "They ___ at school.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 2,
+          "explanation": "With 'they', we use 'are'."
+        },
+        {
+          "prompt": "This is my brother. ___ name is Paul.",
+          "options": [
+            "Her",
+            "His",
+            "Their",
+            "Its"
+          ],
+          "correct": 1,
+          "explanation": "For a male person, we use 'His'."
+        },
+        {
+          "prompt": "My sister and I love ___ grandmother.",
+          "options": [
+            "our",
+            "their",
+            "her",
+            "his"
+          ],
+          "correct": 0,
+          "explanation": "For 'my sister and I', we use 'our'."
+        },
+        {
+          "prompt": "I ___ got two sisters.",
+          "options": [
+            "has",
+            "have",
+            "am",
+            "is"
+          ],
+          "correct": 1,
+          "explanation": "With 'I', we use 'have got'."
+        },
+        {
+          "prompt": "He ___ got short hair.",
+          "options": [
+            "have",
+            "has",
+            "is",
+            "are"
+          ],
+          "correct": 1,
+          "explanation": "With 'he', we use 'has got'."
+        },
+        {
+          "prompt": "___ you got a pet?",
+          "options": [
+            "Have",
+            "Has",
+            "Are",
+            "Is"
+          ],
+          "correct": 0,
+          "explanation": "For questions with 'you', we use 'Have you got...?'."
+        },
+        {
+          "prompt": "My mother is 45 years ___.",
+          "options": [
+            "old",
+            "young",
+            "tall",
+            "short"
+          ],
+          "correct": 0,
+          "explanation": "We say 'years old' for age."
+        },
+        {
+          "prompt": "She has got long ___.",
+          "options": [
+            "eye",
+            "ear",
+            "hair",
+            "nose"
+          ],
+          "correct": 2,
+          "explanation": "We say 'long hair', not 'long eyes'."
+        }
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Write 3 sentences introducing yourself: your name, your age and something you have."
+      "prompts": [
+        "Write five sentences to introduce yourself. Use the verb 'to be' and 'have got'. Include your name, age, nationality, job and one family member.",
+        "Describe your best friend. Write five sentences about their appearance and personality. Use possessive adjectives and 'have got'.",
+        "Draw your family tree. Write one sentence for each person. Use 'his', 'her', 'their' and 'have got'."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "She ___ from Italy.",
-      "options": ["am", "is", "are", "be"],
-      "correct": 1,
-      "explanation": "With she we use is."
+      "questions": [
+        {
+          "prompt": "We ___ from Japan.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 2,
+          "explanation": "With 'we', we use 'are'."
+        },
+        {
+          "prompt": "It ___ a small dog.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 1,
+          "explanation": "With 'it', we use 'is'."
+        },
+        {
+          "prompt": "This is my sister. ___ name is Emma.",
+          "options": [
+            "His",
+            "Her",
+            "Their",
+            "Its"
+          ],
+          "correct": 1,
+          "explanation": "For a female person, we use 'Her'."
+        },
+        {
+          "prompt": "The children love ___ new teacher.",
+          "options": [
+            "his",
+            "her",
+            "their",
+            "our"
+          ],
+          "correct": 2,
+          "explanation": "For 'the children', we use 'their'."
+        },
+        {
+          "prompt": "My father ___ got a new car.",
+          "options": [
+            "have",
+            "has",
+            "is",
+            "are"
+          ],
+          "correct": 1,
+          "explanation": "With 'my father' (he), we use 'has got'."
+        },
+        {
+          "prompt": "___ she got blue eyes?",
+          "options": [
+            "Have",
+            "Has",
+            "Is",
+            "Are"
+          ],
+          "correct": 1,
+          "explanation": "For questions with 'she', we use 'Has she got...?'."
+        },
+        {
+          "prompt": "I ___ got a big family.",
+          "options": [
+            "have",
+            "has",
+            "am",
+            "is"
+          ],
+          "correct": 0,
+          "explanation": "With 'I', we use 'have got'."
+        },
+        {
+          "prompt": "My grandfather is very ___. He is 80.",
+          "options": [
+            "young",
+            "old",
+            "tall",
+            "short"
+          ],
+          "correct": 1,
+          "explanation": "80 years is old."
+        },
+        {
+          "prompt": "She has got small ___.",
+          "options": [
+            "hair",
+            "head",
+            "ears",
+            "mouth"
+          ],
+          "correct": 2,
+          "explanation": "We can say 'small ears'."
+        },
+        {
+          "prompt": "He is a ___ man. He makes everyone laugh.",
+          "options": [
+            "funny",
+            "slim",
+            "old",
+            "short"
+          ],
+          "correct": 0,
+          "explanation": "A person who makes others laugh is funny."
+        }
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Use 'am' with I, 'is' with he/she/it, 'are' with you/we/they.",
+            "Use 'have got' with I/you/we/they and 'has got' with he/she/it.",
+            "Possessive adjectives: my, your, his, her, its, our, their."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'I have 12 years'. Say 'I am 12'.",
+            "Do not say 'He have got'. Say 'He has got'.",
+            "Do not confuse 'its' (possession) and 'it's' (it is)."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "My name is...",
+            "I am ... years old.",
+            "I am from...",
+            "I have got ... brothers and sisters.",
+            "He/She has got ... hair and ... eyes.",
+            "He/She is tall/short/friendly/funny."
+          ]
+        }
+      ]
     }
   ]
 }

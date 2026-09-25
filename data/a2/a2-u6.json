@@ -5,10 +5,215 @@
   "vocabulary": "Food, drink, restaurants, music",
   "function": "Express what you like and dislike",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn how to express likes, dislikes and preferences using like, love, hate and would like." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. I like reading books. She loves dancing. They hate waiting. I would like a coffee, please. Notice like/love/hate can be followed by -ing, and would like by a noun or to + verb." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "I love ___ to music.", "options": ["listen", "listening", "to listen", "listened"], "correct": 1, "explanation": "After love, like, hate we usually use the -ing form." },
-    { "name": "Free practice", "type": "task", "prompt": "Write 3 sentences about things you like, love or hate." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "I ___ like a glass of water, please.", "options": ["would", "will", "am", "do"], "correct": 0, "explanation": "Would like is the polite form to ask for something." }
+    {
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Expressing likes and dislikes",
+          "body": "In English we use verbs like 'like', 'love', 'enjoy', 'hate' and 'don't mind' to express preferences. These verbs can be followed by a noun or a gerund (-ing form)."
+        },
+        {
+          "heading": "Like / Love / Enjoy / Hate + -ing",
+          "tableHeader": true,
+          "table": [
+            ["Verb", "Meaning", "Example"],
+            ["love", "very strong like", "I love reading books."],
+            ["like", "positive feeling", "I like listening to music."],
+            ["enjoy", "positive feeling", "She enjoys swimming."],
+            ["don't mind", "neutral", "I don't mind waiting."],
+            ["dislike", "negative feeling", "He dislikes cooking."],
+            ["hate", "very strong dislike", "They hate getting up early."]
+          ]
+        },
+        {
+          "heading": "Like + infinitive or gerund",
+          "body": "After 'like', 'love' and 'hate' you can use either the -ing form or 'to + verb' with almost the same meaning.",
+          "list": [
+            "I like reading. = I like to read.",
+            "She loves dancing. = She loves to dance.",
+            "He hates waiting. = He hates to wait."
+          ]
+        },
+        {
+          "heading": "Would like",
+          "body": "'Would like' is more polite and means 'want'. It is followed by a noun or 'to + verb'. It is NOT followed by -ing.",
+          "tableHeader": true,
+          "table": [
+            ["Form", "Example"],
+            ["would like + noun", "I would like a coffee, please."],
+            ["would like + to + verb", "I would like to go to the cinema."],
+            ["would like + object + to + verb", "I would like you to help me."]
+          ]
+        },
+        {
+          "heading": "Short answers",
+          "list": [
+            "Do you like pizza? Yes, I do. / No, I don't.",
+            "Would you like some tea? Yes, please. / No, thank you."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'I like read'. Say 'I like reading' or 'I like to read'.",
+            "Do not use -ing after 'would like': 'I would like going' is wrong. Say 'I would like to go'.",
+            "Do not say 'I am agree'. Say 'I agree'."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Food",
+          "list": [
+            { "term": "pizza", "definition": "I love pizza." },
+            { "term": "pasta", "definition": "She likes pasta with tomato sauce." },
+            { "term": "salad", "definition": "He doesn't mind salad." },
+            { "term": "chicken", "definition": "We enjoy roast chicken." },
+            { "term": "fish", "definition": "I hate fish." },
+            { "term": "rice", "definition": "They like rice with vegetables." },
+            { "term": "bread", "definition": "I love fresh bread." },
+            { "term": "cheese", "definition": "She doesn't like cheese." },
+            { "term": "fruit", "definition": "We love fruit in summer." },
+            { "term": "vegetables", "definition": "He doesn't mind vegetables." }
+          ]
+        },
+        {
+          "heading": "Drinks",
+          "list": [
+            { "term": "coffee", "definition": "I love coffee in the morning." },
+            { "term": "tea", "definition": "She prefers tea to coffee." },
+            { "term": "water", "definition": "I would like a glass of water." },
+            { "term": "juice", "definition": "The children like orange juice." },
+            { "term": "milk", "definition": "He doesn't like milk." },
+            { "term": "wine", "definition": "They enjoy red wine." }
+          ]
+        },
+        {
+          "heading": "Music and free time",
+          "list": [
+            { "term": "pop music", "definition": "I love pop music." },
+            { "term": "rock music", "definition": "She doesn't like rock music." },
+            { "term": "classical music", "definition": "He enjoys classical music." },
+            { "term": "playing the guitar", "definition": "I love playing the guitar." },
+            { "term": "singing", "definition": "She loves singing in the shower." },
+            { "term": "dancing", "definition": "They enjoy dancing at parties." },
+            { "term": "watching films", "definition": "I like watching films at the weekend." },
+            { "term": "reading", "definition": "He loves reading before bed." }
+          ]
+        },
+        {
+          "heading": "Restaurant phrases",
+          "list": [
+            { "term": "I would like...", "definition": "I would like a table for two, please." },
+            { "term": "Can I have...?", "definition": "Can I have the menu, please?" },
+            { "term": "the bill", "definition": "Could we have the bill, please?" },
+            { "term": "delicious", "definition": "The food was delicious." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discovery",
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "I love reading books.",
+        "She likes dancing.",
+        "They hate waiting.",
+        "I would like a coffee, please.",
+        "Would you like to come with us?",
+        "He doesn't mind cooking.",
+        "We enjoy watching films.",
+        "I don't like getting up early."
+      ],
+      "questions": [
+        "In sentences 1, 2, 3, 6 and 7, what form of the verb comes after like/love/hate/enjoy/mind?",
+        "In sentence 4, what comes after 'would like'?",
+        "In sentence 5, what form of the verb comes after 'would like'?",
+        "In sentence 8, how do we make the negative?",
+        "What is the difference between 'I like coffee' and 'I would like a coffee'?"
+      ]
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "I love ___ to music.", "options": ["listen", "listening", "to listen", "listened"], "correct": 1, "explanation": "After love/like/hate we usually use the -ing form."},
+        {"prompt": "She likes ___ books.", "options": ["read", "reading", "to read", "reads"], "correct": 1, "explanation": "After 'likes' we use the -ing form."},
+        {"prompt": "They hate ___ up early.", "options": ["get", "getting", "to get", "got"], "correct": 1, "explanation": "After 'hate' we use -ing."},
+        {"prompt": "I ___ like a glass of water, please.", "options": ["would", "will", "am", "do"], "correct": 0, "explanation": "'Would like' is the polite form to ask for something."},
+        {"prompt": "Would you like ___ to the cinema?", "options": ["go", "going", "to go", "went"], "correct": 2, "explanation": "After 'would like' we use 'to + verb'."},
+        {"prompt": "He doesn't mind ___ for the bus.", "options": ["wait", "waiting", "to wait", "waited"], "correct": 1, "explanation": "After 'mind' we use -ing."},
+        {"prompt": "We enjoy ___ films at the weekend.", "options": ["watch", "watching", "to watch", "watched"], "correct": 1, "explanation": "After 'enjoy' we use -ing."},
+        {"prompt": "I don't like ___ up early.", "options": ["get", "getting", "to get", "got"], "correct": 1, "explanation": "After 'like' in negative we use -ing."},
+        {"prompt": "Do you like ___ football?", "options": ["play", "playing", "to play", "played"], "correct": 1, "explanation": "After 'like' in questions we use -ing."},
+        {"prompt": "She loves ___ in the sea.", "options": ["swim", "swimming", "to swim", "swam"], "correct": 1, "explanation": "After 'loves' we use -ing."}
+      ]
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompts": [
+        "Write 5 sentences about things you love, like, don't mind, dislike and hate.",
+        "Write a short paragraph (5 sentences) about your favourite food and drink. Use 'like', 'love' and 'would like'.",
+        "Imagine you are in a restaurant. Write a short dialogue using 'would like', 'can I have' and 'the bill'."
+      ]
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "I ___ reading mystery novels.", "options": ["love", "loves", "loving", "loved"], "correct": 0, "explanation": "With 'I' we use the base form 'love'."},
+        {"prompt": "She enjoys ___ in the park.", "options": ["run", "running", "to run", "ran"], "correct": 1, "explanation": "After 'enjoy' we use -ing."},
+        {"prompt": "I ___ like a cup of tea, please.", "options": ["would", "will", "am", "do"], "correct": 0, "explanation": "'Would like' is the polite form."},
+        {"prompt": "They hate ___ the housework.", "options": ["do", "doing", "to do", "did"], "correct": 1, "explanation": "After 'hate' we use -ing."},
+        {"prompt": "Would you like ___ with us?", "options": ["come", "coming", "to come", "came"], "correct": 2, "explanation": "After 'would like' we use 'to + verb'."},
+        {"prompt": "He doesn't ___ getting up early.", "options": ["like", "likes", "liking", "liked"], "correct": 0, "explanation": "After 'doesn't' we use the base form 'like'."},
+        {"prompt": "I ___ watching horror films.", "options": ["don't like", "doesn't like", "not like", "am not like"], "correct": 0, "explanation": "Negative: don't like + -ing."},
+        {"prompt": "Do you ___ playing tennis?", "options": ["like", "likes", "liking", "liked"], "correct": 0, "explanation": "Question: Do + subject + base form."},
+        {"prompt": "We ___ having dinner at restaurants.", "options": ["love", "loves", "loving", "loved"], "correct": 0, "explanation": "With 'we' we use 'love'."},
+        {"prompt": "She ___ to go shopping this afternoon.", "options": ["would like", "would likes", "would liking", "would liked"], "correct": 0, "explanation": "'Would like' does not change form."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Like / love / enjoy / hate / don't mind + verb-ing.",
+            "Would like + noun or 'to + verb' (NOT -ing).",
+            "Negative: don't / doesn't + like.",
+            "Questions: Do / Does + subject + like...?"
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'I like read'. Say 'I like reading'.",
+            "Do not use -ing after 'would like'. Say 'I would like to go'.",
+            "Do not say 'I am agree'. Say 'I agree'."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "I love...",
+            "I like...",
+            "I don't mind...",
+            "I hate...",
+            "I would like...",
+            "Would you like...?",
+            "Yes, please. / No, thank you."
+          ]
+        }
+      ]
+    }
   ]
 }

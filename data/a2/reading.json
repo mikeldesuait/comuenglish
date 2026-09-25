@@ -1,0 +1,238 @@
+{
+  "level": "a2",
+  "texts": [
+    {
+      "id": "a2-r1",
+      "type": "signs",
+      "title": "Public signs",
+      "instructions": "Look at the text in each question. What does it say? Choose the correct letter A, B or C.",
+      "questions": [
+        {
+          "sign": "NO PARKING",
+          "options": [
+            "You cannot park here",
+            "Parking is only for customers",
+            "You can park here for free"
+          ],
+          "correct": 0,
+          "explanation": "No parking means it is forbidden to park."
+        },
+        {
+          "sign": "CLOSED FOR LUNCH 12-2 PM",
+          "options": [
+            "The shop closes at 2 PM only",
+            "The shop is closed at 1 PM",
+            "The shop is open at 1 PM"
+          ],
+          "correct": 1,
+          "explanation": "Between 12 and 2 PM the shop is closed. At 1 PM it is closed."
+        },
+        {
+          "sign": "PLEASE DO NOT FEED THE ANIMALS",
+          "options": [
+            "You can feed the animals",
+            "Feeding is allowed only at night",
+            "You must not feed the animals"
+          ],
+          "correct": 2,
+          "explanation": "Do not feed means it is prohibited."
+        }
+      ]
+    },
+    {
+      "id": "a2-r2",
+      "type": "email",
+      "title": "An email from a friend",
+      "instructions": "Read the email and answer the questions. Choose A, B or C.",
+      "text": "Hi Sarah, How are you? I am writing to tell you about my weekend. On Saturday I went to the cinema with my brother. We saw a comedy and it was very funny. On Sunday it was my mother birthday, so we had lunch in a nice restaurant near the park. The food was delicious! Next weekend I am going to visit my grandparents in the countryside. I will take some photos and send them to you. Write back soon! Love, Emma",
+      "questions": [
+        {
+          "question": "What did Emma do on Saturday?",
+          "options": [
+            "She had lunch in a restaurant",
+            "She went to the cinema",
+            "She visited her grandparents"
+          ],
+          "correct": 1,
+          "explanation": "The email says: On Saturday I went to the cinema with my brother."
+        },
+        {
+          "question": "Why did the family go to a restaurant on Sunday?",
+          "options": [
+            "It was Emma birthday",
+            "They did not want to cook",
+            "It was her mother birthday"
+          ],
+          "correct": 2,
+          "explanation": "The email says: On Sunday it was my mother birthday, so we had lunch in a nice restaurant."
+        },
+        {
+          "question": "What is Emma going to do next weekend?",
+          "options": [
+            "Go to the cinema again",
+            "Have lunch with Sarah",
+            "Visit her grandparents"
+          ],
+          "correct": 2,
+          "explanation": "The email says: Next weekend I am going to visit my grandparents."
+        }
+      ]
+    },
+    {
+      "id": "a2-r3",
+      "type": "notice",
+      "title": "A notice at school",
+      "instructions": "Read the notice and answer the questions. Choose A, B or C.",
+      "text": "SCHOOL TRIP TO LONDON - Saturday 15th May. The bus leaves at 8:00 AM from the school entrance. Please arrive 15 minutes early. Bring a packed lunch and wear comfortable shoes. The trip costs 15 pounds. Pay at the school office before Wednesday. If you have any questions, speak to Mr. Brown in room 12.",
+      "questions": [
+        {
+          "question": "What time does the bus leave?",
+          "options": [
+            "8:00 AM",
+            "7:45 AM",
+            "8:15 AM"
+          ],
+          "correct": 0,
+          "explanation": "The notice says: The bus leaves at 8:00 AM."
+        },
+        {
+          "question": "What should students bring?",
+          "options": [
+            "A school uniform",
+            "A packed lunch",
+            "Money for lunch"
+          ],
+          "correct": 1,
+          "explanation": "The notice says: Bring a packed lunch."
+        },
+        {
+          "question": "When should students pay?",
+          "options": [
+            "After the trip",
+            "Before Wednesday",
+            "On Saturday 15th May"
+          ],
+          "correct": 1,
+          "explanation": "The notice says: Pay at the school office before Wednesday."
+        }
+      ]
+    },
+    {
+      "id": "a2-r4",
+      "type": "email",
+      "title": "An email about holidays",
+      "instructions": "Read the email and answer the questions. Choose A, B or C.",
+      "text": "Hi Emma,\n\nHow are you? I am on holiday in Spain with my family. The weather is sunny and hot. Yesterday, we went to the beach. I swam in the sea and my brother built a big sandcastle. In the evening, we ate paella at a restaurant. It was delicious!\n\nTomorrow, we are going to visit a castle in the mountains. I will take lots of photos.\n\nSee you soon,\nLucy",
+      "questions": [
+        {
+          "question": "Where is Lucy on holiday?",
+          "options": [
+            "In Spain",
+            "In Italy",
+            "In France"
+          ],
+          "correct": 0,
+          "explanation": "The email says 'I am on holiday in Spain with my family.'"
+        },
+        {
+          "question": "What did Lucy do yesterday?",
+          "options": [
+            "She visited a castle",
+            "She swam in the sea",
+            "She ate pizza"
+          ],
+          "correct": 1,
+          "explanation": "The email says 'Yesterday, we went to the beach. I swam in the sea.'"
+        },
+        {
+          "question": "What are they going to do tomorrow?",
+          "options": [
+            "Go to the beach",
+            "Eat paella",
+            "Visit a castle"
+          ],
+          "correct": 2,
+          "explanation": "The email says 'Tomorrow, we are going to visit a castle in the mountains.'"
+        }
+      ]
+    },
+    {
+      "id": "a2-r5",
+      "type": "letter",
+      "title": "A letter about a new school",
+      "instructions": "Read the letter and answer the questions. Choose A, B or C.",
+      "text": "Dear Tom,\n\nI started my new school last week. It is very big and I was nervous on the first day. My teacher, Mr. Jones, is very friendly. I have made two friends, Jack and Sarah. We play football at break time.\n\nMy favourite subject is science. We do experiments in the laboratory. I also like art, but I am not very good at drawing.\n\nWrite back soon,\nBen",
+      "questions": [
+        {
+          "question": "When did Ben start his new school?",
+          "options": [
+            "Last week",
+            "Last month",
+            "Yesterday"
+          ],
+          "correct": 0,
+          "explanation": "The letter says 'I started my new school last week.'"
+        },
+        {
+          "question": "What is Ben's favourite subject?",
+          "options": [
+            "Art",
+            "Science",
+            "Football"
+          ],
+          "correct": 1,
+          "explanation": "The letter says 'My favourite subject is science.'"
+        },
+        {
+          "question": "What does Ben do at break time?",
+          "options": [
+            "He does experiments",
+            "He draws pictures",
+            "He plays football"
+          ],
+          "correct": 2,
+          "explanation": "The letter says 'We play football at break time.'"
+        }
+      ]
+    },
+    {
+      "id": "a2-r6",
+      "type": "email",
+      "title": "An email about shopping",
+      "instructions": "Read the email and answer the questions. Choose A, B or C.",
+      "text": "Hi Mum,\n\nI am at the shopping centre with Kate. I want to buy a new jacket for winter. I saw a blue one in the shop window, but it was too expensive. Then I found a red one for £30. It is cheaper and I like the colour.\n\nKate bought a pair of shoes. They were on sale. We are going to have lunch at the café now.\n\nSee you later,\nAnna",
+      "questions": [
+        {
+          "question": "What does Anna want to buy?",
+          "options": [
+            "A pair of shoes",
+            "A jacket",
+            "A blue dress"
+          ],
+          "correct": 1,
+          "explanation": "The email says 'I want to buy a new jacket for winter.'"
+        },
+        {
+          "question": "Why didn't Anna buy the blue jacket?",
+          "options": [
+            "It was too expensive",
+            "It was too small",
+            "She didn't like the colour"
+          ],
+          "correct": 0,
+          "explanation": "The email says 'I saw a blue one in the shop window, but it was too expensive.'"
+        },
+        {
+          "question": "What did Kate buy?",
+          "options": [
+            "A jacket",
+            "A dress",
+            "Shoes"
+          ],
+          "correct": 2,
+          "explanation": "The email says 'Kate bought a pair of shoes.'"
+        }
+      ]
+    }
+  ]
+}

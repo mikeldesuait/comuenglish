@@ -27,6 +27,12 @@ export function renderRecorder(container, options) {
   stopBtn.style.marginLeft = "8px";
   wrapper.appendChild(stopBtn);
 
+  const statusMsg = document.createElement("span");
+  statusMsg.style.marginLeft = "12px";
+  statusMsg.style.fontWeight = "bold";
+  statusMsg.style.color = "#dc2626";
+  wrapper.appendChild(statusMsg);
+
   const playback = document.createElement("audio");
   playback.controls = true;
   playback.style.display = "none";
@@ -37,7 +43,7 @@ export function renderRecorder(container, options) {
   const slot = document.createElement("div");
   wrapper.appendChild(slot);
 
-  let mediaRecorder, chunks = [], timer;
+  let mediaRecorder, chunks = [], timer, countdownInterval;
 
   recBtn.addEventListener("click", async () => {
     try {
@@ -50,15 +56,32 @@ export function renderRecorder(container, options) {
         const blob = new Blob(chunks, { type: "audio/webm" });
         playback.src = URL.createObjectURL(blob);
         playback.style.display = "block";
+        recBtn.style.background = "";
+        recBtn.textContent = "Record";
+        statusMsg.textContent = "";
+        clearInterval(countdownInterval);
         const fb = document.createElement("div");
         fb.className = "feedback feedback--info";
-        fb.textContent = "Recording ready. Compare with the model answer.";
+        fb.textContent = "Recording ready. Listen to it and compare.";
         slot.appendChild(fb);
       };
 
       mediaRecorder.start();
       recBtn.disabled = true;
+      recBtn.style.background = "#dc2626";
+      recBtn.style.color = "#fff";
+      recBtn.textContent = "Recording...";
       stopBtn.disabled = false;
+
+      let remaining = seconds;
+      statusMsg.textContent = "0:" + String(remaining).padStart(2, "0") + " left";
+      countdownInterval = setInterval(() => {
+        remaining--;
+        if (remaining >= 0) {
+          statusMsg.textContent = "0:" + String(remaining).padStart(2, "0") + " left";
+        }
+      }, 1000);
+
       timer = setTimeout(() => stopBtn.click(), seconds * 1000);
     } catch (err) {
       const fb = document.createElement("div");
@@ -70,9 +93,11 @@ export function renderRecorder(container, options) {
 
   stopBtn.addEventListener("click", () => {
     clearTimeout(timer);
+    clearInterval(countdownInterval);
     if (mediaRecorder) mediaRecorder.stop();
     recBtn.disabled = false;
     stopBtn.disabled = true;
+    statusMsg.textContent = "";
   });
 
   container.appendChild(wrapper);

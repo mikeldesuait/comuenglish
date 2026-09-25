@@ -1,0 +1,13 @@
+{
+  "level": "a2",
+  "tasks": [
+    {
+      "id": "a2-w1",
+      "type": "email",
+      "title": "Email to a friend",
+      "minWords": 25,
+      "prompt": "You are going to a concert next weekend. Write an email to your friend Sam. In your email: say which concert you are going to, ask Sam to come with you, and tell Sam what time you will meet. Write 25 words or more.",
+      "sample": "Hi Sam, I am going to a rock concert next Saturday at the stadium. Would you like to come with me? Let me know and we can meet at 7 pm at the entrance. See you, Alex."
+    }
+  ]
+}

@@ -5,10 +5,46 @@
   "vocabulary": "Formality, recommendations, wishes",
   "function": "Express wishes, recommendations and demands",
   "phases": [
-    { "name": "Presentation", "type": "text", "content": "In this unit you will learn formal structures with the subjunctive and expressions like It is essential that, I would rather." },
-    { "name": "Discovery", "type": "text", "content": "Read these sentences. It is essential that he be informed. I would rather you did not smoke here. She insisted that we stay. Notice the base form of the verb after these structures." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "It is important that she ___ on time.", "options": ["is", "be", "was", "will be"], "correct": 1, "explanation": "Subjunctive uses the base form: be, not is." },
-    { "name": "Free practice", "type": "task", "prompt": "Write 3 formal recommendations for a job application using It is essential/important that." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "I would rather you ___ tell anyone.", "options": ["do not", "did not", "will not", "would not"], "correct": 1, "explanation": "I would rather + past simple for present/future wishes." }
+    {
+      "name": "Presentation",
+      "type": "text",
+      "content": "In this unit you will learn formal structures with the subjunctive and expressions like It is essential that, I would rather."
+    },
+    {
+      "name": "Discovery",
+      "type": "text",
+      "content": "Read these sentences. It is essential that he be informed. I would rather you did not smoke here. She insisted that we stay. Notice the base form of the verb after these structures."
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "prompt": "It is important that she ___ on time.",
+      "options": [
+        "is",
+        "be",
+        "was",
+        "will be"
+      ],
+      "correct": 1,
+      "explanation": "Subjunctive uses the base form: be, not is."
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompt": "Write 3 formal recommendations for a job application using It is essential/important that."
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "prompt": "I would rather you ___ tell anyone.",
+      "options": [
+        "do not",
+        "did not",
+        "will not",
+        "would not"
+      ],
+      "correct": 1,
+      "explanation": "I would rather + past simple for present/future wishes."
+    }
   ]
 }
