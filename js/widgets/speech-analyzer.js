@@ -176,7 +176,7 @@ export function renderSpeechAnalyzer(container, options) {
       const wordCount = text.split(/\\s+/).filter(w => w.length > 0).length;
       const wpm = Math.round((wordCount / seconds) * 60);
 
-      const sysPrompt = "You are a Cambridge English speaking examiner. Analyze the student spoken response (transcribed). Reply ONLY with valid JSON: { overall: number, fluency: number, vocabulary: number, grammar: number, coherence: number, strengths: [string], improvements: [string], feedback_es: string, better_version: string }. All numbers are 0-5. Overall is 0-20. better_version is a corrected and improved version of what the student said.";
+      const sysPrompt = "You are an English speaking examiner. Analyze the student spoken response (transcribed). Reply ONLY with valid JSON: { overall: number, fluency: number, vocabulary: number, grammar: number, coherence: number, strengths: [string], improvements: [string], feedback_es: string, better_version: string }. All numbers are 0-5. Overall is 0-20. better_version is a corrected and improved version of what the student said.";
 
       const userPrompt = "Level: " + level.toUpperCase() + "\\nPrompt: " + promptText + "\\nDuration: " + seconds + "s\\nWords spoken: " + wordCount + "\\nWords per minute: " + wpm + "\\nTranscript: " + text;
 

@@ -1,5 +1,5 @@
 // Backup system: export/import progress + auto-backup in IndexedDB.
-const STORAGE_KEY = "cambridge-prep-state-v1";
+const STORAGE_KEY = "comuenglish-state-v1";
 const AUTO_BACKUP_KEY = "comu-english-auto-backups";
 const BACKUP_INTERVAL_MS = 6 * 60 * 60 * 1000; // 6 horas
 const MAX_AUTO_BACKUPS = 5;

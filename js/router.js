@@ -9,10 +9,13 @@ import { renderToday } from "./views/today.js";
 import { renderHow } from "./views/how.js";
 import { renderProgress } from "./views/progress.js";
 import { renderOnboarding } from "./views/onboarding.js";
+import { renderLogin } from "./views/login.js";
+import { auth } from "./core/auth.js";
 import { openSettingsModal } from "./widgets/settings-modal.js";
 
 const routes = {
   today: renderToday,
+  login: renderLogin,
   how: renderHow,
   progress: renderProgress,
   home: renderHome,
@@ -44,6 +47,14 @@ export async function render() {
   if (shell) shell.style.gridTemplateColumns = "";
 
   const route = currentRoute;
+
+  // Proteger "today" (My Plan): requiere sesión
+  if (route === "today") {
+    const session = await auth.getSession();
+    if (!session) {
+      return navigate("login");
+    }
+  }
 
   const renderer = routes[route] || renderToday;
   view.innerHTML = "";

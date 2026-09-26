@@ -1,39 +1,55 @@
-// Cliente de la API de DeepSeek.
-import { loadApiKey } from "../core/storage.js";
+// Cliente de la API de DeepSeek a través de Edge Function de Supabase.
+// La API key real vive como secret en Supabase y NO se expone al navegador.
+import { supabase } from "./supabase.js";
 
-const DEEPSEEK_URL = "https://api.deepseek.com/chat/completions";
+const EDGE_URL = "https://uexnfoqglhgjovvchqcu.supabase.co/functions/v1/deepseek-proxy";
 
 export async function callDeepSeek(messages, options = {}) {
-  const apiKey = loadApiKey();
-  if (!apiKey) throw new Error("API Key no configurada. Ve a Ajustes.");
-
-  const body = {
-    model: options.model || "deepseek-chat",
-    messages,
-    stream: false,
-    temperature: options.temperature ?? 0.3,
-    max_tokens: options.maxTokens ?? 2000
-  };
-
-  if (options.jsonMode) {
-    body.response_format = { type: "json_object" };
+  // Obtener token del usuario logueado
+  const { data: { session } } = await supabase.auth.getSession();
+  if (!session) {
+    throw new Error("Debes iniciar sesión para usar esta función.");
   }
 
-  const response = await fetch(DEEPSEEK_URL, {
+  const body = {
+    messages,
+    options: {
+      model: options.model || "deepseek-chat",
+      temperature: options.temperature ?? 0.3,
+      maxTokens: options.maxTokens ?? 2000,
+      jsonMode: options.jsonMode || false
+    }
+  };
+
+  const response = await fetch(EDGE_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${apiKey}`
+      "Authorization": `Bearer ${session.access_token}`
     },
     body: JSON.stringify(body)
   });
 
-  if (response.status === 429) throw new Error("Demasiadas peticiones. Espera un momento.");
+  if (response.status === 401) {
+    throw new Error("Tu sesión ha caducado. Vuelve a iniciar sesión.");
+  }
+  if (response.status === 429) {
+    throw new Error("Demasiadas peticiones. Espera un momento.");
+  }
   if (!response.ok) {
-    const err = await response.text();
-    throw new Error(`DeepSeek error ${response.status}: ${err}`);
+    let errText = "";
+    try {
+      const errJson = await response.json();
+      errText = errJson.error || JSON.stringify(errJson);
+    } catch {
+      errText = await response.text();
+    }
+    throw new Error(`Error ${response.status}: ${errText}`);
   }
 
   const data = await response.json();
-  return data.choices[0].message.content;
+  if (data.error) {
+    throw new Error(data.error);
+  }
+  return data.content;
 }

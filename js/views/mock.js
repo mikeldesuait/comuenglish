@@ -1,7 +1,7 @@
 // Mock Exam view. Sectioned exam that simulates official papers.
 import { getState } from "../state.js";
 import { renderTimerWidget } from "../widgets/timer.js";
-import { toCambridgeScale, isPass } from "../core/scoring.js";
+import { toCefrScale, isPass } from "../core/scoring.js";
 
 const SECTION_WEIGHTS = {
   a2: { reading: 0.5, listening: 0.25, grammar: 0.25 },
@@ -358,7 +358,7 @@ function showFinalResults(view, examState) {
   });
 
   const percent = totalQuestions > 0 ? totalCorrect / totalQuestions : 0;
-  const scale = toCambridgeScale(level, percent);
+  const scale = toCefrScale(level, percent);
   const passed = isPass(level, scale);
 
   const thresholds = {

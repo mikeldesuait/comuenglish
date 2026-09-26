@@ -1,6 +1,7 @@
 // Estado global de la app. Persiste en localStorage.
+import { scheduleSaveToCloud, setCurrentUserId } from "./core/cloud.js";
 
-const STORAGE_KEY = "cambridge-prep-state-v1";
+const STORAGE_KEY = "comuenglish-state-v1";
 
 const defaultState = {
   level: "a2",
@@ -302,8 +303,19 @@ export function getUnitProgress(level, unitId) {
 }
 
 
+export function hydrateState(newState) {
+  state = { ...defaultState, ...newState };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  emit("state:change", state);
+}
+
+export function setStateUser(userId) {
+  setCurrentUserId(userId);
+}
+
 function persist() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  scheduleSaveToCloud(state);
 }
 
 const listeners = {};

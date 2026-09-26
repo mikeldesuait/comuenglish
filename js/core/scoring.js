@@ -1,4 +1,4 @@
-// Conversion de porcentaje de aciertos a Cambridge English Scale.
+// Conversion de porcentaje de aciertos a CEFR English Scale.
 
 const SCALE = {
   a2: { min: 100, pass: 120, max: 139 },
@@ -6,7 +6,7 @@ const SCALE = {
   b2: { min: 140, pass: 160, max: 179 }
 };
 
-export function toCambridgeScale(level, percent) {
+export function toCefrScale(level, percent) {
   const { min, max } = SCALE[level] || SCALE.a2;
   return Math.round(min + (max - min) * percent);
 }

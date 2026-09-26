@@ -1,5 +1,4 @@
-// Settings modal widget: DeepSeek key + backup system.
-import { saveApiKey, loadApiKey } from "../core/storage.js";
+// Settings modal widget: backups + account + logout.
 import {
   exportProgress,
   readBackupFile,
@@ -8,11 +7,10 @@ import {
   restoreAutoBackup,
   createAutoBackup
 } from "../core/backup.js";
+import { auth } from "../core/auth.js";
 
 export function initSettingsModal() {
   const modal = document.getElementById("settings-modal");
-  const keyInput = document.getElementById("deepseek-key");
-  const saveBtn = document.getElementById("save-key");
   const closeBtn = document.getElementById("close-settings");
   const exportBtn = document.getElementById("export-progress");
   const importBtn = document.getElementById("import-progress");
@@ -20,22 +18,6 @@ export function initSettingsModal() {
   const viewBackupsBtn = document.getElementById("view-backups");
 
   if (!modal) return;
-
-  const existing = loadApiKey();
-  if (existing && keyInput) keyInput.value = existing;
-
-  if (saveBtn && keyInput) {
-    saveBtn.addEventListener("click", () => {
-      const key = keyInput.value.trim();
-      if (key.startsWith("sk-")) {
-        saveApiKey(key);
-        alert("API Key saved");
-        modal.close();
-      } else {
-        alert("Invalid format. Must start with sk-");
-      }
-    });
-  }
 
   if (closeBtn) {
     closeBtn.addEventListener("click", () => modal.close());
@@ -137,3 +119,64 @@ export function openSettingsModal() {
   const modal = document.getElementById("settings-modal");
   if (modal) modal.showModal();
 }
+
+// ---------- Account UI + Logout ----------
+async function refreshAccountUI() {
+  const info = document.getElementById("account-info");
+  const btn  = document.getElementById("logout-btn");
+  if (!info || !btn) return;
+
+  try {
+    const user = await auth.getUser();
+    if (user) {
+      info.textContent = user.email || "(no email)";
+      btn.style.display = "inline-block";
+    } else {
+      info.textContent = "Not signed in.";
+      btn.style.display = "none";
+    }
+  } catch (e) {
+    info.textContent = "Not signed in.";
+    btn.style.display = "none";
+  }
+}
+
+// Refrescar cuando Supabase termina de cargar la sesión
+auth.onChange(() => refreshAccountUI());
+
+// Refrescar cada vez que se abre el modal
+const _origOpen = window.openSettingsModal;
+window.openSettingsModal = function() {
+  if (typeof _origOpen === "function") _origOpen.apply(this, arguments);
+  refreshAccountUI();
+  setTimeout(refreshAccountUI, 200);
+  setTimeout(refreshAccountUI, 600);
+};
+
+// Refrescar cuando el usuario abre el modal por otras vías
+document.addEventListener("click", (e) => {
+  const t = e.target;
+  if (t && (t.id === "open-settings" || t.closest?.("#open-settings"))) {
+    refreshAccountUI();
+    setTimeout(refreshAccountUI, 200);
+    setTimeout(refreshAccountUI, 600);
+  }
+});
+
+// Logout
+document.addEventListener("click", async (e) => {
+  if (e.target && e.target.id === "logout-btn") {
+    await auth.signOut();
+    const modal = document.getElementById("settings-modal");
+    if (modal && modal.close) modal.close();
+    window.location.hash = "#/home";
+    window.location.reload();
+  }
+});
+
+// Refrescar al arrancar
+document.addEventListener("DOMContentLoaded", () => {
+  refreshAccountUI();
+  setTimeout(refreshAccountUI, 500);
+  setTimeout(refreshAccountUI, 1500);
+});

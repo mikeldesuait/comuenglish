@@ -21,8 +21,6 @@ export function clear() {
   localStorage.clear();
 }
 
-const API_KEY_STORAGE = "cambridge-prep-deepseek-key";
-
-export function saveApiKey(key) { localStorage.setItem(API_KEY_STORAGE, key); }
-export function loadApiKey() { return localStorage.getItem(API_KEY_STORAGE); }
-export function clearApiKey() { localStorage.removeItem(API_KEY_STORAGE); }
+// (Las funciones saveApiKey/loadApiKey/clearApiKey se han eliminado.
+// La API key de DeepSeek ahora vive como secret en Supabase
+// y se usa a través de la Edge Function deepseek-proxy.)

@@ -1,6 +1,6 @@
-// Progress bar and Cambridge Scale widget.
+// Progress bar and CEFR Scale widget.
 import { getState } from "../state.js";
-import { toCambridgeScale } from "../core/scoring.js";
+import { toCefrScale } from "../core/scoring.js";
 
 export function renderProgress() {
   const { level, progress } = getState();
@@ -8,16 +8,16 @@ export function renderProgress() {
   const done = Object.values(units).filter(u => u.completed).length;
   const total = Object.keys(units).length || 1;
   const percent = Math.round((done / total) * 100);
-  const score = toCambridgeScale(level, percent / 100);
+  const score = toCefrScale(level, percent / 100);
 
   setTimeout(() => {
     const fill = document.getElementById("global-progress");
     const label = document.getElementById("progress-label");
-    const scale = document.getElementById("cambridge-score");
+    const scale = document.getElementById("cefr-score");
     if (fill) fill.style.width = percent + "%";
     if (label) label.textContent = percent + "%";
     if (scale) scale.textContent = score;
   }, 0);
 
-  return percent + "% - Cambridge Scale: " + score;
+  return percent + "% - CEFR Scale: " + score;
 }
