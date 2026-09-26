@@ -70,13 +70,39 @@
 
   </div>
 
-  <dialog id="settings-modal" class="modal">
-    <h2 class="modal__title">DeepSeek Settings</h2>
-    <label class="modal__label" for="deepseek-key">API Key</label>
-    <input class="modal__input" type="password" id="deepseek-key" placeholder="sk-...">
-    <p class="modal__hint">The key is stored only in this browser.</p>
-    <div class="modal__actions">
-      <button class="btn btn--primary" id="save-key">Save</button>
+  <dialog id="settings-modal" class="modal" style="max-width: 560px;">
+    <h2 class="modal__title">Settings</h2>
+
+    <div style="margin-bottom: 24px;">
+      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 8px; color: #0f172a;">DeepSeek API Key</h3>
+      <label class="modal__label" for="deepseek-key">API Key</label>
+      <input class="modal__input" type="password" id="deepseek-key" placeholder="sk-...">
+      <p class="modal__hint">The key is stored only in this browser.</p>
+      <div class="modal__actions">
+        <button class="btn btn--primary" id="save-key">Save key</button>
+      </div>
+    </div>
+
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-bottom: 20px;">
+      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">Export progress</h3>
+      <p style="font-size: .82rem; color: #64748b; margin-bottom: 12px;">Download a backup file with all your progress.</p>
+      <button class="btn btn--primary" id="export-progress">Export progress</button>
+    </div>
+
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-bottom: 20px;">
+      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">Import progress</h3>
+      <p style="font-size: .82rem; color: #64748b; margin-bottom: 12px;">Load a backup file. This will replace your current progress.</p>
+      <input type="file" id="import-progress-file" accept=".json" style="display: none;">
+      <button class="btn btn--ghost" id="import-progress">Import progress</button>
+    </div>
+
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 20px;">
+      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">Auto-backups</h3>
+      <p style="font-size: .82rem; color: #64748b; margin-bottom: 12px;">Automatic backups saved every 6 hours.</p>
+      <button class="btn btn--ghost" id="view-backups">View backups</button>
+    </div>
+
+    <div class="modal__actions" style="margin-top: 24px;">
       <button class="btn btn--ghost" id="close-settings">Close</button>
     </div>
   </dialog>
