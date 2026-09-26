@@ -286,17 +286,25 @@ export async function generateCalendar(level, examDate, dailyMinutes, daysPerWee
   const endDate = new Date(examDate);
   endDate.setHours(0, 0, 0, 0);
 
+  const allowedDays = {
+    7: [0, 1, 2, 3, 4, 5, 6],
+    6: [1, 2, 3, 4, 5, 6],
+    5: [1, 2, 3, 4, 5],
+    4: [1, 2, 3, 4],
+    3: [1, 2, 3],
+    2: [2, 4],
+    1: [3]
+  };
+  const allowed = allowedDays[daysPerWeek] || allowedDays[5];
+
   const allDays = [];
   const cursor = new Date(today);
   let isFirstDay = true;
   while (cursor <= endDate) {
     const dayOfWeek = cursor.getDay();
-    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
-    let includeDay = true;
-    if (daysPerWeek < 6 && isWeekend) includeDay = false;
-    if (daysPerWeek < 5 && dayOfWeek === 0) includeDay = false;
+    let includeDay = allowed.includes(dayOfWeek);
 
-    // Siempre incluir el primer dia (hoy), aunque sea finde
+    // Siempre incluir el primer dia (hoy), aunque no este en allowedDays
     if (isFirstDay) includeDay = true;
 
     if (includeDay) {
@@ -377,15 +385,32 @@ export function getStudyDaysBetween(startDate, endDate, daysPerWeek) {
   const end = new Date(endDate);
   end.setHours(0, 0, 0, 0);
 
+  // Dias preferidos segun daysPerWeek (prioridad: lunes-viernes, luego sabado, luego domingo)
+  // 7 -> [0,1,2,3,4,5,6]
+  // 6 -> [1,2,3,4,5,6]   (quita domingo)
+  // 5 -> [1,2,3,4,5]     (quita fin de semana)
+  // 4 -> [1,2,3,4]       (quita fin de semana + viernes)
+  // 3 -> [1,2,3]         (quita fin de semana + jueves y viernes)
+  const allowedDays = {
+    7: [0, 1, 2, 3, 4, 5, 6],
+    6: [1, 2, 3, 4, 5, 6],
+    5: [1, 2, 3, 4, 5],
+    4: [1, 2, 3, 4],
+    3: [1, 2, 3],
+    2: [2, 4],
+    1: [3]
+  };
+
+  const allowed = allowedDays[daysPerWeek] || allowedDays[5];
+
   while (cursor <= end) {
     const dayOfWeek = cursor.getDay();
-    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
-
-    let include = true;
-    if (daysPerWeek < 6 && isWeekend) include = false;
-    if (daysPerWeek < 5 && dayOfWeek === 0) include = false;
-
-    if (include) allDays.push(cursor.toISOString().slice(0, 10));
+    if (allowed.includes(dayOfWeek)) {
+      const yyyy = cursor.getFullYear();
+      const mm = String(cursor.getMonth() + 1).padStart(2, "0");
+      const dd = String(cursor.getDate()).padStart(2, "0");
+      allDays.push(yyyy + "-" + mm + "-" + dd);
+    }
     cursor.setDate(cursor.getDate() + 1);
   }
   return allDays;
