@@ -45,6 +45,7 @@ export function renderOnboarding(view) {
   form.appendChild(levelLabel);
 
   const levelSelect = document.createElement("select");
+  levelSelect.id = "onboarding-level-select";
   levelSelect.style.padding = "8px";
   levelSelect.style.borderRadius = "8px";
   levelSelect.style.border = "1px solid #e2e8f0";
