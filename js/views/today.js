@@ -279,6 +279,89 @@ export async function renderToday(view) {
 
   view.appendChild(progressBox);
 
+  // Si el dia esta completo, mostrar opciones para seguir
+  if (pct === 100 && dayData.tasks.length > 0) {
+    const extraBox = document.createElement("div");
+    extraBox.style.marginTop = "20px";
+    extraBox.style.padding = "20px";
+    extraBox.style.background = "#fff7ed";
+    extraBox.style.border = "2px solid #fed7aa";
+    extraBox.style.borderRadius = "12px";
+
+    const extraTitle = document.createElement("div");
+    extraTitle.textContent = "Want to do more?";
+    extraTitle.style.fontSize = "1rem";
+    extraTitle.style.fontWeight = "700";
+    extraTitle.style.color = "#0f172a";
+    extraTitle.style.marginBottom = "4px";
+    extraBox.appendChild(extraTitle);
+
+    const extraSub = document.createElement("div");
+    extraSub.textContent = "Keep your momentum going. Your plan adapts to your pace.";
+    extraSub.style.fontSize = ".85rem";
+    extraSub.style.color = "#64748b";
+    extraSub.style.marginBottom = "16px";
+    extraBox.appendChild(extraSub);
+
+    const extraButtons = document.createElement("div");
+    extraButtons.style.display = "flex";
+    extraButtons.style.gap = "10px";
+    extraButtons.style.flexWrap = "wrap";
+
+    // Boton 1: Study ahead (ir a Fundamentals para seguir con el siguiente contenido)
+    const aheadBtn = document.createElement("button");
+    aheadBtn.textContent = "📖 Study ahead →";
+    aheadBtn.style.padding = "10px 20px";
+    aheadBtn.style.background = "#f97316";
+    aheadBtn.style.color = "#fff";
+    aheadBtn.style.border = "none";
+    aheadBtn.style.borderRadius = "8px";
+    aheadBtn.style.fontSize = ".9rem";
+    aheadBtn.style.fontWeight = "700";
+    aheadBtn.style.cursor = "pointer";
+    aheadBtn.style.transition = "all .15s";
+    aheadBtn.addEventListener("mouseenter", () => aheadBtn.style.background = "#ea580c");
+    aheadBtn.addEventListener("mouseleave", () => aheadBtn.style.background = "#f97316");
+    aheadBtn.addEventListener("click", () => navigate("fundamentals"));
+    extraButtons.appendChild(aheadBtn);
+
+    // Boton 2: Review (ir a repasar los modulos)
+    const reviewBtn = document.createElement("button");
+    reviewBtn.textContent = "🔄 Review";
+    reviewBtn.style.padding = "10px 20px";
+    reviewBtn.style.background = "#fff";
+    reviewBtn.style.color = "#0f172a";
+    reviewBtn.style.border = "1px solid #cbd5e1";
+    reviewBtn.style.borderRadius = "8px";
+    reviewBtn.style.fontSize = ".9rem";
+    reviewBtn.style.fontWeight = "600";
+    reviewBtn.style.cursor = "pointer";
+    reviewBtn.style.transition = "all .15s";
+    reviewBtn.addEventListener("mouseenter", () => {
+      reviewBtn.style.borderColor = "#f97316";
+      reviewBtn.style.color = "#c2410c";
+    });
+    reviewBtn.addEventListener("mouseleave", () => {
+      reviewBtn.style.borderColor = "#cbd5e1";
+      reviewBtn.style.color = "#0f172a";
+    });
+    reviewBtn.addEventListener("click", () => navigate("progress"));
+    extraButtons.appendChild(reviewBtn);
+
+    extraBox.appendChild(extraButtons);
+
+    // Mensaje de proxima tarea
+    const tomorrowMsg = document.createElement("div");
+    tomorrowMsg.style.marginTop = "14px";
+    tomorrowMsg.style.fontSize = ".8rem";
+    tomorrowMsg.style.color = "#64748b";
+    tomorrowMsg.style.fontStyle = "italic";
+    tomorrowMsg.textContent = "Or relax. Your next task is scheduled for tomorrow.";
+    extraBox.appendChild(tomorrowMsg);
+
+    view.appendChild(extraBox);
+  }
+
   // Boton unico al final (discreto)
   const actions = document.createElement("div");
   actions.style.marginTop = "24px";

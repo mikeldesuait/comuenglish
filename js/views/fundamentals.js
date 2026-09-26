@@ -1,5 +1,5 @@
 // Fundamentals module view. Reads units from data/{level}/units.json.
-import { getState, setState, markUnit, getProgress, markCalendarTaskCompleted, logDailyTask, getCalendar } from "../state.js";
+import { getState, setState, markUnit, getProgress, markCalendarTaskCompleted, logDailyTask, getCalendar, markPhaseDone, getUnitPhases, isPhaseDone, getUnitProgress } from "../state.js";
 import { showTimeTrackerModal } from "../widgets/time-tracker.js";
 import { renderExercise } from "../widgets/exercise.js";
 
@@ -102,6 +102,41 @@ async function openUnit(view, unit) {
     meta.textContent = "📖 " + (lesson.grammar || "") + " · 📝 " + (lesson.vocabulary || "");
     header.appendChild(meta);
 
+    // Barra de progreso de fases
+    const progress = getUnitProgress(level, unit.id);
+    const progressBar = document.createElement("div");
+    progressBar.style.marginTop = "12px";
+    progressBar.style.background = "rgba(255,255,255,0.15)";
+    progressBar.style.borderRadius = "6px";
+    progressBar.style.padding = "8px 12px";
+    progressBar.style.display = "flex";
+    progressBar.style.alignItems = "center";
+    progressBar.style.gap = "10px";
+
+    const progressLabel = document.createElement("div");
+    progressLabel.style.fontSize = ".75rem";
+    progressLabel.style.fontWeight = "700";
+    progressLabel.style.color = "#fff";
+    progressLabel.textContent = progress.done + "/" + progress.total + " phases";
+    progressBar.appendChild(progressLabel);
+
+    const progressTrack = document.createElement("div");
+    progressTrack.style.flex = "1";
+    progressTrack.style.height = "6px";
+    progressTrack.style.background = "rgba(255,255,255,0.2)";
+    progressTrack.style.borderRadius = "3px";
+    progressTrack.style.overflow = "hidden";
+
+    const progressFill = document.createElement("div");
+    progressFill.style.height = "100%";
+    progressFill.style.width = progress.percent + "%";
+    progressFill.style.background = "#fff";
+    progressFill.style.transition = "width .3s";
+    progressTrack.appendChild(progressFill);
+    progressBar.appendChild(progressTrack);
+
+    header.appendChild(progressBar);
+
     view.appendChild(header);
 
     // Phase nav
@@ -116,7 +151,7 @@ async function openUnit(view, unit) {
       btn.addEventListener("click", () => {
         nav.querySelectorAll("button").forEach(b => b.classList.remove("is-active"));
         btn.classList.add("is-active");
-        renderPhaseContent(content, p);
+        renderPhaseContent(content, p, unit.id, i);
       });
       nav.appendChild(btn);
     });
@@ -124,36 +159,8 @@ async function openUnit(view, unit) {
     view.appendChild(nav);
     view.appendChild(content);
 
-    renderPhaseContent(content, lesson.phases[0]);
+    renderPhaseContent(content, lesson.phases[0], unit.id, 0);
 
-    // Boton para marcar la unidad como completada
-    const isCompleted = isUnitCompleted(unit.id);
-    const markBtn = document.createElement("button");
-    markBtn.className = isCompleted ? "btn btn--ghost" : "btn btn--primary";
-    markBtn.textContent = isCompleted ? "✅ Unit completed" : "Mark unit as completed";
-    markBtn.style.marginTop = "24px";
-    markBtn.style.padding = "12px 24px";
-    markBtn.style.fontSize = "1rem";
-    markBtn.style.fontWeight = "bold";
-    markBtn.disabled = isCompleted;
-
-    if (!isCompleted) {
-      markBtn.addEventListener("click", () => {
-        showTimeTrackerModal({
-          itemId: unit.id,
-          itemType: "fundamentals",
-          itemLabel: unit.title,
-          onComplete: (minutes) => {
-            markUnitCompleted(unit.id);
-            markBtn.textContent = "✅ Unit completed (" + minutes + " min)";
-            markBtn.className = "btn btn--ghost";
-            markBtn.disabled = true;
-          }
-        });
-      });
-    }
-
-    view.appendChild(markBtn);
   } catch (err) {
     loading.textContent = "Error: " + err.message;
     loading.className = "feedback feedback--wrong";
@@ -182,7 +189,7 @@ function isUnitCompleted(unitId) {
   return progress.units && progress.units[unitId] && progress.units[unitId].completed;
 }
 
-function renderPhaseContent(container, phase) {
+function renderPhaseContent(container, phase, unitId, phaseIndex) {
   container.innerHTML = "";
 
   if (phase.type === "exercise") {
@@ -279,6 +286,76 @@ function renderPhaseContent(container, phase) {
       ta.placeholder = "Write your answer here...";
       container.appendChild(ta);
     });
+  }
+
+  // Boton "Mark this phase as done"
+  if (unitId !== undefined && phaseIndex !== undefined) {
+    const { level } = getState();
+    const isDone = isPhaseDone(level, unitId, phaseIndex);
+
+    const btnContainer = document.createElement("div");
+    btnContainer.style.marginTop = "24px";
+    btnContainer.style.paddingTop = "20px";
+    btnContainer.style.borderTop = "1px solid #e2e8f0";
+    btnContainer.style.textAlign = "center";
+
+    if (isDone) {
+      const doneLabel = document.createElement("div");
+      doneLabel.textContent = "✅ Phase completed";
+      doneLabel.style.color = "#10b981";
+      doneLabel.style.fontWeight = "700";
+      doneLabel.style.fontSize = "1rem";
+      btnContainer.appendChild(doneLabel);
+    } else {
+      const markBtn = document.createElement("button");
+      markBtn.textContent = "Mark this phase as done";
+      markBtn.style.padding = "12px 28px";
+      markBtn.style.background = "#f97316";
+      markBtn.style.color = "#fff";
+      markBtn.style.border = "none";
+      markBtn.style.borderRadius = "999px";
+      markBtn.style.fontSize = ".95rem";
+      markBtn.style.fontWeight = "700";
+      markBtn.style.cursor = "pointer";
+      markBtn.style.transition = "all .15s";
+
+      markBtn.addEventListener("mouseenter", () => {
+        markBtn.style.background = "#ea580c";
+        markBtn.style.transform = "scale(1.03)";
+      });
+      markBtn.addEventListener("mouseleave", () => {
+        markBtn.style.background = "#f97316";
+        markBtn.style.transform = "scale(1)";
+      });
+
+      markBtn.addEventListener("click", () => {
+        const completed = markPhaseDone(level, unitId, phaseIndex);
+        if (completed) {
+          // Unidad completada: abrir modal de tiempo
+          showTimeTrackerModal({
+            itemId: unitId,
+            itemType: "fundamentals",
+            itemLabel: "Unit completed",
+            onComplete: (minutes) => {
+              // El modal ya guarda el tiempo. Aqui solo actualizamos el calendario.
+              const today = new Date().toISOString().slice(0, 10);
+              const calendar = getCalendar();
+              if (calendar[today]) {
+                markCalendarTaskCompleted(today, unitId);
+                logDailyTask(today, unitId, true);
+              }
+              renderPhaseContent(container, phase, unitId, phaseIndex);
+            }
+          });
+        } else {
+          renderPhaseContent(container, phase, unitId, phaseIndex);
+        }
+      });
+
+      btnContainer.appendChild(markBtn);
+    }
+
+    container.appendChild(btnContainer);
   }
 }
 

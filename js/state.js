@@ -12,6 +12,11 @@ const defaultState = {
     b1: { units: {}, reading: {}, listening: {}, writing: {}, speaking: {}, score: 0 },
     b2: { units: {}, reading: {}, listening: {}, writing: {}, speaking: {}, score: 0 }
   },
+  phases: {
+    a2: {},
+    b1: {},
+    b2: {}
+  },
   mistakes: [],
   lastVisit: null,
   plan: {
@@ -261,6 +266,41 @@ export function resetCalendar() {
   persist();
   emit("calendar:change", state.calendar);
 }
+
+
+export function markPhaseDone(level, unitId, phaseIndex) {
+  if (!state.phases[level]) state.phases[level] = {};
+  if (!state.phases[level][unitId]) state.phases[level][unitId] = [];
+  if (!state.phases[level][unitId].includes(phaseIndex)) {
+    state.phases[level][unitId].push(phaseIndex);
+  }
+  persist();
+  emit("phases:change", state.phases);
+
+  // Si todas las fases estan hechas, marcar la unidad como completada
+  const totalPhases = 7;
+  if (state.phases[level][unitId].length >= totalPhases) {
+    markUnit(level, unitId, { completed: true, date: Date.now() });
+    return true; // Unidad completada
+  }
+  return false; // Aun no
+}
+
+export function getUnitPhases(level, unitId) {
+  if (!state.phases[level] || !state.phases[level][unitId]) return [];
+  return state.phases[level][unitId];
+}
+
+export function isPhaseDone(level, unitId, phaseIndex) {
+  if (!state.phases[level] || !state.phases[level][unitId]) return false;
+  return state.phases[level][unitId].includes(phaseIndex);
+}
+
+export function getUnitProgress(level, unitId) {
+  const done = getUnitPhases(level, unitId).length;
+  return { done: done, total: 7, percent: Math.round((done / 7) * 100) };
+}
+
 
 function persist() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
