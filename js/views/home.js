@@ -4,9 +4,9 @@ import { toCambridgeScale } from "../core/scoring.js";
 
 const LEVEL_INFO = {
   a2: {
-    name: "A2 Key",
+    name: "A2 Elementary",
     tagline: "Your first step to English fluency",
-    description: "The A2 Key (also called KET) is the basic level Cambridge English exam. It shows that you can use English to communicate in simple everyday situations.",
+    description: "The A2 Elementary level is the basic level exam. It shows that you can use English to communicate in simple everyday situations.",
     structure: [
       ["Reading & Writing", "50%", "1 hour"],
       ["Listening", "25%", "30 minutes"],
@@ -28,9 +28,9 @@ const LEVEL_INFO = {
     ]
   },
   b1: {
-    name: "B1 Preliminary",
+    name: "B1 Intermediate",
     tagline: "Speak with confidence in everyday situations",
-    description: "The B1 Preliminary (also called PET) shows that you can use English to deal with everyday situations and express opinions on familiar topics.",
+    description: "The B1 Intermediate level shows that you can use English to deal with everyday situations and express opinions on familiar topics.",
     structure: [
       ["Reading", "25%", "45 minutes"],
       ["Writing", "25%", "45 minutes"],
@@ -53,9 +53,9 @@ const LEVEL_INFO = {
     ]
   },
   b2: {
-    name: "B2 First",
+    name: "B2 Upper Intermediate",
     tagline: "Use English confidently in complex situations",
-    description: "The B2 First (also called FCE) shows that you can use English confidently in complex situations, both personal and professional.",
+    description: "The B2 Upper Intermediate level shows that you can use English confidently in complex situations, both personal and professional.",
     structure: [
       ["Reading & Use of English", "40%", "1h 15min"],
       ["Writing", "20%", "1h 20min"],

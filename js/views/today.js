@@ -1,9 +1,15 @@
 // Today: daily study plan with tasks and streak.
-import { getState, getPlan, getDailyLog, getStreak, logDailyTask } from "../state.js";
-import { daysBetween, todayKey } from "../core/planner.js";
+import { getState, getPlan, getDailyLog, getStreak, logDailyTask, getProgress } from "../state.js";
+import { daysBetween, todayKey, nextUncompletedUnit, nextUncompletedReading, nextUncompletedListening, nextUncompletedWriting, nextUncompletedSpeaking } from "../core/planner.js";
 import { navigate } from "../router.js";
 
-export function renderToday(view) {
+export async function renderToday(view) {
+  // Hide sidebar
+  const sidebar = document.getElementById("sidebar");
+  if (sidebar) sidebar.style.display = "none";
+  const shell = document.querySelector(".app-shell");
+  if (shell) shell.style.gridTemplateColumns = "1fr";
+
   const plan = getPlan();
   const state = getState();
 
@@ -83,46 +89,107 @@ export function renderToday(view) {
 
   // Generate tasks based on plan
   const itemsPerDay = Math.max(2, Math.floor(plan.dailyMinutes / 10));
-  const tasks = generateTodayTasks(state.level, itemsPerDay);
-
-  const tasksBox = document.createElement("div");
-  tasksBox.className = "card-grid";
+  const tasks = await generateTodayTasksFromProgress(state.level, itemsPerDay);
 
   let completedCount = 0;
 
+  // Group tasks by module
+  const moduleMap = {
+    "grammar": { name: "Fundamentals", icon: "📖", color: "#2563eb" },
+    "reading": { name: "Reading", icon: "📚", color: "#7c3aed" },
+    "listening": { name: "Listening", icon: "🎧", color: "#0891b2" },
+    "writing": { name: "Writing", icon: "✍️", color: "#ea580c" },
+    "speaking": { name: "Speaking", icon: "🗣️", color: "#16a34a" }
+  };
+
+  const grouped = {};
   tasks.forEach(task => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.style.cursor = "pointer";
-    card.style.display = "flex";
-    card.style.alignItems = "center";
-    card.style.gap = "12px";
-
-    const isDone = dailyLog[task.id] || false;
-    if (isDone) completedCount++;
-
-    card.innerHTML =
-      "<div style='font-size:1.8rem'>" + task.icon + "</div>" +
-      "<div style='flex:1'>" +
-        "<div style='font-weight:600; font-size:.9rem'>" + task.label + "</div>" +
-        "<div style='font-size:.75rem; color:#64748b; margin-top:2px'>" + task.description + "</div>" +
-      "</div>" +
-      "<div style='font-size:1.3rem'>" + (isDone ? "✅" : "⏳") + "</div>";
-
-    if (isDone) {
-      card.style.background = "#f0fdf4";
-      card.style.borderColor = "#16a34a";
-    }
-
-    card.addEventListener("click", () => {
-      logDailyTask(today, task.id, !isDone);
-      renderToday(view);
-    });
-
-    tasksBox.appendChild(card);
+    const moduleKey = task.id.split("-")[0];
+    if (!grouped[moduleKey]) grouped[moduleKey] = [];
+    grouped[moduleKey].push(task);
   });
 
-  view.appendChild(tasksBox);
+  // Grid de tarjetas (una por modulo)
+  const modulesGrid = document.createElement("div");
+  modulesGrid.style.display = "grid";
+  modulesGrid.style.gridTemplateColumns = "repeat(auto-fill, minmax(280px, 1fr))";
+  modulesGrid.style.gap = "14px";
+  modulesGrid.style.marginTop = "12px";
+
+  Object.keys(grouped).forEach(moduleKey => {
+    const mod = moduleMap[moduleKey] || { name: moduleKey, icon: "📌", color: "#64748b" };
+
+    // Tarjeta del modulo
+    const moduleCard = document.createElement("div");
+    moduleCard.style.border = "1px solid #e2e8f0";
+    moduleCard.style.borderRadius = "12px";
+    moduleCard.style.background = "#fff";
+    moduleCard.style.overflow = "hidden";
+    moduleCard.style.transition = "box-shadow .15s, transform .15s";
+
+    moduleCard.addEventListener("mouseenter", () => {
+      moduleCard.style.boxShadow = "0 8px 20px rgba(0,0,0,.08)";
+      moduleCard.style.transform = "translateY(-2px)";
+    });
+    moduleCard.addEventListener("mouseleave", () => {
+      moduleCard.style.boxShadow = "none";
+      moduleCard.style.transform = "translateY(0)";
+    });
+
+    // Cabecera de la tarjeta (color del modulo)
+    const header = document.createElement("div");
+    header.style.background = mod.color;
+    header.style.color = "#fff";
+    header.style.padding = "10px 14px";
+    header.style.fontWeight = "bold";
+    header.style.fontSize = ".85rem";
+    header.style.display = "flex";
+    header.style.alignItems = "center";
+    header.style.gap = "8px";
+    header.innerHTML = "<span style='font-size:1.1rem'>" + mod.icon + "</span><span>" + mod.name.toUpperCase() + "</span>";
+    moduleCard.appendChild(header);
+
+    // Tareas dentro de la tarjeta
+    const tasksContainer = document.createElement("div");
+    tasksContainer.style.padding = "12px";
+    tasksContainer.style.display = "flex";
+    tasksContainer.style.flexDirection = "column";
+    tasksContainer.style.gap = "8px";
+
+    grouped[moduleKey].forEach(task => {
+      const taskRow = document.createElement("div");
+      taskRow.style.display = "flex";
+      taskRow.style.alignItems = "center";
+      taskRow.style.gap = "10px";
+      taskRow.style.padding = "10px 12px";
+      taskRow.style.border = "1px solid #e2e8f0";
+      taskRow.style.borderRadius = "8px";
+      taskRow.style.background = "#f8fafc";
+
+      const isDone = dailyLog[task.id] || false;
+      if (isDone) completedCount++;
+
+      taskRow.innerHTML =
+        "<div style='font-size:1.3rem'>" + task.icon + "</div>" +
+        "<div style='flex:1; min-width:0'>" +
+          "<div style='font-weight:600; font-size:.82rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis'>" + task.label + "</div>" +
+          "<div style='font-size:.7rem; color:#64748b; margin-top:2px'>" + task.description + "</div>" +
+        "</div>" +
+        "<div style='font-size:1.1rem'>" + (isDone ? "✅" : "⏳") + "</div>";
+
+      if (isDone) {
+        taskRow.style.background = "#f0fdf4";
+        taskRow.style.borderColor = "#16a34a";
+      }
+
+      tasksContainer.appendChild(taskRow);
+    });
+
+    moduleCard.appendChild(tasksContainer);
+    modulesGrid.appendChild(moduleCard);
+  });
+
+  view.appendChild(modulesGrid);
 
   // Progress of the day
   const progressBox = document.createElement("div");
@@ -189,70 +256,77 @@ export function renderToday(view) {
   view.appendChild(actions);
 }
 
-function generateTodayTasks(level, count) {
-  const pools = {
-    a2: {
-      grammar: [
-        "Unit 1 - Introducing yourself",
-        "Unit 2 - Daily routines",
-        "Unit 3 - Here and now",
-        "Unit 4 - Past and storytelling",
-        "Unit 5 - Plans and future"
-      ],
-      comprehension: [
-        "Reading - Public signs",
-        "Reading - An email from a friend",
-        "Listening - At the train station",
-        "Listening - A phone call"
-      ],
-      production: [
-        "Writing - Email to a friend",
-        "Writing - A short story",
-        "Speaking - Personal information",
-        "Speaking - Your daily routine"
-      ]
-    }
-  };
-
-  const pool = pools[level] || pools.a2;
+async function generateTodayTasksFromProgress(level, count) {
+  const progress = getProgress(level);
   const tasks = [];
 
-  // 1 gramatica
-  tasks.push({
-    id: "grammar-1",
-    icon: "📖",
-    label: pool.grammar[0],
-    description: "Complete the full unit with exercises"
-  });
+  try {
+    const unitsRes = await fetch("data/" + level + "/units.json");
+    const unitsData = await unitsRes.json();
+    const nextUnit = nextUncompletedUnit(unitsData.units, progress);
+    if (nextUnit && count >= 1) {
+      tasks.push({
+        id: "grammar-" + nextUnit.id,
+        icon: "📖",
+        label: nextUnit.title,
+        description: "Complete the full unit with exercises",
+        route: "fundamentals"
+      });
+    }
 
-  // 1 comprehension
-  if (count >= 2) {
-    tasks.push({
-      id: "comprehension-1",
-      icon: "📚",
-      label: pool.comprehension[0],
-      description: "Read or listen and answer the questions"
-    });
-  }
+    const readRes = await fetch("data/" + level + "/reading.json");
+    const readData = await readRes.json();
+    const nextReading = nextUncompletedReading(readData.texts, progress);
+    if (nextReading && count >= 2) {
+      tasks.push({
+        id: "reading-" + nextReading.id,
+        icon: "📚",
+        label: "Reading " + (readData.texts.indexOf(nextReading) + 1) + " - " + nextReading.title,
+        description: "Read and answer the questions",
+        route: "comprehension"
+      });
+    }
 
-  // 1 production
-  if (count >= 3) {
-    tasks.push({
-      id: "production-1",
-      icon: "✍️",
-      label: pool.production[0],
-      description: "Write or record your answer"
-    });
-  }
+    const listenRes = await fetch("data/" + level + "/listening.json");
+    const listenData = await listenRes.json();
+    const nextListening = nextUncompletedListening(listenData.audios, progress);
+    if (nextListening && count >= 3) {
+      tasks.push({
+        id: "listening-" + nextListening.id,
+        icon: "🎧",
+        label: "Listening " + (listenData.audios.indexOf(nextListening) + 1) + " - " + nextListening.title,
+        description: "Listen and answer the questions",
+        route: "comprehension"
+      });
+    }
 
-  // Extra task if more time
-  if (count >= 4) {
-    tasks.push({
-      id: "comprehension-2",
-      icon: "🎧",
-      label: pool.comprehension[2],
-      description: "Extra listening practice"
-    });
+    const writeRes = await fetch("data/" + level + "/writing.json");
+    const writeData = await writeRes.json();
+    const nextWriting = nextUncompletedWriting(writeData.tasks, progress);
+    if (nextWriting && count >= 4) {
+      tasks.push({
+        id: "writing-" + nextWriting.id,
+        icon: "✍️",
+        label: "Writing " + (writeData.tasks.indexOf(nextWriting) + 1) + " - " + nextWriting.title,
+        description: "Write your answer",
+        route: "production"
+      });
+    }
+
+    const speakRes = await fetch("data/" + level + "/speaking.json");
+    const speakData = await speakRes.json();
+    const nextSpeaking = nextUncompletedSpeaking(speakData.prompts, progress);
+    if (nextSpeaking && count >= 5) {
+      tasks.push({
+        id: "speaking-" + nextSpeaking.id,
+        icon: "🗣️",
+        label: "Speaking " + (speakData.prompts.indexOf(nextSpeaking) + 1) + " - " + nextSpeaking.title,
+        description: "Record your answer",
+        route: "production"
+      });
+    }
+  } catch (err) {
+    console.error("Error loading tasks:", err);
   }
 
   return tasks;

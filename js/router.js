@@ -25,14 +25,14 @@ export function navigate(route, params = {}) {
   render();
 }
 
-export function render() {
+export async function render() {
   const { currentRoute } = getState();
   const view = document.getElementById("view");
   if (!view) return;
 
   const renderer = routes[currentRoute] || renderToday;
   view.innerHTML = "";
-  renderer(view);
+  await renderer(view);
 
   document.querySelectorAll("[data-route]").forEach(btn => {
     btn.classList.toggle("is-active", btn.dataset.route === currentRoute);

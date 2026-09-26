@@ -1,5 +1,6 @@
 // Comprehension module view. Reading + Listening.
-import { getState } from "../state.js";
+import { getState , markReading, markListening, getProgress } from "../state.js";
+import { showTimeTrackerModal } from "../widgets/time-tracker.js";
 import { renderExercise } from "../widgets/exercise.js";
 
 // Shuffle array in place
@@ -151,6 +152,19 @@ async function renderListeningList(container) {
   }
 }
 
+
+function isTextCompleted(textId) {
+  const { level } = getState();
+  const progress = getProgress(level);
+  return progress.reading && progress.reading[textId] && progress.reading[textId].completed;
+}
+
+function isAudioCompleted(audioId) {
+  const { level } = getState();
+  const progress = getProgress(level);
+  return progress.listening && progress.listening[audioId] && progress.listening[audioId].completed;
+}
+
 function openText(container, text) {
   container.innerHTML = "";
 
@@ -221,6 +235,35 @@ function openText(container, text) {
 
     questionsBox.appendChild(qBox);
   });
+
+  // Boton Mark as completed
+  const isCompleted = isTextCompleted(text.id);
+  const markBtn = document.createElement("button");
+  markBtn.className = isCompleted ? "btn btn--ghost" : "btn btn--primary";
+  markBtn.textContent = isCompleted ? "✅ Text completed" : "Mark text as completed";
+  markBtn.style.marginTop = "24px";
+  markBtn.style.padding = "12px 24px";
+  markBtn.style.fontWeight = "bold";
+  markBtn.disabled = isCompleted;
+
+  if (!isCompleted) {
+    markBtn.addEventListener("click", () => {
+      showTimeTrackerModal({
+        itemId: text.id,
+        itemType: "reading",
+        itemLabel: text.title,
+        onComplete: (minutes) => {
+          const { level } = getState();
+          markReading(level, text.id);
+          markBtn.textContent = "✅ Text completed (" + minutes + " min)";
+          markBtn.className = "btn btn--ghost";
+          markBtn.disabled = true;
+        }
+      });
+    });
+  }
+
+  container.appendChild(markBtn);
 }
 
 function openAudio(container, audio) {
@@ -342,4 +385,33 @@ function openAudio(container, audio) {
 
     questionsBox.appendChild(qBox);
   });
+
+  // Boton Mark as completed
+  const isCompleted = isAudioCompleted(audio.id);
+  const markBtn = document.createElement("button");
+  markBtn.className = isCompleted ? "btn btn--ghost" : "btn btn--primary";
+  markBtn.textContent = isCompleted ? "✅ Audio completed" : "Mark audio as completed";
+  markBtn.style.marginTop = "24px";
+  markBtn.style.padding = "12px 24px";
+  markBtn.style.fontWeight = "bold";
+  markBtn.disabled = isCompleted;
+
+  if (!isCompleted) {
+    markBtn.addEventListener("click", () => {
+      showTimeTrackerModal({
+        itemId: audio.id,
+        itemType: "listening",
+        itemLabel: audio.title,
+        onComplete: (minutes) => {
+          const { level } = getState();
+          markListening(level, audio.id);
+          markBtn.textContent = "✅ Audio completed (" + minutes + " min)";
+          markBtn.className = "btn btn--ghost";
+          markBtn.disabled = true;
+        }
+      });
+    });
+  }
+
+  container.appendChild(markBtn);
 }

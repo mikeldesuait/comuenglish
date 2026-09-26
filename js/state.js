@@ -8,9 +8,9 @@ const defaultState = {
   currentUnit: null,
   currentPhase: 0,
   progress: {
-    a2: { units: {}, score: 0 },
-    b1: { units: {}, score: 0 },
-    b2: { units: {}, score: 0 }
+    a2: { units: {}, reading: {}, listening: {}, writing: {}, speaking: {}, score: 0 },
+    b1: { units: {}, reading: {}, listening: {}, writing: {}, speaking: {}, score: 0 },
+    b2: { units: {}, reading: {}, listening: {}, writing: {}, speaking: {}, score: 0 }
   },
   mistakes: [],
   lastVisit: null,
@@ -27,6 +27,11 @@ const defaultState = {
     current: 0,
     best: 0,
     lastStudyDate: null
+  },
+  timeTracking: {
+    goalHours: { a2: 75, b1: 125, b2: 175 },
+    dailyMinutes: {},
+    sessions: []
   }
 };
 
@@ -103,6 +108,109 @@ export function getDailyLog() {
 
 export function getStreak() {
   return state.streak;
+}
+
+
+export function markReading(level, textId) {
+  if (!state.progress[level].reading) state.progress[level].reading = {};
+  state.progress[level].reading[textId] = { completed: true, date: Date.now() };
+  markTodayCompleted("reading-" + textId);
+  persist();
+  emit("progress:change", state.progress);
+}
+
+export function markListening(level, audioId) {
+  if (!state.progress[level].listening) state.progress[level].listening = {};
+  state.progress[level].listening[audioId] = { completed: true, date: Date.now() };
+  markTodayCompleted("listening-" + audioId);
+  persist();
+  emit("progress:change", state.progress);
+}
+
+export function markWriting(level, taskId) {
+  if (!state.progress[level].writing) state.progress[level].writing = {};
+  state.progress[level].writing[taskId] = { completed: true, date: Date.now() };
+  markTodayCompleted("writing-" + taskId);
+  persist();
+  emit("progress:change", state.progress);
+}
+
+export function markSpeaking(level, promptId) {
+  if (!state.progress[level].speaking) state.progress[level].speaking = {};
+  state.progress[level].speaking[promptId] = { completed: true, date: Date.now() };
+  markTodayCompleted("speaking-" + promptId);
+  persist();
+  emit("progress:change", state.progress);
+}
+
+function markTodayCompleted(taskId) {
+  const today = new Date().toISOString().slice(0, 10);
+  if (!state.dailyLog[today]) state.dailyLog[today] = {};
+  state.dailyLog[today][taskId] = true;
+
+  // Actualizar racha
+  if (state.streak.lastStudyDate !== today) {
+    const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+    if (state.streak.lastStudyDate === yesterday) {
+      state.streak.current++;
+    } else {
+      state.streak.current = 1;
+    }
+    if (state.streak.current > state.streak.best) {
+      state.streak.best = state.streak.current;
+    }
+    state.streak.lastStudyDate = today;
+  }
+}
+
+export function getProgress(level) {
+  return state.progress[level] || { units: {}, reading: {}, listening: {}, writing: {}, speaking: {} };
+}
+
+
+export function logSession(itemId, itemType, minutes) {
+  const today = new Date().toISOString().slice(0, 10);
+  if (!state.timeTracking.dailyMinutes[today]) {
+    state.timeTracking.dailyMinutes[today] = 0;
+  }
+  state.timeTracking.dailyMinutes[today] += minutes;
+  state.timeTracking.sessions.push({
+    date: today,
+    item: itemId,
+    type: itemType,
+    minutes: minutes
+  });
+  persist();
+  emit("timeTracking:change", state.timeTracking);
+}
+
+export function getTimeTracking() {
+  return state.timeTracking;
+}
+
+export function getTotalMinutes() {
+  return state.timeTracking.sessions.reduce((sum, s) => sum + s.minutes, 0);
+}
+
+export function getMinutesForLastDays(days) {
+  const result = [];
+  const today = new Date();
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    const key = d.toISOString().slice(0, 10);
+    result.push({
+      date: key,
+      minutes: state.timeTracking.dailyMinutes[key] || 0
+    });
+  }
+  return result;
+}
+
+export function setGoalHours(level, hours) {
+  state.timeTracking.goalHours[level] = hours;
+  persist();
+  emit("timeTracking:change", state.timeTracking);
 }
 
 function persist() {

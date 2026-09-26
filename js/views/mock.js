@@ -1,4 +1,4 @@
-// Mock Exam view. Sectioned exam that simulates Cambridge papers.
+// Mock Exam view. Sectioned exam that simulates official papers.
 import { getState } from "../state.js";
 import { renderTimerWidget } from "../widgets/timer.js";
 import { toCambridgeScale, isPass } from "../core/scoring.js";
@@ -381,7 +381,7 @@ function showFinalResults(view, examState) {
   scoreBox.style.fontSize = "1.2rem";
   scoreBox.innerHTML = "<h3>" + (passed ? "PASS" : "NOT YET") + "</h3>" +
     "<p>" + totalCorrect + " / " + totalQuestions + " (" + Math.round(percent * 100) + "%)</p>" +
-    "<p style=\"font-size: 1.5rem; font-weight: bold;\">Cambridge Scale: " + scale + "</p>";
+    "<p style=\"font-size: 1.5rem; font-weight: bold;\">Exam Scale: " + scale + "</p>";
   view.appendChild(scoreBox);
 
   const breakdown = document.createElement("div");

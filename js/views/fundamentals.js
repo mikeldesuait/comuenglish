@@ -1,5 +1,6 @@
 // Fundamentals module view. Reads units from data/{level}/units.json.
-import { getState, setState } from "../state.js";
+import { getState, setState, markUnit, getProgress } from "../state.js";
+import { showTimeTrackerModal } from "../widgets/time-tracker.js";
 import { renderExercise } from "../widgets/exercise.js";
 
 let unitsCache = {};
@@ -124,10 +125,52 @@ async function openUnit(view, unit) {
     view.appendChild(content);
 
     renderPhaseContent(content, lesson.phases[0]);
+
+    // Boton para marcar la unidad como completada
+    const isCompleted = isUnitCompleted(unit.id);
+    const markBtn = document.createElement("button");
+    markBtn.className = isCompleted ? "btn btn--ghost" : "btn btn--primary";
+    markBtn.textContent = isCompleted ? "✅ Unit completed" : "Mark unit as completed";
+    markBtn.style.marginTop = "24px";
+    markBtn.style.padding = "12px 24px";
+    markBtn.style.fontSize = "1rem";
+    markBtn.style.fontWeight = "bold";
+    markBtn.disabled = isCompleted;
+
+    if (!isCompleted) {
+      markBtn.addEventListener("click", () => {
+        showTimeTrackerModal({
+          itemId: unit.id,
+          itemType: "fundamentals",
+          itemLabel: unit.title,
+          onComplete: (minutes) => {
+            markUnitCompleted(unit.id);
+            markBtn.textContent = "✅ Unit completed (" + minutes + " min)";
+            markBtn.className = "btn btn--ghost";
+            markBtn.disabled = true;
+          }
+        });
+      });
+    }
+
+    view.appendChild(markBtn);
   } catch (err) {
     loading.textContent = "Error: " + err.message;
     loading.className = "feedback feedback--wrong";
   }
+}
+
+
+function markUnitCompleted(unitId) {
+  const { level } = getState();
+  markUnit(level, unitId, { completed: true, date: Date.now() });
+  console.log("Unit marked as completed:", unitId);
+}
+
+function isUnitCompleted(unitId) {
+  const { level } = getState();
+  const progress = getProgress(level);
+  return progress.units && progress.units[unitId] && progress.units[unitId].completed;
 }
 
 function renderPhaseContent(container, phase) {

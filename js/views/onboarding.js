@@ -3,6 +3,12 @@ import { getState, setState, updatePlan } from "../state.js";
 import { navigate } from "../router.js";
 
 export function renderOnboarding(view) {
+  // Hide sidebar
+  const sidebar = document.getElementById("sidebar");
+  if (sidebar) sidebar.style.display = "none";
+  const shell = document.querySelector(".app-shell");
+  if (shell) shell.style.gridTemplateColumns = "1fr";
+
   view.innerHTML = "";
 
   const hero = document.createElement("div");
@@ -13,7 +19,7 @@ export function renderOnboarding(view) {
   hero.style.marginBottom = "24px";
 
   const h1 = document.createElement("h1");
-  h1.textContent = "Welcome to Cambridge Prep";
+  h1.textContent = "Welcome to ComuEnglish";
   h1.style.fontSize = "1.5rem";
   h1.style.marginBottom = "6px";
   hero.appendChild(h1);

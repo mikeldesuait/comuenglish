@@ -219,7 +219,7 @@ function openWritingTask(container, task) {
     feedbackBox.appendChild(loading);
 
     try {
-      const sysPrompt = "You are a Cambridge English examiner. Evaluate the essay according to the official Cambridge rubric. Reply ONLY with valid JSON: { scores: { content: number, communicative_achievement: number, organisation: number, language: number }, overall: number, strengths: [string], improvements: [string], feedback_es: string }. Scores 0-5 each. Overall 0-20.";
+      const sysPrompt = "You are an English examiner. Evaluate the essay according to the official CEFR rubric. Reply ONLY with valid JSON: { scores: { content: number, communicative_achievement: number, organisation: number, language: number }, overall: number, strengths: [string], improvements: [string], feedback_es: string }. Scores 0-5 each. Overall 0-20.";
       const userPrompt = "Level: " + level.toUpperCase() + "\\nTask: " + task.prompt + "\\nStudent answer: " + text;
       const raw = await callDeepSeek([
         { role: "system", content: sysPrompt },

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cambridge Prep - A2 / B1 / B2</title>
+  <title>ComuEnglish</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/widgets.css">
@@ -11,30 +11,30 @@
 <body>
 
   <header class="topbar">
-    <div class="topbar__brand">
-      <span class="topbar__logo">CP</span>
+    <div class="topbar__brand" data-route="home" style="cursor:pointer;" title="Go to Home">
+      <span class="topbar__logo">CE</span>
       <div style="display:flex; flex-direction:column;">
-        <h1 class="topbar__title" style="margin:0; line-height:1.1;">Cambridge Prep</h1>
-        <span style="font-size:.7rem; color:#94a3b8; font-weight:normal;">by Miguel García</span>
+        <h1 class="topbar__title" style="margin:0; line-height:1.1;">ComuEnglish</h1>
+        <span style="font-size:.7rem; color:#94a3b8; font-weight:normal;">by ComuTech</span>
       </div>
     </div>
 
     <nav class="topbar__nav" id="main-nav">
+      <button class="nav-btn" data-route="home">Home</button>
       <button class="nav-btn is-active" data-route="today">📅 Today</button>
       <button class="nav-btn" data-route="fundamentals">Fundamentals</button>
       <button class="nav-btn" data-route="comprehension">Comprehension</button>
       <button class="nav-btn" data-route="production">Production</button>
       <button class="nav-btn" data-route="mock">Mock Exam</button>
-      <button class="nav-btn" data-route="home">Home</button>
       <button class="nav-btn" id="open-settings" title="Settings">⚙</button>
     </nav>
 
     <div class="topbar__level">
       <label for="level-select">Level</label>
       <select id="level-select">
-        <option value="a2">A2 Key</option>
-        <option value="b1">B1 Preliminary</option>
-        <option value="b2">B2 First</option>
+        <option value="a2">A2 Elementary</option>
+        <option value="b1">B1 Intermediate</option>
+        <option value="b2">B2 Upper Intermediate</option>
       </select>
     </div>
   </header>
@@ -57,7 +57,7 @@
       <span id="progress-label">0%</span>
     </div>
     <div class="statusbar__scale">
-      Cambridge Scale: <strong id="cambridge-score">--</strong>
+      Exam Scale: <strong id="cambridge-score">--</strong>
     </div>
   </footer>
 
