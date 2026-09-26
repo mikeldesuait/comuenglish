@@ -70,28 +70,24 @@ async function renderReadingList(container) {
     container.removeChild(loading);
 
     const list = document.createElement("div");
-    list.className = "unit-list";
+    list.className = "card-grid";
 
-    texts.forEach(t => {
+    texts.forEach((t, idx) => {
       const card = document.createElement("div");
-      card.className = "unit-card";
+      card.className = "card";
 
-      const header = document.createElement("div");
-      header.className = "unit-card__header";
-
-      const title = document.createElement("span");
-      title.className = "unit-card__title";
-      title.textContent = t.title;
-      header.appendChild(title);
+      const title = document.createElement("div");
+      title.className = "card__title";
+      title.textContent = (idx + 1) + ". " + t.title;
+      card.appendChild(title);
 
       const badge = document.createElement("span");
-      badge.className = "unit-card__badge";
+      badge.className = "card__badge";
       badge.textContent = t.questions.length + " questions";
-      header.appendChild(badge);
-
-      card.appendChild(header);
+      card.appendChild(badge);
 
       const sub = document.createElement("small");
+      sub.className = "card__subtitle";
       sub.textContent = t.type;
       card.appendChild(sub);
 
@@ -123,28 +119,24 @@ async function renderListeningList(container) {
     container.removeChild(loading);
 
     const list = document.createElement("div");
-    list.className = "unit-list";
+    list.className = "card-grid";
 
-    audios.forEach(a => {
+    audios.forEach((a, idx) => {
       const card = document.createElement("div");
-      card.className = "unit-card";
+      card.className = "card";
 
-      const header = document.createElement("div");
-      header.className = "unit-card__header";
-
-      const title = document.createElement("span");
-      title.className = "unit-card__title";
-      title.textContent = a.title;
-      header.appendChild(title);
+      const title = document.createElement("div");
+      title.className = "card__title";
+      title.textContent = (idx + 1) + ". " + a.title;
+      card.appendChild(title);
 
       const badge = document.createElement("span");
-      badge.className = "unit-card__badge";
+      badge.className = "card__badge";
       badge.textContent = a.questions.length + " questions";
-      header.appendChild(badge);
-
-      card.appendChild(header);
+      card.appendChild(badge);
 
       const sub = document.createElement("small");
+      sub.className = "card__subtitle";
       sub.textContent = "Audio exercise";
       card.appendChild(sub);
 

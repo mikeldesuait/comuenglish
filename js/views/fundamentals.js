@@ -26,29 +26,25 @@ export async function renderFundamentals(view) {
     view.removeChild(loading);
 
     const container = document.createElement("div");
-    container.className = "unit-list";
+    container.className = "card-grid";
 
     unitsCache[level].forEach(u => {
       const card = document.createElement("div");
-      card.className = "unit-card";
+      card.className = "card";
       card.dataset.unit = u.id;
 
-      const header = document.createElement("div");
-      header.className = "unit-card__header";
-
-      const title = document.createElement("span");
-      title.className = "unit-card__title";
+      const title = document.createElement("div");
+      title.className = "card__title";
       title.textContent = u.title;
-      header.appendChild(title);
+      card.appendChild(title);
 
       const badge = document.createElement("span");
-      badge.className = "unit-card__badge";
+      badge.className = "card__badge";
       badge.textContent = u.phases + " phases";
-      header.appendChild(badge);
-
-      card.appendChild(header);
+      card.appendChild(badge);
 
       const sub = document.createElement("small");
+      sub.className = "card__subtitle";
       sub.textContent = "Grammar + Vocabulary";
       card.appendChild(sub);
 
@@ -69,14 +65,10 @@ async function openUnit(view, unit) {
   view.innerHTML = "";
 
   const back = document.createElement("button");
-  back.className = "btn btn--ghost";
-  back.textContent = "Back";
+  back.className = "btn-back";
+  back.textContent = "← Back to units";
   back.addEventListener("click", () => renderFundamentals(view));
   view.appendChild(back);
-
-  const h2 = document.createElement("h2");
-  h2.textContent = unit.title;
-  view.appendChild(h2);
 
   const loading = document.createElement("p");
   loading.textContent = "Loading lesson...";
@@ -90,9 +82,30 @@ async function openUnit(view, unit) {
 
     view.removeChild(loading);
 
+    // Unit header
+    const header = document.createElement("div");
+    header.className = "unit-header";
+
+    const label = document.createElement("div");
+    label.className = "unit-header__label";
+    label.textContent = level.toUpperCase() + " Key - Unit " + unit.id.split("-u")[1];
+    header.appendChild(label);
+
+    const title = document.createElement("h1");
+    title.className = "unit-header__title";
+    title.textContent = lesson.title;
+    header.appendChild(title);
+
+    const meta = document.createElement("div");
+    meta.className = "unit-header__meta";
+    meta.textContent = "📖 " + (lesson.grammar || "") + " · 📝 " + (lesson.vocabulary || "");
+    header.appendChild(meta);
+
+    view.appendChild(header);
+
+    // Phase nav
     const nav = document.createElement("div");
     nav.className = "phase-nav";
-
     const content = document.createElement("div");
 
     lesson.phases.forEach((p, i) => {

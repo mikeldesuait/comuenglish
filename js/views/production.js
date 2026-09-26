@@ -58,23 +58,21 @@ async function renderWritingList(container) {
     container.removeChild(loading);
 
     const list = document.createElement("div");
-    list.className = "unit-list";
+    list.className = "card-grid";
 
-    tasks.forEach(t => {
+    tasks.forEach((t, idx) => {
       const card = document.createElement("div");
-      card.className = "unit-card";
-      const header = document.createElement("div");
-      header.className = "unit-card__header";
-      const title = document.createElement("span");
-      title.className = "unit-card__title";
-      title.textContent = t.title;
-      header.appendChild(title);
+      card.className = "card";
+      const title = document.createElement("div");
+      title.className = "card__title";
+      title.textContent = (idx + 1) + ". " + t.title;
+      card.appendChild(title);
       const badge = document.createElement("span");
-      badge.className = "unit-card__badge";
+      badge.className = "card__badge";
       badge.textContent = t.minWords + "+ words";
-      header.appendChild(badge);
-      card.appendChild(header);
+      card.appendChild(badge);
       const sub = document.createElement("small");
+      sub.className = "card__subtitle";
       sub.textContent = t.type;
       card.appendChild(sub);
       card.addEventListener("click", () => openWritingTask(container, t));
@@ -102,23 +100,21 @@ async function renderSpeakingList(container) {
     container.removeChild(loading);
 
     const list = document.createElement("div");
-    list.className = "unit-list";
+    list.className = "card-grid";
 
-    prompts.forEach(p => {
+    prompts.forEach((p, idx) => {
       const card = document.createElement("div");
-      card.className = "unit-card";
-      const header = document.createElement("div");
-      header.className = "unit-card__header";
-      const title = document.createElement("span");
-      title.className = "unit-card__title";
-      title.textContent = p.title;
-      header.appendChild(title);
+      card.className = "card";
+      const title = document.createElement("div");
+      title.className = "card__title";
+      title.textContent = (idx + 1) + ". " + p.title;
+      card.appendChild(title);
       const badge = document.createElement("span");
-      badge.className = "unit-card__badge";
+      badge.className = "card__badge";
       badge.textContent = p.seconds + "s";
-      header.appendChild(badge);
-      card.appendChild(header);
+      card.appendChild(badge);
       const sub = document.createElement("small");
+      sub.className = "card__subtitle";
       sub.textContent = p.part;
       card.appendChild(sub);
       card.addEventListener("click", () => openSpeakingPrompt(container, p));
