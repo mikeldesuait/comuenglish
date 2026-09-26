@@ -18,12 +18,30 @@
           "body": "Modal + be + past participle.",
           "tableHeader": true,
           "table": [
-            ["Modal", "Example"],
-            ["can be", "The form can be completed online."],
-            ["must be", "The report must be submitted by Friday."],
-            ["should be", "The rules should be followed."],
-            ["might be", "The meeting might be postponed."],
-            ["has to be", "The homework has to be finished today."]
+            [
+              "Modal",
+              "Example"
+            ],
+            [
+              "can be",
+              "The form can be completed online."
+            ],
+            [
+              "must be",
+              "The report must be submitted by Friday."
+            ],
+            [
+              "should be",
+              "The rules should be followed."
+            ],
+            [
+              "might be",
+              "The meeting might be postponed."
+            ],
+            [
+              "has to be",
+              "The homework has to be finished today."
+            ]
           ]
         },
         {
@@ -73,34 +91,88 @@
         {
           "heading": "News and reporting",
           "list": [
-            { "term": "be reported", "definition": "The accident was reported at 8 am." },
-            { "term": "be announced", "definition": "The results will be announced tomorrow." },
-            { "term": "be confirmed", "definition": "The news has been confirmed by the police." },
-            { "term": "be revealed", "definition": "The truth was revealed yesterday." },
-            { "term": "be denied", "definition": "The rumours were denied by the manager." },
-            { "term": "be claimed", "definition": "It is claimed that he owns three houses." }
+            {
+              "term": "be reported",
+              "definition": "The accident was reported at 8 am."
+            },
+            {
+              "term": "be announced",
+              "definition": "The results will be announced tomorrow."
+            },
+            {
+              "term": "be confirmed",
+              "definition": "The news has been confirmed by the police."
+            },
+            {
+              "term": "be revealed",
+              "definition": "The truth was revealed yesterday."
+            },
+            {
+              "term": "be denied",
+              "definition": "The rumours were denied by the manager."
+            },
+            {
+              "term": "be claimed",
+              "definition": "It is claimed that he owns three houses."
+            }
           ]
         },
         {
           "heading": "Science and processes",
           "list": [
-            { "term": "be conducted", "definition": "The experiment was conducted in a laboratory." },
-            { "term": "be tested", "definition": "The new drug is being tested." },
-            { "term": "be developed", "definition": "The vaccine was developed in record time." },
-            { "term": "be analysed", "definition": "The data will be analysed by experts." },
-            { "term": "be measured", "definition": "The temperature is measured twice a day." },
-            { "term": "be observed", "definition": "The behaviour was observed over six months." }
+            {
+              "term": "be conducted",
+              "definition": "The experiment was conducted in a laboratory."
+            },
+            {
+              "term": "be tested",
+              "definition": "The new drug is being tested."
+            },
+            {
+              "term": "be developed",
+              "definition": "The vaccine was developed in record time."
+            },
+            {
+              "term": "be analysed",
+              "definition": "The data will be analysed by experts."
+            },
+            {
+              "term": "be measured",
+              "definition": "The temperature is measured twice a day."
+            },
+            {
+              "term": "be observed",
+              "definition": "The behaviour was observed over six months."
+            }
           ]
         },
         {
           "heading": "Formal writing",
           "list": [
-            { "term": "be considered", "definition": "The proposal is being considered." },
-            { "term": "be expected", "definition": "The results are expected next week." },
-            { "term": "be required", "definition": "A passport is required for travel." },
-            { "term": "be recommended", "definition": "Early booking is recommended." },
-            { "term": "be prohibited", "definition": "Smoking is prohibited in the building." },
-            { "term": "be permitted", "definition": "Photography is not permitted here." }
+            {
+              "term": "be considered",
+              "definition": "The proposal is being considered."
+            },
+            {
+              "term": "be expected",
+              "definition": "The results are expected next week."
+            },
+            {
+              "term": "be required",
+              "definition": "A passport is required for travel."
+            },
+            {
+              "term": "be recommended",
+              "definition": "Early booking is recommended."
+            },
+            {
+              "term": "be prohibited",
+              "definition": "Smoking is prohibited in the building."
+            },
+            {
+              "term": "be permitted",
+              "definition": "Photography is not permitted here."
+            }
           ]
         }
       ]
@@ -132,16 +204,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "The meeting ___ postponed until next week.", "options": ["has", "has been", "is been", "was being"], "correct": 1, "explanation": "Present perfect passive: has/have been + past participle."},
-        {"prompt": "It ___ that the company will close next month.", "options": ["says", "is said", "said", "is saying"], "correct": 1, "explanation": "Impersonal passive: It is said that..."},
-        {"prompt": "He ___ to be very rich.", "options": ["says", "is said", "said", "is saying"], "correct": 1, "explanation": "Passive with 'to' infinitive: is said to be."},
-        {"prompt": "The rules ___ followed by all students.", "options": ["must", "must be", "must to be", "must been"], "correct": 1, "explanation": "Modal + be + past participle."},
-        {"prompt": "She ___ to have left the country.", "options": ["believes", "is believed", "believed", "is believing"], "correct": 1, "explanation": "Personal passive: is believed to have."},
-        {"prompt": "Smoking is ___ in all public buildings.", "options": ["prohibit", "prohibited", "prohibiting", "prohibits"], "correct": 1, "explanation": "Passive: is + past participle."},
-        {"prompt": "It ___ reported that three people were injured.", "options": ["is", "are", "was been", "has"], "correct": 0, "explanation": "Impersonal passive: It is reported that..."},
-        {"prompt": "The results will ___ tomorrow.", "options": ["announce", "announced", "be announced", "be announcing"], "correct": 2, "explanation": "Future passive: will be + past participle."},
-        {"prompt": "The painting is thought ___ a fake.", "options": ["be", "to be", "being", "been"], "correct": 1, "explanation": "Passive + to infinitive."},
-        {"prompt": "The homework ___ finished today.", "options": ["has to be", "has be", "have to be", "has been to"], "correct": 0, "explanation": "Modal passive: has to be + past participle."}
+        {
+          "prompt": "The meeting ___ postponed until next week.",
+          "options": [
+            "has",
+            "has been",
+            "is been",
+            "was being"
+          ],
+          "correct": 1,
+          "explanation": "Present perfect passive: has/have been + past participle."
+        },
+        {
+          "prompt": "It ___ that the company will close next month.",
+          "options": [
+            "says",
+            "is said",
+            "said",
+            "is saying"
+          ],
+          "correct": 1,
+          "explanation": "Impersonal passive: It is said that..."
+        },
+        {
+          "prompt": "He ___ to be very rich.",
+          "options": [
+            "says",
+            "is said",
+            "said",
+            "is saying"
+          ],
+          "correct": 1,
+          "explanation": "Passive with 'to' infinitive: is said to be."
+        },
+        {
+          "prompt": "The rules ___ followed by all students.",
+          "options": [
+            "must",
+            "must be",
+            "must to be",
+            "must been"
+          ],
+          "correct": 1,
+          "explanation": "Modal + be + past participle."
+        },
+        {
+          "prompt": "She ___ to have left the country.",
+          "options": [
+            "believes",
+            "is believed",
+            "believed",
+            "is believing"
+          ],
+          "correct": 1,
+          "explanation": "Personal passive: is believed to have."
+        },
+        {
+          "prompt": "Smoking is ___ in all public buildings.",
+          "options": [
+            "prohibit",
+            "prohibited",
+            "prohibiting",
+            "prohibits"
+          ],
+          "correct": 1,
+          "explanation": "Passive: is + past participle."
+        },
+        {
+          "prompt": "It ___ reported that three people were injured.",
+          "options": [
+            "is",
+            "are",
+            "was been",
+            "has"
+          ],
+          "correct": 0,
+          "explanation": "Impersonal passive: It is reported that..."
+        },
+        {
+          "prompt": "The results will ___ tomorrow.",
+          "options": [
+            "announce",
+            "announced",
+            "be announced",
+            "be announcing"
+          ],
+          "correct": 2,
+          "explanation": "Future passive: will be + past participle."
+        },
+        {
+          "prompt": "The painting is thought ___ a fake.",
+          "options": [
+            "be",
+            "to be",
+            "being",
+            "been"
+          ],
+          "correct": 1,
+          "explanation": "Passive + to infinitive."
+        },
+        {
+          "prompt": "The homework ___ finished today.",
+          "options": [
+            "has to be",
+            "has be",
+            "have to be",
+            "has been to"
+          ],
+          "correct": 0,
+          "explanation": "Modal passive: has to be + past participle."
+        }
       ]
     },
     {
@@ -157,16 +329,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "The letter ___ sent yesterday.", "options": ["was", "were", "is", "has"], "correct": 0, "explanation": "Past passive: was + past participle."},
-        {"prompt": "It ___ believed that the painting is a fake.", "options": ["are", "is", "has", "was been"], "correct": 1, "explanation": "Impersonal passive: It is believed that..."},
-        {"prompt": "He is said ___ very intelligent.", "options": ["be", "to be", "being", "been"], "correct": 1, "explanation": "Passive + to infinitive."},
-        {"prompt": "The form must ___ by Monday.", "options": ["complete", "completed", "be completed", "be completing"], "correct": 2, "explanation": "Modal passive: must be + past participle."},
-        {"prompt": "The results are ___ next week.", "options": ["expect", "expected", "expecting", "expects"], "correct": 1, "explanation": "Passive: are + past participle."},
-        {"prompt": "The thief ___ arrested last night.", "options": ["is", "was", "were", "has"], "correct": 1, "explanation": "Past passive: was + past participle."},
-        {"prompt": "She is thought ___ the money.", "options": ["steal", "to steal", "to have stolen", "stealing"], "correct": 2, "explanation": "Passive + perfect infinitive for past actions."},
-        {"prompt": "Photography is not ___ in this area.", "options": ["permit", "permitted", "permitting", "permits"], "correct": 1, "explanation": "Passive: is not + past participle."},
-        {"prompt": "The bridge ___ built in 1890.", "options": ["is", "was", "were", "has"], "correct": 1, "explanation": "Past passive: was + past participle."},
-        {"prompt": "It ___ announced that the president would resign.", "options": ["is", "was", "has", "were"], "correct": 1, "explanation": "Past impersonal passive."}
+        {
+          "prompt": "The letter ___ sent yesterday.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "has"
+          ],
+          "correct": 0,
+          "explanation": "Past passive: was + past participle."
+        },
+        {
+          "prompt": "It ___ believed that the painting is a fake.",
+          "options": [
+            "are",
+            "is",
+            "has",
+            "was been"
+          ],
+          "correct": 1,
+          "explanation": "Impersonal passive: It is believed that..."
+        },
+        {
+          "prompt": "He is said ___ very intelligent.",
+          "options": [
+            "be",
+            "to be",
+            "being",
+            "been"
+          ],
+          "correct": 1,
+          "explanation": "Passive + to infinitive."
+        },
+        {
+          "prompt": "The form must ___ by Monday.",
+          "options": [
+            "complete",
+            "completed",
+            "be completed",
+            "be completing"
+          ],
+          "correct": 2,
+          "explanation": "Modal passive: must be + past participle."
+        },
+        {
+          "prompt": "The results are ___ next week.",
+          "options": [
+            "expect",
+            "expected",
+            "expecting",
+            "expects"
+          ],
+          "correct": 1,
+          "explanation": "Passive: are + past participle."
+        },
+        {
+          "prompt": "The thief ___ arrested last night.",
+          "options": [
+            "is",
+            "was",
+            "were",
+            "has"
+          ],
+          "correct": 1,
+          "explanation": "Past passive: was + past participle."
+        },
+        {
+          "prompt": "She is thought ___ the money.",
+          "options": [
+            "steal",
+            "to steal",
+            "to have stolen",
+            "stealing"
+          ],
+          "correct": 2,
+          "explanation": "Passive + perfect infinitive for past actions."
+        },
+        {
+          "prompt": "Photography is not ___ in this area.",
+          "options": [
+            "permit",
+            "permitted",
+            "permitting",
+            "permits"
+          ],
+          "correct": 1,
+          "explanation": "Passive: is not + past participle."
+        },
+        {
+          "prompt": "The bridge ___ built in 1890.",
+          "options": [
+            "is",
+            "was",
+            "were",
+            "has"
+          ],
+          "correct": 1,
+          "explanation": "Past passive: was + past participle."
+        },
+        {
+          "prompt": "It ___ announced that the president would resign.",
+          "options": [
+            "is",
+            "was",
+            "has",
+            "were"
+          ],
+          "correct": 1,
+          "explanation": "Past impersonal passive."
+        }
       ]
     },
     {

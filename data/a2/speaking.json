@@ -8,7 +8,11 @@
       "prompt": "Talk about yourself for 30 seconds. Say your name, your age, where you live and what you do.",
       "seconds": 30,
       "sample": "My name is Maria and I am 14 years old. I live in Madrid with my parents and my brother. I am a student at a secondary school. In my free time I like reading and playing basketball.",
-      "tips": ["Use the verb To Be", "Use 'I live in...'", "Mention your family"]
+      "tips": [
+        "Use the verb To Be",
+        "Use 'I live in...'",
+        "Mention your family"
+      ]
     },
     {
       "id": "a2-s2",
@@ -17,7 +21,11 @@
       "prompt": "Describe your daily routine for 45 seconds. Say what time you get up, what you do in the morning and afternoon, and what you do in the evening.",
       "seconds": 45,
       "sample": "I get up at 7 o'clock. I have breakfast and then I go to school by bus. My classes start at 8:30. In the afternoon, I do my homework and then I play football. In the evening, I have dinner at 8 and I go to bed at 10.",
-      "tips": ["Use Present Simple", "Use time expressions", "Connect ideas with 'then' and 'after that'"]
+      "tips": [
+        "Use Present Simple",
+        "Use time expressions",
+        "Connect ideas with 'then' and 'after that'"
+      ]
     },
     {
       "id": "a2-s3",
@@ -26,7 +34,11 @@
       "prompt": "Describe your family for 45 seconds. Say how many people there are, their names and ages, and something about each person.",
       "seconds": 45,
       "sample": "There are four people in my family. My father is 45 and he works in a bank. My mother is 42 and she is a teacher. My sister is 10 years old and she likes dancing. I am the oldest. We are a very close family.",
-      "tips": ["Use 'Have got' for possessions", "Use 'There is/are'", "Use possessive adjectives (my, his, her)"]
+      "tips": [
+        "Use 'Have got' for possessions",
+        "Use 'There is/are'",
+        "Use possessive adjectives (my, his, her)"
+      ]
     },
     {
       "id": "a2-s4",
@@ -35,7 +47,11 @@
       "prompt": "Talk about your free time for 45 seconds. Say what you like doing, what you don't like, and what you usually do at the weekend.",
       "seconds": 45,
       "sample": "In my free time I like listening to music and watching films. I love playing video games, but I don't like sports very much. At the weekend, I usually meet my friends in the park. Sometimes we go to the cinema.",
-      "tips": ["Use 'like/love/hate + -ing'", "Use adverbs of frequency", "Mention 2 or 3 activities"]
+      "tips": [
+        "Use 'like/love/hate + -ing'",
+        "Use adverbs of frequency",
+        "Mention 2 or 3 activities"
+      ]
     },
     {
       "id": "a2-s5",
@@ -44,7 +60,11 @@
       "prompt": "Talk about your last holiday for 45 seconds. Say where you went, who you went with, what you did and what the weather was like.",
       "seconds": 45,
       "sample": "Last summer I went to the beach in Valencia with my family. We stayed for one week. We swam in the sea every day and ate paella in a restaurant. The weather was sunny and hot. I took a lot of photos. It was a fantastic holiday.",
-      "tips": ["Use Past Simple", "Describe the weather", "Mention 3 activities"]
+      "tips": [
+        "Use Past Simple",
+        "Describe the weather",
+        "Mention 3 activities"
+      ]
     },
     {
       "id": "a2-s6",
@@ -53,7 +73,11 @@
       "prompt": "Talk about your favourite food for 30 seconds. Say what it is, who cooks it, when you eat it, and why you like it.",
       "seconds": 30,
       "sample": "My favourite food is pizza. My mother makes it on Saturdays. She uses tomatoes, cheese and ham. I love it because it is delicious and we eat it together as a family. It is my favourite day of the week.",
-      "tips": ["Use adjectives to describe", "Use 'because' to give reasons", "Mention your family"]
+      "tips": [
+        "Use adjectives to describe",
+        "Use 'because' to give reasons",
+        "Mention your family"
+      ]
     },
     {
       "id": "a2-s7",
@@ -62,7 +86,11 @@
       "prompt": "Describe this picture for 1 minute. Talk about what you see, who is in the picture, what they are doing and how they feel.",
       "seconds": 60,
       "sample": "In this picture I can see a family in a park. There are four people: a mother, a father and two children. The mother is sitting on a bench and reading a book. The father is playing with a ball with the children. They look happy. The weather is sunny. In the background there are trees and a small lake. It looks like a nice day.",
-      "tips": ["Use 'There is/are'", "Use Present Continuous", "Describe position (in the background, on the left)"]
+      "tips": [
+        "Use 'There is/are'",
+        "Use Present Continuous",
+        "Describe position (in the background, on the left)"
+      ]
     },
     {
       "id": "a2-s8",
@@ -71,7 +99,11 @@
       "prompt": "Describe your bedroom for 1 minute. Say what furniture there is, what colour the walls are, and what you like about your room.",
       "seconds": 60,
       "sample": "My bedroom is small but comfortable. There is a bed, a desk and a wardrobe. The walls are blue and there are posters on them. There is a lamp on the desk and a bookshelf next to the bed. I like my room because it is quiet and I can study there. From the window I can see the garden.",
-      "tips": ["Use prepositions of place", "Use 'There is/are'", "Use colours"]
+      "tips": [
+        "Use prepositions of place",
+        "Use 'There is/are'",
+        "Use colours"
+      ]
     },
     {
       "id": "a2-s9",
@@ -80,7 +112,11 @@
       "prompt": "Talk about two activities for 1 minute: reading books and watching TV. Which do you prefer and why?",
       "seconds": 60,
       "sample": "I prefer reading books to watching TV. I think books are more interesting because you can imagine the story in your head. Watching TV is easier, but sometimes there is nothing good on. However, I also like watching films in the evening with my family. In my opinion, both activities are good, but reading is better for your brain.",
-      "tips": ["Use comparatives", "Use 'prefer' and 'like... better'", "Give reasons with 'because'"]
+      "tips": [
+        "Use comparatives",
+        "Use 'prefer' and 'like... better'",
+        "Give reasons with 'because'"
+      ]
     },
     {
       "id": "a2-s10",
@@ -89,7 +125,11 @@
       "prompt": "Talk about your plans for next weekend for 1 minute. Say what you are going to do, who you are going to be with, and why.",
       "seconds": 60,
       "sample": "Next weekend I am going to visit my grandparents. We are going to have lunch together and then we are going to play cards. I am also going to meet my friends on Saturday afternoon to go to the cinema. We are going to see a new comedy. I think it will be a great weekend.",
-      "tips": ["Use 'going to' for plans", "Use time expressions (on Saturday, next weekend)", "Mention people you will be with"]
+      "tips": [
+        "Use 'going to' for plans",
+        "Use time expressions (on Saturday, next weekend)",
+        "Mention people you will be with"
+      ]
     }
   ]
 }

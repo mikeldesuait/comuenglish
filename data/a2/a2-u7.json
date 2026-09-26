@@ -17,31 +17,83 @@
           "heading": "Short adjectives",
           "tableHeader": true,
           "table": [
-            ["Adjective", "Comparative", "Example"],
-            ["tall", "taller", "He is taller than me."],
-            ["big", "bigger", "My house is bigger than yours."],
-            ["easy", "easier", "This test is easier than the last one."],
-            ["happy", "happier", "She is happier today."]
+            [
+              "Adjective",
+              "Comparative",
+              "Example"
+            ],
+            [
+              "tall",
+              "taller",
+              "He is taller than me."
+            ],
+            [
+              "big",
+              "bigger",
+              "My house is bigger than yours."
+            ],
+            [
+              "easy",
+              "easier",
+              "This test is easier than the last one."
+            ],
+            [
+              "happy",
+              "happier",
+              "She is happier today."
+            ]
           ]
         },
         {
           "heading": "Long adjectives",
           "tableHeader": true,
           "table": [
-            ["Adjective", "Comparative", "Example"],
-            ["interesting", "more interesting", "This book is more interesting."],
-            ["beautiful", "more beautiful", "She is more beautiful than her sister."],
-            ["expensive", "more expensive", "This car is more expensive."]
+            [
+              "Adjective",
+              "Comparative",
+              "Example"
+            ],
+            [
+              "interesting",
+              "more interesting",
+              "This book is more interesting."
+            ],
+            [
+              "beautiful",
+              "more beautiful",
+              "She is more beautiful than her sister."
+            ],
+            [
+              "expensive",
+              "more expensive",
+              "This car is more expensive."
+            ]
           ]
         },
         {
           "heading": "Irregular comparatives",
           "tableHeader": true,
           "table": [
-            ["Adjective", "Comparative", "Example"],
-            ["good", "better", "This film is better than that one."],
-            ["bad", "worse", "The weather is worse today."],
-            ["far", "further / farther", "The station is further than I thought."]
+            [
+              "Adjective",
+              "Comparative",
+              "Example"
+            ],
+            [
+              "good",
+              "better",
+              "This film is better than that one."
+            ],
+            [
+              "bad",
+              "worse",
+              "The weather is worse today."
+            ],
+            [
+              "far",
+              "further / farther",
+              "The station is further than I thought."
+            ]
           ]
         },
         {
@@ -49,11 +101,31 @@
           "body": "Superlatives compare one thing with all the others in a group. Short adjectives: the + -est. Long adjectives: the most + adjective.",
           "tableHeader": true,
           "table": [
-            ["Adjective", "Superlative", "Example"],
-            ["tall", "the tallest", "He is the tallest in the class."],
-            ["interesting", "the most interesting", "This is the most interesting book."],
-            ["good", "the best", "She is the best student."],
-            ["bad", "the worst", "That was the worst film."]
+            [
+              "Adjective",
+              "Superlative",
+              "Example"
+            ],
+            [
+              "tall",
+              "the tallest",
+              "He is the tallest in the class."
+            ],
+            [
+              "interesting",
+              "the most interesting",
+              "This is the most interesting book."
+            ],
+            [
+              "good",
+              "the best",
+              "She is the best student."
+            ],
+            [
+              "bad",
+              "the worst",
+              "That was the worst film."
+            ]
           ]
         },
         {
@@ -90,46 +162,121 @@
         {
           "heading": "Shops",
           "list": [
-            { "term": "supermarket", "definition": "I buy food at the supermarket." },
-            { "term": "bakery", "definition": "We buy bread at the bakery." },
-            { "term": "butcher's", "definition": "She buys meat at the butcher's." },
-            { "term": "chemist's", "definition": "You can buy medicine at the chemist's." },
-            { "term": "bookshop", "definition": "I love going to the bookshop." },
-            { "term": "clothes shop", "definition": "She works in a clothes shop." },
-            { "term": "shoe shop", "definition": "He bought new shoes at the shoe shop." }
+            {
+              "term": "supermarket",
+              "definition": "I buy food at the supermarket."
+            },
+            {
+              "term": "bakery",
+              "definition": "We buy bread at the bakery."
+            },
+            {
+              "term": "butcher's",
+              "definition": "She buys meat at the butcher's."
+            },
+            {
+              "term": "chemist's",
+              "definition": "You can buy medicine at the chemist's."
+            },
+            {
+              "term": "bookshop",
+              "definition": "I love going to the bookshop."
+            },
+            {
+              "term": "clothes shop",
+              "definition": "She works in a clothes shop."
+            },
+            {
+              "term": "shoe shop",
+              "definition": "He bought new shoes at the shoe shop."
+            }
           ]
         },
         {
           "heading": "Shopping phrases",
           "list": [
-            { "term": "How much is it?", "definition": "How much is this T-shirt?" },
-            { "term": "It's on sale", "definition": "These shoes are on sale." },
-            { "term": "expensive", "definition": "This jacket is too expensive." },
-            { "term": "cheap", "definition": "The food here is very cheap." },
-            { "term": "Can I try it on?", "definition": "Can I try this dress on?" },
-            { "term": "I'll take it", "definition": "I like it, I'll take it." }
+            {
+              "term": "How much is it?",
+              "definition": "How much is this T-shirt?"
+            },
+            {
+              "term": "It's on sale",
+              "definition": "These shoes are on sale."
+            },
+            {
+              "term": "expensive",
+              "definition": "This jacket is too expensive."
+            },
+            {
+              "term": "cheap",
+              "definition": "The food here is very cheap."
+            },
+            {
+              "term": "Can I try it on?",
+              "definition": "Can I try this dress on?"
+            },
+            {
+              "term": "I'll take it",
+              "definition": "I like it, I'll take it."
+            }
           ]
         },
         {
           "heading": "Places in a city",
           "list": [
-            { "term": "park", "definition": "The park is bigger than the square." },
-            { "term": "museum", "definition": "The museum is very interesting." },
-            { "term": "library", "definition": "The library is quieter than the café." },
-            { "term": "market", "definition": "The market is the busiest place on Saturday." },
-            { "term": "cinema", "definition": "The cinema is the most popular place." },
-            { "term": "restaurant", "definition": "This restaurant is more expensive than the other." }
+            {
+              "term": "park",
+              "definition": "The park is bigger than the square."
+            },
+            {
+              "term": "museum",
+              "definition": "The museum is very interesting."
+            },
+            {
+              "term": "library",
+              "definition": "The library is quieter than the café."
+            },
+            {
+              "term": "market",
+              "definition": "The market is the busiest place on Saturday."
+            },
+            {
+              "term": "cinema",
+              "definition": "The cinema is the most popular place."
+            },
+            {
+              "term": "restaurant",
+              "definition": "This restaurant is more expensive than the other."
+            }
           ]
         },
         {
           "heading": "Common adjectives for comparing",
           "list": [
-            { "term": "big / small", "definition": "My house is bigger than hers." },
-            { "term": "fast / slow", "definition": "Trains are faster than buses." },
-            { "term": "old / new", "definition": "This phone is newer than mine." },
-            { "term": "cheap / expensive", "definition": "This restaurant is cheaper." },
-            { "term": "quiet / noisy", "definition": "The library is quieter." },
-            { "term": "good / bad", "definition": "This is better than that." }
+            {
+              "term": "big / small",
+              "definition": "My house is bigger than hers."
+            },
+            {
+              "term": "fast / slow",
+              "definition": "Trains are faster than buses."
+            },
+            {
+              "term": "old / new",
+              "definition": "This phone is newer than mine."
+            },
+            {
+              "term": "cheap / expensive",
+              "definition": "This restaurant is cheaper."
+            },
+            {
+              "term": "quiet / noisy",
+              "definition": "The library is quieter."
+            },
+            {
+              "term": "good / bad",
+              "definition": "This is better than that."
+            }
           ]
         }
       ]
@@ -160,16 +307,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "This book is ___ than that one.", "options": ["interesting", "more interesting", "most interesting", "interestinger"], "correct": 1, "explanation": "For long adjectives we use more + adjective + than."},
-        {"prompt": "She is the ___ student in the class.", "options": ["good", "better", "best", "more good"], "correct": 2, "explanation": "Good is irregular. Its superlative is 'best'."},
-        {"prompt": "My brother is ___ than me.", "options": ["tall", "taller", "tallest", "more tall"], "correct": 1, "explanation": "Short adjective: tall → taller."},
-        {"prompt": "This is the ___ restaurant in town.", "options": ["expensive", "more expensive", "most expensive", "expensiver"], "correct": 2, "explanation": "Long adjective superlative: the most + adjective."},
-        {"prompt": "There is ___ milk in the fridge.", "options": ["some", "any", "many", "a"], "correct": 0, "explanation": "In positive sentences we use 'some'."},
-        {"prompt": "Are there ___ apples?", "options": ["some", "any", "much", "a"], "correct": 1, "explanation": "In questions we use 'any'."},
-        {"prompt": "How ___ money do you have?", "options": ["many", "much", "some", "any"], "correct": 1, "explanation": "Money is uncountable, so we use 'how much'."},
-        {"prompt": "How ___ students are there?", "options": ["many", "much", "some", "any"], "correct": 0, "explanation": "Students is countable, so we use 'how many'."},
-        {"prompt": "This dress is ___ than that one.", "options": ["cheap", "cheaper", "cheapest", "more cheap"], "correct": 1, "explanation": "Short adjective: cheap → cheaper."},
-        {"prompt": "That was the ___ film I have ever seen.", "options": ["bad", "worse", "worst", "badder"], "correct": 2, "explanation": "Bad is irregular. Superlative: worst."}
+        {
+          "prompt": "This book is ___ than that one.",
+          "options": [
+            "interesting",
+            "more interesting",
+            "most interesting",
+            "interestinger"
+          ],
+          "correct": 1,
+          "explanation": "For long adjectives we use more + adjective + than."
+        },
+        {
+          "prompt": "She is the ___ student in the class.",
+          "options": [
+            "good",
+            "better",
+            "best",
+            "more good"
+          ],
+          "correct": 2,
+          "explanation": "Good is irregular. Its superlative is 'best'."
+        },
+        {
+          "prompt": "My brother is ___ than me.",
+          "options": [
+            "tall",
+            "taller",
+            "tallest",
+            "more tall"
+          ],
+          "correct": 1,
+          "explanation": "Short adjective: tall → taller."
+        },
+        {
+          "prompt": "This is the ___ restaurant in town.",
+          "options": [
+            "expensive",
+            "more expensive",
+            "most expensive",
+            "expensiver"
+          ],
+          "correct": 2,
+          "explanation": "Long adjective superlative: the most + adjective."
+        },
+        {
+          "prompt": "There is ___ milk in the fridge.",
+          "options": [
+            "some",
+            "any",
+            "many",
+            "a"
+          ],
+          "correct": 0,
+          "explanation": "In positive sentences we use 'some'."
+        },
+        {
+          "prompt": "Are there ___ apples?",
+          "options": [
+            "some",
+            "any",
+            "much",
+            "a"
+          ],
+          "correct": 1,
+          "explanation": "In questions we use 'any'."
+        },
+        {
+          "prompt": "How ___ money do you have?",
+          "options": [
+            "many",
+            "much",
+            "some",
+            "any"
+          ],
+          "correct": 1,
+          "explanation": "Money is uncountable, so we use 'how much'."
+        },
+        {
+          "prompt": "How ___ students are there?",
+          "options": [
+            "many",
+            "much",
+            "some",
+            "any"
+          ],
+          "correct": 0,
+          "explanation": "Students is countable, so we use 'how many'."
+        },
+        {
+          "prompt": "This dress is ___ than that one.",
+          "options": [
+            "cheap",
+            "cheaper",
+            "cheapest",
+            "more cheap"
+          ],
+          "correct": 1,
+          "explanation": "Short adjective: cheap → cheaper."
+        },
+        {
+          "prompt": "That was the ___ film I have ever seen.",
+          "options": [
+            "bad",
+            "worse",
+            "worst",
+            "badder"
+          ],
+          "correct": 2,
+          "explanation": "Bad is irregular. Superlative: worst."
+        }
       ]
     },
     {
@@ -185,16 +432,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "London is ___ than Madrid.", "options": ["big", "bigger", "biggest", "more big"], "correct": 1, "explanation": "Short adjective: big → bigger."},
-        {"prompt": "This is the ___ film of the year.", "options": ["good", "better", "best", "more good"], "correct": 2, "explanation": "Irregular superlative: best."},
-        {"prompt": "She is ___ than her sister.", "options": ["beautiful", "more beautiful", "most beautiful", "beautifuler"], "correct": 1, "explanation": "Long adjective: more beautiful."},
-        {"prompt": "There isn't ___ bread.", "options": ["some", "any", "many", "a"], "correct": 1, "explanation": "Negative: any."},
-        {"prompt": "How ___ water do you drink?", "options": ["many", "much", "some", "any"], "correct": 1, "explanation": "Water is uncountable: how much."},
-        {"prompt": "My phone is ___ than yours.", "options": ["new", "newer", "newest", "more new"], "correct": 1, "explanation": "Short adjective: new → newer."},
-        {"prompt": "This is the ___ place in the city.", "options": ["noisy", "noisier", "noisiest", "most noisy"], "correct": 2, "explanation": "Short adjective with -y: noisy → the noisiest."},
-        {"prompt": "The weather is ___ today than yesterday.", "options": ["bad", "worse", "worst", "badder"], "correct": 1, "explanation": "Irregular comparative: worse."},
-        {"prompt": "How ___ people are in the room?", "options": ["many", "much", "some", "any"], "correct": 0, "explanation": "People is countable: how many."},
-        {"prompt": "I have ___ friends in this city.", "options": ["a little", "a few", "much", "any"], "correct": 1, "explanation": "Countable: a few friends."}
+        {
+          "prompt": "London is ___ than Madrid.",
+          "options": [
+            "big",
+            "bigger",
+            "biggest",
+            "more big"
+          ],
+          "correct": 1,
+          "explanation": "Short adjective: big → bigger."
+        },
+        {
+          "prompt": "This is the ___ film of the year.",
+          "options": [
+            "good",
+            "better",
+            "best",
+            "more good"
+          ],
+          "correct": 2,
+          "explanation": "Irregular superlative: best."
+        },
+        {
+          "prompt": "She is ___ than her sister.",
+          "options": [
+            "beautiful",
+            "more beautiful",
+            "most beautiful",
+            "beautifuler"
+          ],
+          "correct": 1,
+          "explanation": "Long adjective: more beautiful."
+        },
+        {
+          "prompt": "There isn't ___ bread.",
+          "options": [
+            "some",
+            "any",
+            "many",
+            "a"
+          ],
+          "correct": 1,
+          "explanation": "Negative: any."
+        },
+        {
+          "prompt": "How ___ water do you drink?",
+          "options": [
+            "many",
+            "much",
+            "some",
+            "any"
+          ],
+          "correct": 1,
+          "explanation": "Water is uncountable: how much."
+        },
+        {
+          "prompt": "My phone is ___ than yours.",
+          "options": [
+            "new",
+            "newer",
+            "newest",
+            "more new"
+          ],
+          "correct": 1,
+          "explanation": "Short adjective: new → newer."
+        },
+        {
+          "prompt": "This is the ___ place in the city.",
+          "options": [
+            "noisy",
+            "noisier",
+            "noisiest",
+            "most noisy"
+          ],
+          "correct": 2,
+          "explanation": "Short adjective with -y: noisy → the noisiest."
+        },
+        {
+          "prompt": "The weather is ___ today than yesterday.",
+          "options": [
+            "bad",
+            "worse",
+            "worst",
+            "badder"
+          ],
+          "correct": 1,
+          "explanation": "Irregular comparative: worse."
+        },
+        {
+          "prompt": "How ___ people are in the room?",
+          "options": [
+            "many",
+            "much",
+            "some",
+            "any"
+          ],
+          "correct": 0,
+          "explanation": "People is countable: how many."
+        },
+        {
+          "prompt": "I have ___ friends in this city.",
+          "options": [
+            "a little",
+            "a few",
+            "much",
+            "any"
+          ],
+          "correct": 1,
+          "explanation": "Countable: a few friends."
+        }
       ]
     },
     {

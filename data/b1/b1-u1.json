@@ -18,28 +18,92 @@
           "body": "Subject + have / has + past participle.",
           "tableHeader": true,
           "table": [
-            ["Subject", "Form", "Example"],
-            ["I / You / We / They", "have + past participle", "I have visited Paris."],
-            ["He / She / It", "has + past participle", "She has been to London."],
-            ["Negative", "have not / has not", "I have not seen that film."],
-            ["Question", "Have / Has + subject", "Have you ever eaten sushi?"]
+            [
+              "Subject",
+              "Form",
+              "Example"
+            ],
+            [
+              "I / You / We / They",
+              "have + past participle",
+              "I have visited Paris."
+            ],
+            [
+              "He / She / It",
+              "has + past participle",
+              "She has been to London."
+            ],
+            [
+              "Negative",
+              "have not / has not",
+              "I have not seen that film."
+            ],
+            [
+              "Question",
+              "Have / Has + subject",
+              "Have you ever eaten sushi?"
+            ]
           ]
         },
         {
           "heading": "Irregular past participles",
           "tableHeader": true,
           "table": [
-            ["Infinitive", "Past participle", "Example"],
-            ["be", "been", "I have been to Italy."],
-            ["go", "gone", "She has gone home."],
-            ["see", "seen", "I have seen this film."],
-            ["eat", "eaten", "We have eaten sushi."],
-            ["do", "done", "He has done his homework."],
-            ["write", "written", "I have written a letter."],
-            ["take", "taken", "They have taken many photos."],
-            ["speak", "spoken", "She has spoken to the manager."],
-            ["break", "broken", "He has broken his leg."],
-            ["lose", "lost", "I have lost my keys."]
+            [
+              "Infinitive",
+              "Past participle",
+              "Example"
+            ],
+            [
+              "be",
+              "been",
+              "I have been to Italy."
+            ],
+            [
+              "go",
+              "gone",
+              "She has gone home."
+            ],
+            [
+              "see",
+              "seen",
+              "I have seen this film."
+            ],
+            [
+              "eat",
+              "eaten",
+              "We have eaten sushi."
+            ],
+            [
+              "do",
+              "done",
+              "He has done his homework."
+            ],
+            [
+              "write",
+              "written",
+              "I have written a letter."
+            ],
+            [
+              "take",
+              "taken",
+              "They have taken many photos."
+            ],
+            [
+              "speak",
+              "spoken",
+              "She has spoken to the manager."
+            ],
+            [
+              "break",
+              "broken",
+              "He has broken his leg."
+            ],
+            [
+              "lose",
+              "lost",
+              "I have lost my keys."
+            ]
           ]
         },
         {
@@ -47,12 +111,36 @@
           "body": "These words are commonly used with the Present Perfect.",
           "tableHeader": true,
           "table": [
-            ["Word", "Use", "Example"],
-            ["ever", "in questions", "Have you ever been to Japan?"],
-            ["never", "negative meaning", "I have never eaten sushi."],
-            ["just", "very recent actions", "She has just arrived."],
-            ["already", "before now", "I have already finished."],
-            ["yet", "until now (negatives, questions)", "I haven't finished yet."]
+            [
+              "Word",
+              "Use",
+              "Example"
+            ],
+            [
+              "ever",
+              "in questions",
+              "Have you ever been to Japan?"
+            ],
+            [
+              "never",
+              "negative meaning",
+              "I have never eaten sushi."
+            ],
+            [
+              "just",
+              "very recent actions",
+              "She has just arrived."
+            ],
+            [
+              "already",
+              "before now",
+              "I have already finished."
+            ],
+            [
+              "yet",
+              "until now (negatives, questions)",
+              "I haven't finished yet."
+            ]
           ]
         },
         {
@@ -60,11 +148,31 @@
           "body": "Present Perfect = no specific time. Past Simple = specific finished time.",
           "tableHeader": true,
           "table": [
-            ["Tense", "Use", "Example"],
-            ["Present Perfect", "experience without time", "I have visited Paris."],
-            ["Past Simple", "specific time", "I visited Paris in 2020."],
-            ["Present Perfect", "recent news", "I have lost my keys."],
-            ["Past Simple", "past detail", "I lost my keys yesterday."]
+            [
+              "Tense",
+              "Use",
+              "Example"
+            ],
+            [
+              "Present Perfect",
+              "experience without time",
+              "I have visited Paris."
+            ],
+            [
+              "Past Simple",
+              "specific time",
+              "I visited Paris in 2020."
+            ],
+            [
+              "Present Perfect",
+              "recent news",
+              "I have lost my keys."
+            ],
+            [
+              "Past Simple",
+              "past detail",
+              "I lost my keys yesterday."
+            ]
           ]
         },
         {
@@ -84,49 +192,133 @@
         {
           "heading": "Travel experiences",
           "list": [
-            { "term": "be abroad", "definition": "I have been abroad many times." },
-            { "term": "visit a country", "definition": "She has visited ten countries." },
-            { "term": "try local food", "definition": "We have tried local food in every country." },
-            { "term": "meet new people", "definition": "I have met a lot of interesting people." },
-            { "term": "see famous places", "definition": "They have seen the Eiffel Tower." },
-            { "term": "fly in a plane", "definition": "I have flown in a plane many times." },
-            { "term": "travel alone", "definition": "He has travelled alone twice." },
-            { "term": "live in another country", "definition": "She has lived in three countries." }
+            {
+              "term": "be abroad",
+              "definition": "I have been abroad many times."
+            },
+            {
+              "term": "visit a country",
+              "definition": "She has visited ten countries."
+            },
+            {
+              "term": "try local food",
+              "definition": "We have tried local food in every country."
+            },
+            {
+              "term": "meet new people",
+              "definition": "I have met a lot of interesting people."
+            },
+            {
+              "term": "see famous places",
+              "definition": "They have seen the Eiffel Tower."
+            },
+            {
+              "term": "fly in a plane",
+              "definition": "I have flown in a plane many times."
+            },
+            {
+              "term": "travel alone",
+              "definition": "He has travelled alone twice."
+            },
+            {
+              "term": "live in another country",
+              "definition": "She has lived in three countries."
+            }
           ]
         },
         {
           "heading": "Personal achievements",
           "list": [
-            { "term": "pass an exam", "definition": "I have passed all my exams." },
-            { "term": "get a diploma", "definition": "She has got a diploma in music." },
-            { "term": "win a competition", "definition": "He has won a swimming competition." },
-            { "term": "learn a language", "definition": "I have learned three languages." },
-            { "term": "run a marathon", "definition": "She has run two marathons." },
-            { "term": "climb a mountain", "definition": "They have climbed Mount Fuji." },
-            { "term": "write a book", "definition": "He has written a novel." },
-            { "term": "start a business", "definition": "She has started her own company." }
+            {
+              "term": "pass an exam",
+              "definition": "I have passed all my exams."
+            },
+            {
+              "term": "get a diploma",
+              "definition": "She has got a diploma in music."
+            },
+            {
+              "term": "win a competition",
+              "definition": "He has won a swimming competition."
+            },
+            {
+              "term": "learn a language",
+              "definition": "I have learned three languages."
+            },
+            {
+              "term": "run a marathon",
+              "definition": "She has run two marathons."
+            },
+            {
+              "term": "climb a mountain",
+              "definition": "They have climbed Mount Fuji."
+            },
+            {
+              "term": "write a book",
+              "definition": "He has written a novel."
+            },
+            {
+              "term": "start a business",
+              "definition": "She has started her own company."
+            }
           ]
         },
         {
           "heading": "Life events",
           "list": [
-            { "term": "grow up", "definition": "I have grown up in a small town." },
-            { "term": "fall in love", "definition": "They have fallen in love." },
-            { "term": "get married", "definition": "My sister has got married." },
-            { "term": "have children", "definition": "They have had two children." },
-            { "term": "change jobs", "definition": "He has changed jobs three times." },
-            { "term": "move house", "definition": "We have moved house twice." },
-            { "term": "make friends", "definition": "I have made many friends here." },
-            { "term": "retire", "definition": "My grandfather has retired." }
+            {
+              "term": "grow up",
+              "definition": "I have grown up in a small town."
+            },
+            {
+              "term": "fall in love",
+              "definition": "They have fallen in love."
+            },
+            {
+              "term": "get married",
+              "definition": "My sister has got married."
+            },
+            {
+              "term": "have children",
+              "definition": "They have had two children."
+            },
+            {
+              "term": "change jobs",
+              "definition": "He has changed jobs three times."
+            },
+            {
+              "term": "move house",
+              "definition": "We have moved house twice."
+            },
+            {
+              "term": "make friends",
+              "definition": "I have made many friends here."
+            },
+            {
+              "term": "retire",
+              "definition": "My grandfather has retired."
+            }
           ]
         },
         {
           "heading": "Expressions with ever and never",
           "list": [
-            { "term": "Have you ever...?", "definition": "Have you ever been to New York?" },
-            { "term": "I have never...", "definition": "I have never seen snow." },
-            { "term": "the best I have ever...", "definition": "It's the best film I have ever seen." },
-            { "term": "the first time I have...", "definition": "This is the first time I have flown." }
+            {
+              "term": "Have you ever...?",
+              "definition": "Have you ever been to New York?"
+            },
+            {
+              "term": "I have never...",
+              "definition": "I have never seen snow."
+            },
+            {
+              "term": "the best I have ever...",
+              "definition": "It's the best film I have ever seen."
+            },
+            {
+              "term": "the first time I have...",
+              "definition": "This is the first time I have flown."
+            }
           ]
         }
       ]
@@ -157,16 +349,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "I ___ never ___ to Japan.", "options": ["have / been", "has / been", "have / went", "did / go"], "correct": 0, "explanation": "With 'I' we use 'have' + past participle."},
-        {"prompt": "She ___ visited Paris twice.", "options": ["have", "has", "is", "was"], "correct": 1, "explanation": "With 'she' we use 'has'."},
-        {"prompt": "___ you ever eaten sushi?", "options": ["Have", "Has", "Are", "Did"], "correct": 0, "explanation": "With 'you' we use 'Have'."},
-        {"prompt": "They ___ just ___ the house.", "options": ["have / left", "has / left", "have / leave", "has / leave"], "correct": 0, "explanation": "With 'they' we use 'have' + past participle."},
-        {"prompt": "I ___ that film yet.", "options": ["have not seen", "has not seen", "did not see", "not seen"], "correct": 0, "explanation": "Negative: have not + past participle."},
-        {"prompt": "He ___ already ___ his homework.", "options": ["have / done", "has / done", "has / did", "have / did"], "correct": 1, "explanation": "With 'he' we use 'has' + past participle."},
-        {"prompt": "I ___ Paris last summer.", "options": ["have visited", "visited", "visit", "visiting"], "correct": 1, "explanation": "Specific past time: Past Simple."},
-        {"prompt": "She ___ never ___ a horse.", "options": ["have / ridden", "has / ridden", "has / rode", "have / rode"], "correct": 1, "explanation": "With 'she' we use 'has' + past participle."},
-        {"prompt": "We ___ here since 2020.", "options": ["live", "have lived", "lived", "living"], "correct": 1, "explanation": "Situation that started in the past and continues: Present Perfect."},
-        {"prompt": "___ he ever ___ to London?", "options": ["Have / been", "Has / been", "Has / went", "Have / went"], "correct": 1, "explanation": "With 'he' we use 'Has'."}
+        {
+          "prompt": "I ___ never ___ to Japan.",
+          "options": [
+            "have / been",
+            "has / been",
+            "have / went",
+            "did / go"
+          ],
+          "correct": 0,
+          "explanation": "With 'I' we use 'have' + past participle."
+        },
+        {
+          "prompt": "She ___ visited Paris twice.",
+          "options": [
+            "have",
+            "has",
+            "is",
+            "was"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' we use 'has'."
+        },
+        {
+          "prompt": "___ you ever eaten sushi?",
+          "options": [
+            "Have",
+            "Has",
+            "Are",
+            "Did"
+          ],
+          "correct": 0,
+          "explanation": "With 'you' we use 'Have'."
+        },
+        {
+          "prompt": "They ___ just ___ the house.",
+          "options": [
+            "have / left",
+            "has / left",
+            "have / leave",
+            "has / leave"
+          ],
+          "correct": 0,
+          "explanation": "With 'they' we use 'have' + past participle."
+        },
+        {
+          "prompt": "I ___ that film yet.",
+          "options": [
+            "have not seen",
+            "has not seen",
+            "did not see",
+            "not seen"
+          ],
+          "correct": 0,
+          "explanation": "Negative: have not + past participle."
+        },
+        {
+          "prompt": "He ___ already ___ his homework.",
+          "options": [
+            "have / done",
+            "has / done",
+            "has / did",
+            "have / did"
+          ],
+          "correct": 1,
+          "explanation": "With 'he' we use 'has' + past participle."
+        },
+        {
+          "prompt": "I ___ Paris last summer.",
+          "options": [
+            "have visited",
+            "visited",
+            "visit",
+            "visiting"
+          ],
+          "correct": 1,
+          "explanation": "Specific past time: Past Simple."
+        },
+        {
+          "prompt": "She ___ never ___ a horse.",
+          "options": [
+            "have / ridden",
+            "has / ridden",
+            "has / rode",
+            "have / rode"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' we use 'has' + past participle."
+        },
+        {
+          "prompt": "We ___ here since 2020.",
+          "options": [
+            "live",
+            "have lived",
+            "lived",
+            "living"
+          ],
+          "correct": 1,
+          "explanation": "Situation that started in the past and continues: Present Perfect."
+        },
+        {
+          "prompt": "___ he ever ___ to London?",
+          "options": [
+            "Have / been",
+            "Has / been",
+            "Has / went",
+            "Have / went"
+          ],
+          "correct": 1,
+          "explanation": "With 'he' we use 'Has'."
+        }
       ]
     },
     {
@@ -182,16 +474,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "I ___ never ___ to Australia.", "options": ["have / been", "has / been", "have / went", "did / go"], "correct": 0, "explanation": "With 'I' we use 'have' + past participle."},
-        {"prompt": "She ___ just ___ home.", "options": ["have / arrived", "has / arrived", "has / arrive", "have / arrive"], "correct": 1, "explanation": "With 'she' we use 'has' + past participle."},
-        {"prompt": "___ you ever ___ a horse?", "options": ["Have / ridden", "Has / ridden", "Did / ride", "Have / ride"], "correct": 0, "explanation": "Question: Have + you + ever + past participle?"},
-        {"prompt": "We ___ not ___ that film yet.", "options": ["have / seen", "has / seen", "did / see", "have / saw"], "correct": 0, "explanation": "With 'we' we use 'have not' + past participle."},
-        {"prompt": "He ___ already ___ breakfast.", "options": ["have / had", "has / had", "has / has", "have / has"], "correct": 1, "explanation": "With 'he' we use 'has' + past participle."},
-        {"prompt": "I ___ to Italy last summer.", "options": ["have been", "went", "go", "have go"], "correct": 1, "explanation": "Specific past time: Past Simple."},
-        {"prompt": "They ___ married for ten years.", "options": ["are", "have been", "were", "be"], "correct": 1, "explanation": "Situation that continues: Present Perfect."},
-        {"prompt": "I ___ this book twice.", "options": ["read", "have read", "am reading", "reads"], "correct": 1, "explanation": "Experience without specific time: Present Perfect."},
-        {"prompt": "She ___ not ___ her keys yet.", "options": ["have / found", "has / found", "has / find", "have / find"], "correct": 1, "explanation": "With 'she' we use 'has not' + past participle."},
-        {"prompt": "___ they ever ___ Chinese food?", "options": ["Have / tried", "Has / tried", "Did / try", "Have / try"], "correct": 0, "explanation": "With 'they' we use 'Have'."}
+        {
+          "prompt": "I ___ never ___ to Australia.",
+          "options": [
+            "have / been",
+            "has / been",
+            "have / went",
+            "did / go"
+          ],
+          "correct": 0,
+          "explanation": "With 'I' we use 'have' + past participle."
+        },
+        {
+          "prompt": "She ___ just ___ home.",
+          "options": [
+            "have / arrived",
+            "has / arrived",
+            "has / arrive",
+            "have / arrive"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' we use 'has' + past participle."
+        },
+        {
+          "prompt": "___ you ever ___ a horse?",
+          "options": [
+            "Have / ridden",
+            "Has / ridden",
+            "Did / ride",
+            "Have / ride"
+          ],
+          "correct": 0,
+          "explanation": "Question: Have + you + ever + past participle?"
+        },
+        {
+          "prompt": "We ___ not ___ that film yet.",
+          "options": [
+            "have / seen",
+            "has / seen",
+            "did / see",
+            "have / saw"
+          ],
+          "correct": 0,
+          "explanation": "With 'we' we use 'have not' + past participle."
+        },
+        {
+          "prompt": "He ___ already ___ breakfast.",
+          "options": [
+            "have / had",
+            "has / had",
+            "has / has",
+            "have / has"
+          ],
+          "correct": 1,
+          "explanation": "With 'he' we use 'has' + past participle."
+        },
+        {
+          "prompt": "I ___ to Italy last summer.",
+          "options": [
+            "have been",
+            "went",
+            "go",
+            "have go"
+          ],
+          "correct": 1,
+          "explanation": "Specific past time: Past Simple."
+        },
+        {
+          "prompt": "They ___ married for ten years.",
+          "options": [
+            "are",
+            "have been",
+            "were",
+            "be"
+          ],
+          "correct": 1,
+          "explanation": "Situation that continues: Present Perfect."
+        },
+        {
+          "prompt": "I ___ this book twice.",
+          "options": [
+            "read",
+            "have read",
+            "am reading",
+            "reads"
+          ],
+          "correct": 1,
+          "explanation": "Experience without specific time: Present Perfect."
+        },
+        {
+          "prompt": "She ___ not ___ her keys yet.",
+          "options": [
+            "have / found",
+            "has / found",
+            "has / find",
+            "have / find"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' we use 'has not' + past participle."
+        },
+        {
+          "prompt": "___ they ever ___ Chinese food?",
+          "options": [
+            "Have / tried",
+            "Has / tried",
+            "Did / try",
+            "Have / try"
+          ],
+          "correct": 0,
+          "explanation": "With 'they' we use 'Have'."
+        }
       ]
     },
     {

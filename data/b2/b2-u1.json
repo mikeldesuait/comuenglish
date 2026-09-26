@@ -14,10 +14,26 @@
           "body": "We use modal verbs to express how certain we are about something in the present. The choice of modal shows the strength of our deduction.",
           "tableHeader": true,
           "table": [
-            ["Modal", "Certainty", "Example"],
-            ["must", "almost certain (positive)", "She must be at work."],
-            ["might / may / could", "possible", "He might be at home."],
-            ["can't", "impossible", "That can't be true."]
+            [
+              "Modal",
+              "Certainty",
+              "Example"
+            ],
+            [
+              "must",
+              "almost certain (positive)",
+              "She must be at work."
+            ],
+            [
+              "might / may / could",
+              "possible",
+              "He might be at home."
+            ],
+            [
+              "can't",
+              "impossible",
+              "That can't be true."
+            ]
           ]
         },
         {
@@ -25,12 +41,36 @@
           "body": "To make deductions about the past we use modal + have + past participle.",
           "tableHeader": true,
           "table": [
-            ["Structure", "Meaning", "Example"],
-            ["must have + pp", "almost certain", "She must have left early."],
-            ["might / may / could have + pp", "possible", "He might have forgotten."],
-            ["can't have + pp", "impossible", "They can't have arrived yet."],
-            ["should have + pp", "regret / criticism", "You should have told me."],
-            ["would have + pp", "hypothetical past", "I would have helped you."]
+            [
+              "Structure",
+              "Meaning",
+              "Example"
+            ],
+            [
+              "must have + pp",
+              "almost certain",
+              "She must have left early."
+            ],
+            [
+              "might / may / could have + pp",
+              "possible",
+              "He might have forgotten."
+            ],
+            [
+              "can't have + pp",
+              "impossible",
+              "They can't have arrived yet."
+            ],
+            [
+              "should have + pp",
+              "regret / criticism",
+              "You should have told me."
+            ],
+            [
+              "would have + pp",
+              "hypothetical past",
+              "I would have helped you."
+            ]
           ]
         },
         {
@@ -47,9 +87,21 @@
           "heading": "Present vs Past deduction",
           "tableHeader": true,
           "table": [
-            ["Tense", "Form", "Example"],
-            ["Present", "modal + verb", "She must be tired."],
-            ["Past", "modal + have + pp", "She must have been tired."]
+            [
+              "Tense",
+              "Form",
+              "Example"
+            ],
+            [
+              "Present",
+              "modal + verb",
+              "She must be tired."
+            ],
+            [
+              "Past",
+              "modal + have + pp",
+              "She must have been tired."
+            ]
           ]
         },
         {
@@ -69,33 +121,84 @@
         {
           "heading": "Evidence and deduction",
           "list": [
-            { "term": "obviously", "definition": "Obviously, he must be tired." },
-            { "term": "perhaps", "definition": "Perhaps she has already left." },
-            { "term": "apparently", "definition": "Apparently, they got married last year." },
-            { "term": "clearly", "definition": "Clearly, someone has made a mistake." },
-            { "term": "it seems that", "definition": "It seems that they have already left." },
-            { "term": "there is no doubt", "definition": "There is no doubt he must have known." }
+            {
+              "term": "obviously",
+              "definition": "Obviously, he must be tired."
+            },
+            {
+              "term": "perhaps",
+              "definition": "Perhaps she has already left."
+            },
+            {
+              "term": "apparently",
+              "definition": "Apparently, they got married last year."
+            },
+            {
+              "term": "clearly",
+              "definition": "Clearly, someone has made a mistake."
+            },
+            {
+              "term": "it seems that",
+              "definition": "It seems that they have already left."
+            },
+            {
+              "term": "there is no doubt",
+              "definition": "There is no doubt he must have known."
+            }
           ]
         },
         {
           "heading": "Hypothetical situations",
           "list": [
-            { "term": "if I had known", "definition": "If I had known, I would have helped." },
-            { "term": "in that case", "definition": "In that case, he must have been late." },
-            { "term": "otherwise", "definition": "He must have run, otherwise he would be late." },
-            { "term": "suppose", "definition": "Suppose she had missed the train." },
-            { "term": "imagine", "definition": "Imagine you had won the lottery." }
+            {
+              "term": "if I had known",
+              "definition": "If I had known, I would have helped."
+            },
+            {
+              "term": "in that case",
+              "definition": "In that case, he must have been late."
+            },
+            {
+              "term": "otherwise",
+              "definition": "He must have run, otherwise he would be late."
+            },
+            {
+              "term": "suppose",
+              "definition": "Suppose she had missed the train."
+            },
+            {
+              "term": "imagine",
+              "definition": "Imagine you had won the lottery."
+            }
           ]
         },
         {
           "heading": "Expressions of certainty",
           "list": [
-            { "term": "I'm sure", "definition": "I'm sure she must have forgotten." },
-            { "term": "I'm certain", "definition": "I'm certain he can't have done it." },
-            { "term": "I doubt", "definition": "I doubt they have arrived yet." },
-            { "term": "I wonder", "definition": "I wonder if he might have left." },
-            { "term": "It's possible", "definition": "It's possible that she has forgotten." },
-            { "term": "It's unlikely", "definition": "It's unlikely that they have finished." }
+            {
+              "term": "I'm sure",
+              "definition": "I'm sure she must have forgotten."
+            },
+            {
+              "term": "I'm certain",
+              "definition": "I'm certain he can't have done it."
+            },
+            {
+              "term": "I doubt",
+              "definition": "I doubt they have arrived yet."
+            },
+            {
+              "term": "I wonder",
+              "definition": "I wonder if he might have left."
+            },
+            {
+              "term": "It's possible",
+              "definition": "It's possible that she has forgotten."
+            },
+            {
+              "term": "It's unlikely",
+              "definition": "It's unlikely that they have finished."
+            }
           ]
         }
       ]
@@ -126,16 +229,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "The lights are off. They ___ gone out.", "options": ["must have", "might have", "cannot have", "should have"], "correct": 0, "explanation": "When almost certain about the past, we use must have + past participle."},
-        {"prompt": "She ___ the message. She was not at home.", "options": ["must have received", "cannot have received", "might receive", "should receive"], "correct": 1, "explanation": "Cannot have + past participle expresses impossibility in the past."},
-        {"prompt": "You ___ told me! Now it's too late.", "options": ["must have", "should have", "can't have", "may have"], "correct": 1, "explanation": "Should have expresses regret or criticism about the past."},
-        {"prompt": "He ___ be tired. He worked all day.", "options": ["must", "might", "can't", "should"], "correct": 0, "explanation": "Strong deduction in the present: must."},
-        {"prompt": "She ___ forgotten about the meeting. She is very organised.", "options": ["must have", "can't have", "should have", "would have"], "correct": 1, "explanation": "Impossibility in the past: can't have."},
-        {"prompt": "I ___ helped you if you had asked.", "options": ["will have", "would have", "must have", "can't have"], "correct": 1, "explanation": "Hypothetical past: would have + past participle."},
-        {"prompt": "It's very late. He ___ be at home already.", "options": ["must", "might", "can't", "shouldn't"], "correct": 1, "explanation": "Possibility: might."},
-        {"prompt": "You look tired. You ___ slept badly.", "options": ["must have", "can't have", "should have", "would have"], "correct": 0, "explanation": "Deduction from evidence: must have."},
-        {"prompt": "That ___ be John. He is on holiday.", "options": ["must", "might", "can't", "should"], "correct": 2, "explanation": "Impossibility in the present: can't."},
-        {"prompt": "She ___ passed the exam without studying.", "options": ["must have", "couldn't have", "should have", "would have"], "correct": 1, "explanation": "Impossibility in the past: couldn't have."}
+        {
+          "prompt": "The lights are off. They ___ gone out.",
+          "options": [
+            "must have",
+            "might have",
+            "cannot have",
+            "should have"
+          ],
+          "correct": 0,
+          "explanation": "When almost certain about the past, we use must have + past participle."
+        },
+        {
+          "prompt": "She ___ the message. She was not at home.",
+          "options": [
+            "must have received",
+            "cannot have received",
+            "might receive",
+            "should receive"
+          ],
+          "correct": 1,
+          "explanation": "Cannot have + past participle expresses impossibility in the past."
+        },
+        {
+          "prompt": "You ___ told me! Now it's too late.",
+          "options": [
+            "must have",
+            "should have",
+            "can't have",
+            "may have"
+          ],
+          "correct": 1,
+          "explanation": "Should have expresses regret or criticism about the past."
+        },
+        {
+          "prompt": "He ___ be tired. He worked all day.",
+          "options": [
+            "must",
+            "might",
+            "can't",
+            "should"
+          ],
+          "correct": 0,
+          "explanation": "Strong deduction in the present: must."
+        },
+        {
+          "prompt": "She ___ forgotten about the meeting. She is very organised.",
+          "options": [
+            "must have",
+            "can't have",
+            "should have",
+            "would have"
+          ],
+          "correct": 1,
+          "explanation": "Impossibility in the past: can't have."
+        },
+        {
+          "prompt": "I ___ helped you if you had asked.",
+          "options": [
+            "will have",
+            "would have",
+            "must have",
+            "can't have"
+          ],
+          "correct": 1,
+          "explanation": "Hypothetical past: would have + past participle."
+        },
+        {
+          "prompt": "It's very late. He ___ be at home already.",
+          "options": [
+            "must",
+            "might",
+            "can't",
+            "shouldn't"
+          ],
+          "correct": 1,
+          "explanation": "Possibility: might."
+        },
+        {
+          "prompt": "You look tired. You ___ slept badly.",
+          "options": [
+            "must have",
+            "can't have",
+            "should have",
+            "would have"
+          ],
+          "correct": 0,
+          "explanation": "Deduction from evidence: must have."
+        },
+        {
+          "prompt": "That ___ be John. He is on holiday.",
+          "options": [
+            "must",
+            "might",
+            "can't",
+            "should"
+          ],
+          "correct": 2,
+          "explanation": "Impossibility in the present: can't."
+        },
+        {
+          "prompt": "She ___ passed the exam without studying.",
+          "options": [
+            "must have",
+            "couldn't have",
+            "should have",
+            "would have"
+          ],
+          "correct": 1,
+          "explanation": "Impossibility in the past: couldn't have."
+        }
       ]
     },
     {
@@ -151,16 +354,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "The window is broken. Someone ___ broken in.", "options": ["must have", "can't have", "should have", "would have"], "correct": 0, "explanation": "Strong deduction about the past: must have."},
-        {"prompt": "She ___ be at home. Her car is not there.", "options": ["must", "might", "can't", "should"], "correct": 2, "explanation": "Impossibility in the present: can't."},
-        {"prompt": "You ___ told me you were coming! I would have cooked.", "options": ["must have", "should have", "can't have", "may have"], "correct": 1, "explanation": "Should have expresses criticism or regret."},
-        {"prompt": "He ___ have taken the wrong bus. He is very late.", "options": ["must", "should", "might", "can't"], "correct": 2, "explanation": "Possibility in the past: might have."},
-        {"prompt": "They ___ arrived yet. The flight was delayed.", "options": ["must have", "can't have", "should have", "would have"], "correct": 1, "explanation": "Impossibility: can't have."},
-        {"prompt": "I ___ come to the party if I hadn't been ill.", "options": ["will have", "would have", "must have", "can't have"], "correct": 1, "explanation": "Hypothetical past: would have."},
-        {"prompt": "She said she was tired. She ___ worked too much.", "options": ["must have", "can't have", "should have", "would have"], "correct": 0, "explanation": "Deduction: must have."},
-        {"prompt": "That ___ be Mary. She is much taller.", "options": ["must", "might", "can't", "should"], "correct": 2, "explanation": "Impossibility in the present."},
-        {"prompt": "I ___ studied harder. I failed the exam.", "options": ["must have", "should have", "can't have", "may have"], "correct": 1, "explanation": "Regret: should have."},
-        {"prompt": "He ___ forgotten the appointment. He is usually very punctual.", "options": ["must have", "can't have", "should have", "would have"], "correct": 1, "explanation": "Impossibility based on evidence: can't have."}
+        {
+          "prompt": "The window is broken. Someone ___ broken in.",
+          "options": [
+            "must have",
+            "can't have",
+            "should have",
+            "would have"
+          ],
+          "correct": 0,
+          "explanation": "Strong deduction about the past: must have."
+        },
+        {
+          "prompt": "She ___ be at home. Her car is not there.",
+          "options": [
+            "must",
+            "might",
+            "can't",
+            "should"
+          ],
+          "correct": 2,
+          "explanation": "Impossibility in the present: can't."
+        },
+        {
+          "prompt": "You ___ told me you were coming! I would have cooked.",
+          "options": [
+            "must have",
+            "should have",
+            "can't have",
+            "may have"
+          ],
+          "correct": 1,
+          "explanation": "Should have expresses criticism or regret."
+        },
+        {
+          "prompt": "He ___ have taken the wrong bus. He is very late.",
+          "options": [
+            "must",
+            "should",
+            "might",
+            "can't"
+          ],
+          "correct": 2,
+          "explanation": "Possibility in the past: might have."
+        },
+        {
+          "prompt": "They ___ arrived yet. The flight was delayed.",
+          "options": [
+            "must have",
+            "can't have",
+            "should have",
+            "would have"
+          ],
+          "correct": 1,
+          "explanation": "Impossibility: can't have."
+        },
+        {
+          "prompt": "I ___ come to the party if I hadn't been ill.",
+          "options": [
+            "will have",
+            "would have",
+            "must have",
+            "can't have"
+          ],
+          "correct": 1,
+          "explanation": "Hypothetical past: would have."
+        },
+        {
+          "prompt": "She said she was tired. She ___ worked too much.",
+          "options": [
+            "must have",
+            "can't have",
+            "should have",
+            "would have"
+          ],
+          "correct": 0,
+          "explanation": "Deduction: must have."
+        },
+        {
+          "prompt": "That ___ be Mary. She is much taller.",
+          "options": [
+            "must",
+            "might",
+            "can't",
+            "should"
+          ],
+          "correct": 2,
+          "explanation": "Impossibility in the present."
+        },
+        {
+          "prompt": "I ___ studied harder. I failed the exam.",
+          "options": [
+            "must have",
+            "should have",
+            "can't have",
+            "may have"
+          ],
+          "correct": 1,
+          "explanation": "Regret: should have."
+        },
+        {
+          "prompt": "He ___ forgotten the appointment. He is usually very punctual.",
+          "options": [
+            "must have",
+            "can't have",
+            "should have",
+            "would have"
+          ],
+          "correct": 1,
+          "explanation": "Impossibility based on evidence: can't have."
+        }
       ]
     },
     {

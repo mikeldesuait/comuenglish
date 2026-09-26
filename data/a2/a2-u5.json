@@ -18,10 +18,26 @@
           "body": "Use 'going to' for plans and intentions that you have already decided.",
           "tableHeader": true,
           "table": [
-            ["Subject", "Form", "Example"],
-            ["I", "am going to", "I am going to visit my aunt next week."],
-            ["You / We / They", "are going to", "We are going to buy a house."],
-            ["He / She / It", "is going to", "She is going to study medicine."]
+            [
+              "Subject",
+              "Form",
+              "Example"
+            ],
+            [
+              "I",
+              "am going to",
+              "I am going to visit my aunt next week."
+            ],
+            [
+              "You / We / They",
+              "are going to",
+              "We are going to buy a house."
+            ],
+            [
+              "He / She / It",
+              "is going to",
+              "She is going to study medicine."
+            ]
           ]
         },
         {
@@ -29,10 +45,26 @@
           "body": "Use Present Continuous for fixed arrangements with a specific time and place.",
           "tableHeader": true,
           "table": [
-            ["Subject", "Form", "Example"],
-            ["I", "am + verb-ing", "I am meeting John at 7."],
-            ["We", "are + verb-ing", "We are having dinner with friends."],
-            ["She", "is + verb-ing", "She is flying to Paris tomorrow."]
+            [
+              "Subject",
+              "Form",
+              "Example"
+            ],
+            [
+              "I",
+              "am + verb-ing",
+              "I am meeting John at 7."
+            ],
+            [
+              "We",
+              "are + verb-ing",
+              "We are having dinner with friends."
+            ],
+            [
+              "She",
+              "is + verb-ing",
+              "She is flying to Paris tomorrow."
+            ]
           ]
         },
         {
@@ -77,40 +109,112 @@
         {
           "heading": "Plans and intentions",
           "list": [
-            { "term": "travel", "definition": "I am going to travel to Italy next summer." },
-            { "term": "visit", "definition": "We are going to visit the museum." },
-            { "term": "study", "definition": "She is going to study medicine." },
-            { "term": "buy", "definition": "They are going to buy a new car." },
-            { "term": "move", "definition": "I am going to move to a new house." },
-            { "term": "start", "definition": "He is going to start a new job." },
-            { "term": "learn", "definition": "We are going to learn French." },
-            { "term": "meet", "definition": "I am going to meet my friends." },
-            { "term": "organise", "definition": "She is going to organise a party." },
-            { "term": "save", "definition": "They are going to save money for a trip." }
+            {
+              "term": "travel",
+              "definition": "I am going to travel to Italy next summer."
+            },
+            {
+              "term": "visit",
+              "definition": "We are going to visit the museum."
+            },
+            {
+              "term": "study",
+              "definition": "She is going to study medicine."
+            },
+            {
+              "term": "buy",
+              "definition": "They are going to buy a new car."
+            },
+            {
+              "term": "move",
+              "definition": "I am going to move to a new house."
+            },
+            {
+              "term": "start",
+              "definition": "He is going to start a new job."
+            },
+            {
+              "term": "learn",
+              "definition": "We are going to learn French."
+            },
+            {
+              "term": "meet",
+              "definition": "I am going to meet my friends."
+            },
+            {
+              "term": "organise",
+              "definition": "She is going to organise a party."
+            },
+            {
+              "term": "save",
+              "definition": "They are going to save money for a trip."
+            }
           ]
         },
         {
           "heading": "Appointments and arrangements",
           "list": [
-            { "term": "have a meeting", "definition": "I am having a meeting at 10." },
-            { "term": "see a doctor", "definition": "She is seeing a doctor tomorrow." },
-            { "term": "have lunch with", "definition": "We are having lunch with my parents." },
-            { "term": "go to the cinema", "definition": "They are going to the cinema tonight." },
-            { "term": "play a match", "definition": "Our team is playing a match on Sunday." },
-            { "term": "take an exam", "definition": "I am taking an exam next week." }
+            {
+              "term": "have a meeting",
+              "definition": "I am having a meeting at 10."
+            },
+            {
+              "term": "see a doctor",
+              "definition": "She is seeing a doctor tomorrow."
+            },
+            {
+              "term": "have lunch with",
+              "definition": "We are having lunch with my parents."
+            },
+            {
+              "term": "go to the cinema",
+              "definition": "They are going to the cinema tonight."
+            },
+            {
+              "term": "play a match",
+              "definition": "Our team is playing a match on Sunday."
+            },
+            {
+              "term": "take an exam",
+              "definition": "I am taking an exam next week."
+            }
           ]
         },
         {
           "heading": "City places",
           "list": [
-            { "term": "cinema", "definition": "We are going to the cinema." },
-            { "term": "restaurant", "definition": "I am meeting them at the restaurant." },
-            { "term": "museum", "definition": "She is visiting the museum tomorrow." },
-            { "term": "park", "definition": "They are playing in the park." },
-            { "term": "shopping centre", "definition": "We are going to the shopping centre." },
-            { "term": "library", "definition": "I am studying at the library." },
-            { "term": "airport", "definition": "He is going to the airport at 6." },
-            { "term": "train station", "definition": "We are meeting at the train station." }
+            {
+              "term": "cinema",
+              "definition": "We are going to the cinema."
+            },
+            {
+              "term": "restaurant",
+              "definition": "I am meeting them at the restaurant."
+            },
+            {
+              "term": "museum",
+              "definition": "She is visiting the museum tomorrow."
+            },
+            {
+              "term": "park",
+              "definition": "They are playing in the park."
+            },
+            {
+              "term": "shopping centre",
+              "definition": "We are going to the shopping centre."
+            },
+            {
+              "term": "library",
+              "definition": "I am studying at the library."
+            },
+            {
+              "term": "airport",
+              "definition": "He is going to the airport at 6."
+            },
+            {
+              "term": "train station",
+              "definition": "We are meeting at the train station."
+            }
           ]
         }
       ]
@@ -141,16 +245,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "I ___ visit my grandmother next Sunday.", "options": ["am going to", "going to", "go to", "will to"], "correct": 0, "explanation": "For plans we use am/is/are + going to + verb."},
-        {"prompt": "She ___ study medicine next year.", "options": ["is going to", "are going to", "going to", "am going to"], "correct": 0, "explanation": "With 'she' we use 'is going to'."},
-        {"prompt": "We ___ buy a new house.", "options": ["is going to", "are going to", "am going to", "going to"], "correct": 1, "explanation": "With 'we' we use 'are going to'."},
-        {"prompt": "What ___ you ___ this evening?", "options": ["are / doing", "do / do", "is / doing", "are / do"], "correct": 0, "explanation": "For arrangements we use Present Continuous."},
-        {"prompt": "They ___ not going to come to the party.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'they' the negative is 'are not going to'."},
-        {"prompt": "I ___ meeting Sarah at 6.", "options": ["am", "is", "are", "be"], "correct": 0, "explanation": "With 'I' we use 'am' in Present Continuous."},
-        {"prompt": "I think it ___ rain tomorrow.", "options": ["is going to", "will", "does", "is"], "correct": 1, "explanation": "For predictions we can use 'will'."},
-        {"prompt": "She ___ having lunch with her parents tomorrow.", "options": ["am", "is", "are", "be"], "correct": 1, "explanation": "With 'she' we use 'is'."},
-        {"prompt": "___ you going to travel this summer?", "options": ["Do", "Are", "Is", "Am"], "correct": 1, "explanation": "Question: Are + you + going to...?"},
-        {"prompt": "We ___ going to learn French next year.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'we' we use 'are'."}
+        {
+          "prompt": "I ___ visit my grandmother next Sunday.",
+          "options": [
+            "am going to",
+            "going to",
+            "go to",
+            "will to"
+          ],
+          "correct": 0,
+          "explanation": "For plans we use am/is/are + going to + verb."
+        },
+        {
+          "prompt": "She ___ study medicine next year.",
+          "options": [
+            "is going to",
+            "are going to",
+            "going to",
+            "am going to"
+          ],
+          "correct": 0,
+          "explanation": "With 'she' we use 'is going to'."
+        },
+        {
+          "prompt": "We ___ buy a new house.",
+          "options": [
+            "is going to",
+            "are going to",
+            "am going to",
+            "going to"
+          ],
+          "correct": 1,
+          "explanation": "With 'we' we use 'are going to'."
+        },
+        {
+          "prompt": "What ___ you ___ this evening?",
+          "options": [
+            "are / doing",
+            "do / do",
+            "is / doing",
+            "are / do"
+          ],
+          "correct": 0,
+          "explanation": "For arrangements we use Present Continuous."
+        },
+        {
+          "prompt": "They ___ not going to come to the party.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 2,
+          "explanation": "With 'they' the negative is 'are not going to'."
+        },
+        {
+          "prompt": "I ___ meeting Sarah at 6.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 0,
+          "explanation": "With 'I' we use 'am' in Present Continuous."
+        },
+        {
+          "prompt": "I think it ___ rain tomorrow.",
+          "options": [
+            "is going to",
+            "will",
+            "does",
+            "is"
+          ],
+          "correct": 1,
+          "explanation": "For predictions we can use 'will'."
+        },
+        {
+          "prompt": "She ___ having lunch with her parents tomorrow.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' we use 'is'."
+        },
+        {
+          "prompt": "___ you going to travel this summer?",
+          "options": [
+            "Do",
+            "Are",
+            "Is",
+            "Am"
+          ],
+          "correct": 1,
+          "explanation": "Question: Are + you + going to...?"
+        },
+        {
+          "prompt": "We ___ going to learn French next year.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 2,
+          "explanation": "With 'we' we use 'are'."
+        }
       ]
     },
     {
@@ -166,16 +370,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "I ___ going to study tonight.", "options": ["am", "is", "are", "be"], "correct": 0, "explanation": "With 'I' we use 'am'."},
-        {"prompt": "They ___ going to move to a new city.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'they' we use 'are'."},
-        {"prompt": "She ___ playing tennis on Sunday.", "options": ["am", "is", "are", "be"], "correct": 1, "explanation": "With 'she' we use 'is' in Present Continuous."},
-        {"prompt": "We ___ going to visit Rome next spring.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'we' we use 'are'."},
-        {"prompt": "What ___ you doing tomorrow?", "options": ["do", "does", "are", "is"], "correct": 2, "explanation": "Present Continuous question: are + you + verb-ing."},
-        {"prompt": "He ___ going to start a new job.", "options": ["am", "is", "are", "be"], "correct": 1, "explanation": "With 'he' we use 'is'."},
-        {"prompt": "I think she ___ pass the exam.", "options": ["will", "is", "does", "going"], "correct": 0, "explanation": "For predictions we use 'will'."},
-        {"prompt": "They ___ having dinner at 8.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'they' we use 'are'."},
-        {"prompt": "___ she going to come to the party?", "options": ["Do", "Is", "Are", "Am"], "correct": 1, "explanation": "Question: Is + she + going to...?"},
-        {"prompt": "I ___ going to learn to play the piano.", "options": ["am", "is", "are", "be"], "correct": 0, "explanation": "With 'I' we use 'am'."}
+        {
+          "prompt": "I ___ going to study tonight.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 0,
+          "explanation": "With 'I' we use 'am'."
+        },
+        {
+          "prompt": "They ___ going to move to a new city.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 2,
+          "explanation": "With 'they' we use 'are'."
+        },
+        {
+          "prompt": "She ___ playing tennis on Sunday.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' we use 'is' in Present Continuous."
+        },
+        {
+          "prompt": "We ___ going to visit Rome next spring.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 2,
+          "explanation": "With 'we' we use 'are'."
+        },
+        {
+          "prompt": "What ___ you doing tomorrow?",
+          "options": [
+            "do",
+            "does",
+            "are",
+            "is"
+          ],
+          "correct": 2,
+          "explanation": "Present Continuous question: are + you + verb-ing."
+        },
+        {
+          "prompt": "He ___ going to start a new job.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 1,
+          "explanation": "With 'he' we use 'is'."
+        },
+        {
+          "prompt": "I think she ___ pass the exam.",
+          "options": [
+            "will",
+            "is",
+            "does",
+            "going"
+          ],
+          "correct": 0,
+          "explanation": "For predictions we use 'will'."
+        },
+        {
+          "prompt": "They ___ having dinner at 8.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 2,
+          "explanation": "With 'they' we use 'are'."
+        },
+        {
+          "prompt": "___ she going to come to the party?",
+          "options": [
+            "Do",
+            "Is",
+            "Are",
+            "Am"
+          ],
+          "correct": 1,
+          "explanation": "Question: Is + she + going to...?"
+        },
+        {
+          "prompt": "I ___ going to learn to play the piano.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 0,
+          "explanation": "With 'I' we use 'am'."
+        }
       ]
     },
     {

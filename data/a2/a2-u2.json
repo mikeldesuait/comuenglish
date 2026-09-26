@@ -17,9 +17,21 @@
           "heading": "Form",
           "tableHeader": true,
           "table": [
-            ["Subject", "Verb", "Example"],
-            ["I / You / We / They", "work", "I work in a bank."],
-            ["He / She / It", "works", "She works in a school."]
+            [
+              "Subject",
+              "Verb",
+              "Example"
+            ],
+            [
+              "I / You / We / They",
+              "work",
+              "I work in a bank."
+            ],
+            [
+              "He / She / It",
+              "works",
+              "She works in a school."
+            ]
           ]
         },
         {
@@ -53,13 +65,41 @@
           "body": "They show how often something happens. Position: before the main verb, after the verb 'to be'.",
           "tableHeader": true,
           "table": [
-            ["Adverb", "Frequency", "Example"],
-            ["always", "100%", "I always walk to school."],
-            ["usually", "90%", "She usually gets up at 7."],
-            ["often", "70%", "We often play tennis."],
-            ["sometimes", "50%", "He sometimes watches TV."],
-            ["rarely", "10%", "They rarely go out."],
-            ["never", "0%", "I never drink coffee."]
+            [
+              "Adverb",
+              "Frequency",
+              "Example"
+            ],
+            [
+              "always",
+              "100%",
+              "I always walk to school."
+            ],
+            [
+              "usually",
+              "90%",
+              "She usually gets up at 7."
+            ],
+            [
+              "often",
+              "70%",
+              "We often play tennis."
+            ],
+            [
+              "sometimes",
+              "50%",
+              "He sometimes watches TV."
+            ],
+            [
+              "rarely",
+              "10%",
+              "They rarely go out."
+            ],
+            [
+              "never",
+              "0%",
+              "I never drink coffee."
+            ]
           ]
         },
         {
@@ -88,32 +128,95 @@
         {
           "heading": "Daily routine",
           "list": [
-            { "term": "wake up", "definition": "I wake up at 7 every day." },
-            { "term": "get up", "definition": "I get up at 7:15." },
-            { "term": "have breakfast", "definition": "I have breakfast at home." },
-            { "term": "brush my teeth", "definition": "I brush my teeth twice a day." },
-            { "term": "have a shower", "definition": "She has a shower in the morning." },
-            { "term": "get dressed", "definition": "I get dressed quickly." },
-            { "term": "go to school", "definition": "We go to school by bus." },
-            { "term": "have lunch", "definition": "I have lunch at 1 pm." },
-            { "term": "do homework", "definition": "He does homework after school." },
-            { "term": "have dinner", "definition": "We have dinner at 8 pm." },
-            { "term": "go to bed", "definition": "I go to bed at 11 pm." }
+            {
+              "term": "wake up",
+              "definition": "I wake up at 7 every day."
+            },
+            {
+              "term": "get up",
+              "definition": "I get up at 7:15."
+            },
+            {
+              "term": "have breakfast",
+              "definition": "I have breakfast at home."
+            },
+            {
+              "term": "brush my teeth",
+              "definition": "I brush my teeth twice a day."
+            },
+            {
+              "term": "have a shower",
+              "definition": "She has a shower in the morning."
+            },
+            {
+              "term": "get dressed",
+              "definition": "I get dressed quickly."
+            },
+            {
+              "term": "go to school",
+              "definition": "We go to school by bus."
+            },
+            {
+              "term": "have lunch",
+              "definition": "I have lunch at 1 pm."
+            },
+            {
+              "term": "do homework",
+              "definition": "He does homework after school."
+            },
+            {
+              "term": "have dinner",
+              "definition": "We have dinner at 8 pm."
+            },
+            {
+              "term": "go to bed",
+              "definition": "I go to bed at 11 pm."
+            }
           ]
         },
         {
           "heading": "Free time activities",
           "list": [
-            { "term": "play football", "definition": "I play football on Saturdays." },
-            { "term": "watch TV", "definition": "She watches TV in the evening." },
-            { "term": "listen to music", "definition": "I listen to music every day." },
-            { "term": "read a book", "definition": "He reads a book before bed." },
-            { "term": "go swimming", "definition": "We go swimming in summer." },
-            { "term": "ride a bike", "definition": "My brother rides a bike to school." },
-            { "term": "play video games", "definition": "I play video games at the weekend." },
-            { "term": "meet friends", "definition": "I meet my friends on Friday." },
-            { "term": "go shopping", "definition": "She goes shopping on Saturday." },
-            { "term": "cook", "definition": "My father cooks on Sundays." }
+            {
+              "term": "play football",
+              "definition": "I play football on Saturdays."
+            },
+            {
+              "term": "watch TV",
+              "definition": "She watches TV in the evening."
+            },
+            {
+              "term": "listen to music",
+              "definition": "I listen to music every day."
+            },
+            {
+              "term": "read a book",
+              "definition": "He reads a book before bed."
+            },
+            {
+              "term": "go swimming",
+              "definition": "We go swimming in summer."
+            },
+            {
+              "term": "ride a bike",
+              "definition": "My brother rides a bike to school."
+            },
+            {
+              "term": "play video games",
+              "definition": "I play video games at the weekend."
+            },
+            {
+              "term": "meet friends",
+              "definition": "I meet my friends on Friday."
+            },
+            {
+              "term": "go shopping",
+              "definition": "She goes shopping on Saturday."
+            },
+            {
+              "term": "cook",
+              "definition": "My father cooks on Sundays."
+            }
           ]
         },
         {
@@ -152,16 +255,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "She ___ tennis every Saturday.", "options": ["play", "plays", "playing", "played"], "correct": 1, "explanation": "With 'she' we add -s: plays."},
-        {"prompt": "He ___ TV in the evening.", "options": ["watch", "watchs", "watches", "watching"], "correct": 2, "explanation": "Verbs ending in -ch add -es: watches."},
-        {"prompt": "They ___ to school by bus.", "options": ["go", "goes", "going", "went"], "correct": 0, "explanation": "With 'they' we use the base form: go."},
-        {"prompt": "I ___ like coffee.", "options": ["do not", "does not", "am not", "not"], "correct": 0, "explanation": "With 'I' the negative is 'do not'."},
-        {"prompt": "She ___ eat meat.", "options": ["do not", "does not", "is not", "not"], "correct": 1, "explanation": "With 'she' the negative is 'does not'."},
-        {"prompt": "___ you play football?", "options": ["Do", "Does", "Are", "Is"], "correct": 0, "explanation": "With 'you' the question uses 'Do'."},
-        {"prompt": "___ he work here?", "options": ["Do", "Does", "Is", "Are"], "correct": 1, "explanation": "With 'he' the question uses 'Does'."},
-        {"prompt": "My brother ___ a bike to school.", "options": ["ride", "rides", "riding", "rode"], "correct": 1, "explanation": "With 'my brother' (he) we add -s: rides."},
-        {"prompt": "She is ___ late.", "options": ["always", "never", "sometimes", "usually"], "correct": 1, "explanation": "After 'to be' the adverb comes after. 'Never' fits here."},
-        {"prompt": "I ___ walk to school.", "options": ["always", "am always", "always am", "be always"], "correct": 0, "explanation": "Before a main verb, the adverb comes before the verb."}
+        {
+          "prompt": "She ___ tennis every Saturday.",
+          "options": [
+            "play",
+            "plays",
+            "playing",
+            "played"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' we add -s: plays."
+        },
+        {
+          "prompt": "He ___ TV in the evening.",
+          "options": [
+            "watch",
+            "watchs",
+            "watches",
+            "watching"
+          ],
+          "correct": 2,
+          "explanation": "Verbs ending in -ch add -es: watches."
+        },
+        {
+          "prompt": "They ___ to school by bus.",
+          "options": [
+            "go",
+            "goes",
+            "going",
+            "went"
+          ],
+          "correct": 0,
+          "explanation": "With 'they' we use the base form: go."
+        },
+        {
+          "prompt": "I ___ like coffee.",
+          "options": [
+            "do not",
+            "does not",
+            "am not",
+            "not"
+          ],
+          "correct": 0,
+          "explanation": "With 'I' the negative is 'do not'."
+        },
+        {
+          "prompt": "She ___ eat meat.",
+          "options": [
+            "do not",
+            "does not",
+            "is not",
+            "not"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' the negative is 'does not'."
+        },
+        {
+          "prompt": "___ you play football?",
+          "options": [
+            "Do",
+            "Does",
+            "Are",
+            "Is"
+          ],
+          "correct": 0,
+          "explanation": "With 'you' the question uses 'Do'."
+        },
+        {
+          "prompt": "___ he work here?",
+          "options": [
+            "Do",
+            "Does",
+            "Is",
+            "Are"
+          ],
+          "correct": 1,
+          "explanation": "With 'he' the question uses 'Does'."
+        },
+        {
+          "prompt": "My brother ___ a bike to school.",
+          "options": [
+            "ride",
+            "rides",
+            "riding",
+            "rode"
+          ],
+          "correct": 1,
+          "explanation": "With 'my brother' (he) we add -s: rides."
+        },
+        {
+          "prompt": "She is ___ late.",
+          "options": [
+            "always",
+            "never",
+            "sometimes",
+            "usually"
+          ],
+          "correct": 1,
+          "explanation": "After 'to be' the adverb comes after. 'Never' fits here."
+        },
+        {
+          "prompt": "I ___ walk to school.",
+          "options": [
+            "always",
+            "am always",
+            "always am",
+            "be always"
+          ],
+          "correct": 0,
+          "explanation": "Before a main verb, the adverb comes before the verb."
+        }
       ]
     },
     {
@@ -177,16 +380,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "My sister ___ to music every day.", "options": ["listen", "listens", "listening", "listened"], "correct": 1, "explanation": "With 'my sister' (she) we add -s: listens."},
-        {"prompt": "We ___ TV in the morning.", "options": ["do not watch", "does not watch", "not watch", "watching"], "correct": 0, "explanation": "With 'we' the negative is 'do not watch'."},
-        {"prompt": "___ she go shopping on Saturday?", "options": ["Do", "Does", "Is", "Are"], "correct": 1, "explanation": "With 'she' the question uses 'Does'."},
-        {"prompt": "I ___ have breakfast at 8 am.", "options": ["usual", "usually", "usualy", "used"], "correct": 1, "explanation": "The adverb is 'usually'."},
-        {"prompt": "He ___ goes to bed late.", "options": ["never", "sometimes", "often", "always"], "correct": 0, "explanation": "All are valid adverbs. 'Never' is the strongest."},
-        {"prompt": "They ___ football on Sundays.", "options": ["play", "plays", "playing", "played"], "correct": 0, "explanation": "With 'they' we use 'play'."},
-        {"prompt": "She ___ get up early.", "options": ["do not", "does not", "is not", "not"], "correct": 1, "explanation": "With 'she' the negative is 'does not'."},
-        {"prompt": "My father ___ dinner on Sundays.", "options": ["cook", "cooks", "cooking", "cooked"], "correct": 1, "explanation": "With 'my father' (he) we add -s: cooks."},
-        {"prompt": "___ you meet your friends at the weekend?", "options": ["Do", "Does", "Are", "Is"], "correct": 0, "explanation": "With 'you' the question uses 'Do'."},
-        {"prompt": "I ___ go swimming in summer.", "options": ["am", "always", "does", "be"], "correct": 1, "explanation": "The adverb 'always' goes before the main verb."}
+        {
+          "prompt": "My sister ___ to music every day.",
+          "options": [
+            "listen",
+            "listens",
+            "listening",
+            "listened"
+          ],
+          "correct": 1,
+          "explanation": "With 'my sister' (she) we add -s: listens."
+        },
+        {
+          "prompt": "We ___ TV in the morning.",
+          "options": [
+            "do not watch",
+            "does not watch",
+            "not watch",
+            "watching"
+          ],
+          "correct": 0,
+          "explanation": "With 'we' the negative is 'do not watch'."
+        },
+        {
+          "prompt": "___ she go shopping on Saturday?",
+          "options": [
+            "Do",
+            "Does",
+            "Is",
+            "Are"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' the question uses 'Does'."
+        },
+        {
+          "prompt": "I ___ have breakfast at 8 am.",
+          "options": [
+            "usual",
+            "usually",
+            "usualy",
+            "used"
+          ],
+          "correct": 1,
+          "explanation": "The adverb is 'usually'."
+        },
+        {
+          "prompt": "He ___ goes to bed late.",
+          "options": [
+            "never",
+            "sometimes",
+            "often",
+            "always"
+          ],
+          "correct": 0,
+          "explanation": "All are valid adverbs. 'Never' is the strongest."
+        },
+        {
+          "prompt": "They ___ football on Sundays.",
+          "options": [
+            "play",
+            "plays",
+            "playing",
+            "played"
+          ],
+          "correct": 0,
+          "explanation": "With 'they' we use 'play'."
+        },
+        {
+          "prompt": "She ___ get up early.",
+          "options": [
+            "do not",
+            "does not",
+            "is not",
+            "not"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' the negative is 'does not'."
+        },
+        {
+          "prompt": "My father ___ dinner on Sundays.",
+          "options": [
+            "cook",
+            "cooks",
+            "cooking",
+            "cooked"
+          ],
+          "correct": 1,
+          "explanation": "With 'my father' (he) we add -s: cooks."
+        },
+        {
+          "prompt": "___ you meet your friends at the weekend?",
+          "options": [
+            "Do",
+            "Does",
+            "Are",
+            "Is"
+          ],
+          "correct": 0,
+          "explanation": "With 'you' the question uses 'Do'."
+        },
+        {
+          "prompt": "I ___ go swimming in summer.",
+          "options": [
+            "am",
+            "always",
+            "does",
+            "be"
+          ],
+          "correct": 1,
+          "explanation": "The adverb 'always' goes before the main verb."
+        }
       ]
     },
     {

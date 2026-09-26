@@ -84,12 +84,16 @@ async function loadAndStart(view) {
     unitData.forEach(unit => {
       if (!unit || !unit.phases) return;
       unit.phases.forEach(phase => {
-        if (phase.type === "exercise") {
-          grammarQuestions.push({
-            prompt: phase.prompt,
-            options: phase.options,
-            correct: phase.correct,
-            explanation: phase.explanation
+        if (phase.type === "exercise" && Array.isArray(phase.questions)) {
+          phase.questions.forEach(q => {
+            if (q.prompt && Array.isArray(q.options)) {
+              grammarQuestions.push({
+                prompt: q.prompt,
+                options: q.options,
+                correct: q.correct,
+                explanation: q.explanation
+              });
+            }
           });
         }
       });
@@ -243,14 +247,24 @@ function runSection(view, examState, section) {
     const qText = document.createElement("div");
     qText.style.fontWeight = "500";
     qText.style.marginBottom = "12px";
-    qText.textContent = q.question.question || q.prompt || "Choose the correct answer:";
+    const qTextValue = (q.question && q.question.question) ? q.question.question : (q.prompt || q.text || "Choose the correct answer:");
+    qText.textContent = qTextValue;
     content.appendChild(qText);
 
     const optionsBox = document.createElement("div");
     optionsBox.className = "exercise__options";
 
-    const opts = q.question ? q.question.options : q.options;
-    const correctIdx = q.question ? q.question.correct : q.correct;
+    const rawOpts = (q.question && q.question.options) ? q.question.options : (q.options || []);
+    const rawCorrect = (q.question && typeof q.question.correct === 'number') ? q.question.correct : (typeof q.correct === 'number' ? q.correct : 0);
+
+    // Shuffle options in real time
+    const correctValue = rawOpts[rawCorrect];
+    const opts = rawOpts.slice();
+    for (let i = opts.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [opts[i], opts[j]] = [opts[j], opts[i]];
+    }
+    const correctIdx = opts.indexOf(correctValue);
 
     opts.forEach((opt, i) => {
       const btn = document.createElement("button");

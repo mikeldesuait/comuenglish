@@ -11,45 +11,45 @@
         {
           "question": "What does the article say about bilingual people?",
           "options": [
+            "They are always more intelligent",
             "They often have better memory skills",
-            "They never forget things",
             "They cannot learn a third language",
-            "They are always more intelligent"
+            "They never forget things"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The article says bilingual people often have better memory and problem-solving skills."
         },
         {
           "question": "According to the article, what do many companies prefer?",
           "options": [
-            "Employees who can talk to international clients",
             "Employees with university degrees",
+            "Employees who can talk to international clients",
             "Employees who work overtime",
             "Employees who speak only English"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The article says many companies prefer employees who can communicate with international clients."
         },
         {
           "question": "What do experts recommend?",
           "options": [
-            "Only learning grammar",
             "Waiting until you are older",
-            "Practising a little every day",
-            "Studying for hours once a week"
+            "Only learning grammar",
+            "Studying for hours once a week",
+            "Practising a little every day"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The article says experts recommend practising a little every day."
         },
         {
           "question": "What is the key to success according to the article?",
           "options": [
-            "Time",
             "Motivation",
+            "Talent",
             "Money",
-            "Talent"
+            "Time"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says motivation is the key to success."
         }
       ]
@@ -64,41 +64,41 @@
         {
           "question": "Why is Anna writing this email?",
           "options": [
+            "To cancel a meeting",
             "To confirm a meeting",
             "To complain about a colleague",
-            "To cancel a meeting",
             "To request a holiday"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The email says: I am writing to confirm our meeting next Thursday."
         },
         {
           "question": "What does Anna ask Mr. Johnson to bring?",
           "options": [
-            "The marketing strategy",
+            "The meeting notes",
             "The design files",
-            "The sales figures",
-            "The meeting notes"
+            "The marketing strategy",
+            "The sales figures"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The email says: Could you please bring the sales figures from last quarter?"
         },
         {
           "question": "Why does Anna want Ms. Garcia to attend?",
           "options": [
             "To bring coffee",
-            "Because her input would be valuable",
             "To take notes",
-            "Because she is the manager"
+            "Because she is the manager",
+            "Because her input would be valuable"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The email says: her input would be very valuable."
         },
         {
           "question": "How long will the meeting last?",
           "options": [
-            "All day",
             "Two hours",
+            "All day",
             "30 minutes",
             "About an hour"
           ],
@@ -129,20 +129,20 @@
           "question": "What do many people say about exercise?",
           "options": [
             "It is boring",
-            "They do not have time",
             "It is expensive",
+            "They do not have time",
             "It is dangerous"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says many people say they do not have time to exercise."
         },
         {
           "question": "According to the article, how much exercise is enough?",
           "options": [
-            "Hours at the gym",
-            "30 minutes of walking a day",
             "Once a week",
-            "Only on weekends"
+            "30 minutes of walking a day",
+            "Only on weekends",
+            "Hours at the gym"
           ],
           "correct": 1,
           "explanation": "The article says even a 30-minute walk every day can make a big difference."
@@ -150,8 +150,8 @@
         {
           "question": "What is the most important thing when choosing exercise?",
           "options": [
-            "It should be expensive",
             "It should be painful",
+            "It should be expensive",
             "You should enjoy it",
             "It should be at a gym"
           ],
@@ -171,9 +171,9 @@
           "question": "What is one advantage of living in a big city mentioned in the article?",
           "options": [
             "Cheaper housing",
-            "Quieter streets",
+            "Less traffic",
             "More job opportunities",
-            "Less traffic"
+            "Quieter streets"
           ],
           "correct": 2,
           "explanation": "The article says cities offer more job opportunities."
@@ -181,12 +181,12 @@
         {
           "question": "What is one disadvantage of living in a big city?",
           "options": [
-            "Fewer restaurants",
-            "High cost of housing",
             "No museums",
-            "Bad public transport"
+            "Bad public transport",
+            "High cost of housing",
+            "Fewer restaurants"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says the cost of housing is often very high."
         },
         {
@@ -194,8 +194,8 @@
           "options": [
             "To find better jobs",
             "To enjoy a quieter life",
-            "To be closer to shops",
-            "To have more entertainment"
+            "To have more entertainment",
+            "To be closer to shops"
           ],
           "correct": 1,
           "explanation": "The article says some people move to the countryside to enjoy a quieter life."
@@ -203,10 +203,10 @@
         {
           "question": "What is the writer's opinion?",
           "options": [
-            "Everyone should live in the countryside",
             "Big cities are always better",
+            "Cities should be smaller",
             "A medium-sized city is ideal",
-            "Cities should be smaller"
+            "Everyone should live in the countryside"
           ],
           "correct": 2,
           "explanation": "The article says the ideal situation is to live in a medium-sized city."
@@ -224,44 +224,44 @@
           "question": "Why is David writing this email?",
           "options": [
             "To complain about a product",
+            "To cancel an interview",
             "To apply for a job",
-            "To ask for information",
-            "To cancel an interview"
+            "To ask for information"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The email says: I am writing to apply for the position of sales assistant."
         },
         {
           "question": "How much experience does David have?",
           "options": [
-            "Six months",
-            "One year",
+            "Five years",
             "Two years",
-            "Five years"
+            "One year",
+            "Six months"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The email says: I have two years of experience in retail."
         },
         {
           "question": "What languages does David speak?",
           "options": [
+            "Spanish and Italian",
             "English and French",
-            "English and Spanish",
             "Only English",
-            "Spanish and Italian"
+            "English and Spanish"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The email says: I am fluent in English and Spanish."
         },
         {
           "question": "What has David attached to the email?",
           "options": [
-            "A photo",
             "A reference letter",
-            "His CV",
-            "A certificate"
+            "A photo",
+            "A certificate",
+            "His CV"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The email says: Please find attached my CV."
         }
       ]
@@ -276,10 +276,10 @@
         {
           "question": "Why is plastic a problem in the ocean?",
           "options": [
-            "It is expensive",
-            "It does not break down quickly",
             "It is colourful",
-            "It is heavy"
+            "It does not break down quickly",
+            "It is heavy",
+            "It is expensive"
           ],
           "correct": 1,
           "explanation": "The article says plastic does not break down quickly."
@@ -287,34 +287,34 @@
         {
           "question": "What happens to many sea animals?",
           "options": [
-            "They eat plastic and die",
-            "They swim away",
             "They grow bigger",
-            "They learn to avoid it"
+            "They eat plastic and die",
+            "They learn to avoid it",
+            "They swim away"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The article says sea animals mistake plastic for food and many die."
         },
         {
           "question": "What have some countries done?",
           "options": [
-            "Banned all plastic",
-            "Banned single-use plastics",
+            "Stopped recycling",
             "Increased plastic production",
-            "Stopped recycling"
+            "Banned all plastic",
+            "Banned single-use plastics"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The article says some countries have started to ban single-use plastics."
         },
         {
           "question": "What do experts say about individual actions?",
           "options": [
-            "They are enough",
-            "They are not enough",
+            "They are the only solution",
             "They are not important",
-            "They are the only solution"
+            "They are not enough",
+            "They are enough"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says individual actions are not enough."
         }
       ]
@@ -329,21 +329,21 @@
         {
           "question": "Where is Peter on holiday?",
           "options": [
-            "In Italy",
             "In Greece",
             "In Spain",
-            "In Turkey"
+            "In Turkey",
+            "In Italy"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The email says: I am having a wonderful holiday in Greece."
         },
         {
           "question": "What did Peter do yesterday?",
           "options": [
-            "He went to the beach",
+            "He stayed at the hotel",
             "He visited an ancient temple",
-            "He went on a boat trip",
-            "He stayed at the hotel"
+            "He went to the beach",
+            "He went on a boat trip"
           ],
           "correct": 1,
           "explanation": "The email says: Yesterday, I visited an ancient temple."
@@ -351,23 +351,23 @@
         {
           "question": "What is Peter worried about?",
           "options": [
+            "The hotel",
             "The weather",
             "The food",
-            "Getting seasick",
-            "The hotel"
+            "Getting seasick"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The email says: I am a bit worried about the sea because I get seasick."
         },
         {
           "question": "What does the captain say about the water?",
           "options": [
-            "It is very cold",
             "It is very calm",
             "It is very deep",
-            "It is very dirty"
+            "It is very dirty",
+            "It is very cold"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The email says: the captain says the water is very calm at this time of year."
         }
       ]
@@ -382,10 +382,10 @@
         {
           "question": "What is one advantage of online learning mentioned in the article?",
           "options": [
-            "Meeting new people",
+            "Getting more attention",
             "Choosing your own schedule",
-            "Learning faster",
-            "Getting more attention"
+            "Meeting new people",
+            "Learning faster"
           ],
           "correct": 1,
           "explanation": "The article says you can choose your own schedule."
@@ -393,21 +393,21 @@
         {
           "question": "What is one disadvantage of online learning?",
           "options": [
-            "It is expensive",
             "It is difficult to concentrate at home",
-            "It requires more books",
-            "It is too short"
+            "It is too short",
+            "It is expensive",
+            "It requires more books"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says some students find it difficult to concentrate at home."
         },
         {
           "question": "What helps students learn faster in a classroom?",
           "options": [
-            "Longer lessons",
+            "Better books",
             "Group work",
-            "More homework",
-            "Better books"
+            "Longer lessons",
+            "More homework"
           ],
           "correct": 1,
           "explanation": "The article says students can ask questions and work in groups, which helps them learn faster."
@@ -415,12 +415,12 @@
         {
           "question": "What does research suggest is the best approach?",
           "options": [
-            "Only online learning",
-            "Only classroom learning",
             "A combination of both",
-            "No learning at all"
+            "No learning at all",
+            "Only online learning",
+            "Only classroom learning"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The article says the best approach may be a combination of both methods."
         }
       ]
@@ -435,45 +435,45 @@
         {
           "question": "When was the internet invented?",
           "options": [
-            "In the 1950s",
-            "In the 1960s",
+            "In the 2000s",
             "In the 1990s",
-            "In the 2000s"
+            "In the 1950s",
+            "In the 1960s"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The article says the internet was invented in the 1960s."
         },
         {
           "question": "Who used the internet at first?",
           "options": [
-            "Everyone",
             "Only students",
-            "Universities and the military",
-            "Only businesses"
+            "Only businesses",
+            "Everyone",
+            "Universities and the military"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The article says it was only used by universities and the military at first."
         },
         {
           "question": "What happened in the 1990s?",
           "options": [
-            "The internet was invented",
             "The World Wide Web made the internet available to everyone",
-            "The internet was banned",
-            "Email was invented"
+            "Email was invented",
+            "The internet was invented",
+            "The internet was banned"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says in the 1990s, the World Wide Web made the internet available to everyone."
         },
         {
           "question": "What problem has the internet created?",
           "options": [
             "Too much paper",
+            "Fewer jobs",
             "Online addiction",
-            "Slower communication",
-            "Fewer jobs"
+            "Slower communication"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says this has created new problems, such as online addiction."
         }
       ]
@@ -501,8 +501,8 @@
           "options": [
             "Because of the food only",
             "Because everything was new",
-            "Because she had no money",
-            "Because she was ill"
+            "Because she was ill",
+            "Because she had no money"
           ],
           "correct": 1,
           "explanation": "The email says the first month was difficult because everything was new."
@@ -510,9 +510,9 @@
         {
           "question": "What is Laura learning?",
           "options": [
-            "Spanish",
-            "French",
             "Italian",
+            "French",
+            "Spanish",
             "German"
           ],
           "correct": 1,
@@ -522,9 +522,9 @@
           "question": "Who is coming to visit Laura?",
           "options": [
             "Her mother",
-            "Her friend Sophie",
+            "Her brother",
             "Her sister",
-            "Her brother"
+            "Her friend Sophie"
           ],
           "correct": 2,
           "explanation": "The email says: Next month, my sister is coming to visit me."
@@ -541,19 +541,19 @@
         {
           "question": "What do people who read regularly tend to have?",
           "options": [
-            "More money",
-            "Larger vocabularies",
             "More friends",
-            "Better jobs"
+            "Better jobs",
+            "Larger vocabularies",
+            "More money"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says people who read regularly tend to have larger vocabularies."
         },
         {
           "question": "According to studies, how much can reading reduce stress?",
           "options": [
-            "Up to 30 percent",
             "Up to 50 percent",
+            "Up to 30 percent",
             "Up to 68 percent",
             "Up to 90 percent"
           ],
@@ -563,10 +563,10 @@
         {
           "question": "What do many people say about reading?",
           "options": [
-            "It is boring",
+            "It is difficult",
             "They are too busy",
             "It is expensive",
-            "It is difficult"
+            "It is boring"
           ],
           "correct": 1,
           "explanation": "The article says many people say they are too busy to read."
@@ -574,12 +574,12 @@
         {
           "question": "What is the key to developing a reading habit?",
           "options": [
-            "Reading only classic books",
-            "Reading only non-fiction",
+            "Reading for hours every day",
             "Choosing books you enjoy",
-            "Reading for hours every day"
+            "Reading only non-fiction",
+            "Reading only classic books"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The article says the key is to choose books you enjoy."
         }
       ]
@@ -594,45 +594,45 @@
         {
           "question": "Why do many people skip breakfast?",
           "options": [
-            "They are not hungry",
-            "They do not have time",
+            "It is too expensive",
             "They do not like breakfast food",
-            "It is too expensive"
+            "They are not hungry",
+            "They do not have time"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The article says many people skip breakfast because they do not have time."
         },
         {
           "question": "What do nutritionists say about breakfast?",
           "options": [
             "It is optional",
-            "It is the most important meal",
             "It is only for children",
-            "It is not necessary"
+            "It is not necessary",
+            "It is the most important meal"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The article says nutritionists agree that breakfast is the most important meal of the day."
         },
         {
           "question": "How do people who eat breakfast perform at school or work?",
           "options": [
-            "They concentrate better",
             "They are sleepier",
-            "They are slower",
-            "They are hungrier"
+            "They concentrate better",
+            "They are hungrier",
+            "They are slower"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The article says people who eat breakfast tend to concentrate better."
         },
         {
           "question": "What should a good breakfast include?",
           "options": [
-            "Only sugar",
-            "Protein, fruit and whole grains",
             "Only coffee",
-            "Fast food"
+            "Fast food",
+            "Only sugar",
+            "Protein, fruit and whole grains"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The article says a good breakfast should include protein, fruit and whole grains."
         }
       ]

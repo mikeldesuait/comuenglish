@@ -18,10 +18,22 @@
           "body": "'Must' expresses strong obligation (often personal). 'Mustn't' means prohibition.",
           "tableHeader": true,
           "table": [
-            ["Use", "Example"],
-            ["Strong obligation", "You must wear a seatbelt."],
-            ["Rules", "Students must arrive on time."],
-            ["Prohibition", "You mustn't smoke here."]
+            [
+              "Use",
+              "Example"
+            ],
+            [
+              "Strong obligation",
+              "You must wear a seatbelt."
+            ],
+            [
+              "Rules",
+              "Students must arrive on time."
+            ],
+            [
+              "Prohibition",
+              "You mustn't smoke here."
+            ]
           ]
         },
         {
@@ -29,9 +41,21 @@
           "body": "'Have to' expresses external obligation (rules from outside). 'Don't have to' means no obligation.",
           "tableHeader": true,
           "table": [
-            ["Form", "Meaning", "Example"],
-            ["have to / has to", "external obligation", "I have to work on Saturdays."],
-            ["don't have to", "no obligation", "You don't have to come."]
+            [
+              "Form",
+              "Meaning",
+              "Example"
+            ],
+            [
+              "have to / has to",
+              "external obligation",
+              "I have to work on Saturdays."
+            ],
+            [
+              "don't have to",
+              "no obligation",
+              "You don't have to come."
+            ]
           ]
         },
         {
@@ -48,11 +72,31 @@
           "heading": "Must vs Have to",
           "tableHeader": true,
           "table": [
-            ["Structure", "Use", "Example"],
-            ["Must", "personal obligation", "I must study more."],
-            ["Have to", "external obligation", "I have to wear a uniform."],
-            ["Mustn't", "prohibition", "You mustn't use your phone."],
-            ["Don't have to", "no obligation", "You don't have to come."]
+            [
+              "Structure",
+              "Use",
+              "Example"
+            ],
+            [
+              "Must",
+              "personal obligation",
+              "I must study more."
+            ],
+            [
+              "Have to",
+              "external obligation",
+              "I have to wear a uniform."
+            ],
+            [
+              "Mustn't",
+              "prohibition",
+              "You mustn't use your phone."
+            ],
+            [
+              "Don't have to",
+              "no obligation",
+              "You don't have to come."
+            ]
           ]
         },
         {
@@ -72,36 +116,96 @@
         {
           "heading": "Social rules",
           "list": [
-            { "term": "arrive on time", "definition": "You must arrive on time." },
-            { "term": "queue", "definition": "You have to queue in Britain." },
-            { "term": "respect", "definition": "You should respect other people." },
-            { "term": "be polite", "definition": "You should be polite." },
-            { "term": "no smoking", "definition": "You mustn't smoke in restaurants." },
-            { "term": "no parking", "definition": "You mustn't park here." }
+            {
+              "term": "arrive on time",
+              "definition": "You must arrive on time."
+            },
+            {
+              "term": "queue",
+              "definition": "You have to queue in Britain."
+            },
+            {
+              "term": "respect",
+              "definition": "You should respect other people."
+            },
+            {
+              "term": "be polite",
+              "definition": "You should be polite."
+            },
+            {
+              "term": "no smoking",
+              "definition": "You mustn't smoke in restaurants."
+            },
+            {
+              "term": "no parking",
+              "definition": "You mustn't park here."
+            }
           ]
         },
         {
           "heading": "Health advice",
           "list": [
-            { "term": "see a doctor", "definition": "You should see a doctor." },
-            { "term": "take medicine", "definition": "You should take this medicine." },
-            { "term": "drink water", "definition": "You should drink more water." },
-            { "term": "exercise", "definition": "You should exercise every day." },
-            { "term": "rest", "definition": "You should rest if you are tired." },
-            { "term": "eat vegetables", "definition": "You should eat more vegetables." },
-            { "term": "stop smoking", "definition": "You should stop smoking." },
-            { "term": "sleep 8 hours", "definition": "You should sleep 8 hours a night." }
+            {
+              "term": "see a doctor",
+              "definition": "You should see a doctor."
+            },
+            {
+              "term": "take medicine",
+              "definition": "You should take this medicine."
+            },
+            {
+              "term": "drink water",
+              "definition": "You should drink more water."
+            },
+            {
+              "term": "exercise",
+              "definition": "You should exercise every day."
+            },
+            {
+              "term": "rest",
+              "definition": "You should rest if you are tired."
+            },
+            {
+              "term": "eat vegetables",
+              "definition": "You should eat more vegetables."
+            },
+            {
+              "term": "stop smoking",
+              "definition": "You should stop smoking."
+            },
+            {
+              "term": "sleep 8 hours",
+              "definition": "You should sleep 8 hours a night."
+            }
           ]
         },
         {
           "heading": "Work obligations",
           "list": [
-            { "term": "meet deadlines", "definition": "You have to meet deadlines." },
-            { "term": "attend meetings", "definition": "You have to attend meetings." },
-            { "term": "wear a uniform", "definition": "Some jobs require a uniform." },
-            { "term": "follow rules", "definition": "You have to follow the rules." },
-            { "term": "be punctual", "definition": "You must be punctual." },
-            { "term": "work in a team", "definition": "You have to work in a team." }
+            {
+              "term": "meet deadlines",
+              "definition": "You have to meet deadlines."
+            },
+            {
+              "term": "attend meetings",
+              "definition": "You have to attend meetings."
+            },
+            {
+              "term": "wear a uniform",
+              "definition": "Some jobs require a uniform."
+            },
+            {
+              "term": "follow rules",
+              "definition": "You have to follow the rules."
+            },
+            {
+              "term": "be punctual",
+              "definition": "You must be punctual."
+            },
+            {
+              "term": "work in a team",
+              "definition": "You have to work in a team."
+            }
           ]
         }
       ]
@@ -132,16 +236,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "You ___ smoke in the hospital. It is forbidden.", "options": ["do not have to", "must not", "should not", "can"], "correct": 1, "explanation": "Must not expresses prohibition."},
-        {"prompt": "You ___ see a doctor. You look ill.", "options": ["should", "must not", "don't have to", "can't"], "correct": 0, "explanation": "Should gives advice."},
-        {"prompt": "I ___ wear a seatbelt. It's the law.", "options": ["should", "must", "don't have to", "mustn't"], "correct": 1, "explanation": "Must expresses strong obligation."},
-        {"prompt": "You ___ come if you don't want to.", "options": ["mustn't", "don't have to", "shouldn't", "can't"], "correct": 1, "explanation": "Don't have to means no obligation."},
-        {"prompt": "She ___ work on Sundays.", "options": ["have to", "has to", "must to", "can"], "correct": 1, "explanation": "With 'she' we use 'has to'."},
-        {"prompt": "You ___ eat so much sugar. It's bad for you.", "options": ["shouldn't", "mustn't", "don't have to", "can't"], "correct": 0, "explanation": "Shouldn't gives negative advice."},
-        {"prompt": "We ___ pay. The entrance is free.", "options": ["mustn't", "don't have to", "shouldn't", "can't"], "correct": 1, "explanation": "No obligation."},
-        {"prompt": "Students ___ arrive on time.", "options": ["must", "mustn't", "don't have to", "can't"], "correct": 0, "explanation": "Must expresses a rule."},
-        {"prompt": "You ___ use your phone during the exam.", "options": ["don't have to", "mustn't", "should", "can"], "correct": 1, "explanation": "Mustn't means forbidden."},
-        {"prompt": "I ___ study more for the test.", "options": ["must", "mustn't", "don't have to", "can't"], "correct": 0, "explanation": "Personal obligation."}
+        {
+          "prompt": "You ___ smoke in the hospital. It is forbidden.",
+          "options": [
+            "do not have to",
+            "must not",
+            "should not",
+            "can"
+          ],
+          "correct": 1,
+          "explanation": "Must not expresses prohibition."
+        },
+        {
+          "prompt": "You ___ see a doctor. You look ill.",
+          "options": [
+            "should",
+            "must not",
+            "don't have to",
+            "can't"
+          ],
+          "correct": 0,
+          "explanation": "Should gives advice."
+        },
+        {
+          "prompt": "I ___ wear a seatbelt. It's the law.",
+          "options": [
+            "should",
+            "must",
+            "don't have to",
+            "mustn't"
+          ],
+          "correct": 1,
+          "explanation": "Must expresses strong obligation."
+        },
+        {
+          "prompt": "You ___ come if you don't want to.",
+          "options": [
+            "mustn't",
+            "don't have to",
+            "shouldn't",
+            "can't"
+          ],
+          "correct": 1,
+          "explanation": "Don't have to means no obligation."
+        },
+        {
+          "prompt": "She ___ work on Sundays.",
+          "options": [
+            "have to",
+            "has to",
+            "must to",
+            "can"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' we use 'has to'."
+        },
+        {
+          "prompt": "You ___ eat so much sugar. It's bad for you.",
+          "options": [
+            "shouldn't",
+            "mustn't",
+            "don't have to",
+            "can't"
+          ],
+          "correct": 0,
+          "explanation": "Shouldn't gives negative advice."
+        },
+        {
+          "prompt": "We ___ pay. The entrance is free.",
+          "options": [
+            "mustn't",
+            "don't have to",
+            "shouldn't",
+            "can't"
+          ],
+          "correct": 1,
+          "explanation": "No obligation."
+        },
+        {
+          "prompt": "Students ___ arrive on time.",
+          "options": [
+            "must",
+            "mustn't",
+            "don't have to",
+            "can't"
+          ],
+          "correct": 0,
+          "explanation": "Must expresses a rule."
+        },
+        {
+          "prompt": "You ___ use your phone during the exam.",
+          "options": [
+            "don't have to",
+            "mustn't",
+            "should",
+            "can"
+          ],
+          "correct": 1,
+          "explanation": "Mustn't means forbidden."
+        },
+        {
+          "prompt": "I ___ study more for the test.",
+          "options": [
+            "must",
+            "mustn't",
+            "don't have to",
+            "can't"
+          ],
+          "correct": 0,
+          "explanation": "Personal obligation."
+        }
       ]
     },
     {
@@ -157,16 +361,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "You ___ drink more water in summer.", "options": ["should", "mustn't", "don't have to", "can't"], "correct": 0, "explanation": "Should = advice."},
-        {"prompt": "Passengers ___ wear a seatbelt.", "options": ["should", "must", "don't have to", "mustn't"], "correct": 1, "explanation": "Must = obligation."},
-        {"prompt": "You ___ come to the meeting if you are busy.", "options": ["mustn't", "don't have to", "shouldn't", "can't"], "correct": 1, "explanation": "No obligation."},
-        {"prompt": "She ___ study harder.", "options": ["should", "mustn't", "don't have to", "can't"], "correct": 0, "explanation": "Advice."},
-        {"prompt": "We ___ be quiet in the library.", "options": ["must", "mustn't", "don't have to", "can"], "correct": 0, "explanation": "Rule."},
-        {"prompt": "You ___ use your phone at the table.", "options": ["must", "should", "mustn't", "don't have to"], "correct": 2, "explanation": "Prohibition."},
-        {"prompt": "I ___ work on Saturday. It's my day off.", "options": ["must", "have to", "don't have to", "mustn't"], "correct": 2, "explanation": "No obligation."},
-        {"prompt": "He ___ wear a suit for work.", "options": ["have to", "has to", "must to", "can"], "correct": 1, "explanation": "With 'he' we use 'has to'."},
-        {"prompt": "You ___ eat so much fast food.", "options": ["shouldn't", "mustn't", "don't have to", "can't"], "correct": 0, "explanation": "Negative advice."},
-        {"prompt": "Visitors ___ sign in at reception.", "options": ["must", "mustn't", "don't have to", "can"], "correct": 0, "explanation": "Obligation."}
+        {
+          "prompt": "You ___ drink more water in summer.",
+          "options": [
+            "should",
+            "mustn't",
+            "don't have to",
+            "can't"
+          ],
+          "correct": 0,
+          "explanation": "Should = advice."
+        },
+        {
+          "prompt": "Passengers ___ wear a seatbelt.",
+          "options": [
+            "should",
+            "must",
+            "don't have to",
+            "mustn't"
+          ],
+          "correct": 1,
+          "explanation": "Must = obligation."
+        },
+        {
+          "prompt": "You ___ come to the meeting if you are busy.",
+          "options": [
+            "mustn't",
+            "don't have to",
+            "shouldn't",
+            "can't"
+          ],
+          "correct": 1,
+          "explanation": "No obligation."
+        },
+        {
+          "prompt": "She ___ study harder.",
+          "options": [
+            "should",
+            "mustn't",
+            "don't have to",
+            "can't"
+          ],
+          "correct": 0,
+          "explanation": "Advice."
+        },
+        {
+          "prompt": "We ___ be quiet in the library.",
+          "options": [
+            "must",
+            "mustn't",
+            "don't have to",
+            "can"
+          ],
+          "correct": 0,
+          "explanation": "Rule."
+        },
+        {
+          "prompt": "You ___ use your phone at the table.",
+          "options": [
+            "must",
+            "should",
+            "mustn't",
+            "don't have to"
+          ],
+          "correct": 2,
+          "explanation": "Prohibition."
+        },
+        {
+          "prompt": "I ___ work on Saturday. It's my day off.",
+          "options": [
+            "must",
+            "have to",
+            "don't have to",
+            "mustn't"
+          ],
+          "correct": 2,
+          "explanation": "No obligation."
+        },
+        {
+          "prompt": "He ___ wear a suit for work.",
+          "options": [
+            "have to",
+            "has to",
+            "must to",
+            "can"
+          ],
+          "correct": 1,
+          "explanation": "With 'he' we use 'has to'."
+        },
+        {
+          "prompt": "You ___ eat so much fast food.",
+          "options": [
+            "shouldn't",
+            "mustn't",
+            "don't have to",
+            "can't"
+          ],
+          "correct": 0,
+          "explanation": "Negative advice."
+        },
+        {
+          "prompt": "Visitors ___ sign in at reception.",
+          "options": [
+            "must",
+            "mustn't",
+            "don't have to",
+            "can"
+          ],
+          "correct": 0,
+          "explanation": "Obligation."
+        }
       ]
     },
     {

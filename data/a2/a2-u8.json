@@ -18,10 +18,22 @@
           "body": "'Can' is used to ask for permission and to express ability. 'Can't' means it is not allowed.",
           "tableHeader": true,
           "table": [
-            ["Use", "Example"],
-            ["Permission", "Can I open the window?"],
-            ["Ability", "She can swim very well."],
-            ["Prohibition", "You can't park here."]
+            [
+              "Use",
+              "Example"
+            ],
+            [
+              "Permission",
+              "Can I open the window?"
+            ],
+            [
+              "Ability",
+              "She can swim very well."
+            ],
+            [
+              "Prohibition",
+              "You can't park here."
+            ]
           ]
         },
         {
@@ -29,10 +41,22 @@
           "body": "'Must' expresses strong obligation. 'Mustn't' means it is forbidden.",
           "tableHeader": true,
           "table": [
-            ["Use", "Example"],
-            ["Obligation", "You must wear a seatbelt."],
-            ["Prohibition", "You mustn't smoke here."],
-            ["Rules", "Students must arrive on time."]
+            [
+              "Use",
+              "Example"
+            ],
+            [
+              "Obligation",
+              "You must wear a seatbelt."
+            ],
+            [
+              "Prohibition",
+              "You mustn't smoke here."
+            ],
+            [
+              "Rules",
+              "Students must arrive on time."
+            ]
           ]
         },
         {
@@ -40,10 +64,22 @@
           "body": "Imperatives give direct instructions or orders. The imperative uses the base form of the verb. Negative: Don't + verb.",
           "tableHeader": true,
           "table": [
-            ["Positive", "Negative"],
-            ["Turn off your phone.", "Don't use your phone."],
-            ["Close the door.", "Don't open the window."],
-            ["Sit down, please.", "Don't run in the corridor."]
+            [
+              "Positive",
+              "Negative"
+            ],
+            [
+              "Turn off your phone.",
+              "Don't use your phone."
+            ],
+            [
+              "Close the door.",
+              "Don't open the window."
+            ],
+            [
+              "Sit down, please.",
+              "Don't run in the corridor."
+            ]
           ]
         },
         {
@@ -72,40 +108,112 @@
         {
           "heading": "Public signs",
           "list": [
-            { "term": "NO SMOKING", "definition": "You must not smoke here." },
-            { "term": "NO PARKING", "definition": "You can't park here." },
-            { "term": "PUSH", "definition": "Push the door to open it." },
-            { "term": "PULL", "definition": "Pull the door to open it." },
-            { "term": "EXIT", "definition": "The way out." },
-            { "term": "ENTRANCE", "definition": "The way in." },
-            { "term": "KEEP OFF THE GRASS", "definition": "Don't walk on the grass." },
-            { "term": "SILENCE PLEASE", "definition": "Don't make noise." },
-            { "term": "DANGER", "definition": "Be careful. It is dangerous." },
-            { "term": "STAFF ONLY", "definition": "Only employees can enter." }
+            {
+              "term": "NO SMOKING",
+              "definition": "You must not smoke here."
+            },
+            {
+              "term": "NO PARKING",
+              "definition": "You can't park here."
+            },
+            {
+              "term": "PUSH",
+              "definition": "Push the door to open it."
+            },
+            {
+              "term": "PULL",
+              "definition": "Pull the door to open it."
+            },
+            {
+              "term": "EXIT",
+              "definition": "The way out."
+            },
+            {
+              "term": "ENTRANCE",
+              "definition": "The way in."
+            },
+            {
+              "term": "KEEP OFF THE GRASS",
+              "definition": "Don't walk on the grass."
+            },
+            {
+              "term": "SILENCE PLEASE",
+              "definition": "Don't make noise."
+            },
+            {
+              "term": "DANGER",
+              "definition": "Be careful. It is dangerous."
+            },
+            {
+              "term": "STAFF ONLY",
+              "definition": "Only employees can enter."
+            }
           ]
         },
         {
           "heading": "Rules at school",
           "list": [
-            { "term": "arrive on time", "definition": "You must arrive on time." },
-            { "term": "wear a uniform", "definition": "Students have to wear a uniform." },
-            { "term": "do your homework", "definition": "You must do your homework every day." },
-            { "term": "raise your hand", "definition": "Raise your hand to speak." },
-            { "term": "be quiet in class", "definition": "You must be quiet in class." },
-            { "term": "no running", "definition": "Don't run in the corridors." }
+            {
+              "term": "arrive on time",
+              "definition": "You must arrive on time."
+            },
+            {
+              "term": "wear a uniform",
+              "definition": "Students have to wear a uniform."
+            },
+            {
+              "term": "do your homework",
+              "definition": "You must do your homework every day."
+            },
+            {
+              "term": "raise your hand",
+              "definition": "Raise your hand to speak."
+            },
+            {
+              "term": "be quiet in class",
+              "definition": "You must be quiet in class."
+            },
+            {
+              "term": "no running",
+              "definition": "Don't run in the corridors."
+            }
           ]
         },
         {
           "heading": "Instructions and orders",
           "list": [
-            { "term": "come here", "definition": "Come here, please." },
-            { "term": "sit down", "definition": "Sit down and open your book." },
-            { "term": "stand up", "definition": "Stand up, please." },
-            { "term": "turn off", "definition": "Turn off the lights." },
-            { "term": "turn on", "definition": "Turn on the TV." },
-            { "term": "be careful", "definition": "Be careful with the hot water." },
-            { "term": "don't touch", "definition": "Don't touch the wires." },
-            { "term": "wait here", "definition": "Wait here for five minutes." }
+            {
+              "term": "come here",
+              "definition": "Come here, please."
+            },
+            {
+              "term": "sit down",
+              "definition": "Sit down and open your book."
+            },
+            {
+              "term": "stand up",
+              "definition": "Stand up, please."
+            },
+            {
+              "term": "turn off",
+              "definition": "Turn off the lights."
+            },
+            {
+              "term": "turn on",
+              "definition": "Turn on the TV."
+            },
+            {
+              "term": "be careful",
+              "definition": "Be careful with the hot water."
+            },
+            {
+              "term": "don't touch",
+              "definition": "Don't touch the wires."
+            },
+            {
+              "term": "wait here",
+              "definition": "Wait here for five minutes."
+            }
           ]
         }
       ]
@@ -136,16 +244,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "You ___ park here. It is forbidden.", "options": ["can", "must not", "must", "should"], "correct": 1, "explanation": "Must not expresses prohibition."},
-        {"prompt": "___ I open the window, please?", "options": ["Can", "Must", "Should", "Do"], "correct": 0, "explanation": "Can I ... is used to ask for permission."},
-        {"prompt": "You ___ wear a seatbelt in the car. It's the law.", "options": ["can", "must", "mustn't", "don't have to"], "correct": 1, "explanation": "Must expresses strong obligation."},
-        {"prompt": "Students ___ arrive on time.", "options": ["can", "must", "mustn't", "don't"], "correct": 1, "explanation": "Must expresses a rule or obligation."},
-        {"prompt": "___ your phone off in class.", "options": ["Turn", "Turns", "Turning", "Turned"], "correct": 0, "explanation": "Imperative uses the base form."},
-        {"prompt": "___ run in the corridor.", "options": ["Don't", "No", "Not", "Doesn't"], "correct": 0, "explanation": "Negative imperative: Don't + verb."},
-        {"prompt": "I ___ work on Saturdays. It's my schedule.", "options": ["have to", "has to", "must to", "can"], "correct": 0, "explanation": "External obligation: have to."},
-        {"prompt": "You ___ come if you don't want to. It's optional.", "options": ["mustn't", "don't have to", "can't", "shouldn't"], "correct": 1, "explanation": "Don't have to = no obligation."},
-        {"prompt": "You ___ smoke in the hospital.", "options": ["must", "mustn't", "can", "don't have to"], "correct": 1, "explanation": "Mustn't = forbidden."},
-        {"prompt": "___ sit down, please.", "options": ["You", "Please", "Do", "Don't"], "correct": 2, "explanation": "The imperative form here starts with the base verb after 'Do' is wrong. The correct form is just 'Sit down, please.' Wait, review. The prompt expects the base verb 'Sit down, please' or 'Do sit down, please'. The correct answer is 'Please' if we say 'Please sit down.'"}
+        {
+          "prompt": "You ___ park here. It is forbidden.",
+          "options": [
+            "can",
+            "must not",
+            "must",
+            "should"
+          ],
+          "correct": 1,
+          "explanation": "Must not expresses prohibition."
+        },
+        {
+          "prompt": "___ I open the window, please?",
+          "options": [
+            "Can",
+            "Must",
+            "Should",
+            "Do"
+          ],
+          "correct": 0,
+          "explanation": "Can I ... is used to ask for permission."
+        },
+        {
+          "prompt": "You ___ wear a seatbelt in the car. It's the law.",
+          "options": [
+            "can",
+            "must",
+            "mustn't",
+            "don't have to"
+          ],
+          "correct": 1,
+          "explanation": "Must expresses strong obligation."
+        },
+        {
+          "prompt": "Students ___ arrive on time.",
+          "options": [
+            "can",
+            "must",
+            "mustn't",
+            "don't"
+          ],
+          "correct": 1,
+          "explanation": "Must expresses a rule or obligation."
+        },
+        {
+          "prompt": "___ your phone off in class.",
+          "options": [
+            "Turn",
+            "Turns",
+            "Turning",
+            "Turned"
+          ],
+          "correct": 0,
+          "explanation": "Imperative uses the base form."
+        },
+        {
+          "prompt": "___ run in the corridor.",
+          "options": [
+            "Don't",
+            "No",
+            "Not",
+            "Doesn't"
+          ],
+          "correct": 0,
+          "explanation": "Negative imperative: Don't + verb."
+        },
+        {
+          "prompt": "I ___ work on Saturdays. It's my schedule.",
+          "options": [
+            "have to",
+            "has to",
+            "must to",
+            "can"
+          ],
+          "correct": 0,
+          "explanation": "External obligation: have to."
+        },
+        {
+          "prompt": "You ___ come if you don't want to. It's optional.",
+          "options": [
+            "mustn't",
+            "don't have to",
+            "can't",
+            "shouldn't"
+          ],
+          "correct": 1,
+          "explanation": "Don't have to = no obligation."
+        },
+        {
+          "prompt": "You ___ smoke in the hospital.",
+          "options": [
+            "must",
+            "mustn't",
+            "can",
+            "don't have to"
+          ],
+          "correct": 1,
+          "explanation": "Mustn't = forbidden."
+        },
+        {
+          "prompt": "___ sit down, please.",
+          "options": [
+            "You",
+            "Please",
+            "Do",
+            "Don't"
+          ],
+          "correct": 2,
+          "explanation": "The imperative form here starts with the base verb after 'Do' is wrong. The correct form is just 'Sit down, please.' Wait, review. The prompt expects the base verb 'Sit down, please' or 'Do sit down, please'. The correct answer is 'Please' if we say 'Please sit down.'"
+        }
       ]
     },
     {
@@ -161,16 +369,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "You ___ use your phone during the exam.", "options": ["can", "must", "mustn't", "don't have to"], "correct": 2, "explanation": "Mustn't = forbidden."},
-        {"prompt": "___ I borrow your pen, please?", "options": ["Must", "Can", "Should", "Do"], "correct": 1, "explanation": "Can I ... asks for permission."},
-        {"prompt": "Passengers ___ wear a seatbelt.", "options": ["can", "must", "mustn't", "don't"], "correct": 1, "explanation": "Must = obligation."},
-        {"prompt": "___ touch the paintings.", "options": ["Don't", "No", "Not", "Doesn't"], "correct": 0, "explanation": "Negative imperative: Don't + verb."},
-        {"prompt": "I ___ get up early tomorrow. It's Saturday.", "options": ["have to", "mustn't", "don't have to", "can't"], "correct": 2, "explanation": "No obligation: don't have to."},
-        {"prompt": "She ___ work on Sundays.", "options": ["have to", "has to", "must to", "can"], "correct": 1, "explanation": "With 'she' we use 'has to'."},
-        {"prompt": "___ your homework before dinner.", "options": ["Do", "Does", "Doing", "Did"], "correct": 0, "explanation": "Imperative: Do your homework."},
-        {"prompt": "You ___ take photos in the museum. It's not allowed.", "options": ["can", "can't", "must", "don't have to"], "correct": 1, "explanation": "Can't = not allowed."},
-        {"prompt": "Visitors ___ sign in at the reception.", "options": ["must", "mustn't", "can't", "don't"], "correct": 0, "explanation": "Must = obligation."},
-        {"prompt": "___ be quiet in the library.", "options": ["You", "Please", "Do", "Not"], "correct": 1, "explanation": "Please be quiet in the library."}
+        {
+          "prompt": "You ___ use your phone during the exam.",
+          "options": [
+            "can",
+            "must",
+            "mustn't",
+            "don't have to"
+          ],
+          "correct": 2,
+          "explanation": "Mustn't = forbidden."
+        },
+        {
+          "prompt": "___ I borrow your pen, please?",
+          "options": [
+            "Must",
+            "Can",
+            "Should",
+            "Do"
+          ],
+          "correct": 1,
+          "explanation": "Can I ... asks for permission."
+        },
+        {
+          "prompt": "Passengers ___ wear a seatbelt.",
+          "options": [
+            "can",
+            "must",
+            "mustn't",
+            "don't"
+          ],
+          "correct": 1,
+          "explanation": "Must = obligation."
+        },
+        {
+          "prompt": "___ touch the paintings.",
+          "options": [
+            "Don't",
+            "No",
+            "Not",
+            "Doesn't"
+          ],
+          "correct": 0,
+          "explanation": "Negative imperative: Don't + verb."
+        },
+        {
+          "prompt": "I ___ get up early tomorrow. It's Saturday.",
+          "options": [
+            "have to",
+            "mustn't",
+            "don't have to",
+            "can't"
+          ],
+          "correct": 2,
+          "explanation": "No obligation: don't have to."
+        },
+        {
+          "prompt": "She ___ work on Sundays.",
+          "options": [
+            "have to",
+            "has to",
+            "must to",
+            "can"
+          ],
+          "correct": 1,
+          "explanation": "With 'she' we use 'has to'."
+        },
+        {
+          "prompt": "___ your homework before dinner.",
+          "options": [
+            "Do",
+            "Does",
+            "Doing",
+            "Did"
+          ],
+          "correct": 0,
+          "explanation": "Imperative: Do your homework."
+        },
+        {
+          "prompt": "You ___ take photos in the museum. It's not allowed.",
+          "options": [
+            "can",
+            "can't",
+            "must",
+            "don't have to"
+          ],
+          "correct": 1,
+          "explanation": "Can't = not allowed."
+        },
+        {
+          "prompt": "Visitors ___ sign in at the reception.",
+          "options": [
+            "must",
+            "mustn't",
+            "can't",
+            "don't"
+          ],
+          "correct": 0,
+          "explanation": "Must = obligation."
+        },
+        {
+          "prompt": "___ be quiet in the library.",
+          "options": [
+            "You",
+            "Please",
+            "Do",
+            "Not"
+          ],
+          "correct": 1,
+          "explanation": "Please be quiet in the library."
+        }
       ]
     },
     {

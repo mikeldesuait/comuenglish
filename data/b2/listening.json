@@ -11,9 +11,9 @@
         {
           "question": "How did the biologist become interested in the ocean?",
           "options": [
-            "Living near the coast",
-            "Her parents encouraged her",
             "A school project",
+            "Her parents encouraged her",
+            "Living near the coast",
             "Watching a TV documentary"
           ],
           "correct": 3,
@@ -22,23 +22,23 @@
         {
           "question": "What does she consider the biggest threat to coral reefs?",
           "options": [
-            "Tourism",
-            "Agricultural pollution",
             "Rising sea temperatures",
-            "Overfishing"
+            "Overfishing",
+            "Agricultural pollution",
+            "Tourism"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "She says: the most damaging factor is actually agricultural pollution."
         },
         {
           "question": "What does she say about overfishing?",
           "options": [
-            "It is a concern but not the biggest",
-            "It is the main problem",
             "It only affects certain species",
-            "It is not a concern"
+            "It is the main problem",
+            "It is not a concern",
+            "It is a concern but not the biggest"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "She says: Overfishing is also a concern, but pollution is what is killing reefs fastest."
         }
       ]
@@ -53,45 +53,45 @@
         {
           "question": "What does the professor say about productivity during the pandemic?",
           "options": [
-            "It fell in all sectors",
-            "It increased in some sectors",
+            "It was not measured",
             "It stayed the same everywhere",
-            "It was not measured"
+            "It increased in some sectors",
+            "It fell in all sectors"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The professor says: in some sectors it increased."
         },
         {
           "question": "What is the current counter-trend?",
           "options": [
             "More people working from home",
+            "Employees refusing to work",
             "Companies asking employees to return to the office",
-            "Companies closing offices",
-            "Employees refusing to work"
+            "Companies closing offices"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The professor says: Some large companies are asking employees to return to the office."
         },
         {
           "question": "Why is innovation mentioned as a reason to return to the office?",
           "options": [
-            "It happens through spontaneous conversations",
             "It requires expensive equipment",
-            "It only happens in meetings",
-            "It depends on the internet"
+            "It happens through spontaneous conversations",
+            "It depends on the internet",
+            "It only happens in meetings"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The professor says: innovation often happens through spontaneous conversations in corridors."
         },
         {
           "question": "What is the professor's preferred solution?",
           "options": [
-            "Full remote work",
-            "Full office work",
+            "No solution is possible",
             "Hybrid model",
-            "No solution is possible"
+            "Full office work",
+            "Full remote work"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The professor says: I think the hybrid model is the most realistic."
         },
         {
@@ -117,32 +117,32 @@
         {
           "question": "What is the lecture mainly about?",
           "options": [
-            "Climate change and agriculture",
-            "Climate change and energy",
             "Climate change and health",
-            "Climate change and tourism"
+            "Climate change and agriculture",
+            "Climate change and tourism",
+            "Climate change and energy"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The professor says: I want to talk about the impact of climate change on agriculture."
         },
         {
           "question": "What is happening to crop yields?",
           "options": [
-            "They are increasing",
+            "They are not affected",
             "They are staying the same",
-            "They are decreasing",
-            "They are not affected"
+            "They are increasing",
+            "They are decreasing"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The professor says: Rising temperatures are already reducing crop yields."
         },
         {
           "question": "What could happen to global food production by 2050?",
           "options": [
-            "It could double",
+            "It could increase by 50%",
             "It could decline by up to 25%",
             "It could stay the same",
-            "It could increase by 50%"
+            "It could double"
           ],
           "correct": 1,
           "explanation": "The professor says: global food production could decline by up to 25 percent by 2050."
@@ -150,10 +150,10 @@
         {
           "question": "What are scientists developing?",
           "options": [
-            "New farming machines",
+            "New markets",
             "New crop varieties",
-            "New pesticides",
-            "New markets"
+            "New farming machines",
+            "New pesticides"
           ],
           "correct": 1,
           "explanation": "The professor says: Scientists are developing new varieties of crops."
@@ -161,12 +161,12 @@
         {
           "question": "What is the main challenge mentioned?",
           "options": [
-            "Making solutions affordable for everyone",
-            "Finding new land",
             "Stopping climate change",
+            "Finding new land",
+            "Making solutions affordable for everyone",
             "Educating farmers"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The professor says: The challenge is to make these solutions available and affordable for everyone."
         }
       ]
@@ -182,20 +182,20 @@
           "question": "What does Dr. Chen say about the common belief that memory declines with age?",
           "options": [
             "It is completely true",
-            "It is not entirely accurate",
             "It is a myth",
-            "It only affects some people"
+            "It only affects some people",
+            "It is not entirely accurate"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Dr. Chen says: it is not entirely accurate."
         },
         {
           "question": "What improves with age according to Dr. Chen?",
           "options": [
-            "Speed of recall",
-            "Vocabulary and general knowledge",
             "Physical strength",
-            "Vision"
+            "Vocabulary and general knowledge",
+            "Vision",
+            "Speed of recall"
           ],
           "correct": 1,
           "explanation": "Dr. Chen says vocabulary and general knowledge can improve until quite late in life."
@@ -214,23 +214,23 @@
         {
           "question": "What comparison does Dr. Chen use?",
           "options": [
-            "A computer",
             "A library",
             "A garden",
-            "A car"
+            "A car",
+            "A computer"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Dr. Chen says: Think of it like a library."
         },
         {
           "question": "What is the single most effective thing for memory?",
           "options": [
-            "Mental puzzles",
-            "Physical exercise",
+            "Diet",
             "Sleep",
-            "Diet"
+            "Physical exercise",
+            "Mental puzzles"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Dr. Chen says: Physical exercise is the single most effective thing."
         }
       ]
@@ -245,23 +245,23 @@
         {
           "question": "What does the novelist say starts the writing process?",
           "options": [
-            "A plot",
             "A character",
             "A setting",
-            "An idea"
+            "An idea",
+            "A plot"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The novelist says: it starts with a character, not a plot."
         },
         {
           "question": "Does the novelist plan everything before writing?",
           "options": [
+            "Only for the ending",
             "Yes, always",
-            "No, never",
             "Only sometimes",
-            "Only for the ending"
+            "No, never"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The novelist says: No, quite the opposite. I discover the story as I write it."
         },
         {
@@ -279,22 +279,22 @@
           "question": "What advice is given to young writers?",
           "options": [
             "Write only in one genre",
-            "Read everything and write daily",
             "Plan carefully",
-            "Wait for inspiration"
+            "Wait for inspiration",
+            "Read everything and write daily"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The novelist says: Read everything... and write every day."
         },
         {
           "question": "What does the novelist say is most important?",
           "options": [
-            "Perfection",
             "Finishing something",
             "Being published",
+            "Perfection",
             "Making money"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The novelist says: A finished bad novel is worth more than an unfinished perfect one."
         }
       ]
@@ -309,56 +309,56 @@
         {
           "question": "What are superblocks?",
           "options": [
+            "Underground tunnels",
             "Tall buildings",
             "Areas where cars are banned",
-            "Underground tunnels",
             "Shopping centres"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The presenter says: superblocks, where cars are largely banned."
         },
         {
           "question": "What has happened to air pollution in pedestrian zones?",
           "options": [
-            "It has increased",
             "It has fallen",
-            "It has stayed the same",
-            "It has not been measured"
+            "It has increased",
+            "It has not been measured",
+            "It has stayed the same"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The presenter says: Air pollution has fallen."
         },
         {
           "question": "Why do local businesses often report higher sales?",
           "options": [
-            "Prices are lower",
-            "People walk more slowly and stop to look",
             "There is more parking",
-            "There are more tourists"
+            "There are more tourists",
+            "Prices are lower",
+            "People walk more slowly and stop to look"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The presenter says: people walk more slowly and stop to look in shop windows."
         },
         {
           "question": "Who complains about these zones?",
           "options": [
-            "Tourists and shop owners",
-            "Elderly people and those with disabilities",
+            "Students and teachers",
             "Cyclists and runners",
-            "Students and teachers"
+            "Tourists and shop owners",
+            "Elderly people and those with disabilities"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The presenter says: Some residents complain... especially for elderly people or those with disabilities."
         },
         {
           "question": "What is the solution according to urban planners?",
           "options": [
-            "Banning all cars everywhere",
             "Designing zones carefully",
+            "Banning all cars everywhere",
             "Building more roads",
             "Removing public transport"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The presenter says: The solution is to design these zones carefully."
         }
       ]
@@ -373,54 +373,54 @@
         {
           "question": "What is Dr. Patel's view on stress?",
           "options": [
-            "It is always bad",
-            "It is always good",
             "It can be positive in small doses",
+            "It is always good",
+            "It is always bad",
             "It should be eliminated completely"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "Dr. Patel says: In small doses, it can actually improve performance."
         },
         {
           "question": "When does stress become a problem?",
           "options": [
-            "When it is short",
-            "When it becomes chronic",
+            "When it happens at work",
             "When it is experienced by children",
-            "When it happens at work"
+            "When it becomes chronic",
+            "When it is short"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Dr. Patel says: When it becomes chronic."
         },
         {
           "question": "What is chronic stress linked to?",
           "options": [
-            "Better performance",
-            "Improved memory",
             "Heart disease and depression",
-            "Stronger immunity"
+            "Stronger immunity",
+            "Better performance",
+            "Improved memory"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "Dr. Patel says: Chronic stress is linked to heart disease, depression, and a weakened immune system."
         },
         {
           "question": "What is the most important thing for reducing stress?",
           "options": [
             "Sleep",
+            "Medication",
             "Exercise",
-            "Social connection",
-            "Medication"
+            "Social connection"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Dr. Patel says: the most important thing is social connection."
         },
         {
           "question": "What do many people do under stress that is wrong?",
           "options": [
-            "They eat more",
-            "They isolate themselves",
             "They sleep too much",
-            "They work harder"
+            "They isolate themselves",
+            "They work harder",
+            "They eat more"
           ],
           "correct": 1,
           "explanation": "Dr. Patel says: many people under stress... isolate themselves. That is exactly the wrong thing to do."
@@ -437,9 +437,9 @@
         {
           "question": "What was the original purpose of ARPANET?",
           "options": [
-            "To share music",
-            "To create a military communication network",
             "To connect universities",
+            "To create a military communication network",
+            "To share music",
             "To sell computers"
           ],
           "correct": 1,
@@ -448,12 +448,12 @@
         {
           "question": "When was the World Wide Web created?",
           "options": [
-            "In the 1960s",
-            "In the 1980s",
             "In 1991",
+            "In the 1980s",
+            "In the 1960s",
             "In 2000"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The lecturer says: it was only in 1991 that the World Wide Web was created."
         },
         {
@@ -470,23 +470,23 @@
         {
           "question": "How many people use the internet today?",
           "options": [
-            "One billion",
-            "Three billion",
             "More than five billion",
-            "Ten billion"
+            "Ten billion",
+            "Three billion",
+            "One billion"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The lecturer says: more than five billion people use the internet."
         },
         {
           "question": "What is the internet's greatest strength according to the lecturer?",
           "options": [
-            "It is owned by one company",
-            "It is a global network of networks",
             "It is very fast",
-            "It is cheap"
+            "It is cheap",
+            "It is a global network of networks",
+            "It is owned by one company"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The lecturer says: It is a global network of networks, governed by shared protocols. That is both its greatest strength and its greatest weakness."
         }
       ]

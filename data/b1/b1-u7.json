@@ -18,21 +18,53 @@
           "body": "Subject + be + past participle (+ by + agent).",
           "tableHeader": true,
           "table": [
-            ["Tense", "Form", "Example"],
-            ["Present Simple", "am / is / are + past participle", "The letter is written every day."],
-            ["Past Simple", "was / were + past participle", "The book was written in 1990."],
-            ["Negative", "am/is/are/was/were + not + past participle", "The window was not cleaned."],
-            ["Question", "Am/Is/Are/Was/Were + subject + past participle?", "Was the letter sent?"]
+            [
+              "Tense",
+              "Form",
+              "Example"
+            ],
+            [
+              "Present Simple",
+              "am / is / are + past participle",
+              "The letter is written every day."
+            ],
+            [
+              "Past Simple",
+              "was / were + past participle",
+              "The book was written in 1990."
+            ],
+            [
+              "Negative",
+              "am/is/are/was/were + not + past participle",
+              "The window was not cleaned."
+            ],
+            [
+              "Question",
+              "Am/Is/Are/Was/Were + subject + past participle?",
+              "Was the letter sent?"
+            ]
           ]
         },
         {
           "heading": "Active vs Passive",
           "tableHeader": true,
           "table": [
-            ["Active", "Passive"],
-            ["Shakespeare wrote Hamlet.", "Hamlet was written by Shakespeare."],
-            ["They clean the office every day.", "The office is cleaned every day."],
-            ["Someone stole my bike.", "My bike was stolen."]
+            [
+              "Active",
+              "Passive"
+            ],
+            [
+              "Shakespeare wrote Hamlet.",
+              "Hamlet was written by Shakespeare."
+            ],
+            [
+              "They clean the office every day.",
+              "The office is cleaned every day."
+            ],
+            [
+              "Someone stole my bike.",
+              "My bike was stolen."
+            ]
           ]
         },
         {
@@ -70,47 +102,125 @@
         {
           "heading": "Processes",
           "list": [
-            { "term": "produce", "definition": "This car is produced in Germany." },
-            { "term": "build", "definition": "The bridge was built in 1890." },
-            { "term": "make", "definition": "Wine is made from grapes." },
-            { "term": "grow", "definition": "Coffee is grown in Brazil." },
-            { "term": "design", "definition": "The dress was designed by a famous designer." },
-            { "term": "print", "definition": "The books are printed in China." },
-            { "term": "assemble", "definition": "The cars are assembled in a factory." },
-            { "term": "export", "definition": "The products are exported worldwide." }
+            {
+              "term": "produce",
+              "definition": "This car is produced in Germany."
+            },
+            {
+              "term": "build",
+              "definition": "The bridge was built in 1890."
+            },
+            {
+              "term": "make",
+              "definition": "Wine is made from grapes."
+            },
+            {
+              "term": "grow",
+              "definition": "Coffee is grown in Brazil."
+            },
+            {
+              "term": "design",
+              "definition": "The dress was designed by a famous designer."
+            },
+            {
+              "term": "print",
+              "definition": "The books are printed in China."
+            },
+            {
+              "term": "assemble",
+              "definition": "The cars are assembled in a factory."
+            },
+            {
+              "term": "export",
+              "definition": "The products are exported worldwide."
+            }
           ]
         },
         {
           "heading": "Inventions and discoveries",
           "list": [
-            { "term": "invent", "definition": "The telephone was invented by Alexander Graham Bell." },
-            { "term": "discover", "definition": "Penicillin was discovered by accident." },
-            { "term": "develop", "definition": "The vaccine was developed in 2020." },
-            { "term": "create", "definition": "The first computer was created in the 1940s." },
-            { "term": "test", "definition": "The new medicine was tested on volunteers." },
-            { "term": "launch", "definition": "The satellite was launched last year." }
+            {
+              "term": "invent",
+              "definition": "The telephone was invented by Alexander Graham Bell."
+            },
+            {
+              "term": "discover",
+              "definition": "Penicillin was discovered by accident."
+            },
+            {
+              "term": "develop",
+              "definition": "The vaccine was developed in 2020."
+            },
+            {
+              "term": "create",
+              "definition": "The first computer was created in the 1940s."
+            },
+            {
+              "term": "test",
+              "definition": "The new medicine was tested on volunteers."
+            },
+            {
+              "term": "launch",
+              "definition": "The satellite was launched last year."
+            }
           ]
         },
         {
           "heading": "History and news",
           "list": [
-            { "term": "sign", "definition": "The treaty was signed in 1945." },
-            { "term": "elect", "definition": "The president was elected in 2020." },
-            { "term": "arrest", "definition": "The thief was arrested yesterday." },
-            { "term": "damage", "definition": "The building was damaged by the storm." },
-            { "term": "destroy", "definition": "The city was destroyed in the war." },
-            { "term": "open", "definition": "The new hospital was opened last month." }
+            {
+              "term": "sign",
+              "definition": "The treaty was signed in 1945."
+            },
+            {
+              "term": "elect",
+              "definition": "The president was elected in 2020."
+            },
+            {
+              "term": "arrest",
+              "definition": "The thief was arrested yesterday."
+            },
+            {
+              "term": "damage",
+              "definition": "The building was damaged by the storm."
+            },
+            {
+              "term": "destroy",
+              "definition": "The city was destroyed in the war."
+            },
+            {
+              "term": "open",
+              "definition": "The new hospital was opened last month."
+            }
           ]
         },
         {
           "heading": "Everyday passive",
           "list": [
-            { "term": "be cleaned", "definition": "The office is cleaned every day." },
-            { "term": "be sold", "definition": "Tickets are sold online." },
-            { "term": "be spoken", "definition": "English is spoken all over the world." },
-            { "term": "be repaired", "definition": "My car was repaired last week." },
-            { "term": "be stolen", "definition": "My bike was stolen yesterday." },
-            { "term": "be delivered", "definition": "The package was delivered this morning." }
+            {
+              "term": "be cleaned",
+              "definition": "The office is cleaned every day."
+            },
+            {
+              "term": "be sold",
+              "definition": "Tickets are sold online."
+            },
+            {
+              "term": "be spoken",
+              "definition": "English is spoken all over the world."
+            },
+            {
+              "term": "be repaired",
+              "definition": "My car was repaired last week."
+            },
+            {
+              "term": "be stolen",
+              "definition": "My bike was stolen yesterday."
+            },
+            {
+              "term": "be delivered",
+              "definition": "The package was delivered this morning."
+            }
           ]
         }
       ]
@@ -141,16 +251,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "This bridge ___ in 1890.", "options": ["built", "was built", "is built", "builds"], "correct": 1, "explanation": "Past passive: was/were + past participle."},
-        {"prompt": "The letters ___ every morning.", "options": ["deliver", "are delivered", "delivered", "is delivered"], "correct": 1, "explanation": "Present passive: am/is/are + past participle."},
-        {"prompt": "The book ___ by a famous writer.", "options": ["wrote", "was written", "is writing", "writes"], "correct": 1, "explanation": "Past passive: was + past participle."},
-        {"prompt": "English ___ in many countries.", "options": ["speaks", "is spoken", "spoke", "speaking"], "correct": 1, "explanation": "Present passive: is + past participle."},
-        {"prompt": "My car ___ last week.", "options": ["repaired", "was repaired", "is repaired", "repairs"], "correct": 1, "explanation": "Past passive: was + past participle."},
-        {"prompt": "The office ___ on Sundays.", "options": ["is not cleaned", "does not clean", "not cleaned", "was not cleaning"], "correct": 0, "explanation": "Negative passive: is not + past participle."},
-        {"prompt": "___ the letter ___ yesterday?", "options": ["Was / sent", "Did / send", "Is / sent", "Was / send"], "correct": 0, "explanation": "Question: Was + subject + past participle?"},
-        {"prompt": "Coffee ___ in Brazil.", "options": ["grows", "is grown", "grew", "growing"], "correct": 1, "explanation": "Present passive: is + past participle."},
-        {"prompt": "The thief ___ last night.", "options": ["arrested", "was arrested", "is arrested", "arrests"], "correct": 1, "explanation": "Past passive: was + past participle."},
-        {"prompt": "These shoes ___ in Italy.", "options": ["make", "are made", "made", "makes"], "correct": 1, "explanation": "Present passive: are + past participle."}
+        {
+          "prompt": "This bridge ___ in 1890.",
+          "options": [
+            "built",
+            "was built",
+            "is built",
+            "builds"
+          ],
+          "correct": 1,
+          "explanation": "Past passive: was/were + past participle."
+        },
+        {
+          "prompt": "The letters ___ every morning.",
+          "options": [
+            "deliver",
+            "are delivered",
+            "delivered",
+            "is delivered"
+          ],
+          "correct": 1,
+          "explanation": "Present passive: am/is/are + past participle."
+        },
+        {
+          "prompt": "The book ___ by a famous writer.",
+          "options": [
+            "wrote",
+            "was written",
+            "is writing",
+            "writes"
+          ],
+          "correct": 1,
+          "explanation": "Past passive: was + past participle."
+        },
+        {
+          "prompt": "English ___ in many countries.",
+          "options": [
+            "speaks",
+            "is spoken",
+            "spoke",
+            "speaking"
+          ],
+          "correct": 1,
+          "explanation": "Present passive: is + past participle."
+        },
+        {
+          "prompt": "My car ___ last week.",
+          "options": [
+            "repaired",
+            "was repaired",
+            "is repaired",
+            "repairs"
+          ],
+          "correct": 1,
+          "explanation": "Past passive: was + past participle."
+        },
+        {
+          "prompt": "The office ___ on Sundays.",
+          "options": [
+            "is not cleaned",
+            "does not clean",
+            "not cleaned",
+            "was not cleaning"
+          ],
+          "correct": 0,
+          "explanation": "Negative passive: is not + past participle."
+        },
+        {
+          "prompt": "___ the letter ___ yesterday?",
+          "options": [
+            "Was / sent",
+            "Did / send",
+            "Is / sent",
+            "Was / send"
+          ],
+          "correct": 0,
+          "explanation": "Question: Was + subject + past participle?"
+        },
+        {
+          "prompt": "Coffee ___ in Brazil.",
+          "options": [
+            "grows",
+            "is grown",
+            "grew",
+            "growing"
+          ],
+          "correct": 1,
+          "explanation": "Present passive: is + past participle."
+        },
+        {
+          "prompt": "The thief ___ last night.",
+          "options": [
+            "arrested",
+            "was arrested",
+            "is arrested",
+            "arrests"
+          ],
+          "correct": 1,
+          "explanation": "Past passive: was + past participle."
+        },
+        {
+          "prompt": "These shoes ___ in Italy.",
+          "options": [
+            "make",
+            "are made",
+            "made",
+            "makes"
+          ],
+          "correct": 1,
+          "explanation": "Present passive: are + past participle."
+        }
       ]
     },
     {
@@ -166,16 +376,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "This house ___ in 1950.", "options": ["built", "was built", "is built", "builds"], "correct": 1, "explanation": "Past passive."},
-        {"prompt": "The rooms ___ every morning.", "options": ["clean", "are cleaned", "cleaned", "cleans"], "correct": 1, "explanation": "Present passive."},
-        {"prompt": "The song ___ by a famous singer.", "options": ["wrote", "was written", "is writing", "writes"], "correct": 1, "explanation": "Past passive."},
-        {"prompt": "Tickets ___ online.", "options": ["sell", "are sold", "sold", "sells"], "correct": 1, "explanation": "Present passive."},
-        {"prompt": "My wallet ___ yesterday.", "options": ["stole", "was stolen", "is stolen", "steals"], "correct": 1, "explanation": "Past passive."},
-        {"prompt": "The window ___ last night.", "options": ["broke", "was broken", "is broken", "breaks"], "correct": 1, "explanation": "Past passive."},
-        {"prompt": "The package ___ this morning.", "options": ["delivered", "was delivered", "is delivered", "delivers"], "correct": 1, "explanation": "Past passive."},
-        {"prompt": "___ the report ___ yesterday?", "options": ["Was / finished", "Did / finish", "Is / finished", "Was / finish"], "correct": 0, "explanation": "Question in passive."},
-        {"prompt": "The bridge ___ at the moment.", "options": ["repairs", "is being repaired", "repaired", "repairing"], "correct": 1, "explanation": "Passive with 'being' (B1 extension)."},
-        {"prompt": "Many languages ___ in India.", "options": ["speak", "are spoken", "spoke", "speaks"], "correct": 1, "explanation": "Present passive."}
+        {
+          "prompt": "This house ___ in 1950.",
+          "options": [
+            "built",
+            "was built",
+            "is built",
+            "builds"
+          ],
+          "correct": 1,
+          "explanation": "Past passive."
+        },
+        {
+          "prompt": "The rooms ___ every morning.",
+          "options": [
+            "clean",
+            "are cleaned",
+            "cleaned",
+            "cleans"
+          ],
+          "correct": 1,
+          "explanation": "Present passive."
+        },
+        {
+          "prompt": "The song ___ by a famous singer.",
+          "options": [
+            "wrote",
+            "was written",
+            "is writing",
+            "writes"
+          ],
+          "correct": 1,
+          "explanation": "Past passive."
+        },
+        {
+          "prompt": "Tickets ___ online.",
+          "options": [
+            "sell",
+            "are sold",
+            "sold",
+            "sells"
+          ],
+          "correct": 1,
+          "explanation": "Present passive."
+        },
+        {
+          "prompt": "My wallet ___ yesterday.",
+          "options": [
+            "stole",
+            "was stolen",
+            "is stolen",
+            "steals"
+          ],
+          "correct": 1,
+          "explanation": "Past passive."
+        },
+        {
+          "prompt": "The window ___ last night.",
+          "options": [
+            "broke",
+            "was broken",
+            "is broken",
+            "breaks"
+          ],
+          "correct": 1,
+          "explanation": "Past passive."
+        },
+        {
+          "prompt": "The package ___ this morning.",
+          "options": [
+            "delivered",
+            "was delivered",
+            "is delivered",
+            "delivers"
+          ],
+          "correct": 1,
+          "explanation": "Past passive."
+        },
+        {
+          "prompt": "___ the report ___ yesterday?",
+          "options": [
+            "Was / finished",
+            "Did / finish",
+            "Is / finished",
+            "Was / finish"
+          ],
+          "correct": 0,
+          "explanation": "Question in passive."
+        },
+        {
+          "prompt": "The bridge ___ at the moment.",
+          "options": [
+            "repairs",
+            "is being repaired",
+            "repaired",
+            "repairing"
+          ],
+          "correct": 1,
+          "explanation": "Passive with 'being' (B1 extension)."
+        },
+        {
+          "prompt": "Many languages ___ in India.",
+          "options": [
+            "speak",
+            "are spoken",
+            "spoke",
+            "speaks"
+          ],
+          "correct": 1,
+          "explanation": "Present passive."
+        }
       ]
     },
     {

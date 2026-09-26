@@ -8,7 +8,11 @@
       "prompt": "Talk about yourself for 1 minute. Say your name, where you live, what you do, what you enjoy doing and something about your family.",
       "seconds": 60,
       "sample": "My name is Carlos and I live in a small town near Barcelona. I am 17 years old and I am studying at high school. In my free time I enjoy playing the guitar and going to the beach with my friends. I live with my parents and my younger sister. My father works as an engineer and my mother is a nurse.",
-      "tips": ["Give extended answers", "Use a range of tenses", "Add reasons and examples"]
+      "tips": [
+        "Give extended answers",
+        "Use a range of tenses",
+        "Add reasons and examples"
+      ]
     },
     {
       "id": "b1-s2",
@@ -17,7 +21,11 @@
       "prompt": "Talk about your studies or work for 1 minute. What do you study or do? What do you like about it? What are your plans for the future?",
       "seconds": 60,
       "sample": "I am currently studying at high school, in my final year. My favourite subjects are biology and chemistry because I find them fascinating. I want to study medicine at university and become a doctor. It is difficult, but I am willing to work hard. I also enjoy the social side of school - I have made many friends there.",
-      "tips": ["Use Present Simple and going to/will for plans", "Explain your motivation", "Mention future plans"]
+      "tips": [
+        "Use Present Simple and going to/will for plans",
+        "Explain your motivation",
+        "Mention future plans"
+      ]
     },
     {
       "id": "b1-s3",
@@ -26,7 +34,11 @@
       "prompt": "Talk about an important person in your life for 1 minute. Who is it? Why is this person important to you? Give examples.",
       "seconds": 60,
       "sample": "The most important person in my life is my grandmother. She has always been there for me since I was a child. She taught me how to cook and she always listens to my problems. When I was younger, I used to spend every summer at her house. She is kind, patient and very wise. I think I have learned a lot from her.",
-      "tips": ["Use descriptive adjectives", "Include past experiences", "Give specific examples"]
+      "tips": [
+        "Use descriptive adjectives",
+        "Include past experiences",
+        "Give specific examples"
+      ]
     },
     {
       "id": "b1-s4",
@@ -35,7 +47,11 @@
       "prompt": "Talk about your last holiday for 1 minute. Where did you go? Who did you go with? What did you do? What was the best part?",
       "seconds": 60,
       "sample": "Last summer I went to Italy with my family. We stayed in Rome for four days and then we visited Florence. We saw the Colosseum, the Vatican and many beautiful churches. The food was amazing - I especially loved the pasta and the gelato. The best part was when we took a day trip to the coast and swam in the sea. It was the perfect end to the holiday.",
-      "tips": ["Use Past Simple and Past Continuous", "Describe feelings", "Add a highlight"]
+      "tips": [
+        "Use Past Simple and Past Continuous",
+        "Describe feelings",
+        "Add a highlight"
+      ]
     },
     {
       "id": "b1-s5",
@@ -44,7 +60,11 @@
       "prompt": "Talk about technology for 1 minute. How do you use technology every day? What are the advantages and disadvantages?",
       "seconds": 60,
       "sample": "I use technology all the time. I use my phone to message my friends, check social media and listen to music. I use my laptop for schoolwork and for watching films. The main advantage is that it makes life easier and faster. However, I think it can be a problem because many people are addicted to their phones. I try to switch off my phone before going to bed so I can sleep better.",
-      "tips": ["Balance advantages and disadvantages", "Use linking words", "Give personal examples"]
+      "tips": [
+        "Balance advantages and disadvantages",
+        "Use linking words",
+        "Give personal examples"
+      ]
     },
     {
       "id": "b1-s6",
@@ -53,7 +73,11 @@
       "prompt": "Talk about a film or book you enjoyed recently for 1 minute. What was it about? Why did you enjoy it? Would you recommend it?",
       "seconds": 60,
       "sample": "I recently watched a film called Interstellar. It is a science-fiction film about a group of astronauts who travel through a wormhole to find a new home for humanity. I really enjoyed it because the story was exciting and the visuals were amazing. It also made me think about big questions like time and family. I would definitely recommend it to anyone who likes science fiction or thoughtful films.",
-      "tips": ["Describe the plot", "Explain why you liked it", "Give a recommendation"]
+      "tips": [
+        "Describe the plot",
+        "Explain why you liked it",
+        "Give a recommendation"
+      ]
     },
     {
       "id": "b1-s7",
@@ -62,7 +86,11 @@
       "prompt": "Describe this picture for 1 minute. Say what you can see, what the people are doing and how you think they feel.",
       "seconds": 60,
       "sample": "In this picture I can see a group of young people in a park. They are sitting on the grass and having a picnic. There is a boy playing a guitar on the left and two girls are singing. On the right, someone is taking photos. They all look very happy and relaxed. It seems to be a warm summer day. In the background, I can see some trees and a lake. The scene suggests they are close friends enjoying their free time together.",
-      "tips": ["Describe from left to right", "Use Present Continuous", "Speculate: 'It seems', 'They look'"]
+      "tips": [
+        "Describe from left to right",
+        "Use Present Continuous",
+        "Speculate: 'It seems', 'They look'"
+      ]
     },
     {
       "id": "b1-s8",
@@ -71,7 +99,11 @@
       "prompt": "Compare these two photos for 1 minute. What do they show? What is similar and what is different? Which one do you prefer and why?",
       "seconds": 60,
       "sample": "The first photo shows people at a beach, while the second shows a busy city street. Both photos show people enjoying themselves, but in very different environments. In the beach photo, people are relaxing and swimming. In the city photo, they are shopping and walking quickly. I prefer the beach photo because it looks more peaceful. I like the idea of being near the sea and having time to relax.",
-      "tips": ["Use 'while', 'whereas', 'both'", "Compare specific elements", "Give your preference with reasons"]
+      "tips": [
+        "Use 'while', 'whereas', 'both'",
+        "Compare specific elements",
+        "Give your preference with reasons"
+      ]
     },
     {
       "id": "b1-s9",
@@ -80,7 +112,11 @@
       "prompt": "Imagine you are showing a photo of a place you love. Describe it for 1 minute. Say where it is, why you like it, and what you can do there.",
       "seconds": 60,
       "sample": "The place I love most is a small village in the mountains where my family has a house. It is in the north of Spain and it is very quiet. The village has an old church and a small river running through it. There are lots of walking paths and you can see wild animals. I like it because it is peaceful and I can disconnect from the city. I usually go there in summer and at Christmas.",
-      "tips": ["Use descriptive adjectives", "Include what you can do there", "Explain why you like it"]
+      "tips": [
+        "Use descriptive adjectives",
+        "Include what you can do there",
+        "Explain why you like it"
+      ]
     },
     {
       "id": "b1-s10",
@@ -89,7 +125,11 @@
       "prompt": "Your friend is visiting your city for the first time. Discuss what you could do together at the weekend. Suggest activities, give reasons and ask for your friend's opinion.",
       "seconds": 90,
       "sample": "I think we could start by visiting the old town. There are beautiful streets and lots of history. What do you think? Then we could have lunch at a typical restaurant. In the afternoon, we could go to the beach if the weather is good. Alternatively, we could visit a museum. What would you prefer? At night, we could go to a flamenco show - it is very Spanish. Let me know what you think.",
-      "tips": ["Use 'We could', 'How about', 'What do you think?'", "Give reasons for suggestions", "Ask for opinions"]
+      "tips": [
+        "Use 'We could', 'How about', 'What do you think?'",
+        "Give reasons for suggestions",
+        "Ask for opinions"
+      ]
     },
     {
       "id": "b1-s11",
@@ -98,7 +138,11 @@
       "prompt": "Your friend thinks students should not have mobile phones in school. Do you agree? Discuss for 1 minute.",
       "seconds": 60,
       "sample": "I partly agree with you. On the one hand, mobile phones can be a distraction in class and students might use them to cheat. On the other hand, phones can be useful for learning - for example, to look up words or do research. I think the best solution is to allow phones only during breaks and in specific situations. What do you think? Do you think there should be a total ban?",
-      "tips": ["Use 'On the one hand / On the other hand'", "Give both perspectives", "Ask for the other person's opinion"]
+      "tips": [
+        "Use 'On the one hand / On the other hand'",
+        "Give both perspectives",
+        "Ask for the other person's opinion"
+      ]
     },
     {
       "id": "b1-s12",
@@ -107,7 +151,11 @@
       "prompt": "You and your friend have 50 euros. You want to spend it on a gift for your English teacher. Discuss what to buy. Suggest ideas, respond to your friend's suggestions and reach an agreement.",
       "seconds": 90,
       "sample": "What about buying her a book? She loves reading. Or we could get her a nice plant for her desk. That is a good idea, but maybe a plant is too difficult to carry. How about a voucher for a bookshop? Then she can choose whatever she wants. Yes, I think that is the best option. Let us do that. Shall we also add a card with a message from all of us? Definitely. That will make it more personal.",
-      "tips": ["Use 'What about', 'How about', 'Shall we'", "Respond to suggestions", "Reach a final agreement"]
+      "tips": [
+        "Use 'What about', 'How about', 'Shall we'",
+        "Respond to suggestions",
+        "Reach a final agreement"
+      ]
     }
   ]
 }

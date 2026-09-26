@@ -2,6 +2,16 @@
 import { getState } from "../state.js";
 import { renderExercise } from "../widgets/exercise.js";
 
+// Shuffle array in place
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export async function renderComprehension(view) {
   const { level } = getState();
 
@@ -207,10 +217,13 @@ function openText(container, text) {
       qBox.appendChild(qText);
     }
 
+    const correctValue = q.options[q.correct];
+    const shuffledOpts = shuffleArray(q.options);
+    const newCorrect = shuffledOpts.indexOf(correctValue);
     renderExercise(qBox, {
       prompt: q.sign ? "What does this sign mean?" : "Choose the correct answer:",
-      options: q.options,
-      correct: q.correct,
+      options: shuffledOpts,
+      correct: newCorrect,
       explanation: q.explanation
     });
 
@@ -299,10 +312,13 @@ function openAudio(container, audio) {
     qText.textContent = (i + 1) + ". " + q.question;
     qBox.appendChild(qText);
 
+    const correctValue = q.options[q.correct];
+    const shuffledOpts = shuffleArray(q.options);
+    const newCorrect = shuffledOpts.indexOf(correctValue);
     renderExercise(qBox, {
       prompt: "Choose the correct answer:",
-      options: q.options,
-      correct: q.correct,
+      options: shuffledOpts,
+      correct: newCorrect,
       explanation: q.explanation
     });
 

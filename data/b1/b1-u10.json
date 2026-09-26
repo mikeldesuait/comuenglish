@@ -14,10 +14,26 @@
           "body": "We use comparatives to compare two things.",
           "tableHeader": true,
           "table": [
-            ["Adjective type", "Form", "Example"],
-            ["Short", "-er + than", "She is taller than me."],
-            ["Long", "more + adjective + than", "This book is more interesting."],
-            ["Irregular", "better / worse / further", "This is better than that."]
+            [
+              "Adjective type",
+              "Form",
+              "Example"
+            ],
+            [
+              "Short",
+              "-er + than",
+              "She is taller than me."
+            ],
+            [
+              "Long",
+              "more + adjective + than",
+              "This book is more interesting."
+            ],
+            [
+              "Irregular",
+              "better / worse / further",
+              "This is better than that."
+            ]
           ]
         },
         {
@@ -32,10 +48,26 @@
           "heading": "Both / Either / Neither",
           "tableHeader": true,
           "table": [
-            ["Word", "Meaning", "Example"],
-            ["both", "the two", "Both films were good."],
-            ["either", "one or the other", "You can take either bus."],
-            ["neither", "not one, not the other", "Neither of them came."]
+            [
+              "Word",
+              "Meaning",
+              "Example"
+            ],
+            [
+              "both",
+              "the two",
+              "Both films were good."
+            ],
+            [
+              "either",
+              "one or the other",
+              "You can take either bus."
+            ],
+            [
+              "neither",
+              "not one, not the other",
+              "Neither of them came."
+            ]
           ]
         },
         {
@@ -51,10 +83,26 @@
           "heading": "Preferences",
           "tableHeader": true,
           "table": [
-            ["Structure", "Meaning", "Example"],
-            ["I prefer A to B", "general preference", "I prefer tea to coffee."],
-            ["I would rather A than B", "specific preference", "I would rather stay home than go out."],
-            ["I like A better than B", "informal", "I like tea better than coffee."]
+            [
+              "Structure",
+              "Meaning",
+              "Example"
+            ],
+            [
+              "I prefer A to B",
+              "general preference",
+              "I prefer tea to coffee."
+            ],
+            [
+              "I would rather A than B",
+              "specific preference",
+              "I would rather stay home than go out."
+            ],
+            [
+              "I like A better than B",
+              "informal",
+              "I like tea better than coffee."
+            ]
           ]
         },
         {
@@ -62,11 +110,31 @@
           "body": "Question tags are short questions at the end of a sentence. If the sentence is positive, the tag is negative. If the sentence is negative, the tag is positive.",
           "tableHeader": true,
           "table": [
-            ["Sentence", "Tag", "Full"],
-            ["You are Spanish.", "aren't you?", "You are Spanish, aren't you?"],
-            ["She doesn't like coffee.", "does she?", "She doesn't like coffee, does she?"],
-            ["They went home.", "didn't they?", "They went home, didn't they?"],
-            ["We can help.", "can't we?", "We can help, can't we?"]
+            [
+              "Sentence",
+              "Tag",
+              "Full"
+            ],
+            [
+              "You are Spanish.",
+              "aren't you?",
+              "You are Spanish, aren't you?"
+            ],
+            [
+              "She doesn't like coffee.",
+              "does she?",
+              "She doesn't like coffee, does she?"
+            ],
+            [
+              "They went home.",
+              "didn't they?",
+              "They went home, didn't they?"
+            ],
+            [
+              "We can help.",
+              "can't we?",
+              "We can help, can't we?"
+            ]
           ]
         },
         {
@@ -86,44 +154,113 @@
         {
           "heading": "Preferences",
           "list": [
-            { "term": "prefer A to B", "definition": "I prefer tea to coffee." },
-            { "term": "would rather", "definition": "I would rather stay home." },
-            { "term": "rather than", "definition": "I would rather walk than drive." },
-            { "term": "like A better", "definition": "I like tea better than coffee." },
-            { "term": "enjoy more", "definition": "I enjoy swimming more than running." },
-            { "term": "be a fan of", "definition": "I am a fan of jazz music." }
+            {
+              "term": "prefer A to B",
+              "definition": "I prefer tea to coffee."
+            },
+            {
+              "term": "would rather",
+              "definition": "I would rather stay home."
+            },
+            {
+              "term": "rather than",
+              "definition": "I would rather walk than drive."
+            },
+            {
+              "term": "like A better",
+              "definition": "I like tea better than coffee."
+            },
+            {
+              "term": "enjoy more",
+              "definition": "I enjoy swimming more than running."
+            },
+            {
+              "term": "be a fan of",
+              "definition": "I am a fan of jazz music."
+            }
           ]
         },
         {
           "heading": "Opinions and comparisons",
           "list": [
-            { "term": "in my opinion", "definition": "In my opinion, this is the best option." },
-            { "term": "I think", "definition": "I think the red one is nicer." },
-            { "term": "as good as", "definition": "This is as good as the other one." },
-            { "term": "not as... as", "definition": "It is not as expensive as I thought." },
-            { "term": "the same as", "definition": "My phone is the same as yours." },
-            { "term": "different from", "definition": "This is different from what I expected." }
+            {
+              "term": "in my opinion",
+              "definition": "In my opinion, this is the best option."
+            },
+            {
+              "term": "I think",
+              "definition": "I think the red one is nicer."
+            },
+            {
+              "term": "as good as",
+              "definition": "This is as good as the other one."
+            },
+            {
+              "term": "not as... as",
+              "definition": "It is not as expensive as I thought."
+            },
+            {
+              "term": "the same as",
+              "definition": "My phone is the same as yours."
+            },
+            {
+              "term": "different from",
+              "definition": "This is different from what I expected."
+            }
           ]
         },
         {
           "heading": "Both, either, neither",
           "list": [
-            { "term": "both... and", "definition": "Both John and Mary came." },
-            { "term": "either... or", "definition": "Either you or I will go." },
-            { "term": "neither... nor", "definition": "Neither John nor Mary came." },
-            { "term": "both of them", "definition": "Both of them are students." },
-            { "term": "neither of us", "definition": "Neither of us knew the answer." }
+            {
+              "term": "both... and",
+              "definition": "Both John and Mary came."
+            },
+            {
+              "term": "either... or",
+              "definition": "Either you or I will go."
+            },
+            {
+              "term": "neither... nor",
+              "definition": "Neither John nor Mary came."
+            },
+            {
+              "term": "both of them",
+              "definition": "Both of them are students."
+            },
+            {
+              "term": "neither of us",
+              "definition": "Neither of us knew the answer."
+            }
           ]
         },
         {
           "heading": "Question tag patterns",
           "list": [
-            { "term": "isn't it?", "definition": "It's cold today, isn't it?" },
-            { "term": "aren't you?", "definition": "You are a student, aren't you?" },
-            { "term": "doesn't he?", "definition": "He works here, doesn't he?" },
-            { "term": "didn't they?", "definition": "They left early, didn't they?" },
-            { "term": "won't you?", "definition": "You will come, won't you?" },
-            { "term": "can't she?", "definition": "She can swim, can't she?" }
+            {
+              "term": "isn't it?",
+              "definition": "It's cold today, isn't it?"
+            },
+            {
+              "term": "aren't you?",
+              "definition": "You are a student, aren't you?"
+            },
+            {
+              "term": "doesn't he?",
+              "definition": "He works here, doesn't he?"
+            },
+            {
+              "term": "didn't they?",
+              "definition": "They left early, didn't they?"
+            },
+            {
+              "term": "won't you?",
+              "definition": "You will come, won't you?"
+            },
+            {
+              "term": "can't she?",
+              "definition": "She can swim, can't she?"
+            }
           ]
         }
       ]
@@ -154,16 +291,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "This book is ___ interesting ___ that one.", "options": ["as / as", "so / as", "more / as", "as / than"], "correct": 0, "explanation": "Equality: as + adjective + as."},
-        {"prompt": "You are coming, ___ ?", "options": ["are you", "aren't you", "do you", "don't you"], "correct": 1, "explanation": "Positive sentence, negative tag."},
-        {"prompt": "She doesn't like fish, ___ ?", "options": ["does she", "doesn't she", "is she", "isn't she"], "correct": 0, "explanation": "Negative sentence, positive tag."},
-        {"prompt": "___ restaurants are excellent.", "options": ["Both", "Either", "Neither", "All"], "correct": 0, "explanation": "Both + plural noun."},
-        {"prompt": "I prefer tea ___ coffee.", "options": ["than", "to", "from", "of"], "correct": 1, "explanation": "Prefer A to B."},
-        {"prompt": "I would rather walk ___ drive.", "options": ["than", "to", "from", "of"], "correct": 0, "explanation": "Would rather + verb + than + verb."},
-        {"prompt": "___ of them came to the party.", "options": ["Both", "Either", "Neither", "All"], "correct": 2, "explanation": "Neither means not one, not the other."},
-        {"prompt": "You can take ___ bus.", "options": ["both", "either", "neither", "all"], "correct": 1, "explanation": "Either = one or the other."},
-        {"prompt": "This is ___ better than that.", "options": ["more", "much", "very", "as"], "correct": 1, "explanation": "Much can modify comparatives."},
-        {"prompt": "They arrived late, ___ ?", "options": ["did they", "didn't they", "are they", "aren't they"], "correct": 1, "explanation": "Positive sentence, negative tag."}
+        {
+          "prompt": "This book is ___ interesting ___ that one.",
+          "options": [
+            "as / as",
+            "so / as",
+            "more / as",
+            "as / than"
+          ],
+          "correct": 0,
+          "explanation": "Equality: as + adjective + as."
+        },
+        {
+          "prompt": "You are coming, ___ ?",
+          "options": [
+            "are you",
+            "aren't you",
+            "do you",
+            "don't you"
+          ],
+          "correct": 1,
+          "explanation": "Positive sentence, negative tag."
+        },
+        {
+          "prompt": "She doesn't like fish, ___ ?",
+          "options": [
+            "does she",
+            "doesn't she",
+            "is she",
+            "isn't she"
+          ],
+          "correct": 0,
+          "explanation": "Negative sentence, positive tag."
+        },
+        {
+          "prompt": "___ restaurants are excellent.",
+          "options": [
+            "Both",
+            "Either",
+            "Neither",
+            "All"
+          ],
+          "correct": 0,
+          "explanation": "Both + plural noun."
+        },
+        {
+          "prompt": "I prefer tea ___ coffee.",
+          "options": [
+            "than",
+            "to",
+            "from",
+            "of"
+          ],
+          "correct": 1,
+          "explanation": "Prefer A to B."
+        },
+        {
+          "prompt": "I would rather walk ___ drive.",
+          "options": [
+            "than",
+            "to",
+            "from",
+            "of"
+          ],
+          "correct": 0,
+          "explanation": "Would rather + verb + than + verb."
+        },
+        {
+          "prompt": "___ of them came to the party.",
+          "options": [
+            "Both",
+            "Either",
+            "Neither",
+            "All"
+          ],
+          "correct": 2,
+          "explanation": "Neither means not one, not the other."
+        },
+        {
+          "prompt": "You can take ___ bus.",
+          "options": [
+            "both",
+            "either",
+            "neither",
+            "all"
+          ],
+          "correct": 1,
+          "explanation": "Either = one or the other."
+        },
+        {
+          "prompt": "This is ___ better than that.",
+          "options": [
+            "more",
+            "much",
+            "very",
+            "as"
+          ],
+          "correct": 1,
+          "explanation": "Much can modify comparatives."
+        },
+        {
+          "prompt": "They arrived late, ___ ?",
+          "options": [
+            "did they",
+            "didn't they",
+            "are they",
+            "aren't they"
+          ],
+          "correct": 1,
+          "explanation": "Positive sentence, negative tag."
+        }
       ]
     },
     {
@@ -179,16 +416,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "He is ___ than his brother.", "options": ["more tall", "taller", "tallest", "as tall"], "correct": 1, "explanation": "Short adjective: taller."},
-        {"prompt": "This is ___ expensive than that.", "options": ["more", "most", "as", "much"], "correct": 0, "explanation": "Long adjective: more expensive."},
-        {"prompt": "I prefer coffee ___ tea.", "options": ["than", "to", "from", "of"], "correct": 1, "explanation": "Prefer A to B."},
-        {"prompt": "I would rather stay ___ go out.", "options": ["than", "to", "from", "of"], "correct": 0, "explanation": "Would rather + verb + than + verb."},
-        {"prompt": "___ of us knew the answer.", "options": ["Both", "Either", "Neither", "All"], "correct": 2, "explanation": "Neither = not one, not the other."},
-        {"prompt": "You are from Spain, ___ ?", "options": ["are you", "aren't you", "do you", "don't you"], "correct": 1, "explanation": "Positive sentence, negative tag."},
-        {"prompt": "She didn't come, ___ ?", "options": ["did she", "didn't she", "is she", "isn't she"], "correct": 0, "explanation": "Negative sentence, positive tag."},
-        {"prompt": "This phone is ___ as that one.", "options": ["as good", "so good", "more good", "gooder"], "correct": 0, "explanation": "Equality: as + adjective + as."},
-        {"prompt": "He speaks English ___ than me.", "options": ["gooder", "better", "more good", "best"], "correct": 1, "explanation": "Irregular comparative: better."},
-        {"prompt": "I don't like ___ of them.", "options": ["both", "either", "neither", "all"], "correct": 1, "explanation": "Negative with either: don't like either."}
+        {
+          "prompt": "He is ___ than his brother.",
+          "options": [
+            "more tall",
+            "taller",
+            "tallest",
+            "as tall"
+          ],
+          "correct": 1,
+          "explanation": "Short adjective: taller."
+        },
+        {
+          "prompt": "This is ___ expensive than that.",
+          "options": [
+            "more",
+            "most",
+            "as",
+            "much"
+          ],
+          "correct": 0,
+          "explanation": "Long adjective: more expensive."
+        },
+        {
+          "prompt": "I prefer coffee ___ tea.",
+          "options": [
+            "than",
+            "to",
+            "from",
+            "of"
+          ],
+          "correct": 1,
+          "explanation": "Prefer A to B."
+        },
+        {
+          "prompt": "I would rather stay ___ go out.",
+          "options": [
+            "than",
+            "to",
+            "from",
+            "of"
+          ],
+          "correct": 0,
+          "explanation": "Would rather + verb + than + verb."
+        },
+        {
+          "prompt": "___ of us knew the answer.",
+          "options": [
+            "Both",
+            "Either",
+            "Neither",
+            "All"
+          ],
+          "correct": 2,
+          "explanation": "Neither = not one, not the other."
+        },
+        {
+          "prompt": "You are from Spain, ___ ?",
+          "options": [
+            "are you",
+            "aren't you",
+            "do you",
+            "don't you"
+          ],
+          "correct": 1,
+          "explanation": "Positive sentence, negative tag."
+        },
+        {
+          "prompt": "She didn't come, ___ ?",
+          "options": [
+            "did she",
+            "didn't she",
+            "is she",
+            "isn't she"
+          ],
+          "correct": 0,
+          "explanation": "Negative sentence, positive tag."
+        },
+        {
+          "prompt": "This phone is ___ as that one.",
+          "options": [
+            "as good",
+            "so good",
+            "more good",
+            "gooder"
+          ],
+          "correct": 0,
+          "explanation": "Equality: as + adjective + as."
+        },
+        {
+          "prompt": "He speaks English ___ than me.",
+          "options": [
+            "gooder",
+            "better",
+            "more good",
+            "best"
+          ],
+          "correct": 1,
+          "explanation": "Irregular comparative: better."
+        },
+        {
+          "prompt": "I don't like ___ of them.",
+          "options": [
+            "both",
+            "either",
+            "neither",
+            "all"
+          ],
+          "correct": 1,
+          "explanation": "Negative with either: don't like either."
+        }
       ]
     },
     {

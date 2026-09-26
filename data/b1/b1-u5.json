@@ -17,10 +17,26 @@
           "heading": "Degrees of certainty",
           "tableHeader": true,
           "table": [
-            ["Modal", "Certainty", "Example"],
-            ["must", "very sure (positive)", "She must be tired. She worked all day."],
-            ["might / may / could", "possible", "He might be at home."],
-            ["can't", "impossible", "That can't be true."]
+            [
+              "Modal",
+              "Certainty",
+              "Example"
+            ],
+            [
+              "must",
+              "very sure (positive)",
+              "She must be tired. She worked all day."
+            ],
+            [
+              "might / may / could",
+              "possible",
+              "He might be at home."
+            ],
+            [
+              "can't",
+              "impossible",
+              "That can't be true."
+            ]
           ]
         },
         {
@@ -68,32 +84,80 @@
         {
           "heading": "Weather and possibility",
           "list": [
-            { "term": "it might rain", "definition": "It might rain tomorrow." },
-            { "term": "it may snow", "definition": "It may snow in the mountains." },
-            { "term": "it could be sunny", "definition": "It could be sunny later." },
-            { "term": "it must be cold", "definition": "Look at the snow. It must be cold." },
-            { "term": "it can't be hot", "definition": "It can't be hot in December." }
+            {
+              "term": "it might rain",
+              "definition": "It might rain tomorrow."
+            },
+            {
+              "term": "it may snow",
+              "definition": "It may snow in the mountains."
+            },
+            {
+              "term": "it could be sunny",
+              "definition": "It could be sunny later."
+            },
+            {
+              "term": "it must be cold",
+              "definition": "Look at the snow. It must be cold."
+            },
+            {
+              "term": "it can't be hot",
+              "definition": "It can't be hot in December."
+            }
           ]
         },
         {
           "heading": "Uncertain situations",
           "list": [
-            { "term": "maybe", "definition": "Maybe she is at work." },
-            { "term": "perhaps", "definition": "Perhaps he forgot." },
-            { "term": "possibly", "definition": "She is possibly at home." },
-            { "term": "probably", "definition": "He is probably still working." },
-            { "term": "I'm not sure", "definition": "I'm not sure. He might be late." },
-            { "term": "I think", "definition": "I think she must be tired." }
+            {
+              "term": "maybe",
+              "definition": "Maybe she is at work."
+            },
+            {
+              "term": "perhaps",
+              "definition": "Perhaps he forgot."
+            },
+            {
+              "term": "possibly",
+              "definition": "She is possibly at home."
+            },
+            {
+              "term": "probably",
+              "definition": "He is probably still working."
+            },
+            {
+              "term": "I'm not sure",
+              "definition": "I'm not sure. He might be late."
+            },
+            {
+              "term": "I think",
+              "definition": "I think she must be tired."
+            }
           ]
         },
         {
           "heading": "Deduction phrases",
           "list": [
-            { "term": "Look at...", "definition": "Look at the sky. It might rain." },
-            { "term": "It's possible that...", "definition": "It's possible that she forgot." },
-            { "term": "There's a chance...", "definition": "There's a chance he will come." },
-            { "term": "I'm sure...", "definition": "I'm sure she must be at home." },
-            { "term": "I'm certain...", "definition": "I'm certain he can't be serious." }
+            {
+              "term": "Look at...",
+              "definition": "Look at the sky. It might rain."
+            },
+            {
+              "term": "It's possible that...",
+              "definition": "It's possible that she forgot."
+            },
+            {
+              "term": "There's a chance...",
+              "definition": "There's a chance he will come."
+            },
+            {
+              "term": "I'm sure...",
+              "definition": "I'm sure she must be at home."
+            },
+            {
+              "term": "I'm certain...",
+              "definition": "I'm certain he can't be serious."
+            }
           ]
         }
       ]
@@ -124,16 +188,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "She has not eaten all day. She ___ be hungry.", "options": ["might", "must", "cannot", "should"], "correct": 1, "explanation": "When we are sure about something, we use must."},
-        {"prompt": "He ___ be at home. I saw him leave five minutes ago.", "options": ["must", "might", "cannot", "should"], "correct": 2, "explanation": "When something is impossible, we use cannot."},
-        {"prompt": "It ___ rain later. The sky is cloudy.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."},
-        {"prompt": "The lights are on. They ___ be at home.", "options": ["might", "must", "cannot", "should"], "correct": 1, "explanation": "Strong deduction with evidence: must."},
-        {"prompt": "That story ___ be true. It's impossible.", "options": ["might", "must", "cannot", "may"], "correct": 2, "explanation": "Impossibility: cannot."},
-        {"prompt": "She ___ be the new manager. I'm not sure.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."},
-        {"prompt": "He works 12 hours a day. He ___ be tired.", "options": ["might", "must", "cannot", "shouldn't"], "correct": 1, "explanation": "Deduction with evidence: must."},
-        {"prompt": "They ___ not come to the party. They are busy.", "options": ["might", "must", "can", "should"], "correct": 0, "explanation": "Negative possibility: might not."},
-        {"prompt": "She ___ be 50. She looks 30.", "options": ["might", "must", "cannot", "may"], "correct": 2, "explanation": "Impossibility: cannot."},
-        {"prompt": "It's very cold. It ___ snow tonight.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."}
+        {
+          "prompt": "She has not eaten all day. She ___ be hungry.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 1,
+          "explanation": "When we are sure about something, we use must."
+        },
+        {
+          "prompt": "He ___ be at home. I saw him leave five minutes ago.",
+          "options": [
+            "must",
+            "might",
+            "cannot",
+            "should"
+          ],
+          "correct": 2,
+          "explanation": "When something is impossible, we use cannot."
+        },
+        {
+          "prompt": "It ___ rain later. The sky is cloudy.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 0,
+          "explanation": "Possibility: might."
+        },
+        {
+          "prompt": "The lights are on. They ___ be at home.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 1,
+          "explanation": "Strong deduction with evidence: must."
+        },
+        {
+          "prompt": "That story ___ be true. It's impossible.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "may"
+          ],
+          "correct": 2,
+          "explanation": "Impossibility: cannot."
+        },
+        {
+          "prompt": "She ___ be the new manager. I'm not sure.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 0,
+          "explanation": "Possibility: might."
+        },
+        {
+          "prompt": "He works 12 hours a day. He ___ be tired.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "shouldn't"
+          ],
+          "correct": 1,
+          "explanation": "Deduction with evidence: must."
+        },
+        {
+          "prompt": "They ___ not come to the party. They are busy.",
+          "options": [
+            "might",
+            "must",
+            "can",
+            "should"
+          ],
+          "correct": 0,
+          "explanation": "Negative possibility: might not."
+        },
+        {
+          "prompt": "She ___ be 50. She looks 30.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "may"
+          ],
+          "correct": 2,
+          "explanation": "Impossibility: cannot."
+        },
+        {
+          "prompt": "It's very cold. It ___ snow tonight.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 0,
+          "explanation": "Possibility: might."
+        }
       ]
     },
     {
@@ -149,16 +313,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "She has a big smile. She ___ be very happy.", "options": ["might", "must", "cannot", "should"], "correct": 1, "explanation": "Deduction: must."},
-        {"prompt": "He ___ be at the office. He is on holiday.", "options": ["might", "must", "cannot", "may"], "correct": 2, "explanation": "Impossibility: cannot."},
-        {"prompt": "It ___ rain. Take an umbrella.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."},
-        {"prompt": "The car is very old. It ___ break down soon.", "options": ["might", "must", "cannot", "shouldn't"], "correct": 0, "explanation": "Possibility: might."},
-        {"prompt": "He speaks 5 languages. He ___ be very intelligent.", "options": ["might", "must", "cannot", "should"], "correct": 1, "explanation": "Deduction: must."},
-        {"prompt": "That ___ be Sarah. She is in Paris.", "options": ["might", "must", "cannot", "may"], "correct": 2, "explanation": "Impossibility: cannot."},
-        {"prompt": "She ___ come to the party. She is not sure.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."},
-        {"prompt": "You have been running. You ___ be tired.", "options": ["might", "must", "cannot", "should"], "correct": 1, "explanation": "Deduction: must."},
-        {"prompt": "They ___ be at the beach. It's raining.", "options": ["might", "must", "cannot", "may"], "correct": 2, "explanation": "Impossibility: cannot."},
-        {"prompt": "I ___ go to the cinema tonight. I haven't decided.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."}
+        {
+          "prompt": "She has a big smile. She ___ be very happy.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 1,
+          "explanation": "Deduction: must."
+        },
+        {
+          "prompt": "He ___ be at the office. He is on holiday.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "may"
+          ],
+          "correct": 2,
+          "explanation": "Impossibility: cannot."
+        },
+        {
+          "prompt": "It ___ rain. Take an umbrella.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 0,
+          "explanation": "Possibility: might."
+        },
+        {
+          "prompt": "The car is very old. It ___ break down soon.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "shouldn't"
+          ],
+          "correct": 0,
+          "explanation": "Possibility: might."
+        },
+        {
+          "prompt": "He speaks 5 languages. He ___ be very intelligent.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 1,
+          "explanation": "Deduction: must."
+        },
+        {
+          "prompt": "That ___ be Sarah. She is in Paris.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "may"
+          ],
+          "correct": 2,
+          "explanation": "Impossibility: cannot."
+        },
+        {
+          "prompt": "She ___ come to the party. She is not sure.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 0,
+          "explanation": "Possibility: might."
+        },
+        {
+          "prompt": "You have been running. You ___ be tired.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 1,
+          "explanation": "Deduction: must."
+        },
+        {
+          "prompt": "They ___ be at the beach. It's raining.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "may"
+          ],
+          "correct": 2,
+          "explanation": "Impossibility: cannot."
+        },
+        {
+          "prompt": "I ___ go to the cinema tonight. I haven't decided.",
+          "options": [
+            "might",
+            "must",
+            "cannot",
+            "should"
+          ],
+          "correct": 0,
+          "explanation": "Possibility: might."
+        }
       ]
     },
     {

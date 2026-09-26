@@ -17,10 +17,26 @@
           "heading": "Types of phrasal verbs",
           "tableHeader": true,
           "table": [
-            ["Type", "Structure", "Example"],
-            ["Intransitive", "verb + particle (no object)", "The car broke down."],
-            ["Transitive inseparable", "verb + particle + object", "I ran into an old friend."],
-            ["Transitive separable", "verb + object + particle OR verb + particle + object", "Turn off the light. / Turn the light off."]
+            [
+              "Type",
+              "Structure",
+              "Example"
+            ],
+            [
+              "Intransitive",
+              "verb + particle (no object)",
+              "The car broke down."
+            ],
+            [
+              "Transitive inseparable",
+              "verb + particle + object",
+              "I ran into an old friend."
+            ],
+            [
+              "Transitive separable",
+              "verb + object + particle OR verb + particle + object",
+              "Turn off the light. / Turn the light off."
+            ]
           ]
         },
         {
@@ -28,27 +44,83 @@
           "body": "With separable phrasal verbs, the object can go between the verb and the particle, or after the particle. But if the object is a pronoun, it MUST go between them.",
           "tableHeader": true,
           "table": [
-            ["Correct", "Incorrect"],
-            ["Turn off the TV.", "Turn off it. ✗"],
-            ["Turn the TV off.", "Turn off it. ✗"],
-            ["Turn it off.", "Turn off it. ✗"]
+            [
+              "Correct",
+              "Incorrect"
+            ],
+            [
+              "Turn off the TV.",
+              "Turn off it. ✗"
+            ],
+            [
+              "Turn the TV off.",
+              "Turn off it. ✗"
+            ],
+            [
+              "Turn it off.",
+              "Turn off it. ✗"
+            ]
           ]
         },
         {
           "heading": "High-frequency phrasal verbs",
           "tableHeader": true,
           "table": [
-            ["Phrasal verb", "Meaning", "Example"],
-            ["give up", "stop trying", "He gave up smoking."],
-            ["find out", "discover", "I found out the truth."],
-            ["get along", "have a good relationship", "We get along very well."],
-            ["put off", "postpone", "They put off the meeting."],
-            ["look after", "take care of", "She looks after her sister."],
-            ["run out of", "have no more", "We ran out of milk."],
-            ["come up with", "think of", "He came up with a great idea."],
-            ["carry on", "continue", "Please carry on with your work."],
-            ["set up", "start (a business)", "They set up a small company."],
-            ["deal with", "handle", "I can't deal with this problem."]
+            [
+              "Phrasal verb",
+              "Meaning",
+              "Example"
+            ],
+            [
+              "give up",
+              "stop trying",
+              "He gave up smoking."
+            ],
+            [
+              "find out",
+              "discover",
+              "I found out the truth."
+            ],
+            [
+              "get along",
+              "have a good relationship",
+              "We get along very well."
+            ],
+            [
+              "put off",
+              "postpone",
+              "They put off the meeting."
+            ],
+            [
+              "look after",
+              "take care of",
+              "She looks after her sister."
+            ],
+            [
+              "run out of",
+              "have no more",
+              "We ran out of milk."
+            ],
+            [
+              "come up with",
+              "think of",
+              "He came up with a great idea."
+            ],
+            [
+              "carry on",
+              "continue",
+              "Please carry on with your work."
+            ],
+            [
+              "set up",
+              "start (a business)",
+              "They set up a small company."
+            ],
+            [
+              "deal with",
+              "handle",
+              "I can't deal with this problem."
+            ]
           ]
         },
         {
@@ -56,15 +128,42 @@
           "body": "A collocation is a combination of words that naturally go together. Learning collocations makes your English sound more natural.",
           "tableHeader": true,
           "table": [
-            ["Collocation", "Example"],
-            ["make a decision", "We need to make a decision."],
-            ["take a break", "Let's take a short break."],
-            ["do homework", "She did her homework."],
-            ["have a shower", "I have a shower every morning."],
-            ["pay attention", "Please pay attention to the instructions."],
-            ["keep a promise", "He always keeps his promises."],
-            ["break the rules", "You should not break the rules."],
-            ["make progress", "You are making good progress."]
+            [
+              "Collocation",
+              "Example"
+            ],
+            [
+              "make a decision",
+              "We need to make a decision."
+            ],
+            [
+              "take a break",
+              "Let's take a short break."
+            ],
+            [
+              "do homework",
+              "She did her homework."
+            ],
+            [
+              "have a shower",
+              "I have a shower every morning."
+            ],
+            [
+              "pay attention",
+              "Please pay attention to the instructions."
+            ],
+            [
+              "keep a promise",
+              "He always keeps his promises."
+            ],
+            [
+              "break the rules",
+              "You should not break the rules."
+            ],
+            [
+              "make progress",
+              "You are making good progress."
+            ]
           ]
         },
         {
@@ -84,47 +183,125 @@
         {
           "heading": "Phrasal verbs: relationships",
           "list": [
-            { "term": "get along (with)", "definition": "I get along well with my colleagues." },
-            { "term": "fall out (with)", "definition": "They fell out over money." },
-            { "term": "make up (with)", "definition": "They made up after the argument." },
-            { "term": "look after", "definition": "She looks after her grandmother." },
-            { "term": "grow up", "definition": "I grew up in a small town." },
-            { "term": "ask out", "definition": "He asked her out on a date." }
+            {
+              "term": "get along (with)",
+              "definition": "I get along well with my colleagues."
+            },
+            {
+              "term": "fall out (with)",
+              "definition": "They fell out over money."
+            },
+            {
+              "term": "make up (with)",
+              "definition": "They made up after the argument."
+            },
+            {
+              "term": "look after",
+              "definition": "She looks after her grandmother."
+            },
+            {
+              "term": "grow up",
+              "definition": "I grew up in a small town."
+            },
+            {
+              "term": "ask out",
+              "definition": "He asked her out on a date."
+            }
           ]
         },
         {
           "heading": "Phrasal verbs: work and study",
           "list": [
-            { "term": "give up", "definition": "Never give up on your dreams." },
-            { "term": "carry on", "definition": "Carry on with your work." },
-            { "term": "hand in", "definition": "Hand in your homework by Friday." },
-            { "term": "catch up", "definition": "I need to catch up on my reading." },
-            { "term": "put off", "definition": "They put off the meeting until Monday." },
-            { "term": "set up", "definition": "She set up her own business." }
+            {
+              "term": "give up",
+              "definition": "Never give up on your dreams."
+            },
+            {
+              "term": "carry on",
+              "definition": "Carry on with your work."
+            },
+            {
+              "term": "hand in",
+              "definition": "Hand in your homework by Friday."
+            },
+            {
+              "term": "catch up",
+              "definition": "I need to catch up on my reading."
+            },
+            {
+              "term": "put off",
+              "definition": "They put off the meeting until Monday."
+            },
+            {
+              "term": "set up",
+              "definition": "She set up her own business."
+            }
           ]
         },
         {
           "heading": "Phrasal verbs: everyday life",
           "list": [
-            { "term": "turn on / off", "definition": "Turn off the lights, please." },
-            { "term": "pick up", "definition": "I'll pick you up at 7." },
-            { "term": "drop off", "definition": "Can you drop me off at the station?" },
-            { "term": "run out of", "definition": "We ran out of petrol." },
-            { "term": "find out", "definition": "I found out the truth yesterday." },
-            { "term": "come up with", "definition": "She came up with a brilliant idea." }
+            {
+              "term": "turn on / off",
+              "definition": "Turn off the lights, please."
+            },
+            {
+              "term": "pick up",
+              "definition": "I'll pick you up at 7."
+            },
+            {
+              "term": "drop off",
+              "definition": "Can you drop me off at the station?"
+            },
+            {
+              "term": "run out of",
+              "definition": "We ran out of petrol."
+            },
+            {
+              "term": "find out",
+              "definition": "I found out the truth yesterday."
+            },
+            {
+              "term": "come up with",
+              "definition": "She came up with a brilliant idea."
+            }
           ]
         },
         {
           "heading": "Collocations: verb + noun",
           "list": [
-            { "term": "make a decision", "definition": "We must make a decision today." },
-            { "term": "take a risk", "definition": "Sometimes you have to take a risk." },
-            { "term": "pay attention", "definition": "Pay attention to the details." },
-            { "term": "keep in touch", "definition": "Let's keep in touch." },
-            { "term": "break the news", "definition": "She broke the news gently." },
-            { "term": "have an argument", "definition": "They had an argument about money." },
-            { "term": "make an effort", "definition": "Make an effort to be on time." },
-            { "term": "take responsibility", "definition": "He took responsibility for the mistake." }
+            {
+              "term": "make a decision",
+              "definition": "We must make a decision today."
+            },
+            {
+              "term": "take a risk",
+              "definition": "Sometimes you have to take a risk."
+            },
+            {
+              "term": "pay attention",
+              "definition": "Pay attention to the details."
+            },
+            {
+              "term": "keep in touch",
+              "definition": "Let's keep in touch."
+            },
+            {
+              "term": "break the news",
+              "definition": "She broke the news gently."
+            },
+            {
+              "term": "have an argument",
+              "definition": "They had an argument about money."
+            },
+            {
+              "term": "make an effort",
+              "definition": "Make an effort to be on time."
+            },
+            {
+              "term": "take responsibility",
+              "definition": "He took responsibility for the mistake."
+            }
           ]
         }
       ]
@@ -155,16 +332,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "I ___ an old teacher at the supermarket yesterday.", "options": ["ran into", "ran out of", "ran over", "ran away"], "correct": 0, "explanation": "Run into means to meet by chance."},
-        {"prompt": "We have ___ milk. Can you buy some?", "options": ["run into", "run out of", "run over", "run away"], "correct": 1, "explanation": "Run out of means to have no more of something."},
-        {"prompt": "Turn ___ the light, please. It's dark.", "options": ["off", "on", "up", "down"], "correct": 1, "explanation": "Turn on means to switch on."},
-        {"prompt": "She ___ a brilliant idea.", "options": ["came up with", "came up", "came in", "came out"], "correct": 0, "explanation": "Come up with = to think of an idea."},
-        {"prompt": "They ___ the meeting until Friday.", "options": ["put off", "put on", "put in", "put out"], "correct": 0, "explanation": "Put off = postpone."},
-        {"prompt": "I ___ well with my new colleagues.", "options": ["get along", "get up", "get on", "get off"], "correct": 0, "explanation": "Get along with = have a good relationship."},
-        {"prompt": "Don't ___ ! Keep trying.", "options": ["give in", "give up", "give out", "give away"], "correct": 1, "explanation": "Give up = stop trying."},
-        {"prompt": "Can you ___ me ___ at the station?", "options": ["pick / up", "pick / on", "take / up", "drop / up"], "correct": 0, "explanation": "Pick up = collect someone."},
-        {"prompt": "We need to ___ a decision today.", "options": ["do", "take", "make", "have"], "correct": 2, "explanation": "Collocation: make a decision."},
-        {"prompt": "Please ___ attention to the instructions.", "options": ["take", "make", "pay", "have"], "correct": 2, "explanation": "Collocation: pay attention."}
+        {
+          "prompt": "I ___ an old teacher at the supermarket yesterday.",
+          "options": [
+            "ran into",
+            "ran out of",
+            "ran over",
+            "ran away"
+          ],
+          "correct": 0,
+          "explanation": "Run into means to meet by chance."
+        },
+        {
+          "prompt": "We have ___ milk. Can you buy some?",
+          "options": [
+            "run into",
+            "run out of",
+            "run over",
+            "run away"
+          ],
+          "correct": 1,
+          "explanation": "Run out of means to have no more of something."
+        },
+        {
+          "prompt": "Turn ___ the light, please. It's dark.",
+          "options": [
+            "off",
+            "on",
+            "up",
+            "down"
+          ],
+          "correct": 1,
+          "explanation": "Turn on means to switch on."
+        },
+        {
+          "prompt": "She ___ a brilliant idea.",
+          "options": [
+            "came up with",
+            "came up",
+            "came in",
+            "came out"
+          ],
+          "correct": 0,
+          "explanation": "Come up with = to think of an idea."
+        },
+        {
+          "prompt": "They ___ the meeting until Friday.",
+          "options": [
+            "put off",
+            "put on",
+            "put in",
+            "put out"
+          ],
+          "correct": 0,
+          "explanation": "Put off = postpone."
+        },
+        {
+          "prompt": "I ___ well with my new colleagues.",
+          "options": [
+            "get along",
+            "get up",
+            "get on",
+            "get off"
+          ],
+          "correct": 0,
+          "explanation": "Get along with = have a good relationship."
+        },
+        {
+          "prompt": "Don't ___ ! Keep trying.",
+          "options": [
+            "give in",
+            "give up",
+            "give out",
+            "give away"
+          ],
+          "correct": 1,
+          "explanation": "Give up = stop trying."
+        },
+        {
+          "prompt": "Can you ___ me ___ at the station?",
+          "options": [
+            "pick / up",
+            "pick / on",
+            "take / up",
+            "drop / up"
+          ],
+          "correct": 0,
+          "explanation": "Pick up = collect someone."
+        },
+        {
+          "prompt": "We need to ___ a decision today.",
+          "options": [
+            "do",
+            "take",
+            "make",
+            "have"
+          ],
+          "correct": 2,
+          "explanation": "Collocation: make a decision."
+        },
+        {
+          "prompt": "Please ___ attention to the instructions.",
+          "options": [
+            "take",
+            "make",
+            "pay",
+            "have"
+          ],
+          "correct": 2,
+          "explanation": "Collocation: pay attention."
+        }
       ]
     },
     {
@@ -180,16 +457,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "I ___ my keys this morning.", "options": ["found out", "looked for", "came across", "picked up"], "correct": 2, "explanation": "Come across = find by chance."},
-        {"prompt": "Please ___ the TV. I want to watch the news.", "options": ["turn off", "turn on", "turn up", "turn down"], "correct": 1, "explanation": "Turn on = switch on."},
-        {"prompt": "She ___ her grandmother every weekend.", "options": ["looks after", "looks for", "looks up", "looks at"], "correct": 0, "explanation": "Look after = take care of."},
-        {"prompt": "We ___ of petrol on the motorway.", "options": ["ran into", "ran out", "ran over", "ran away"], "correct": 1, "explanation": "Run out of = have no more."},
-        {"prompt": "They ___ the meeting because of the weather.", "options": ["put off", "put on", "put in", "put out"], "correct": 0, "explanation": "Put off = postpone."},
-        {"prompt": "He ___ a great suggestion.", "options": ["came up with", "came up", "came in", "came out"], "correct": 0, "explanation": "Come up with = think of."},
-        {"prompt": "We ___ well with our new neighbours.", "options": ["get along", "get up", "get on", "get off"], "correct": 0, "explanation": "Get along with."},
-        {"prompt": "Don't ___ . You can do it!", "options": ["give in", "give up", "give out", "give away"], "correct": 1, "explanation": "Give up = stop trying."},
-        {"prompt": "She ___ her homework yesterday.", "options": ["handed in", "handed out", "handed up", "handed over"], "correct": 0, "explanation": "Hand in = submit."},
-        {"prompt": "You should ___ more effort in class.", "options": ["do", "take", "make", "have"], "correct": 2, "explanation": "Collocation: make an effort."}
+        {
+          "prompt": "I ___ my keys this morning.",
+          "options": [
+            "found out",
+            "looked for",
+            "came across",
+            "picked up"
+          ],
+          "correct": 2,
+          "explanation": "Come across = find by chance."
+        },
+        {
+          "prompt": "Please ___ the TV. I want to watch the news.",
+          "options": [
+            "turn off",
+            "turn on",
+            "turn up",
+            "turn down"
+          ],
+          "correct": 1,
+          "explanation": "Turn on = switch on."
+        },
+        {
+          "prompt": "She ___ her grandmother every weekend.",
+          "options": [
+            "looks after",
+            "looks for",
+            "looks up",
+            "looks at"
+          ],
+          "correct": 0,
+          "explanation": "Look after = take care of."
+        },
+        {
+          "prompt": "We ___ of petrol on the motorway.",
+          "options": [
+            "ran into",
+            "ran out",
+            "ran over",
+            "ran away"
+          ],
+          "correct": 1,
+          "explanation": "Run out of = have no more."
+        },
+        {
+          "prompt": "They ___ the meeting because of the weather.",
+          "options": [
+            "put off",
+            "put on",
+            "put in",
+            "put out"
+          ],
+          "correct": 0,
+          "explanation": "Put off = postpone."
+        },
+        {
+          "prompt": "He ___ a great suggestion.",
+          "options": [
+            "came up with",
+            "came up",
+            "came in",
+            "came out"
+          ],
+          "correct": 0,
+          "explanation": "Come up with = think of."
+        },
+        {
+          "prompt": "We ___ well with our new neighbours.",
+          "options": [
+            "get along",
+            "get up",
+            "get on",
+            "get off"
+          ],
+          "correct": 0,
+          "explanation": "Get along with."
+        },
+        {
+          "prompt": "Don't ___ . You can do it!",
+          "options": [
+            "give in",
+            "give up",
+            "give out",
+            "give away"
+          ],
+          "correct": 1,
+          "explanation": "Give up = stop trying."
+        },
+        {
+          "prompt": "She ___ her homework yesterday.",
+          "options": [
+            "handed in",
+            "handed out",
+            "handed up",
+            "handed over"
+          ],
+          "correct": 0,
+          "explanation": "Hand in = submit."
+        },
+        {
+          "prompt": "You should ___ more effort in class.",
+          "options": [
+            "do",
+            "take",
+            "make",
+            "have"
+          ],
+          "correct": 2,
+          "explanation": "Collocation: make an effort."
+        }
       ]
     },
     {

@@ -11,11 +11,11 @@
         {
           "question": "What time does the London train leave?",
           "options": [
-            "9:50",
+            "10:10",
             "9:15",
-            "10:10"
+            "9:50"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The man says: The London train leaves at ten past ten."
         },
         {
@@ -40,21 +40,21 @@
         {
           "question": "What does Maria ask her friend to bring?",
           "options": [
-            "Drinks and a speaker",
             "Food and drinks",
-            "Only a speaker"
+            "Only a speaker",
+            "Drinks and a speaker"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Maria asks for drinks and a speaker."
         },
         {
           "question": "What time does the party start?",
           "options": [
-            "8:00",
             "7:30",
-            "8:30"
+            "8:30",
+            "8:00"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Maria says: The party starts at 8."
         }
       ]
@@ -70,30 +70,30 @@
           "question": "How many people are there?",
           "options": [
             "One",
-            "Two",
-            "Three"
+            "Three",
+            "Two"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The customer asks for a table for two."
         },
         {
           "question": "Where do they want to sit?",
           "options": [
+            "Outside",
             "Near the door",
-            "Near the window",
-            "Outside"
+            "Near the window"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The customer says: Yes, please, when asked about a table near the window."
         },
         {
           "question": "What does the woman order?",
           "options": [
-            "The chicken salad",
+            "The soup",
             "The fish",
-            "The soup"
+            "The chicken salad"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The woman says: I would like the chicken salad."
         }
       ]
@@ -108,31 +108,31 @@
         {
           "question": "Why is Sarah calling?",
           "options": [
-            "To cancel a meeting",
             "To change a meeting time",
+            "To cancel a meeting",
             "To confirm a meeting"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Sarah says she cannot come at 10 and asks to meet at 2 pm instead."
         },
         {
           "question": "What time does Sarah want to meet?",
           "options": [
             "10 am",
-            "2 pm",
-            "4 pm"
+            "4 pm",
+            "2 pm"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Sarah says: Can we meet at 2 pm instead?"
         },
         {
           "question": "Why can't Sarah come at 10 am?",
           "options": [
-            "She has a doctor appointment",
+            "She has another meeting",
             "She is on holiday",
-            "She has another meeting"
+            "She has a doctor appointment"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Sarah says: I have a doctor appointment."
         }
       ]
@@ -148,8 +148,8 @@
           "question": "What is the customer looking for?",
           "options": [
             "A blue shirt",
-            "A green shirt",
-            "A blue jacket"
+            "A blue jacket",
+            "A green shirt"
           ],
           "correct": 0,
           "explanation": "The customer says: I am looking for a blue shirt."
@@ -157,8 +157,8 @@
         {
           "question": "How much is the blue shirt?",
           "options": [
-            "15 pounds",
             "18 pounds",
+            "15 pounds",
             "25 pounds"
           ],
           "correct": 2,
@@ -196,21 +196,21 @@
         {
           "question": "What is Maria's problem?",
           "options": [
-            "A headache",
             "A bad cough",
-            "A stomachache"
+            "A stomachache",
+            "A headache"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Maria says: I have a bad cough."
         },
         {
           "question": "When is the appointment?",
           "options": [
+            "Thursday at 3 pm",
             "Tuesday at 2 pm",
-            "Tuesday at 3 pm",
-            "Thursday at 3 pm"
+            "Tuesday at 3 pm"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The receptionist says: Doctor Smith has an appointment available on Tuesday at 3 pm."
         }
       ]
@@ -225,31 +225,31 @@
         {
           "question": "What time is the next train to Oxford?",
           "options": [
-            "10:00",
             "10:15",
+            "10:00",
             "10:30"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The clerk says: The next one leaves at 10:15."
         },
         {
           "question": "How long does the journey take?",
           "options": [
             "30 minutes",
-            "One hour",
-            "About an hour and a half"
+            "About an hour and a half",
+            "One hour"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The clerk says: About an hour and a half."
         },
         {
           "question": "How much is a return ticket?",
           "options": [
             "15 pounds",
-            "22 pounds",
-            "30 pounds"
+            "30 pounds",
+            "22 pounds"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The clerk says: A return ticket is 22 pounds."
         }
       ]
@@ -264,9 +264,9 @@
         {
           "question": "What did the person do on Saturday?",
           "options": [
-            "Stayed at home",
+            "Went to a restaurant",
             "Went to the beach",
-            "Went to a restaurant"
+            "Stayed at home"
           ],
           "correct": 1,
           "explanation": "The person says: On Saturday, I went to the beach."
@@ -274,21 +274,21 @@
         {
           "question": "Why did the person cook dinner on Sunday?",
           "options": [
-            "For a friend's birthday",
             "For their parents' anniversary",
+            "For a friend's birthday",
             "For a family reunion"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The person says: It was their anniversary (the parents')."
         },
         {
           "question": "What did the person cook?",
           "options": [
-            "Pizza and salad",
             "Lasagna and chocolate cake",
+            "Pizza and salad",
             "Fish and vegetables"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The person says: I made a lasagna and a chocolate cake."
         }
       ]
@@ -303,9 +303,9 @@
         {
           "question": "How many nights is the reservation for?",
           "options": [
-            "One night",
+            "Three nights",
             "Two nights",
-            "Three nights"
+            "One night"
           ],
           "correct": 1,
           "explanation": "The guest says: I have a reservation for two nights."
@@ -313,21 +313,21 @@
         {
           "question": "What time is breakfast?",
           "options": [
+            "From 8 to 11 am",
             "From 6 to 9 am",
-            "From 7 to 10 am",
-            "From 8 to 11 am"
+            "From 7 to 10 am"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The receptionist says: breakfast is served from 7 to 10 am."
         },
         {
           "question": "What time is check-out?",
           "options": [
-            "10 am",
             "11 am",
-            "12 pm"
+            "12 pm",
+            "10 am"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The receptionist says: Check-out is at 11 am."
         }
       ]
@@ -342,19 +342,19 @@
         {
           "question": "When is the party?",
           "options": [
-            "Next Friday",
             "Next Saturday",
+            "Next Friday",
             "Next Sunday"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The speaker says: Her birthday is on Sunday but we are having the party on Saturday."
         },
         {
           "question": "What kind of cake does the mother like?",
           "options": [
-            "Vanilla",
+            "Strawberry",
             "Chocolate",
-            "Strawberry"
+            "Vanilla"
           ],
           "correct": 1,
           "explanation": "The speaker says: She loves chocolate."

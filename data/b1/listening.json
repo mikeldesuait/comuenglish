@@ -12,33 +12,33 @@
           "question": "How long did the candidate work at the marketing company?",
           "options": [
             "Five years",
-            "Two years",
             "Three years",
-            "One year"
+            "One year",
+            "Two years"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The candidate says: I worked for three years."
         },
         {
           "question": "Why did the candidate leave the previous job?",
           "options": [
-            "Bad colleagues",
             "Health problems",
-            "The company moved",
-            "Low salary"
+            "Bad colleagues",
+            "Low salary",
+            "The company moved"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The candidate says: The company moved to another city."
         },
         {
           "question": "What does the candidate want in the new role?",
           "options": [
-            "A shorter commute",
             "More responsibility",
+            "A shorter commute",
             "More holidays",
             "A higher salary"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The candidate says: I would like more responsibility."
         }
       ]
@@ -54,9 +54,9 @@
           "question": "How long did the candidate work at the marketing company?",
           "options": [
             "One year",
-            "Two years",
+            "Five years",
             "Three years",
-            "Five years"
+            "Two years"
           ],
           "correct": 2,
           "explanation": "The candidate says: I worked for three years."
@@ -64,10 +64,10 @@
         {
           "question": "Why did the candidate leave the previous job?",
           "options": [
-            "Low salary",
-            "The company moved",
             "Bad colleagues",
-            "Health problems"
+            "The company moved",
+            "Health problems",
+            "Low salary"
           ],
           "correct": 1,
           "explanation": "The candidate says: The company moved to another city."
@@ -75,20 +75,20 @@
         {
           "question": "What does the candidate want in the new role?",
           "options": [
-            "More holidays",
-            "More responsibility",
+            "A higher salary",
             "A shorter commute",
-            "A higher salary"
+            "More holidays",
+            "More responsibility"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The candidate says: I would like more responsibility."
         },
         {
           "question": "Which languages does the candidate speak fluently?",
           "options": [
-            "English and German",
-            "English and French",
             "Spanish and German",
+            "English and French",
+            "English and German",
             "Only English"
           ],
           "correct": 1,
@@ -106,9 +106,9 @@
         {
           "question": "What is Emma's book about?",
           "options": [
-            "Travelling with family",
-            "Travelling alone",
             "Learning languages",
+            "Travelling alone",
+            "Travelling with family",
             "Working abroad"
           ],
           "correct": 1,
@@ -118,9 +118,9 @@
           "question": "What is the biggest challenge of solo travel according to Emma?",
           "options": [
             "Money",
-            "Language",
+            "Safety",
             "Loneliness",
-            "Safety"
+            "Language"
           ],
           "correct": 2,
           "explanation": "Emma says: I think it is the loneliness."
@@ -128,23 +128,23 @@
         {
           "question": "What is the main advantage of travelling alone?",
           "options": [
-            "It is cheaper",
-            "Complete freedom",
             "You meet more people",
-            "You learn languages faster"
+            "It is cheaper",
+            "You learn languages faster",
+            "Complete freedom"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Emma says: You have complete freedom."
         },
         {
           "question": "What is Emma's advice for beginners?",
           "options": [
-            "Start with a short trip",
-            "Go to another continent",
+            "Read a lot of books",
             "Travel with a group first",
-            "Read a lot of books"
+            "Go to another continent",
+            "Start with a short trip"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "Emma says: Start with a short trip."
         }
       ]
@@ -159,45 +159,45 @@
         {
           "question": "How does the person feel about life in Manchester?",
           "options": [
-            "It is perfect",
             "It is harder than expected",
-            "It is boring",
-            "It is too expensive"
+            "It is too expensive",
+            "It is perfect",
+            "It is boring"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The person says: To be honest, it is harder than I expected."
         },
         {
           "question": "What is the main problem?",
           "options": [
-            "The job",
-            "The weather",
             "Not knowing anyone",
-            "The cost of living"
+            "The cost of living",
+            "The job",
+            "The weather"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The person says: I don't know anyone here."
         },
         {
           "question": "What did the other person do when they moved?",
           "options": [
-            "Joined a running club",
-            "Took a cooking class",
+            "Moved back home",
             "Started a new job",
-            "Moved back home"
+            "Joined a running club",
+            "Took a cooking class"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The person says: I joined a running club and it changed everything."
         },
         {
           "question": "What is the person going to do this weekend?",
           "options": [
             "Visit family",
+            "Stay at home",
             "Look for activities to join",
-            "Move house",
-            "Stay at home"
+            "Move house"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The person says: I will look for something this weekend."
         }
       ]
@@ -212,45 +212,45 @@
         {
           "question": "How long will the tour last?",
           "options": [
-            "30 minutes",
             "45 minutes",
-            "One hour",
-            "Two hours"
+            "30 minutes",
+            "Two hours",
+            "One hour"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Laura says: The tour will last approximately 45 minutes."
         },
         {
           "question": "What will they visit first?",
           "options": [
-            "The library",
-            "The science building",
             "The student accommodation",
-            "The main hall"
+            "The library",
+            "The main hall",
+            "The science building"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Laura says: We will start at the library."
         },
         {
           "question": "What time is the presentation?",
           "options": [
-            "1 pm",
-            "2 pm",
             "3 pm",
-            "4 pm"
+            "4 pm",
+            "2 pm",
+            "1 pm"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Laura says: there will be a presentation in the main hall at 2 pm."
         },
         {
           "question": "What is the application deadline?",
           "options": [
+            "March 15th",
             "December 15th",
             "January 15th",
-            "February 15th",
-            "March 15th"
+            "February 15th"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Laura says: The application deadline for next year is January 15th."
         }
       ]
@@ -265,32 +265,32 @@
         {
           "question": "When did the person change their diet?",
           "options": [
-            "One month ago",
             "Two months ago",
-            "Three months ago",
-            "Six months ago"
+            "Six months ago",
+            "One month ago",
+            "Three months ago"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The person says: I changed my diet about three months ago."
         },
         {
           "question": "What did they used to eat a lot of?",
           "options": [
             "Vegetables",
+            "Fish",
             "Fruit",
-            "Processed food",
-            "Fish"
+            "Processed food"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The person says: I used to eat a lot of processed food."
         },
         {
           "question": "What benefits has the person noticed?",
           "options": [
             "More energy and better sleep",
-            "Weight loss only",
             "Better skin",
-            "More money"
+            "More money",
+            "Weight loss only"
           ],
           "correct": 0,
           "explanation": "The person says: I have more energy and I sleep better."
@@ -298,12 +298,12 @@
         {
           "question": "What advice does the person give for starting?",
           "options": [
-            "Change everything at once",
             "Start small",
             "Only eat vegetables",
-            "Skip breakfast"
+            "Skip breakfast",
+            "Change everything at once"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The person says: I started small. I just changed one meal a day."
         }
       ]
@@ -318,12 +318,12 @@
         {
           "question": "What new hobby has the person started?",
           "options": [
-            "Painting",
-            "Photography",
             "Writing",
-            "Gardening"
+            "Painting",
+            "Gardening",
+            "Photography"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The person says: I have taken up photography."
         },
         {
@@ -341,9 +341,9 @@
           "question": "What does the person use most for photos?",
           "options": [
             "A professional camera",
-            "A basic camera",
+            "A tablet",
             "Their phone",
-            "A tablet"
+            "A basic camera"
           ],
           "correct": 2,
           "explanation": "The person says: I take photos with my phone mostly."
@@ -351,10 +351,10 @@
         {
           "question": "What could help the person improve?",
           "options": [
-            "Buying a new camera",
+            "Watching videos",
             "Joining a photography group",
             "Reading books",
-            "Watching videos"
+            "Buying a new camera"
           ],
           "correct": 1,
           "explanation": "The other person suggests joining a photography group."
@@ -371,43 +371,43 @@
         {
           "question": "How long has the person been studying Italian?",
           "options": [
-            "Three months",
             "Six months",
+            "Three months",
             "One year",
             "Two years"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The person says: I have been studying for six months."
         },
         {
           "question": "What does the person find most difficult?",
           "options": [
-            "Grammar",
             "Writing",
             "Listening",
+            "Grammar",
             "Reading"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The person says: I think listening."
         },
         {
           "question": "What does the person do to improve listening?",
           "options": [
             "Listen to the radio",
-            "Watch Italian films with subtitles",
             "Listen to songs",
-            "Take classes"
+            "Take classes",
+            "Watch Italian films with subtitles"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The person says: I watch Italian films with subtitles."
         },
         {
           "question": "What does the other person suggest?",
           "options": [
-            "Reading more books",
+            "Moving to Italy",
             "Finding a language partner",
             "Taking a course",
-            "Moving to Italy"
+            "Reading more books"
           ],
           "correct": 1,
           "explanation": "The other person says: I should find a language partner. You could try an app."
@@ -426,8 +426,8 @@
           "options": [
             "It is smaller",
             "It is bigger",
-            "It is the same size",
-            "It is older"
+            "It is older",
+            "It is the same size"
           ],
           "correct": 1,
           "explanation": "The person says: It is much bigger than my old one."
@@ -435,12 +435,12 @@
         {
           "question": "How much is the rent?",
           "options": [
-            "600 euros",
             "700 euros",
-            "800 euros",
-            "900 euros"
+            "600 euros",
+            "900 euros",
+            "800 euros"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The person says: It is 800 euros a month."
         },
         {
@@ -448,8 +448,8 @@
           "options": [
             "It is very close to work",
             "It has a big garden",
-            "It is in a quiet area",
-            "It is new"
+            "It is new",
+            "It is in a quiet area"
           ],
           "correct": 0,
           "explanation": "The person says: it is very close to my work, so I save money on transport."
@@ -477,10 +477,10 @@
         {
           "question": "How long will the tour last?",
           "options": [
+            "Four hours",
             "One hour",
-            "Two hours",
             "Three hours",
-            "Four hours"
+            "Two hours"
           ],
           "correct": 2,
           "explanation": "The guide says: Our tour today will last about three hours."
@@ -488,34 +488,34 @@
         {
           "question": "Where will the tour start?",
           "options": [
-            "Edinburgh Castle",
-            "The Royal Mile",
+            "The National Museum",
             "Grassmarket",
-            "The National Museum"
+            "Edinburgh Castle",
+            "The Royal Mile"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The guide says: We will start at Edinburgh Castle."
         },
         {
           "question": "When will they stop for lunch?",
           "options": [
-            "12 pm",
-            "1 pm",
+            "3 pm",
             "2 pm",
-            "3 pm"
+            "1 pm",
+            "12 pm"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The guide says: We will stop for lunch at 1 pm."
         },
         {
           "question": "What should tourists wear?",
           "options": [
             "Formal clothes",
-            "Comfortable shoes",
             "A hat",
-            "Sunglasses"
+            "Sunglasses",
+            "Comfortable shoes"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The guide says: wear comfortable shoes, because we will be walking a lot."
         }
       ]

@@ -1,3 +1,13 @@
+// Shuffle array in place (Fisher-Yates)
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 // Multiple choice exercise widget.
 import { addMistake } from "../state.js";
 
@@ -17,11 +27,17 @@ export function renderExercise(container, data) {
   const feedbackSlot = document.createElement("div");
   wrapper.appendChild(feedbackSlot);
 
-  data.options.forEach((opt, i) => {
+  // Shuffle options at render time so the order changes every time
+  const correctValue = data.options[data.correct];
+  const shuffled = shuffleArray(data.options);
+  const newCorrectIdx = shuffled.indexOf(correctValue);
+  const localData = { ...data, options: shuffled, correct: newCorrectIdx };
+
+  shuffled.forEach((opt, i) => {
     const btn = document.createElement("button");
     btn.className = "option";
     btn.textContent = String.fromCharCode(65 + i) + ". " + opt;
-    btn.addEventListener("click", () => checkAnswer(i, btn, optionsBox, feedbackSlot, data));
+    btn.addEventListener("click", () => checkAnswer(i, btn, optionsBox, feedbackSlot, localData));
     optionsBox.appendChild(btn);
   });
 

@@ -1,15 +1,85 @@
 {
   "level": "b2",
   "units": [
-    { "id": "b2-u1", "title": "1. Speculation and deduction", "file": "b2-u1.json", "phases": 7, "topic": "Modals", "grammar": "Must, Might, Could, Cannot + modal perfects" },
-    { "id": "b2-u2", "title": "2. Mixed conditionals and hypotheses", "file": "b2-u2.json", "phases": 7, "topic": "Conditionals", "grammar": "Mixed conditionals, wish, if only" },
-    { "id": "b2-u3", "title": "3. Advanced passive voice", "file": "b2-u3.json", "phases": 7, "topic": "Passive", "grammar": "Passive with modals, It is said that..." },
-    { "id": "b2-u4", "title": "4. Advanced reported speech", "file": "b2-u4.json", "phases": 7, "topic": "Reported Speech", "grammar": "Reporting verbs, complex structures" },
-    { "id": "b2-u5", "title": "5. Inversion and emphasis", "file": "b2-u5.json", "phases": 7, "topic": "Advanced", "grammar": "Inversion, cleft sentences" },
-    { "id": "b2-u6", "title": "6. Subjunctive and formal structures", "file": "b2-u6.json", "phases": 7, "topic": "Advanced", "grammar": "Subjunctive, It is essential that..." },
-    { "id": "b2-u7", "title": "7. Phrasal verbs and collocations", "file": "b2-u7.json", "phases": 7, "topic": "Vocabulary", "grammar": "Separable / inseparable phrasal verbs" },
-    { "id": "b2-u8", "title": "8. Advanced connectors and cohesion", "file": "b2-u8.json", "phases": 7, "topic": "Connectors", "grammar": "Despite, due to, so as to" },
-    { "id": "b2-u9", "title": "9. Word formation", "file": "b2-u9.json", "phases": 7, "topic": "Vocabulary", "grammar": "Prefixes, suffixes, compounds" },
-    { "id": "b2-u10", "title": "10. Register and style", "file": "b2-u10.json", "phases": 7, "topic": "Style", "grammar": "Formal vs informal, idioms" }
+    {
+      "id": "b2-u1",
+      "title": "1. Speculation and deduction",
+      "file": "b2-u1.json",
+      "phases": 7,
+      "topic": "Modals",
+      "grammar": "Must, Might, Could, Cannot + modal perfects"
+    },
+    {
+      "id": "b2-u2",
+      "title": "2. Mixed conditionals and hypotheses",
+      "file": "b2-u2.json",
+      "phases": 7,
+      "topic": "Conditionals",
+      "grammar": "Mixed conditionals, wish, if only"
+    },
+    {
+      "id": "b2-u3",
+      "title": "3. Advanced passive voice",
+      "file": "b2-u3.json",
+      "phases": 7,
+      "topic": "Passive",
+      "grammar": "Passive with modals, It is said that..."
+    },
+    {
+      "id": "b2-u4",
+      "title": "4. Advanced reported speech",
+      "file": "b2-u4.json",
+      "phases": 7,
+      "topic": "Reported Speech",
+      "grammar": "Reporting verbs, complex structures"
+    },
+    {
+      "id": "b2-u5",
+      "title": "5. Inversion and emphasis",
+      "file": "b2-u5.json",
+      "phases": 7,
+      "topic": "Advanced",
+      "grammar": "Inversion, cleft sentences"
+    },
+    {
+      "id": "b2-u6",
+      "title": "6. Subjunctive and formal structures",
+      "file": "b2-u6.json",
+      "phases": 7,
+      "topic": "Advanced",
+      "grammar": "Subjunctive, It is essential that..."
+    },
+    {
+      "id": "b2-u7",
+      "title": "7. Phrasal verbs and collocations",
+      "file": "b2-u7.json",
+      "phases": 7,
+      "topic": "Vocabulary",
+      "grammar": "Separable / inseparable phrasal verbs"
+    },
+    {
+      "id": "b2-u8",
+      "title": "8. Advanced connectors and cohesion",
+      "file": "b2-u8.json",
+      "phases": 7,
+      "topic": "Connectors",
+      "grammar": "Despite, due to, so as to"
+    },
+    {
+      "id": "b2-u9",
+      "title": "9. Word formation",
+      "file": "b2-u9.json",
+      "phases": 7,
+      "topic": "Vocabulary",
+      "grammar": "Prefixes, suffixes, compounds"
+    },
+    {
+      "id": "b2-u10",
+      "title": "10. Register and style",
+      "file": "b2-u10.json",
+      "phases": 7,
+      "topic": "Style",
+      "grammar": "Formal vs informal, idioms"
+    }
   ]
 }

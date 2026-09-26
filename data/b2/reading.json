@@ -11,56 +11,56 @@
         {
           "question": "What did many employers initially fear about remote work?",
           "options": [
-            "Employee resignations",
             "Higher costs",
-            "Legal problems",
-            "A drop in productivity"
+            "A drop in productivity",
+            "Employee resignations",
+            "Legal problems"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "The article says employers initially feared a drop in productivity."
         },
         {
           "question": "What do employees working from home often report?",
           "options": [
-            "More stress",
-            "Better work-life balance",
             "Lower motivation",
-            "Higher salaries"
+            "Higher salaries",
+            "Better work-life balance",
+            "More stress"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says employees report higher job satisfaction and better work-life balance."
         },
         {
           "question": "What is a common complaint about remote work?",
           "options": [
-            "Feeling isolated",
-            "Higher taxes",
+            "Poor internet connection",
             "Too many meetings",
-            "Poor internet connection"
+            "Feeling isolated",
+            "Higher taxes"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The article mentions isolation as a common complaint."
         },
         {
           "question": "What does the article say about hybrid models?",
           "options": [
-            "They eliminate all problems",
-            "They are always better",
+            "They offer the best of both worlds",
             "They are cheaper for companies",
-            "They offer the best of both worlds"
+            "They are always better",
+            "They eliminate all problems"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "The article says hybrid models appear to offer the best of both worlds."
         },
         {
           "question": "What will define the future of work according to the article?",
           "options": [
             "Less technology",
+            "Rigid structures",
             "Longer hours",
-            "Flexibility",
-            "Rigid structures"
+            "Flexibility"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The article says the future of work will be defined by flexibility."
         }
       ]
@@ -75,10 +75,10 @@
         {
           "question": "According to research, what percentage of our daily actions are habits?",
           "options": [
+            "75 percent",
             "10 percent",
-            "25 percent",
             "40 percent",
-            "75 percent"
+            "25 percent"
           ],
           "correct": 2,
           "explanation": "The article says around 40 percent of our daily actions are habits."
@@ -86,34 +86,34 @@
         {
           "question": "What are the three components of a habit?",
           "options": [
-            "Thought, feeling, action",
-            "Cue, routine, reward",
+            "Mind, body, soul",
             "Past, present, future",
-            "Mind, body, soul"
+            "Thought, feeling, action",
+            "Cue, routine, reward"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The article says every habit has a cue, a routine and a reward."
         },
         {
           "question": "What should we keep when changing a habit?",
           "options": [
-            "Only the cue",
             "Only the reward",
             "The cue and the reward",
-            "Nothing"
+            "Nothing",
+            "Only the cue"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The article says we need to keep the cue and the reward but replace the routine."
         },
         {
           "question": "What does the article suggest about changing habits?",
           "options": [
+            "It only works for young people",
             "It is impossible",
             "It is easy",
-            "It is possible with patience",
-            "It only works for young people"
+            "It is possible with patience"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The article says changing habits is possible with patience and consistency."
         }
       ]
@@ -130,8 +130,8 @@
           "options": [
             "Only play games",
             "Diagnose diseases and drive cars",
-            "Only translate languages",
-            "Only write music"
+            "Only write music",
+            "Only translate languages"
           ],
           "correct": 1,
           "explanation": "The article says AI systems can diagnose diseases, drive cars and even write articles."
@@ -139,10 +139,10 @@
         {
           "question": "What do supporters of AI argue?",
           "options": [
-            "AI is dangerous",
+            "AI is useless",
             "AI will make our lives easier",
             "AI should be banned",
-            "AI is useless"
+            "AI is dangerous"
           ],
           "correct": 1,
           "explanation": "The article says supporters argue that AI will make our lives easier and more efficient."
@@ -150,21 +150,21 @@
         {
           "question": "What do critics warn about?",
           "options": [
-            "AI is too slow",
             "AI could destroy jobs",
             "AI is too expensive",
-            "AI is not useful"
+            "AI is not useful",
+            "AI is too slow"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says critics warn that AI could destroy millions of jobs."
         },
         {
           "question": "What concern is mentioned about AI?",
           "options": [
-            "It is too colourful",
-            "It collects personal data",
             "It uses too much electricity",
-            "It is too small"
+            "It collects personal data",
+            "It is too small",
+            "It is too colourful"
           ],
           "correct": 1,
           "explanation": "The article mentions concern about privacy as AI systems collect personal data."
@@ -172,12 +172,12 @@
         {
           "question": "What do some experts suggest about AI?",
           "options": [
-            "Ban it completely",
             "Governments should create clear rules",
             "Use it only for military purposes",
+            "Ban it completely",
             "Stop all research"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says some experts believe governments need to create clear rules."
         }
       ]
@@ -192,10 +192,10 @@
         {
           "question": "How is failure often seen in modern society?",
           "options": [
-            "As something positive",
+            "As something to celebrate",
             "As something to be avoided",
             "As a normal part of life",
-            "As something to celebrate"
+            "As something positive"
           ],
           "correct": 1,
           "explanation": "The article says failure is often seen as something to be avoided at all costs."
@@ -203,10 +203,10 @@
         {
           "question": "What do many psychologists argue about failure?",
           "options": [
-            "It should be ignored",
+            "It only happens to lazy people",
             "It is necessary for growth",
-            "It is always negative",
-            "It only happens to lazy people"
+            "It should be ignored",
+            "It is always negative"
           ],
           "correct": 1,
           "explanation": "The article says many psychologists argue that failure is a necessary part of learning and growth."
@@ -214,12 +214,12 @@
         {
           "question": "What example is given of a successful person who failed?",
           "options": [
-            "Albert Einstein",
             "J.K. Rowling",
+            "Bill Gates",
             "Elon Musk",
-            "Bill Gates"
+            "Albert Einstein"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article mentions J.K. Rowling was rejected by twelve publishers."
         },
         {
@@ -227,8 +227,8 @@
           "options": [
             "As a final verdict",
             "As feedback",
-            "As a punishment",
-            "As a sign to stop"
+            "As a sign to stop",
+            "As a punishment"
           ],
           "correct": 1,
           "explanation": "The article says the key is to see failure as feedback."
@@ -236,12 +236,12 @@
         {
           "question": "What are people who develop this mindset more likely to do?",
           "options": [
-            "Avoid all risks",
             "Take risks and learn from mistakes",
             "Blame others",
+            "Avoid all risks",
             "Give up easily"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says people with this mindset are more likely to take risks, learn from mistakes and succeed."
         }
       ]
@@ -256,31 +256,31 @@
         {
           "question": "Why are electric cars becoming more popular?",
           "options": [
-            "They are cheaper to buy",
             "Governments are offering incentives",
-            "They are faster",
-            "They are bigger"
+            "They are cheaper to buy",
+            "They are bigger",
+            "They are faster"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says governments are offering financial incentives."
         },
         {
           "question": "What is the main advantage of electric cars?",
           "options": [
-            "They produce no direct emissions",
-            "They are always faster",
+            "They are cheaper to buy",
             "They need no maintenance",
-            "They are cheaper to buy"
+            "They are always faster",
+            "They produce no direct emissions"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The article says the main advantage is that they produce no direct emissions."
         },
         {
           "question": "What is the biggest obstacle for electric cars?",
           "options": [
-            "They are too small",
-            "Limited range",
             "They are too noisy",
+            "Limited range",
+            "They are too small",
             "They use too much petrol"
           ],
           "correct": 1,
@@ -289,23 +289,23 @@
         {
           "question": "What environmental concern is mentioned about batteries?",
           "options": [
-            "They are too heavy",
-            "Mining lithium and cobalt has an impact",
             "They produce too much heat",
-            "They leak water"
+            "They leak water",
+            "Mining lithium and cobalt has an impact",
+            "They are too heavy"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article mentions mining lithium and cobalt has a considerable impact."
         },
         {
           "question": "What do most experts agree on?",
           "options": [
-            "Electric cars are dangerous",
-            "Electric cars are the future",
+            "Electric cars are too expensive",
             "Petrol cars are better",
-            "Electric cars are too expensive"
+            "Electric cars are the future",
+            "Electric cars are dangerous"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says most experts agree electric cars are the future."
         }
       ]
@@ -321,9 +321,9 @@
           "question": "How many hours of sleep do adults need?",
           "options": [
             "4 to 6",
-            "5 to 7",
+            "10 to 12",
             "7 to 9",
-            "10 to 12"
+            "5 to 7"
           ],
           "correct": 2,
           "explanation": "The article says adults need between seven and nine hours of sleep."
@@ -331,45 +331,45 @@
         {
           "question": "What are the short-term effects of sleep deprivation?",
           "options": [
-            "Better memory",
+            "Improved mood",
             "More energy",
-            "Problems with concentration and mood",
-            "Improved mood"
+            "Better memory",
+            "Problems with concentration and mood"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The article says in the short term it affects concentration, mood and decision-making."
         },
         {
           "question": "What increases the risk of long-term health problems?",
           "options": [
-            "Too much sleep",
             "Sleep deprivation",
-            "Sleeping in the afternoon",
-            "Waking up early"
+            "Too much sleep",
+            "Waking up early",
+            "Sleeping in the afternoon"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says sleep deprivation increases the risk of obesity, diabetes and heart disease."
         },
         {
           "question": "What does modern life interfere with?",
           "options": [
-            "Our diet",
             "Our natural sleep cycle",
             "Our work schedule",
+            "Our diet",
             "Our social life"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says screens, artificial light and irregular schedules interfere with our natural sleep cycle."
         },
         {
           "question": "What is the writer's conclusion about sleep?",
           "options": [
-            "It is a luxury",
-            "It is optional",
             "It is a necessity",
-            "It is overrated"
+            "It is a luxury",
+            "It is overrated",
+            "It is optional"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The article says sleep is not a luxury, it is a necessity."
         }
       ]
@@ -384,9 +384,9 @@
         {
           "question": "What was social media supposed to do?",
           "options": [
-            "Make money",
-            "Bring people closer together",
             "Replace television",
+            "Bring people closer together",
+            "Make money",
             "Promote businesses"
           ],
           "correct": 1,
@@ -395,43 +395,43 @@
         {
           "question": "What paradox do researchers notice?",
           "options": [
-            "More connection but more loneliness",
-            "Less connection but more happiness",
             "More technology but less progress",
-            "Fewer friends but better relationships"
+            "Fewer friends but better relationships",
+            "More connection but more loneliness",
+            "Less connection but more happiness"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The article says despite being more connected, many people report feeling lonelier."
         },
         {
           "question": "Why is comparison a problem according to the article?",
           "options": [
+            "It increases empathy",
             "It makes us smarter",
             "It makes our lives feel inadequate",
-            "It helps us improve",
-            "It increases empathy"
+            "It helps us improve"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says comparison can make our own lives feel inadequate."
         },
         {
           "question": "Who might benefit most from social media?",
           "options": [
+            "Only businesses",
             "Everyone equally",
             "Isolated people with limited mobility",
-            "Only young people",
-            "Only businesses"
+            "Only young people"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says for some people who are isolated or have limited mobility, social media provides a lifeline."
         },
         {
           "question": "What type of engagement tends to be positive?",
           "options": [
-            "Passive scrolling",
-            "Active engagement with real friends",
             "Following celebrities",
-            "Sharing memes"
+            "Active engagement with real friends",
+            "Sharing memes",
+            "Passive scrolling"
           ],
           "correct": 1,
           "explanation": "The article says active engagement with real friends is generally positive."
@@ -459,9 +459,9 @@
         {
           "question": "What does research suggest about boredom?",
           "options": [
-            "It is harmful",
-            "It may be valuable",
             "It should be avoided",
+            "It may be valuable",
+            "It is harmful",
             "It only affects children"
           ],
           "correct": 1,
@@ -470,21 +470,21 @@
         {
           "question": "When do our best ideas often come?",
           "options": [
-            "When actively solving problems",
             "During mundane activities like walking",
-            "During meetings",
-            "While studying"
+            "When actively solving problems",
+            "While studying",
+            "During meetings"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says our best ideas come when doing something mundane, like walking the dog."
         },
         {
           "question": "What does the brain do during idle moments?",
           "options": [
-            "It shuts down",
-            "It connects ideas and processes emotions",
             "It only rests",
-            "It slows down completely"
+            "It connects ideas and processes emotions",
+            "It slows down completely",
+            "It shuts down"
           ],
           "correct": 1,
           "explanation": "The article says during idle moments the brain is busy connecting ideas, consolidating memories and processing emotions."
@@ -493,11 +493,11 @@
           "question": "What is the writer's conclusion?",
           "options": [
             "We should eliminate boredom",
+            "We should work more",
             "We should embrace boredom",
-            "Boredom is always negative",
-            "We should work more"
+            "Boredom is always negative"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article suggests we should embrace boredom rather than eliminate it."
         }
       ]
@@ -512,56 +512,56 @@
         {
           "question": "What has fast fashion transformed?",
           "options": [
-            "The food industry",
-            "The clothing industry",
+            "The travel industry",
             "The technology industry",
-            "The travel industry"
+            "The food industry",
+            "The clothing industry"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The article says fast fashion has transformed the clothing industry."
         },
         {
           "question": "How much of global carbon emissions is the fashion industry responsible for?",
           "options": [
-            "2 percent",
-            "5 percent",
+            "25 percent",
             "10 percent",
-            "25 percent"
+            "2 percent",
+            "5 percent"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The article says the fashion industry is responsible for around 10 percent of global carbon emissions."
         },
         {
           "question": "What human rights issue is mentioned?",
           "options": [
-            "Child labour only",
-            "Low wages and unsafe conditions",
+            "Too many holidays",
             "No issue at all",
-            "Too many holidays"
+            "Low wages and unsafe conditions",
+            "Child labour only"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says workers earn low wages and face unsafe conditions."
         },
         {
           "question": "What alternative do some consumers choose?",
           "options": [
-            "Buying more clothes",
             "Buying second-hand",
             "Only buying new items",
-            "Making their own clothes"
+            "Making their own clothes",
+            "Buying more clothes"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says some consumers buy second-hand clothes or choose brands that pay fair wages."
         },
         {
           "question": "What does the article say is needed to solve this problem?",
           "options": [
-            "Individual choices only",
-            "Systemic change",
             "More factories",
-            "Less regulation"
+            "Less regulation",
+            "Systemic change",
+            "Individual choices only"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The article says solving this problem will require systemic change, not just individual choices."
         }
       ]
@@ -576,10 +576,10 @@
         {
           "question": "What have psychologists started doing recently?",
           "options": [
-            "Ignoring happiness",
+            "Writing philosophy books",
             "Studying happiness scientifically",
-            "Only studying sadness",
-            "Writing philosophy books"
+            "Ignoring happiness",
+            "Only studying sadness"
           ],
           "correct": 1,
           "explanation": "The article says psychologists have started to study happiness scientifically."
@@ -587,23 +587,23 @@
         {
           "question": "What is the effect of money on happiness?",
           "options": [
-            "It always increases happiness",
             "It has limited effect once basic needs are met",
             "It has no effect at all",
-            "It decreases happiness"
+            "It decreases happiness",
+            "It always increases happiness"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says money has a limited effect once basic needs are met."
         },
         {
           "question": "What matters more than money according to the article?",
           "options": [
-            "Fame",
             "Relationships",
-            "Possessions",
-            "Travel"
+            "Fame",
+            "Travel",
+            "Possessions"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The article says what matters more are relationships."
         },
         {
@@ -611,19 +611,19 @@
           "options": [
             "No effect",
             "Negative effect",
-            "Increase our sense of well-being",
-            "Only help others"
+            "Only help others",
+            "Increase our sense of well-being"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The article says helping others increases our own sense of well-being."
         },
         {
           "question": "What is the paradoxical finding about the pursuit of happiness?",
           "options": [
-            "It always leads to happiness",
+            "It only works for some people",
             "It can be counterproductive",
             "It has no effect",
-            "It only works for some people"
+            "It always leads to happiness"
           ],
           "correct": 1,
           "explanation": "The article says the pursuit of happiness itself can be counterproductive."

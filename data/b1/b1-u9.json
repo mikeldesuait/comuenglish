@@ -17,41 +17,109 @@
           "heading": "Contrast",
           "tableHeader": true,
           "table": [
-            ["Connector", "Use", "Example"],
-            ["but", "contrast (informal)", "I was tired, but I finished the work."],
-            ["however", "contrast (formal, new sentence)", "It was late. However, we continued working."],
-            ["although / even though", "contrast (before a clause)", "Although it was late, we continued."],
-            ["despite / in spite of", "contrast (before a noun)", "Despite the rain, we went out."]
+            [
+              "Connector",
+              "Use",
+              "Example"
+            ],
+            [
+              "but",
+              "contrast (informal)",
+              "I was tired, but I finished the work."
+            ],
+            [
+              "however",
+              "contrast (formal, new sentence)",
+              "It was late. However, we continued working."
+            ],
+            [
+              "although / even though",
+              "contrast (before a clause)",
+              "Although it was late, we continued."
+            ],
+            [
+              "despite / in spite of",
+              "contrast (before a noun)",
+              "Despite the rain, we went out."
+            ]
           ]
         },
         {
           "heading": "Cause and reason",
           "tableHeader": true,
           "table": [
-            ["Connector", "Use", "Example"],
-            ["because", "reason", "I stayed home because I was ill."],
-            ["since / as", "reason (formal)", "Since it was raining, we stayed inside."],
-            ["because of", "reason (before noun)", "We stayed inside because of the rain."]
+            [
+              "Connector",
+              "Use",
+              "Example"
+            ],
+            [
+              "because",
+              "reason",
+              "I stayed home because I was ill."
+            ],
+            [
+              "since / as",
+              "reason (formal)",
+              "Since it was raining, we stayed inside."
+            ],
+            [
+              "because of",
+              "reason (before noun)",
+              "We stayed inside because of the rain."
+            ]
           ]
         },
         {
           "heading": "Consequence and result",
           "tableHeader": true,
           "table": [
-            ["Connector", "Use", "Example"],
-            ["so", "result", "I was tired, so I went to bed."],
-            ["therefore", "result (formal)", "The road was closed; therefore, we took another route."],
-            ["as a result", "result (formal)", "He studied hard. As a result, he passed."]
+            [
+              "Connector",
+              "Use",
+              "Example"
+            ],
+            [
+              "so",
+              "result",
+              "I was tired, so I went to bed."
+            ],
+            [
+              "therefore",
+              "result (formal)",
+              "The road was closed; therefore, we took another route."
+            ],
+            [
+              "as a result",
+              "result (formal)",
+              "He studied hard. As a result, he passed."
+            ]
           ]
         },
         {
           "heading": "Purpose",
           "tableHeader": true,
           "table": [
-            ["Connector", "Use", "Example"],
-            ["to + verb", "purpose", "I went to the shop to buy bread."],
-            ["in order to + verb", "purpose (formal)", "She studies in order to pass the exam."],
-            ["so that + clause", "purpose", "I left early so that I wouldn't miss the train."]
+            [
+              "Connector",
+              "Use",
+              "Example"
+            ],
+            [
+              "to + verb",
+              "purpose",
+              "I went to the shop to buy bread."
+            ],
+            [
+              "in order to + verb",
+              "purpose (formal)",
+              "She studies in order to pass the exam."
+            ],
+            [
+              "so that + clause",
+              "purpose",
+              "I left early so that I wouldn't miss the train."
+            ]
           ]
         },
         {
@@ -80,42 +148,105 @@
         {
           "heading": "Contrast connectors",
           "list": [
-            { "term": "however", "definition": "It was expensive. However, I bought it." },
-            { "term": "although", "definition": "Although he was tired, he finished." },
-            { "term": "even though", "definition": "Even though it was late, we kept working." },
-            { "term": "despite", "definition": "Despite the rain, we went out." },
-            { "term": "in spite of", "definition": "In spite of the noise, I slept well." },
-            { "term": "on the other hand", "definition": "On the other hand, it is cheaper." }
+            {
+              "term": "however",
+              "definition": "It was expensive. However, I bought it."
+            },
+            {
+              "term": "although",
+              "definition": "Although he was tired, he finished."
+            },
+            {
+              "term": "even though",
+              "definition": "Even though it was late, we kept working."
+            },
+            {
+              "term": "despite",
+              "definition": "Despite the rain, we went out."
+            },
+            {
+              "term": "in spite of",
+              "definition": "In spite of the noise, I slept well."
+            },
+            {
+              "term": "on the other hand",
+              "definition": "On the other hand, it is cheaper."
+            }
           ]
         },
         {
           "heading": "Cause and effect",
           "list": [
-            { "term": "because", "definition": "I stayed home because I was ill." },
-            { "term": "since", "definition": "Since it was raining, we stayed inside." },
-            { "term": "so", "definition": "I was hungry, so I made a sandwich." },
-            { "term": "therefore", "definition": "He studied hard; therefore, he passed." },
-            { "term": "as a result", "definition": "As a result, the company grew." },
-            { "term": "consequently", "definition": "She missed the bus; consequently, she was late." }
+            {
+              "term": "because",
+              "definition": "I stayed home because I was ill."
+            },
+            {
+              "term": "since",
+              "definition": "Since it was raining, we stayed inside."
+            },
+            {
+              "term": "so",
+              "definition": "I was hungry, so I made a sandwich."
+            },
+            {
+              "term": "therefore",
+              "definition": "He studied hard; therefore, he passed."
+            },
+            {
+              "term": "as a result",
+              "definition": "As a result, the company grew."
+            },
+            {
+              "term": "consequently",
+              "definition": "She missed the bus; consequently, she was late."
+            }
           ]
         },
         {
           "heading": "Purpose",
           "list": [
-            { "term": "to + verb", "definition": "I came here to help you." },
-            { "term": "in order to", "definition": "She studies in order to improve." },
-            { "term": "so that", "definition": "I left early so that I could rest." },
-            { "term": "for", "definition": "I went to the shop for some bread." }
+            {
+              "term": "to + verb",
+              "definition": "I came here to help you."
+            },
+            {
+              "term": "in order to",
+              "definition": "She studies in order to improve."
+            },
+            {
+              "term": "so that",
+              "definition": "I left early so that I could rest."
+            },
+            {
+              "term": "for",
+              "definition": "I went to the shop for some bread."
+            }
           ]
         },
         {
           "heading": "Adding information",
           "list": [
-            { "term": "and", "definition": "I like tea and coffee." },
-            { "term": "also", "definition": "She speaks English and also French." },
-            { "term": "moreover", "definition": "The plan is expensive. Moreover, it is risky." },
-            { "term": "in addition", "definition": "In addition, we offer free delivery." },
-            { "term": "furthermore", "definition": "Furthermore, the results were excellent." }
+            {
+              "term": "and",
+              "definition": "I like tea and coffee."
+            },
+            {
+              "term": "also",
+              "definition": "She speaks English and also French."
+            },
+            {
+              "term": "moreover",
+              "definition": "The plan is expensive. Moreover, it is risky."
+            },
+            {
+              "term": "in addition",
+              "definition": "In addition, we offer free delivery."
+            },
+            {
+              "term": "furthermore",
+              "definition": "Furthermore, the results were excellent."
+            }
           ]
         }
       ]
@@ -147,16 +278,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "___ it was late, we decided to keep working.", "options": ["Because", "Although", "So", "Therefore"], "correct": 1, "explanation": "Although introduces a contrast."},
-        {"prompt": "I studied a lot, ___ I passed the exam.", "options": ["although", "because", "so", "however"], "correct": 2, "explanation": "So introduces a result."},
-        {"prompt": "I stayed home ___ I was ill.", "options": ["although", "because", "so", "however"], "correct": 1, "explanation": "Because introduces a reason."},
-        {"prompt": "___ the rain, we went to the beach.", "options": ["Although", "Because", "Despite", "So"], "correct": 2, "explanation": "Despite + noun."},
-        {"prompt": "I went to the shop ___ buy some bread.", "options": ["for", "to", "so", "because"], "correct": 1, "explanation": "Purpose: to + verb."},
-        {"prompt": "She studies hard ___ pass the exam.", "options": ["for", "so that", "in order to", "because"], "correct": 2, "explanation": "Purpose (formal): in order to + verb."},
-        {"prompt": "I left early ___ I wouldn't miss the train.", "options": ["so that", "because", "although", "despite"], "correct": 0, "explanation": "Purpose + clause: so that."},
-        {"prompt": "It was raining. ___ , we went out.", "options": ["But", "However", "Although", "So"], "correct": 1, "explanation": "However introduces contrast in a new sentence."},
-        {"prompt": "He worked hard. ___ , he got promoted.", "options": ["However", "As a result", "Although", "Despite"], "correct": 1, "explanation": "As a result introduces consequence."},
-        {"prompt": "The hotel was expensive. ___ , it was very noisy.", "options": ["Moreover", "However", "Although", "So"], "correct": 0, "explanation": "Moreover adds information."}
+        {
+          "prompt": "___ it was late, we decided to keep working.",
+          "options": [
+            "Because",
+            "Although",
+            "So",
+            "Therefore"
+          ],
+          "correct": 1,
+          "explanation": "Although introduces a contrast."
+        },
+        {
+          "prompt": "I studied a lot, ___ I passed the exam.",
+          "options": [
+            "although",
+            "because",
+            "so",
+            "however"
+          ],
+          "correct": 2,
+          "explanation": "So introduces a result."
+        },
+        {
+          "prompt": "I stayed home ___ I was ill.",
+          "options": [
+            "although",
+            "because",
+            "so",
+            "however"
+          ],
+          "correct": 1,
+          "explanation": "Because introduces a reason."
+        },
+        {
+          "prompt": "___ the rain, we went to the beach.",
+          "options": [
+            "Although",
+            "Because",
+            "Despite",
+            "So"
+          ],
+          "correct": 2,
+          "explanation": "Despite + noun."
+        },
+        {
+          "prompt": "I went to the shop ___ buy some bread.",
+          "options": [
+            "for",
+            "to",
+            "so",
+            "because"
+          ],
+          "correct": 1,
+          "explanation": "Purpose: to + verb."
+        },
+        {
+          "prompt": "She studies hard ___ pass the exam.",
+          "options": [
+            "for",
+            "so that",
+            "in order to",
+            "because"
+          ],
+          "correct": 2,
+          "explanation": "Purpose (formal): in order to + verb."
+        },
+        {
+          "prompt": "I left early ___ I wouldn't miss the train.",
+          "options": [
+            "so that",
+            "because",
+            "although",
+            "despite"
+          ],
+          "correct": 0,
+          "explanation": "Purpose + clause: so that."
+        },
+        {
+          "prompt": "It was raining. ___ , we went out.",
+          "options": [
+            "But",
+            "However",
+            "Although",
+            "So"
+          ],
+          "correct": 1,
+          "explanation": "However introduces contrast in a new sentence."
+        },
+        {
+          "prompt": "He worked hard. ___ , he got promoted.",
+          "options": [
+            "However",
+            "As a result",
+            "Although",
+            "Despite"
+          ],
+          "correct": 1,
+          "explanation": "As a result introduces consequence."
+        },
+        {
+          "prompt": "The hotel was expensive. ___ , it was very noisy.",
+          "options": [
+            "Moreover",
+            "However",
+            "Although",
+            "So"
+          ],
+          "correct": 0,
+          "explanation": "Moreover adds information."
+        }
       ]
     },
     {
@@ -172,16 +403,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "___ it was cold, we went swimming.", "options": ["Because", "Although", "So", "Therefore"], "correct": 1, "explanation": "Contrast."},
-        {"prompt": "She didn't come ___ she was busy.", "options": ["although", "because", "so", "however"], "correct": 1, "explanation": "Reason."},
-        {"prompt": "He was hungry, ___ he ordered a pizza.", "options": ["although", "because", "so", "despite"], "correct": 2, "explanation": "Result."},
-        {"prompt": "___ the traffic, we arrived on time.", "options": ["Although", "Because", "Despite", "So"], "correct": 2, "explanation": "Despite + noun."},
-        {"prompt": "I called you ___ invite you to dinner.", "options": ["for", "to", "so", "because"], "correct": 1, "explanation": "Purpose: to + verb."},
-        {"prompt": "She left early ___ she could catch the bus.", "options": ["so that", "because", "although", "despite"], "correct": 0, "explanation": "Purpose + clause."},
-        {"prompt": "It was late. ___ , we went home.", "options": ["However", "Therefore", "Although", "Despite"], "correct": 1, "explanation": "Therefore = result."},
-        {"prompt": "The food was excellent. ___ , the service was slow.", "options": ["Moreover", "However", "So", "Because"], "correct": 1, "explanation": "However = contrast."},
-        {"prompt": "I went to the market ___ buy vegetables.", "options": ["to", "for", "so", "because"], "correct": 0, "explanation": "Purpose: to + verb."},
-        {"prompt": "___ he studied hard, he didn't pass.", "options": ["Because", "Although", "So", "Therefore"], "correct": 1, "explanation": "Although = contrast."}
+        {
+          "prompt": "___ it was cold, we went swimming.",
+          "options": [
+            "Because",
+            "Although",
+            "So",
+            "Therefore"
+          ],
+          "correct": 1,
+          "explanation": "Contrast."
+        },
+        {
+          "prompt": "She didn't come ___ she was busy.",
+          "options": [
+            "although",
+            "because",
+            "so",
+            "however"
+          ],
+          "correct": 1,
+          "explanation": "Reason."
+        },
+        {
+          "prompt": "He was hungry, ___ he ordered a pizza.",
+          "options": [
+            "although",
+            "because",
+            "so",
+            "despite"
+          ],
+          "correct": 2,
+          "explanation": "Result."
+        },
+        {
+          "prompt": "___ the traffic, we arrived on time.",
+          "options": [
+            "Although",
+            "Because",
+            "Despite",
+            "So"
+          ],
+          "correct": 2,
+          "explanation": "Despite + noun."
+        },
+        {
+          "prompt": "I called you ___ invite you to dinner.",
+          "options": [
+            "for",
+            "to",
+            "so",
+            "because"
+          ],
+          "correct": 1,
+          "explanation": "Purpose: to + verb."
+        },
+        {
+          "prompt": "She left early ___ she could catch the bus.",
+          "options": [
+            "so that",
+            "because",
+            "although",
+            "despite"
+          ],
+          "correct": 0,
+          "explanation": "Purpose + clause."
+        },
+        {
+          "prompt": "It was late. ___ , we went home.",
+          "options": [
+            "However",
+            "Therefore",
+            "Although",
+            "Despite"
+          ],
+          "correct": 1,
+          "explanation": "Therefore = result."
+        },
+        {
+          "prompt": "The food was excellent. ___ , the service was slow.",
+          "options": [
+            "Moreover",
+            "However",
+            "So",
+            "Because"
+          ],
+          "correct": 1,
+          "explanation": "However = contrast."
+        },
+        {
+          "prompt": "I went to the market ___ buy vegetables.",
+          "options": [
+            "to",
+            "for",
+            "so",
+            "because"
+          ],
+          "correct": 0,
+          "explanation": "Purpose: to + verb."
+        },
+        {
+          "prompt": "___ he studied hard, he didn't pass.",
+          "options": [
+            "Because",
+            "Although",
+            "So",
+            "Therefore"
+          ],
+          "correct": 1,
+          "explanation": "Although = contrast."
+        }
       ]
     },
     {

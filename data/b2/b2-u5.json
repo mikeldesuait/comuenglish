@@ -17,24 +17,60 @@
           "heading": "Inversion after negative adverbs",
           "tableHeader": true,
           "table": [
-            ["Adverb", "Example"],
-            ["Never", "Never have I seen such a beautiful place."],
-            ["Rarely / Seldom", "Rarely does she arrive late."],
-            ["Not only... but also", "Not only did she arrive late, but she also forgot the tickets."],
-            ["Hardly... when", "Hardly had I arrived when the phone rang."],
-            ["No sooner... than", "No sooner had we left than it started raining."],
-            ["Little", "Little did he know what was going to happen."]
+            [
+              "Adverb",
+              "Example"
+            ],
+            [
+              "Never",
+              "Never have I seen such a beautiful place."
+            ],
+            [
+              "Rarely / Seldom",
+              "Rarely does she arrive late."
+            ],
+            [
+              "Not only... but also",
+              "Not only did she arrive late, but she also forgot the tickets."
+            ],
+            [
+              "Hardly... when",
+              "Hardly had I arrived when the phone rang."
+            ],
+            [
+              "No sooner... than",
+              "No sooner had we left than it started raining."
+            ],
+            [
+              "Little",
+              "Little did he know what was going to happen."
+            ]
           ]
         },
         {
           "heading": "Inversion after 'only'",
           "tableHeader": true,
           "table": [
-            ["Structure", "Example"],
-            ["Only when...", "Only when you try will you succeed."],
-            ["Only after...", "Only after the meeting did I understand."],
-            ["Only if...", "Only if you study will you pass."],
-            ["Only then", "Only then did I realise my mistake."]
+            [
+              "Structure",
+              "Example"
+            ],
+            [
+              "Only when...",
+              "Only when you try will you succeed."
+            ],
+            [
+              "Only after...",
+              "Only after the meeting did I understand."
+            ],
+            [
+              "Only if...",
+              "Only if you study will you pass."
+            ],
+            [
+              "Only then",
+              "Only then did I realise my mistake."
+            ]
           ]
         },
         {
@@ -42,10 +78,26 @@
           "body": "Cleft sentences split a sentence into two parts to emphasise one element.",
           "tableHeader": true,
           "table": [
-            ["Type", "Structure", "Example"],
-            ["It-cleft", "It + be + element + that/who", "It was John who called."],
-            ["Wh-cleft", "What + clause + be + element", "What I need is a holiday."],
-            ["The thing/reason", "The thing/reason + be + element", "The reason I left was the noise."]
+            [
+              "Type",
+              "Structure",
+              "Example"
+            ],
+            [
+              "It-cleft",
+              "It + be + element + that/who",
+              "It was John who called."
+            ],
+            [
+              "Wh-cleft",
+              "What + clause + be + element",
+              "What I need is a holiday."
+            ],
+            [
+              "The thing/reason",
+              "The thing/reason + be + element",
+              "The reason I left was the noise."
+            ]
           ]
         },
         {
@@ -73,35 +125,92 @@
         {
           "heading": "Emphatic expressions",
           "list": [
-            { "term": "never", "definition": "Never have I seen such a mess." },
-            { "term": "rarely", "definition": "Rarely does he complain." },
-            { "term": "seldom", "definition": "Seldom do we eat out." },
-            { "term": "hardly", "definition": "Hardly had I arrived when it started raining." },
-            { "term": "no sooner", "definition": "No sooner had she left than he called." },
-            { "term": "little", "definition": "Little did she know the truth." },
-            { "term": "not only", "definition": "Not only is he rich, but he is also generous." }
+            {
+              "term": "never",
+              "definition": "Never have I seen such a mess."
+            },
+            {
+              "term": "rarely",
+              "definition": "Rarely does he complain."
+            },
+            {
+              "term": "seldom",
+              "definition": "Seldom do we eat out."
+            },
+            {
+              "term": "hardly",
+              "definition": "Hardly had I arrived when it started raining."
+            },
+            {
+              "term": "no sooner",
+              "definition": "No sooner had she left than he called."
+            },
+            {
+              "term": "little",
+              "definition": "Little did she know the truth."
+            },
+            {
+              "term": "not only",
+              "definition": "Not only is he rich, but he is also generous."
+            }
           ]
         },
         {
           "heading": "Dramatic emphasis",
           "list": [
-            { "term": "such was", "definition": "Such was her surprise that she couldn't speak." },
-            { "term": "so tired", "definition": "So tired was he that he fell asleep." },
-            { "term": "not until", "definition": "Not until midnight did they finish." },
-            { "term": "only then", "definition": "Only then did I understand." },
-            { "term": "at no time", "definition": "At no time did he lose his calm." },
-            { "term": "under no circumstances", "definition": "Under no circumstances should you open this door." }
+            {
+              "term": "such was",
+              "definition": "Such was her surprise that she couldn't speak."
+            },
+            {
+              "term": "so tired",
+              "definition": "So tired was he that he fell asleep."
+            },
+            {
+              "term": "not until",
+              "definition": "Not until midnight did they finish."
+            },
+            {
+              "term": "only then",
+              "definition": "Only then did I understand."
+            },
+            {
+              "term": "at no time",
+              "definition": "At no time did he lose his calm."
+            },
+            {
+              "term": "under no circumstances",
+              "definition": "Under no circumstances should you open this door."
+            }
           ]
         },
         {
           "heading": "Cleft and focus",
           "list": [
-            { "term": "it was... that", "definition": "It was in 2020 that we met." },
-            { "term": "it is... who", "definition": "It is Maria who makes the decisions." },
-            { "term": "what I need", "definition": "What I need is a break." },
-            { "term": "the reason why", "definition": "The reason why I left was the noise." },
-            { "term": "the thing is", "definition": "The thing is, I don't have time." },
-            { "term": "all I want", "definition": "All I want is some peace." }
+            {
+              "term": "it was... that",
+              "definition": "It was in 2020 that we met."
+            },
+            {
+              "term": "it is... who",
+              "definition": "It is Maria who makes the decisions."
+            },
+            {
+              "term": "what I need",
+              "definition": "What I need is a break."
+            },
+            {
+              "term": "the reason why",
+              "definition": "The reason why I left was the noise."
+            },
+            {
+              "term": "the thing is",
+              "definition": "The thing is, I don't have time."
+            },
+            {
+              "term": "all I want",
+              "definition": "All I want is some peace."
+            }
           ]
         }
       ]
@@ -133,16 +242,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "Never ___ such a difficult exam.", "options": ["I have taken", "have I taken", "I took", "did I take"], "correct": 1, "explanation": "After Never at the start, we invert subject and auxiliary."},
-        {"prompt": "It ___ my sister who told me the news.", "options": ["is", "was", "were", "has"], "correct": 1, "explanation": "Cleft sentence: It + be + noun + who/that."},
-        {"prompt": "Not only ___ late, but he also forgot the tickets.", "options": ["he was", "was he", "he is", "is he"], "correct": 1, "explanation": "After 'Not only' at the start, invert the subject and verb."},
-        {"prompt": "What I need ___ a holiday.", "options": ["is", "are", "were", "be"], "correct": 0, "explanation": "Wh-cleft: What + clause + is + element."},
-        {"prompt": "Only after the meeting ___ I understand the situation.", "options": ["did", "do", "I did", "have"], "correct": 0, "explanation": "After 'Only after' we use inversion."},
-        {"prompt": "Rarely ___ arrive late.", "options": ["she does", "does she", "she is", "is she"], "correct": 1, "explanation": "Inversion after 'Rarely'."},
-        {"prompt": "Hardly ___ arrived when the phone rang.", "options": ["I had", "had I", "I have", "have I"], "correct": 1, "explanation": "Hardly + had + subject (inversion)."},
-        {"prompt": "It was in 2020 ___ we met.", "options": ["who", "that", "which", "what"], "correct": 1, "explanation": "Cleft sentence with time: that."},
-        {"prompt": "Such ___ her surprise that she couldn't speak.", "options": ["was", "were", "is", "has"], "correct": 0, "explanation": "Such + be + subject."},
-        {"prompt": "Little ___ he know what was coming.", "options": ["does", "did", "was", "is"], "correct": 1, "explanation": "Inversion after 'Little'."}
+        {
+          "prompt": "Never ___ such a difficult exam.",
+          "options": [
+            "I have taken",
+            "have I taken",
+            "I took",
+            "did I take"
+          ],
+          "correct": 1,
+          "explanation": "After Never at the start, we invert subject and auxiliary."
+        },
+        {
+          "prompt": "It ___ my sister who told me the news.",
+          "options": [
+            "is",
+            "was",
+            "were",
+            "has"
+          ],
+          "correct": 1,
+          "explanation": "Cleft sentence: It + be + noun + who/that."
+        },
+        {
+          "prompt": "Not only ___ late, but he also forgot the tickets.",
+          "options": [
+            "he was",
+            "was he",
+            "he is",
+            "is he"
+          ],
+          "correct": 1,
+          "explanation": "After 'Not only' at the start, invert the subject and verb."
+        },
+        {
+          "prompt": "What I need ___ a holiday.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "be"
+          ],
+          "correct": 0,
+          "explanation": "Wh-cleft: What + clause + is + element."
+        },
+        {
+          "prompt": "Only after the meeting ___ I understand the situation.",
+          "options": [
+            "did",
+            "do",
+            "I did",
+            "have"
+          ],
+          "correct": 0,
+          "explanation": "After 'Only after' we use inversion."
+        },
+        {
+          "prompt": "Rarely ___ arrive late.",
+          "options": [
+            "she does",
+            "does she",
+            "she is",
+            "is she"
+          ],
+          "correct": 1,
+          "explanation": "Inversion after 'Rarely'."
+        },
+        {
+          "prompt": "Hardly ___ arrived when the phone rang.",
+          "options": [
+            "I had",
+            "had I",
+            "I have",
+            "have I"
+          ],
+          "correct": 1,
+          "explanation": "Hardly + had + subject (inversion)."
+        },
+        {
+          "prompt": "It was in 2020 ___ we met.",
+          "options": [
+            "who",
+            "that",
+            "which",
+            "what"
+          ],
+          "correct": 1,
+          "explanation": "Cleft sentence with time: that."
+        },
+        {
+          "prompt": "Such ___ her surprise that she couldn't speak.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "has"
+          ],
+          "correct": 0,
+          "explanation": "Such + be + subject."
+        },
+        {
+          "prompt": "Little ___ he know what was coming.",
+          "options": [
+            "does",
+            "did",
+            "was",
+            "is"
+          ],
+          "correct": 1,
+          "explanation": "Inversion after 'Little'."
+        }
       ]
     },
     {
@@ -158,16 +367,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "Never ___ I heard such a story.", "options": ["have", "has", "had", "did"], "correct": 0, "explanation": "Inversion after Never with present perfect: have I heard."},
-        {"prompt": "It ___ my brother who broke the window.", "options": ["is", "was", "were", "has"], "correct": 1, "explanation": "Cleft sentence with past: was."},
-        {"prompt": "Not only ___ she sing, but she also dances.", "options": ["can", "does", "is", "has"], "correct": 0, "explanation": "Inversion after Not only with modal: can she sing."},
-        {"prompt": "What I want ___ some peace and quiet.", "options": ["is", "are", "were", "be"], "correct": 0, "explanation": "Wh-cleft: is."},
-        {"prompt": "Only then ___ I realise my mistake.", "options": ["did", "do", "have", "was"], "correct": 0, "explanation": "Inversion after Only then."},
-        {"prompt": "Rarely ___ such a talented singer.", "options": ["we see", "do we see", "we do see", "see we"], "correct": 1, "explanation": "Inversion after Rarely."},
-        {"prompt": "Hardly ___ started when it began to rain.", "options": ["we had", "had we", "we have", "have we"], "correct": 1, "explanation": "Hardly had + subject."},
-        {"prompt": "It was yesterday ___ I saw her.", "options": ["who", "that", "which", "what"], "correct": 1, "explanation": "Cleft sentence with time: that."},
-        {"prompt": "So tired ___ he that he fell asleep immediately.", "options": ["was", "were", "is", "has"], "correct": 0, "explanation": "So + adjective + be + subject."},
-        {"prompt": "Little ___ she know the surprise waiting for her.", "options": ["did", "does", "is", "has"], "correct": 0, "explanation": "Inversion after Little."}
+        {
+          "prompt": "Never ___ I heard such a story.",
+          "options": [
+            "have",
+            "has",
+            "had",
+            "did"
+          ],
+          "correct": 0,
+          "explanation": "Inversion after Never with present perfect: have I heard."
+        },
+        {
+          "prompt": "It ___ my brother who broke the window.",
+          "options": [
+            "is",
+            "was",
+            "were",
+            "has"
+          ],
+          "correct": 1,
+          "explanation": "Cleft sentence with past: was."
+        },
+        {
+          "prompt": "Not only ___ she sing, but she also dances.",
+          "options": [
+            "can",
+            "does",
+            "is",
+            "has"
+          ],
+          "correct": 0,
+          "explanation": "Inversion after Not only with modal: can she sing."
+        },
+        {
+          "prompt": "What I want ___ some peace and quiet.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "be"
+          ],
+          "correct": 0,
+          "explanation": "Wh-cleft: is."
+        },
+        {
+          "prompt": "Only then ___ I realise my mistake.",
+          "options": [
+            "did",
+            "do",
+            "have",
+            "was"
+          ],
+          "correct": 0,
+          "explanation": "Inversion after Only then."
+        },
+        {
+          "prompt": "Rarely ___ such a talented singer.",
+          "options": [
+            "we see",
+            "do we see",
+            "we do see",
+            "see we"
+          ],
+          "correct": 1,
+          "explanation": "Inversion after Rarely."
+        },
+        {
+          "prompt": "Hardly ___ started when it began to rain.",
+          "options": [
+            "we had",
+            "had we",
+            "we have",
+            "have we"
+          ],
+          "correct": 1,
+          "explanation": "Hardly had + subject."
+        },
+        {
+          "prompt": "It was yesterday ___ I saw her.",
+          "options": [
+            "who",
+            "that",
+            "which",
+            "what"
+          ],
+          "correct": 1,
+          "explanation": "Cleft sentence with time: that."
+        },
+        {
+          "prompt": "So tired ___ he that he fell asleep immediately.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "has"
+          ],
+          "correct": 0,
+          "explanation": "So + adjective + be + subject."
+        },
+        {
+          "prompt": "Little ___ she know the surprise waiting for her.",
+          "options": [
+            "did",
+            "does",
+            "is",
+            "has"
+          ],
+          "correct": 0,
+          "explanation": "Inversion after Little."
+        }
       ]
     },
     {

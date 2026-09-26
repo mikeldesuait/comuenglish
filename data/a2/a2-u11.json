@@ -17,9 +17,21 @@
           "heading": "Form",
           "tableHeader": true,
           "table": [
-            ["Subject", "Verb", "Example"],
-            ["I / He / She / It", "was + verb-ing", "I was reading a book."],
-            ["You / We / They", "were + verb-ing", "They were playing football."]
+            [
+              "Subject",
+              "Verb",
+              "Example"
+            ],
+            [
+              "I / He / She / It",
+              "was + verb-ing",
+              "I was reading a book."
+            ],
+            [
+              "You / We / They",
+              "were + verb-ing",
+              "They were playing football."
+            ]
           ]
         },
         {
@@ -35,10 +47,26 @@
           "body": "Past Continuous = background action in progress. Past Simple = short action or interruption.",
           "tableHeader": true,
           "table": [
-            ["Tense", "Use", "Example"],
-            ["Past Continuous", "action in progress", "I was walking home."],
-            ["Past Simple", "interruption", "...when I saw an old friend."],
-            ["Both", "combined", "I was walking home when I saw an old friend."]
+            [
+              "Tense",
+              "Use",
+              "Example"
+            ],
+            [
+              "Past Continuous",
+              "action in progress",
+              "I was walking home."
+            ],
+            [
+              "Past Simple",
+              "interruption",
+              "...when I saw an old friend."
+            ],
+            [
+              "Both",
+              "combined",
+              "I was walking home when I saw an old friend."
+            ]
           ]
         },
         {
@@ -74,34 +102,88 @@
         {
           "heading": "Actions in progress",
           "list": [
-            { "term": "was walking", "definition": "I was walking to school at 8 am." },
-            { "term": "was reading", "definition": "She was reading a book." },
-            { "term": "was cooking", "definition": "My mother was cooking dinner." },
-            { "term": "was watching", "definition": "We were watching a film." },
-            { "term": "was sleeping", "definition": "The baby was sleeping." },
-            { "term": "was studying", "definition": "They were studying for the exam." },
-            { "term": "was raining", "definition": "It was raining yesterday." },
-            { "term": "was talking", "definition": "He was talking on the phone." }
+            {
+              "term": "was walking",
+              "definition": "I was walking to school at 8 am."
+            },
+            {
+              "term": "was reading",
+              "definition": "She was reading a book."
+            },
+            {
+              "term": "was cooking",
+              "definition": "My mother was cooking dinner."
+            },
+            {
+              "term": "was watching",
+              "definition": "We were watching a film."
+            },
+            {
+              "term": "was sleeping",
+              "definition": "The baby was sleeping."
+            },
+            {
+              "term": "was studying",
+              "definition": "They were studying for the exam."
+            },
+            {
+              "term": "was raining",
+              "definition": "It was raining yesterday."
+            },
+            {
+              "term": "was talking",
+              "definition": "He was talking on the phone."
+            }
           ]
         },
         {
           "heading": "Interruptions",
           "list": [
-            { "term": "the phone rang", "definition": "I was reading when the phone rang." },
-            { "term": "someone knocked", "definition": "We were having dinner when someone knocked." },
-            { "term": "the lights went out", "definition": "She was studying when the lights went out." },
-            { "term": "I saw an accident", "definition": "I was walking home when I saw an accident." },
-            { "term": "it started to rain", "definition": "We were playing when it started to rain." }
+            {
+              "term": "the phone rang",
+              "definition": "I was reading when the phone rang."
+            },
+            {
+              "term": "someone knocked",
+              "definition": "We were having dinner when someone knocked."
+            },
+            {
+              "term": "the lights went out",
+              "definition": "She was studying when the lights went out."
+            },
+            {
+              "term": "I saw an accident",
+              "definition": "I was walking home when I saw an accident."
+            },
+            {
+              "term": "it started to rain",
+              "definition": "We were playing when it started to rain."
+            }
           ]
         },
         {
           "heading": "Scene description",
           "list": [
-            { "term": "the sun was shining", "definition": "The sun was shining and birds were singing." },
-            { "term": "people were walking", "definition": "People were walking in the park." },
-            { "term": "children were playing", "definition": "Children were playing in the garden." },
-            { "term": "music was playing", "definition": "Music was playing in the background." },
-            { "term": "it was getting dark", "definition": "It was getting dark when we arrived." }
+            {
+              "term": "the sun was shining",
+              "definition": "The sun was shining and birds were singing."
+            },
+            {
+              "term": "people were walking",
+              "definition": "People were walking in the park."
+            },
+            {
+              "term": "children were playing",
+              "definition": "Children were playing in the garden."
+            },
+            {
+              "term": "music was playing",
+              "definition": "Music was playing in the background."
+            },
+            {
+              "term": "it was getting dark",
+              "definition": "It was getting dark when we arrived."
+            }
           ]
         }
       ]
@@ -133,16 +215,116 @@
       "name": "Guided practice",
       "type": "exercise",
       "questions": [
-        {"prompt": "I ___ TV when the phone rang.", "options": ["watched", "was watching", "watch", "watching"], "correct": 1, "explanation": "Background action in Past Continuous."},
-        {"prompt": "She ___ a book at 8 pm yesterday.", "options": ["read", "was reading", "reads", "is reading"], "correct": 1, "explanation": "Action in progress at a specific time in the past."},
-        {"prompt": "They ___ football while we were watching TV.", "options": ["played", "were playing", "play", "playing"], "correct": 1, "explanation": "Two simultaneous actions use Past Continuous."},
-        {"prompt": "The phone ___ while I was having dinner.", "options": ["rang", "was ringing", "rings", "ring"], "correct": 0, "explanation": "Interruption uses Past Simple."},
-        {"prompt": "What ___ you doing at 10 pm?", "options": ["was", "were", "are", "is"], "correct": 1, "explanation": "With 'you' we use 'were'."},
-        {"prompt": "It ___ when we left the house.", "options": ["rained", "was raining", "rains", "rain"], "correct": 1, "explanation": "Action in progress: was raining."},
-        {"prompt": "We ___ sleeping when you called.", "options": ["was not", "were not", "are not", "not"], "correct": 1, "explanation": "With 'we' the negative is 'were not'."},
-        {"prompt": "The children ___ in the garden.", "options": ["played", "were playing", "play", "playing"], "correct": 1, "explanation": "Scene description uses Past Continuous."},
-        {"prompt": "I ___ reading when the lights went out.", "options": ["was", "were", "am", "is"], "correct": 0, "explanation": "With 'I' we use 'was'."},
-        {"prompt": "While she ___, the doorbell rang.", "options": ["cooked", "was cooking", "cooks", "cooking"], "correct": 1, "explanation": "After 'while' we often use Past Continuous."}
+        {
+          "prompt": "I ___ TV when the phone rang.",
+          "options": [
+            "watched",
+            "was watching",
+            "watch",
+            "watching"
+          ],
+          "correct": 1,
+          "explanation": "Background action in Past Continuous."
+        },
+        {
+          "prompt": "She ___ a book at 8 pm yesterday.",
+          "options": [
+            "read",
+            "was reading",
+            "reads",
+            "is reading"
+          ],
+          "correct": 1,
+          "explanation": "Action in progress at a specific time in the past."
+        },
+        {
+          "prompt": "They ___ football while we were watching TV.",
+          "options": [
+            "played",
+            "were playing",
+            "play",
+            "playing"
+          ],
+          "correct": 1,
+          "explanation": "Two simultaneous actions use Past Continuous."
+        },
+        {
+          "prompt": "The phone ___ while I was having dinner.",
+          "options": [
+            "rang",
+            "was ringing",
+            "rings",
+            "ring"
+          ],
+          "correct": 0,
+          "explanation": "Interruption uses Past Simple."
+        },
+        {
+          "prompt": "What ___ you doing at 10 pm?",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "is"
+          ],
+          "correct": 1,
+          "explanation": "With 'you' we use 'were'."
+        },
+        {
+          "prompt": "It ___ when we left the house.",
+          "options": [
+            "rained",
+            "was raining",
+            "rains",
+            "rain"
+          ],
+          "correct": 1,
+          "explanation": "Action in progress: was raining."
+        },
+        {
+          "prompt": "We ___ sleeping when you called.",
+          "options": [
+            "was not",
+            "were not",
+            "are not",
+            "not"
+          ],
+          "correct": 1,
+          "explanation": "With 'we' the negative is 'were not'."
+        },
+        {
+          "prompt": "The children ___ in the garden.",
+          "options": [
+            "played",
+            "were playing",
+            "play",
+            "playing"
+          ],
+          "correct": 1,
+          "explanation": "Scene description uses Past Continuous."
+        },
+        {
+          "prompt": "I ___ reading when the lights went out.",
+          "options": [
+            "was",
+            "were",
+            "am",
+            "is"
+          ],
+          "correct": 0,
+          "explanation": "With 'I' we use 'was'."
+        },
+        {
+          "prompt": "While she ___, the doorbell rang.",
+          "options": [
+            "cooked",
+            "was cooking",
+            "cooks",
+            "cooking"
+          ],
+          "correct": 1,
+          "explanation": "After 'while' we often use Past Continuous."
+        }
       ]
     },
     {
@@ -158,16 +340,116 @@
       "name": "Mini-test",
       "type": "exercise",
       "questions": [
-        {"prompt": "I ___ dinner when you called.", "options": ["cooked", "was cooking", "cook", "cooking"], "correct": 1, "explanation": "Action in progress when interrupted."},
-        {"prompt": "They ___ tennis at 5 pm yesterday.", "options": ["played", "were playing", "play", "playing"], "correct": 1, "explanation": "Action in progress at a specific time."},
-        {"prompt": "She ___ TV when the lights went out.", "options": ["watched", "was watching", "watches", "watch"], "correct": 1, "explanation": "Background action in Past Continuous."},
-        {"prompt": "What ___ you doing at 9 am?", "options": ["was", "were", "are", "is"], "correct": 1, "explanation": "With 'you' we use 'were'."},
-        {"prompt": "It ___ heavily when we arrived.", "options": ["rained", "was raining", "rains", "rain"], "correct": 1, "explanation": "Action in progress: was raining."},
-        {"prompt": "While I ___, the phone rang.", "options": ["read", "was reading", "reads", "reading"], "correct": 1, "explanation": "After 'while' we use Past Continuous."},
-        {"prompt": "We ___ studying when the teacher came in.", "options": ["was", "were", "are", "is"], "correct": 1, "explanation": "With 'we' we use 'were'."},
-        {"prompt": "He ___ sleeping at midnight.", "options": ["was", "were", "is", "are"], "correct": 0, "explanation": "With 'he' we use 'was'."},
-        {"prompt": "They ___ not listening to the teacher.", "options": ["was", "were", "are", "is"], "correct": 1, "explanation": "With 'they' the negative is 'were not'."},
-        {"prompt": "I ___ walking home when I saw the accident.", "options": ["was", "were", "am", "is"], "correct": 0, "explanation": "With 'I' we use 'was'."}
+        {
+          "prompt": "I ___ dinner when you called.",
+          "options": [
+            "cooked",
+            "was cooking",
+            "cook",
+            "cooking"
+          ],
+          "correct": 1,
+          "explanation": "Action in progress when interrupted."
+        },
+        {
+          "prompt": "They ___ tennis at 5 pm yesterday.",
+          "options": [
+            "played",
+            "were playing",
+            "play",
+            "playing"
+          ],
+          "correct": 1,
+          "explanation": "Action in progress at a specific time."
+        },
+        {
+          "prompt": "She ___ TV when the lights went out.",
+          "options": [
+            "watched",
+            "was watching",
+            "watches",
+            "watch"
+          ],
+          "correct": 1,
+          "explanation": "Background action in Past Continuous."
+        },
+        {
+          "prompt": "What ___ you doing at 9 am?",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "is"
+          ],
+          "correct": 1,
+          "explanation": "With 'you' we use 'were'."
+        },
+        {
+          "prompt": "It ___ heavily when we arrived.",
+          "options": [
+            "rained",
+            "was raining",
+            "rains",
+            "rain"
+          ],
+          "correct": 1,
+          "explanation": "Action in progress: was raining."
+        },
+        {
+          "prompt": "While I ___, the phone rang.",
+          "options": [
+            "read",
+            "was reading",
+            "reads",
+            "reading"
+          ],
+          "correct": 1,
+          "explanation": "After 'while' we use Past Continuous."
+        },
+        {
+          "prompt": "We ___ studying when the teacher came in.",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "is"
+          ],
+          "correct": 1,
+          "explanation": "With 'we' we use 'were'."
+        },
+        {
+          "prompt": "He ___ sleeping at midnight.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "are"
+          ],
+          "correct": 0,
+          "explanation": "With 'he' we use 'was'."
+        },
+        {
+          "prompt": "They ___ not listening to the teacher.",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "is"
+          ],
+          "correct": 1,
+          "explanation": "With 'they' the negative is 'were not'."
+        },
+        {
+          "prompt": "I ___ walking home when I saw the accident.",
+          "options": [
+            "was",
+            "were",
+            "am",
+            "is"
+          ],
+          "correct": 0,
+          "explanation": "With 'I' we use 'was'."
+        }
       ]
     },
     {

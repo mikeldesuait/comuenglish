@@ -1,20 +1,125 @@
 {
   "level": "a2",
   "units": [
-    { "id": "a2-u1", "title": "1. Introducing yourself and describing people", "file": "a2-u1.json", "phases": 7, "topic": "Basics", "grammar": "To Be, possessives, Have got" },
-    { "id": "a2-u2", "title": "2. Daily routines and free time", "file": "a2-u2.json", "phases": 7, "topic": "Present", "grammar": "Present Simple, adverbs of frequency" },
-    { "id": "a2-u3", "title": "3. Here and now", "file": "a2-u3.json", "phases": 7, "topic": "Present", "grammar": "Present Continuous" },
-    { "id": "a2-u4", "title": "4. Past and storytelling", "file": "a2-u4.json", "phases": 7, "topic": "Past", "grammar": "Past Simple regular and irregular" },
-    { "id": "a2-u5", "title": "5. Plans and future", "file": "a2-u5.json", "phases": 7, "topic": "Future", "grammar": "Going to, Present Continuous for future" },
-    { "id": "a2-u6", "title": "6. Likes and preferences", "file": "a2-u6.json", "phases": 7, "topic": "Opinions", "grammar": "Like + gerund, Would like" },
-    { "id": "a2-u7", "title": "7. Comparing and describing", "file": "a2-u7.json", "phases": 7, "topic": "Description", "grammar": "Comparatives, superlatives, countable/uncountable" },
-    { "id": "a2-u8", "title": "8. Obligation and permission", "file": "a2-u8.json", "phases": 7, "topic": "Modals", "grammar": "Can, Must, Must not, Imperatives" },
-    { "id": "a2-u9", "title": "9. Existence and quantity", "file": "a2-u9.json", "phases": 7, "topic": "Quantity", "grammar": "There is/are, Some/Any, How much/many" },
-    { "id": "a2-u10", "title": "10. Future predictions", "file": "a2-u10.json", "phases": 7, "topic": "Future", "grammar": "Will, won't" },
-    { "id": "a2-u11", "title": "11. Past continuous", "file": "a2-u11.json", "phases": 7, "topic": "Past", "grammar": "Past Continuous vs Past Simple" },
-    { "id": "a2-u12", "title": "12. Life experiences", "file": "a2-u12.json", "phases": 7, "topic": "Present Perfect", "grammar": "Present Perfect (ever, never, just)" },
-    { "id": "a2-u13", "title": "13. Prepositions and questions", "file": "a2-u13.json", "phases": 7, "topic": "Grammar", "grammar": "In/on/at, question words, adverbs of manner" },
-    { "id": "a2-u14", "title": "14. Travel and directions", "file": "a2-u14.json", "phases": 7, "topic": "Vocabulary", "grammar": "Travel vocab, giving directions" },
-    { "id": "a2-u15", "title": "15. Health and emotions", "file": "a2-u15.json", "phases": 7, "topic": "Vocabulary", "grammar": "Body, illness, feelings" }
+    {
+      "id": "a2-u1",
+      "title": "1. Introducing yourself and describing people",
+      "file": "a2-u1.json",
+      "phases": 7,
+      "topic": "Basics",
+      "grammar": "To Be, possessives, Have got"
+    },
+    {
+      "id": "a2-u2",
+      "title": "2. Daily routines and free time",
+      "file": "a2-u2.json",
+      "phases": 7,
+      "topic": "Present",
+      "grammar": "Present Simple, adverbs of frequency"
+    },
+    {
+      "id": "a2-u3",
+      "title": "3. Here and now",
+      "file": "a2-u3.json",
+      "phases": 7,
+      "topic": "Present",
+      "grammar": "Present Continuous"
+    },
+    {
+      "id": "a2-u4",
+      "title": "4. Past and storytelling",
+      "file": "a2-u4.json",
+      "phases": 7,
+      "topic": "Past",
+      "grammar": "Past Simple regular and irregular"
+    },
+    {
+      "id": "a2-u5",
+      "title": "5. Plans and future",
+      "file": "a2-u5.json",
+      "phases": 7,
+      "topic": "Future",
+      "grammar": "Going to, Present Continuous for future"
+    },
+    {
+      "id": "a2-u6",
+      "title": "6. Likes and preferences",
+      "file": "a2-u6.json",
+      "phases": 7,
+      "topic": "Opinions",
+      "grammar": "Like + gerund, Would like"
+    },
+    {
+      "id": "a2-u7",
+      "title": "7. Comparing and describing",
+      "file": "a2-u7.json",
+      "phases": 7,
+      "topic": "Description",
+      "grammar": "Comparatives, superlatives, countable/uncountable"
+    },
+    {
+      "id": "a2-u8",
+      "title": "8. Obligation and permission",
+      "file": "a2-u8.json",
+      "phases": 7,
+      "topic": "Modals",
+      "grammar": "Can, Must, Must not, Imperatives"
+    },
+    {
+      "id": "a2-u9",
+      "title": "9. Existence and quantity",
+      "file": "a2-u9.json",
+      "phases": 7,
+      "topic": "Quantity",
+      "grammar": "There is/are, Some/Any, How much/many"
+    },
+    {
+      "id": "a2-u10",
+      "title": "10. Future predictions",
+      "file": "a2-u10.json",
+      "phases": 7,
+      "topic": "Future",
+      "grammar": "Will, won't"
+    },
+    {
+      "id": "a2-u11",
+      "title": "11. Past continuous",
+      "file": "a2-u11.json",
+      "phases": 7,
+      "topic": "Past",
+      "grammar": "Past Continuous vs Past Simple"
+    },
+    {
+      "id": "a2-u12",
+      "title": "12. Life experiences",
+      "file": "a2-u12.json",
+      "phases": 7,
+      "topic": "Present Perfect",
+      "grammar": "Present Perfect (ever, never, just)"
+    },
+    {
+      "id": "a2-u13",
+      "title": "13. Prepositions and questions",
+      "file": "a2-u13.json",
+      "phases": 7,
+      "topic": "Grammar",
+      "grammar": "In/on/at, question words, adverbs of manner"
+    },
+    {
+      "id": "a2-u14",
+      "title": "14. Travel and directions",
+      "file": "a2-u14.json",
+      "phases": 7,
+      "topic": "Vocabulary",
+      "grammar": "Travel vocab, giving directions"
+    },
+    {
+      "id": "a2-u15",
+      "title": "15. Health and emotions",
+      "file": "a2-u15.json",
+      "phases": 7,
+      "topic": "Vocabulary",
+      "grammar": "Body, illness, feelings"
+    }
   ]
 }

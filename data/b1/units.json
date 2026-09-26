@@ -1,15 +1,85 @@
 {
   "level": "b1",
   "units": [
-    { "id": "b1-u1", "title": "1. Experiences and achievements", "file": "b1-u1.json", "phases": 7, "topic": "Present Perfect", "grammar": "Present Perfect vs Past Simple" },
-    { "id": "b1-u2", "title": "2. Past narration", "file": "b1-u2.json", "phases": 7, "topic": "Past", "grammar": "Past Continuous vs Past Simple" },
-    { "id": "b1-u3", "title": "3. Plans and predictions", "file": "b1-u3.json", "phases": 7, "topic": "Future", "grammar": "Will, Going to, Present Continuous" },
-    { "id": "b1-u4", "title": "4. Obligation and advice", "file": "b1-u4.json", "phases": 7, "topic": "Modals", "grammar": "Must, Have to, Should" },
-    { "id": "b1-u5", "title": "5. Possibility and deduction", "file": "b1-u5.json", "phases": 7, "topic": "Modals", "grammar": "Might, May, Could, Must (deduction)" },
-    { "id": "b1-u6", "title": "6. Conditionals and consequences", "file": "b1-u6.json", "phases": 7, "topic": "Conditionals", "grammar": "Zero, First, Second conditional" },
-    { "id": "b1-u7", "title": "7. Passive voice and processes", "file": "b1-u7.json", "phases": 7, "topic": "Passive", "grammar": "Present and Past passive" },
-    { "id": "b1-u8", "title": "8. Reported speech", "file": "b1-u8.json", "phases": 7, "topic": "Reported Speech", "grammar": "Statements, questions, commands" },
-    { "id": "b1-u9", "title": "9. Connectors and cohesion", "file": "b1-u9.json", "phases": 7, "topic": "Connectors", "grammar": "However, although, because, so" },
-    { "id": "b1-u10", "title": "10. Comparisons and preferences", "file": "b1-u10.json", "phases": 7, "topic": "Comparisons", "grammar": "Both/Either/Neither, question tags" }
+    {
+      "id": "b1-u1",
+      "title": "1. Experiences and achievements",
+      "file": "b1-u1.json",
+      "phases": 7,
+      "topic": "Present Perfect",
+      "grammar": "Present Perfect vs Past Simple"
+    },
+    {
+      "id": "b1-u2",
+      "title": "2. Past narration",
+      "file": "b1-u2.json",
+      "phases": 7,
+      "topic": "Past",
+      "grammar": "Past Continuous vs Past Simple"
+    },
+    {
+      "id": "b1-u3",
+      "title": "3. Plans and predictions",
+      "file": "b1-u3.json",
+      "phases": 7,
+      "topic": "Future",
+      "grammar": "Will, Going to, Present Continuous"
+    },
+    {
+      "id": "b1-u4",
+      "title": "4. Obligation and advice",
+      "file": "b1-u4.json",
+      "phases": 7,
+      "topic": "Modals",
+      "grammar": "Must, Have to, Should"
+    },
+    {
+      "id": "b1-u5",
+      "title": "5. Possibility and deduction",
+      "file": "b1-u5.json",
+      "phases": 7,
+      "topic": "Modals",
+      "grammar": "Might, May, Could, Must (deduction)"
+    },
+    {
+      "id": "b1-u6",
+      "title": "6. Conditionals and consequences",
+      "file": "b1-u6.json",
+      "phases": 7,
+      "topic": "Conditionals",
+      "grammar": "Zero, First, Second conditional"
+    },
+    {
+      "id": "b1-u7",
+      "title": "7. Passive voice and processes",
+      "file": "b1-u7.json",
+      "phases": 7,
+      "topic": "Passive",
+      "grammar": "Present and Past passive"
+    },
+    {
+      "id": "b1-u8",
+      "title": "8. Reported speech",
+      "file": "b1-u8.json",
+      "phases": 7,
+      "topic": "Reported Speech",
+      "grammar": "Statements, questions, commands"
+    },
+    {
+      "id": "b1-u9",
+      "title": "9. Connectors and cohesion",
+      "file": "b1-u9.json",
+      "phases": 7,
+      "topic": "Connectors",
+      "grammar": "However, although, because, so"
+    },
+    {
+      "id": "b1-u10",
+      "title": "10. Comparisons and preferences",
+      "file": "b1-u10.json",
+      "phases": 7,
+      "topic": "Comparisons",
+      "grammar": "Both/Either/Neither, question tags"
+    }
   ]
 }

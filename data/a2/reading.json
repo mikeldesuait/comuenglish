@@ -10,31 +10,31 @@
         {
           "sign": "NO PARKING",
           "options": [
-            "You cannot park here",
             "Parking is only for customers",
+            "You cannot park here",
             "You can park here for free"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "No parking means it is forbidden to park."
         },
         {
           "sign": "CLOSED FOR LUNCH 12-2 PM",
           "options": [
+            "The shop is open at 1 PM",
             "The shop closes at 2 PM only",
-            "The shop is closed at 1 PM",
-            "The shop is open at 1 PM"
+            "The shop is closed at 1 PM"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Between 12 and 2 PM the shop is closed. At 1 PM it is closed."
         },
         {
           "sign": "PLEASE DO NOT FEED THE ANIMALS",
           "options": [
-            "You can feed the animals",
             "Feeding is allowed only at night",
-            "You must not feed the animals"
+            "You must not feed the animals",
+            "You can feed the animals"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Do not feed means it is prohibited."
         }
       ]
@@ -49,18 +49,18 @@
         {
           "question": "What did Emma do on Saturday?",
           "options": [
-            "She had lunch in a restaurant",
             "She went to the cinema",
+            "She had lunch in a restaurant",
             "She visited her grandparents"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The email says: On Saturday I went to the cinema with my brother."
         },
         {
           "question": "Why did the family go to a restaurant on Sunday?",
           "options": [
-            "It was Emma birthday",
             "They did not want to cook",
+            "It was Emma birthday",
             "It was her mother birthday"
           ],
           "correct": 2,
@@ -69,11 +69,11 @@
         {
           "question": "What is Emma going to do next weekend?",
           "options": [
+            "Visit her grandparents",
             "Go to the cinema again",
-            "Have lunch with Sarah",
-            "Visit her grandparents"
+            "Have lunch with Sarah"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The email says: Next weekend I am going to visit my grandparents."
         }
       ]
@@ -98,19 +98,19 @@
         {
           "question": "What should students bring?",
           "options": [
-            "A school uniform",
             "A packed lunch",
-            "Money for lunch"
+            "Money for lunch",
+            "A school uniform"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The notice says: Bring a packed lunch."
         },
         {
           "question": "When should students pay?",
           "options": [
-            "After the trip",
+            "On Saturday 15th May",
             "Before Wednesday",
-            "On Saturday 15th May"
+            "After the trip"
           ],
           "correct": 1,
           "explanation": "The notice says: Pay at the school office before Wednesday."
@@ -127,31 +127,31 @@
         {
           "question": "Where is Lucy on holiday?",
           "options": [
-            "In Spain",
             "In Italy",
-            "In France"
+            "In France",
+            "In Spain"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The email says 'I am on holiday in Spain with my family.'"
         },
         {
           "question": "What did Lucy do yesterday?",
           "options": [
+            "She ate pizza",
             "She visited a castle",
-            "She swam in the sea",
-            "She ate pizza"
+            "She swam in the sea"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The email says 'Yesterday, we went to the beach. I swam in the sea.'"
         },
         {
           "question": "What are they going to do tomorrow?",
           "options": [
-            "Go to the beach",
             "Eat paella",
-            "Visit a castle"
+            "Visit a castle",
+            "Go to the beach"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The email says 'Tomorrow, we are going to visit a castle in the mountains.'"
         }
       ]
@@ -166,31 +166,31 @@
         {
           "question": "When did Ben start his new school?",
           "options": [
-            "Last week",
             "Last month",
+            "Last week",
             "Yesterday"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The letter says 'I started my new school last week.'"
         },
         {
           "question": "What is Ben's favourite subject?",
           "options": [
-            "Art",
             "Science",
-            "Football"
+            "Football",
+            "Art"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The letter says 'My favourite subject is science.'"
         },
         {
           "question": "What does Ben do at break time?",
           "options": [
-            "He does experiments",
+            "He plays football",
             "He draws pictures",
-            "He plays football"
+            "He does experiments"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The letter says 'We play football at break time.'"
         }
       ]
@@ -205,31 +205,31 @@
         {
           "question": "What does Anna want to buy?",
           "options": [
-            "A pair of shoes",
             "A jacket",
-            "A blue dress"
+            "A blue dress",
+            "A pair of shoes"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The email says 'I want to buy a new jacket for winter.'"
         },
         {
           "question": "Why didn't Anna buy the blue jacket?",
           "options": [
-            "It was too expensive",
             "It was too small",
-            "She didn't like the colour"
+            "She didn't like the colour",
+            "It was too expensive"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The email says 'I saw a blue one in the shop window, but it was too expensive.'"
         },
         {
           "question": "What did Kate buy?",
           "options": [
+            "Shoes",
             "A jacket",
-            "A dress",
-            "Shoes"
+            "A dress"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The email says 'Kate bought a pair of shoes.'"
         }
       ]
@@ -244,9 +244,9 @@
         {
           "question": "What time does the library open on Saturday?",
           "options": [
-            "9 am",
+            "8 pm",
             "10 am",
-            "8 pm"
+            "9 am"
           ],
           "correct": 1,
           "explanation": "The notice says: Saturday: 10 am to 5 pm."
@@ -254,21 +254,21 @@
         {
           "question": "How long can you keep a book?",
           "options": [
-            "One week",
+            "Three weeks",
             "Two weeks",
-            "Three weeks"
+            "One week"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The notice says: You can keep a book for three weeks."
         },
         {
           "question": "Who can use the computers for free?",
           "options": [
-            "Everyone",
             "Students",
-            "Only adults"
+            "Only adults",
+            "Everyone"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The notice says: Students can use the computers for free."
         }
       ]
@@ -293,21 +293,21 @@
         {
           "question": "What does Laura ask Tom to bring?",
           "options": [
-            "Pizza and cake",
             "Drinks",
-            "Some music"
+            "Some music",
+            "Pizza and cake"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The email says: Can you bring some music?"
         },
         {
           "question": "When should Tom reply?",
           "options": [
+            "On Sunday",
             "Before Friday",
-            "Before Saturday",
-            "On Sunday"
+            "Before Saturday"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The email says: Please tell me if you can come before Friday."
         }
       ]
@@ -322,11 +322,11 @@
         {
           "question": "When does the writer go swimming?",
           "options": [
-            "Every day",
             "On Tuesdays and Thursdays",
-            "Only in summer"
+            "Only in summer",
+            "Every day"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The text says: I go to the pool every Tuesday and Thursday."
         },
         {
@@ -361,19 +361,19 @@
         {
           "question": "How old is Max?",
           "options": [
-            "Three weeks old",
             "Three months old",
-            "Three years old"
+            "Three years old",
+            "Three weeks old"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The email says: he is three months old."
         },
         {
           "question": "What does Max love doing?",
           "options": [
-            "Sleeping",
+            "Eating",
             "Playing with a ball",
-            "Eating"
+            "Sleeping"
           ],
           "correct": 1,
           "explanation": "The email says: He loves playing with a ball."
@@ -381,11 +381,11 @@
         {
           "question": "What does Sophie invite Emma to do?",
           "options": [
+            "Buy a puppy",
             "Come and meet Max",
-            "Go to the park",
-            "Buy a puppy"
+            "Go to the park"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The email says: Can you come and meet him next weekend?"
         }
       ]
@@ -400,9 +400,9 @@
         {
           "question": "What time does the bus leave?",
           "options": [
-            "8:30 am",
+            "4 pm",
             "8:45 am",
-            "4 pm"
+            "8:30 am"
           ],
           "correct": 1,
           "explanation": "The notice says: The bus leaves at 8:45 am."
@@ -410,21 +410,21 @@
         {
           "question": "What should students bring?",
           "options": [
+            "A school uniform",
             "Money for lunch",
-            "A packed lunch",
-            "A school uniform"
+            "A packed lunch"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The notice says: Bring a packed lunch and some water."
         },
         {
           "question": "When do students have to pay?",
           "options": [
+            "After the trip",
             "On Friday 12th March",
-            "Before Tuesday",
-            "After the trip"
+            "Before Tuesday"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The notice says: Pay at the school office before Tuesday."
         }
       ]
@@ -439,31 +439,31 @@
         {
           "question": "What did the writer do on Saturday morning?",
           "options": [
-            "Played football",
             "Cleaned his bedroom",
+            "Played football",
             "Visited grandparents"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The text says: On Saturday morning, I cleaned my bedroom."
         },
         {
           "question": "How long did they play football?",
           "options": [
+            "Three hours",
             "One hour",
-            "Two hours",
-            "Three hours"
+            "Two hours"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The text says: We played football for two hours."
         },
         {
           "question": "Why did the writer go to bed early on Sunday?",
           "options": [
-            "Because he was tired",
             "Because he had school",
-            "Because it was raining"
+            "Because it was raining",
+            "Because he was tired"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The text says: I went to bed early because I was very tired."
         }
       ]
@@ -478,31 +478,31 @@
         {
           "question": "When does Maria start her new job?",
           "options": [
-            "Next Monday",
             "Next Friday",
-            "Tomorrow"
+            "Tomorrow",
+            "Next Monday"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The email says: I start next Monday."
         },
         {
           "question": "What is Maria going to do?",
           "options": [
-            "She is going to be a cook",
             "She is going to be a waiter",
+            "She is going to be a cook",
             "She is going to be a manager"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The email says: I am going to be a waiter."
         },
         {
           "question": "How does Maria feel?",
           "options": [
-            "Only nervous",
+            "Nervous and excited",
             "Only excited",
-            "Nervous and excited"
+            "Only nervous"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The email says: I am a little nervous, but also very excited."
         }
       ]
@@ -517,19 +517,19 @@
         {
           "question": "What is Ahmed favourite way to learn English?",
           "options": [
+            "Writing letters",
             "Reading grammar books",
-            "Watching films",
-            "Writing letters"
+            "Watching films"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The text says: My favourite way to learn is watching films in English."
         },
         {
           "question": "What exam does Ahmed want to take?",
           "options": [
             "A2 Key",
-            "B1 Preliminary",
-            "B2 First"
+            "B2 First",
+            "B1 Preliminary"
           ],
           "correct": 0,
           "explanation": "The text says: I want to take the Cambridge A2 exam."
@@ -538,10 +538,10 @@
           "question": "Why is Ahmed studying hard?",
           "options": [
             "Because his teacher told him to",
-            "Because he wants to pass",
-            "Because he likes studying"
+            "Because he likes studying",
+            "Because he wants to pass"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The text says: I am studying hard because I want to pass."
         }
       ]
@@ -556,18 +556,18 @@
         {
           "question": "Which train is delayed?",
           "options": [
-            "The 6:15 pm train to Manchester",
+            "The 6:15 am train",
             "The 6:45 pm train to London",
-            "The 6:15 am train"
+            "The 6:15 pm train to Manchester"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The notice says: the 6:15 pm train to Manchester is delayed."
         },
         {
           "question": "What time will the train leave now?",
           "options": [
-            "6:15 pm",
             "6:30 pm",
+            "6:15 pm",
             "6:45 pm"
           ],
           "correct": 2,
@@ -576,11 +576,11 @@
         {
           "question": "What can passengers with 6:15 tickets do?",
           "options": [
-            "Get a refund",
             "Take any later train today",
-            "Take the train tomorrow"
+            "Take the train tomorrow",
+            "Get a refund"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The notice says: Passengers with tickets for the 6:15 train can take any later train today."
         }
       ]
