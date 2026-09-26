@@ -6,11 +6,13 @@ import { renderComprehension } from "./views/comprehension.js";
 import { renderProduction } from "./views/production.js";
 import { renderMock } from "./views/mock.js";
 import { renderToday } from "./views/today.js";
+import { renderProgress } from "./views/progress.js";
 import { renderOnboarding } from "./views/onboarding.js";
 import { openSettingsModal } from "./widgets/settings-modal.js";
 
 const routes = {
   today: renderToday,
+  progress: renderProgress,
   home: renderHome,
   fundamentals: renderFundamentals,
   comprehension: renderComprehension,

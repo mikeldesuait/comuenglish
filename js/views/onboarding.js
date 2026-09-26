@@ -1,5 +1,6 @@
 // Onboarding: first-time setup of the study plan.
-import { getState, setState, updatePlan } from "../state.js";
+import { getState, setState, updatePlan, setCalendar } from "../state.js";
+import { generateCalendar, estimateCalendarSummary, calculateTotalGoalHours, getStudyDaysBetween } from "../core/planner.js";
 import { navigate } from "../router.js";
 
 export function renderOnboarding(view) {
@@ -78,28 +79,22 @@ export function renderOnboarding(view) {
   dateInput.value = sixMonths.toISOString().slice(0, 10);
   form.appendChild(dateInput);
 
-  // 3. Daily minutes
+  // 3. Mensaje informativo (la app calcula los minutos)
   const minLabel = document.createElement("label");
-  minLabel.innerHTML = "<strong>3. How much time can you study per day?</strong>";
+  minLabel.innerHTML = "<strong>3. Daily time</strong>";
   minLabel.style.display = "block";
   minLabel.style.marginBottom = "8px";
   minLabel.style.marginTop = "20px";
   form.appendChild(minLabel);
 
-  const minSelect = document.createElement("select");
-  minSelect.style.padding = "8px";
-  minSelect.style.borderRadius = "8px";
-  minSelect.style.border = "1px solid #e2e8f0";
-  minSelect.style.fontSize = ".95rem";
-  minSelect.style.width = "200px";
-  [[15, "15 minutes"], [30, "30 minutes"], [60, "1 hour"], [90, "1.5 hours"], [120, "2 hours"]].forEach(([val, txt]) => {
-    const opt = document.createElement("option");
-    opt.value = val;
-    opt.textContent = txt;
-    if (val === 30) opt.selected = true;
-    minSelect.appendChild(opt);
-  });
-  form.appendChild(minSelect);
+  const minInfo = document.createElement("div");
+  minInfo.style.padding = "12px";
+  minInfo.style.background = "#eff6ff";
+  minInfo.style.borderRadius = "8px";
+  minInfo.style.fontSize = ".9rem";
+  minInfo.style.lineHeight = "1.5";
+  minInfo.textContent = "The app will calculate how many minutes per day you need, based on the content and your available days.";
+  form.appendChild(minInfo);
 
   // 4. Days per week
   const daysLabel = document.createElement("label");
@@ -132,33 +127,54 @@ export function renderOnboarding(view) {
   form.appendChild(preview);
 
   function updatePreview() {
-    const daysUntil = Math.ceil((new Date(dateInput.value) - new Date()) / (1000 * 60 * 60 * 24));
     const level = levelSelect.value;
-    const minutes = parseInt(minSelect.value);
+    const daysPerWeek = parseInt(daysSelect.value);
+    const examDate = dateInput.value;
 
-    const contentMap = {
-      a2: { items: 300, label: "A2 Key" },
-      b1: { items: 200, label: "B1 Preliminary" },
-      b2: { items: 200, label: "B2 First" }
-    };
-    const content = contentMap[level] || contentMap.a2;
-    const itemsPerDay = Math.max(2, Math.floor(minutes / 10));
-    const totalDays = Math.ceil(content.items / itemsPerDay);
-    const feasible = totalDays <= daysUntil;
+    if (!examDate) {
+      preview.innerHTML = "Select an exam date to see your plan.";
+      return;
+    }
+
+    // Calcular dias de estudio disponibles
+    const days = getStudyDaysBetween(new Date(), new Date(examDate), daysPerWeek);
+    const totalDays = days.length;
+
+    if (totalDays === 0) {
+      preview.innerHTML = "⚠️ <span style='color:#dc2626'>Invalid exam date. Choose a future date.</span>";
+      return;
+    }
+
+    // Calcular horas necesarias (3 vueltas)
+    const baseHours = calculateTotalGoalHours(level); // ya incluye multiplicador x3
+    const totalHours = baseHours;
+    const totalMinutes = totalHours * 60;
+    const minutesPerDay = Math.ceil(totalMinutes / totalDays);
+
+    // Formatear tiempo
+    function formatMin(m) {
+      if (m < 60) return m + " min";
+      const h = Math.floor(m / 60);
+      const mm = m % 60;
+      return h + "h" + (mm > 0 ? " " + mm + "min" : "");
+    }
+
+    const feasible = minutesPerDay <= 120;
 
     preview.innerHTML =
-      "<strong>Preview:</strong><br>" +
-      "Days until exam: <strong>" + daysUntil + "</strong><br>" +
-      "Items per day: <strong>" + itemsPerDay + "</strong><br>" +
-      "Total study days needed: <strong>" + totalDays + "</strong><br>" +
+      "<strong>📊 YOUR PLAN</strong><br>" +
+      "Level: <strong>" + level.toUpperCase() + "</strong><br>" +
+      "Study days available: <strong>" + totalDays + "</strong> (until exam)<br>" +
+      "Total content: <strong>" + totalHours + " hours</strong> (3 passes)<br><br>" +
+      "🎯 <strong>You need to study " + formatMin(minutesPerDay) + " per day</strong><br><br>" +
       (feasible
-        ? "✅ <span style='color:#16a34a'>Feasible! You will have enough time.</span>"
-        : "⚠️ <span style='color:#dc2626'>Not enough time. Increase daily minutes.</span>");
+        ? "✅ <span style='color:#16a34a'>This pace is realistic.</span>"
+        : "⚠️ <span style='color:#dc2626'>This pace is too demanding. Consider reducing days/week or extending exam date.</span>");
   }
 
   levelSelect.addEventListener("change", updatePreview);
   dateInput.addEventListener("change", updatePreview);
-  minSelect.addEventListener("change", updatePreview);
+  daysSelect.addEventListener("change", updatePreview);
   updatePreview();
 
   // Buttons
@@ -173,12 +189,19 @@ export function renderOnboarding(view) {
   startBtn.style.padding = "12px 28px";
   startBtn.style.fontSize = "1rem";
   startBtn.style.fontWeight = "bold";
-  startBtn.addEventListener("click", () => {
+  startBtn.addEventListener("click", async () => {
+    // Calcular minutos diarios automaticamente
+    const daysPerWeek = parseInt(daysSelect.value);
+    const examDate = dateInput.value;
+    const days = getStudyDaysBetween(new Date(), new Date(examDate), daysPerWeek);
+    const baseHours = calculateTotalGoalHours(levelSelect.value);
+    const minutesPerDay = Math.max(15, Math.ceil((baseHours * 60) / days.length));
+
     const plan = {
       enabled: true,
-      examDate: dateInput.value,
-      dailyMinutes: parseInt(minSelect.value),
-      daysPerWeek: parseInt(daysSelect.value),
+      examDate: examDate,
+      dailyMinutes: minutesPerDay,
+      daysPerWeek: daysPerWeek,
       startDate: new Date().toISOString().slice(0, 10),
       targetLevel: levelSelect.value
     };
@@ -186,8 +209,32 @@ export function renderOnboarding(view) {
     setState({ level: levelSelect.value });
     updatePlan(plan);
 
-    // Redirect to Today view
-    navigate("today");
+    // Mostrar mensaje de carga
+    startBtn.disabled = true;
+    startBtn.textContent = "Generating your calendar...";
+
+    try {
+      // Generar el calendario completo
+      const calendar = await generateCalendar(
+        levelSelect.value,
+        dateInput.value,
+        minutesPerDay,
+        parseInt(daysSelect.value)
+      );
+
+      setCalendar(calendar);
+
+      const summary = estimateCalendarSummary(calendar);
+      console.log("Calendar generated:", summary);
+
+      // Redirect to Today view
+      navigate("today");
+    } catch (err) {
+      console.error("Error generating calendar:", err);
+      alert("Error generating calendar: " + err.message);
+      startBtn.disabled = false;
+      startBtn.textContent = "Create my plan";
+    }
   });
   btnRow.appendChild(startBtn);
 

@@ -22,6 +22,8 @@ const defaultState = {
     startDate: null,
     targetLevel: "a2"
   },
+  calendar: {},
+  behindDays: 0,
   dailyLog: {},
   streak: {
     current: 0,
@@ -211,6 +213,53 @@ export function setGoalHours(level, hours) {
   state.timeTracking.goalHours[level] = hours;
   persist();
   emit("timeTracking:change", state.timeTracking);
+}
+
+
+export function setCalendar(calendar) {
+  state.calendar = calendar;
+  persist();
+  emit("calendar:change", state.calendar);
+}
+
+export function getCalendar() {
+  return state.calendar;
+}
+
+export function updateCalendarDay(dateKey, dayData) {
+  state.calendar[dateKey] = { ...state.calendar[dateKey], ...dayData };
+  persist();
+  emit("calendar:change", state.calendar);
+}
+
+export function markCalendarTaskCompleted(dateKey, taskId) {
+  if (!state.calendar[dateKey]) return;
+  const day = state.calendar[dateKey];
+  if (!day.completed) day.completed = [];
+  if (!day.completed.includes(taskId)) {
+    day.completed.push(taskId);
+  }
+  if (day.pending) {
+    day.pending = day.pending.filter(id => id !== taskId);
+  }
+  persist();
+  emit("calendar:change", state.calendar);
+}
+
+export function getBehindDays() {
+  return state.behindDays || 0;
+}
+
+export function setBehindDays(n) {
+  state.behindDays = n;
+  persist();
+}
+
+export function resetCalendar() {
+  state.calendar = {};
+  state.behindDays = 0;
+  persist();
+  emit("calendar:change", state.calendar);
 }
 
 function persist() {

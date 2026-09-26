@@ -1,5 +1,5 @@
 // Fundamentals module view. Reads units from data/{level}/units.json.
-import { getState, setState, markUnit, getProgress } from "../state.js";
+import { getState, setState, markUnit, getProgress, markCalendarTaskCompleted, logDailyTask, getCalendar } from "../state.js";
 import { showTimeTrackerModal } from "../widgets/time-tracker.js";
 import { renderExercise } from "../widgets/exercise.js";
 
@@ -164,6 +164,15 @@ async function openUnit(view, unit) {
 function markUnitCompleted(unitId) {
   const { level } = getState();
   markUnit(level, unitId, { completed: true, date: Date.now() });
+
+  // Actualizar el calendario del dia de hoy
+  const today = new Date().toISOString().slice(0, 10);
+  const calendar = getCalendar();
+  if (calendar[today]) {
+    markCalendarTaskCompleted(today, unitId);
+    logDailyTask(today, unitId, true);
+  }
+
   console.log("Unit marked as completed:", unitId);
 }
 

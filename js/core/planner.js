@@ -239,3 +239,177 @@ export function formatHours(hours) {
   if (m === 0) return h + "h";
   return h + "h " + m + "m";
 }
+
+// ============================================================
+// Generacion del calendario completo
+// ============================================================
+
+export async function generateCalendar(level, examDate, dailyMinutes, daysPerWeek) {
+  // 1. Cargar todo el contenido
+  const [unitsData, readingData, listeningData, writingData, speakingData] = await Promise.all([
+    fetch("data/" + level + "/units.json").then(r => r.json()),
+    fetch("data/" + level + "/reading.json").then(r => r.json()),
+    fetch("data/" + level + "/listening.json").then(r => r.json()),
+    fetch("data/" + level + "/writing.json").then(r => r.json()),
+    fetch("data/" + level + "/speaking.json").then(r => r.json())
+  ]);
+
+  const units = unitsData.units || [];
+  const readings = readingData.texts || [];
+  const listenings = listeningData.audios || [];
+  const writings = writingData.tasks || [];
+  const speakings = speakingData.prompts || [];
+
+  const queue = [];
+  const maxLen = Math.max(units.length, readings.length, listenings.length, writings.length, speakings.length);
+  for (let i = 0; i < maxLen; i++) {
+    if (units[i]) queue.push({ id: units[i].id, type: "fundamentals", label: units[i].title });
+    if (readings[i]) queue.push({ id: readings[i].id, type: "reading", label: "Reading - " + readings[i].title });
+    if (listenings[i]) queue.push({ id: listenings[i].id, type: "listening", label: "Listening - " + listenings[i].title });
+    if (writings[i]) queue.push({ id: writings[i].id, type: "writing", label: "Writing - " + writings[i].title });
+    if (speakings[i]) queue.push({ id: speakings[i].id, type: "speaking", label: "Speaking - " + speakings[i].title });
+  }
+
+  // 2. Mock exams
+  const mockExams = [];
+  for (let i = 1; i <= 6; i++) {
+    mockExams.push({
+      id: "mock-" + i,
+      type: "mock",
+      label: "Mock Exam #" + i + " (full test)"
+    });
+  }
+
+  // 3. Dias de estudio hasta el examen (empezando HOY)
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const endDate = new Date(examDate);
+  endDate.setHours(0, 0, 0, 0);
+
+  const allDays = [];
+  const cursor = new Date(today);
+  let isFirstDay = true;
+  while (cursor <= endDate) {
+    const dayOfWeek = cursor.getDay();
+    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+    let includeDay = true;
+    if (daysPerWeek < 6 && isWeekend) includeDay = false;
+    if (daysPerWeek < 5 && dayOfWeek === 0) includeDay = false;
+
+    // Siempre incluir el primer dia (hoy), aunque sea finde
+    if (isFirstDay) includeDay = true;
+
+    if (includeDay) {
+      const yyyy = cursor.getFullYear();
+      const mm = String(cursor.getMonth() + 1).padStart(2, "0");
+      const dd = String(cursor.getDate()).padStart(2, "0");
+      allDays.push(yyyy + "-" + mm + "-" + dd);
+      isFirstDay = false;
+    }
+    cursor.setDate(cursor.getDate() + 1);
+  }
+
+  if (allDays.length === 0) return {};
+
+  // 4. Repartir en 3 vueltas proporcionalmente
+  const totalDays = allDays.length;
+  const daysPerPass = Math.floor(totalDays / 3);
+
+  // 5. Generar cada vuelta con reparto proporcional de items
+  const calendar = {};
+
+  // VUELTA 1: aprendizaje
+  const pass1Days = allDays.slice(0, daysPerPass);
+  distributeItemsOverDays(calendar, queue, pass1Days, "learn", dailyMinutes);
+
+  // VUELTA 2: refuerzo
+  const pass2Days = allDays.slice(daysPerPass, daysPerPass * 2);
+  distributeItemsOverDays(calendar, queue, pass2Days, "review", dailyMinutes);
+
+  // VUELTA 3: consolidacion (mitad del contenido + mocks)
+  const pass3Days = allDays.slice(daysPerPass * 2);
+  const halfQueue = queue.filter((_, i) => i % 2 === 0);
+  const queue3 = [...halfQueue, ...mockExams];
+  distributeItemsOverDays(calendar, queue3, pass3Days, "consolidate", dailyMinutes);
+
+  return calendar;
+}
+
+function distributeItemsOverDays(calendar, queue, days, passName, dailyMinutes) {
+  if (days.length === 0 || queue.length === 0) return;
+
+  const usableMinutes = Math.floor(dailyMinutes * 0.8);
+
+  // Repartir items proporcionalmente: cuantos items por dia
+  const itemsPerDay = Math.max(1, Math.ceil(queue.length / days.length));
+
+  let queueIndex = 0;
+
+  for (let d = 0; d < days.length; d++) {
+    const dayKey = days[d];
+    const tasks = [];
+    let minutesUsed = 0;
+
+    // Coger items hasta llenar el dia (o hasta itemsPerDay)
+    while (queueIndex < queue.length && tasks.length < itemsPerDay * 2) {
+      const item = queue[queueIndex];
+      const itemMinutes = TIME_PER_ITEM[item.type] || (item.type === "mock" ? 120 : 20);
+      if (minutesUsed + itemMinutes > usableMinutes && tasks.length > 0) break;
+      tasks.push(item);
+      minutesUsed += itemMinutes;
+      queueIndex++;
+    }
+
+    calendar[dayKey] = {
+      dayIndex: d + 1,
+      pass: passName,
+      tasks: tasks,
+      completed: [],
+      pending: tasks.map(t => t.id)
+    };
+  }
+}
+
+export function getStudyDaysBetween(startDate, endDate, daysPerWeek) {
+  const allDays = [];
+  const cursor = new Date(startDate);
+  cursor.setHours(0, 0, 0, 0);
+  const end = new Date(endDate);
+  end.setHours(0, 0, 0, 0);
+
+  while (cursor <= end) {
+    const dayOfWeek = cursor.getDay();
+    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+
+    let include = true;
+    if (daysPerWeek < 6 && isWeekend) include = false;
+    if (daysPerWeek < 5 && dayOfWeek === 0) include = false;
+
+    if (include) allDays.push(cursor.toISOString().slice(0, 10));
+    cursor.setDate(cursor.getDate() + 1);
+  }
+  return allDays;
+}
+
+export function estimateCalendarSummary(calendar) {
+  const dates = Object.keys(calendar).sort();
+  if (dates.length === 0) return null;
+
+  let totalTasks = 0;
+  let totalMinutes = 0;
+  dates.forEach(d => {
+    const day = calendar[d];
+    totalTasks += day.tasks.length;
+    day.tasks.forEach(t => {
+      totalMinutes += TIME_PER_ITEM[t.type] || 20;
+    });
+  });
+
+  return {
+    startDate: dates[0],
+    endDate: dates[dates.length - 1],
+    totalDays: dates.length,
+    totalTasks: totalTasks,
+    totalHours: Math.round((totalMinutes / 60) * 10) / 10
+  };
+}

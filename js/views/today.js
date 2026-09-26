@@ -1,10 +1,10 @@
 // Today: daily study plan with tasks and streak.
-import { getState, getPlan, getDailyLog, getStreak, logDailyTask, getProgress } from "../state.js";
+import { getState, getPlan, getDailyLog, getStreak, logDailyTask, getProgress, getCalendar, markCalendarTaskCompleted, getBehindDays } from "../state.js";
 import { daysBetween, todayKey, nextUncompletedUnit, nextUncompletedReading, nextUncompletedListening, nextUncompletedWriting, nextUncompletedSpeaking } from "../core/planner.js";
 import { navigate } from "../router.js";
 
 export async function renderToday(view) {
-  // Hide sidebar
+  // Ocultar sidebar
   const sidebar = document.getElementById("sidebar");
   if (sidebar) sidebar.style.display = "none";
   const shell = document.querySelector(".app-shell");
@@ -14,7 +14,6 @@ export async function renderToday(view) {
   const state = getState();
 
   if (!plan.enabled) {
-    // Not configured yet: redirect to onboarding
     view.innerHTML = "";
     const msg = document.createElement("div");
     msg.className = "feedback feedback--info";
@@ -26,9 +25,7 @@ export async function renderToday(view) {
     btn.textContent = "Create my plan";
     btn.style.marginTop = "16px";
     btn.style.padding = "12px 24px";
-    btn.addEventListener("click", () => {
-      navigate("onboarding");
-    });
+    btn.addEventListener("click", () => navigate("onboarding"));
     view.appendChild(btn);
     return;
   }
@@ -36,7 +33,7 @@ export async function renderToday(view) {
   view.innerHTML = "";
 
   const today = todayKey();
-  const dailyLog = getDailyLog()[today] || {};
+  const calendar = getCalendar();
   const streak = getStreak();
 
   // Header
@@ -58,7 +55,7 @@ export async function renderToday(view) {
   header.appendChild(h1);
 
   const daysLeft = daysBetween(new Date(), new Date(plan.examDate));
-  const daysStudied = Object.keys(getDailyLog()).length;
+  const behindDays = getBehindDays();
 
   const info = document.createElement("div");
   info.style.display = "flex";
@@ -67,12 +64,17 @@ export async function renderToday(view) {
   info.style.fontSize = ".85rem";
   info.style.opacity = ".95";
 
-  [
+  const infoTexts = [
     "🎯 Level: " + plan.targetLevel.toUpperCase(),
     "📅 " + daysLeft + " days until exam",
-    "🔥 " + streak.current + " day streak",
-    "📚 Studied " + daysStudied + " days"
-  ].forEach(txt => {
+    "🔥 " + streak.current + " day streak"
+  ];
+
+  if (behindDays > 0) {
+    infoTexts.push("⚠️ " + behindDays + " days behind");
+  }
+
+  infoTexts.forEach(txt => {
     const s = document.createElement("span");
     s.textContent = txt;
     info.appendChild(s);
@@ -80,118 +82,148 @@ export async function renderToday(view) {
   header.appendChild(info);
   view.appendChild(header);
 
-  // Tasks
+  // Verificar si hoy esta en el calendario
+  const dayData = calendar[today];
+
+  if (!dayData) {
+    // No hay tareas para hoy
+    const restDay = document.createElement("div");
+    restDay.className = "feedback feedback--info";
+    restDay.style.marginTop = "16px";
+    restDay.style.padding = "24px";
+    restDay.style.textAlign = "center";
+    restDay.innerHTML = "<h3 style='margin-bottom:8px'>🎉 Rest day!</h3><p>No tasks scheduled for today. Enjoy your break.</p>";
+    view.appendChild(restDay);
+    return;
+  }
+
+  // Etiqueta de vuelta
+  const passLabels = {
+    "learn": { icon: "📖", label: "PASS 1 - Learning", color: "#2563eb" },
+    "review": { icon: "🔁", label: "PASS 2 - Review", color: "#7c3aed" },
+    "consolidate": { icon: "🎯", label: "PASS 3 - Consolidation", color: "#16a34a" }
+  };
+  const passInfo = passLabels[dayData.pass] || { icon: "📅", label: "Day", color: "#64748b" };
+
+  const passBadge = document.createElement("div");
+  passBadge.style.background = passInfo.color;
+  passBadge.style.color = "#fff";
+  passBadge.style.padding = "6px 14px";
+  passBadge.style.borderRadius = "8px";
+  passBadge.style.display = "inline-block";
+  passBadge.style.fontSize = ".75rem";
+  passBadge.style.fontWeight = "bold";
+  passBadge.style.marginBottom = "12px";
+  passBadge.textContent = passInfo.icon + " " + passInfo.label + " - Day " + dayData.dayIndex;
+  view.appendChild(passBadge);
+
+  // Titulo de tareas
   const tasksTitle = document.createElement("h2");
-  tasksTitle.textContent = "Your plan for today";
+  tasksTitle.textContent = "Your tasks for today";
   tasksTitle.style.fontSize = "1.1rem";
   tasksTitle.style.marginBottom = "12px";
   view.appendChild(tasksTitle);
 
-  // Generate tasks based on plan
-  const itemsPerDay = Math.max(2, Math.floor(plan.dailyMinutes / 10));
-  const tasks = await generateTodayTasksFromProgress(state.level, itemsPerDay);
+  // Tareas
+  const tasksGrid = document.createElement("div");
+  tasksGrid.style.display = "grid";
+  tasksGrid.style.gridTemplateColumns = "repeat(auto-fill, minmax(320px, 1fr))";
+  tasksGrid.style.gap = "12px";
+
+  const moduleMap = {
+    "fundamentals": { icon: "📖", name: "Fundamentals", color: "#2563eb" },
+    "reading": { icon: "📚", name: "Reading", color: "#7c3aed" },
+    "listening": { icon: "🎧", name: "Listening", color: "#0891b2" },
+    "writing": { icon: "✍️", name: "Writing", color: "#ea580c" },
+    "speaking": { icon: "🗣️", name: "Speaking", color: "#16a34a" },
+    "mock": { icon: "🎓", name: "Mock Exam", color: "#dc2626" }
+  };
 
   let completedCount = 0;
 
-  // Group tasks by module
-  const moduleMap = {
-    "grammar": { name: "Fundamentals", icon: "📖", color: "#2563eb" },
-    "reading": { name: "Reading", icon: "📚", color: "#7c3aed" },
-    "listening": { name: "Listening", icon: "🎧", color: "#0891b2" },
-    "writing": { name: "Writing", icon: "✍️", color: "#ea580c" },
-    "speaking": { name: "Speaking", icon: "🗣️", color: "#16a34a" }
-  };
+  dayData.tasks.forEach(task => {
+    const taskType = task.id.split("-")[0] === "mock" ? "mock" : (task.type || "reading");
+    const mod = moduleMap[taskType] || { icon: "📌", name: taskType, color: "#64748b" };
+    const isDone = dayData.completed && dayData.completed.includes(task.id);
+    if (isDone) completedCount++;
 
-  const grouped = {};
-  tasks.forEach(task => {
-    const moduleKey = task.id.split("-")[0];
-    if (!grouped[moduleKey]) grouped[moduleKey] = [];
-    grouped[moduleKey].push(task);
+    const card = document.createElement("div");
+    card.style.border = "1px solid #e2e8f0";
+    card.style.borderRadius = "10px";
+    card.style.background = isDone ? "#f0fdf4" : "#fff";
+    card.style.overflow = "hidden";
+    card.style.transition = "all .15s";
+
+    if (isDone) card.style.borderColor = "#16a34a";
+
+    const cardHeader = document.createElement("div");
+    cardHeader.style.background = mod.color;
+    cardHeader.style.color = "#fff";
+    cardHeader.style.padding = "6px 12px";
+    cardHeader.style.fontSize = ".7rem";
+    cardHeader.style.fontWeight = "bold";
+    cardHeader.style.display = "flex";
+    cardHeader.style.alignItems = "center";
+    cardHeader.style.gap = "6px";
+    cardHeader.innerHTML = "<span>" + mod.icon + "</span><span>" + mod.name.toUpperCase() + "</span>";
+    card.appendChild(cardHeader);
+
+    const cardBody = document.createElement("div");
+    cardBody.style.padding = "14px 16px";
+    cardBody.style.display = "flex";
+    cardBody.style.flexDirection = "column";
+    cardBody.style.gap = "12px";
+
+    // Titulo + estado
+    const cardTop = document.createElement("div");
+    cardTop.style.display = "flex";
+    cardTop.style.alignItems = "flex-start";
+    cardTop.style.gap = "10px";
+
+    const titleBlock = document.createElement("div");
+    titleBlock.style.flex = "1";
+    titleBlock.style.minWidth = "0";
+    titleBlock.innerHTML =
+      "<div style='font-weight:600; font-size:.9rem; margin-bottom:4px'>" + task.label + "</div>" +
+      "<div style='font-size:.75rem; color:#64748b'>" + (isDone ? "Completed" : "Not yet done") + "</div>";
+    cardTop.appendChild(titleBlock);
+
+    const statusIcon = document.createElement("div");
+    statusIcon.textContent = isDone ? "✅" : "⏳";
+    statusIcon.style.fontSize = "1.4rem";
+    cardTop.appendChild(statusIcon);
+
+    cardBody.appendChild(cardTop);
+
+    // Boton para abrir la tarea en su modulo
+    if (!isDone) {
+      const openBtn = document.createElement("button");
+      openBtn.textContent = "Open in " + mod.name + " →";
+      openBtn.style.padding = "10px 16px";
+      openBtn.style.background = mod.color;
+      openBtn.style.color = "#fff";
+      openBtn.style.border = "none";
+      openBtn.style.borderRadius = "8px";
+      openBtn.style.fontSize = ".85rem";
+      openBtn.style.fontWeight = "bold";
+      openBtn.style.cursor = "pointer";
+      openBtn.style.alignSelf = "flex-start";
+      openBtn.style.transition = "opacity .15s";
+      openBtn.addEventListener("mouseenter", () => openBtn.style.opacity = ".85");
+      openBtn.addEventListener("mouseleave", () => openBtn.style.opacity = "1");
+      openBtn.addEventListener("click", () => {
+        navigate(taskType === "fundamentals" ? "fundamentals" : (taskType === "reading" || taskType === "listening" ? "comprehension" : "production"));
+      });
+      cardBody.appendChild(openBtn);
+    }
+
+    card.appendChild(cardBody);
+    tasksGrid.appendChild(card);
   });
 
-  // Grid de tarjetas (una por modulo)
-  const modulesGrid = document.createElement("div");
-  modulesGrid.style.display = "grid";
-  modulesGrid.style.gridTemplateColumns = "repeat(auto-fill, minmax(280px, 1fr))";
-  modulesGrid.style.gap = "14px";
-  modulesGrid.style.marginTop = "12px";
+  view.appendChild(tasksGrid);
 
-  Object.keys(grouped).forEach(moduleKey => {
-    const mod = moduleMap[moduleKey] || { name: moduleKey, icon: "📌", color: "#64748b" };
-
-    // Tarjeta del modulo
-    const moduleCard = document.createElement("div");
-    moduleCard.style.border = "1px solid #e2e8f0";
-    moduleCard.style.borderRadius = "12px";
-    moduleCard.style.background = "#fff";
-    moduleCard.style.overflow = "hidden";
-    moduleCard.style.transition = "box-shadow .15s, transform .15s";
-
-    moduleCard.addEventListener("mouseenter", () => {
-      moduleCard.style.boxShadow = "0 8px 20px rgba(0,0,0,.08)";
-      moduleCard.style.transform = "translateY(-2px)";
-    });
-    moduleCard.addEventListener("mouseleave", () => {
-      moduleCard.style.boxShadow = "none";
-      moduleCard.style.transform = "translateY(0)";
-    });
-
-    // Cabecera de la tarjeta (color del modulo)
-    const header = document.createElement("div");
-    header.style.background = mod.color;
-    header.style.color = "#fff";
-    header.style.padding = "10px 14px";
-    header.style.fontWeight = "bold";
-    header.style.fontSize = ".85rem";
-    header.style.display = "flex";
-    header.style.alignItems = "center";
-    header.style.gap = "8px";
-    header.innerHTML = "<span style='font-size:1.1rem'>" + mod.icon + "</span><span>" + mod.name.toUpperCase() + "</span>";
-    moduleCard.appendChild(header);
-
-    // Tareas dentro de la tarjeta
-    const tasksContainer = document.createElement("div");
-    tasksContainer.style.padding = "12px";
-    tasksContainer.style.display = "flex";
-    tasksContainer.style.flexDirection = "column";
-    tasksContainer.style.gap = "8px";
-
-    grouped[moduleKey].forEach(task => {
-      const taskRow = document.createElement("div");
-      taskRow.style.display = "flex";
-      taskRow.style.alignItems = "center";
-      taskRow.style.gap = "10px";
-      taskRow.style.padding = "10px 12px";
-      taskRow.style.border = "1px solid #e2e8f0";
-      taskRow.style.borderRadius = "8px";
-      taskRow.style.background = "#f8fafc";
-
-      const isDone = dailyLog[task.id] || false;
-      if (isDone) completedCount++;
-
-      taskRow.innerHTML =
-        "<div style='font-size:1.3rem'>" + task.icon + "</div>" +
-        "<div style='flex:1; min-width:0'>" +
-          "<div style='font-weight:600; font-size:.82rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis'>" + task.label + "</div>" +
-          "<div style='font-size:.7rem; color:#64748b; margin-top:2px'>" + task.description + "</div>" +
-        "</div>" +
-        "<div style='font-size:1.1rem'>" + (isDone ? "✅" : "⏳") + "</div>";
-
-      if (isDone) {
-        taskRow.style.background = "#f0fdf4";
-        taskRow.style.borderColor = "#16a34a";
-      }
-
-      tasksContainer.appendChild(taskRow);
-    });
-
-    moduleCard.appendChild(tasksContainer);
-    modulesGrid.appendChild(moduleCard);
-  });
-
-  view.appendChild(modulesGrid);
-
-  // Progress of the day
+  // Barra de progreso del dia
   const progressBox = document.createElement("div");
   progressBox.style.marginTop = "20px";
   progressBox.style.padding = "16px";
@@ -201,7 +233,7 @@ export async function renderToday(view) {
   const progressTitle = document.createElement("div");
   progressTitle.style.fontWeight = "bold";
   progressTitle.style.marginBottom = "8px";
-  progressTitle.textContent = "Today: " + completedCount + "/" + tasks.length + " completed";
+  progressTitle.textContent = "Today: " + completedCount + "/" + dayData.tasks.length + " completed";
   progressBox.appendChild(progressTitle);
 
   const bar = document.createElement("div");
@@ -211,7 +243,7 @@ export async function renderToday(view) {
   bar.style.overflow = "hidden";
 
   const fill = document.createElement("div");
-  const pct = tasks.length > 0 ? (completedCount / tasks.length) * 100 : 0;
+  const pct = dayData.tasks.length > 0 ? (completedCount / dayData.tasks.length) * 100 : 0;
   fill.style.height = "100%";
   fill.style.width = pct + "%";
   fill.style.background = pct === 100 ? "#16a34a" : "linear-gradient(90deg, #2563eb, #1e40af)";
@@ -219,7 +251,7 @@ export async function renderToday(view) {
   bar.appendChild(fill);
   progressBox.appendChild(bar);
 
-  if (pct === 100) {
+  if (pct === 100 && dayData.tasks.length > 0) {
     const done = document.createElement("div");
     done.style.marginTop = "12px";
     done.style.color = "#16a34a";
@@ -230,31 +262,25 @@ export async function renderToday(view) {
 
   view.appendChild(progressBox);
 
-  // Action buttons
+  // Boton unico al final (discreto)
   const actions = document.createElement("div");
-  actions.style.marginTop = "20px";
+  actions.style.marginTop = "24px";
   actions.style.display = "flex";
   actions.style.gap = "10px";
   actions.style.flexWrap = "wrap";
+  actions.style.justifyContent = "flex-end";
 
-  const startBtn = document.createElement("button");
-  startBtn.className = "btn btn--primary";
-  startBtn.textContent = "Go to Fundamentals";
-  startBtn.addEventListener("click", () => {
-    navigate("fundamentals");
-  });
-  actions.appendChild(startBtn);
-
-  const configBtn = document.createElement("button");
-  configBtn.className = "btn btn--ghost";
-  configBtn.textContent = "Edit my plan";
-  configBtn.addEventListener("click", () => {
-    navigate("onboarding");
-  });
-  actions.appendChild(configBtn);
+  const editBtn = document.createElement("button");
+  editBtn.className = "btn btn--ghost";
+  editBtn.textContent = "Edit my plan";
+  editBtn.style.fontSize = ".85rem";
+  editBtn.style.padding = "8px 16px";
+  editBtn.addEventListener("click", () => navigate("onboarding"));
+  actions.appendChild(editBtn);
 
   view.appendChild(actions);
 }
+
 
 async function generateTodayTasksFromProgress(level, count) {
   const progress = getProgress(level);
