@@ -27,7 +27,8 @@ function bootstrap() {
     if (sel) sel.value = getState().level;
   });
 
-  navigate("home");
+  // If plan exists, go to Today; otherwise go to Today (which will redirect to onboarding)
+  navigate("today");
 }
 
 if (document.readyState === "loading") {

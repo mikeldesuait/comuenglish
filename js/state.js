@@ -4,7 +4,7 @@ const STORAGE_KEY = "cambridge-prep-state-v1";
 
 const defaultState = {
   level: "a2",
-  currentRoute: "home",
+  currentRoute: "today",
   currentUnit: null,
   currentPhase: 0,
   progress: {
@@ -13,7 +13,21 @@ const defaultState = {
     b2: { units: {}, score: 0 }
   },
   mistakes: [],
-  lastVisit: null
+  lastVisit: null,
+  plan: {
+    enabled: false,
+    examDate: null,
+    dailyMinutes: 30,
+    daysPerWeek: 5,
+    startDate: null,
+    targetLevel: "a2"
+  },
+  dailyLog: {},
+  streak: {
+    current: 0,
+    best: 0,
+    lastStudyDate: null
+  }
 };
 
 let state = load();
@@ -47,6 +61,48 @@ export function markUnit(level, unitId, result) {
 export function addMistake(mistake) {
   state.mistakes.push({ ...mistake, date: Date.now(), reviews: 0 });
   persist();
+}
+
+export function updatePlan(patch) {
+  state.plan = { ...state.plan, ...patch };
+  persist();
+  emit("plan:change", state.plan);
+}
+
+export function getPlan() {
+  return state.plan;
+}
+
+export function logDailyTask(dateKey, taskId, completed) {
+  if (!state.dailyLog[dateKey]) {
+    state.dailyLog[dateKey] = {};
+  }
+  state.dailyLog[dateKey][taskId] = completed;
+
+  const today = dateKey;
+  if (state.streak.lastStudyDate !== today) {
+    const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+    if (state.streak.lastStudyDate === yesterday) {
+      state.streak.current++;
+    } else {
+      state.streak.current = 1;
+    }
+    if (state.streak.current > state.streak.best) {
+      state.streak.best = state.streak.current;
+    }
+    state.streak.lastStudyDate = today;
+  }
+
+  persist();
+  emit("dailyLog:change", state.dailyLog);
+}
+
+export function getDailyLog() {
+  return state.dailyLog;
+}
+
+export function getStreak() {
+  return state.streak;
 }
 
 function persist() {

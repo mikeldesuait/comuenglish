@@ -5,14 +5,18 @@ import { renderFundamentals } from "./views/fundamentals.js";
 import { renderComprehension } from "./views/comprehension.js";
 import { renderProduction } from "./views/production.js";
 import { renderMock } from "./views/mock.js";
+import { renderToday } from "./views/today.js";
+import { renderOnboarding } from "./views/onboarding.js";
 import { openSettingsModal } from "./widgets/settings-modal.js";
 
 const routes = {
+  today: renderToday,
   home: renderHome,
   fundamentals: renderFundamentals,
   comprehension: renderComprehension,
   production: renderProduction,
   mock: renderMock,
+  onboarding: renderOnboarding,
   settings: openSettingsModal
 };
 
@@ -26,7 +30,7 @@ export function render() {
   const view = document.getElementById("view");
   if (!view) return;
 
-  const renderer = routes[currentRoute] || renderHome;
+  const renderer = routes[currentRoute] || renderToday;
   view.innerHTML = "";
   renderer(view);
 
