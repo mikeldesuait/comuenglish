@@ -45,7 +45,7 @@ Company: ComuTech
 - Modern minimal design with high-contrast text
 - Palette: orange (action), green (success), amber (warning), deep blue (focus)
 - Topbar with 2 groups: marketing (Home, How it works) + personal (My Plan, Settings)
-- Home: one-screen pitch with hidden background icons (books, trophy, rocket, UK flags)
+- Home: one-screen pitch with hidden background icons and UK flags
 - How it works: 3-step method + slideshow + comparison
 - Onboarding: compact horizontal layout
 
