@@ -27,6 +27,8 @@ export function navigate(route, params = {}) {
   render();
 }
 
+let hasRedirectedToOnboarding = false;
+
 export async function render() {
   const { currentRoute } = getState();
   const view = document.getElementById("view");
@@ -38,12 +40,13 @@ export async function render() {
   const shell = document.querySelector(".app-shell");
   if (shell) shell.style.gridTemplateColumns = "";
 
-  // Si no hay plan y no estamos en onboarding, redirigir al onboarding
+  // Solo redirigir al onboarding en el arranque inicial (una vez)
   let route = currentRoute;
   try {
     const state = JSON.parse(localStorage.getItem("cambridge-prep-state-v1") || "{}");
     const hasPlan = state.plan && state.plan.enabled;
-    if (!hasPlan && route !== "onboarding") {
+    if (!hasPlan && !hasRedirectedToOnboarding) {
+      hasRedirectedToOnboarding = true;
       route = "onboarding";
     }
   } catch (e) {}
