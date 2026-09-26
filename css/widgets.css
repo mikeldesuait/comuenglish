@@ -2,7 +2,7 @@
 .unit-card:hover { border-color: var(--primary); transform: translateY(-1px); }
 .unit-card__header { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2); }
 .unit-card__title { font-weight: 600; }
-.unit-card__badge { font-size: .75rem; padding: 2px 8px; border-radius: 999px; background: #eff6ff; color: var(--primary); }
+.unit-card__badge { font-size: .75rem; padding: 2px 8px; border-radius: 999px; background: #fff7ed; color: var(--primary); }
 .btn { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-4); border-radius: var(--radius); font-weight: 500; transition: background .15s; }
 .btn--primary { background: var(--action); color: #fff; }
 .btn--primary:hover { background: var(--action-hover); }
@@ -18,7 +18,7 @@
 .feedback { margin-top: var(--space-3); padding: var(--space-3); border-radius: var(--radius); font-size: .95rem; }
 .feedback--correct { background: #ecfdf5; border-left: 4px solid var(--success); }
 .feedback--wrong { background: #fef2f2; border-left: 4px solid var(--danger); }
-.feedback--info { background: #eff6ff; border-left: 4px solid var(--primary); }
+.feedback--info { background: #fff7ed; border-left: 4px solid var(--primary); }
 .phase-nav { display: flex; gap: var(--space-2); margin-bottom: var(--space-4); flex-wrap: wrap; }
 .phase-nav button { padding: var(--space-2) var(--space-4); border-radius: var(--radius); border: 1px solid var(--border); background: #fff; font-size: .9rem; font-weight: 500; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
 .phase-nav button:hover { background: #fff7ed; border-color: var(--action); }
@@ -49,7 +49,7 @@ dialog::backdrop { background: rgba(0,0,0,.5); }
 }
 
 .card:hover {
-  border-color: #2563eb;
+  border-color: #f97316;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(37,99,235,.15);
 }
@@ -66,8 +66,8 @@ dialog::backdrop { background: rgba(0,0,0,.5); }
   display: inline-block;
   font-size: .7rem;
   font-weight: bold;
-  color: #2563eb;
-  background: #eff6ff;
+  color: #f97316;
+  background: #fff7ed;
   padding: 2px 8px;
   border-radius: 999px;
   margin-bottom: 8px;
@@ -97,7 +97,7 @@ dialog::backdrop { background: rgba(0,0,0,.5); }
    ============================================ */
 
 .unit-header {
-  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
   color: #fff;
   padding: 12px 18px;
   border-radius: 10px;
@@ -156,7 +156,7 @@ dialog::backdrop { background: rgba(0,0,0,.5); }
 
 .phase-nav button.is-active {
   background: #fff;
-  color: #2563eb;
+  color: #f97316;
   box-shadow: 0 1px 3px rgba(0,0,0,.1);
 }
 
@@ -172,7 +172,7 @@ dialog::backdrop { background: rgba(0,0,0,.5); }
 .section-block__heading {
   font-size: 1.05rem;
   font-weight: bold;
-  color: #1e40af;
+  color: #c2410c;
   margin: 0 0 12px 0;
   display: flex;
   align-items: center;
@@ -184,7 +184,7 @@ dialog::backdrop { background: rgba(0,0,0,.5); }
   display: inline-block;
   width: 4px;
   height: 18px;
-  background: #2563eb;
+  background: #f97316;
   border-radius: 2px;
 }
 
@@ -217,13 +217,13 @@ dialog::backdrop { background: rgba(0,0,0,.5); }
 }
 
 .grammar-table th {
-  background: #eff6ff;
-  color: #1e40af;
+  background: #fff7ed;
+  color: #c2410c;
   padding: 10px 14px;
   text-align: left;
   font-weight: bold;
   font-size: .85rem;
-  border-bottom: 2px solid #dbeafe;
+  border-bottom: 2px solid #fed7aa;
 }
 
 .grammar-table td {
@@ -259,7 +259,7 @@ dialog::backdrop { background: rgba(0,0,0,.5); }
 }
 
 .vocab-list strong {
-  color: #1e40af;
+  color: #c2410c;
   font-weight: 600;
 }
 
@@ -278,13 +278,13 @@ dialog::backdrop { background: rgba(0,0,0,.5); }
 }
 
 .discovery-question {
-  background: #eff6ff;
-  border-left: 3px solid #2563eb;
+  background: #fff7ed;
+  border-left: 3px solid #f97316;
   padding: 10px 14px;
   margin-bottom: 8px;
   border-radius: 0 6px 6px 0;
   font-size: .9rem;
-  color: #1e40af;
+  color: #c2410c;
 }
 
 /* Back button */
@@ -305,6 +305,6 @@ dialog::backdrop { background: rgba(0,0,0,.5); }
 
 .btn-back:hover {
   background: #f8fafc;
-  border-color: #2563eb;
-  color: #2563eb;
+  border-color: #f97316;
+  color: #f97316;
 }

@@ -20,8 +20,7 @@ Company: ComuTech
 
 - Three levels: A2 Elementary, B1 Intermediate, B2 Upper Intermediate
 - Four content modules: Fundamentals, Comprehension, Production, Mock Exam
-- Fundamentals: 7 phases per unit (Grammar, Vocabulary, Discovery,
-  Guided practice, Free practice, Mini-test, Summary)
+- Fundamentals: 7 phases per unit with progress tracking (1/7 to 7/7)
 - Reading: texts with CEFR-style questions
 - Listening: browser TTS with max 2 plays per audio
 - Writing: DeepSeek evaluation using CEFR rubric
@@ -32,62 +31,38 @@ Company: ComuTech
 
 ## Coaching System
 
-The app includes a full coaching system:
-
 - **Onboarding**: user selects level, exam date, days per week
 - **Auto calculation**: app computes minutes per day needed
-- **Calendar generation**: distributes content into 3 passes:
-  - Pass 1 - Learning (all content, first time)
-  - Pass 2 - Review (all content, second time)
-  - Pass 3 - Consolidation (half content + 6 mock exams)
-- **Today view**: shows tasks for the current day
+- **Calendar generation**: 3 passes (learn, review, consolidate) + 6 mock exams
+- **My Plan (Today)**: shows tasks for the current day
 - **Time tracking**: user logs time spent on each task
-- **Progress dashboard**: real metrics, projections, status
+- **Progress dashboard**: real metrics and projections
 - **Streak**: consecutive days studying
+- **Post-plan actions**: study ahead or review when finished
 
 ## Design
 
 - Modern minimal design with high-contrast text
 - Palette: orange (action), green (success), amber (warning), deep blue (focus)
-- Home: one-screen pitch (headline + CTA + 4 stats)
-- How it works: horizontal method + comparison + CTA
+- Topbar with 2 groups: marketing (Home, How it works) + personal (My Plan, Settings)
+- Home: one-screen pitch with hidden background icons (books, trophy, rocket, UK flags)
+- How it works: 3-step method + slideshow + comparison
 - Onboarding: compact horizontal layout
-- Sidebar: navigation between study modules
 
 ## Project structure
 
     comuenglish/
       index.html
-      css/
-        base.css, layout.css, widgets.css
+      css/   base.css, layout.css, widgets.css
       js/
         app.js, router.js, state.js
-        core/
-          planner.js      calendar generation, time calculations
-          storage.js      localStorage wrapper
-          scoring.js      CEFR Scale conversion
-        views/
-          home.js         landing pitch (one-screen)
-          how.js          How it works page
-          today.js        daily plan (reads calendar)
-          progress.js     progress dashboard
-          onboarding.js   initial plan setup
-          fundamentals.js grammar units
-          comprehension.js reading + listening
-          production.js   writing + speaking
-          mock.js         mock exam
-        widgets/
-          exercise.js, audio-player.js, recorder.js
-          progress.js, settings-modal.js, timer.js
-          speech-analyzer.js, time-tracker.js
-        services/
-          deepseek.js     DeepSeek API client
-      data/
-        a2/ b1/ b2/
-          units.json
-          {level}-u{N}.json (one per unit)
-          reading.json, listening.json
-          writing.json, speaking.json
+        core/    planner.js, storage.js, scoring.js
+        views/   home, how, today, progress, onboarding,
+                 fundamentals, comprehension, production, mock
+        widgets/ exercise, audio-player, recorder, progress,
+                 settings-modal, timer, speech-analyzer, time-tracker
+        services/ deepseek.js
+      data/  a2/, b1/, b2/
       docs-coaching-plan.md
 
 ## How to run
@@ -99,10 +74,9 @@ Open http://localhost:8000
 
 ## DeepSeek setup
 
-1. Get an API key from https://platform.deepseek.com
+1. Get API key from https://platform.deepseek.com
 2. Open the app, click the settings gear icon
 3. Paste the key (starts with sk-)
-4. Key is stored only in browser localStorage
 
 ## Pending tasks
 
@@ -119,7 +93,6 @@ Open http://localhost:8000
 - Levels: A2 Elementary, B1 Intermediate, B2 Upper Intermediate
 - No references to Cambridge, KET, PET or FCE in the UI
 - CEFR level codes (A2, B1, B2) are public standard
-- Ready to publish on Google Play or as web app
 
 ## License
 

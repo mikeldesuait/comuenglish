@@ -20,20 +20,18 @@
     </div>
 
     <nav class="topbar__nav" id="main-nav">
-      <button class="nav-btn" data-route="home">Home</button>
-      <button class="nav-btn" data-route="today">Today</button>
-      <button class="nav-btn" data-route="how">How it works</button>
-      <button class="nav-btn" id="open-settings" title="Settings">⚙</button>
+      <div class="nav-group nav-group--center">
+        <button class="nav-btn" data-route="home">Home</button>
+        <button class="nav-btn" data-route="how">How it works</button>
+      </div>
+      <div class="nav-group nav-group--right">
+        <span class="nav-divider"></span>
+        <button class="nav-btn" data-route="today">My Plan</button>
+        <button class="nav-btn" id="open-settings" title="Settings">⚙</button>
+      </div>
     </nav>
 
-    <div class="topbar__level">
-      <label for="level-select">Level</label>
-      <select id="level-select">
-        <option value="a2">A2 Elementary</option>
-        <option value="b1">B1 Intermediate</option>
-        <option value="b2">B2 Upper Intermediate</option>
-      </select>
-    </div>
+
   </header>
 
   <div class="app-shell">

@@ -34,6 +34,9 @@ export async function render() {
   const view = document.getElementById("view");
   if (!view) return;
 
+  // Restaurar overflow del body (por si alguna vista lo bloqueo)
+  document.body.style.overflow = "";
+
   // Show sidebar by default; specific views may hide it
   const sidebar = document.getElementById("sidebar");
   if (sidebar) sidebar.style.display = "block";
