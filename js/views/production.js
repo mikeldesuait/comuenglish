@@ -37,7 +37,7 @@ export async function renderProduction(view) {
   speakingBtn.addEventListener("click", () => {
     speakingBtn.classList.add("is-active");
     writingBtn.classList.remove("is-active");
-    renderSpeaking(content);
+    renderSpeakingList(content);
   });
 
   renderWritingList(content);
@@ -83,6 +83,50 @@ async function renderWritingList(container) {
     container.appendChild(list);
   } catch (err) {
     loading.textContent = "Error loading tasks: " + err.message;
+    loading.className = "feedback feedback--wrong";
+  }
+}
+
+async function renderSpeakingList(container) {
+  const { level } = getState();
+  container.innerHTML = "";
+  const loading = document.createElement("p");
+  loading.textContent = "Loading prompts...";
+  container.appendChild(loading);
+
+  try {
+    const res = await fetch("data/" + level + "/speaking.json");
+    if (!res.ok) throw new Error("Could not load speaking.json");
+    const data = await res.json();
+    const prompts = data.prompts || [];
+    container.removeChild(loading);
+
+    const list = document.createElement("div");
+    list.className = "unit-list";
+
+    prompts.forEach(p => {
+      const card = document.createElement("div");
+      card.className = "unit-card";
+      const header = document.createElement("div");
+      header.className = "unit-card__header";
+      const title = document.createElement("span");
+      title.className = "unit-card__title";
+      title.textContent = p.title;
+      header.appendChild(title);
+      const badge = document.createElement("span");
+      badge.className = "unit-card__badge";
+      badge.textContent = p.seconds + "s";
+      header.appendChild(badge);
+      card.appendChild(header);
+      const sub = document.createElement("small");
+      sub.textContent = p.part;
+      card.appendChild(sub);
+      card.addEventListener("click", () => openSpeakingPrompt(container, p));
+      list.appendChild(card);
+    });
+    container.appendChild(list);
+  } catch (err) {
+    loading.textContent = "Error loading prompts: " + err.message;
     loading.className = "feedback feedback--wrong";
   }
 }
@@ -209,23 +253,64 @@ function openWritingTask(container, task) {
   });
 }
 
-function renderSpeaking(container) {
+function openSpeakingPrompt(container, prompt) {
   container.innerHTML = "";
+  const back = document.createElement("button");
+  back.className = "btn btn--ghost";
+  back.textContent = "Back";
+  back.addEventListener("click", () => renderSpeakingList(container));
+  container.appendChild(back);
+
+  const h2 = document.createElement("h2");
+  h2.textContent = prompt.title;
+  container.appendChild(h2);
+
+  const partInfo = document.createElement("p");
+  partInfo.style.fontSize = ".9rem";
+  partInfo.style.color = "#64748b";
+  partInfo.textContent = "Part: " + prompt.part + " - " + prompt.seconds + " seconds";
+  container.appendChild(partInfo);
 
   const instr = document.createElement("div");
   instr.className = "feedback feedback--info";
-  instr.textContent = "Record yourself answering the prompt. The app will transcribe your speech and send it to DeepSeek for feedback.";
+  instr.textContent = prompt.prompt;
   container.appendChild(instr);
 
-  const speakingBox = document.createElement("div");
-  speakingBox.style.marginTop = "16px";
-  container.appendChild(speakingBox);
+  if (prompt.tips && prompt.tips.length > 0) {
+    const tipsBox = document.createElement("div");
+    tipsBox.style.marginTop = "12px";
+    tipsBox.style.padding = "12px";
+    tipsBox.style.background = "#f8fafc";
+    tipsBox.style.borderRadius = "8px";
+    tipsBox.innerHTML = "<strong>Tips:</strong><ul>" + prompt.tips.map(t => "<li>" + t + "</li>").join("") + "</ul>";
+    container.appendChild(tipsBox);
+  }
 
-  const level = getState().level;
+  const recorderBox = document.createElement("div");
+  recorderBox.style.marginTop = "20px";
+  container.appendChild(recorderBox);
 
-  renderSpeechAnalyzer(speakingBox, {
-    prompt: "Describe the picture for 1 minute. Talk about what you see, what is happening and how the people feel.",
-    seconds: 60,
-    level: level
+  renderSpeechAnalyzer(recorderBox, {
+    prompt: prompt.prompt,
+    seconds: prompt.seconds,
+    level: getState().level
+  });
+
+  const sampleBtn = document.createElement("button");
+  sampleBtn.className = "btn btn--ghost";
+  sampleBtn.textContent = "Show sample answer";
+  sampleBtn.style.marginTop = "16px";
+  container.appendChild(sampleBtn);
+
+  const sampleBox = document.createElement("div");
+  container.appendChild(sampleBox);
+
+  sampleBtn.addEventListener("click", () => {
+    if (sampleBox.querySelector(".sample-shown")) return;
+    const fb = document.createElement("div");
+    fb.className = "feedback feedback--info sample-shown";
+    fb.style.marginTop = "12px";
+    fb.innerHTML = "<strong>Sample answer:</strong><br>" + prompt.sample;
+    sampleBox.appendChild(fb);
   });
 }

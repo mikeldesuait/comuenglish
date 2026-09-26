@@ -18,6 +18,78 @@
       "maxWords": 190,
       "prompt": "You have seen a film that you would like to recommend to other students. Write a review for your school magazine. Describe the film, explain what you liked or disliked, and say who you would recommend it to. Write 140-190 words.",
       "sample": "Last week I watched Oppenheimer, a biographical film directed by Christopher Nolan. The film tells the story of J. Robert Oppenheimer, the physicist who led the development of the atomic bomb. What I liked most was the acting. Cillian Murphy delivers a powerful performance. The music and cinematography are also outstanding. However, the film is quite long and some scenes move slowly. I would recommend Oppenheimer to anyone interested in history, science or thoughtful drama."
+    },
+    {
+      "id": "b2-w3",
+      "type": "essay",
+      "title": "Essay about technology in education",
+      "minWords": 140,
+      "maxWords": 190,
+      "prompt": "Your class has been discussing the use of technology in education. Your teacher has asked you to write an essay. Write about: 1) the advantages of using technology in class, 2) the disadvantages, and 3) your own opinion. Write 140-190 words.",
+      "sample": "Technology has become an essential part of modern education, but its role in the classroom is still debated. On the one hand, digital tools can make lessons more engaging and personalised. Students can access a wealth of information online, collaborate on projects and learn at their own pace. Tablets and interactive whiteboards have transformed how teachers present material. On the other hand, there are clear risks. Excessive screen time can harm concentration and eyesight. Technology can also be a distraction, and not all schools can afford the latest equipment. In my opinion, technology should support traditional teaching, not replace it. The best lessons combine the strengths of both approaches. Teachers should be trained to use digital tools effectively, and students should learn to use them responsibly. Ultimately, technology is a tool, and like any tool, its value depends on how we use it."
+    },
+    {
+      "id": "b2-w4",
+      "type": "review",
+      "title": "Review of a book",
+      "minWords": 140,
+      "maxWords": 190,
+      "prompt": "You have read a book that you would like to recommend to other students. Write a review for your school magazine. Describe the book, explain what you liked or disliked, and say who you would recommend it to. Write 140-190 words.",
+      "sample": "I recently read 'The Kite Runner' by Khaled Hosseini, and I would like to recommend it to anyone who enjoys powerful and emotional stories. The novel tells the story of Amir, a boy growing up in Afghanistan, and his complicated relationship with his friend Hassan. It deals with themes of guilt, redemption and the power of friendship. What I liked most was the way the author describes Afghanistan before and after the war. It made me feel like I was there. The story is sometimes very sad, and some scenes are difficult to read. However, the emotional impact is what makes the book so memorable. I would recommend this novel to older students who are interested in history and human relationships. It is not a light read, but it is definitely worth it."
+    },
+    {
+      "id": "b2-w5",
+      "type": "report",
+      "title": "Report about a school event",
+      "minWords": 140,
+      "maxWords": 190,
+      "prompt": "Your school organised an international food festival last month. Your English teacher has asked you to write a report about the event. Describe what happened, evaluate its success, and suggest improvements for next year. Write 140-190 words.",
+      "sample": "Introduction: The international food festival took place on 15th May in the school playground. This report aims to describe the event and evaluate its success. The event was attended by around 300 students, teachers and parents. Twenty students from different countries prepared traditional dishes from their home countries, including Spanish paella, Italian pasta and Japanese sushi. Each dish came with a small card explaining its origin. Overall, the festival was a great success. Feedback from students was extremely positive, and many said they had learned something new about other cultures. However, there were some issues. The queue for food was very long and some dishes ran out quickly. In addition, there were no vegetarian options. For next year, I would recommend organising a ticketing system and asking students to prepare more dishes with vegetarian options. Despite these issues, the event was an excellent opportunity to celebrate cultural diversity."
+    },
+    {
+      "id": "b2-w6",
+      "type": "essay",
+      "title": "Essay about globalisation",
+      "minWords": 140,
+      "maxWords": 190,
+      "prompt": "Your class has been discussing the effects of globalisation. Your teacher has asked you to write an essay. Write about: 1) the benefits of globalisation, 2) the problems it creates, and 3) your own opinion. Write 140-190 words.",
+      "sample": "Globalisation has transformed the world in ways that were unimaginable a few decades ago. Supporters argue that it has brought enormous economic benefits, allowing countries to specialise in what they do best and trade freely with each other. Consumers now have access to products from every corner of the world at lower prices. Cultural exchange has also enriched our lives, introducing us to new foods, music and ideas. However, the drawbacks are significant. Globalisation can destroy local industries and traditions. Multinational companies often exploit workers in developing countries, where labour is cheap. It has also contributed to environmental damage through increased transport and production. In my view, globalisation is neither good nor bad in itself. What matters is how it is managed. Governments must ensure that the benefits are shared fairly, and that workers and the environment are protected. With the right policies, globalisation can be a force for good."
+    },
+    {
+      "id": "b2-w7",
+      "type": "email",
+      "title": "Formal email of complaint",
+      "minWords": 140,
+      "maxWords": 190,
+      "prompt": "You recently bought a laptop online, but when it arrived it was damaged. Write a formal email of complaint to the company. Explain the problem, say what you would like them to do, and mention any inconvenience caused. Write 140-190 words.",
+      "sample": "Dear Sir or Madam, I am writing to complain about a laptop I purchased from your website on 10th March (order number 45321). The laptop arrived on 15th March, but when I opened the package I discovered that the screen was cracked and the keyboard did not work properly. I immediately took photos of the damage, which I can send you if required. This situation has caused me considerable inconvenience. I needed the laptop for my university studies, and I have had to borrow a friend's computer to complete my assignments. I would be grateful if you could either send me a replacement laptop as soon as possible or provide a full refund. I would also appreciate a response within five working days. I look forward to hearing from you. Yours faithfully, Maria Lopez."
+    },
+    {
+      "id": "b2-w8",
+      "type": "article",
+      "title": "Article about social media",
+      "minWords": 140,
+      "maxWords": 190,
+      "prompt": "You have seen this announcement in an international magazine: Is social media good for young people? Write us an article with your opinion. Write 140-190 words.",
+      "sample": "Social media is a topic that divides opinions, and I believe it has both advantages and disadvantages for young people. On the one hand, platforms like Instagram and TikTok allow teenagers to express themselves creatively, connect with friends and discover new interests. They can also be a source of information and support, particularly for young people who feel isolated. On the other hand, there is growing evidence that social media can harm mental health. Constant comparison with others can lead to anxiety and low self-esteem. Many young people spend hours scrolling instead of sleeping, exercising or socialising face to face. In my opinion, the problem is not social media itself, but how we use it. Parents and schools should teach young people to use these platforms responsibly, setting limits and understanding the impact of their online behaviour. With the right guidance, social media can be a positive force in young people's lives."
+    },
+    {
+      "id": "b2-w9",
+      "type": "essay",
+      "title": "Essay about work-life balance",
+      "minWords": 140,
+      "maxWords": 190,
+      "prompt": "Your class has been discussing work-life balance. Your teacher has asked you to write an essay. Write about: 1) why work-life balance is important, 2) the challenges people face, and 3) your own opinion. Write 140-190 words.",
+      "sample": "In recent years, work-life balance has become a central topic in discussions about modern life. It is important because our health and happiness depend on having time to rest, spend time with family and pursue personal interests. Research consistently shows that people who work excessively are more likely to suffer from stress, burnout and health problems. However, achieving a good balance is not easy. Many people face long working hours, demanding bosses and the pressure to always be available. Technology has made it harder to disconnect, as emails and messages follow us everywhere. Some cultures also expect employees to prioritise work above everything else. In my opinion, both individuals and companies have a responsibility. Employees should set clear boundaries and protect their personal time. Companies should create a culture that values results over hours. Governments can help too, by supporting flexible working arrangements. Work-life balance is not a luxury - it is essential for a healthy society."
+    },
+    {
+      "id": "b2-w10",
+      "type": "review",
+      "title": "Review of a restaurant",
+      "minWords": 140,
+      "maxWords": 190,
+      "prompt": "You recently visited a new restaurant in your city. Write a review for a local magazine. Describe the restaurant, evaluate the food and service, and say who you would recommend it to. Write 140-190 words.",
+      "sample": "Last weekend I visited 'La Trattoria', a new Italian restaurant that recently opened in the city centre. The restaurant has a warm, welcoming atmosphere with soft lighting and traditional Italian decor. The menu is extensive, offering classic dishes like pasta, pizza and risotto, as well as some creative specials. I ordered the seafood risotto, which was beautifully cooked and full of flavour. For dessert, I had the tiramisu, which was light and delicious. The service was excellent - the staff were friendly and attentive without being intrusive. Prices are reasonable for the quality of food, with main courses around 15 euros. The only downside was that the restaurant was quite noisy, so it may not be ideal for a quiet romantic dinner. I would recommend 'La Trattoria' to anyone looking for authentic Italian food in a lively setting. It is perfect for a meal with friends or family."
     }
   ]
 }

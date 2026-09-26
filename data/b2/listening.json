@@ -42,6 +42,454 @@
           "explanation": "She says: Overfishing is also a concern, but pollution is what is killing reefs fastest."
         }
       ]
+    },
+    {
+      "id": "b2-l2",
+      "title": "Interview with an economist about remote work",
+      "instructions": "Listen to the interview and choose the correct answer A, B, C or D.",
+      "transcript": "So, Professor, is remote work here to stay? It is a complex question. The pandemic forced companies to try it, and many discovered that productivity did not fall. In fact, in some sectors it increased. However, we are now seeing a counter-trend. Some large companies are asking employees to return to the office, at least part of the week. Why is that? Several reasons. First, innovation often happens through spontaneous conversations in corridors. Second, there is a concern about company culture. New employees, in particular, struggle to learn from colleagues when they are working from home. What is the solution? I think the hybrid model is the most realistic. But it requires careful management. Companies need clear rules about when people should be in the office. Otherwise, you have the worst of both worlds - people who are neither fully connected to the office nor fully comfortable at home.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What does the professor say about productivity during the pandemic?",
+          "options": [
+            "It fell in all sectors",
+            "It increased in some sectors",
+            "It stayed the same everywhere",
+            "It was not measured"
+          ],
+          "correct": 1,
+          "explanation": "The professor says: in some sectors it increased."
+        },
+        {
+          "question": "What is the current counter-trend?",
+          "options": [
+            "More people working from home",
+            "Companies asking employees to return to the office",
+            "Companies closing offices",
+            "Employees refusing to work"
+          ],
+          "correct": 1,
+          "explanation": "The professor says: Some large companies are asking employees to return to the office."
+        },
+        {
+          "question": "Why is innovation mentioned as a reason to return to the office?",
+          "options": [
+            "It happens through spontaneous conversations",
+            "It requires expensive equipment",
+            "It only happens in meetings",
+            "It depends on the internet"
+          ],
+          "correct": 0,
+          "explanation": "The professor says: innovation often happens through spontaneous conversations in corridors."
+        },
+        {
+          "question": "What is the professor's preferred solution?",
+          "options": [
+            "Full remote work",
+            "Full office work",
+            "Hybrid model",
+            "No solution is possible"
+          ],
+          "correct": 2,
+          "explanation": "The professor says: I think the hybrid model is the most realistic."
+        },
+        {
+          "question": "What does the professor warn about the hybrid model?",
+          "options": [
+            "It is too expensive",
+            "It requires clear rules",
+            "It is illegal in some countries",
+            "It reduces productivity"
+          ],
+          "correct": 1,
+          "explanation": "The professor says: Companies need clear rules about when people should be in the office."
+        }
+      ]
+    },
+    {
+      "id": "b2-l3",
+      "title": "Lecture about climate change",
+      "instructions": "Listen to the lecture and choose the correct answer A, B, C or D.",
+      "transcript": "Today I want to talk about the impact of climate change on agriculture. This is a topic that affects every one of us, because we all need to eat. Rising temperatures are already reducing crop yields in many parts of the world. In some regions, farmers are experiencing longer droughts, while in others they face devastating floods. According to recent studies, global food production could decline by up to 25 percent by 2050 if we do not take action. However, there is some good news. Scientists are developing new varieties of crops that can survive in hotter and drier conditions. Drip irrigation systems are helping farmers use water more efficiently. And in some countries, farmers are switching to traditional methods that have been used for centuries. The challenge is to make these solutions available and affordable for everyone, not just for wealthy nations.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What is the lecture mainly about?",
+          "options": [
+            "Climate change and agriculture",
+            "Climate change and energy",
+            "Climate change and health",
+            "Climate change and tourism"
+          ],
+          "correct": 0,
+          "explanation": "The professor says: I want to talk about the impact of climate change on agriculture."
+        },
+        {
+          "question": "What is happening to crop yields?",
+          "options": [
+            "They are increasing",
+            "They are staying the same",
+            "They are decreasing",
+            "They are not affected"
+          ],
+          "correct": 2,
+          "explanation": "The professor says: Rising temperatures are already reducing crop yields."
+        },
+        {
+          "question": "What could happen to global food production by 2050?",
+          "options": [
+            "It could double",
+            "It could decline by up to 25%",
+            "It could stay the same",
+            "It could increase by 50%"
+          ],
+          "correct": 1,
+          "explanation": "The professor says: global food production could decline by up to 25 percent by 2050."
+        },
+        {
+          "question": "What are scientists developing?",
+          "options": [
+            "New farming machines",
+            "New crop varieties",
+            "New pesticides",
+            "New markets"
+          ],
+          "correct": 1,
+          "explanation": "The professor says: Scientists are developing new varieties of crops."
+        },
+        {
+          "question": "What is the main challenge mentioned?",
+          "options": [
+            "Making solutions affordable for everyone",
+            "Finding new land",
+            "Stopping climate change",
+            "Educating farmers"
+          ],
+          "correct": 0,
+          "explanation": "The professor says: The challenge is to make these solutions available and affordable for everyone."
+        }
+      ]
+    },
+    {
+      "id": "b2-l4",
+      "title": "Interview with a neuroscientist about memory",
+      "instructions": "Listen to the interview and choose the correct answer A, B, C or D.",
+      "transcript": "Dr. Chen, is it true that our memory gets worse as we age? Well, that is a common belief, but it is not entirely accurate. Some types of memory do decline with age, particularly the ability to recall specific details quickly. But other aspects, like vocabulary and general knowledge, can actually improve until quite late in life. So why do older people forget things more often? It is not necessarily because their memory is worse. It is often because they have more information stored in their brains, so it takes longer to retrieve a specific memory. Think of it like a library. A small library is quick to search. A large library takes longer, but it has more books. That is a very useful image. What can we do to keep our memory sharp? Physical exercise is the single most effective thing. Sleep is also crucial. And learning new things, especially things that are challenging, keeps the brain active.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What does Dr. Chen say about the common belief that memory declines with age?",
+          "options": [
+            "It is completely true",
+            "It is not entirely accurate",
+            "It is a myth",
+            "It only affects some people"
+          ],
+          "correct": 1,
+          "explanation": "Dr. Chen says: it is not entirely accurate."
+        },
+        {
+          "question": "What improves with age according to Dr. Chen?",
+          "options": [
+            "Speed of recall",
+            "Vocabulary and general knowledge",
+            "Physical strength",
+            "Vision"
+          ],
+          "correct": 1,
+          "explanation": "Dr. Chen says vocabulary and general knowledge can improve until quite late in life."
+        },
+        {
+          "question": "Why do older people forget things more often?",
+          "options": [
+            "Their brain is damaged",
+            "They have more information to search through",
+            "They do not try to remember",
+            "They sleep less"
+          ],
+          "correct": 1,
+          "explanation": "Dr. Chen says: they have more information stored in their brains, so it takes longer to retrieve a specific memory."
+        },
+        {
+          "question": "What comparison does Dr. Chen use?",
+          "options": [
+            "A computer",
+            "A library",
+            "A garden",
+            "A car"
+          ],
+          "correct": 1,
+          "explanation": "Dr. Chen says: Think of it like a library."
+        },
+        {
+          "question": "What is the single most effective thing for memory?",
+          "options": [
+            "Mental puzzles",
+            "Physical exercise",
+            "Sleep",
+            "Diet"
+          ],
+          "correct": 1,
+          "explanation": "Dr. Chen says: Physical exercise is the single most effective thing."
+        }
+      ]
+    },
+    {
+      "id": "b2-l5",
+      "title": "Interview with a novelist about creativity",
+      "instructions": "Listen to the interview and choose the correct answer A, B, C or D.",
+      "transcript": "So, how do you write a novel? I get asked this a lot, and honestly, I don't have a magic formula. For me, it starts with a character, not a plot. I need to hear a voice in my head. Once I have that, I follow the character and see where they take me. Do you plan everything before you start? No, quite the opposite. I wish I could plan, but my brain doesn't work that way. I discover the story as I write it. That sounds chaotic. It is, at times. But it also means I am surprised by my own book. If I knew the ending before I started, I think I would lose interest. What advice would you give to young writers? Read. Read everything, not just the genre you want to write in. And write every day, even if it is only for fifteen minutes. The main thing is to finish something. A finished bad novel is worth more than an unfinished perfect one.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What does the novelist say starts the writing process?",
+          "options": [
+            "A plot",
+            "A character",
+            "A setting",
+            "An idea"
+          ],
+          "correct": 1,
+          "explanation": "The novelist says: it starts with a character, not a plot."
+        },
+        {
+          "question": "Does the novelist plan everything before writing?",
+          "options": [
+            "Yes, always",
+            "No, never",
+            "Only sometimes",
+            "Only for the ending"
+          ],
+          "correct": 1,
+          "explanation": "The novelist says: No, quite the opposite. I discover the story as I write it."
+        },
+        {
+          "question": "Why does the novelist not want to know the ending?",
+          "options": [
+            "It is too difficult",
+            "It would lose interest",
+            "It is not allowed",
+            "It is boring"
+          ],
+          "correct": 1,
+          "explanation": "The novelist says: If I knew the ending, I think I would lose interest."
+        },
+        {
+          "question": "What advice is given to young writers?",
+          "options": [
+            "Write only in one genre",
+            "Read everything and write daily",
+            "Plan carefully",
+            "Wait for inspiration"
+          ],
+          "correct": 1,
+          "explanation": "The novelist says: Read everything... and write every day."
+        },
+        {
+          "question": "What does the novelist say is most important?",
+          "options": [
+            "Perfection",
+            "Finishing something",
+            "Being published",
+            "Making money"
+          ],
+          "correct": 1,
+          "explanation": "The novelist says: A finished bad novel is worth more than an unfinished perfect one."
+        }
+      ]
+    },
+    {
+      "id": "b2-l6",
+      "title": "Radio programme about urban planning",
+      "instructions": "Listen to the radio programme and choose the correct answer A, B, C or D.",
+      "transcript": "Welcome back to City Talk. Today we are discussing urban planning, and specifically the question of pedestrian zones. Many European cities have been closing their city centres to cars. Barcelona, for example, has created so-called superblocks, where cars are largely banned and streets are given back to pedestrians. Paris has reduced traffic along the Seine. The results have been impressive. Air pollution has fallen, noise levels have dropped, and local businesses in pedestrian areas often report higher sales because people walk more slowly and stop to look in shop windows. However, not everyone is happy. Some residents complain that it is now harder to reach essential services, especially for elderly people or those with disabilities. Delivery drivers also say their jobs have become much more difficult. The solution, according to urban planners, is to design these zones carefully - providing accessible public transport and exceptions for essential vehicles.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What are superblocks?",
+          "options": [
+            "Tall buildings",
+            "Areas where cars are banned",
+            "Underground tunnels",
+            "Shopping centres"
+          ],
+          "correct": 1,
+          "explanation": "The presenter says: superblocks, where cars are largely banned."
+        },
+        {
+          "question": "What has happened to air pollution in pedestrian zones?",
+          "options": [
+            "It has increased",
+            "It has fallen",
+            "It has stayed the same",
+            "It has not been measured"
+          ],
+          "correct": 1,
+          "explanation": "The presenter says: Air pollution has fallen."
+        },
+        {
+          "question": "Why do local businesses often report higher sales?",
+          "options": [
+            "Prices are lower",
+            "People walk more slowly and stop to look",
+            "There is more parking",
+            "There are more tourists"
+          ],
+          "correct": 1,
+          "explanation": "The presenter says: people walk more slowly and stop to look in shop windows."
+        },
+        {
+          "question": "Who complains about these zones?",
+          "options": [
+            "Tourists and shop owners",
+            "Elderly people and those with disabilities",
+            "Cyclists and runners",
+            "Students and teachers"
+          ],
+          "correct": 1,
+          "explanation": "The presenter says: Some residents complain... especially for elderly people or those with disabilities."
+        },
+        {
+          "question": "What is the solution according to urban planners?",
+          "options": [
+            "Banning all cars everywhere",
+            "Designing zones carefully",
+            "Building more roads",
+            "Removing public transport"
+          ],
+          "correct": 1,
+          "explanation": "The presenter says: The solution is to design these zones carefully."
+        }
+      ]
+    },
+    {
+      "id": "b2-l7",
+      "title": "Interview with a psychologist about stress",
+      "instructions": "Listen to the interview and choose the correct answer A, B, C or D.",
+      "transcript": "Dr. Patel, is stress always bad for us? Not at all. Stress is a natural response that helps us react to challenges. In small doses, it can actually improve performance. Think of athletes before a competition - they feel stressed, but that stress helps them focus. So, when does stress become a problem? When it becomes chronic. If the stress response is activated constantly, without time to recover, it damages our health. Chronic stress is linked to heart disease, depression, and a weakened immune system. What can people do about it? The key is recovery. Sleep is essential. Exercise helps. But the most important thing is social connection. Talking to a friend, spending time with family, even just being in the same room as someone you trust, reduces stress hormones. Interestingly, many people under stress do the opposite - they isolate themselves. That is exactly the wrong thing to do.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What is Dr. Patel's view on stress?",
+          "options": [
+            "It is always bad",
+            "It is always good",
+            "It can be positive in small doses",
+            "It should be eliminated completely"
+          ],
+          "correct": 2,
+          "explanation": "Dr. Patel says: In small doses, it can actually improve performance."
+        },
+        {
+          "question": "When does stress become a problem?",
+          "options": [
+            "When it is short",
+            "When it becomes chronic",
+            "When it is experienced by children",
+            "When it happens at work"
+          ],
+          "correct": 1,
+          "explanation": "Dr. Patel says: When it becomes chronic."
+        },
+        {
+          "question": "What is chronic stress linked to?",
+          "options": [
+            "Better performance",
+            "Improved memory",
+            "Heart disease and depression",
+            "Stronger immunity"
+          ],
+          "correct": 2,
+          "explanation": "Dr. Patel says: Chronic stress is linked to heart disease, depression, and a weakened immune system."
+        },
+        {
+          "question": "What is the most important thing for reducing stress?",
+          "options": [
+            "Sleep",
+            "Exercise",
+            "Social connection",
+            "Medication"
+          ],
+          "correct": 2,
+          "explanation": "Dr. Patel says: the most important thing is social connection."
+        },
+        {
+          "question": "What do many people do under stress that is wrong?",
+          "options": [
+            "They eat more",
+            "They isolate themselves",
+            "They sleep too much",
+            "They work harder"
+          ],
+          "correct": 1,
+          "explanation": "Dr. Patel says: many people under stress... isolate themselves. That is exactly the wrong thing to do."
+        }
+      ]
+    },
+    {
+      "id": "b2-l8",
+      "title": "Lecture about the history of the internet",
+      "instructions": "Listen to the lecture and choose the correct answer A, B, C or D.",
+      "transcript": "Today we are going to look at the history of the internet, which is more complex than most people realise. The origins of the internet go back to the 1960s, when the US Department of Defense funded a project called ARPANET. The goal was to create a communication network that could survive a nuclear attack. Messages could be sent through multiple routes, so if one route was destroyed, the message would still arrive. In the 1980s, the network expanded to include universities and research centres. But it was only in 1991 that the World Wide Web was created by Tim Berners-Lee, a British scientist working at CERN. The Web made the internet accessible to ordinary people. From that moment, the growth was explosive. Today, more than five billion people use the internet, and it has transformed almost every aspect of modern life. What is interesting is that no one owns the internet. It is a global network of networks, governed by shared protocols. That is both its greatest strength and its greatest weakness.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What was the original purpose of ARPANET?",
+          "options": [
+            "To share music",
+            "To create a military communication network",
+            "To connect universities",
+            "To sell computers"
+          ],
+          "correct": 1,
+          "explanation": "The lecturer says: The goal was to create a communication network that could survive a nuclear attack."
+        },
+        {
+          "question": "When was the World Wide Web created?",
+          "options": [
+            "In the 1960s",
+            "In the 1980s",
+            "In 1991",
+            "In 2000"
+          ],
+          "correct": 2,
+          "explanation": "The lecturer says: it was only in 1991 that the World Wide Web was created."
+        },
+        {
+          "question": "Who created the World Wide Web?",
+          "options": [
+            "The US government",
+            "Tim Berners-Lee",
+            "A team of scientists at MIT",
+            "An unknown inventor"
+          ],
+          "correct": 1,
+          "explanation": "The lecturer says: The World Wide Web was created by Tim Berners-Lee."
+        },
+        {
+          "question": "How many people use the internet today?",
+          "options": [
+            "One billion",
+            "Three billion",
+            "More than five billion",
+            "Ten billion"
+          ],
+          "correct": 2,
+          "explanation": "The lecturer says: more than five billion people use the internet."
+        },
+        {
+          "question": "What is the internet's greatest strength according to the lecturer?",
+          "options": [
+            "It is owned by one company",
+            "It is a global network of networks",
+            "It is very fast",
+            "It is cheap"
+          ],
+          "correct": 1,
+          "explanation": "The lecturer says: It is a global network of networks, governed by shared protocols. That is both its greatest strength and its greatest weakness."
+        }
+      ]
     }
   ]
 }

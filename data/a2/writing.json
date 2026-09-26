@@ -8,6 +8,62 @@
       "minWords": 25,
       "prompt": "You are going to a concert next weekend. Write an email to your friend Sam. In your email: say which concert you are going to, ask Sam to come with you, and tell Sam what time you will meet. Write 25 words or more.",
       "sample": "Hi Sam, I am going to a rock concert next Saturday at the stadium. Would you like to come with me? Let me know and we can meet at 7 pm at the entrance. See you, Alex."
+    },
+    {
+      "id": "a2-w3",
+      "type": "email",
+      "title": "Email about a school trip",
+      "minWords": 25,
+      "prompt": "Your English teacher has asked you to write an email to your friend about a school trip. In your email: say where you went, tell your friend what you did, and ask your friend about their week. Write 25 words or more.",
+      "sample": "Hi Tom, Last week we went to the science museum in London. We saw dinosaurs and learned about space. It was amazing! How was your week? Write back soon, Maria."
+    },
+    {
+      "id": "a2-w4",
+      "type": "story",
+      "title": "A short story about a surprise",
+      "minWords": 35,
+      "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: It was a normal Saturday morning until I saw something strange outside my window. Write 35 words or more.",
+      "sample": "It was a normal Saturday morning until I saw something strange outside my window. A small fox was sitting in my garden. It looked scared. I called my mother and we gave it some water. Later, an animal rescue team came to take it to the forest."
+    },
+    {
+      "id": "a2-w5",
+      "type": "email",
+      "title": "Email inviting a friend",
+      "minWords": 25,
+      "prompt": "You are having a birthday party next weekend. Write an email to your friend inviting them. In your email: say when the party is, say where it is, and tell them what to bring. Write 25 words or more.",
+      "sample": "Hi Alex, I am having a birthday party next Saturday at 6 pm at my house. Can you come? Please bring some music and your favourite snacks. It will be fun! See you, Laura."
+    },
+    {
+      "id": "a2-w6",
+      "type": "email",
+      "title": "Email about a new hobby",
+      "minWords": 25,
+      "prompt": "Your friend wants to know about your new hobby. Write an email to your friend. In your email: say what your new hobby is, explain why you like it, and invite your friend to try it with you. Write 25 words or more.",
+      "sample": "Hi Sam, I have started learning to play the guitar! I love it because music makes me happy. Would you like to try it with me? We can have lessons together on Saturdays. Write back, Chris."
+    },
+    {
+      "id": "a2-w7",
+      "type": "story",
+      "title": "A short story about a lost phone",
+      "minWords": 35,
+      "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: When I got home, I realised my phone was not in my bag. Write 35 words or more.",
+      "sample": "When I got home, I realised my phone was not in my bag. I felt very worried. I went back to the park and looked everywhere. Finally, a kind woman found it and gave it back to me. I was so happy!"
+    },
+    {
+      "id": "a2-w8",
+      "type": "email",
+      "title": "Email to a penfriend",
+      "minWords": 25,
+      "prompt": "You have a new penfriend from England. Write an email to introduce yourself. In your email: say your name and age, describe your family, and ask your penfriend about their hobbies. Write 25 words or more.",
+      "sample": "Hi Lucy, My name is Pablo and I am 13 years old. I live with my parents and my little sister. I love playing football and reading comics. What are your hobbies? Write back soon, Pablo."
+    },
+    {
+      "id": "a2-w9",
+      "type": "email",
+      "title": "Email apologising",
+      "minWords": 25,
+      "prompt": "You cannot go to your friend's party because you are ill. Write an email to your friend. In your email: apologise for not coming, explain why you cannot come, and suggest meeting another day. Write 25 words or more.",
+      "sample": "Hi Emma, I am so sorry but I cannot come to your party. I have a bad cold and the doctor says I must rest. Can we meet next weekend instead? I hope you have a great time. Get well soon, Ana."
     }
   ]
 }

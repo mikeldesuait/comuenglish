@@ -42,6 +42,483 @@
           "explanation": "The candidate says: I would like more responsibility."
         }
       ]
+    },
+    {
+      "id": "b1-l2",
+      "title": "A job interview",
+      "instructions": "Listen to the interview and choose the correct answer A, B, C or D.",
+      "transcript": "So, tell me about your previous experience. Well, I worked for three years at a marketing company in Madrid. I was responsible for social media campaigns. Interesting. And why did you leave? The company moved to another city and I did not want to relocate. I see. And what are you looking for in this role? I would like more responsibility and the chance to work with international clients. Do you speak any other languages? Yes, I speak English and French fluently, and I am learning German. That is impressive. When could you start? I could start next month if necessary.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "How long did the candidate work at the marketing company?",
+          "options": [
+            "One year",
+            "Two years",
+            "Three years",
+            "Five years"
+          ],
+          "correct": 2,
+          "explanation": "The candidate says: I worked for three years."
+        },
+        {
+          "question": "Why did the candidate leave the previous job?",
+          "options": [
+            "Low salary",
+            "The company moved",
+            "Bad colleagues",
+            "Health problems"
+          ],
+          "correct": 1,
+          "explanation": "The candidate says: The company moved to another city."
+        },
+        {
+          "question": "What does the candidate want in the new role?",
+          "options": [
+            "More holidays",
+            "More responsibility",
+            "A shorter commute",
+            "A higher salary"
+          ],
+          "correct": 1,
+          "explanation": "The candidate says: I would like more responsibility."
+        },
+        {
+          "question": "Which languages does the candidate speak fluently?",
+          "options": [
+            "English and German",
+            "English and French",
+            "Spanish and German",
+            "Only English"
+          ],
+          "correct": 1,
+          "explanation": "The candidate says: I speak English and French fluently."
+        }
+      ]
+    },
+    {
+      "id": "b1-l3",
+      "title": "A radio interview with a travel writer",
+      "instructions": "Listen to the interview and choose the correct answer A, B, C or D.",
+      "transcript": "Welcome to the show, Emma. You have just published a book about travelling alone. That is right. So, what is the biggest challenge of travelling alone? I think it is the loneliness. You can be in the most beautiful place in the world, but if you have no one to share it with, it can feel empty. But there must be advantages too. Absolutely. You have complete freedom. You can change your plans at any moment, stay longer somewhere you like or leave a place you don't like. What advice would you give to someone who wants to try it? Start with a short trip. Do not go to the other side of the world for your first solo adventure. Try a weekend in a nearby city, then build up from there.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What is Emma's book about?",
+          "options": [
+            "Travelling with family",
+            "Travelling alone",
+            "Learning languages",
+            "Working abroad"
+          ],
+          "correct": 1,
+          "explanation": "The interviewer says: You have just published a book about travelling alone."
+        },
+        {
+          "question": "What is the biggest challenge of solo travel according to Emma?",
+          "options": [
+            "Money",
+            "Language",
+            "Loneliness",
+            "Safety"
+          ],
+          "correct": 2,
+          "explanation": "Emma says: I think it is the loneliness."
+        },
+        {
+          "question": "What is the main advantage of travelling alone?",
+          "options": [
+            "It is cheaper",
+            "Complete freedom",
+            "You meet more people",
+            "You learn languages faster"
+          ],
+          "correct": 1,
+          "explanation": "Emma says: You have complete freedom."
+        },
+        {
+          "question": "What is Emma's advice for beginners?",
+          "options": [
+            "Start with a short trip",
+            "Go to another continent",
+            "Travel with a group first",
+            "Read a lot of books"
+          ],
+          "correct": 0,
+          "explanation": "Emma says: Start with a short trip."
+        }
+      ]
+    },
+    {
+      "id": "b1-l4",
+      "title": "A conversation about moving to a new city",
+      "instructions": "Listen to the conversation and choose the correct answer A, B, C or D.",
+      "transcript": "So, how is your new life in Manchester? To be honest, it is harder than I expected. Really? What is the problem? Well, I love my job and the city is fantastic, but I don't know anyone here. I spend most of my evenings alone. Have you tried joining a club or a sports team? Not yet. I think I should. That is how I met most of my friends when I moved here. I joined a running club and it changed everything. That is a great idea. I have also thought about taking a cooking class. Do it. You will meet people with similar interests. You are right. I will look for something this weekend.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "How does the person feel about life in Manchester?",
+          "options": [
+            "It is perfect",
+            "It is harder than expected",
+            "It is boring",
+            "It is too expensive"
+          ],
+          "correct": 1,
+          "explanation": "The person says: To be honest, it is harder than I expected."
+        },
+        {
+          "question": "What is the main problem?",
+          "options": [
+            "The job",
+            "The weather",
+            "Not knowing anyone",
+            "The cost of living"
+          ],
+          "correct": 2,
+          "explanation": "The person says: I don't know anyone here."
+        },
+        {
+          "question": "What did the other person do when they moved?",
+          "options": [
+            "Joined a running club",
+            "Took a cooking class",
+            "Started a new job",
+            "Moved back home"
+          ],
+          "correct": 0,
+          "explanation": "The person says: I joined a running club and it changed everything."
+        },
+        {
+          "question": "What is the person going to do this weekend?",
+          "options": [
+            "Visit family",
+            "Look for activities to join",
+            "Move house",
+            "Stay at home"
+          ],
+          "correct": 1,
+          "explanation": "The person says: I will look for something this weekend."
+        }
+      ]
+    },
+    {
+      "id": "b1-l5",
+      "title": "A university open day",
+      "instructions": "Listen to the talk and choose the correct answer A, B, C or D.",
+      "transcript": "Welcome to the University of Bristol open day. My name is Laura and I will give you some information about the campus. The tour will last approximately 45 minutes. We will start at the library, then visit the science building, and finally the student accommodation. If you have any questions during the tour, please feel free to ask. After the tour, there will be a presentation in the main hall at 2 pm, where you can meet some of our professors. Refreshments will be served. The application deadline for next year is January 15th. Please note that you need to submit two reference letters with your application.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "How long will the tour last?",
+          "options": [
+            "30 minutes",
+            "45 minutes",
+            "One hour",
+            "Two hours"
+          ],
+          "correct": 1,
+          "explanation": "Laura says: The tour will last approximately 45 minutes."
+        },
+        {
+          "question": "What will they visit first?",
+          "options": [
+            "The library",
+            "The science building",
+            "The student accommodation",
+            "The main hall"
+          ],
+          "correct": 0,
+          "explanation": "Laura says: We will start at the library."
+        },
+        {
+          "question": "What time is the presentation?",
+          "options": [
+            "1 pm",
+            "2 pm",
+            "3 pm",
+            "4 pm"
+          ],
+          "correct": 1,
+          "explanation": "Laura says: there will be a presentation in the main hall at 2 pm."
+        },
+        {
+          "question": "What is the application deadline?",
+          "options": [
+            "December 15th",
+            "January 15th",
+            "February 15th",
+            "March 15th"
+          ],
+          "correct": 1,
+          "explanation": "Laura says: The application deadline for next year is January 15th."
+        }
+      ]
+    },
+    {
+      "id": "b1-l6",
+      "title": "A conversation about healthy eating",
+      "instructions": "Listen to the conversation and choose the correct answer A, B, C or D.",
+      "transcript": "You look great! Have you been doing something different? Thanks. I changed my diet about three months ago. Really? What did you change? Well, I used to eat a lot of processed food - pizzas, burgers, that kind of thing. Now I cook most of my meals at home. I also eat more vegetables and fruit. Do you miss fast food? Sometimes, especially when I am tired or stressed. But the benefits are worth it. I have more energy and I sleep better. That is amazing. I should try it. How did you start? I started small. I just changed one meal a day. Then, after a few weeks, I changed another. It is easier when you do it gradually.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "When did the person change their diet?",
+          "options": [
+            "One month ago",
+            "Two months ago",
+            "Three months ago",
+            "Six months ago"
+          ],
+          "correct": 2,
+          "explanation": "The person says: I changed my diet about three months ago."
+        },
+        {
+          "question": "What did they used to eat a lot of?",
+          "options": [
+            "Vegetables",
+            "Fruit",
+            "Processed food",
+            "Fish"
+          ],
+          "correct": 2,
+          "explanation": "The person says: I used to eat a lot of processed food."
+        },
+        {
+          "question": "What benefits has the person noticed?",
+          "options": [
+            "More energy and better sleep",
+            "Weight loss only",
+            "Better skin",
+            "More money"
+          ],
+          "correct": 0,
+          "explanation": "The person says: I have more energy and I sleep better."
+        },
+        {
+          "question": "What advice does the person give for starting?",
+          "options": [
+            "Change everything at once",
+            "Start small",
+            "Only eat vegetables",
+            "Skip breakfast"
+          ],
+          "correct": 1,
+          "explanation": "The person says: I started small. I just changed one meal a day."
+        }
+      ]
+    },
+    {
+      "id": "b1-l7",
+      "title": "A conversation about a new hobby",
+      "instructions": "Listen to the conversation and choose the correct answer A, B, C or D.",
+      "transcript": "I hear you have started a new hobby. Yes, I have taken up photography. That is interesting. What made you start? I wanted something creative that would get me out of the house. I spend so much time in front of a screen at work. Do you have a good camera? I have a basic one. I am still learning. I take photos with my phone mostly. The main thing is to practise. I try to take at least one photo a day. Have you thought about joining a photography group? Actually, yes. There is one that meets every Wednesday at the community centre. That could be a great way to improve and meet people.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What new hobby has the person started?",
+          "options": [
+            "Painting",
+            "Photography",
+            "Writing",
+            "Gardening"
+          ],
+          "correct": 1,
+          "explanation": "The person says: I have taken up photography."
+        },
+        {
+          "question": "Why did they start this hobby?",
+          "options": [
+            "To earn money",
+            "To be creative and get outside",
+            "To meet new friends",
+            "To exercise"
+          ],
+          "correct": 1,
+          "explanation": "The person says: I wanted something creative that would get me out of the house."
+        },
+        {
+          "question": "What does the person use most for photos?",
+          "options": [
+            "A professional camera",
+            "A basic camera",
+            "Their phone",
+            "A tablet"
+          ],
+          "correct": 2,
+          "explanation": "The person says: I take photos with my phone mostly."
+        },
+        {
+          "question": "What could help the person improve?",
+          "options": [
+            "Buying a new camera",
+            "Joining a photography group",
+            "Reading books",
+            "Watching videos"
+          ],
+          "correct": 1,
+          "explanation": "The other person suggests joining a photography group."
+        }
+      ]
+    },
+    {
+      "id": "b1-l8",
+      "title": "A conversation about learning a language",
+      "instructions": "Listen to the conversation and choose the correct answer A, B, C or D.",
+      "transcript": "How is your Italian going? Honestly, it is difficult. I have been studying for six months but I still cannot have a proper conversation. That is normal. Learning a language takes time. What do you find most difficult? I think listening. When Italians speak fast, I cannot understand anything. Have you tried watching Italian films with subtitles? Yes, I do that. It helps a bit. What about speaking? Do you have anyone to practise with? Not really. That is probably the problem. I should find a language partner. You could try an app. There are apps where you can chat with native speakers. That is a good idea. I will download one tonight.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "How long has the person been studying Italian?",
+          "options": [
+            "Three months",
+            "Six months",
+            "One year",
+            "Two years"
+          ],
+          "correct": 1,
+          "explanation": "The person says: I have been studying for six months."
+        },
+        {
+          "question": "What does the person find most difficult?",
+          "options": [
+            "Grammar",
+            "Writing",
+            "Listening",
+            "Reading"
+          ],
+          "correct": 2,
+          "explanation": "The person says: I think listening."
+        },
+        {
+          "question": "What does the person do to improve listening?",
+          "options": [
+            "Listen to the radio",
+            "Watch Italian films with subtitles",
+            "Listen to songs",
+            "Take classes"
+          ],
+          "correct": 1,
+          "explanation": "The person says: I watch Italian films with subtitles."
+        },
+        {
+          "question": "What does the other person suggest?",
+          "options": [
+            "Reading more books",
+            "Finding a language partner",
+            "Taking a course",
+            "Moving to Italy"
+          ],
+          "correct": 1,
+          "explanation": "The other person says: I should find a language partner. You could try an app."
+        }
+      ]
+    },
+    {
+      "id": "b1-l9",
+      "title": "A conversation about a new apartment",
+      "instructions": "Listen to the conversation and choose the correct answer A, B, C or D.",
+      "transcript": "So, how is the new apartment? It is great, thanks for asking. It is much bigger than my old one. How many rooms does it have? Two bedrooms, a living room, a kitchen and a bathroom. It also has a small balcony. That sounds nice. How much is the rent? It is 800 euros a month, plus bills. That is a bit expensive. Yes, but it is very close to my work, so I save money on transport. Are you happy with the neighbourhood? Yes, there are shops, restaurants and a park nearby. The only problem is that there is no parking. I do not have a car, so it does not matter.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "How does the new apartment compare to the old one?",
+          "options": [
+            "It is smaller",
+            "It is bigger",
+            "It is the same size",
+            "It is older"
+          ],
+          "correct": 1,
+          "explanation": "The person says: It is much bigger than my old one."
+        },
+        {
+          "question": "How much is the rent?",
+          "options": [
+            "600 euros",
+            "700 euros",
+            "800 euros",
+            "900 euros"
+          ],
+          "correct": 2,
+          "explanation": "The person says: It is 800 euros a month."
+        },
+        {
+          "question": "Why is the rent worth it?",
+          "options": [
+            "It is very close to work",
+            "It has a big garden",
+            "It is in a quiet area",
+            "It is new"
+          ],
+          "correct": 0,
+          "explanation": "The person says: it is very close to my work, so I save money on transport."
+        },
+        {
+          "question": "What is the only problem with the apartment?",
+          "options": [
+            "No balcony",
+            "No parking",
+            "No neighbours",
+            "No heating"
+          ],
+          "correct": 1,
+          "explanation": "The person says: The only problem is that there is no parking."
+        }
+      ]
+    },
+    {
+      "id": "b1-l10",
+      "title": "A tour guide talking about a city",
+      "instructions": "Listen to the tour guide and choose the correct answer A, B, C or D.",
+      "transcript": "Welcome to Edinburgh, one of the most beautiful cities in Europe. Our tour today will last about three hours. We will start at Edinburgh Castle, which is over 900 years old. From there, we will walk down the Royal Mile, a street full of historic buildings, shops and pubs. We will stop for lunch at 1 pm in Grassmarket, where you can try traditional Scottish food. After lunch, we will visit the Palace of Holyroodhouse, the official residence of the British monarch in Scotland. The tour finishes at 4 pm at the National Museum. Please stay with the group and wear comfortable shoes, because we will be walking a lot.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "How long will the tour last?",
+          "options": [
+            "One hour",
+            "Two hours",
+            "Three hours",
+            "Four hours"
+          ],
+          "correct": 2,
+          "explanation": "The guide says: Our tour today will last about three hours."
+        },
+        {
+          "question": "Where will the tour start?",
+          "options": [
+            "Edinburgh Castle",
+            "The Royal Mile",
+            "Grassmarket",
+            "The National Museum"
+          ],
+          "correct": 0,
+          "explanation": "The guide says: We will start at Edinburgh Castle."
+        },
+        {
+          "question": "When will they stop for lunch?",
+          "options": [
+            "12 pm",
+            "1 pm",
+            "2 pm",
+            "3 pm"
+          ],
+          "correct": 1,
+          "explanation": "The guide says: We will stop for lunch at 1 pm."
+        },
+        {
+          "question": "What should tourists wear?",
+          "options": [
+            "Formal clothes",
+            "Comfortable shoes",
+            "A hat",
+            "Sunglasses"
+          ],
+          "correct": 1,
+          "explanation": "The guide says: wear comfortable shoes, because we will be walking a lot."
+        }
+      ]
     }
   ]
 }

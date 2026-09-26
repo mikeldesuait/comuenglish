@@ -1,0 +1,113 @@
+{
+  "level": "b2",
+  "prompts": [
+    {
+      "id": "b2-s1",
+      "part": "Interview",
+      "title": "Personal information and background",
+      "prompt": "Talk about yourself for 1 minute. Say where you are from, what you study or do, what you are passionate about and something that has shaped who you are.",
+      "seconds": 60,
+      "sample": "I am originally from a small town in the south of Spain, but I moved to Madrid three years ago to study. I am currently in my second year of a degree in economics. What I am most passionate about is music - I have played the piano since I was seven. Growing up in a musical family really shaped who I am. It taught me discipline, patience and the value of practice. I think these qualities help me in every part of my life.",
+      "tips": ["Extend answers naturally", "Use a variety of tenses", "Connect personal details to wider meaning"]
+    },
+    {
+      "id": "b2-s2",
+      "part": "Interview",
+      "title": "A recent achievement",
+      "prompt": "Talk about something you achieved recently for 1 minute. What was it? Why was it important to you? How did you feel?",
+      "seconds": 60,
+      "sample": "Recently I completed a half marathon. It took me three months of training and I almost gave up twice. It was important to me because I had never considered myself a runner. On the day of the race, I was extremely nervous, but finishing it was one of the best moments of my life. I felt incredibly proud and it has completely changed how I see my own limits.",
+      "tips": ["Use Past Simple and Present Perfect", "Express emotions", "Reflect on the significance"]
+    },
+    {
+      "id": "b2-s3",
+      "part": "Interview",
+      "title": "An important decision",
+      "prompt": "Talk about an important decision you have made for 1 minute. What was the decision? What were the alternatives? How do you feel about it now?",
+      "seconds": 60,
+      "sample": "One of the most important decisions I have made was choosing to study economics instead of medicine. I had always been good at science, and everyone expected me to become a doctor. But during my final year at school, I realised my real interest was in how societies and markets work. It was a difficult decision because I felt I was disappointing people. Looking back, I am convinced it was the right choice. I am much more motivated and engaged in my studies now.",
+      "tips": ["Explain alternatives considered", "Use conditional structures", "Express reflection"]
+    },
+    {
+      "id": "b2-s4",
+      "part": "Interview",
+      "title": "Your country and its culture",
+      "prompt": "Talk about your country for 1 minute. What is it famous for? What do you like most about it? What would you change?",
+      "seconds": 60,
+      "sample": "Spain is famous for its food, its festivals and its relaxed way of life. What I like most is the sense of community - people spend a lot of time outside, talking to neighbours and enjoying meals together. However, there are things I would change. Youth unemployment is a serious problem, and I think the education system could be more practical and better connected to the job market. Still, I feel very fortunate to come from a country with such a rich culture.",
+      "tips": ["Balance positives and negatives", "Use formal connectors", "Suggest improvements"]
+    },
+    {
+      "id": "b2-s5",
+      "part": "Interview",
+      "title": "Environmental responsibility",
+      "prompt": "Talk about environmental responsibility for 1 minute. Whose responsibility is it to protect the environment: individuals, companies or governments? Why?",
+      "seconds": 60,
+      "sample": "I believe the environment is everyone's responsibility, but the balance of responsibility is not equal. Individuals can make a difference through small daily choices like recycling, using public transport or reducing meat consumption. But companies and governments have far more power. A single industrial decision can have a bigger impact than thousands of individual actions. In my view, governments must create laws that force companies to be sustainable, and individuals should support these changes through their choices. It has to be a combined effort.",
+      "tips": ["Express nuanced opinions", "Use conditional and modal structures", "Support arguments with reasoning"]
+    },
+    {
+      "id": "b2-s6",
+      "part": "Interview",
+      "title": "A book or film that changed your perspective",
+      "prompt": "Talk about a book or film that changed how you see something for 1 minute. What was it? How did it change your perspective?",
+      "seconds": 60,
+      "sample": "A book that really changed my perspective was 'Sapiens' by Yuval Noah Harari. It made me think about human history in a completely different way. Before reading it, I saw progress as a straightforward story. Harari shows that many things we take for granted - money, nations, religion - are essentially shared stories that we have agreed to believe in. It made me much more sceptical and curious about how societies work. I now question assumptions I used to accept without thinking.",
+      "tips": ["Describe the impact clearly", "Use abstract vocabulary", "Explain the shift in perspective"]
+    },
+    {
+      "id": "b2-s7",
+      "part": "Picture description",
+      "title": "Describing a picture with speculation",
+      "prompt": "Describe this picture for 1 minute. Say what you can see, what you think is happening and how the people might be feeling.",
+      "seconds": 60,
+      "sample": "In this picture I can see what appears to be a street market in a European city. There are stalls selling fresh fruit and vegetables, and several people are walking between them. In the foreground, an older woman is choosing tomatoes, while a young man is carrying a bag of shopping. The atmosphere seems lively but relaxed. The people look as if they know each other - perhaps it is a close-knit neighbourhood. The weather looks warm and the light suggests it is late morning.",
+      "tips": ["Use speculative language (seems, appears, might be)", "Describe atmosphere and mood", "Move from general to specific"]
+    },
+    {
+      "id": "b2-s8",
+      "part": "Picture description",
+      "title": "Comparing two contrasting photos",
+      "prompt": "Compare these two photos for 1 minute. What do they show? What do they have in common and how do they differ? Which one resonates with you more?",
+      "seconds": 60,
+      "sample": "The two photos offer a striking contrast. The first shows a crowded urban street at night, full of neon signs and people rushing past each other. The second shows a solitary figure walking through a quiet forest at dawn. What they share is a sense of human presence in a specific environment. However, the mood could not be more different. One is energetic and chaotic; the other is calm and reflective. The forest image resonates with me more because I often need silence to think clearly. The city photo feels exciting but exhausting, whereas the forest feels restorative.",
+      "tips": ["Use comparative structures", "Express personal preference with reasons", "Use rich adjectives"]
+    },
+    {
+      "id": "b2-s9",
+      "part": "Picture description",
+      "title": "Interpreting a symbolic image",
+      "prompt": "Describe this image for 1 minute. What is shown? What do you think the image is trying to communicate? What feelings does it evoke?",
+      "seconds": 60,
+      "sample": "This image shows a child standing at the bottom of a huge staircase, looking up towards a distant door. The perspective makes the child appear very small and the stairs very steep. It could be interpreted in several ways. It might represent the challenges we all face when starting something new. It evokes a mixture of emotions in me - anxiety at the difficulty ahead, but also hope, because the child is looking up with curiosity. The image reminds me that every journey begins with a first step.",
+      "tips": ["Interpret symbolism", "Describe emotional impact", "Connect to universal themes"]
+    },
+    {
+      "id": "b2-s10",
+      "part": "Discussion",
+      "title": "Discussing a social issue",
+      "prompt": "Your friend believes social media does more harm than good for teenagers. Discuss this for 2 minutes. Present arguments on both sides and reach some agreement.",
+      "seconds": 120,
+      "sample": "I understand your point, and there is strong evidence that social media can harm mental health. Studies link excessive use to anxiety and low self-esteem, particularly among teenagers who compare themselves to others. But I think we need to be careful about generalising. For many young people, especially those who feel isolated, social media provides valuable connection and community. What matters is how it is used. Passive scrolling has been shown to be harmful, whereas active engagement with real friends tends to be positive. So perhaps the issue is not social media itself, but the lack of education about how to use it responsibly. Would you agree that the solution lies in education rather than banning?",
+      "tips": ["Acknowledge the other view", "Use evidence and examples", "Move towards agreement"]
+    },
+    {
+      "id": "b2-s11",
+      "part": "Discussion",
+      "title": "Reaching a joint decision",
+      "prompt": "You and your friend are organising a charity event at school. Decide together what kind of event to organise, when to hold it, and how to raise money. Discuss for 2 minutes and reach a decision.",
+      "seconds": 120,
+      "sample": "What about organising a sponsored run? It is simple to organise and everyone can participate. That is a good idea, but not everyone can run. What about a talent show instead? People could perform and we could sell tickets. That is more inclusive. I like that. We could hold it in the school hall on a Friday evening. The tickets could be three euros and we could also sell snacks. What do you think? I think that works. Shall we also have a raffle? That would raise even more money. Definitely. Let us confirm: a talent show, Friday evening, in the hall, with tickets and a raffle. Agreed.",
+      "tips": ["Use persuasive language", "Respond to suggestions", "Confirm the final decision"]
+    },
+    {
+      "id": "b2-s12",
+      "part": "Discussion",
+      "title": "A hypothetical situation",
+      "prompt": "Imagine you could change one thing about the education system. What would you change and why? Discuss for 2 minutes, considering the consequences.",
+      "seconds": 120,
+      "sample": "If I could change one thing, I would make the curriculum more practical. Students spend years memorising facts that they forget immediately, while learning very little about managing money, mental health or digital literacy. I think this would have a huge impact. Young people would leave school better prepared for real life. Of course, there would be challenges. Teachers would need new training, and there would be resistance from traditionalists. But the benefits would outweigh the difficulties. What would you change?",
+      "tips": ["Use hypothetical conditionals", "Consider consequences", "Invite the other person's view"]
+    }
+  ]
+}

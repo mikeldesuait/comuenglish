@@ -22,6 +22,88 @@
       "minWords": 100,
       "prompt": "You have seen this announcement in an international magazine: What do you like doing in your free time? Write us an article about your favourite free-time activity and why you enjoy it. Write 100 words or more.",
       "sample": "My favourite free-time activity is reading. I discovered my love for books when I was a child, and since then I have read hundreds of novels. Reading allows me to travel to different worlds without leaving my room. I especially enjoy mystery stories because they keep me guessing until the last page. Sometimes I read for hours without noticing the time. I would recommend reading to anyone looking for a relaxing and enriching hobby."
+    },
+    {
+      "id": "b1-w3",
+      "type": "email",
+      "title": "Email with 4 notes",
+      "minWords": 100,
+      "prompt": "Your English friend Jenny has sent you an email. Read part of her email and write a reply. In your email you must: thank Jenny for her news, ask her about her holiday, tell her about your new school, and suggest a time to visit her.",
+      "notes": [
+        "Thank Jenny for her news",
+        "Ask about her holiday",
+        "Tell her about your new school",
+        "Suggest a time to visit"
+      ],
+      "sample": "Hi Jenny, Thanks so much for your email and your exciting news! I am really happy for you. How was your holiday in Greece? Did you enjoy the beaches? My new school is great. The teachers are friendly and I have made some new friends. It is bigger than my old school, so it took me a few days to learn my way around. Would you like me to visit you next month? I could come on the weekend of the 15th. Let me know if that works for you. Best wishes, Maria."
+    },
+    {
+      "id": "b1-w4",
+      "type": "article",
+      "title": "Article about technology",
+      "minWords": 100,
+      "prompt": "You have seen this announcement in an international magazine: Do you think technology makes our lives better or worse? Write us an article giving your opinion. The best articles will be published next month. Write 100 words or more.",
+      "sample": "In my opinion, technology has made our lives better in many ways, but it also has disadvantages. On the positive side, technology allows us to communicate with people all over the world, learn new things and work more efficiently. For example, I use my laptop to study and my phone to stay in touch with my family. However, I think we are becoming too dependent on our devices. Many people spend hours on social media instead of talking to the people around them. In conclusion, technology is a powerful tool, but we must learn to use it wisely."
+    },
+    {
+      "id": "b1-w5",
+      "type": "story",
+      "title": "A short story about a surprise",
+      "minWords": 100,
+      "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: When I opened the door, I could not believe my eyes. Write 100 words or more.",
+      "sample": "When I opened the door, I could not believe my eyes. All my friends were standing in my living room with balloons and a big cake. They shouted 'Happy Birthday!' and I started to cry. It was a total surprise. My best friend had organised everything without telling me. She had invited everyone I know and decorated the whole house. We spent the evening laughing, dancing and eating. It was the best birthday of my life. I will never forget what my friends did for me that day."
+    },
+    {
+      "id": "b1-w6",
+      "type": "email",
+      "title": "Email with 4 notes",
+      "minWords": 100,
+      "prompt": "You have received an email from your English friend Tom. Read part of his email and write a reply. In your email you must: thank Tom for the invitation, explain why you cannot go, suggest another activity, and ask about Tom's family.",
+      "notes": [
+        "Thank Tom for the invitation",
+        "Explain why you cannot go",
+        "Suggest another activity",
+        "Ask about Tom's family"
+      ],
+      "sample": "Hi Tom, Thanks a lot for inviting me to your birthday party. It sounds like it is going to be a lot of fun. Unfortunately, I cannot come because my grandparents are visiting us that weekend and we are going away. I am really sorry to miss it. How about we meet the following Saturday for a coffee or go to the cinema? I would love to catch up with you. By the way, how is your family? Is your sister still studying in Manchester? Write back soon, Sarah."
+    },
+    {
+      "id": "b1-w7",
+      "type": "article",
+      "title": "Article about the environment",
+      "minWords": 100,
+      "prompt": "You have seen this announcement in a magazine: What can young people do to help the environment? Write us an article with your ideas. Write 100 words or more.",
+      "sample": "There are many simple things young people can do to help the environment. First, we can reduce the amount of plastic we use by carrying reusable bags and bottles. Second, we can recycle paper, glass and plastic at home and at school. Third, we can save energy by turning off the lights and walking or cycling instead of taking the car. I also think schools should teach students more about climate change, because understanding the problem is the first step to solving it. If everyone makes small changes, together we can make a big difference."
+    },
+    {
+      "id": "b1-w8",
+      "type": "story",
+      "title": "A short story about a lost dog",
+      "minWords": 100,
+      "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: It was the day before my holiday and everything was going wrong. Write 100 words or more.",
+      "sample": "It was the day before my holiday and everything was going wrong. First, I could not find my passport. Then, my dog Max ran out of the garden and disappeared. I spent three hours looking for him everywhere. I was so worried that I forgot about my passport. Just when I was about to give up, my neighbour called me. She had found Max in the park and was bringing him home. I was so relieved. That evening, I found my passport - it was in my suitcase all along!"
+    },
+    {
+      "id": "b1-w9",
+      "type": "article",
+      "title": "Article about learning languages",
+      "minWords": 100,
+      "prompt": "You have seen this announcement in an international magazine: What is the best way to learn a new language? Write us an article with your suggestions. Write 100 words or more.",
+      "sample": "Learning a new language is a challenge, but there are many ways to make it easier. In my opinion, the most important thing is to practise every day. Even fifteen minutes a day is better than three hours once a week. Secondly, it is essential to listen to the language as much as possible. Watching films, listening to songs or watching videos online helps a lot. Third, do not be afraid of making mistakes. Everyone makes mistakes when they learn. Finally, finding a language partner who wants to learn your language is a great idea. You can help each other and make learning more fun."
+    },
+    {
+      "id": "b1-w10",
+      "type": "email",
+      "title": "Email with 4 notes",
+      "minWords": 100,
+      "prompt": "Your English friend Lucy has sent you an email. Read part of her email and write a reply. In your email you must: thank Lucy for her invitation, accept her invitation, ask what you should bring, and ask about the other guests.",
+      "notes": [
+        "Thank for the invitation",
+        "Accept the invitation",
+        "Ask what to bring",
+        "Ask about the other guests"
+      ],
+      "sample": "Hi Lucy, Thank you so much for inviting me to your dinner party! I would love to come. It is very kind of you to think of me. What should I bring? I can make a dessert or bring some drinks, just let me know what you prefer. Also, who else is coming? I would like to know so I can prepare some conversation topics. I am really looking forward to seeing you. Let me know the details. Best wishes, David."
     }
   ]
 }

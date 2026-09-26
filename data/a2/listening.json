@@ -58,6 +58,318 @@
           "explanation": "Maria says: The party starts at 8."
         }
       ]
+    },
+    {
+      "id": "a2-l3",
+      "title": "At the restaurant",
+      "instructions": "Listen to the conversation and choose the correct answer A, B or C.",
+      "transcript": "Good evening. A table for two, please. Certainly. Would you like a table near the window? Yes, please. Here are your menus. Can I get you something to drink? I would like a glass of water, please. And for me, an orange juice. Thank you. Are you ready to order? Yes. I would like the chicken salad, please. And I will have the fish with vegetables. Excellent choice. Anything else? No, thank you. That is all.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "How many people are there?",
+          "options": [
+            "One",
+            "Two",
+            "Three"
+          ],
+          "correct": 1,
+          "explanation": "The customer asks for a table for two."
+        },
+        {
+          "question": "Where do they want to sit?",
+          "options": [
+            "Near the door",
+            "Near the window",
+            "Outside"
+          ],
+          "correct": 1,
+          "explanation": "The customer says: Yes, please, when asked about a table near the window."
+        },
+        {
+          "question": "What does the woman order?",
+          "options": [
+            "The chicken salad",
+            "The fish",
+            "The soup"
+          ],
+          "correct": 0,
+          "explanation": "The woman says: I would like the chicken salad."
+        }
+      ]
+    },
+    {
+      "id": "a2-l4",
+      "title": "A phone message",
+      "instructions": "Listen to the phone message and choose the correct answer A, B or C.",
+      "transcript": "Hi, this is Sarah. I am calling about tomorrow. I am sorry but I cannot come to the meeting at 10 o'clock. I have a doctor appointment. Can we meet at 2 pm instead? Please call me back when you get this message. My number is 07734 567 890. Thanks. Bye.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "Why is Sarah calling?",
+          "options": [
+            "To cancel a meeting",
+            "To change a meeting time",
+            "To confirm a meeting"
+          ],
+          "correct": 1,
+          "explanation": "Sarah says she cannot come at 10 and asks to meet at 2 pm instead."
+        },
+        {
+          "question": "What time does Sarah want to meet?",
+          "options": [
+            "10 am",
+            "2 pm",
+            "4 pm"
+          ],
+          "correct": 1,
+          "explanation": "Sarah says: Can we meet at 2 pm instead?"
+        },
+        {
+          "question": "Why can't Sarah come at 10 am?",
+          "options": [
+            "She has a doctor appointment",
+            "She is on holiday",
+            "She has another meeting"
+          ],
+          "correct": 0,
+          "explanation": "Sarah says: I have a doctor appointment."
+        }
+      ]
+    },
+    {
+      "id": "a2-l5",
+      "title": "Shopping for clothes",
+      "instructions": "Listen to the conversation and choose the correct answer A, B or C.",
+      "transcript": "Hello, can I help you? Yes, I am looking for a blue shirt. What size are you? Medium. Here you are. This one is medium and blue. How much is it? It is 25 pounds. That is a bit expensive. Do you have anything cheaper? Yes, we have this one for 18 pounds, but it is green. Hmm, I prefer blue. I will take the blue one. Great. Do you want to pay by card or cash? Card, please.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What is the customer looking for?",
+          "options": [
+            "A blue shirt",
+            "A green shirt",
+            "A blue jacket"
+          ],
+          "correct": 0,
+          "explanation": "The customer says: I am looking for a blue shirt."
+        },
+        {
+          "question": "How much is the blue shirt?",
+          "options": [
+            "15 pounds",
+            "18 pounds",
+            "25 pounds"
+          ],
+          "correct": 2,
+          "explanation": "The shop assistant says: It is 25 pounds."
+        },
+        {
+          "question": "How does the customer pay?",
+          "options": [
+            "By cash",
+            "By card",
+            "By phone"
+          ],
+          "correct": 1,
+          "explanation": "The customer says: Card, please."
+        }
+      ]
+    },
+    {
+      "id": "a2-l6",
+      "title": "Making a doctor appointment",
+      "instructions": "Listen to the phone call and choose the correct answer A, B or C.",
+      "transcript": "Good morning, City Medical Centre. How can I help you? Hello, I would like to make an appointment with Doctor Smith, please. Of course. When would you like to come? As soon as possible, please. I have a bad cough. Let me check. Doctor Smith has an appointment available on Tuesday at 3 pm. Tuesday at 3 pm? Yes, that is fine. Can I have your name, please? It is Maria Lopez. And your phone number? 07700 900 123. Thank you, Maria. We will see you on Tuesday at 3 pm.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "Why is Maria calling?",
+          "options": [
+            "To cancel an appointment",
+            "To make an appointment",
+            "To ask about medicine"
+          ],
+          "correct": 1,
+          "explanation": "Maria says: I would like to make an appointment."
+        },
+        {
+          "question": "What is Maria's problem?",
+          "options": [
+            "A headache",
+            "A bad cough",
+            "A stomachache"
+          ],
+          "correct": 1,
+          "explanation": "Maria says: I have a bad cough."
+        },
+        {
+          "question": "When is the appointment?",
+          "options": [
+            "Tuesday at 2 pm",
+            "Tuesday at 3 pm",
+            "Thursday at 3 pm"
+          ],
+          "correct": 1,
+          "explanation": "The receptionist says: Doctor Smith has an appointment available on Tuesday at 3 pm."
+        }
+      ]
+    },
+    {
+      "id": "a2-l7",
+      "title": "At the train station",
+      "instructions": "Listen to the conversation and choose the correct answer A, B or C.",
+      "transcript": "Excuse me, what time is the next train to Oxford? Let me see. The next one leaves at 10:15 from platform 3. How long does the journey take? About an hour and a half. And how much is a return ticket? It is 22 pounds. A single is 15 pounds. I would like a return ticket, please. Certainly. That will be 22 pounds. Here you are. Thank you. Have a good trip.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What time is the next train to Oxford?",
+          "options": [
+            "10:00",
+            "10:15",
+            "10:30"
+          ],
+          "correct": 1,
+          "explanation": "The clerk says: The next one leaves at 10:15."
+        },
+        {
+          "question": "How long does the journey take?",
+          "options": [
+            "30 minutes",
+            "One hour",
+            "About an hour and a half"
+          ],
+          "correct": 2,
+          "explanation": "The clerk says: About an hour and a half."
+        },
+        {
+          "question": "How much is a return ticket?",
+          "options": [
+            "15 pounds",
+            "22 pounds",
+            "30 pounds"
+          ],
+          "correct": 1,
+          "explanation": "The clerk says: A return ticket is 22 pounds."
+        }
+      ]
+    },
+    {
+      "id": "a2-l8",
+      "title": "Talking about the weekend",
+      "instructions": "Listen to the conversation and choose the correct answer A, B or C.",
+      "transcript": "Hi, how was your weekend? It was great, thanks. On Saturday, I went to the beach with my family. The weather was perfect. What did you do on Sunday? I stayed at home. I watched a film and cooked dinner for my parents. It was their anniversary. That sounds nice. What did you cook? I made a lasagna and a chocolate cake. It was delicious, if I can say so myself. Sounds amazing! You will have to cook for me one day.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "What did the person do on Saturday?",
+          "options": [
+            "Stayed at home",
+            "Went to the beach",
+            "Went to a restaurant"
+          ],
+          "correct": 1,
+          "explanation": "The person says: On Saturday, I went to the beach."
+        },
+        {
+          "question": "Why did the person cook dinner on Sunday?",
+          "options": [
+            "For a friend's birthday",
+            "For their parents' anniversary",
+            "For a family reunion"
+          ],
+          "correct": 1,
+          "explanation": "The person says: It was their anniversary (the parents')."
+        },
+        {
+          "question": "What did the person cook?",
+          "options": [
+            "Pizza and salad",
+            "Lasagna and chocolate cake",
+            "Fish and vegetables"
+          ],
+          "correct": 1,
+          "explanation": "The person says: I made a lasagna and a chocolate cake."
+        }
+      ]
+    },
+    {
+      "id": "a2-l9",
+      "title": "At the hotel",
+      "instructions": "Listen to the conversation and choose the correct answer A, B or C.",
+      "transcript": "Good afternoon. Welcome to the Park Hotel. Hello. I have a reservation for two nights. What is your name, please? It is David Brown. Let me check. Yes, Mr. Brown. A double room for two nights. Is breakfast included? Yes, breakfast is served from 7 to 10 am in the dining room. Great. What time is check-out? Check-out is at 11 am. Can I have your passport, please? Here you are. Thank you. Your room is 305. The lift is on the left. Enjoy your stay.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "How many nights is the reservation for?",
+          "options": [
+            "One night",
+            "Two nights",
+            "Three nights"
+          ],
+          "correct": 1,
+          "explanation": "The guest says: I have a reservation for two nights."
+        },
+        {
+          "question": "What time is breakfast?",
+          "options": [
+            "From 6 to 9 am",
+            "From 7 to 10 am",
+            "From 8 to 11 am"
+          ],
+          "correct": 1,
+          "explanation": "The receptionist says: breakfast is served from 7 to 10 am."
+        },
+        {
+          "question": "What time is check-out?",
+          "options": [
+            "10 am",
+            "11 am",
+            "12 pm"
+          ],
+          "correct": 1,
+          "explanation": "The receptionist says: Check-out is at 11 am."
+        }
+      ]
+    },
+    {
+      "id": "a2-l10",
+      "title": "Planning a birthday party",
+      "instructions": "Listen to the conversation and choose the correct answer A, B or C.",
+      "transcript": "Hi, I need your help with mum's birthday party. Sure. When is it? Next Saturday. Her birthday is on Sunday but we are having the party on Saturday. OK. What do you need me to do? Can you bring some balloons and a cake? What kind of cake? She loves chocolate. A chocolate cake, then. How many people are coming? About fifteen. And where is the party? At my house, at 7 pm. Sounds good. See you on Saturday.",
+      "voice": "en-GB",
+      "questions": [
+        {
+          "question": "When is the party?",
+          "options": [
+            "Next Friday",
+            "Next Saturday",
+            "Next Sunday"
+          ],
+          "correct": 1,
+          "explanation": "The speaker says: Her birthday is on Sunday but we are having the party on Saturday."
+        },
+        {
+          "question": "What kind of cake does the mother like?",
+          "options": [
+            "Vanilla",
+            "Chocolate",
+            "Strawberry"
+          ],
+          "correct": 1,
+          "explanation": "The speaker says: She loves chocolate."
+        },
+        {
+          "question": "How many people are coming?",
+          "options": [
+            "About ten",
+            "About fifteen",
+            "About twenty"
+          ],
+          "correct": 1,
+          "explanation": "The speaker says: About fifteen."
+        }
+      ]
     }
   ]
 }
