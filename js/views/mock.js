@@ -223,10 +223,21 @@ function runSection(view, examState, section) {
     if (section.id === "listening" && q.transcript) {
       let plays = 0;
       const maxPlays = 2;
+      const btnRow = document.createElement("div");
+      btnRow.style.display = "flex";
+      btnRow.style.gap = "8px";
+      btnRow.style.marginBottom = "12px";
+
       const playBtn = document.createElement("button");
       playBtn.className = "btn btn--primary";
       playBtn.textContent = "Play audio (0/" + maxPlays + ")";
-      playBtn.style.marginBottom = "12px";
+      btnRow.appendChild(playBtn);
+
+      const stopBtn = document.createElement("button");
+      stopBtn.className = "btn btn--ghost";
+      stopBtn.textContent = "Stop";
+      stopBtn.disabled = true;
+      btnRow.appendChild(stopBtn);
 
       playBtn.addEventListener("click", () => {
         if (plays >= maxPlays) return;
@@ -234,14 +245,22 @@ function runSection(view, examState, section) {
         playBtn.textContent = "Play audio (" + plays + "/" + maxPlays + ")";
         if (plays >= maxPlays) playBtn.disabled = true;
 
+        stopBtn.disabled = false;
+
         window.speechSynthesis.cancel();
         const utter = new SpeechSynthesisUtterance(q.transcript);
         utter.lang = q.voice;
         utter.rate = 0.9;
+        utter.onend = () => { stopBtn.disabled = true; };
         window.speechSynthesis.speak(utter);
       });
 
-      content.appendChild(playBtn);
+      stopBtn.addEventListener("click", () => {
+        window.speechSynthesis.cancel();
+        stopBtn.disabled = true;
+      });
+
+      content.appendChild(btnRow);
     }
 
     const qText = document.createElement("div");

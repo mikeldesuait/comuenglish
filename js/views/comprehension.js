@@ -252,19 +252,28 @@ function openAudio(container, audio) {
   let plays = 0;
   const maxPlays = 2;
 
+  const btnRow = document.createElement("div");
+  btnRow.style.marginTop = "16px";
+  btnRow.style.display = "flex";
+  btnRow.style.gap = "8px";
+  container.appendChild(btnRow);
+
   const playBtn = document.createElement("button");
   playBtn.className = "btn btn--primary";
   playBtn.textContent = "Play audio (0/" + maxPlays + ")";
-  playBtn.style.marginTop = "16px";
-  playBtn.style.marginRight = "8px";
-  container.appendChild(playBtn);
+  btnRow.appendChild(playBtn);
+
+  const stopBtn = document.createElement("button");
+  stopBtn.className = "btn btn--ghost";
+  stopBtn.textContent = "Stop";
+  stopBtn.disabled = true;
+  btnRow.appendChild(stopBtn);
 
   const transBtn = document.createElement("button");
   transBtn.className = "btn btn--ghost";
   transBtn.textContent = "Show transcript";
   transBtn.disabled = true;
-  transBtn.style.marginTop = "16px";
-  container.appendChild(transBtn);
+  btnRow.appendChild(transBtn);
 
   const transSlot = document.createElement("div");
   container.appendChild(transSlot);
@@ -282,12 +291,20 @@ function openAudio(container, audio) {
     if (plays >= maxPlays) playBtn.disabled = true;
     if (plays >= maxPlays) transBtn.disabled = false;
 
+    stopBtn.disabled = false;
+
     window.speechSynthesis.cancel();
     const utter = new SpeechSynthesisUtterance(audio.transcript);
     utter.lang = audio.voice || "en-GB";
     utter.rate = 0.9;
     utter.pitch = 1.0;
+    utter.onend = () => { stopBtn.disabled = true; };
     window.speechSynthesis.speak(utter);
+  });
+
+  stopBtn.addEventListener("click", () => {
+    window.speechSynthesis.cancel();
+    stopBtn.disabled = true;
   });
 
   transBtn.addEventListener("click", () => {
