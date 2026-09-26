@@ -19,7 +19,7 @@ Company: ComuTech
 ## Features
 
 - Three levels: A2 Elementary, B1 Intermediate, B2 Upper Intermediate
-- Four modules: Fundamentals, Comprehension, Production, Mock Exam
+- Four content modules: Fundamentals, Comprehension, Production, Mock Exam
 - Fundamentals: 7 phases per unit (Grammar, Vocabulary, Discovery,
   Guided practice, Free practice, Mini-test, Summary)
 - Reading: texts with CEFR-style questions
@@ -32,7 +32,7 @@ Company: ComuTech
 
 ## Coaching System
 
-The app includes a full coaching system that plans the user study:
+The app includes a full coaching system:
 
 - **Onboarding**: user selects level, exam date, days per week
 - **Auto calculation**: app computes minutes per day needed
@@ -45,9 +45,18 @@ The app includes a full coaching system that plans the user study:
 - **Progress dashboard**: real metrics, projections, status
 - **Streak**: consecutive days studying
 
+## Design
+
+- Modern minimal design with high-contrast text
+- Palette: orange (action), green (success), amber (warning), deep blue (focus)
+- Home: one-screen pitch (headline + CTA + 4 stats)
+- How it works: horizontal method + comparison + CTA
+- Onboarding: compact horizontal layout
+- Sidebar: navigation between study modules
+
 ## Project structure
 
-    cambridge-prep/
+    comuenglish/
       index.html
       css/
         base.css, layout.css, widgets.css
@@ -58,7 +67,8 @@ The app includes a full coaching system that plans the user study:
           storage.js      localStorage wrapper
           scoring.js      CEFR Scale conversion
         views/
-          home.js         dashboard presentation
+          home.js         landing pitch (one-screen)
+          how.js          How it works page
           today.js        daily plan (reads calendar)
           progress.js     progress dashboard
           onboarding.js   initial plan setup
@@ -82,7 +92,7 @@ The app includes a full coaching system that plans the user study:
 
 ## How to run
 
-    cd cambridge-prep
+    cd comuenglish
     python3 -m http.server 8000
 
 Open http://localhost:8000
@@ -94,16 +104,6 @@ Open http://localhost:8000
 3. Paste the key (starts with sk-)
 4. Key is stored only in browser localStorage
 
-## How to add content
-
-Each JSON file follows a simple schema. See any existing file.
-
-- New unit: create file like a2-u16.json, add to units.json
-- New reading: add to reading.json
-- New listening: add to listening.json
-- New writing: add to writing.json
-- New speaking: add to speaking.json
-
 ## Pending tasks
 
 - Auto-reschedule when user falls behind
@@ -111,12 +111,12 @@ Each JSON file follows a simple schema. See any existing file.
 - Vacation mode (pause plan)
 - PWA (installable, offline)
 - Notifications for daily study reminder
-- Full rebrand before commercial publication
+- Pricing page (Free / Monthly / Lifetime)
 
 ## Commercial notes
 
-- The app is branded as ComuEnglish (not Cambridge)
-- Levels named A2 Elementary, B1 Intermediate, B2 Upper Intermediate
+- Branded as ComuEnglish (not Cambridge)
+- Levels: A2 Elementary, B1 Intermediate, B2 Upper Intermediate
 - No references to Cambridge, KET, PET or FCE in the UI
 - CEFR level codes (A2, B1, B2) are public standard
 - Ready to publish on Google Play or as web app
