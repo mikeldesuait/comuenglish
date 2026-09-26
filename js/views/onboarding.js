@@ -1,253 +1,342 @@
-// Onboarding: first-time setup of the study plan.
+// Onboarding: compact horizontal layout.
 import { getState, setState, updatePlan, setCalendar } from "../state.js";
-import { generateCalendar, estimateCalendarSummary, calculateTotalGoalHours, getStudyDaysBetween } from "../core/planner.js";
+import { generateCalendar, calculateTotalGoalHours, getStudyDaysBetween } from "../core/planner.js";
 import { navigate } from "../router.js";
 
 export function renderOnboarding(view) {
-  // Hide sidebar
   const sidebar = document.getElementById("sidebar");
   if (sidebar) sidebar.style.display = "none";
   const shell = document.querySelector(".app-shell");
   if (shell) shell.style.gridTemplateColumns = "1fr";
 
   view.innerHTML = "";
+  view.style.padding = "0";
 
-  const hero = document.createElement("div");
-  hero.style.background = "linear-gradient(135deg, #2563eb 0%, #1e40af 100%)";
-  hero.style.color = "#fff";
-  hero.style.padding = "24px";
-  hero.style.borderRadius = "12px";
-  hero.style.marginBottom = "24px";
+  const form = {
+    level: getState().level || "a2",
+    examDate: (() => {
+      const d = new Date();
+      d.setMonth(d.getMonth() + 6);
+      return d.toISOString().slice(0, 10);
+    })(),
+    daysPerWeek: 5
+  };
 
+  const container = document.createElement("div");
+  container.style.maxWidth = "1000px";
+  container.style.margin = "32px auto";
+  container.style.padding = "0 20px";
+
+  // Header
   const h1 = document.createElement("h1");
-  h1.textContent = "Welcome to ComuEnglish";
-  h1.style.fontSize = "1.5rem";
+  h1.textContent = "Create your study plan";
+  h1.style.fontSize = "1.7rem";
+  h1.style.fontWeight = "800";
+  h1.style.color = "#0f172a";
   h1.style.marginBottom = "6px";
-  hero.appendChild(h1);
+  h1.style.letterSpacing = "-0.5px";
+  container.appendChild(h1);
 
-  const p = document.createElement("p");
-  p.textContent = "Let us create your personal study plan.";
-  p.style.opacity = ".95";
-  hero.appendChild(p);
+  const sub = document.createElement("p");
+  sub.textContent = "We'll build a personalised calendar based on your availability.";
+  sub.style.fontSize = ".95rem";
+  sub.style.color = "#64748b";
+  sub.style.marginBottom = "28px";
+  container.appendChild(sub);
 
-  view.appendChild(hero);
+  // ============================================================
+  // FORM: 3 COLUMNAS
+  // ============================================================
+  // ============================================================
+  // GRID UNIFICADO: 3 columnas x 2 filas
+  // Fila 1: selectores (LEVEL, EXAM DATE, DAYS PER WEEK)
+  // Fila 2: preview (STUDY DAYS, DAILY TIME, CONTENT)
+  // ============================================================
+  const formGrid = document.createElement("div");
+  formGrid.style.display = "grid";
+  formGrid.style.gridTemplateColumns = "1fr 1fr 1fr";
+  formGrid.style.gap = "20px";
+  formGrid.style.marginBottom = "20px";
 
-  // Form container
-  const form = document.createElement("div");
-  form.style.maxWidth = "600px";
+  // ---- Fila 1: LEVEL (horizontal) ----
+  const col1 = createColumn("LEVEL");
+  const levelRow = document.createElement("div");
+  levelRow.style.display = "flex";
+  levelRow.style.gap = "6px";
 
-  // 1. Level
-  const levelLabel = document.createElement("label");
-  levelLabel.innerHTML = "<strong>1. Which level are you preparing?</strong>";
-  levelLabel.style.display = "block";
-  levelLabel.style.marginBottom = "8px";
-  levelLabel.style.marginTop = "20px";
-  form.appendChild(levelLabel);
+  const levelOptions = [
+    { value: "a2", label: "A2" },
+    { value: "b1", label: "B1" },
+    { value: "b2", label: "B2" }
+  ];
 
-  const levelSelect = document.createElement("select");
-  levelSelect.id = "onboarding-level-select";
-  levelSelect.style.padding = "8px";
-  levelSelect.style.borderRadius = "8px";
-  levelSelect.style.border = "1px solid #e2e8f0";
-  levelSelect.style.fontSize = ".95rem";
-  levelSelect.style.width = "200px";
-  [["a2", "A2 Key"], ["b1", "B1 Preliminary"], ["b2", "B2 First"]].forEach(([val, txt]) => {
-    const opt = document.createElement("option");
-    opt.value = val;
-    opt.textContent = txt;
-    if (val === getState().level) opt.selected = true;
-    levelSelect.appendChild(opt);
+  levelOptions.forEach(opt => {
+    const btn = document.createElement("label");
+    btn.style.padding = "12px 22px";
+    btn.style.cursor = "pointer";
+    btn.style.borderRadius = "6px";
+    btn.style.border = opt.value === form.level ? "2px solid #2563eb" : "1px solid #cbd5e1";
+    btn.style.background = opt.value === form.level ? "#eff6ff" : "#fff";
+    btn.style.fontWeight = "700";
+    btn.style.fontSize = "1rem";
+    btn.style.color = opt.value === form.level ? "#1e40af" : "#0f172a";
+    btn.style.transition = "all .15s";
+    btn.textContent = opt.label;
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      form.level = opt.value;
+      levelRow.querySelectorAll("label").forEach(l => {
+        l.style.border = "1px solid #cbd5e1";
+        l.style.background = "#fff";
+        l.style.color = "#0f172a";
+      });
+      btn.style.border = "2px solid #2563eb";
+      btn.style.background = "#eff6ff";
+      btn.style.color = "#1e40af";
+      updateAll();
+    });
+
+    levelRow.appendChild(btn);
   });
-  form.appendChild(levelSelect);
+  col1.body.appendChild(levelRow);
+  formGrid.appendChild(col1.container);
 
-  // 2. Exam date
-  const dateLabel = document.createElement("label");
-  dateLabel.innerHTML = "<strong>2. When is your exam?</strong>";
-  dateLabel.style.display = "block";
-  dateLabel.style.marginBottom = "8px";
-  dateLabel.style.marginTop = "20px";
-  form.appendChild(dateLabel);
-
+  // ---- Fila 1: EXAM DATE ----
+  const col2 = createColumn("EXAM DATE");
   const dateInput = document.createElement("input");
   dateInput.type = "date";
-  dateInput.style.padding = "8px";
-  dateInput.style.borderRadius = "8px";
-  dateInput.style.border = "1px solid #e2e8f0";
-  dateInput.style.fontSize = ".95rem";
-  // Default: 6 months from now
-  const sixMonths = new Date();
-  sixMonths.setMonth(sixMonths.getMonth() + 6);
-  dateInput.value = sixMonths.toISOString().slice(0, 10);
-  form.appendChild(dateInput);
-
-  // 3. Mensaje informativo (la app calcula los minutos)
-  const minLabel = document.createElement("label");
-  minLabel.innerHTML = "<strong>3. Daily time</strong>";
-  minLabel.style.display = "block";
-  minLabel.style.marginBottom = "8px";
-  minLabel.style.marginTop = "20px";
-  form.appendChild(minLabel);
-
-  const minInfo = document.createElement("div");
-  minInfo.style.padding = "12px";
-  minInfo.style.background = "#eff6ff";
-  minInfo.style.borderRadius = "8px";
-  minInfo.style.fontSize = ".9rem";
-  minInfo.style.lineHeight = "1.5";
-  minInfo.textContent = "The app will calculate how many minutes per day you need, based on the content and your available days.";
-  form.appendChild(minInfo);
-
-  // 4. Days per week
-  const daysLabel = document.createElement("label");
-  daysLabel.innerHTML = "<strong>4. How many days per week?</strong>";
-  daysLabel.style.display = "block";
-  daysLabel.style.marginBottom = "8px";
-  daysLabel.style.marginTop = "20px";
-  form.appendChild(daysLabel);
-
-  const daysSelect = document.createElement("select");
-  daysSelect.style.padding = "8px";
-  daysSelect.style.borderRadius = "8px";
-  daysSelect.style.border = "1px solid #e2e8f0";
-  daysSelect.style.fontSize = ".95rem";
-  daysSelect.style.width = "200px";
-  [3, 4, 5, 6, 7].forEach(val => {
-    const opt = document.createElement("option");
-    opt.value = val;
-    opt.textContent = val + " days";
-    if (val === 5) opt.selected = true;
-    daysSelect.appendChild(opt);
+  dateInput.value = form.examDate;
+  dateInput.style.padding = "12px 14px";
+  dateInput.style.borderRadius = "6px";
+  dateInput.style.border = "1px solid #cbd5e1";
+  dateInput.style.fontSize = "1rem";
+  dateInput.style.width = "100%";
+  dateInput.style.fontFamily = "inherit";
+  dateInput.style.color = "#0f172a";
+  dateInput.style.background = "#fff";
+  dateInput.addEventListener("change", () => {
+    form.examDate = dateInput.value;
+    updateAll();
   });
-  form.appendChild(daysSelect);
+  col2.body.appendChild(dateInput);
+  formGrid.appendChild(col2.container);
 
-  // Preview of plan (calculated live)
-  const preview = document.createElement("div");
-  preview.className = "feedback feedback--info";
-  preview.style.marginTop = "24px";
-  preview.style.lineHeight = "1.7";
-  form.appendChild(preview);
+  // ---- Fila 1: DAYS PER WEEK ----
+  const col3 = createColumn("DAYS PER WEEK");
+  const daysRow = document.createElement("div");
+  daysRow.style.display = "flex";
+  daysRow.style.gap = "4px";
+  daysRow.style.flexWrap = "wrap";
+
+  [3, 4, 5, 6, 7].forEach(n => {
+    const btn = document.createElement("label");
+    btn.style.width = "48px";
+    btn.style.height = "48px";
+    btn.style.display = "flex";
+    btn.style.alignItems = "center";
+    btn.style.justifyContent = "center";
+    btn.style.cursor = "pointer";
+    btn.style.borderRadius = "6px";
+    btn.style.border = n === form.daysPerWeek ? "2px solid #2563eb" : "1px solid #cbd5e1";
+    btn.style.background = n === form.daysPerWeek ? "#eff6ff" : "#fff";
+    btn.style.fontWeight = "700";
+    btn.style.fontSize = "1rem";
+    btn.style.color = n === form.daysPerWeek ? "#1e40af" : "#0f172a";
+    btn.style.transition = "all .15s";
+    btn.appendChild(document.createTextNode(n));
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      form.daysPerWeek = n;
+      daysRow.querySelectorAll("label").forEach(l => {
+        l.style.border = "1px solid #cbd5e1";
+        l.style.background = "#fff";
+        l.style.color = "#0f172a";
+      });
+      btn.style.border = "2px solid #2563eb";
+      btn.style.background = "#eff6ff";
+      btn.style.color = "#1e40af";
+      updateAll();
+    });
+
+    daysRow.appendChild(btn);
+  });
+  col3.body.appendChild(daysRow);
+  formGrid.appendChild(col3.container);
+
+  // ---- Fila 2: STUDY DAYS (preview columna 1) ----
+  const prev1 = createPreviewColumn("STUDY DAYS", "---");
+  formGrid.appendChild(prev1.container);
+
+  // ---- Fila 2: DAILY TIME (preview columna 2) ----
+  const prev2 = createPreviewColumn("DAILY TIME", "---", "#1e40af");
+  formGrid.appendChild(prev2.container);
+
+  // ---- Fila 2: CONTENT (preview columna 3) ----
+  const prev3 = createPreviewColumn("CONTENT", "---");
+  formGrid.appendChild(prev3.container);
+
+  container.appendChild(formGrid);
 
   function updatePreview() {
-    const level = levelSelect.value;
-    const daysPerWeek = parseInt(daysSelect.value);
-    const examDate = dateInput.value;
-
-    if (!examDate) {
-      preview.innerHTML = "Select an exam date to see your plan.";
-      return;
-    }
-
-    // Calcular dias de estudio disponibles
-    const days = getStudyDaysBetween(new Date(), new Date(examDate), daysPerWeek);
+    const days = getStudyDaysBetween(new Date(), new Date(form.examDate), form.daysPerWeek);
     const totalDays = days.length;
+    const totalHours = calculateTotalGoalHours(form.level);
+    const minutesPerDay = Math.max(15, Math.ceil((totalHours * 60) / Math.max(totalDays, 1)));
 
-    if (totalDays === 0) {
-      preview.innerHTML = "⚠️ <span style='color:#dc2626'>Invalid exam date. Choose a future date.</span>";
-      return;
-    }
-
-    // Calcular horas necesarias (3 vueltas)
-    const baseHours = calculateTotalGoalHours(level); // ya incluye multiplicador x3
-    const totalHours = baseHours;
-    const totalMinutes = totalHours * 60;
-    const minutesPerDay = Math.ceil(totalMinutes / totalDays);
-
-    // Formatear tiempo
-    function formatMin(m) {
+    function fmt(m) {
       if (m < 60) return m + " min";
       const h = Math.floor(m / 60);
       const mm = m % 60;
-      return h + "h" + (mm > 0 ? " " + mm + "min" : "");
+      return h + "h" + (mm > 0 ? " " + mm + "m" : "");
     }
 
-    const feasible = minutesPerDay <= 120;
-
-    preview.innerHTML =
-      "<strong>📊 YOUR PLAN</strong><br>" +
-      "Level: <strong>" + level.toUpperCase() + "</strong><br>" +
-      "Study days available: <strong>" + totalDays + "</strong> (until exam)<br>" +
-      "Total content: <strong>" + totalHours + " hours</strong> (3 passes)<br><br>" +
-      "🎯 <strong>You need to study " + formatMin(minutesPerDay) + " per day</strong><br><br>" +
-      (feasible
-        ? "✅ <span style='color:#16a34a'>This pace is realistic.</span>"
-        : "⚠️ <span style='color:#dc2626'>This pace is too demanding. Consider reducing days/week or extending exam date.</span>");
+    prev1.setValue(String(totalDays));
+    prev2.setValue(fmt(minutesPerDay));
+    prev3.setValue(totalHours + "h");
   }
 
-  levelSelect.addEventListener("change", updatePreview);
-  dateInput.addEventListener("change", updatePreview);
-  daysSelect.addEventListener("change", updatePreview);
-  updatePreview();
+  // ============================================================
+  // STATUS (mismo bloque que preview, debajo)
+  // ============================================================
+  const status = document.createElement("div");
+  status.style.fontSize = ".95rem";
+  status.style.padding = "12px 16px";
+  status.style.borderRadius = "8px";
+  status.style.marginBottom = "20px";
+  status.style.textAlign = "center";
+  container.appendChild(status);
 
-  // Buttons
-  const btnRow = document.createElement("div");
-  btnRow.style.marginTop = "24px";
-  btnRow.style.display = "flex";
-  btnRow.style.gap = "12px";
+  function updateStatus() {
+    const days = getStudyDaysBetween(new Date(), new Date(form.examDate), form.daysPerWeek);
+    const totalHours = calculateTotalGoalHours(form.level);
+    const minutesPerDay = Math.max(15, Math.ceil((totalHours * 60) / Math.max(days.length, 1)));
+    const feasible = minutesPerDay <= 120;
 
+    if (feasible) {
+      status.style.background = "#f0fdf4";
+      status.style.color = "#15803d";
+      status.style.border = "1px solid #bbf7d0";
+      status.textContent = "✓ This pace is realistic. You'll have margin before your exam.";
+    } else {
+      status.style.background = "#fef2f2";
+      status.style.color = "#b91c1c";
+      status.style.border = "1px solid #fecaca";
+      status.textContent = "⚠ This pace is demanding. Consider more days or a later date.";
+    }
+  }
+
+  function updateAll() {
+    updatePreview();
+    updateStatus();
+  }
+
+  updateAll();
+
+  // ============================================================
+  // BOTON
+  // ============================================================
   const startBtn = document.createElement("button");
-  startBtn.className = "btn btn--primary";
-  startBtn.textContent = "Create my plan";
-  startBtn.style.padding = "12px 28px";
-  startBtn.style.fontSize = "1rem";
-  startBtn.style.fontWeight = "bold";
+  startBtn.textContent = "Create my plan →";
+  startBtn.style.width = "100%";
+  startBtn.style.padding = "16px";
+  startBtn.style.background = "#1e40af";
+  startBtn.style.color = "#fff";
+  startBtn.style.border = "none";
+  startBtn.style.borderRadius = "10px";
+  startBtn.style.fontSize = "1.05rem";
+  startBtn.style.fontWeight = "700";
+  startBtn.style.cursor = "pointer";
+  startBtn.style.transition = "background .15s";
+  startBtn.style.maxWidth = "400px";
+  startBtn.style.margin = "0 auto";
+  startBtn.style.display = "block";
+
+  startBtn.addEventListener("mouseenter", () => startBtn.style.background = "#1d4ed8");
+  startBtn.addEventListener("mouseleave", () => startBtn.style.background = "#1e40af");
+
   startBtn.addEventListener("click", async () => {
-    // Calcular minutos diarios automaticamente
-    const daysPerWeek = parseInt(daysSelect.value);
-    const examDate = dateInput.value;
-    const days = getStudyDaysBetween(new Date(), new Date(examDate), daysPerWeek);
-    const baseHours = calculateTotalGoalHours(levelSelect.value);
-    const minutesPerDay = Math.max(15, Math.ceil((baseHours * 60) / days.length));
+    const days = getStudyDaysBetween(new Date(), new Date(form.examDate), form.daysPerWeek);
+    const totalHours = calculateTotalGoalHours(form.level);
+    const minutesPerDay = Math.max(15, Math.ceil((totalHours * 60) / days.length));
 
     const plan = {
       enabled: true,
-      examDate: examDate,
+      examDate: form.examDate,
       dailyMinutes: minutesPerDay,
-      daysPerWeek: daysPerWeek,
+      daysPerWeek: form.daysPerWeek,
       startDate: new Date().toISOString().slice(0, 10),
-      targetLevel: levelSelect.value
+      targetLevel: form.level
     };
 
-    setState({ level: levelSelect.value });
+    setState({ level: form.level });
     updatePlan(plan);
 
-    // Mostrar mensaje de carga
     startBtn.disabled = true;
-    startBtn.textContent = "Generating your calendar...";
+    startBtn.textContent = "Generating...";
 
     try {
-      // Generar el calendario completo
-      const calendar = await generateCalendar(
-        levelSelect.value,
-        dateInput.value,
-        minutesPerDay,
-        parseInt(daysSelect.value)
-      );
-
+      const calendar = await generateCalendar(form.level, form.examDate, minutesPerDay, form.daysPerWeek);
       setCalendar(calendar);
-
-      const summary = estimateCalendarSummary(calendar);
-      console.log("Calendar generated:", summary);
-
-      // Redirect to Today view
       navigate("today");
     } catch (err) {
-      console.error("Error generating calendar:", err);
-      alert("Error generating calendar: " + err.message);
+      console.error("Error:", err);
+      alert("Error: " + err.message);
       startBtn.disabled = false;
-      startBtn.textContent = "Create my plan";
+      startBtn.textContent = "Create my plan →";
     }
   });
-  btnRow.appendChild(startBtn);
 
-  const skipBtn = document.createElement("button");
-  skipBtn.className = "btn btn--ghost";
-  skipBtn.textContent = "Skip for now";
-  skipBtn.style.padding = "12px 24px";
-  skipBtn.addEventListener("click", () => {
-    navigate("home");
-  });
-  btnRow.appendChild(skipBtn);
+  container.appendChild(startBtn);
 
-  form.appendChild(btnRow);
-  view.appendChild(form);
+  view.appendChild(container);
+}
+
+function createColumn(label) {
+  const container = document.createElement("div");
+
+  const labelEl = document.createElement("div");
+  labelEl.textContent = label;
+  labelEl.style.fontSize = ".75rem";
+  labelEl.style.fontWeight = "700";
+  labelEl.style.letterSpacing = "1px";
+  labelEl.style.color = "#64748b";
+  labelEl.style.marginBottom = "10px";
+  container.appendChild(labelEl);
+
+  const body = document.createElement("div");
+  container.appendChild(body);
+
+  return { container, body };
+}
+
+
+function createPreviewColumn(label, initialValue, color) {
+  const container = document.createElement("div");
+  container.style.background = "#f8fafc";
+  container.style.padding = "14px 16px";
+  container.style.borderRadius = "8px";
+  container.style.textAlign = "center";
+
+  const labelEl = document.createElement("div");
+  labelEl.textContent = label;
+  labelEl.style.fontSize = ".7rem";
+  labelEl.style.fontWeight = "700";
+  labelEl.style.letterSpacing = "1px";
+  labelEl.style.color = "#64748b";
+  labelEl.style.marginBottom = "4px";
+  container.appendChild(labelEl);
+
+  const valueEl = document.createElement("div");
+  valueEl.textContent = initialValue;
+  valueEl.style.fontSize = "1.15rem";
+  valueEl.style.fontWeight = "700";
+  valueEl.style.color = color || "#0f172a";
+  container.appendChild(valueEl);
+
+  return {
+    container,
+    setValue: (v) => { valueEl.textContent = v; }
+  };
 }

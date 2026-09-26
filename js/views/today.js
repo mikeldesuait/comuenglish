@@ -14,19 +14,7 @@ export async function renderToday(view) {
   const state = getState();
 
   if (!plan.enabled) {
-    view.innerHTML = "";
-    const msg = document.createElement("div");
-    msg.className = "feedback feedback--info";
-    msg.innerHTML = "<strong>Welcome!</strong><br>You haven't created your study plan yet.";
-    view.appendChild(msg);
-
-    const btn = document.createElement("button");
-    btn.className = "btn btn--primary";
-    btn.textContent = "Create my plan";
-    btn.style.marginTop = "16px";
-    btn.style.padding = "12px 24px";
-    btn.addEventListener("click", () => navigate("onboarding"));
-    view.appendChild(btn);
+    navigate("onboarding");
     return;
   }
 

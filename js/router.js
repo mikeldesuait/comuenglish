@@ -32,12 +32,28 @@ export async function render() {
   const view = document.getElementById("view");
   if (!view) return;
 
-  const renderer = routes[currentRoute] || renderToday;
+  // Show sidebar by default; specific views may hide it
+  const sidebar = document.getElementById("sidebar");
+  if (sidebar) sidebar.style.display = "block";
+  const shell = document.querySelector(".app-shell");
+  if (shell) shell.style.gridTemplateColumns = "";
+
+  // Si no hay plan y no estamos en onboarding, redirigir al onboarding
+  let route = currentRoute;
+  try {
+    const state = JSON.parse(localStorage.getItem("cambridge-prep-state-v1") || "{}");
+    const hasPlan = state.plan && state.plan.enabled;
+    if (!hasPlan && route !== "onboarding") {
+      route = "onboarding";
+    }
+  } catch (e) {}
+
+  const renderer = routes[route] || renderToday;
   view.innerHTML = "";
   await renderer(view);
 
   document.querySelectorAll("[data-route]").forEach(btn => {
-    btn.classList.toggle("is-active", btn.dataset.route === currentRoute);
+    btn.classList.toggle("is-active", btn.dataset.route === route);
   });
 }
 
