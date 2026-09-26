@@ -307,12 +307,21 @@ function openAudio(container, audio) {
     stopBtn.disabled = true;
   });
 
+  let transcriptShown = false;
   transBtn.addEventListener("click", () => {
-    const fb = document.createElement("div");
-    fb.className = "feedback feedback--info";
-    fb.style.marginTop = "12px";
-    fb.textContent = audio.transcript;
-    transSlot.appendChild(fb);
+    if (transcriptShown) {
+      transSlot.innerHTML = "";
+      transBtn.textContent = "Show transcript";
+      transcriptShown = false;
+    } else {
+      const fb = document.createElement("div");
+      fb.className = "feedback feedback--info";
+      fb.style.marginTop = "12px";
+      fb.textContent = audio.transcript;
+      transSlot.appendChild(fb);
+      transBtn.textContent = "Hide transcript";
+      transcriptShown = true;
+    }
   });
 
   const questionsBox = document.createElement("div");
