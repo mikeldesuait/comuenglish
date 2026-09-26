@@ -1,16 +1,44 @@
 :root {
+  /* ============================================================
+     PALETA "ENERGIA + ENFOQUE" (neurociencia + PNL)
+     ============================================================ */
+
+  /* Accion / CTA -> Naranja vibrante (energia, hazlo ahora) */
+  --action: #f97316;
+  --action-hover: #ea580c;
+
+  /* Exito / Logro -> Verde esmeralda (recompensa, bien hecho) */
+  --success: #10b981;
+  --success-hover: #059669;
+
+  /* Sugerencia / Espera -> Ambar (anticipacion, algo bueno viene) */
+  --warning: #f59e0b;
+
+  /* Enfoque / Contenido -> Azul profundo (confianza, concentracion) */
+  --focus: #1e40af;
+  --focus-light: #3b82f6;
+
+  /* Neutros */
   --bg: #0f172a;
   --bg-elev: #1e293b;
   --surface: #ffffff;
   --text: #0f172a;
   --text-muted: #64748b;
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
-  --success: #16a34a;
-  --warning: #f59e0b;
-  --danger: #dc2626;
   --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+
+  /* Peligro */
+  --danger: #dc2626;
+
+  /* Alias compatibilidad (no romper codigo existente) */
+  --primary: #f97316;
+  --primary-hover: #ea580c;
+
+  /* Tipografia */
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  /* Espaciado */
   --radius: 10px;
   --space-1: 4px;
   --space-2: 8px;
@@ -18,10 +46,14 @@
   --space-4: 16px;
   --space-5: 24px;
   --space-6: 32px;
+
+  /* Sombras */
   --shadow-sm: 0 1px 2px rgba(0,0,0,.05);
   --shadow-md: 0 4px 12px rgba(0,0,0,.08);
 }
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
   font-family: var(--font-sans);
   font-size: 16px;
@@ -32,7 +64,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
-h1 { font-size: 1.5rem; line-height: 1.25; }
-h2 { font-size: 1.25rem; line-height: 1.25; }
-h3 { font-size: 1.1rem; line-height: 1.25; }
+
+h1, h2, h3, h4 { line-height: 1.25; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.25rem; }
+h3 { font-size: 1.1rem; }

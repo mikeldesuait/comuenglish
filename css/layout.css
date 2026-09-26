@@ -1,9 +1,9 @@
 .topbar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-3) var(--space-5); background: var(--bg); color: #fff; box-shadow: var(--shadow-md); position: sticky; top: 0; z-index: 10; }
 .topbar__brand { display: flex; align-items: center; gap: var(--space-2); }
-.topbar__logo { background: var(--primary); color: #fff; padding: 4px 10px; border-radius: var(--radius); font-weight: bold; }
+.topbar__logo { background: var(--action); color: #fff; padding: 4px 10px; border-radius: var(--radius); font-weight: bold; }
 .topbar__nav { display: flex; gap: var(--space-2); flex-wrap: wrap; }
 .nav-btn { padding: var(--space-2) var(--space-3); border-radius: var(--radius); color: #cbd5e1; transition: background .15s, color .15s; }
-.nav-btn:hover, .nav-btn.is-active { background: var(--primary); color: #fff; }
+.nav-btn:hover, .nav-btn.is-active { background: var(--action); color: #fff; }
 .topbar__level { display: flex; align-items: center; gap: var(--space-2); color: #cbd5e1; }
 .topbar__level select { padding: var(--space-2); border-radius: var(--radius); border: 1px solid #334155; background: var(--bg-elev); color: #fff; }
 .app-shell { display: grid; grid-template-columns: 280px 1fr; gap: var(--space-5); padding: var(--space-5); flex: 1; max-width: 1400px; width: 100%; margin: 0 auto; }
@@ -12,5 +12,59 @@
 .statusbar { display: flex; justify-content: space-between; align-items: center; padding: var(--space-3) var(--space-5); background: var(--bg); color: #cbd5e1; font-size: .9rem; }
 .statusbar__progress { display: flex; align-items: center; gap: var(--space-3); flex: 1; max-width: 500px; }
 .bar { flex: 1; height: 8px; background: #334155; border-radius: 4px; overflow: hidden; }
-.bar__fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--primary), var(--success)); transition: width .3s ease; }
+.bar__fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--action), var(--success)); transition: width .3s ease; }
 @media (max-width: 900px) { .app-shell { grid-template-columns: 1fr; } .sidebar { position: static; } }
+
+/* ============================================
+   Sidebar con modulos
+   ============================================ */
+.sidebar__title {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  padding: 0 12px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: .9rem;
+  font-weight: 500;
+  color: #334155;
+  text-align: left;
+  transition: background .15s, color .15s;
+  margin-bottom: 2px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.sidebar__link:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.sidebar__link.is-active {
+  background: #fff7ed;
+  color: #c2410c;
+  font-weight: 600;
+}
+
+.sidebar__icon {
+  font-size: 1.1rem;
+  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.sidebar__divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 12px 0;
+}

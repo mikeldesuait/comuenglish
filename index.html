@@ -21,12 +21,8 @@
 
     <nav class="topbar__nav" id="main-nav">
       <button class="nav-btn" data-route="home">Home</button>
-      <button class="nav-btn is-active" data-route="today">📅 Today</button>
-      <button class="nav-btn" data-route="progress">📊 Progress</button>
-      <button class="nav-btn" data-route="fundamentals">Fundamentals</button>
-      <button class="nav-btn" data-route="comprehension">Comprehension</button>
-      <button class="nav-btn" data-route="production">Production</button>
-      <button class="nav-btn" data-route="mock">Mock Exam</button>
+      <button class="nav-btn" data-route="today">Today</button>
+      <button class="nav-btn" data-route="how">How it works</button>
       <button class="nav-btn" id="open-settings" title="Settings">⚙</button>
     </nav>
 
@@ -43,7 +39,31 @@
   <div class="app-shell">
 
     <aside class="sidebar" id="sidebar">
-      <p class="sidebar__placeholder">Select a module to view its units.</p>
+      <p class="sidebar__title">STUDY</p>
+      <button class="sidebar__link" data-route="fundamentals">
+        <span class="sidebar__icon">📖</span>
+        <span>Fundamentals</span>
+      </button>
+      <button class="sidebar__link" data-route="comprehension">
+        <span class="sidebar__icon">📚</span>
+        <span>Comprehension</span>
+      </button>
+      <button class="sidebar__link" data-route="production">
+        <span class="sidebar__icon">✍️</span>
+        <span>Production</span>
+      </button>
+      <button class="sidebar__link" data-route="mock">
+        <span class="sidebar__icon">🎓</span>
+        <span>Mock Exam</span>
+      </button>
+
+      <div class="sidebar__divider"></div>
+
+      <p class="sidebar__title">TRACK</p>
+      <button class="sidebar__link" data-route="progress">
+        <span class="sidebar__icon">📊</span>
+        <span>Progress</span>
+      </button>
     </aside>
 
     <main class="content" id="view">

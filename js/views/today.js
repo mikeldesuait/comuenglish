@@ -14,7 +14,36 @@ export async function renderToday(view) {
   const state = getState();
 
   if (!plan.enabled) {
-    navigate("onboarding");
+    view.innerHTML = "";
+
+    const box = document.createElement("div");
+    box.style.background = "#fff7ed";
+    box.style.border = "2px solid #fed7aa";
+    box.style.borderRadius = "14px";
+    box.style.padding = "40px 32px";
+    box.style.textAlign = "center";
+    box.style.maxWidth = "560px";
+    box.style.margin = "60px auto";
+
+    box.innerHTML =
+      "<div style='font-size:2.5rem; margin-bottom:12px'>📅</div>" +
+      "<h2 style='font-size:1.4rem; font-weight:800; color:#0f172a; margin-bottom:8px'>No plan yet</h2>" +
+      "<p style='font-size:.95rem; color:#64748b; margin-bottom:24px; line-height:1.6'>Create your personal study plan to see your daily tasks here. It takes 2 minutes.</p>";
+
+    const btn = document.createElement("button");
+    btn.textContent = "Create my plan →";
+    btn.style.padding = "14px 32px";
+    btn.style.background = "#f97316";
+    btn.style.color = "#fff";
+    btn.style.border = "none";
+    btn.style.borderRadius = "999px";
+    btn.style.fontSize = "1rem";
+    btn.style.fontWeight = "700";
+    btn.style.cursor = "pointer";
+    btn.addEventListener("click", () => navigate("onboarding"));
+    box.appendChild(btn);
+
+    view.appendChild(box);
     return;
   }
 

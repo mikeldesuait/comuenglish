@@ -28,7 +28,7 @@ function bootstrap() {
   });
 
   // If plan exists, go to Today; otherwise go to Today (which will redirect to onboarding)
-  navigate("today");
+  navigate("home");
 }
 
 if (document.readyState === "loading") {

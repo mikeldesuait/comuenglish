@@ -47,7 +47,7 @@ export function renderHome(view) {
   const ctaBtn = document.createElement("button");
   ctaBtn.textContent = "Start free →";
   ctaBtn.style.padding = "16px 40px";
-  ctaBtn.style.background = "#0f172a";
+  ctaBtn.style.background = "#f97316";
   ctaBtn.style.color = "#fff";
   ctaBtn.style.border = "none";
   ctaBtn.style.borderRadius = "999px";
@@ -58,11 +58,11 @@ export function renderHome(view) {
   ctaBtn.style.letterSpacing = "-0.3px";
 
   ctaBtn.addEventListener("mouseenter", () => {
-    ctaBtn.style.background = "#1e293b";
+    ctaBtn.style.background = "#ea580c";
     ctaBtn.style.transform = "scale(1.03)";
   });
   ctaBtn.addEventListener("mouseleave", () => {
-    ctaBtn.style.background = "#0f172a";
+    ctaBtn.style.background = "#f97316";
     ctaBtn.style.transform = "scale(1)";
   });
   ctaBtn.addEventListener("click", () => {

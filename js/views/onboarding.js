@@ -75,11 +75,11 @@ export function renderOnboarding(view) {
     btn.style.padding = "12px 22px";
     btn.style.cursor = "pointer";
     btn.style.borderRadius = "6px";
-    btn.style.border = opt.value === form.level ? "2px solid #2563eb" : "1px solid #cbd5e1";
-    btn.style.background = opt.value === form.level ? "#eff6ff" : "#fff";
+    btn.style.border = opt.value === form.level ? "2px solid #f97316" : "1px solid #cbd5e1";
+    btn.style.background = opt.value === form.level ? "#fff7ed" : "#fff";
     btn.style.fontWeight = "700";
     btn.style.fontSize = "1rem";
-    btn.style.color = opt.value === form.level ? "#1e40af" : "#0f172a";
+    btn.style.color = opt.value === form.level ? "#c2410c" : "#0f172a";
     btn.style.transition = "all .15s";
     btn.textContent = opt.label;
 
@@ -91,9 +91,9 @@ export function renderOnboarding(view) {
         l.style.background = "#fff";
         l.style.color = "#0f172a";
       });
-      btn.style.border = "2px solid #2563eb";
-      btn.style.background = "#eff6ff";
-      btn.style.color = "#1e40af";
+      btn.style.border = "2px solid #f97316";
+      btn.style.background = "#fff7ed";
+      btn.style.color = "#c2410c";
       updateAll();
     });
 
@@ -138,11 +138,11 @@ export function renderOnboarding(view) {
     btn.style.justifyContent = "center";
     btn.style.cursor = "pointer";
     btn.style.borderRadius = "6px";
-    btn.style.border = n === form.daysPerWeek ? "2px solid #2563eb" : "1px solid #cbd5e1";
-    btn.style.background = n === form.daysPerWeek ? "#eff6ff" : "#fff";
+    btn.style.border = n === form.daysPerWeek ? "2px solid #f97316" : "1px solid #cbd5e1";
+    btn.style.background = n === form.daysPerWeek ? "#fff7ed" : "#fff";
     btn.style.fontWeight = "700";
     btn.style.fontSize = "1rem";
-    btn.style.color = n === form.daysPerWeek ? "#1e40af" : "#0f172a";
+    btn.style.color = n === form.daysPerWeek ? "#c2410c" : "#0f172a";
     btn.style.transition = "all .15s";
     btn.appendChild(document.createTextNode(n));
 
@@ -154,9 +154,9 @@ export function renderOnboarding(view) {
         l.style.background = "#fff";
         l.style.color = "#0f172a";
       });
-      btn.style.border = "2px solid #2563eb";
-      btn.style.background = "#eff6ff";
-      btn.style.color = "#1e40af";
+      btn.style.border = "2px solid #f97316";
+      btn.style.background = "#fff7ed";
+      btn.style.color = "#c2410c";
       updateAll();
     });
 
@@ -170,7 +170,7 @@ export function renderOnboarding(view) {
   formGrid.appendChild(prev1.container);
 
   // ---- Fila 2: DAILY TIME (preview columna 2) ----
-  const prev2 = createPreviewColumn("DAILY TIME", "---", "#1e40af");
+  const prev2 = createPreviewColumn("DAILY TIME", "---", "#c2410c");
   formGrid.appendChild(prev2.container);
 
   // ---- Fila 2: CONTENT (preview columna 3) ----
@@ -241,7 +241,7 @@ export function renderOnboarding(view) {
   startBtn.textContent = "Create my plan →";
   startBtn.style.width = "100%";
   startBtn.style.padding = "16px";
-  startBtn.style.background = "#1e40af";
+  startBtn.style.background = "#c2410c";
   startBtn.style.color = "#fff";
   startBtn.style.border = "none";
   startBtn.style.borderRadius = "10px";
@@ -254,7 +254,7 @@ export function renderOnboarding(view) {
   startBtn.style.display = "block";
 
   startBtn.addEventListener("mouseenter", () => startBtn.style.background = "#1d4ed8");
-  startBtn.addEventListener("mouseleave", () => startBtn.style.background = "#1e40af");
+  startBtn.addEventListener("mouseleave", () => startBtn.style.background = "#c2410c");
 
   startBtn.addEventListener("click", async () => {
     const days = getStudyDaysBetween(new Date(), new Date(form.examDate), form.daysPerWeek);

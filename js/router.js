@@ -6,12 +6,14 @@ import { renderComprehension } from "./views/comprehension.js";
 import { renderProduction } from "./views/production.js";
 import { renderMock } from "./views/mock.js";
 import { renderToday } from "./views/today.js";
+import { renderHow } from "./views/how.js";
 import { renderProgress } from "./views/progress.js";
 import { renderOnboarding } from "./views/onboarding.js";
 import { openSettingsModal } from "./widgets/settings-modal.js";
 
 const routes = {
   today: renderToday,
+  how: renderHow,
   progress: renderProgress,
   home: renderHome,
   fundamentals: renderFundamentals,
@@ -27,8 +29,6 @@ export function navigate(route, params = {}) {
   render();
 }
 
-let hasRedirectedToOnboarding = false;
-
 export async function render() {
   const { currentRoute } = getState();
   const view = document.getElementById("view");
@@ -40,23 +40,20 @@ export async function render() {
   const shell = document.querySelector(".app-shell");
   if (shell) shell.style.gridTemplateColumns = "";
 
-  // Solo redirigir al onboarding en el arranque inicial (una vez)
-  let route = currentRoute;
-  try {
-    const state = JSON.parse(localStorage.getItem("cambridge-prep-state-v1") || "{}");
-    const hasPlan = state.plan && state.plan.enabled;
-    if (!hasPlan && !hasRedirectedToOnboarding) {
-      hasRedirectedToOnboarding = true;
-      route = "onboarding";
-    }
-  } catch (e) {}
+  const route = currentRoute;
 
   const renderer = routes[route] || renderToday;
   view.innerHTML = "";
   await renderer(view);
 
+  // Marcar botones activos (topbar y sidebar)
   document.querySelectorAll("[data-route]").forEach(btn => {
     btn.classList.toggle("is-active", btn.dataset.route === route);
+  });
+
+  // Marcar sidebar link activo
+  document.querySelectorAll(".sidebar__link").forEach(link => {
+    link.classList.toggle("is-active", link.dataset.route === route);
   });
 }
 
