@@ -2,97 +2,74 @@
 
 Study app for Cambridge English exams: A2 Key, B1 Preliminary, B2 First.
 
+## Content
+
+| Module | A2 | B1 | B2 |
+|--------|----|----|-----|
+| Fundamentals (units) | 15 | 10 | 10 |
+| Reading (texts) | 15 | 12 | 10 |
+| Listening (audios) | 10 | 10 | 8 |
+| Writing (tasks) | 8 | 10 | 10 |
+| Speaking (prompts) | 10 | 12 | 12 |
+| **Total items** | | | **1,009** |
+
 ## Features
 
 - Three levels: A2, B1, B2
 - Three modules: Fundamentals, Comprehension, Production
-- Grammar and vocabulary units organized by communicative function
-- Multiple choice exercises with instant feedback
-- Audio player for listening (max 2 plays, like real exam)
-- Voice recorder for speaking practice
-- DeepSeek integration for essay evaluation
-- Cambridge Scale scoring
+- Fundamentals: 7 phases per unit (Grammar, Vocabulary, Discovery, Guided practice, Free practice, Mini-test, Summary)
+- Reading: texts with Cambridge-style questions
+- Listening: browser TTS (Web Speech API) with max 2 plays per audio
+- Writing: DeepSeek evaluation using official Cambridge rubric
+- Speaking: voice recording + transcription + DeepSeek analysis
+- Mock Exam: timed sections with Cambridge Scale result
 - Progress saved in localStorage
 
 ## Project structure
 
-```
-cambridge-prep/
-  index.html
-  css/
-    base.css        reset, variables, typography
-    layout.css      topbar, sidebar, content, statusbar
-    widgets.css     cards, buttons, exercises, modals
-  js/
-    app.js          bootstrap
-    router.js       SPA navigation
-    state.js        global state + localStorage
-    core/
-      storage.js    localStorage wrapper
-      scoring.js    Cambridge Scale conversion
-    views/
-      home.js       home screen
-      fundamentals.js   module 1
-      comprehension.js  module 2
-      production.js     module 3
-    widgets/
-      exercise.js       multiple choice
-      audio-player.js   listening
-      recorder.js       speaking
-      progress.js       progress bar
-      settings-modal.js API key config
-    services/
-      deepseek.js       DeepSeek API client
-  data/
-    a2/  units.json + 9 unit files
-    b1/  units.json + 10 unit files
-    b2/  units.json + 10 unit files
-  audio/
-    a2/  b1/  b2/
-```
+    cambridge-prep/
+      index.html
+      css/         base.css, layout.css, widgets.css
+      js/
+        app.js     bootstrap
+        router.js  SPA navigation
+        state.js   global state + localStorage
+        core/      storage.js, scoring.js
+        views/     home, fundamentals, comprehension, production, mock
+        widgets/   exercise, audio-player, recorder, progress, settings-modal, timer, speech-analyzer
+        services/  deepseek.js
+      data/
+        a2/  b1/  b2/
+          units.json
+          {level}-u{N}.json  (one per unit)
+          reading.json
+          listening.json
+          writing.json
+          speaking.json
 
 ## How to run
 
-```bash
-cd cambridge-prep
-python3 -m http.server 8000
-```
+    cd cambridge-prep
+    python3 -m http.server 8000
 
 Open http://localhost:8000
 
 ## DeepSeek setup
 
 1. Get an API key from https://platform.deepseek.com
-2. Open the app and click the settings button
+2. Open the app and click the settings gear icon
 3. Paste the key (starts with sk-)
-3. The key is stored only in your browser localStorage
+4. The key is stored only in your browser localStorage
 
-## Adding content
+## How to add content
 
-To add a new unit:
+Each JSON file follows a simple schema. See any existing file for reference.
 
-1. Create the unit JSON file in data/{level}/
-2. Add the unit to data/{level}/units.json
-3. Reload the app
-
-### Unit JSON format
-
-```json
-{
-  "id": "a2-u10",
-  "title": "Unit title",
-  "grammar": "Grammar focus",
-  "vocabulary": "Vocabulary focus",
-  "function": "Communicative function",
-  "phases": [
-    { "name": "Presentation", "type": "text", "content": "..." },
-    { "name": "Discovery", "type": "text", "content": "..." },
-    { "name": "Guided practice", "type": "exercise", "prompt": "...", "options": ["A","B","C","D"], "correct": 0, "explanation": "..." },
-    { "name": "Free practice", "type": "task", "prompt": "..." },
-    { "name": "Mini-test", "type": "exercise", "prompt": "...", "options": ["A","B","C","D"], "correct": 0, "explanation": "..." }
-  ]
-}
-```
+- New unit: create a file like a2-u16.json and add it to units.json
+- New reading text: add to reading.json
+- New listening: add to listening.json
+- New writing task: add to writing.json
+- New speaking prompt: add to speaking.json
 
 ## License
 
