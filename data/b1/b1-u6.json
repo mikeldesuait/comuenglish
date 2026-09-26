@@ -6,45 +6,192 @@
   "function": "Talk about conditions and hypothetical results",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn the zero, first and second conditionals to talk about real and hypothetical situations."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "What is a conditional?",
+          "body": "A conditional sentence has two parts: the condition (if clause) and the result (main clause). There are different types depending on how real or imaginary the situation is."
+        },
+        {
+          "heading": "Zero conditional (general truths)",
+          "body": "If + present simple, present simple. Used for facts that are always true.",
+          "list": [
+            "If you heat water, it boils.",
+            "If I don't sleep, I feel tired.",
+            "If you press this button, the machine stops."
+          ]
+        },
+        {
+          "heading": "First conditional (real future)",
+          "body": "If + present simple, will + base verb. Used for possible future situations.",
+          "list": [
+            "If it rains, I will stay at home.",
+            "If you study hard, you will pass the exam.",
+            "If we leave now, we will arrive on time."
+          ]
+        },
+        {
+          "heading": "Second conditional (imaginary present)",
+          "body": "If + past simple, would + base verb. Used for hypothetical or imaginary situations.",
+          "list": [
+            "If I had more money, I would travel the world.",
+            "If I were you, I would apologise.",
+            "If she spoke English, she would get the job."
+          ]
+        },
+        {
+          "heading": "Comparison",
+          "tableHeader": true,
+          "table": [
+            ["Type", "If clause", "Main clause"],
+            ["Zero", "present simple", "present simple"],
+            ["First", "present simple", "will + verb"],
+            ["Second", "past simple", "would + verb"]
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not use 'will' after 'if': 'If it will rain' is wrong. Say 'If it rains'.",
+            "Do not use 'would' in the if clause in second conditional: 'If I would have' is wrong. Say 'If I had'.",
+            "In second conditional with 'I', use 'were' not 'was' (formal)."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Environment",
+          "list": [
+            { "term": "pollution", "definition": "If we don't reduce pollution, the planet will suffer." },
+            { "term": "recycle", "definition": "If we recycle more, we will help the environment." },
+            { "term": "climate change", "definition": "If we don't act, climate change will get worse." },
+            { "term": "energy", "definition": "If we save energy, we will reduce costs." },
+            { "term": "plastic", "definition": "If we use less plastic, the oceans will be cleaner." },
+            { "term": "protect", "definition": "If we protect forests, we will save many species." }
+          ]
+        },
+        {
+          "heading": "Decisions and consequences",
+          "list": [
+            { "term": "consequence", "definition": "Every decision has consequences." },
+            { "term": "choice", "definition": "If I make the right choice, things will improve." },
+            { "term": "result", "definition": "If you work hard, the result will be good." },
+            { "term": "future", "definition": "If we plan now, the future will be better." },
+            { "term": "opportunity", "definition": "If you take this opportunity, your life will change." },
+            { "term": "mistake", "definition": "If I make a mistake, I will learn from it." }
+          ]
+        },
+        {
+          "heading": "Hypothetical situations",
+          "list": [
+            { "term": "If I were you...", "definition": "If I were you, I would take the job." },
+            { "term": "If I had...", "definition": "If I had a car, I would drive everywhere." },
+            { "term": "If I could...", "definition": "If I could fly, I would visit every country." },
+            { "term": "What would you do if...?", "definition": "What would you do if you won the lottery?" }
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Read these sentences. If you heat water, it boils. If it rains, I will stay at home. If I had more money, I would travel. Notice: zero = general truth, first = real future, second = imaginary present."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "If you heat water, it boils.",
+        "If it rains, I will stay at home.",
+        "If you study hard, you will pass the exam.",
+        "If I had more money, I would travel the world.",
+        "If I were you, I would apologise.",
+        "If she spoke English, she would get the job.",
+        "If we leave now, we will arrive on time.",
+        "What would you do if you won the lottery?"
+      ],
+      "questions": [
+        "In sentence 1, what type of conditional is it and why?",
+        "In sentences 2, 3 and 7, which tense is used in the if clause and which in the main clause?",
+        "In sentences 4, 5 and 6, what is the difference from first conditional?",
+        "In sentence 5, why is 'were' used instead of 'was'?",
+        "In sentence 8, why is 'would' used in the question?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "If I ___ you, I would apologise.",
-      "options": [
-        "am",
-        "was",
-        "were",
-        "will be"
-      ],
-      "correct": 2,
-      "explanation": "In second conditional with I/he/she we use were."
+      "questions": [
+        {"prompt": "If I ___ you, I would apologise.", "options": ["am", "was", "were", "will be"], "correct": 2, "explanation": "In second conditional with I/he/she we use were."},
+        {"prompt": "If you study hard, you ___ the exam.", "options": ["pass", "will pass", "would pass", "passed"], "correct": 1, "explanation": "First conditional: if + present, will + verb."},
+        {"prompt": "If it ___ tomorrow, we will stay at home.", "options": ["will rain", "rains", "rained", "would rain"], "correct": 1, "explanation": "Do not use 'will' after 'if'. Use present simple."},
+        {"prompt": "If I ___ more time, I would learn Italian.", "options": ["have", "had", "will have", "would have"], "correct": 1, "explanation": "Second conditional: if + past simple."},
+        {"prompt": "If you heat ice, it ___ .", "options": ["melts", "will melt", "would melt", "melted"], "correct": 0, "explanation": "Zero conditional: general truth."},
+        {"prompt": "If she ___ English, she would get the job.", "options": ["speaks", "spoke", "will speak", "would speak"], "correct": 1, "explanation": "Second conditional: past simple in if clause."},
+        {"prompt": "We ___ arrive on time if we leave now.", "options": ["will", "would", "did", "do"], "correct": 0, "explanation": "First conditional: will in main clause."},
+        {"prompt": "If I ___ the lottery, I would buy a house.", "options": ["win", "won", "will win", "would win"], "correct": 1, "explanation": "Second conditional: past simple."},
+        {"prompt": "If you don't water plants, they ___ .", "options": ["die", "will die", "would die", "died"], "correct": 0, "explanation": "Zero conditional: general truth. Both 'die' and 'will die' possible but 'die' is more natural for a general fact."},
+        {"prompt": "What ___ you do if you saw a ghost?", "options": ["will", "would", "do", "did"], "correct": 1, "explanation": "Second conditional question: would."}
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Write 3 sentences using first conditional about your plans and 3 using second conditional about hypothetical situations."
+      "prompts": [
+        "Write 5 first conditional sentences about your plans for next year. Use 'If + present, will + verb'.",
+        "Write 5 second conditional sentences about imaginary situations. Use 'If I had/were... I would...'.",
+        "Write 3 pieces of advice for a friend using 'If I were you, I would...'."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "If you study hard, you ___ the exam.",
-      "options": [
-        "pass",
-        "will pass",
-        "would pass",
-        "passed"
-      ],
-      "correct": 1,
-      "explanation": "First conditional: if + present, will + verb."
+      "questions": [
+        {"prompt": "If it ___ , we will cancel the picnic.", "options": ["will rain", "rains", "rained", "would rain"], "correct": 1, "explanation": "First conditional: present simple after if."},
+        {"prompt": "If I ___ rich, I would travel the world.", "options": ["am", "was", "were", "will be"], "correct": 2, "explanation": "Second conditional: were."},
+        {"prompt": "If you heat water to 100 degrees, it ___ .", "options": ["boils", "will boil", "would boil", "boiled"], "correct": 0, "explanation": "Zero conditional: general truth."},
+        {"prompt": "She ___ pass if she studies more.", "options": ["will", "would", "did", "does"], "correct": 0, "explanation": "First conditional: will in main clause."},
+        {"prompt": "If I ___ you, I would take the job.", "options": ["am", "was", "were", "be"], "correct": 2, "explanation": "Second conditional with 'I': were."},
+        {"prompt": "If we ___ now, we will catch the train.", "options": ["leave", "will leave", "left", "would leave"], "correct": 0, "explanation": "First conditional."},
+        {"prompt": "What would you do if you ___ a lot of money?", "options": ["win", "won", "will win", "would win"], "correct": 1, "explanation": "Second conditional: past simple."},
+        {"prompt": "If I had a car, I ___ drive to work.", "options": ["will", "would", "do", "did"], "correct": 1, "explanation": "Second conditional: would."},
+        {"prompt": "If you don't eat, you ___ hungry.", "options": ["get", "will get", "would get", "got"], "correct": 0, "explanation": "Zero conditional: general truth."},
+        {"prompt": "If she ___ harder, she would pass.", "options": ["studies", "studied", "will study", "would study"], "correct": 1, "explanation": "Second conditional."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Zero: If + present, present. General truths.",
+            "First: If + present, will + verb. Real future.",
+            "Second: If + past simple, would + verb. Hypothetical.",
+            "Do NOT use 'will' after 'if'.",
+            "In second conditional, use 'were' with I/he/she (formal)."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'If it will rain'. Say 'If it rains'.",
+            "Do not say 'If I would have'. Say 'If I had'.",
+            "Do not confuse first and second conditionals."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "If you..., I will...",
+            "If I were you, I would...",
+            "What would you do if...?",
+            "If I had..., I would..."
+          ]
+        }
+      ]
     }
   ]
 }

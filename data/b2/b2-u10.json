@@ -6,45 +6,239 @@
   "function": "Adapt language to context",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn to adapt your language to different registers, from informal emails to formal reports and essays."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "What is register?",
+          "body": "Register is the level of formality in language. In English, the same idea can be expressed in different ways depending on the situation and the person you are talking to. Choosing the right register is essential at B2 level."
+        },
+        {
+          "heading": "Three main registers",
+          "tableHeader": true,
+          "table": [
+            ["Register", "Use", "Example"],
+            ["Informal", "friends, family, casual emails", "Hey, what's up?"],
+            ["Neutral", "most everyday situations", "Hello, how are you?"],
+            ["Formal", "work, academic writing, official letters", "Dear Sir/Madam, I am writing to..."]
+          ]
+        },
+        {
+          "heading": "Formal vs Informal: vocabulary",
+          "tableHeader": true,
+          "table": [
+            ["Informal", "Formal"],
+            ["get", "obtain / receive"],
+            ["buy", "purchase"],
+            ["need", "require"],
+            ["help", "assist / assistance"],
+            ["ask", "request / enquire"],
+            ["tell", "inform"],
+            ["say sorry", "apologise"],
+            ["find out", "discover"],
+            ["a lot of", "numerous / a great deal of"],
+            ["kids", "children"],
+            ["guys", "people / colleagues"]
+          ]
+        },
+        {
+          "heading": "Formal vs Informal: structures",
+          "tableHeader": true,
+          "table": [
+            ["Informal", "Formal"],
+            ["Can you help me?", "I would be grateful if you could assist me."],
+            ["I want to know...", "I would like to enquire about..."],
+            ["Sorry I'm late.", "I apologise for the delay."],
+            ["Thanks for your email.", "Thank you for your email."],
+            ["See you soon.", "I look forward to meeting you."],
+            ["Bye!", "Yours sincerely / Best regards"]
+          ]
+        },
+        {
+          "heading": "Academic language",
+          "list": [
+            "It can be argued that...",
+            "Research suggests that...",
+            "According to recent studies...",
+            "In conclusion...",
+            "Furthermore / Moreover / Nevertheless",
+            "This essay will examine..."
+          ]
+        },
+        {
+          "heading": "Idioms for informal register",
+          "list": [
+            "It's a piece of cake. (= very easy)",
+            "Break a leg! (= good luck)",
+            "Hit the books. (= study hard)",
+            "Once in a blue moon. (= very rarely)",
+            "Under the weather. (= feeling ill)",
+            "Cost an arm and a leg. (= very expensive)"
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not use contractions in formal writing: 'I'm' → 'I am'.",
+            "Do not use slang or idioms in formal essays.",
+            "Do not mix registers in the same text."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Formal verbs",
+          "list": [
+            { "term": "obtain", "definition": "You can obtain a form from reception." },
+            { "term": "purchase", "definition": "Tickets can be purchased online." },
+            { "term": "require", "definition": "This position requires experience." },
+            { "term": "assist", "definition": "Our staff will assist you." },
+            { "term": "enquire", "definition": "I am writing to enquire about the course." },
+            { "term": "inform", "definition": "Please inform us of any changes." },
+            { "term": "apologise", "definition": "I apologise for the inconvenience." },
+            { "term": "acknowledge", "definition": "We acknowledge receipt of your letter." }
+          ]
+        },
+        {
+          "heading": "Formal connectors and phrases",
+          "list": [
+            { "term": "I am writing to...", "definition": "I am writing to express my interest." },
+            { "term": "I would like to...", "definition": "I would like to apply for the position." },
+            { "term": "I would be grateful if...", "definition": "I would be grateful if you could send me more details." },
+            { "term": "Please find attached...", "definition": "Please find attached my CV." },
+            { "term": "I look forward to...", "definition": "I look forward to your reply." },
+            { "term": "Yours sincerely / faithfully", "definition": "Yours sincerely, John Smith." }
+          ]
+        },
+        {
+          "heading": "Informal expressions",
+          "list": [
+            { "term": "Hey!", "definition": "Hey, how's it going?" },
+            { "term": "What's up?", "definition": "What's up? Long time no see!" },
+            { "term": "Cool!", "definition": "Cool! Let's do it." },
+            { "term": "By the way", "definition": "By the way, did you hear the news?" },
+            { "term": "Hang on", "definition": "Hang on a second, I'll be right back." },
+            { "term": "No way!", "definition": "No way! Really?" }
+          ]
+        },
+        {
+          "heading": "Common idioms",
+          "list": [
+            { "term": "a piece of cake", "definition": "The exam was a piece of cake." },
+            { "term": "break a leg", "definition": "Break a leg at your audition!" },
+            { "term": "hit the books", "definition": "I need to hit the books tonight." },
+            { "term": "once in a blue moon", "definition": "I go to the cinema once in a blue moon." },
+            { "term": "under the weather", "definition": "I'm feeling under the weather today." },
+            { "term": "cost an arm and a leg", "definition": "That car cost an arm and a leg." }
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Compare these sentences. Thanks for your help! I would like to express my gratitude for your assistance. Notice how formality changes vocabulary, structure and tone."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "I would like to enquire about your courses.",
+        "Hey! What's up?",
+        "I apologise for the delay in replying.",
+        "Thanks a lot for your help!",
+        "Please find attached my CV.",
+        "The exam was a piece of cake.",
+        "I would be grateful if you could send me more information.",
+        "By the way, did you hear about the new project?"
+      ],
+      "questions": [
+        "Which sentences are formal and which are informal?",
+        "In sentence 1, how does 'enquire' compare with 'ask'?",
+        "In sentence 4, how would you rewrite it formally?",
+        "In sentence 6, what does 'a piece of cake' mean literally and idiomatically?",
+        "In sentence 7, why is 'I would be grateful if' more polite than 'Can you'?",
+        "What is the main difference between formal and informal register?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "Which is formal? I am writing to ___ my interest in the position.",
-      "options": [
-        "say",
-        "express",
-        "tell",
-        "speak"
-      ],
-      "correct": 1,
-      "explanation": "Express is the formal choice."
+      "questions": [
+        {"prompt": "Which is formal? I am writing to ___ my interest in the position.", "options": ["say", "express", "tell", "speak"], "correct": 1, "explanation": "Express is the formal choice."},
+        {"prompt": "Choose the informal option: I would appreciate it if / Thanks a lot for", "options": ["I would appreciate it if", "Thanks a lot for", "It would be appreciated if", "We kindly request"], "correct": 1, "explanation": "Thanks a lot is informal."},
+        {"prompt": "Formal version of 'Can you help me?':", "options": ["Give me a hand?", "Could you assist me?", "Help me, please!", "Assist!"], "correct": 1, "explanation": "Could you assist me is formal."},
+        {"prompt": "Formal way to end a letter:", "options": ["Bye!", "See ya!", "Yours sincerely", "Take care"], "correct": 2, "explanation": "Yours sincerely is formal."},
+        {"prompt": "Which one is an idiom?", "options": ["I need to study.", "It's a piece of cake.", "The cake is delicious.", "Please bring the cake."], "correct": 1, "explanation": "A piece of cake means something very easy."},
+        {"prompt": "Formal way to say 'I want to know':", "options": ["I wanna know", "I would like to enquire", "Tell me", "Gimme the info"], "correct": 1, "explanation": "I would like to enquire is formal."},
+        {"prompt": "Informal way to say 'I apologise for the delay':", "options": ["I regret any inconvenience.", "Sorry I'm late!", "Please accept my apologies.", "I do apologise."], "correct": 1, "explanation": "Sorry I'm late is informal."},
+        {"prompt": "Which sentence uses formal register?", "options": ["Hey, what's up?", "I am writing to inform you...", "Guess what!", "Long time no see!"], "correct": 1, "explanation": "I am writing to inform you is formal."},
+        {"prompt": "Formal phrase for 'Please send me...':", "options": ["Send me...", "Could you send me...", "Please find attached...", "I look forward to receiving..."], "correct": 3, "explanation": "I look forward to receiving is formal."},
+        {"prompt": "Which is NOT appropriate in a formal essay?", "options": ["Furthermore", "Moreover", "Cool!", "Nevertheless"], "correct": 2, "explanation": "Cool! is informal."}
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Rewrite an informal message as a formal email."
+      "prompts": [
+        "Rewrite an informal email to a friend as a formal email to a company. Change at least 8 words or expressions.",
+        "Write a formal complaint letter (100 words) about a product using 'I am writing to', 'I would like to', 'I look forward to'.",
+        "Write 5 sentences using idioms. Then write a formal equivalent for each one."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "Choose the informal option: I would appreciate it if / Thanks a lot for",
-      "options": [
-        "I would appreciate it if",
-        "Thanks a lot for",
-        "It would be appreciated if",
-        "We kindly request"
-      ],
-      "correct": 1,
-      "explanation": "Thanks a lot is informal; the others are formal."
+      "questions": [
+        {"prompt": "Formal way to say 'I want to know about...':", "options": ["Tell me about...", "I want info about...", "I would like to enquire about...", "What's the deal with..."], "correct": 2, "explanation": "Formal: enquire about."},
+        {"prompt": "Choose the informal option:", "options": ["I would be grateful if...", "Please find attached...", "What's up?", "Yours faithfully"], "correct": 2, "explanation": "What's up? is informal."},
+        {"prompt": "Formal equivalent of 'get':", "options": ["grab", "obtain", "pick up", "snag"], "correct": 1, "explanation": "Obtain is formal."},
+        {"prompt": "Which is appropriate in a business email?", "options": ["Hey!", "What's up?", "Dear Mr. Smith,", "Yo!"], "correct": 2, "explanation": "Dear Mr. Smith is formal."},
+        {"prompt": "'It was a piece of cake' means:", "options": ["It was delicious.", "It was difficult.", "It was easy.", "It was expensive."], "correct": 2, "explanation": "Idiom meaning very easy."},
+        {"prompt": "Formal way to end a letter:", "options": ["Later!", "Yours sincerely", "Catch you later", "TTYL"], "correct": 1, "explanation": "Yours sincerely."},
+        {"prompt": "Formal way to say 'Sorry':", "options": ["My bad!", "Oops!", "I apologise", "Sorry, mate"], "correct": 2, "explanation": "I apologise is formal."},
+        {"prompt": "Which sentence uses academic language?", "options": ["The study shows that...", "Guess what I found...", "It's super cool that...", "So, like, the thing is..."], "correct": 0, "explanation": "The study shows that... is academic."},
+        {"prompt": "Formal phrase to introduce a request:", "options": ["I need...", "Gimme...", "I would like to request...", "I want..."], "correct": 2, "explanation": "I would like to request is formal."},
+        {"prompt": "Which is NOT formal?", "options": ["Furthermore", "Nevertheless", "Hang on", "Consequently"], "correct": 2, "explanation": "Hang on is informal."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Three registers: informal (friends), neutral (everyday), formal (work, academic).",
+            "Formal vocabulary: obtain, purchase, require, assist, enquire, inform, apologise.",
+            "Formal structures: I would be grateful if..., I look forward to..., Please find attached...",
+            "No contractions in formal writing.",
+            "Idioms only in informal register.",
+            "Do not mix registers in the same text."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not use contractions in formal writing.",
+            "Do not use idioms in essays or business emails.",
+            "Keep the register consistent throughout the text."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "I am writing to...",
+            "I would like to...",
+            "I would be grateful if...",
+            "Please find attached...",
+            "I look forward to...",
+            "Yours sincerely / faithfully",
+            "By the way... (informal)",
+            "It's a piece of cake. (idiom)"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -6,45 +6,227 @@
   "function": "Report what someone said",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn how to report what other people said, using reported speech."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "What is reported speech?",
+          "body": "Reported speech is when we tell someone what another person said, without using their exact words. When we report, the tenses usually move back one step."
+        },
+        {
+          "heading": "Tense changes",
+          "tableHeader": true,
+          "table": [
+            ["Direct speech", "Reported speech"],
+            ["Present Simple", "Past Simple"],
+            ["Present Continuous", "Past Continuous"],
+            ["Past Simple", "Past Perfect"],
+            ["Present Perfect", "Past Perfect"],
+            ["Will", "Would"],
+            ["Can", "Could"],
+            ["Must", "Had to"]
+          ]
+        },
+        {
+          "heading": "Examples",
+          "tableHeader": true,
+          "table": [
+            ["Direct", "Reported"],
+            ["I am tired.", "She said she was tired."],
+            ["I am working.", "He said he was working."],
+            ["I saw a film.", "She said she had seen a film."],
+            ["I will come.", "He said he would come."],
+            ["I can help.", "She said she could help."]
+          ]
+        },
+        {
+          "heading": "Reported questions",
+          "body": "When we report questions, we use the same word order as statements (no auxiliary).",
+          "list": [
+            "Where do you live? → He asked where I lived.",
+            "Do you like pizza? → She asked if I liked pizza.",
+            "What time is it? → He asked what time it was.",
+            "Are you coming? → She asked if I was coming."
+          ]
+        },
+        {
+          "heading": "Reported commands",
+          "body": "Use 'told' + object + to + verb for positive commands, 'told' + object + not to + verb for negative.",
+          "list": [
+            "Close the door. → She told me to close the door.",
+            "Don't touch that. → He told me not to touch that.",
+            "Be quiet. → The teacher told us to be quiet."
+          ]
+        },
+        {
+          "heading": "Say vs Tell",
+          "tableHeader": true,
+          "table": [
+            ["Verb", "Use", "Example"],
+            ["say", "no object", "She said she was tired."],
+            ["tell", "with object", "She told me she was tired."]
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not forget to change the tense.",
+            "Do not use 'say' with a person: 'She said me' is wrong. Use 'She told me'.",
+            "In reported questions, use statement word order (no auxiliary)."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Reporting verbs",
+          "list": [
+            { "term": "say", "definition": "She said she was happy." },
+            { "term": "tell", "definition": "He told me to wait." },
+            { "term": "ask", "definition": "She asked if I was ready." },
+            { "term": "answer", "definition": "He answered that he didn't know." },
+            { "term": "explain", "definition": "She explained that she was late." },
+            { "term": "admit", "definition": "He admitted that he was wrong." },
+            { "term": "promise", "definition": "She promised she would come." },
+            { "term": "warn", "definition": "He warned me not to go." }
+          ]
+        },
+        {
+          "heading": "Conversation phrases",
+          "list": [
+            { "term": "I said that...", "definition": "I said that I was busy." },
+            { "term": "You told me...", "definition": "You told me you were coming." },
+            { "term": "He asked me...", "definition": "He asked me where I lived." },
+            { "term": "She wanted to know...", "definition": "She wanted to know if I was free." },
+            { "term": "They promised...", "definition": "They promised they would help." }
+          ]
+        },
+        {
+          "heading": "Messages and rumours",
+          "list": [
+            { "term": "I heard that...", "definition": "I heard that she is moving." },
+            { "term": "It is said that...", "definition": "It is said that he is very rich." },
+            { "term": "According to...", "definition": "According to John, the meeting is cancelled." },
+            { "term": "Apparently...", "definition": "Apparently, they are getting married." },
+            { "term": "They say that...", "definition": "They say that it will snow tomorrow." }
+          ]
+        },
+        {
+          "heading": "Time and place changes",
+          "tableHeader": true,
+          "table": [
+            ["Direct", "Reported"],
+            ["now", "then"],
+            ["today", "that day"],
+            ["tomorrow", "the next day"],
+            ["yesterday", "the day before"],
+            ["here", "there"],
+            ["this", "that"]
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Read these sentences. I am tired. She said she was tired. Where do you live? He asked where I lived. Close the door. She told me to close the door. Notice how tenses shift back."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "She said she was tired.",
+        "He told me he was working.",
+        "She said she had seen a film.",
+        "He said he would come.",
+        "She asked where I lived.",
+        "She asked if I liked pizza.",
+        "She told me to close the door.",
+        "He told me not to touch that."
+      ],
+      "questions": [
+        "In sentences 1 and 2, what is the difference between 'said' and 'told'?",
+        "In sentences 1, 3 and 4, what tense changes happened?",
+        "In sentences 5 and 6, how do we report a question?",
+        "In sentence 6, why do we use 'if'?",
+        "In sentences 7 and 8, how do we report a command?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "He said he ___ busy.",
-      "options": [
-        "is",
-        "was",
-        "will be",
-        "be"
-      ],
-      "correct": 1,
-      "explanation": "Present Simple becomes Past Simple in reported speech."
+      "questions": [
+        {"prompt": "He said he ___ busy.", "options": ["is", "was", "will be", "be"], "correct": 1, "explanation": "Present Simple becomes Past Simple in reported speech."},
+        {"prompt": "She asked me ___ I liked pizza.", "options": ["that", "if", "what", "which"], "correct": 1, "explanation": "Yes/no questions are reported with if or whether."},
+        {"prompt": "He ___ me to close the door.", "options": ["said", "told", "asked", "spoke"], "correct": 1, "explanation": "Tell is used with an object pronoun."},
+        {"prompt": "She said she ___ help me.", "options": ["can", "could", "will", "would"], "correct": 1, "explanation": "Can becomes could in reported speech."},
+        {"prompt": "They asked where I ___ .", "options": ["live", "lived", "will live", "living"], "correct": 1, "explanation": "Present Simple becomes Past Simple."},
+        {"prompt": "He told me ___ touch the paintings.", "options": ["not to", "to not", "don't", "not"], "correct": 0, "explanation": "Negative command: told + not to + verb."},
+        {"prompt": "She said she ___ the film.", "options": ["saw", "has seen", "had seen", "will see"], "correct": 2, "explanation": "Past Simple becomes Past Perfect."},
+        {"prompt": "He said he ___ come to the party.", "options": ["will", "would", "can", "could"], "correct": 1, "explanation": "Will becomes would."},
+        {"prompt": "She asked me what time ___ .", "options": ["is it", "it is", "it was", "was it"], "correct": 2, "explanation": "In reported questions we use statement word order."},
+        {"prompt": "He ___ that he was sorry.", "options": ["said", "told", "asked", "spoke"], "correct": 0, "explanation": "Say is used without an object person."}
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Imagine a conversation with a friend. Report 3 things they said."
+      "prompts": [
+        "Imagine a conversation with a friend. Report 5 things they said using 'said' and 'told'.",
+        "Report 5 questions your teacher asked you. Use 'asked if' and 'asked where/when/what'.",
+        "Report a phone conversation using at least 5 different reporting verbs (say, tell, ask, explain, promise)."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "She asked me ___ I liked pizza.",
-      "options": [
-        "that",
-        "if",
-        "what",
-        "which"
-      ],
-      "correct": 1,
-      "explanation": "Yes/no questions are reported with if or whether."
+      "questions": [
+        {"prompt": "She said she ___ tired.", "options": ["is", "was", "will be", "be"], "correct": 1, "explanation": "Tense shift back."},
+        {"prompt": "He told me he ___ working.", "options": ["is", "was", "be", "will"], "correct": 1, "explanation": "Present Continuous becomes Past Continuous."},
+        {"prompt": "She asked ___ I was ready.", "options": ["that", "if", "what", "which"], "correct": 1, "explanation": "Yes/no question: if."},
+        {"prompt": "They told us ___ wait.", "options": ["to", "for", "at", "in"], "correct": 0, "explanation": "Command: told + object + to + verb."},
+        {"prompt": "He said he ___ the film.", "options": ["saw", "has seen", "had seen", "sees"], "correct": 2, "explanation": "Past Simple becomes Past Perfect."},
+        {"prompt": "She said she ___ come tomorrow.", "options": ["will", "would", "can", "could"], "correct": 1, "explanation": "Will becomes would."},
+        {"prompt": "He asked where I ___ .", "options": ["live", "lived", "living", "will live"], "correct": 1, "explanation": "Statement word order."},
+        {"prompt": "She told me ___ touch the wire.", "options": ["not to", "to not", "don't", "not"], "correct": 0, "explanation": "Negative command."},
+        {"prompt": "He said he ___ help me.", "options": ["can", "could", "will", "would"], "correct": 1, "explanation": "Can becomes could."},
+        {"prompt": "She ___ me she was happy.", "options": ["said", "told", "asked", "spoke"], "correct": 1, "explanation": "Tell requires an object: told me."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Reported speech: tenses move back one step.",
+            "Present Simple → Past Simple. Past Simple → Past Perfect.",
+            "Will → Would. Can → Could. Must → Had to.",
+            "Say without object, tell with object.",
+            "Reported questions use statement word order and 'if' for yes/no questions.",
+            "Reported commands: told + object + to / not to + verb."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Forgetting to change the tense.",
+            "Using 'say' with a person.",
+            "Using question word order in reported questions."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "She said (that)...",
+            "He told me (that)...",
+            "They asked if...",
+            "I asked where...",
+            "She promised to...",
+            "He warned me not to..."
+          ]
+        }
+      ]
     }
   ]
 }

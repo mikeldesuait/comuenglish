@@ -6,45 +6,201 @@
   "function": "Talk about hypotheses and regrets",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn mixed conditionals and structures with I wish / If only to express hypotheses and regrets."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Conditionals review",
+          "tableHeader": true,
+          "table": [
+            ["Type", "If clause", "Main clause", "Use"],
+            ["Zero", "present", "present", "general truth"],
+            ["First", "present", "will + verb", "real future"],
+            ["Second", "past simple", "would + verb", "hypothetical present"],
+            ["Third", "past perfect", "would have + pp", "hypothetical past"]
+          ]
+        },
+        {
+          "heading": "Mixed conditionals",
+          "body": "Mixed conditionals combine different times in the if clause and the main clause. They are used when the condition and result happen at different times.",
+          "tableHeader": true,
+          "table": [
+            ["Type", "If clause", "Main clause", "Meaning"],
+            ["Past condition, present result", "past perfect", "would + verb", "If I had studied medicine, I would be a doctor now."],
+            ["Present condition, past result", "past simple", "would have + pp", "If I were braver, I would have spoken up."]
+          ]
+        },
+        {
+          "heading": "I wish / If only",
+          "body": "We use 'I wish' and 'If only' to express regrets or desires. The tense depends on whether the regret is about the present or the past.",
+          "tableHeader": true,
+          "table": [
+            ["Structure", "Use", "Example"],
+            ["wish + past simple", "present regret", "I wish I had more time."],
+            ["wish + past perfect", "past regret", "I wish I had studied harder."],
+            ["wish + would", "annoyance / desire for change", "I wish it would stop raining."],
+            ["wish + could", "ability", "I wish I could speak French."],
+            ["if only + past simple", "stronger wish", "If only I knew the answer."],
+            ["if only + past perfect", "stronger regret", "If only I hadn't said that."]
+          ]
+        },
+        {
+          "heading": "Other structures",
+          "list": [
+            "It's time + past simple: It's time we left.",
+            "I'd rather + past simple: I'd rather you didn't smoke here.",
+            "Suppose / Supposing: Suppose you won the lottery, what would you do?",
+            "What if: What if we had taken the other road?"
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'I wish I would have'. Say 'I wish I had'.",
+            "Do not use 'will' after 'wish' or 'if only'.",
+            "Mixed conditionals combine two times; do not mix tenses randomly."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Regrets",
+          "list": [
+            { "term": "I regret", "definition": "I regret not studying harder." },
+            { "term": "I wish I had", "definition": "I wish I had taken that job." },
+            { "term": "if only", "definition": "If only I had known." },
+            { "term": "it's a shame", "definition": "It's a shame you couldn't come." },
+            { "term": "I should have", "definition": "I should have listened to you." },
+            { "term": "unfortunately", "definition": "Unfortunately, I didn't know." }
+          ]
+        },
+        {
+          "heading": "Hypothetical decisions",
+          "list": [
+            { "term": "I would have", "definition": "I would have helped if I could." },
+            { "term": "in your position", "definition": "In your position, I would accept." },
+            { "term": "if I were you", "definition": "If I were you, I would apologise." },
+            { "term": "suppose", "definition": "Suppose we left tomorrow." },
+            { "term": "in that case", "definition": "In that case, I would say no." },
+            { "term": "otherwise", "definition": "We should leave now, otherwise we will be late." }
+          ]
+        },
+        {
+          "heading": "Consequences",
+          "list": [
+            { "term": "as a result", "definition": "As a result, we missed the train." },
+            { "term": "so", "definition": "It rained, so we stayed home." },
+            { "term": "consequently", "definition": "He lied; consequently, no one trusts him." },
+            { "term": "therefore", "definition": "The road was closed; therefore, we took another route." },
+            { "term": "that's why", "definition": "That's why I didn't call." },
+            { "term": "because of this", "definition": "Because of this, we changed our plans." }
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Read these sentences. If I had studied medicine, I would be a doctor now. I wish I had more time. If only I had listened. Notice how conditionals can mix past and present."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "If I had studied medicine, I would be a doctor now.",
+        "If I were braver, I would have spoken up.",
+        "I wish I had more time.",
+        "I wish I had studied harder.",
+        "If only I hadn't said that.",
+        "I wish it would stop raining.",
+        "It's time we left.",
+        "I'd rather you didn't smoke here."
+      ],
+      "questions": [
+        "In sentences 1 and 2, which parts of the sentence refer to different times?",
+        "In sentences 3 and 4, what is the difference between wishing about the present and the past?",
+        "In sentence 5, how does 'if only' change the meaning of the wish?",
+        "In sentence 6, what does 'wish + would' express?",
+        "In sentences 7 and 8, what other structures express hypothetical situations?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "If I ___ born earlier, I would be retired now.",
-      "options": [
-        "was",
-        "were",
-        "had been",
-        "have been"
-      ],
-      "correct": 2,
-      "explanation": "Mixed conditional: past condition, present result. Use had + past participle."
+      "questions": [
+        {"prompt": "If I ___ born earlier, I would be retired now.", "options": ["was", "were", "had been", "have been"], "correct": 2, "explanation": "Mixed conditional: past condition, present result."},
+        {"prompt": "I wish I ___ how to play the piano.", "options": ["know", "knew", "have known", "would know"], "correct": 1, "explanation": "Present regret: wish + past simple."},
+        {"prompt": "I wish I ___ studied harder for the exam.", "options": ["have", "had", "would", "was"], "correct": 1, "explanation": "Past regret: wish + past perfect."},
+        {"prompt": "If only I ___ my keys! Now I can't get in.", "options": ["didn't lose", "hadn't lost", "don't lose", "wouldn't lose"], "correct": 1, "explanation": "Past regret: if only + past perfect."},
+        {"prompt": "If I ___ more money, I would have travelled last year.", "options": ["had", "had had", "have", "would have"], "correct": 1, "explanation": "Mixed conditional: past result depends on a past condition."},
+        {"prompt": "It's time we ___ .", "options": ["leave", "left", "will leave", "would leave"], "correct": 1, "explanation": "It's time + past simple."},
+        {"prompt": "I'd rather you ___ tell anyone.", "options": ["do not", "did not", "will not", "would not"], "correct": 1, "explanation": "I'd rather + past simple for present/future wishes."},
+        {"prompt": "If she ___ braver, she would have spoken up.", "options": ["was", "were", "had been", "would be"], "correct": 1, "explanation": "Mixed conditional: present condition, past result."},
+        {"prompt": "I wish it ___ raining. I want to go out.", "options": ["stops", "stopped", "would stop", "has stopped"], "correct": 2, "explanation": "Wish + would for annoyance or desire for change."},
+        {"prompt": "If only I ___ the answer.", "options": ["know", "knew", "have known", "would know"], "correct": 1, "explanation": "If only + past simple for present wish."}
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Write 3 sentences with I wish about things you would change in your life."
+      "prompts": [
+        "Write 5 sentences with 'I wish' about things you would change in your life (mix past and present).",
+        "Write 5 mixed conditional sentences combining past and present (If I had... I would be...).",
+        "Write 5 sentences with 'if only' expressing regrets about the past."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "I wish I ___ how to play the piano.",
-      "options": [
-        "know",
-        "knew",
-        "have known",
-        "would know"
-      ],
-      "correct": 1,
-      "explanation": "For present regrets we use I wish + Past Simple."
+      "questions": [
+        {"prompt": "If I ___ known, I would have come.", "options": ["have", "had", "would have", "did"], "correct": 1, "explanation": "Third conditional: past perfect."},
+        {"prompt": "I wish I ___ taller.", "options": ["am", "was", "were", "will be"], "correct": 2, "explanation": "Present wish with I: were."},
+        {"prompt": "If only I ___ studied medicine. I would be a doctor now.", "options": ["have", "had", "would have", "did"], "correct": 1, "explanation": "Mixed conditional: past condition, present result."},
+        {"prompt": "I wish it ___ sunny tomorrow.", "options": ["is", "was", "would be", "will be"], "correct": 2, "explanation": "Wish + would for future desire."},
+        {"prompt": "If I ___ you, I would apologise.", "options": ["am", "was", "were", "be"], "correct": 2, "explanation": "Second conditional with I: were."},
+        {"prompt": "I wish I ___ so rude yesterday.", "options": ["wasn't", "hadn't been", "wouldn't be", "am not"], "correct": 1, "explanation": "Past regret: past perfect."},
+        {"prompt": "If she ___ harder, she would have passed.", "options": ["studied", "had studied", "studies", "would study"], "correct": 1, "explanation": "Third conditional."},
+        {"prompt": "It's time you ___ to bed.", "options": ["go", "went", "will go", "would go"], "correct": 1, "explanation": "It's time + past simple."},
+        {"prompt": "I'd rather you ___ here.", "options": ["don't smoke", "didn't smoke", "won't smoke", "wouldn't smoke"], "correct": 1, "explanation": "I'd rather + past simple."},
+        {"prompt": "If I ___ braver, I would have asked her out.", "options": ["was", "were", "had been", "would be"], "correct": 1, "explanation": "Mixed conditional: present condition, past result."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Mixed conditionals combine different times: if + past perfect, would + verb (past condition, present result).",
+            "If + past simple, would have + pp (present condition, past result).",
+            "I wish + past simple: present regret.",
+            "I wish + past perfect: past regret.",
+            "I wish + would: annoyance or desire for change.",
+            "If only: same uses as I wish, but stronger.",
+            "It's time + past simple. I'd rather + past simple."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'I wish I would have'. Say 'I wish I had'.",
+            "Do not use 'will' after 'wish' or 'if only'.",
+            "Do not mix tenses randomly in mixed conditionals."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "If I had..., I would...",
+            "If I were..., I would have...",
+            "I wish I...",
+            "If only I...",
+            "It's time we...",
+            "I'd rather you..."
+          ]
+        }
+      ]
     }
   ]
 }

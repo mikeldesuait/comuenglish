@@ -6,45 +6,216 @@
   "function": "Express wishes, recommendations and demands",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn formal structures with the subjunctive and expressions like It is essential that, I would rather."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "What is the subjunctive?",
+          "body": "The subjunctive is a verb form used in formal English to express demands, recommendations, wishes or hypothetical situations. It is very common in formal writing and after certain expressions."
+        },
+        {
+          "heading": "Present subjunctive",
+          "body": "After certain verbs and expressions, we use the base form of the verb (no -s, no 'to') for all subjects.",
+          "tableHeader": true,
+          "table": [
+            ["Structure", "Example"],
+            ["It is essential that + subject + base verb", "It is essential that he be informed."],
+            ["I suggest that + subject + base verb", "I suggest that she stay at home."],
+            ["I recommend that + subject + base verb", "I recommend that you take a break."],
+            ["I insist that + subject + base verb", "I insist that he come with us."]
+          ]
+        },
+        {
+          "heading": "Common triggers",
+          "list": [
+            "It is important / essential / vital / crucial that...",
+            "It is necessary that...",
+            "I suggest / recommend / propose that...",
+            "I insist / demand / request that...",
+            "The doctor advised that...",
+            "The rules require that..."
+          ]
+        },
+        {
+          "heading": "Would rather / Would sooner",
+          "body": "Used to express preferences about the present or past.",
+          "tableHeader": true,
+          "table": [
+            ["Structure", "Use", "Example"],
+            ["would rather + subject + past simple", "present / future", "I would rather you didn't smoke here."],
+            ["would rather + subject + past perfect", "past regret", "I would rather you had told me."]
+          ]
+        },
+        {
+          "heading": "It's time + past simple",
+          "body": "Expresses that something should have happened already.",
+          "list": [
+            "It's time we left.",
+            "It's time you went to bed.",
+            "It's high time we did something about this."
+          ]
+        },
+        {
+          "heading": "Formal 'if' clauses with inversion",
+          "list": [
+            "Were I you, I would apologise. (instead of 'If I were you')",
+            "Had I known, I would have called. (instead of 'If I had known')",
+            "Should you need anything, please ask. (instead of 'If you should need')"
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not add -s to the subjunctive: 'It is essential that he goes' → 'It is essential that he go' (formal).",
+            "Do not use 'would' after 'if' in hypothetical clauses.",
+            "Remember: after 'would rather' with a different subject, use the past simple."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Formal expressions",
+          "list": [
+            { "term": "it is essential that", "definition": "It is essential that everyone be present." },
+            { "term": "it is vital that", "definition": "It is vital that we act now." },
+            { "term": "it is crucial that", "definition": "It is crucial that the report be finished today." },
+            { "term": "it is necessary that", "definition": "It is necessary that you sign here." },
+            { "term": "I recommend that", "definition": "I recommend that you take a day off." },
+            { "term": "I insist that", "definition": "I insist that he come with us." }
+          ]
+        },
+        {
+          "heading": "Recommendations",
+          "list": [
+            { "term": "advise", "definition": "I advise that she rest." },
+            { "term": "suggest", "definition": "I suggest that we leave early." },
+            { "term": "propose", "definition": "I propose that we change the plan." },
+            { "term": "request", "definition": "The manager requested that we be quiet." },
+            { "term": "demand", "definition": "They demanded that he apologise." },
+            { "term": "urge", "definition": "I urge that we take action now." }
+          ]
+        },
+        {
+          "heading": "Wishes and preferences",
+          "list": [
+            { "term": "would rather", "definition": "I would rather you stayed." },
+            { "term": "would sooner", "definition": "I would sooner you didn't tell anyone." },
+            { "term": "it's time", "definition": "It's time we made a decision." },
+            { "term": "it's high time", "definition": "It's high time you found a job." }
+          ]
+        },
+        {
+          "heading": "Formal inversion",
+          "list": [
+            { "term": "Were I you", "definition": "Were I you, I would decline." },
+            { "term": "Had I known", "definition": "Had I known, I would have acted differently." },
+            { "term": "Should you need", "definition": "Should you need help, contact us." }
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Read these sentences. It is essential that he be informed. I would rather you did not smoke here. She insisted that we stay. Notice the base form of the verb after these structures."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "It is essential that he be informed immediately.",
+        "I suggest that she stay at home tonight.",
+        "I would rather you didn't smoke here.",
+        "It's time we left.",
+        "Were I you, I would apologise.",
+        "Had I known, I would have called.",
+        "The doctor advised that he rest for a week.",
+        "They demanded that the meeting be postponed."
+      ],
+      "questions": [
+        "In sentences 1, 2, 7 and 8, what form of the verb is used after 'that'?",
+        "In sentence 3, why is the past simple used after 'would rather'?",
+        "In sentence 4, what does 'it's time + past simple' express?",
+        "In sentences 5 and 6, what replaces 'if' in these formal structures?",
+        "Why is the subjunctive considered formal?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "It is important that she ___ on time.",
-      "options": [
-        "is",
-        "be",
-        "was",
-        "will be"
-      ],
-      "correct": 1,
-      "explanation": "Subjunctive uses the base form: be, not is."
+      "questions": [
+        {"prompt": "It is important that she ___ on time.", "options": ["is", "be", "was", "will be"], "correct": 1, "explanation": "Subjunctive uses the base form: be, not is."},
+        {"prompt": "I would rather you ___ tell anyone.", "options": ["do not", "did not", "will not", "would not"], "correct": 1, "explanation": "I would rather + past simple for present/future wishes."},
+        {"prompt": "I suggest that he ___ a doctor.", "options": ["sees", "see", "saw", "will see"], "correct": 1, "explanation": "Subjunctive after 'suggest': base form."},
+        {"prompt": "___ I you, I would accept the offer.", "options": ["If", "Was", "Were", "Am"], "correct": 2, "explanation": "Formal inversion: Were I you."},
+        {"prompt": "It's time we ___ this problem.", "options": ["solve", "solved", "will solve", "would solve"], "correct": 1, "explanation": "It's time + past simple."},
+        {"prompt": "The manager demanded that the report ___ by Friday.", "options": ["is finished", "be finished", "was finished", "will be finished"], "correct": 1, "explanation": "Subjunctive passive: be + past participle."},
+        {"prompt": "___ I known, I would have told you.", "options": ["If", "Had", "Have", "Would"], "correct": 1, "explanation": "Formal inversion: Had I known."},
+        {"prompt": "I recommend that everyone ___ the instructions.", "options": ["reads", "read", "reading", "will read"], "correct": 1, "explanation": "Subjunctive after 'recommend': base form."},
+        {"prompt": "It's high time you ___ a decision.", "options": ["make", "made", "will make", "would make"], "correct": 1, "explanation": "It's high time + past simple."},
+        {"prompt": "___ you need help, please contact me.", "options": ["Should", "Would", "Will", "Do"], "correct": 0, "explanation": "Formal inversion: Should you need."}
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Write 3 formal recommendations for a job application using It is essential/important that."
+      "prompts": [
+        "Write 5 formal recommendations using 'It is essential/important that...'.",
+        "Write 5 sentences with 'I would rather' + past simple about situations you would like to change.",
+        "Rewrite 5 conditional sentences using formal inversion (Were I..., Had I..., Should you...)."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "I would rather you ___ tell anyone.",
-      "options": [
-        "do not",
-        "did not",
-        "will not",
-        "would not"
-      ],
-      "correct": 1,
-      "explanation": "I would rather + past simple for present/future wishes."
+      "questions": [
+        {"prompt": "It is vital that everyone ___ present.", "options": ["is", "be", "was", "will be"], "correct": 1, "explanation": "Subjunctive: base form."},
+        {"prompt": "I'd rather you ___ come tomorrow.", "options": ["do not", "did not", "will not", "would not"], "correct": 1, "explanation": "I'd rather + past simple."},
+        {"prompt": "The rules require that all visitors ___ ID.", "options": ["show", "shows", "showed", "will show"], "correct": 0, "explanation": "Subjunctive after 'require': base form."},
+        {"prompt": "___ I known the truth, I would have acted differently.", "options": ["If", "Had", "Have", "Were"], "correct": 1, "explanation": "Formal inversion: Had I known."},
+        {"prompt": "It's time you ___ to bed.", "options": ["go", "went", "will go", "would go"], "correct": 1, "explanation": "It's time + past simple."},
+        {"prompt": "I suggest that she ___ a specialist.", "options": ["sees", "see", "saw", "will see"], "correct": 1, "explanation": "Subjunctive after 'suggest'."},
+        {"prompt": "___ you need anything, just ask.", "options": ["Should", "Would", "Will", "Do"], "correct": 0, "explanation": "Formal inversion: Should you need."},
+        {"prompt": "They demanded that he ___ immediately.", "options": ["leaves", "leave", "left", "will leave"], "correct": 1, "explanation": "Subjunctive: base form."},
+        {"prompt": "It's high time we ___ this situation.", "options": ["discuss", "discussed", "will discuss", "would discuss"], "correct": 1, "explanation": "It's high time + past simple."},
+        {"prompt": "I would rather you ___ told him.", "options": ["have", "had", "will have", "would have"], "correct": 1, "explanation": "Past regret: would rather + past perfect."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Subjunctive: base form after 'It is essential that...', 'I suggest that...', etc.",
+            "Common triggers: essential, important, vital, crucial, necessary, suggest, recommend, insist, demand.",
+            "I would rather + subject + past simple (present) / past perfect (past).",
+            "It's time / It's high time + past simple.",
+            "Formal inversion: Were I..., Had I..., Should you..."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not add -s to the subjunctive in formal contexts.",
+            "Do not use 'would' after 'if' in hypothetical clauses.",
+            "Remember: 'would rather' + different subject uses past simple."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "It is essential that...",
+            "I recommend that...",
+            "I would rather you...",
+            "It's time we...",
+            "Were I you...",
+            "Had I known...",
+            "Should you need..."
+          ]
+        }
+      ]
     }
   ]
 }

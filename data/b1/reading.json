@@ -106,6 +106,536 @@
           "explanation": "The email says: The meeting should last approximately one hour."
         }
       ]
+    },
+    {
+      "id": "b1-r3",
+      "type": "article",
+      "title": "The benefits of exercise",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Regular exercise is one of the best things you can do for your health. Studies show that people who exercise at least three times a week have lower stress levels and sleep better. Exercise also helps to prevent heart disease and other serious illnesses. However, many people say they do not have time to exercise. The good news is that you do not need to spend hours at the gym. Even a 30-minute walk every day can make a big difference. The most important thing is to choose an activity you enjoy, because then you will want to continue. Exercise should not feel like a punishment.",
+      "questions": [
+        {
+          "question": "What do studies show about people who exercise regularly?",
+          "options": [
+            "They earn more money",
+            "They have lower stress levels",
+            "They eat more",
+            "They work longer hours"
+          ],
+          "correct": 1,
+          "explanation": "The article says people who exercise have lower stress levels and sleep better."
+        },
+        {
+          "question": "What do many people say about exercise?",
+          "options": [
+            "It is boring",
+            "They do not have time",
+            "It is expensive",
+            "It is dangerous"
+          ],
+          "correct": 1,
+          "explanation": "The article says many people say they do not have time to exercise."
+        },
+        {
+          "question": "According to the article, how much exercise is enough?",
+          "options": [
+            "Hours at the gym",
+            "30 minutes of walking a day",
+            "Once a week",
+            "Only on weekends"
+          ],
+          "correct": 1,
+          "explanation": "The article says even a 30-minute walk every day can make a big difference."
+        },
+        {
+          "question": "What is the most important thing when choosing exercise?",
+          "options": [
+            "It should be expensive",
+            "It should be painful",
+            "You should enjoy it",
+            "It should be at a gym"
+          ],
+          "correct": 2,
+          "explanation": "The article says choose an activity you enjoy."
+        }
+      ]
+    },
+    {
+      "id": "b1-r4",
+      "type": "article",
+      "title": "Living in a big city",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Living in a big city has both advantages and disadvantages. On the positive side, cities offer more job opportunities, better public transport and a wider choice of entertainment. You can find restaurants from every country, museums, theatres and concerts. However, cities are also noisy, crowded and expensive. The cost of housing is often very high, and many people spend hours commuting to work every day. Some people decide to move to the countryside to enjoy a quieter life, but then they miss the excitement of the city. In my opinion, the ideal situation is to live in a medium-sized city, where you have opportunities but also some peace and quiet.",
+      "questions": [
+        {
+          "question": "What is one advantage of living in a big city mentioned in the article?",
+          "options": [
+            "Cheaper housing",
+            "Quieter streets",
+            "More job opportunities",
+            "Less traffic"
+          ],
+          "correct": 2,
+          "explanation": "The article says cities offer more job opportunities."
+        },
+        {
+          "question": "What is one disadvantage of living in a big city?",
+          "options": [
+            "Fewer restaurants",
+            "High cost of housing",
+            "No museums",
+            "Bad public transport"
+          ],
+          "correct": 1,
+          "explanation": "The article says the cost of housing is often very high."
+        },
+        {
+          "question": "Why do some people move to the countryside?",
+          "options": [
+            "To find better jobs",
+            "To enjoy a quieter life",
+            "To be closer to shops",
+            "To have more entertainment"
+          ],
+          "correct": 1,
+          "explanation": "The article says some people move to the countryside to enjoy a quieter life."
+        },
+        {
+          "question": "What is the writer's opinion?",
+          "options": [
+            "Everyone should live in the countryside",
+            "Big cities are always better",
+            "A medium-sized city is ideal",
+            "Cities should be smaller"
+          ],
+          "correct": 2,
+          "explanation": "The article says the ideal situation is to live in a medium-sized city."
+        }
+      ]
+    },
+    {
+      "id": "b1-r5",
+      "type": "email",
+      "title": "An email about a job application",
+      "instructions": "Read the email and choose the best answer A, B, C or D.",
+      "text": "Dear Ms. Roberts, I am writing to apply for the position of sales assistant that I saw advertised on your website. I have two years of experience in retail, and I am currently working at a clothing store in the city centre. I am fluent in English and Spanish, and I have good communication skills. I am available to start work immediately and I am very interested in this opportunity. Please find attached my CV. I would be grateful if you could consider my application. I look forward to hearing from you. Yours sincerely, David Chen",
+      "questions": [
+        {
+          "question": "Why is David writing this email?",
+          "options": [
+            "To complain about a product",
+            "To apply for a job",
+            "To ask for information",
+            "To cancel an interview"
+          ],
+          "correct": 1,
+          "explanation": "The email says: I am writing to apply for the position of sales assistant."
+        },
+        {
+          "question": "How much experience does David have?",
+          "options": [
+            "Six months",
+            "One year",
+            "Two years",
+            "Five years"
+          ],
+          "correct": 2,
+          "explanation": "The email says: I have two years of experience in retail."
+        },
+        {
+          "question": "What languages does David speak?",
+          "options": [
+            "English and French",
+            "English and Spanish",
+            "Only English",
+            "Spanish and Italian"
+          ],
+          "correct": 1,
+          "explanation": "The email says: I am fluent in English and Spanish."
+        },
+        {
+          "question": "What has David attached to the email?",
+          "options": [
+            "A photo",
+            "A reference letter",
+            "His CV",
+            "A certificate"
+          ],
+          "correct": 2,
+          "explanation": "The email says: Please find attached my CV."
+        }
+      ]
+    },
+    {
+      "id": "b1-r6",
+      "type": "article",
+      "title": "The problem with plastic",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Every year, millions of tons of plastic end up in the ocean. This is a serious problem because plastic does not break down quickly. It can take hundreds of years to disappear. Sea animals often mistake plastic for food, and many die as a result. Some countries have started to ban single-use plastics like bags and straws, and many shops now encourage customers to bring their own bags. However, experts say that individual actions are not enough. Governments and companies must take bigger steps to reduce plastic production. Recycling is important, but it is not the complete solution. The real answer is to use less plastic in the first place.",
+      "questions": [
+        {
+          "question": "Why is plastic a problem in the ocean?",
+          "options": [
+            "It is expensive",
+            "It does not break down quickly",
+            "It is colourful",
+            "It is heavy"
+          ],
+          "correct": 1,
+          "explanation": "The article says plastic does not break down quickly."
+        },
+        {
+          "question": "What happens to many sea animals?",
+          "options": [
+            "They eat plastic and die",
+            "They swim away",
+            "They grow bigger",
+            "They learn to avoid it"
+          ],
+          "correct": 0,
+          "explanation": "The article says sea animals mistake plastic for food and many die."
+        },
+        {
+          "question": "What have some countries done?",
+          "options": [
+            "Banned all plastic",
+            "Banned single-use plastics",
+            "Increased plastic production",
+            "Stopped recycling"
+          ],
+          "correct": 1,
+          "explanation": "The article says some countries have started to ban single-use plastics."
+        },
+        {
+          "question": "What do experts say about individual actions?",
+          "options": [
+            "They are enough",
+            "They are not enough",
+            "They are not important",
+            "They are the only solution"
+          ],
+          "correct": 1,
+          "explanation": "The article says individual actions are not enough."
+        }
+      ]
+    },
+    {
+      "id": "b1-r7",
+      "type": "email",
+      "title": "An email about a holiday",
+      "instructions": "Read the email and choose the best answer A, B, C or D.",
+      "text": "Hi Anna, How are you? I am having a wonderful holiday in Greece. The weather is perfect - sunny every day, around 30 degrees. I am staying in a small hotel near the beach. The food is amazing, especially the fresh fish and the salads. Yesterday, I visited an ancient temple on top of a hill. The view was spectacular. Tomorrow, I am going on a boat trip to a nearby island. I am a bit worried about the sea because I get seasick, but the captain says the water is very calm at this time of year. I will send you some photos. See you soon, Peter",
+      "questions": [
+        {
+          "question": "Where is Peter on holiday?",
+          "options": [
+            "In Italy",
+            "In Greece",
+            "In Spain",
+            "In Turkey"
+          ],
+          "correct": 1,
+          "explanation": "The email says: I am having a wonderful holiday in Greece."
+        },
+        {
+          "question": "What did Peter do yesterday?",
+          "options": [
+            "He went to the beach",
+            "He visited an ancient temple",
+            "He went on a boat trip",
+            "He stayed at the hotel"
+          ],
+          "correct": 1,
+          "explanation": "The email says: Yesterday, I visited an ancient temple."
+        },
+        {
+          "question": "What is Peter worried about?",
+          "options": [
+            "The weather",
+            "The food",
+            "Getting seasick",
+            "The hotel"
+          ],
+          "correct": 2,
+          "explanation": "The email says: I am a bit worried about the sea because I get seasick."
+        },
+        {
+          "question": "What does the captain say about the water?",
+          "options": [
+            "It is very cold",
+            "It is very calm",
+            "It is very deep",
+            "It is very dirty"
+          ],
+          "correct": 1,
+          "explanation": "The email says: the captain says the water is very calm at this time of year."
+        }
+      ]
+    },
+    {
+      "id": "b1-r8",
+      "type": "article",
+      "title": "Learning online vs learning in a classroom",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Online learning has become very popular in recent years, especially after the pandemic. It offers many advantages: you can study from home, choose your own schedule and save money on transport. However, it also has disadvantages. Some students find it difficult to concentrate at home, and they miss the interaction with teachers and classmates. In a traditional classroom, students can ask questions immediately and work in groups, which helps them learn faster. Research suggests that the best approach may be a combination of both methods. For example, students could attend some classes in person and complete other tasks online. This way, they benefit from the flexibility of online learning and the social aspect of the classroom.",
+      "questions": [
+        {
+          "question": "What is one advantage of online learning mentioned in the article?",
+          "options": [
+            "Meeting new people",
+            "Choosing your own schedule",
+            "Learning faster",
+            "Getting more attention"
+          ],
+          "correct": 1,
+          "explanation": "The article says you can choose your own schedule."
+        },
+        {
+          "question": "What is one disadvantage of online learning?",
+          "options": [
+            "It is expensive",
+            "It is difficult to concentrate at home",
+            "It requires more books",
+            "It is too short"
+          ],
+          "correct": 1,
+          "explanation": "The article says some students find it difficult to concentrate at home."
+        },
+        {
+          "question": "What helps students learn faster in a classroom?",
+          "options": [
+            "Longer lessons",
+            "Group work",
+            "More homework",
+            "Better books"
+          ],
+          "correct": 1,
+          "explanation": "The article says students can ask questions and work in groups, which helps them learn faster."
+        },
+        {
+          "question": "What does research suggest is the best approach?",
+          "options": [
+            "Only online learning",
+            "Only classroom learning",
+            "A combination of both",
+            "No learning at all"
+          ],
+          "correct": 2,
+          "explanation": "The article says the best approach may be a combination of both methods."
+        }
+      ]
+    },
+    {
+      "id": "b1-r9",
+      "type": "article",
+      "title": "The history of the internet",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "The internet was invented in the 1960s by scientists working for the US government. At first, it was only used by universities and the military. In the 1990s, the World Wide Web made the internet available to everyone. Suddenly, people could send emails, read news and buy things online. Since then, the internet has changed almost every part of our lives. We use it for work, education, entertainment and communication. However, this has also created new problems, such as online addiction and privacy concerns. Many experts believe that we need to find a better balance between our online and offline lives.",
+      "questions": [
+        {
+          "question": "When was the internet invented?",
+          "options": [
+            "In the 1950s",
+            "In the 1960s",
+            "In the 1990s",
+            "In the 2000s"
+          ],
+          "correct": 1,
+          "explanation": "The article says the internet was invented in the 1960s."
+        },
+        {
+          "question": "Who used the internet at first?",
+          "options": [
+            "Everyone",
+            "Only students",
+            "Universities and the military",
+            "Only businesses"
+          ],
+          "correct": 2,
+          "explanation": "The article says it was only used by universities and the military at first."
+        },
+        {
+          "question": "What happened in the 1990s?",
+          "options": [
+            "The internet was invented",
+            "The World Wide Web made the internet available to everyone",
+            "The internet was banned",
+            "Email was invented"
+          ],
+          "correct": 1,
+          "explanation": "The article says in the 1990s, the World Wide Web made the internet available to everyone."
+        },
+        {
+          "question": "What problem has the internet created?",
+          "options": [
+            "Too much paper",
+            "Online addiction",
+            "Slower communication",
+            "Fewer jobs"
+          ],
+          "correct": 1,
+          "explanation": "The article says this has created new problems, such as online addiction."
+        }
+      ]
+    },
+    {
+      "id": "b1-r10",
+      "type": "email",
+      "title": "An email about moving to a new country",
+      "instructions": "Read the email and choose the best answer A, B, C or D.",
+      "text": "Hi Sophie, I have been living in Canada for three months now. The first month was very difficult because everything was new - the language, the food, the weather. I missed my family and friends a lot. But now I am starting to feel at home. I have made some friends at work and I am learning French on Tuesdays and Thursdays. The winter is hard because it is very cold, but everyone says you get used to it. Next month, my sister is coming to visit me. I am very excited to show her around. Write soon, Laura",
+      "questions": [
+        {
+          "question": "How long has Laura been living in Canada?",
+          "options": [
+            "One month",
+            "Two months",
+            "Three months",
+            "Six months"
+          ],
+          "correct": 2,
+          "explanation": "The email says: I have been living in Canada for three months now."
+        },
+        {
+          "question": "Why was the first month difficult?",
+          "options": [
+            "Because of the food only",
+            "Because everything was new",
+            "Because she had no money",
+            "Because she was ill"
+          ],
+          "correct": 1,
+          "explanation": "The email says the first month was difficult because everything was new."
+        },
+        {
+          "question": "What is Laura learning?",
+          "options": [
+            "Spanish",
+            "French",
+            "Italian",
+            "German"
+          ],
+          "correct": 1,
+          "explanation": "The email says: I am learning French on Tuesdays and Thursdays."
+        },
+        {
+          "question": "Who is coming to visit Laura?",
+          "options": [
+            "Her mother",
+            "Her friend Sophie",
+            "Her sister",
+            "Her brother"
+          ],
+          "correct": 2,
+          "explanation": "The email says: Next month, my sister is coming to visit me."
+        }
+      ]
+    },
+    {
+      "id": "b1-r11",
+      "type": "article",
+      "title": "Why reading is important",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Reading is one of the most valuable habits you can develop. People who read regularly tend to have larger vocabularies and better writing skills. Reading also improves concentration and reduces stress. Studies have shown that just six minutes of reading can reduce stress levels by up to 68 percent. Unfortunately, many people say they are too busy to read. However, reading does not require a lot of time. You can read on the bus, during your lunch break or before going to sleep. The key is to choose books you enjoy, not books you feel you should read. Whether it is fiction, non-fiction or comics, the important thing is to read something every day.",
+      "questions": [
+        {
+          "question": "What do people who read regularly tend to have?",
+          "options": [
+            "More money",
+            "Larger vocabularies",
+            "More friends",
+            "Better jobs"
+          ],
+          "correct": 1,
+          "explanation": "The article says people who read regularly tend to have larger vocabularies."
+        },
+        {
+          "question": "According to studies, how much can reading reduce stress?",
+          "options": [
+            "Up to 30 percent",
+            "Up to 50 percent",
+            "Up to 68 percent",
+            "Up to 90 percent"
+          ],
+          "correct": 2,
+          "explanation": "The article says six minutes of reading can reduce stress by up to 68 percent."
+        },
+        {
+          "question": "What do many people say about reading?",
+          "options": [
+            "It is boring",
+            "They are too busy",
+            "It is expensive",
+            "It is difficult"
+          ],
+          "correct": 1,
+          "explanation": "The article says many people say they are too busy to read."
+        },
+        {
+          "question": "What is the key to developing a reading habit?",
+          "options": [
+            "Reading only classic books",
+            "Reading only non-fiction",
+            "Choosing books you enjoy",
+            "Reading for hours every day"
+          ],
+          "correct": 2,
+          "explanation": "The article says the key is to choose books you enjoy."
+        }
+      ]
+    },
+    {
+      "id": "b1-r12",
+      "type": "article",
+      "title": "The importance of breakfast",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Many people skip breakfast because they say they do not have time in the morning. However, nutritionists agree that breakfast is the most important meal of the day. After eight hours of sleep, your body needs energy to start working properly. People who eat breakfast tend to concentrate better at school or work. They are also less likely to eat unhealthy snacks during the day. A good breakfast should include protein, fruit and whole grains. It does not need to be complicated - a simple bowl of cereal with milk and a banana is enough. The key is to make breakfast a habit, not an exception.",
+      "questions": [
+        {
+          "question": "Why do many people skip breakfast?",
+          "options": [
+            "They are not hungry",
+            "They do not have time",
+            "They do not like breakfast food",
+            "It is too expensive"
+          ],
+          "correct": 1,
+          "explanation": "The article says many people skip breakfast because they do not have time."
+        },
+        {
+          "question": "What do nutritionists say about breakfast?",
+          "options": [
+            "It is optional",
+            "It is the most important meal",
+            "It is only for children",
+            "It is not necessary"
+          ],
+          "correct": 1,
+          "explanation": "The article says nutritionists agree that breakfast is the most important meal of the day."
+        },
+        {
+          "question": "How do people who eat breakfast perform at school or work?",
+          "options": [
+            "They concentrate better",
+            "They are sleepier",
+            "They are slower",
+            "They are hungrier"
+          ],
+          "correct": 0,
+          "explanation": "The article says people who eat breakfast tend to concentrate better."
+        },
+        {
+          "question": "What should a good breakfast include?",
+          "options": [
+            "Only sugar",
+            "Protein, fruit and whole grains",
+            "Only coffee",
+            "Fast food"
+          ],
+          "correct": 1,
+          "explanation": "The article says a good breakfast should include protein, fruit and whole grains."
+        }
+      ]
     }
   ]
 }

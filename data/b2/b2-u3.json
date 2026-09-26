@@ -6,45 +6,203 @@
   "function": "Express ideas impersonally",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn advanced passive structures used in formal and journalistic English."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Passive review",
+          "body": "In B2 you already know the basic passive (be + past participle). Now we extend it to more complex structures used in formal writing, news and reports."
+        },
+        {
+          "heading": "Passive with modals",
+          "body": "Modal + be + past participle.",
+          "tableHeader": true,
+          "table": [
+            ["Modal", "Example"],
+            ["can be", "The form can be completed online."],
+            ["must be", "The report must be submitted by Friday."],
+            ["should be", "The rules should be followed."],
+            ["might be", "The meeting might be postponed."],
+            ["has to be", "The homework has to be finished today."]
+          ]
+        },
+        {
+          "heading": "Impersonal passive: It is said that...",
+          "body": "Used when the source is not important or unknown.",
+          "list": [
+            "It is said that he is very rich.",
+            "It is believed that the company will close.",
+            "It is reported that three people were injured.",
+            "It is thought that the painting is a fake.",
+            "It was announced that the president would resign."
+          ]
+        },
+        {
+          "heading": "Passive with 'to' infinitives",
+          "body": "Subject + passive verb + to + infinitive.",
+          "list": [
+            "He is said to be very rich. (instead of 'It is said that he is')",
+            "She is believed to be in Paris.",
+            "They are thought to have left the country.",
+            "The painting is said to be worth a million euros."
+          ]
+        },
+        {
+          "heading": "Perfect infinitive in passive",
+          "body": "When the action is in the past, we use the perfect infinitive.",
+          "list": [
+            "He is said to have stolen the money.",
+            "The company is reported to have lost millions.",
+            "She is believed to have left yesterday."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not forget 'be' in passive with modals: 'must submitted' is wrong. Say 'must be submitted'.",
+            "Do not mix 'It is said that' with 'He is said to'.",
+            "Remember the perfect infinitive for past actions in impersonal passive."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "News and reporting",
+          "list": [
+            { "term": "be reported", "definition": "The accident was reported at 8 am." },
+            { "term": "be announced", "definition": "The results will be announced tomorrow." },
+            { "term": "be confirmed", "definition": "The news has been confirmed by the police." },
+            { "term": "be revealed", "definition": "The truth was revealed yesterday." },
+            { "term": "be denied", "definition": "The rumours were denied by the manager." },
+            { "term": "be claimed", "definition": "It is claimed that he owns three houses." }
+          ]
+        },
+        {
+          "heading": "Science and processes",
+          "list": [
+            { "term": "be conducted", "definition": "The experiment was conducted in a laboratory." },
+            { "term": "be tested", "definition": "The new drug is being tested." },
+            { "term": "be developed", "definition": "The vaccine was developed in record time." },
+            { "term": "be analysed", "definition": "The data will be analysed by experts." },
+            { "term": "be measured", "definition": "The temperature is measured twice a day." },
+            { "term": "be observed", "definition": "The behaviour was observed over six months." }
+          ]
+        },
+        {
+          "heading": "Formal writing",
+          "list": [
+            { "term": "be considered", "definition": "The proposal is being considered." },
+            { "term": "be expected", "definition": "The results are expected next week." },
+            { "term": "be required", "definition": "A passport is required for travel." },
+            { "term": "be recommended", "definition": "Early booking is recommended." },
+            { "term": "be prohibited", "definition": "Smoking is prohibited in the building." },
+            { "term": "be permitted", "definition": "Photography is not permitted here." }
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Read these sentences. The report must be submitted by Friday. It is said that he is very rich. He is believed to be abroad. Notice the impersonal passive with it is said / believed."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "The report must be submitted by Friday.",
+        "It is said that he is very rich.",
+        "He is said to be very rich.",
+        "She is believed to have left yesterday.",
+        "The new law was announced yesterday.",
+        "Photography is not permitted in the museum.",
+        "The experiment was conducted in 2022.",
+        "The painting is thought to be a fake."
+      ],
+      "questions": [
+        "In sentence 1, how is the passive formed with a modal?",
+        "In sentence 2, what does 'It is said that' introduce?",
+        "In sentence 3, how is the same idea expressed with a personal passive?",
+        "In sentence 4, why is the perfect infinitive used?",
+        "In sentences 5, 6 and 7, which tense is used in each passive?",
+        "In sentence 8, what does 'is thought to be' mean?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "The meeting ___ postponed until next week.",
-      "options": [
-        "has",
-        "has been",
-        "is been",
-        "was being"
-      ],
-      "correct": 1,
-      "explanation": "Present perfect passive: has/have been + past participle."
+      "questions": [
+        {"prompt": "The meeting ___ postponed until next week.", "options": ["has", "has been", "is been", "was being"], "correct": 1, "explanation": "Present perfect passive: has/have been + past participle."},
+        {"prompt": "It ___ that the company will close next month.", "options": ["says", "is said", "said", "is saying"], "correct": 1, "explanation": "Impersonal passive: It is said that..."},
+        {"prompt": "He ___ to be very rich.", "options": ["says", "is said", "said", "is saying"], "correct": 1, "explanation": "Passive with 'to' infinitive: is said to be."},
+        {"prompt": "The rules ___ followed by all students.", "options": ["must", "must be", "must to be", "must been"], "correct": 1, "explanation": "Modal + be + past participle."},
+        {"prompt": "She ___ to have left the country.", "options": ["believes", "is believed", "believed", "is believing"], "correct": 1, "explanation": "Personal passive: is believed to have."},
+        {"prompt": "Smoking is ___ in all public buildings.", "options": ["prohibit", "prohibited", "prohibiting", "prohibits"], "correct": 1, "explanation": "Passive: is + past participle."},
+        {"prompt": "It ___ reported that three people were injured.", "options": ["is", "are", "was been", "has"], "correct": 0, "explanation": "Impersonal passive: It is reported that..."},
+        {"prompt": "The results will ___ tomorrow.", "options": ["announce", "announced", "be announced", "be announcing"], "correct": 2, "explanation": "Future passive: will be + past participle."},
+        {"prompt": "The painting is thought ___ a fake.", "options": ["be", "to be", "being", "been"], "correct": 1, "explanation": "Passive + to infinitive."},
+        {"prompt": "The homework ___ finished today.", "options": ["has to be", "has be", "have to be", "has been to"], "correct": 0, "explanation": "Modal passive: has to be + past participle."}
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Rewrite 3 news headlines using the impersonal passive."
+      "prompts": [
+        "Rewrite 5 news headlines using the impersonal passive: 'It is said that...', 'It is believed that...'.",
+        "Describe a scientific process (making coffee, recycling paper, etc.) using at least 5 passive sentences.",
+        "Write 5 sentences about the rules of a place (school, museum, airport) using passive with modals."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "It ___ that the company will close next month.",
-      "options": [
-        "says",
-        "is said",
-        "said",
-        "is saying"
-      ],
-      "correct": 1,
-      "explanation": "Impersonal passive: It is said that ..."
+      "questions": [
+        {"prompt": "The letter ___ sent yesterday.", "options": ["was", "were", "is", "has"], "correct": 0, "explanation": "Past passive: was + past participle."},
+        {"prompt": "It ___ believed that the painting is a fake.", "options": ["are", "is", "has", "was been"], "correct": 1, "explanation": "Impersonal passive: It is believed that..."},
+        {"prompt": "He is said ___ very intelligent.", "options": ["be", "to be", "being", "been"], "correct": 1, "explanation": "Passive + to infinitive."},
+        {"prompt": "The form must ___ by Monday.", "options": ["complete", "completed", "be completed", "be completing"], "correct": 2, "explanation": "Modal passive: must be + past participle."},
+        {"prompt": "The results are ___ next week.", "options": ["expect", "expected", "expecting", "expects"], "correct": 1, "explanation": "Passive: are + past participle."},
+        {"prompt": "The thief ___ arrested last night.", "options": ["is", "was", "were", "has"], "correct": 1, "explanation": "Past passive: was + past participle."},
+        {"prompt": "She is thought ___ the money.", "options": ["steal", "to steal", "to have stolen", "stealing"], "correct": 2, "explanation": "Passive + perfect infinitive for past actions."},
+        {"prompt": "Photography is not ___ in this area.", "options": ["permit", "permitted", "permitting", "permits"], "correct": 1, "explanation": "Passive: is not + past participle."},
+        {"prompt": "The bridge ___ built in 1890.", "options": ["is", "was", "were", "has"], "correct": 1, "explanation": "Past passive: was + past participle."},
+        {"prompt": "It ___ announced that the president would resign.", "options": ["is", "was", "has", "were"], "correct": 1, "explanation": "Past impersonal passive."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Modal passive: modal + be + past participle.",
+            "Impersonal passive: It is said / believed / reported that...",
+            "Personal passive: He is said / believed to + infinitive.",
+            "Perfect infinitive for past actions: He is said to have left.",
+            "Used in news, science and formal writing."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not forget 'be' in modal passive.",
+            "Do not mix 'It is said that' with 'He is said to'.",
+            "Remember the perfect infinitive for past actions."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "It is said that...",
+            "He is believed to be...",
+            "She is reported to have...",
+            "The report must be submitted...",
+            "Smoking is prohibited...",
+            "The results are expected..."
+          ]
+        }
+      ]
     }
   ]
 }

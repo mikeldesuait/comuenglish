@@ -6,45 +6,223 @@
   "function": "Use natural and precise language",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn phrasal verbs and collocations, key for natural English at B2 level."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "What is a phrasal verb?",
+          "body": "A phrasal verb is a verb + preposition/adverb that has a meaning different from the original verb. Example: 'give up' does not mean 'give' + 'up', it means 'stop doing something'."
+        },
+        {
+          "heading": "Types of phrasal verbs",
+          "tableHeader": true,
+          "table": [
+            ["Type", "Structure", "Example"],
+            ["Intransitive", "verb + particle (no object)", "The car broke down."],
+            ["Transitive inseparable", "verb + particle + object", "I ran into an old friend."],
+            ["Transitive separable", "verb + object + particle OR verb + particle + object", "Turn off the light. / Turn the light off."]
+          ]
+        },
+        {
+          "heading": "Separable phrasal verbs",
+          "body": "With separable phrasal verbs, the object can go between the verb and the particle, or after the particle. But if the object is a pronoun, it MUST go between them.",
+          "tableHeader": true,
+          "table": [
+            ["Correct", "Incorrect"],
+            ["Turn off the TV.", "Turn off it. ✗"],
+            ["Turn the TV off.", "Turn off it. ✗"],
+            ["Turn it off.", "Turn off it. ✗"]
+          ]
+        },
+        {
+          "heading": "High-frequency phrasal verbs",
+          "tableHeader": true,
+          "table": [
+            ["Phrasal verb", "Meaning", "Example"],
+            ["give up", "stop trying", "He gave up smoking."],
+            ["find out", "discover", "I found out the truth."],
+            ["get along", "have a good relationship", "We get along very well."],
+            ["put off", "postpone", "They put off the meeting."],
+            ["look after", "take care of", "She looks after her sister."],
+            ["run out of", "have no more", "We ran out of milk."],
+            ["come up with", "think of", "He came up with a great idea."],
+            ["carry on", "continue", "Please carry on with your work."],
+            ["set up", "start (a business)", "They set up a small company."],
+            ["deal with", "handle", "I can't deal with this problem."]
+          ]
+        },
+        {
+          "heading": "Collocations",
+          "body": "A collocation is a combination of words that naturally go together. Learning collocations makes your English sound more natural.",
+          "tableHeader": true,
+          "table": [
+            ["Collocation", "Example"],
+            ["make a decision", "We need to make a decision."],
+            ["take a break", "Let's take a short break."],
+            ["do homework", "She did her homework."],
+            ["have a shower", "I have a shower every morning."],
+            ["pay attention", "Please pay attention to the instructions."],
+            ["keep a promise", "He always keeps his promises."],
+            ["break the rules", "You should not break the rules."],
+            ["make progress", "You are making good progress."]
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not separate inseparable phrasal verbs: 'I ran an old friend into' is wrong.",
+            "Pronouns must go in the middle of separable phrasal verbs: 'Turn it off', not 'Turn off it'.",
+            "Do not translate phrasal verbs literally from Spanish."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Phrasal verbs: relationships",
+          "list": [
+            { "term": "get along (with)", "definition": "I get along well with my colleagues." },
+            { "term": "fall out (with)", "definition": "They fell out over money." },
+            { "term": "make up (with)", "definition": "They made up after the argument." },
+            { "term": "look after", "definition": "She looks after her grandmother." },
+            { "term": "grow up", "definition": "I grew up in a small town." },
+            { "term": "ask out", "definition": "He asked her out on a date." }
+          ]
+        },
+        {
+          "heading": "Phrasal verbs: work and study",
+          "list": [
+            { "term": "give up", "definition": "Never give up on your dreams." },
+            { "term": "carry on", "definition": "Carry on with your work." },
+            { "term": "hand in", "definition": "Hand in your homework by Friday." },
+            { "term": "catch up", "definition": "I need to catch up on my reading." },
+            { "term": "put off", "definition": "They put off the meeting until Monday." },
+            { "term": "set up", "definition": "She set up her own business." }
+          ]
+        },
+        {
+          "heading": "Phrasal verbs: everyday life",
+          "list": [
+            { "term": "turn on / off", "definition": "Turn off the lights, please." },
+            { "term": "pick up", "definition": "I'll pick you up at 7." },
+            { "term": "drop off", "definition": "Can you drop me off at the station?" },
+            { "term": "run out of", "definition": "We ran out of petrol." },
+            { "term": "find out", "definition": "I found out the truth yesterday." },
+            { "term": "come up with", "definition": "She came up with a brilliant idea." }
+          ]
+        },
+        {
+          "heading": "Collocations: verb + noun",
+          "list": [
+            { "term": "make a decision", "definition": "We must make a decision today." },
+            { "term": "take a risk", "definition": "Sometimes you have to take a risk." },
+            { "term": "pay attention", "definition": "Pay attention to the details." },
+            { "term": "keep in touch", "definition": "Let's keep in touch." },
+            { "term": "break the news", "definition": "She broke the news gently." },
+            { "term": "have an argument", "definition": "They had an argument about money." },
+            { "term": "make an effort", "definition": "Make an effort to be on time." },
+            { "term": "take responsibility", "definition": "He took responsibility for the mistake." }
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Read these sentences. Please turn off the light. Please turn the light off. I ran into an old friend. Notice: some phrasal verbs are separable (turn off), some are not (run into)."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "I ran into an old friend at the supermarket yesterday.",
+        "We have run out of milk. Can you buy some?",
+        "Please turn off the light.",
+        "Please turn the light off.",
+        "Please turn it off.",
+        "She came up with a great idea.",
+        "They put off the meeting until Friday.",
+        "I get along well with my colleagues."
+      ],
+      "questions": [
+        "In sentences 1, 2, 6 and 8, which phrasal verbs are inseparable?",
+        "In sentences 3, 4 and 5, what is the difference between the three orders?",
+        "In sentence 5, why is 'it' in the middle?",
+        "In sentence 7, can we say 'They put the meeting off'? Why?",
+        "Are all phrasal verbs separable?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "I ___ my old teacher at the supermarket yesterday.",
-      "options": [
-        "ran into",
-        "ran out of",
-        "ran over",
-        "ran away"
-      ],
-      "correct": 0,
-      "explanation": "Run into means to meet by chance."
+      "questions": [
+        {"prompt": "I ___ an old teacher at the supermarket yesterday.", "options": ["ran into", "ran out of", "ran over", "ran away"], "correct": 0, "explanation": "Run into means to meet by chance."},
+        {"prompt": "We have ___ milk. Can you buy some?", "options": ["run into", "run out of", "run over", "run away"], "correct": 1, "explanation": "Run out of means to have no more of something."},
+        {"prompt": "Turn ___ the light, please. It's dark.", "options": ["off", "on", "up", "down"], "correct": 1, "explanation": "Turn on means to switch on."},
+        {"prompt": "She ___ a brilliant idea.", "options": ["came up with", "came up", "came in", "came out"], "correct": 0, "explanation": "Come up with = to think of an idea."},
+        {"prompt": "They ___ the meeting until Friday.", "options": ["put off", "put on", "put in", "put out"], "correct": 0, "explanation": "Put off = postpone."},
+        {"prompt": "I ___ well with my new colleagues.", "options": ["get along", "get up", "get on", "get off"], "correct": 0, "explanation": "Get along with = have a good relationship."},
+        {"prompt": "Don't ___ ! Keep trying.", "options": ["give in", "give up", "give out", "give away"], "correct": 1, "explanation": "Give up = stop trying."},
+        {"prompt": "Can you ___ me ___ at the station?", "options": ["pick / up", "pick / on", "take / up", "drop / up"], "correct": 0, "explanation": "Pick up = collect someone."},
+        {"prompt": "We need to ___ a decision today.", "options": ["do", "take", "make", "have"], "correct": 2, "explanation": "Collocation: make a decision."},
+        {"prompt": "Please ___ attention to the instructions.", "options": ["take", "make", "pay", "have"], "correct": 2, "explanation": "Collocation: pay attention."}
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Write 5 sentences using phrasal verbs you have learned recently."
+      "prompts": [
+        "Write 5 sentences using phrasal verbs from this unit (one per sentence).",
+        "Write a short story (6-8 sentences) using at least 4 phrasal verbs and 2 collocations.",
+        "Write 5 sentences with collocations: make a decision, take a risk, pay attention, keep in touch, break the rules."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "We have ___ milk. Can you buy some?",
-      "options": [
-        "run into",
-        "run out of",
-        "run over",
-        "run away"
-      ],
-      "correct": 1,
-      "explanation": "Run out of means to have no more of something."
+      "questions": [
+        {"prompt": "I ___ my keys this morning.", "options": ["found out", "looked for", "came across", "picked up"], "correct": 2, "explanation": "Come across = find by chance."},
+        {"prompt": "Please ___ the TV. I want to watch the news.", "options": ["turn off", "turn on", "turn up", "turn down"], "correct": 1, "explanation": "Turn on = switch on."},
+        {"prompt": "She ___ her grandmother every weekend.", "options": ["looks after", "looks for", "looks up", "looks at"], "correct": 0, "explanation": "Look after = take care of."},
+        {"prompt": "We ___ of petrol on the motorway.", "options": ["ran into", "ran out", "ran over", "ran away"], "correct": 1, "explanation": "Run out of = have no more."},
+        {"prompt": "They ___ the meeting because of the weather.", "options": ["put off", "put on", "put in", "put out"], "correct": 0, "explanation": "Put off = postpone."},
+        {"prompt": "He ___ a great suggestion.", "options": ["came up with", "came up", "came in", "came out"], "correct": 0, "explanation": "Come up with = think of."},
+        {"prompt": "We ___ well with our new neighbours.", "options": ["get along", "get up", "get on", "get off"], "correct": 0, "explanation": "Get along with."},
+        {"prompt": "Don't ___ . You can do it!", "options": ["give in", "give up", "give out", "give away"], "correct": 1, "explanation": "Give up = stop trying."},
+        {"prompt": "She ___ her homework yesterday.", "options": ["handed in", "handed out", "handed up", "handed over"], "correct": 0, "explanation": "Hand in = submit."},
+        {"prompt": "You should ___ more effort in class.", "options": ["do", "take", "make", "have"], "correct": 2, "explanation": "Collocation: make an effort."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Phrasal verbs = verb + particle, with a new meaning.",
+            "Three types: intransitive, transitive inseparable, transitive separable.",
+            "With separable phrasal verbs, pronouns must go in the middle: turn it off.",
+            "Inseparable: look after, run into, get along with, come up with, deal with.",
+            "Separable: turn on/off, pick up, put off, hand in.",
+            "Collocations: make a decision, take a risk, pay attention, keep in touch."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not separate inseparable phrasal verbs.",
+            "Pronouns go in the middle of separable phrasal verbs.",
+            "Do not translate phrasal verbs literally from Spanish."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "Give up, find out, get along, put off, look after, run out of, come up with, carry on, set up, deal with.",
+            "Make a decision, take a risk, pay attention, keep in touch, break the news, make an effort."
+          ]
+        }
+      ]
     }
   ]
 }

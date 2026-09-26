@@ -233,6 +233,357 @@
           "explanation": "The email says 'Kate bought a pair of shoes.'"
         }
       ]
+    },
+    {
+      "id": "a2-r7",
+      "type": "notice",
+      "title": "A notice at the library",
+      "instructions": "Read the notice and answer the questions. Choose A, B or C.",
+      "text": "CITY LIBRARY - OPENING HOURS. Monday to Friday: 9 am to 8 pm. Saturday: 10 am to 5 pm. Sunday: CLOSED. Please return books on time. You can keep a book for three weeks. If you return it late, you must pay 50 cents per day. Students can use the computers for free. Bring your student card. For more information, ask at the desk.",
+      "questions": [
+        {
+          "question": "What time does the library open on Saturday?",
+          "options": [
+            "9 am",
+            "10 am",
+            "8 pm"
+          ],
+          "correct": 1,
+          "explanation": "The notice says: Saturday: 10 am to 5 pm."
+        },
+        {
+          "question": "How long can you keep a book?",
+          "options": [
+            "One week",
+            "Two weeks",
+            "Three weeks"
+          ],
+          "correct": 2,
+          "explanation": "The notice says: You can keep a book for three weeks."
+        },
+        {
+          "question": "Who can use the computers for free?",
+          "options": [
+            "Everyone",
+            "Students",
+            "Only adults"
+          ],
+          "correct": 1,
+          "explanation": "The notice says: Students can use the computers for free."
+        }
+      ]
+    },
+    {
+      "id": "a2-r8",
+      "type": "email",
+      "title": "An email about a party",
+      "instructions": "Read the email and answer the questions. Choose A, B or C.",
+      "text": "Hi Tom, I am having a birthday party on Saturday. It starts at 7 pm at my house. We are going to have pizza and cake. Can you bring some music? My sister is going to bring drinks. Please tell me if you can come before Friday. I hope you can make it! See you, Laura",
+      "questions": [
+        {
+          "question": "When is the party?",
+          "options": [
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "correct": 1,
+          "explanation": "The email says: I am having a birthday party on Saturday."
+        },
+        {
+          "question": "What does Laura ask Tom to bring?",
+          "options": [
+            "Pizza and cake",
+            "Drinks",
+            "Some music"
+          ],
+          "correct": 2,
+          "explanation": "The email says: Can you bring some music?"
+        },
+        {
+          "question": "When should Tom reply?",
+          "options": [
+            "Before Friday",
+            "Before Saturday",
+            "On Sunday"
+          ],
+          "correct": 0,
+          "explanation": "The email says: Please tell me if you can come before Friday."
+        }
+      ]
+    },
+    {
+      "id": "a2-r9",
+      "type": "article",
+      "title": "My favourite sport",
+      "instructions": "Read the article and answer the questions. Choose A, B or C.",
+      "text": "My favourite sport is swimming. I go to the pool every Tuesday and Thursday. I started swimming when I was eight years old. My father taught me. Now I can swim very well. In summer, I swim in the sea. It is more difficult than the pool because of the waves, but it is also more fun. Next year, I want to enter a swimming competition.",
+      "questions": [
+        {
+          "question": "When does the writer go swimming?",
+          "options": [
+            "Every day",
+            "On Tuesdays and Thursdays",
+            "Only in summer"
+          ],
+          "correct": 1,
+          "explanation": "The text says: I go to the pool every Tuesday and Thursday."
+        },
+        {
+          "question": "Who taught the writer to swim?",
+          "options": [
+            "A teacher",
+            "His father",
+            "A friend"
+          ],
+          "correct": 1,
+          "explanation": "The text says: My father taught me."
+        },
+        {
+          "question": "Why is swimming in the sea more difficult?",
+          "options": [
+            "Because the water is cold",
+            "Because of the waves",
+            "Because it is far"
+          ],
+          "correct": 1,
+          "explanation": "The text says: It is more difficult than the pool because of the waves."
+        }
+      ]
+    },
+    {
+      "id": "a2-r10",
+      "type": "email",
+      "title": "An email about a new pet",
+      "instructions": "Read the email and answer the questions. Choose A, B or C.",
+      "text": "Hi Emma, Guess what? I have got a new puppy! His name is Max and he is three months old. He is brown and white. He loves playing with a ball. My mum was not very happy at first, but now she loves him too. Can you come and meet him next weekend? Write soon, Sophie",
+      "questions": [
+        {
+          "question": "How old is Max?",
+          "options": [
+            "Three weeks old",
+            "Three months old",
+            "Three years old"
+          ],
+          "correct": 1,
+          "explanation": "The email says: he is three months old."
+        },
+        {
+          "question": "What does Max love doing?",
+          "options": [
+            "Sleeping",
+            "Playing with a ball",
+            "Eating"
+          ],
+          "correct": 1,
+          "explanation": "The email says: He loves playing with a ball."
+        },
+        {
+          "question": "What does Sophie invite Emma to do?",
+          "options": [
+            "Come and meet Max",
+            "Go to the park",
+            "Buy a puppy"
+          ],
+          "correct": 0,
+          "explanation": "The email says: Can you come and meet him next weekend?"
+        }
+      ]
+    },
+    {
+      "id": "a2-r11",
+      "type": "notice",
+      "title": "A notice about a school trip",
+      "instructions": "Read the notice and answer the questions. Choose A, B or C.",
+      "text": "SCHOOL TRIP TO THE SCIENCE MUSEUM. Date: Friday 12th March. Meet at the school entrance at 8:30 am. The bus leaves at 8:45 am. We will return at 4 pm. Bring a packed lunch and some water. Wear comfortable shoes. The trip costs 10 pounds. Pay at the school office before Tuesday. Mr. Brown will be the teacher in charge.",
+      "questions": [
+        {
+          "question": "What time does the bus leave?",
+          "options": [
+            "8:30 am",
+            "8:45 am",
+            "4 pm"
+          ],
+          "correct": 1,
+          "explanation": "The notice says: The bus leaves at 8:45 am."
+        },
+        {
+          "question": "What should students bring?",
+          "options": [
+            "Money for lunch",
+            "A packed lunch",
+            "A school uniform"
+          ],
+          "correct": 1,
+          "explanation": "The notice says: Bring a packed lunch and some water."
+        },
+        {
+          "question": "When do students have to pay?",
+          "options": [
+            "On Friday 12th March",
+            "Before Tuesday",
+            "After the trip"
+          ],
+          "correct": 1,
+          "explanation": "The notice says: Pay at the school office before Tuesday."
+        }
+      ]
+    },
+    {
+      "id": "a2-r12",
+      "type": "article",
+      "title": "My weekend",
+      "instructions": "Read the article and answer the questions. Choose A, B or C.",
+      "text": "Last weekend was very busy for me. On Saturday morning, I cleaned my bedroom and helped my mother in the garden. In the afternoon, I met my friends at the park. We played football for two hours. In the evening, I watched a film with my family. On Sunday, I visited my grandparents. My grandmother cooked a delicious lunch. In the afternoon, I did my homework and then I went to bed early because I was very tired.",
+      "questions": [
+        {
+          "question": "What did the writer do on Saturday morning?",
+          "options": [
+            "Played football",
+            "Cleaned his bedroom",
+            "Visited grandparents"
+          ],
+          "correct": 1,
+          "explanation": "The text says: On Saturday morning, I cleaned my bedroom."
+        },
+        {
+          "question": "How long did they play football?",
+          "options": [
+            "One hour",
+            "Two hours",
+            "Three hours"
+          ],
+          "correct": 1,
+          "explanation": "The text says: We played football for two hours."
+        },
+        {
+          "question": "Why did the writer go to bed early on Sunday?",
+          "options": [
+            "Because he was tired",
+            "Because he had school",
+            "Because it was raining"
+          ],
+          "correct": 0,
+          "explanation": "The text says: I went to bed early because I was very tired."
+        }
+      ]
+    },
+    {
+      "id": "a2-r13",
+      "type": "email",
+      "title": "An email about a new job",
+      "instructions": "Read the email and answer the questions. Choose A, B or C.",
+      "text": "Hi Dad, I have some great news! I got a new job! I start next Monday at a restaurant in the city centre. I am going to be a waiter. The hours are good: from 11 am to 7 pm. The salary is not very high, but I like the place and the people are friendly. I am a little nervous, but also very excited. Love, Maria",
+      "questions": [
+        {
+          "question": "When does Maria start her new job?",
+          "options": [
+            "Next Monday",
+            "Next Friday",
+            "Tomorrow"
+          ],
+          "correct": 0,
+          "explanation": "The email says: I start next Monday."
+        },
+        {
+          "question": "What is Maria going to do?",
+          "options": [
+            "She is going to be a cook",
+            "She is going to be a waiter",
+            "She is going to be a manager"
+          ],
+          "correct": 1,
+          "explanation": "The email says: I am going to be a waiter."
+        },
+        {
+          "question": "How does Maria feel?",
+          "options": [
+            "Only nervous",
+            "Only excited",
+            "Nervous and excited"
+          ],
+          "correct": 2,
+          "explanation": "The email says: I am a little nervous, but also very excited."
+        }
+      ]
+    },
+    {
+      "id": "a2-r14",
+      "type": "article",
+      "title": "Learning English",
+      "instructions": "Read the article and answer the questions. Choose A, B or C.",
+      "text": "My name is Ahmed and I am learning English. I study English at school and also at home. My favourite way to learn is watching films in English with subtitles. I also listen to English songs and read simple books. My teacher says I am making good progress. Next year, I want to take the Cambridge A2 exam. I am studying hard because I want to pass.",
+      "questions": [
+        {
+          "question": "What is Ahmed favourite way to learn English?",
+          "options": [
+            "Reading grammar books",
+            "Watching films",
+            "Writing letters"
+          ],
+          "correct": 1,
+          "explanation": "The text says: My favourite way to learn is watching films in English."
+        },
+        {
+          "question": "What exam does Ahmed want to take?",
+          "options": [
+            "A2 Key",
+            "B1 Preliminary",
+            "B2 First"
+          ],
+          "correct": 0,
+          "explanation": "The text says: I want to take the Cambridge A2 exam."
+        },
+        {
+          "question": "Why is Ahmed studying hard?",
+          "options": [
+            "Because his teacher told him to",
+            "Because he wants to pass",
+            "Because he likes studying"
+          ],
+          "correct": 1,
+          "explanation": "The text says: I am studying hard because I want to pass."
+        }
+      ]
+    },
+    {
+      "id": "a2-r15",
+      "type": "notice",
+      "title": "A notice at the train station",
+      "instructions": "Read the notice and answer the questions. Choose A, B or C.",
+      "text": "TRAIN DELAYS. We are sorry to inform passengers that the 6:15 pm train to Manchester is delayed. The train will now leave at 6:45 pm. We apologise for the inconvenience. Passengers with tickets for the 6:15 train can take any later train today. Please check the screens for more information. Thank you for your patience.",
+      "questions": [
+        {
+          "question": "Which train is delayed?",
+          "options": [
+            "The 6:15 pm train to Manchester",
+            "The 6:45 pm train to London",
+            "The 6:15 am train"
+          ],
+          "correct": 0,
+          "explanation": "The notice says: the 6:15 pm train to Manchester is delayed."
+        },
+        {
+          "question": "What time will the train leave now?",
+          "options": [
+            "6:15 pm",
+            "6:30 pm",
+            "6:45 pm"
+          ],
+          "correct": 2,
+          "explanation": "The notice says: The train will now leave at 6:45 pm."
+        },
+        {
+          "question": "What can passengers with 6:15 tickets do?",
+          "options": [
+            "Get a refund",
+            "Take any later train today",
+            "Take the train tomorrow"
+          ],
+          "correct": 1,
+          "explanation": "The notice says: Passengers with tickets for the 6:15 train can take any later train today."
+        }
+      ]
     }
   ]
 }

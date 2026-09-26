@@ -1,0 +1,220 @@
+{
+  "id": "b1-u3",
+  "title": "Plans and predictions",
+  "grammar": "Will, Going to, Present Continuous for future",
+  "vocabulary": "Plans, goals, technology",
+  "function": "Talk about the future with different degrees of certainty",
+  "phases": [
+    {
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Three ways to talk about the future",
+          "body": "In English we use three main structures to talk about the future: 'will' for predictions and instant decisions, 'going to' for plans and intentions, and the Present Continuous for fixed arrangements."
+        },
+        {
+          "heading": "Will",
+          "body": "Will + base verb. Used for predictions, promises, offers and instant decisions.",
+          "tableHeader": true,
+          "table": [
+            ["Use", "Example"],
+            ["Prediction (opinion)", "I think it will rain tomorrow."],
+            ["Promise", "I will call you later."],
+            ["Offer", "I will help you with that."],
+            ["Instant decision", "I will have the soup, please."]
+          ]
+        },
+        {
+          "heading": "Going to",
+          "body": "Am / is / are + going to + base verb. Used for plans and intentions, and for predictions based on evidence.",
+          "tableHeader": true,
+          "table": [
+            ["Subject", "Form", "Example"],
+            ["I", "am going to", "I am going to study medicine."],
+            ["You / We / They", "are going to", "We are going to buy a house."],
+            ["He / She / It", "is going to", "She is going to travel."]
+          ]
+        },
+        {
+          "heading": "Present Continuous for future arrangements",
+          "body": "Used for fixed arrangements with a specific time and place.",
+          "list": [
+            "I am meeting John at 7.",
+            "We are having dinner with friends tomorrow.",
+            "She is flying to Paris on Friday."
+          ]
+        },
+        {
+          "heading": "Time expressions for the future",
+          "list": [
+            "tomorrow, the day after tomorrow",
+            "next week, next month, next year",
+            "this evening, tonight, this weekend",
+            "on Monday, in July, at 7 o'clock",
+            "soon, later, in a few days"
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'I will to go'. Say 'I will go'.",
+            "Do not forget 'to be' with going to: 'I going to' is wrong.",
+            "Do not confuse plans (going to) with predictions (will)."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Plans and intentions",
+          "list": [
+            { "term": "travel", "definition": "I am going to travel to Italy next summer." },
+            { "term": "visit", "definition": "We are going to visit the museum." },
+            { "term": "study", "definition": "She is going to study medicine." },
+            { "term": "buy", "definition": "They are going to buy a new car." },
+            { "term": "move", "definition": "I am going to move to a new house." },
+            { "term": "start", "definition": "He is going to start a new job." },
+            { "term": "learn", "definition": "We are going to learn French." },
+            { "term": "organise", "definition": "She is going to organise a party." }
+          ]
+        },
+        {
+          "heading": "Goals and ambitions",
+          "list": [
+            { "term": "get a degree", "definition": "I am going to get a degree in engineering." },
+            { "term": "find a job", "definition": "She is going to find a job abroad." },
+            { "term": "save money", "definition": "We are going to save money for a trip." },
+            { "term": "learn a language", "definition": "He is going to learn Japanese." },
+            { "term": "start a business", "definition": "They are going to start a small business." },
+            { "term": "run a marathon", "definition": "I am going to run a marathon next year." }
+          ]
+        },
+        {
+          "heading": "Technology",
+          "list": [
+            { "term": "smartphone", "definition": "I am going to buy a new smartphone." },
+            { "term": "laptop", "definition": "She needs a new laptop for work." },
+            { "term": "tablet", "definition": "He is going to get a tablet for his daughter." },
+            { "term": "app", "definition": "I am going to download a new app." },
+            { "term": "website", "definition": "They are going to design a website." },
+            { "term": "social media", "definition": "We are going to use social media more." }
+          ]
+        },
+        {
+          "heading": "Predictions",
+          "list": [
+            { "term": "I think...", "definition": "I think it will be sunny tomorrow." },
+            { "term": "I don't think...", "definition": "I don't think she will come." },
+            { "term": "Maybe...", "definition": "Maybe we will go to the beach." },
+            { "term": "I'm sure...", "definition": "I'm sure they will win." },
+            { "term": "probably", "definition": "He will probably be late." },
+            { "term": "definitely", "definition": "I will definitely help you." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discovery",
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "I am going to visit my aunt next week.",
+        "We are meeting John at 7.",
+        "She is going to study medicine.",
+        "They are not going to come to the party.",
+        "Are you going to travel this summer?",
+        "I am having lunch with my parents tomorrow.",
+        "I think it will rain tomorrow.",
+        "What are you doing this evening?"
+      ],
+      "questions": [
+        "In sentences 1 and 3, which structure do we use for plans and intentions?",
+        "In sentences 2 and 6, which tense do we use for fixed arrangements?",
+        "In sentence 4, how do we make a negative?",
+        "In sentence 5, how do we make a question?",
+        "In sentence 7, why do we use 'will' instead of 'going to'?"
+      ]
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "I ___ visit my grandmother next Sunday.", "options": ["am going to", "going to", "go to", "will to"], "correct": 0, "explanation": "For plans we use am/is/are + going to + verb."},
+        {"prompt": "She ___ study medicine next year.", "options": ["is going to", "are going to", "going to", "am going to"], "correct": 0, "explanation": "With 'she' we use 'is going to'."},
+        {"prompt": "We ___ buy a new house.", "options": ["is going to", "are going to", "am going to", "going to"], "correct": 1, "explanation": "With 'we' we use 'are going to'."},
+        {"prompt": "What ___ you ___ this evening?", "options": ["are / doing", "do / do", "is / doing", "are / do"], "correct": 0, "explanation": "For arrangements we use Present Continuous."},
+        {"prompt": "They ___ not going to come to the party.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'they' the negative is 'are not going to'."},
+        {"prompt": "I ___ meeting Sarah at 6.", "options": ["am", "is", "are", "be"], "correct": 0, "explanation": "With 'I' we use 'am' in Present Continuous."},
+        {"prompt": "I think it ___ rain tomorrow.", "options": ["is going to", "will", "does", "is"], "correct": 1, "explanation": "For predictions we can use 'will'."},
+        {"prompt": "She ___ having lunch with her parents tomorrow.", "options": ["am", "is", "are", "be"], "correct": 1, "explanation": "With 'she' we use 'is'."},
+        {"prompt": "___ you going to travel this summer?", "options": ["Do", "Are", "Is", "Am"], "correct": 1, "explanation": "Question: Are + you + going to...?"},
+        {"prompt": "We ___ going to learn French next year.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'we' we use 'are'."}
+      ]
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompts": [
+        "Write 5 sentences about your plans for next weekend. Use 'going to'.",
+        "Write 5 sentences about fixed arrangements you have this week. Use Present Continuous.",
+        "Write 3 predictions about the future using 'will'. Then write 3 plans using 'going to'."
+      ]
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "I ___ going to study tonight.", "options": ["am", "is", "are", "be"], "correct": 0, "explanation": "With 'I' we use 'am'."},
+        {"prompt": "They ___ going to move to a new city.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'they' we use 'are'."},
+        {"prompt": "She ___ playing tennis on Sunday.", "options": ["am", "is", "are", "be"], "correct": 1, "explanation": "With 'she' we use 'is' in Present Continuous."},
+        {"prompt": "We ___ going to visit Rome next spring.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'we' we use 'are'."},
+        {"prompt": "What ___ you doing tomorrow?", "options": ["do", "does", "are", "is"], "correct": 2, "explanation": "Present Continuous question: are + you + verb-ing."},
+        {"prompt": "He ___ going to start a new job.", "options": ["am", "is", "are", "be"], "correct": 1, "explanation": "With 'he' we use 'is'."},
+        {"prompt": "I think she ___ pass the exam.", "options": ["will", "is", "does", "going"], "correct": 0, "explanation": "For predictions we use 'will'."},
+        {"prompt": "They ___ having dinner at 8.", "options": ["am", "is", "are", "be"], "correct": 2, "explanation": "With 'they' we use 'are'."},
+        {"prompt": "___ she going to come to the party?", "options": ["Do", "Is", "Are", "Am"], "correct": 1, "explanation": "Question: Is + she + going to...?"},
+        {"prompt": "I ___ going to learn to play the piano.", "options": ["am", "is", "are", "be"], "correct": 0, "explanation": "With 'I' we use 'am'."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Will + base verb: predictions, promises, offers, instant decisions.",
+            "Going to + base verb: plans, intentions, predictions with evidence.",
+            "Present Continuous: fixed future arrangements.",
+            "Negative: will not (won't), am/is/are + not + going to.",
+            "Question: Will + subject + verb? / Am/Is/Are + subject + going to...?"
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Forgetting 'to be' with going to: 'I going to' is wrong.",
+            "Using 'going to' for instant decisions; use 'will'.",
+            "Confusing plans (going to) with arrangements (Present Continuous)."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "I am going to...",
+            "We are going to...",
+            "I am meeting...",
+            "She is having lunch...",
+            "What are you doing...?",
+            "I think it will...",
+            "I will help you."
+          ]
+        }
+      ]
+    }
+  ]
+}

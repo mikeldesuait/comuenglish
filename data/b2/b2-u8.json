@@ -1,50 +1,234 @@
 {
   "id": "b2-u8",
   "title": "Advanced connectors and cohesion",
-  "grammar": "Contrast, cause, consequence, purpose connectors",
+  "grammar": "Advanced connectors (despite, due to, so as to)",
   "vocabulary": "Formal discourse markers",
   "function": "Argue with logic and cohesion",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn advanced connectors to structure formal arguments and essays."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Connectors review",
+          "body": "At B1 you learned basic connectors (however, although, because, so). At B2 we expand the range with more formal and nuanced connectors for writing and speaking."
+        },
+        {
+          "heading": "Contrast connectors",
+          "tableHeader": true,
+          "table": [
+            ["Connector", "Structure", "Example"],
+            ["although / even though", "+ clause", "Although he was tired, he finished."],
+            ["despite / in spite of", "+ noun / -ing", "Despite the rain, we went out."],
+            ["whereas / while", "+ clause (comparison)", "I like coffee, whereas she prefers tea."],
+            ["on the contrary", "new sentence", "I don't hate it. On the contrary, I love it."],
+            ["nevertheless / nonetheless", "new sentence (formal)", "It was expensive. Nevertheless, I bought it."]
+          ]
+        },
+        {
+          "heading": "Cause and reason",
+          "tableHeader": true,
+          "table": [
+            ["Connector", "Structure", "Example"],
+            ["because / since / as", "+ clause", "Since it was late, we left."],
+            ["because of", "+ noun", "We left because of the noise."],
+            ["due to", "+ noun", "The delay was due to the weather."],
+            ["owing to", "+ noun (formal)", "Owing to the strike, buses are cancelled."],
+            ["on account of", "+ noun (formal)", "On account of the rain, we cancelled."]
+          ]
+        },
+        {
+          "heading": "Purpose connectors",
+          "tableHeader": true,
+          "table": [
+            ["Connector", "Structure", "Example"],
+            ["to + verb", "simple purpose", "I left early to catch the train."],
+            ["in order to + verb", "formal purpose", "She studies in order to improve."],
+            ["so as to + verb", "formal purpose", "He left early so as to avoid traffic."],
+            ["so that + clause", "purpose with subject", "I left early so that I wouldn't be late."],
+            ["for + noun", "purpose with noun", "I went to the shop for bread."]
+          ]
+        },
+        {
+          "heading": "Consequence connectors",
+          "tableHeader": true,
+          "table": [
+            ["Connector", "Register", "Example"],
+            ["so", "informal", "It rained, so we stayed home."],
+            ["therefore", "formal", "The road was closed; therefore, we detoured."],
+            ["as a result", "formal", "He studied hard. As a result, he passed."],
+            ["consequently", "very formal", "She missed the bus; consequently, she was late."],
+            ["thus", "very formal", "The project failed; thus, we need a new plan."]
+          ]
+        },
+        {
+          "heading": "Adding and clarifying",
+          "list": [
+            "Moreover / Furthermore: formal addition. The plan is expensive. Moreover, it is risky.",
+            "In addition: In addition, we offer free delivery.",
+            "Besides: Besides being cheap, it is also fast.",
+            "In other words: In other words, we need to start again.",
+            "That is to say: That is to say, the situation is critical."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not use 'although' with a noun: use 'despite' or 'in spite of'.",
+            "Do not confuse 'due to' (cause) with 'in order to' (purpose).",
+            "'However' is followed by a comma and a new sentence."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Contrast",
+          "list": [
+            { "term": "although", "definition": "Although it was late, we continued." },
+            { "term": "even though", "definition": "Even though he was tired, he finished." },
+            { "term": "despite", "definition": "Despite the rain, we went out." },
+            { "term": "in spite of", "definition": "In spite of the noise, I slept well." },
+            { "term": "whereas", "definition": "I like coffee, whereas she prefers tea." },
+            { "term": "nevertheless", "definition": "It was expensive. Nevertheless, I bought it." }
+          ]
+        },
+        {
+          "heading": "Cause and reason",
+          "list": [
+            { "term": "since", "definition": "Since it was raining, we stayed inside." },
+            { "term": "as", "definition": "As we had no money, we walked." },
+            { "term": "because of", "definition": "We stayed in because of the rain." },
+            { "term": "due to", "definition": "The delay was due to the weather." },
+            { "term": "owing to", "definition": "Owing to the strike, buses are cancelled." },
+            { "term": "on account of", "definition": "On account of the rain, we cancelled." }
+          ]
+        },
+        {
+          "heading": "Purpose",
+          "list": [
+            { "term": "in order to", "definition": "She studies in order to improve." },
+            { "term": "so as to", "definition": "He left early so as to avoid traffic." },
+            { "term": "so that", "definition": "I left early so that I wouldn't be late." },
+            { "term": "for", "definition": "I went to the shop for bread." }
+          ]
+        },
+        {
+          "heading": "Formal discourse markers",
+          "list": [
+            { "term": "therefore", "definition": "The road was closed; therefore, we detoured." },
+            { "term": "as a result", "definition": "He studied hard. As a result, he passed." },
+            { "term": "consequently", "definition": "She missed the bus; consequently, she was late." },
+            { "term": "thus", "definition": "The project failed; thus, we need a new plan." },
+            { "term": "moreover", "definition": "The plan is expensive. Moreover, it is risky." },
+            { "term": "furthermore", "definition": "Furthermore, the results were excellent." }
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Read these sentences. Despite the rain, we went out. She studied hard so as to pass. The project failed due to poor planning. Notice the register: despite, so as to, due to are more formal."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "Although he was tired, he finished the race.",
+        "Despite the rain, we went for a walk.",
+        "Since it was late, we decided to leave.",
+        "The delay was due to the weather.",
+        "She studies in order to improve her English.",
+        "He left early so as to avoid the traffic.",
+        "The road was closed; therefore, we took another route.",
+        "The plan is expensive. Moreover, it is risky."
+      ],
+      "questions": [
+        "In sentence 1, what follows 'although'?",
+        "In sentence 2, what follows 'despite'?",
+        "In sentences 3 and 4, what is the difference between 'since' and 'due to'?",
+        "In sentences 5 and 6, what do 'in order to' and 'so as to' express?",
+        "In sentence 7, what does 'therefore' express?",
+        "In sentence 8, what is the role of 'moreover'?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "___ the bad weather, the event was a success.",
-      "options": [
-        "Although",
-        "Despite",
-        "Because",
-        "So"
-      ],
-      "correct": 1,
-      "explanation": "Despite + noun phrase (not a clause)."
+      "questions": [
+        {"prompt": "___ the bad weather, the event was a success.", "options": ["Although", "Despite", "Because", "So"], "correct": 1, "explanation": "Despite + noun phrase (not a clause)."},
+        {"prompt": "The delay was ___ to technical problems.", "options": ["because", "due", "although", "despite"], "correct": 1, "explanation": "Due to is a formal way to express cause."},
+        {"prompt": "She studied hard ___ pass the exam.", "options": ["for", "so that", "in order to", "because"], "correct": 2, "explanation": "Purpose (formal): in order to + verb."},
+        {"prompt": "It was raining. ___ , we decided to stay home.", "options": ["However", "Therefore", "Although", "Despite"], "correct": 1, "explanation": "Therefore introduces a consequence."},
+        {"prompt": "___ he was tired, he continued working.", "options": ["Despite", "Although", "Because", "So"], "correct": 1, "explanation": "Although + clause."},
+        {"prompt": "I like tea, ___ she prefers coffee.", "options": ["whereas", "despite", "due to", "in order to"], "correct": 0, "explanation": "Whereas introduces a comparison or contrast."},
+        {"prompt": "He left early ___ avoid the traffic.", "options": ["so as to", "so that", "because of", "despite"], "correct": 0, "explanation": "So as to + verb."},
+        {"prompt": "The project failed. ___ , we need a new plan.", "options": ["Thus", "Although", "Despite", "Because"], "correct": 0, "explanation": "Thus introduces a formal consequence."},
+        {"prompt": "___ the strike, buses are cancelled.", "options": ["Owing to", "Although", "So that", "Therefore"], "correct": 0, "explanation": "Owing to + noun."},
+        {"prompt": "The hotel was expensive. ___ , the service was poor.", "options": ["Moreover", "However", "Therefore", "Thus"], "correct": 0, "explanation": "Moreover adds information."}
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Write a short argumentative paragraph using at least 4 formal connectors."
+      "prompts": [
+        "Write a short argumentative paragraph (6-8 sentences) using at least 4 formal connectors.",
+        "Rewrite 5 sentences using more formal connectors: 'because' → 'due to', 'but' → 'however', 'so' → 'therefore'.",
+        "Write a formal essay paragraph about the environment using 'despite', 'due to', 'in order to', 'moreover'."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "The delay was ___ to technical problems.",
-      "options": [
-        "because",
-        "due",
-        "although",
-        "despite"
-      ],
-      "correct": 1,
-      "explanation": "Due to is a formal way to express cause."
+      "questions": [
+        {"prompt": "___ the rain, we went to the beach.", "options": ["Although", "Despite", "Because", "So"], "correct": 1, "explanation": "Despite + noun."},
+        {"prompt": "The flight was cancelled ___ the storm.", "options": ["because", "due to", "although", "so"], "correct": 1, "explanation": "Due to + noun."},
+        {"prompt": "She left early ___ miss the train.", "options": ["so as not to", "so that", "because", "despite"], "correct": 0, "explanation": "So as not to + verb for negative purpose."},
+        {"prompt": "It was very cold. ___ , we went skiing.", "options": ["However", "Therefore", "Although", "Despite"], "correct": 0, "explanation": "However introduces contrast."},
+        {"prompt": "___ he studied hard, he didn't pass.", "options": ["Despite", "Although", "Because", "So"], "correct": 1, "explanation": "Although + clause."},
+        {"prompt": "I love chocolate, ___ my brother hates it.", "options": ["whereas", "despite", "due to", "so as to"], "correct": 0, "explanation": "Whereas introduces contrast between two facts."},
+        {"prompt": "He stayed home ___ his illness.", "options": ["due to", "so as to", "although", "therefore"], "correct": 0, "explanation": "Due to + noun."},
+        {"prompt": "The results were excellent. ___ , the team celebrated.", "options": ["As a result", "Although", "Despite", "Whereas"], "correct": 0, "explanation": "As a result introduces consequence."},
+        {"prompt": "___ the traffic, we arrived on time.", "options": ["Although", "Despite", "Because", "So"], "correct": 1, "explanation": "Despite + noun."},
+        {"prompt": "The plan is expensive. ___ , it is risky.", "options": ["Moreover", "However", "Thus", "Although"], "correct": 0, "explanation": "Moreover adds information."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Contrast: although + clause; despite / in spite of + noun.",
+            "Cause: because / since / as + clause; due to / owing to + noun.",
+            "Purpose: in order to / so as to + verb; so that + clause.",
+            "Consequence: so (informal); therefore / consequently / thus (formal).",
+            "Addition: moreover / furthermore / in addition.",
+            "'However' is followed by a comma and a new sentence."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not use 'although' with a noun; use 'despite'.",
+            "Do not confuse 'due to' (cause) with 'in order to' (purpose).",
+            "'However' does not join two clauses with a comma only."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "Despite the..., ...",
+            "Due to the..., ...",
+            "In order to..., I...",
+            "...; therefore, ...",
+            "...; consequently, ...",
+            "Moreover, ...",
+            "As a result, ..."
+          ]
+        }
+      ]
     }
   ]
 }

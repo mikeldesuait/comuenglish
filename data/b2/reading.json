@@ -64,6 +64,571 @@
           "explanation": "The article says the future of work will be defined by flexibility."
         }
       ]
+    },
+    {
+      "id": "b2-r2",
+      "type": "article",
+      "title": "The psychology of habits",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Habits are powerful forces in our lives. Research suggests that around 40 percent of our daily actions are not conscious decisions but habits. This means that much of our behaviour is automatic, triggered by cues in our environment. Understanding how habits work can help us change them. Every habit has three components: a cue, a routine and a reward. The cue triggers the behaviour, the routine is the behaviour itself, and the reward is the positive feeling we get. To change a habit, we need to keep the cue and the reward but replace the routine. For example, if you want to stop eating sweets when you are stressed, you could replace that behaviour with a short walk, which also reduces stress. Changing habits is not easy, but it is possible with patience and consistency.",
+      "questions": [
+        {
+          "question": "According to research, what percentage of our daily actions are habits?",
+          "options": [
+            "10 percent",
+            "25 percent",
+            "40 percent",
+            "75 percent"
+          ],
+          "correct": 2,
+          "explanation": "The article says around 40 percent of our daily actions are habits."
+        },
+        {
+          "question": "What are the three components of a habit?",
+          "options": [
+            "Thought, feeling, action",
+            "Cue, routine, reward",
+            "Past, present, future",
+            "Mind, body, soul"
+          ],
+          "correct": 1,
+          "explanation": "The article says every habit has a cue, a routine and a reward."
+        },
+        {
+          "question": "What should we keep when changing a habit?",
+          "options": [
+            "Only the cue",
+            "Only the reward",
+            "The cue and the reward",
+            "Nothing"
+          ],
+          "correct": 2,
+          "explanation": "The article says we need to keep the cue and the reward but replace the routine."
+        },
+        {
+          "question": "What does the article suggest about changing habits?",
+          "options": [
+            "It is impossible",
+            "It is easy",
+            "It is possible with patience",
+            "It only works for young people"
+          ],
+          "correct": 2,
+          "explanation": "The article says changing habits is possible with patience and consistency."
+        }
+      ]
+    },
+    {
+      "id": "b2-r3",
+      "type": "article",
+      "title": "The future of artificial intelligence",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Artificial intelligence is transforming almost every industry, from healthcare to transport. AI systems can now diagnose diseases, drive cars and even write articles. Supporters argue that AI will make our lives easier and more efficient, freeing us from repetitive tasks. However, critics warn that AI could destroy millions of jobs, especially in sectors like manufacturing and customer service. There is also concern about privacy, as AI systems collect enormous amounts of personal data. Some experts believe that governments need to create clear rules to ensure AI is used responsibly. Others argue that slowing down AI development would be a mistake, as it could give an advantage to countries with fewer ethical restrictions. The debate is likely to continue for many years.",
+      "questions": [
+        {
+          "question": "What can AI systems do according to the article?",
+          "options": [
+            "Only play games",
+            "Diagnose diseases and drive cars",
+            "Only translate languages",
+            "Only write music"
+          ],
+          "correct": 1,
+          "explanation": "The article says AI systems can diagnose diseases, drive cars and even write articles."
+        },
+        {
+          "question": "What do supporters of AI argue?",
+          "options": [
+            "AI is dangerous",
+            "AI will make our lives easier",
+            "AI should be banned",
+            "AI is useless"
+          ],
+          "correct": 1,
+          "explanation": "The article says supporters argue that AI will make our lives easier and more efficient."
+        },
+        {
+          "question": "What do critics warn about?",
+          "options": [
+            "AI is too slow",
+            "AI could destroy jobs",
+            "AI is too expensive",
+            "AI is not useful"
+          ],
+          "correct": 1,
+          "explanation": "The article says critics warn that AI could destroy millions of jobs."
+        },
+        {
+          "question": "What concern is mentioned about AI?",
+          "options": [
+            "It is too colourful",
+            "It collects personal data",
+            "It uses too much electricity",
+            "It is too small"
+          ],
+          "correct": 1,
+          "explanation": "The article mentions concern about privacy as AI systems collect personal data."
+        },
+        {
+          "question": "What do some experts suggest about AI?",
+          "options": [
+            "Ban it completely",
+            "Governments should create clear rules",
+            "Use it only for military purposes",
+            "Stop all research"
+          ],
+          "correct": 1,
+          "explanation": "The article says some experts believe governments need to create clear rules."
+        }
+      ]
+    },
+    {
+      "id": "b2-r4",
+      "type": "article",
+      "title": "The benefits of failure",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "In modern society, failure is often seen as something to be avoided at all costs. However, many psychologists argue that failure is actually a necessary part of learning and growth. When we fail, we are forced to reflect on what went wrong and adjust our approach. Some of the most successful people in history failed many times before achieving their goals. J.K. Rowling was rejected by twelve publishers before Harry Potter was accepted. Steve Jobs was fired from Apple, the company he founded. What these examples show is that failure is not the opposite of success - it is part of it. The key is to see failure as feedback rather than as a final verdict on your abilities. People who develop this mindset are more likely to take risks, learn from mistakes and ultimately succeed.",
+      "questions": [
+        {
+          "question": "How is failure often seen in modern society?",
+          "options": [
+            "As something positive",
+            "As something to be avoided",
+            "As a normal part of life",
+            "As something to celebrate"
+          ],
+          "correct": 1,
+          "explanation": "The article says failure is often seen as something to be avoided at all costs."
+        },
+        {
+          "question": "What do many psychologists argue about failure?",
+          "options": [
+            "It should be ignored",
+            "It is necessary for growth",
+            "It is always negative",
+            "It only happens to lazy people"
+          ],
+          "correct": 1,
+          "explanation": "The article says many psychologists argue that failure is a necessary part of learning and growth."
+        },
+        {
+          "question": "What example is given of a successful person who failed?",
+          "options": [
+            "Albert Einstein",
+            "J.K. Rowling",
+            "Elon Musk",
+            "Bill Gates"
+          ],
+          "correct": 1,
+          "explanation": "The article mentions J.K. Rowling was rejected by twelve publishers."
+        },
+        {
+          "question": "How should we see failure according to the article?",
+          "options": [
+            "As a final verdict",
+            "As feedback",
+            "As a punishment",
+            "As a sign to stop"
+          ],
+          "correct": 1,
+          "explanation": "The article says the key is to see failure as feedback."
+        },
+        {
+          "question": "What are people who develop this mindset more likely to do?",
+          "options": [
+            "Avoid all risks",
+            "Take risks and learn from mistakes",
+            "Blame others",
+            "Give up easily"
+          ],
+          "correct": 1,
+          "explanation": "The article says people with this mindset are more likely to take risks, learn from mistakes and succeed."
+        }
+      ]
+    },
+    {
+      "id": "b2-r5",
+      "type": "article",
+      "title": "The rise of electric cars",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Electric cars are becoming increasingly popular around the world. Governments in many countries are offering financial incentives to encourage people to switch from petrol and diesel vehicles. The main advantage of electric cars is that they produce no direct emissions, which helps to improve air quality in cities. They are also cheaper to run, since electricity costs less than petrol. However, there are still significant obstacles. The biggest one is the limited range of most electric vehicles, which makes long journeys difficult. Charging infrastructure is also inadequate in many areas, and charging times are much longer than refuelling a traditional car. Battery production raises environmental concerns too, since mining lithium and cobalt has a considerable impact. Despite these challenges, most experts agree that electric cars are the future of transport.",
+      "questions": [
+        {
+          "question": "Why are electric cars becoming more popular?",
+          "options": [
+            "They are cheaper to buy",
+            "Governments are offering incentives",
+            "They are faster",
+            "They are bigger"
+          ],
+          "correct": 1,
+          "explanation": "The article says governments are offering financial incentives."
+        },
+        {
+          "question": "What is the main advantage of electric cars?",
+          "options": [
+            "They produce no direct emissions",
+            "They are always faster",
+            "They need no maintenance",
+            "They are cheaper to buy"
+          ],
+          "correct": 0,
+          "explanation": "The article says the main advantage is that they produce no direct emissions."
+        },
+        {
+          "question": "What is the biggest obstacle for electric cars?",
+          "options": [
+            "They are too small",
+            "Limited range",
+            "They are too noisy",
+            "They use too much petrol"
+          ],
+          "correct": 1,
+          "explanation": "The article says the biggest obstacle is the limited range of most electric vehicles."
+        },
+        {
+          "question": "What environmental concern is mentioned about batteries?",
+          "options": [
+            "They are too heavy",
+            "Mining lithium and cobalt has an impact",
+            "They produce too much heat",
+            "They leak water"
+          ],
+          "correct": 1,
+          "explanation": "The article mentions mining lithium and cobalt has a considerable impact."
+        },
+        {
+          "question": "What do most experts agree on?",
+          "options": [
+            "Electric cars are dangerous",
+            "Electric cars are the future",
+            "Petrol cars are better",
+            "Electric cars are too expensive"
+          ],
+          "correct": 1,
+          "explanation": "The article says most experts agree electric cars are the future."
+        }
+      ]
+    },
+    {
+      "id": "b2-r6",
+      "type": "article",
+      "title": "The importance of sleep",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Sleep is essential for our physical and mental health, yet many people treat it as optional. Research shows that adults need between seven and nine hours of sleep per night, but a significant proportion of the population regularly gets less than this. The consequences of sleep deprivation are serious. In the short term, it affects concentration, mood and decision-making. In the long term, it increases the risk of obesity, diabetes and heart disease. Unfortunately, modern life is not designed for good sleep. Screens, artificial light and irregular schedules all interfere with our natural sleep cycle. Experts recommend establishing a consistent bedtime routine, avoiding caffeine in the afternoon and keeping the bedroom dark and cool. Some people also benefit from avoiding screens for an hour before bed. The message is clear: sleep is not a luxury, it is a necessity.",
+      "questions": [
+        {
+          "question": "How many hours of sleep do adults need?",
+          "options": [
+            "4 to 6",
+            "5 to 7",
+            "7 to 9",
+            "10 to 12"
+          ],
+          "correct": 2,
+          "explanation": "The article says adults need between seven and nine hours of sleep."
+        },
+        {
+          "question": "What are the short-term effects of sleep deprivation?",
+          "options": [
+            "Better memory",
+            "More energy",
+            "Problems with concentration and mood",
+            "Improved mood"
+          ],
+          "correct": 2,
+          "explanation": "The article says in the short term it affects concentration, mood and decision-making."
+        },
+        {
+          "question": "What increases the risk of long-term health problems?",
+          "options": [
+            "Too much sleep",
+            "Sleep deprivation",
+            "Sleeping in the afternoon",
+            "Waking up early"
+          ],
+          "correct": 1,
+          "explanation": "The article says sleep deprivation increases the risk of obesity, diabetes and heart disease."
+        },
+        {
+          "question": "What does modern life interfere with?",
+          "options": [
+            "Our diet",
+            "Our natural sleep cycle",
+            "Our work schedule",
+            "Our social life"
+          ],
+          "correct": 1,
+          "explanation": "The article says screens, artificial light and irregular schedules interfere with our natural sleep cycle."
+        },
+        {
+          "question": "What is the writer's conclusion about sleep?",
+          "options": [
+            "It is a luxury",
+            "It is optional",
+            "It is a necessity",
+            "It is overrated"
+          ],
+          "correct": 2,
+          "explanation": "The article says sleep is not a luxury, it is a necessity."
+        }
+      ]
+    },
+    {
+      "id": "b2-r7",
+      "type": "article",
+      "title": "Is social media making us lonely?",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Social media was supposed to bring people closer together. In theory, we can now communicate with friends and family anywhere in the world, share experiences and build communities. Yet many researchers are noticing a paradox: despite being more connected than ever, many people report feeling lonelier. One explanation is that online interactions are not a substitute for face-to-face contact. A brief exchange of messages does not provide the same emotional benefits as a real conversation. Another issue is comparison. Social media shows us a constant stream of other people's highlight reels, which can make our own lives feel inadequate. However, the relationship is complex. For some people, especially those who are isolated or have limited mobility, social media provides a lifeline. The impact depends largely on how we use these platforms - passively scrolling tends to have negative effects, while active engagement with real friends is generally positive.",
+      "questions": [
+        {
+          "question": "What was social media supposed to do?",
+          "options": [
+            "Make money",
+            "Bring people closer together",
+            "Replace television",
+            "Promote businesses"
+          ],
+          "correct": 1,
+          "explanation": "The article says social media was supposed to bring people closer together."
+        },
+        {
+          "question": "What paradox do researchers notice?",
+          "options": [
+            "More connection but more loneliness",
+            "Less connection but more happiness",
+            "More technology but less progress",
+            "Fewer friends but better relationships"
+          ],
+          "correct": 0,
+          "explanation": "The article says despite being more connected, many people report feeling lonelier."
+        },
+        {
+          "question": "Why is comparison a problem according to the article?",
+          "options": [
+            "It makes us smarter",
+            "It makes our lives feel inadequate",
+            "It helps us improve",
+            "It increases empathy"
+          ],
+          "correct": 1,
+          "explanation": "The article says comparison can make our own lives feel inadequate."
+        },
+        {
+          "question": "Who might benefit most from social media?",
+          "options": [
+            "Everyone equally",
+            "Isolated people with limited mobility",
+            "Only young people",
+            "Only businesses"
+          ],
+          "correct": 1,
+          "explanation": "The article says for some people who are isolated or have limited mobility, social media provides a lifeline."
+        },
+        {
+          "question": "What type of engagement tends to be positive?",
+          "options": [
+            "Passive scrolling",
+            "Active engagement with real friends",
+            "Following celebrities",
+            "Sharing memes"
+          ],
+          "correct": 1,
+          "explanation": "The article says active engagement with real friends is generally positive."
+        }
+      ]
+    },
+    {
+      "id": "b2-r8",
+      "type": "article",
+      "title": "The value of boredom",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "In our modern world, boredom has become something to avoid at all costs. The moment we feel a hint of it, we reach for our phones. Yet a growing body of research suggests that boredom may actually be valuable. When we are bored, our minds wander, and this mental wandering is essential for creativity. Some of our best ideas come not when we are actively trying to solve a problem, but when we are doing something mundane, like taking a shower or walking the dog. Neuroscientists have found that during these idle moments, the brain is far from inactive. It is busy connecting ideas, consolidating memories and processing emotions. By constantly filling every moment with stimulation, we may be depriving ourselves of this important mental processing time. Perhaps the solution is not to eliminate boredom, but to embrace it.",
+      "questions": [
+        {
+          "question": "How do we typically react to boredom?",
+          "options": [
+            "We embrace it",
+            "We reach for our phones",
+            "We go for a walk",
+            "We take a nap"
+          ],
+          "correct": 1,
+          "explanation": "The article says the moment we feel boredom, we reach for our phones."
+        },
+        {
+          "question": "What does research suggest about boredom?",
+          "options": [
+            "It is harmful",
+            "It may be valuable",
+            "It should be avoided",
+            "It only affects children"
+          ],
+          "correct": 1,
+          "explanation": "The article says research suggests boredom may actually be valuable."
+        },
+        {
+          "question": "When do our best ideas often come?",
+          "options": [
+            "When actively solving problems",
+            "During mundane activities like walking",
+            "During meetings",
+            "While studying"
+          ],
+          "correct": 1,
+          "explanation": "The article says our best ideas come when doing something mundane, like walking the dog."
+        },
+        {
+          "question": "What does the brain do during idle moments?",
+          "options": [
+            "It shuts down",
+            "It connects ideas and processes emotions",
+            "It only rests",
+            "It slows down completely"
+          ],
+          "correct": 1,
+          "explanation": "The article says during idle moments the brain is busy connecting ideas, consolidating memories and processing emotions."
+        },
+        {
+          "question": "What is the writer's conclusion?",
+          "options": [
+            "We should eliminate boredom",
+            "We should embrace boredom",
+            "Boredom is always negative",
+            "We should work more"
+          ],
+          "correct": 1,
+          "explanation": "The article suggests we should embrace boredom rather than eliminate it."
+        }
+      ]
+    },
+    {
+      "id": "b2-r9",
+      "type": "article",
+      "title": "The ethics of fast fashion",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "Fast fashion has transformed the clothing industry. Brands can now design, produce and sell new collections in a matter of weeks, offering consumers cheap and trendy clothes. But this convenience comes at a price. The environmental impact is severe: the fashion industry is one of the largest polluters in the world, responsible for around 10 percent of global carbon emissions. It also consumes enormous amounts of water and produces vast quantities of textile waste. The human cost is equally troubling. Many garments are produced in factories where workers earn low wages and face unsafe conditions. Some consumers are starting to reject fast fashion in favour of sustainable alternatives, such as buying second-hand clothes or choosing brands that pay fair wages. However, sustainable fashion is often more expensive, which makes it inaccessible for people on low incomes. Solving this problem will require systemic change, not just individual choices.",
+      "questions": [
+        {
+          "question": "What has fast fashion transformed?",
+          "options": [
+            "The food industry",
+            "The clothing industry",
+            "The technology industry",
+            "The travel industry"
+          ],
+          "correct": 1,
+          "explanation": "The article says fast fashion has transformed the clothing industry."
+        },
+        {
+          "question": "How much of global carbon emissions is the fashion industry responsible for?",
+          "options": [
+            "2 percent",
+            "5 percent",
+            "10 percent",
+            "25 percent"
+          ],
+          "correct": 2,
+          "explanation": "The article says the fashion industry is responsible for around 10 percent of global carbon emissions."
+        },
+        {
+          "question": "What human rights issue is mentioned?",
+          "options": [
+            "Child labour only",
+            "Low wages and unsafe conditions",
+            "No issue at all",
+            "Too many holidays"
+          ],
+          "correct": 1,
+          "explanation": "The article says workers earn low wages and face unsafe conditions."
+        },
+        {
+          "question": "What alternative do some consumers choose?",
+          "options": [
+            "Buying more clothes",
+            "Buying second-hand",
+            "Only buying new items",
+            "Making their own clothes"
+          ],
+          "correct": 1,
+          "explanation": "The article says some consumers buy second-hand clothes or choose brands that pay fair wages."
+        },
+        {
+          "question": "What does the article say is needed to solve this problem?",
+          "options": [
+            "Individual choices only",
+            "Systemic change",
+            "More factories",
+            "Less regulation"
+          ],
+          "correct": 1,
+          "explanation": "The article says solving this problem will require systemic change, not just individual choices."
+        }
+      ]
+    },
+    {
+      "id": "b2-r10",
+      "type": "article",
+      "title": "The science of happiness",
+      "instructions": "Read the article and choose the best answer A, B, C or D.",
+      "text": "What makes people happy? This question has fascinated philosophers for centuries, but in recent decades, psychologists have started to study it scientifically. Their findings are surprising. Contrary to popular belief, money has a limited effect on happiness once basic needs are met. Studies show that above a certain income level, additional money does not significantly increase life satisfaction. What matters more are relationships. People with strong social connections report being consistently happier than those who are isolated. Acts of kindness also have a measurable effect: helping others increases our own sense of well-being. Interestingly, the pursuit of happiness itself can be counterproductive. People who constantly ask themselves whether they are happy tend to feel less satisfied than those who simply engage in meaningful activities. In other words, happiness is often a by-product of a life well-lived, not a goal to be pursued directly.",
+      "questions": [
+        {
+          "question": "What have psychologists started doing recently?",
+          "options": [
+            "Ignoring happiness",
+            "Studying happiness scientifically",
+            "Only studying sadness",
+            "Writing philosophy books"
+          ],
+          "correct": 1,
+          "explanation": "The article says psychologists have started to study happiness scientifically."
+        },
+        {
+          "question": "What is the effect of money on happiness?",
+          "options": [
+            "It always increases happiness",
+            "It has limited effect once basic needs are met",
+            "It has no effect at all",
+            "It decreases happiness"
+          ],
+          "correct": 1,
+          "explanation": "The article says money has a limited effect once basic needs are met."
+        },
+        {
+          "question": "What matters more than money according to the article?",
+          "options": [
+            "Fame",
+            "Relationships",
+            "Possessions",
+            "Travel"
+          ],
+          "correct": 1,
+          "explanation": "The article says what matters more are relationships."
+        },
+        {
+          "question": "What effect do acts of kindness have?",
+          "options": [
+            "No effect",
+            "Negative effect",
+            "Increase our sense of well-being",
+            "Only help others"
+          ],
+          "correct": 2,
+          "explanation": "The article says helping others increases our own sense of well-being."
+        },
+        {
+          "question": "What is the paradoxical finding about the pursuit of happiness?",
+          "options": [
+            "It always leads to happiness",
+            "It can be counterproductive",
+            "It has no effect",
+            "It only works for some people"
+          ],
+          "correct": 1,
+          "explanation": "The article says the pursuit of happiness itself can be counterproductive."
+        }
+      ]
     }
   ]
 }

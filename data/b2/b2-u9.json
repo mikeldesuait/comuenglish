@@ -6,45 +6,229 @@
   "function": "Expand vocabulary from known roots",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn how to form new words using prefixes, suffixes and compounding. This is essential for the Use of English paper."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "What is word formation?",
+          "body": "Word formation is the process of creating new words from existing ones using prefixes, suffixes or compounds. It is essential for the B2 Use of English paper."
+        },
+        {
+          "heading": "Prefixes (change meaning)",
+          "tableHeader": true,
+          "table": [
+            ["Prefix", "Meaning", "Examples"],
+            ["un-", "not / opposite", "happy → unhappy, fair → unfair"],
+            ["dis-", "not / opposite", "agree → disagree, honest → dishonest"],
+            ["in- / im- / il- / ir-", "not", "correct → incorrect, possible → impossible, legal → illegal, regular → irregular"],
+            ["re-", "again", "do → redo, write → rewrite"],
+            ["pre-", "before", "view → preview, historic → prehistoric"],
+            ["mis-", "wrongly", "understand → misunderstand, spell → misspell"],
+            ["over-", "too much", "work → overwork, eat → overeat"],
+            ["under-", "not enough", "estimate → underestimate, paid → underpaid"]
+          ]
+        },
+        {
+          "heading": "Suffixes (change word class)",
+          "tableHeader": true,
+          "table": [
+            ["Suffix", "Forms", "Examples"],
+            ["-tion / -sion", "noun from verb", "decide → decision, act → action"],
+            ["-ment", "noun from verb", "develop → development, agree → agreement"],
+            ["-ness", "noun from adjective", "happy → happiness, dark → darkness"],
+            ["-ity", "noun from adjective", "real → reality, possible → possibility"],
+            ["-er / -or", "person who does", "teach → teacher, act → actor"],
+            ["-ist", "person (profession)", "art → artist, science → scientist"],
+            ["-ful", "adjective (full of)", "care → careful, beauty → beautiful"],
+            ["-less", "adjective (without)", "care → careless, hope → hopeless"],
+            ["-able / -ible", "adjective (can be)", "read → readable, access → accessible"],
+            ["-ive", "adjective", "create → creative, attract → attractive"],
+            ["-ly", "adverb", "quick → quickly, happy → happily"]
+          ]
+        },
+        {
+          "heading": "Same root, different forms",
+          "tableHeader": true,
+          "table": [
+            ["Verb", "Noun", "Adjective", "Adverb"],
+            ["decide", "decision", "decisive", "decisively"],
+            ["create", "creation", "creative", "creatively"],
+            ["succeed", "success", "successful", "successfully"],
+            ["differ", "difference", "different", "differently"],
+            ["beauty", "-", "beautiful", "beautifully"]
+          ]
+        },
+        {
+          "heading": "Compound words",
+          "list": [
+            "Noun + noun: toothbrush, football, bedroom",
+            "Adjective + noun: blackboard, greenhouse, smartphone",
+            "Verb + noun: washing machine, swimming pool",
+            "Noun + verb: sunrise, heartbeat",
+            "Preposition + noun: underground, overtime"
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not confuse adjectives with adverbs: 'She sings beautiful' is wrong. Say 'beautifully'.",
+            "Check the correct prefix: 'unpossible' is wrong. Say 'impossible'.",
+            "Some words have both -ful and -less forms with different meanings: careful / careless."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Word families: nouns",
+          "list": [
+            { "term": "decision", "definition": "It was a difficult decision." },
+            { "term": "development", "definition": "The development of the city took years." },
+            { "term": "happiness", "definition": "Money doesn't buy happiness." },
+            { "term": "possibility", "definition": "There is a possibility of rain." },
+            { "term": "teacher", "definition": "She is a teacher at the local school." },
+            { "term": "scientist", "definition": "The scientist made a discovery." },
+            { "term": "agreement", "definition": "They reached an agreement." },
+            { "term": "argument", "definition": "They had an argument about money." }
+          ]
+        },
+        {
+          "heading": "Word families: adjectives",
+          "list": [
+            { "term": "careful", "definition": "Be careful with the glass." },
+            { "term": "careless", "definition": "It was a careless mistake." },
+            { "term": "hopeful", "definition": "We are hopeful about the future." },
+            { "term": "hopeless", "definition": "The situation is hopeless." },
+            { "term": "creative", "definition": "She is a creative person." },
+            { "term": "attractive", "definition": "It is an attractive offer." },
+            { "term": "readable", "definition": "The book is very readable." },
+            { "term": "accessible", "definition": "The building is accessible to everyone." }
+          ]
+        },
+        {
+          "heading": "Word families: adverbs",
+          "list": [
+            { "term": "quickly", "definition": "She ran quickly to catch the bus." },
+            { "term": "happily", "definition": "They lived happily together." },
+            { "term": "successfully", "definition": "She completed the project successfully." },
+            { "term": "carefully", "definition": "Drive carefully on the ice." },
+            { "term": "creatively", "definition": "He solved the problem creatively." },
+            { "term": "differently", "definition": "Everyone thinks differently." }
+          ]
+        },
+        {
+          "heading": "Negatives with prefixes",
+          "list": [
+            { "term": "unhappy", "definition": "She was unhappy with the result." },
+            { "term": "disagree", "definition": "I disagree with your opinion." },
+            { "term": "impossible", "definition": "It is impossible to finish today." },
+            { "term": "illegal", "definition": "It is illegal to park here." },
+            { "term": "irregular", "definition": "This is an irregular verb." },
+            { "term": "misunderstand", "definition": "I misunderstood your question." },
+            { "term": "overwork", "definition": "He is overworked and stressed." },
+            { "term": "underestimate", "definition": "Don't underestimate the difficulty." }
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Read these examples. Happy - unhappy - happiness. Care - careful - careless - carelessly. Notice how the same root produces different words."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "Her happiness was obvious to everyone.",
+        "The decision was difficult to make.",
+        "He is a very creative person.",
+        "She completed the task successfully.",
+        "It is impossible to finish today.",
+        "This is an irregular verb.",
+        "He is a careless driver.",
+        "The development of the app took months."
+      ],
+      "questions": [
+        "In sentences 1, 2 and 8, what suffixes form nouns?",
+        "In sentences 3 and 7, what suffixes form adjectives?",
+        "In sentence 4, what suffix forms the adverb?",
+        "In sentences 5 and 6, what do the prefixes 'im-' and 'ir-' mean?",
+        "In sentence 7, what is the difference between 'careful' and 'careless'?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "His ___ (care) caused the accident.",
-      "options": [
-        "care",
-        "careful",
-        "careless",
-        "carelessly"
-      ],
-      "correct": 2,
-      "explanation": "We need an adjective describing a person: careless."
+      "questions": [
+        {"prompt": "His ___ (care) caused the accident.", "options": ["care", "careful", "careless", "carelessly"], "correct": 2, "explanation": "We need an adjective describing a person: careless."},
+        {"prompt": "The ___ (decide) was very difficult to make.", "options": ["decide", "deciding", "decision", "decisive"], "correct": 2, "explanation": "The noun form of decide is decision."},
+        {"prompt": "She is a very ___ (create) artist.", "options": ["create", "creation", "creative", "creatively"], "correct": 2, "explanation": "Adjective form of create is creative."},
+        {"prompt": "He solved the problem ___ (success).", "options": ["succeed", "success", "successful", "successfully"], "correct": 3, "explanation": "Adverb form: successfully."},
+        {"prompt": "It is ___ (possible) to finish this today.", "options": ["possible", "impossible", "unpossible", "dispossible"], "correct": 1, "explanation": "Correct prefix for possible is im-."},
+        {"prompt": "This is an ___ (regular) verb.", "options": ["unregular", "inregular", "irregular", "disregular"], "correct": 2, "explanation": "Correct prefix for regular is ir-."},
+        {"prompt": "She was very ___ (happy) about the news.", "options": ["happy", "happiness", "unhappy", "happily"], "correct": 2, "explanation": "Context suggests negative: unhappy."},
+        {"prompt": "Her ___ (beautiful) is famous.", "options": ["beautiful", "beauty", "beautifully", "beautify"], "correct": 1, "explanation": "The noun form of beautiful is beauty."},
+        {"prompt": "He is a ___ (science) at the university.", "options": ["science", "scientific", "scientist", "scientifically"], "correct": 2, "explanation": "Person noun: scientist."},
+        {"prompt": "Please read the ___ (instruct) carefully.", "options": ["instruct", "instructor", "instructions", "instructive"], "correct": 2, "explanation": "The noun form is instructions."}
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Take 5 words and write their noun, verb, adjective and adverb forms."
+      "prompts": [
+        "Take 5 words and write their noun, verb, adjective and adverb forms (e.g. beauty, beautify, beautiful, beautifully).",
+        "Write 5 sentences using negative prefixes (un-, dis-, im-, ir-, il-, mis-).",
+        "Write 5 sentences using at least 5 different suffixes (-tion, -ment, -ness, -ity, -ful, -less, -able, -ly)."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "The ___ (decide) was very difficult to make.",
-      "options": [
-        "decide",
-        "deciding",
-        "decision",
-        "decisive"
-      ],
-      "correct": 2,
-      "explanation": "The noun form of decide is decision."
+      "questions": [
+        {"prompt": "His ___ (care) caused the accident.", "options": ["care", "careful", "careless", "carefully"], "correct": 2, "explanation": "Careless = lacking care."},
+        {"prompt": "The ___ (decide) was difficult.", "options": ["decide", "decision", "decisive", "decisively"], "correct": 1, "explanation": "Noun form: decision."},
+        {"prompt": "She is a very ___ (create) person.", "options": ["create", "creative", "creativity", "creatively"], "correct": 1, "explanation": "Adjective: creative."},
+        {"prompt": "He worked ___ (success) on the project.", "options": ["success", "successful", "successfully", "succeed"], "correct": 2, "explanation": "Adverb: successfully."},
+        {"prompt": "It is ___ (possible) to park here.", "options": ["possible", "impossible", "unpossible", "dispossible"], "correct": 1, "explanation": "Correct prefix: im-."},
+        {"prompt": "This is an ___ (regular) verb.", "options": ["unregular", "irregular", "inregular", "disregular"], "correct": 1, "explanation": "Prefix ir- before r."},
+        {"prompt": "Her ___ (happy) was clear.", "options": ["happy", "happiness", "unhappy", "happily"], "correct": 1, "explanation": "Noun form: happiness."},
+        {"prompt": "The ___ (develop) of the city was rapid.", "options": ["develop", "development", "developer", "developing"], "correct": 1, "explanation": "Noun: development."},
+        {"prompt": "He is a famous ___ (art).", "options": ["art", "artist", "artistic", "artistically"], "correct": 1, "explanation": "Person noun: artist."},
+        {"prompt": "Be ___ (care) with the glass.", "options": ["care", "careful", "careless", "carefully"], "correct": 1, "explanation": "Adjective: careful."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Prefixes change meaning: un-, dis-, in-/im-/il-/ir-, re-, pre-, mis-, over-, under-.",
+            "Suffixes change word class: -tion, -ment, -ness, -ity, -er, -or, -ist, -ful, -less, -able, -ive, -ly.",
+            "Same root can produce 4 forms: verb, noun, adjective, adverb.",
+            "Compound words: toothbrush, football, swimming pool, sunrise."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not confuse adjectives and adverbs.",
+            "Choose the correct prefix: im- before p/b/m; ir- before r; il- before l.",
+            "Careful vs careless have opposite meanings."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "happy → unhappy → happiness → happily",
+            "care → careful → careless → carefully",
+            "decide → decision → decisive → decisively",
+            "possible → impossible",
+            "regular → irregular"
+          ]
+        }
+      ]
     }
   ]
 }

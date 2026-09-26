@@ -1,0 +1,199 @@
+{
+  "id": "b1-u5",
+  "title": "Possibility and deduction",
+  "grammar": "Might, May, Could, Must (deduction), Cannot (deduction)",
+  "vocabulary": "Weather, uncertain situations",
+  "function": "Express different degrees of possibility",
+  "phases": [
+    {
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Modal verbs for possibility",
+          "body": "Modal verbs express how certain we are about something. They do not change form and are followed by the base verb."
+        },
+        {
+          "heading": "Degrees of certainty",
+          "tableHeader": true,
+          "table": [
+            ["Modal", "Certainty", "Example"],
+            ["must", "very sure (positive)", "She must be tired. She worked all day."],
+            ["might / may / could", "possible", "He might be at home."],
+            ["can't", "impossible", "That can't be true."]
+          ]
+        },
+        {
+          "heading": "Might / May / Could",
+          "body": "These express different degrees of possibility. They mean 'perhaps'.",
+          "list": [
+            "It might rain later. (possible)",
+            "She may be at home. (possible)",
+            "He could be the new manager. (possible)",
+            "They might not come to the party. (possible negative)"
+          ]
+        },
+        {
+          "heading": "Must for deduction",
+          "body": "Use 'must' when you are almost sure something is true because of the evidence.",
+          "list": [
+            "She has not eaten all day. She must be hungry.",
+            "The lights are on. They must be at home.",
+            "He works 12 hours a day. He must be tired."
+          ]
+        },
+        {
+          "heading": "Can't for impossibility",
+          "body": "Use 'can't' when you are sure something is NOT true.",
+          "list": [
+            "He can't be at home. I saw him leave.",
+            "That can't be true. It's impossible.",
+            "She can't be 50. She looks 30."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not use 'to' after modals: 'She must to be tired' is wrong.",
+            "Do not confuse 'must' (deduction) with 'must' (obligation). Context decides.",
+            "Do not use 'can' for deduction; use 'can't' for impossibility."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Weather and possibility",
+          "list": [
+            { "term": "it might rain", "definition": "It might rain tomorrow." },
+            { "term": "it may snow", "definition": "It may snow in the mountains." },
+            { "term": "it could be sunny", "definition": "It could be sunny later." },
+            { "term": "it must be cold", "definition": "Look at the snow. It must be cold." },
+            { "term": "it can't be hot", "definition": "It can't be hot in December." }
+          ]
+        },
+        {
+          "heading": "Uncertain situations",
+          "list": [
+            { "term": "maybe", "definition": "Maybe she is at work." },
+            { "term": "perhaps", "definition": "Perhaps he forgot." },
+            { "term": "possibly", "definition": "She is possibly at home." },
+            { "term": "probably", "definition": "He is probably still working." },
+            { "term": "I'm not sure", "definition": "I'm not sure. He might be late." },
+            { "term": "I think", "definition": "I think she must be tired." }
+          ]
+        },
+        {
+          "heading": "Deduction phrases",
+          "list": [
+            { "term": "Look at...", "definition": "Look at the sky. It might rain." },
+            { "term": "It's possible that...", "definition": "It's possible that she forgot." },
+            { "term": "There's a chance...", "definition": "There's a chance he will come." },
+            { "term": "I'm sure...", "definition": "I'm sure she must be at home." },
+            { "term": "I'm certain...", "definition": "I'm certain he can't be serious." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discovery",
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "She has not eaten all day. She must be hungry.",
+        "He might be at home. I'm not sure.",
+        "That can't be true. It's impossible.",
+        "It may rain later this afternoon.",
+        "He could be the new manager.",
+        "The lights are on. They must be at home.",
+        "He can't be at home. I saw him leave.",
+        "They might not come to the party."
+      ],
+      "questions": [
+        "In sentence 1, why do we use 'must'?",
+        "In sentences 2, 4 and 5, what do 'might', 'may' and 'could' express?",
+        "In sentences 3 and 7, why do we use 'can't'?",
+        "In sentence 6, what is the evidence for the deduction?",
+        "In sentence 8, how do we make a negative possibility?"
+      ]
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "She has not eaten all day. She ___ be hungry.", "options": ["might", "must", "cannot", "should"], "correct": 1, "explanation": "When we are sure about something, we use must."},
+        {"prompt": "He ___ be at home. I saw him leave five minutes ago.", "options": ["must", "might", "cannot", "should"], "correct": 2, "explanation": "When something is impossible, we use cannot."},
+        {"prompt": "It ___ rain later. The sky is cloudy.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."},
+        {"prompt": "The lights are on. They ___ be at home.", "options": ["might", "must", "cannot", "should"], "correct": 1, "explanation": "Strong deduction with evidence: must."},
+        {"prompt": "That story ___ be true. It's impossible.", "options": ["might", "must", "cannot", "may"], "correct": 2, "explanation": "Impossibility: cannot."},
+        {"prompt": "She ___ be the new manager. I'm not sure.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."},
+        {"prompt": "He works 12 hours a day. He ___ be tired.", "options": ["might", "must", "cannot", "shouldn't"], "correct": 1, "explanation": "Deduction with evidence: must."},
+        {"prompt": "They ___ not come to the party. They are busy.", "options": ["might", "must", "can", "should"], "correct": 0, "explanation": "Negative possibility: might not."},
+        {"prompt": "She ___ be 50. She looks 30.", "options": ["might", "must", "cannot", "may"], "correct": 2, "explanation": "Impossibility: cannot."},
+        {"prompt": "It's very cold. It ___ snow tonight.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."}
+      ]
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompts": [
+        "Your friend is not answering the phone. Write 5 possible reasons using might, may, could.",
+        "Look at a photo of a stranger and write 5 deductions using must, might, can't.",
+        "Write 5 sentences about tomorrow's weather using different modal verbs (might, may, could, must, can't)."
+      ]
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "She has a big smile. She ___ be very happy.", "options": ["might", "must", "cannot", "should"], "correct": 1, "explanation": "Deduction: must."},
+        {"prompt": "He ___ be at the office. He is on holiday.", "options": ["might", "must", "cannot", "may"], "correct": 2, "explanation": "Impossibility: cannot."},
+        {"prompt": "It ___ rain. Take an umbrella.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."},
+        {"prompt": "The car is very old. It ___ break down soon.", "options": ["might", "must", "cannot", "shouldn't"], "correct": 0, "explanation": "Possibility: might."},
+        {"prompt": "He speaks 5 languages. He ___ be very intelligent.", "options": ["might", "must", "cannot", "should"], "correct": 1, "explanation": "Deduction: must."},
+        {"prompt": "That ___ be Sarah. She is in Paris.", "options": ["might", "must", "cannot", "may"], "correct": 2, "explanation": "Impossibility: cannot."},
+        {"prompt": "She ___ come to the party. She is not sure.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."},
+        {"prompt": "You have been running. You ___ be tired.", "options": ["might", "must", "cannot", "should"], "correct": 1, "explanation": "Deduction: must."},
+        {"prompt": "They ___ be at the beach. It's raining.", "options": ["might", "must", "cannot", "may"], "correct": 2, "explanation": "Impossibility: cannot."},
+        {"prompt": "I ___ go to the cinema tonight. I haven't decided.", "options": ["might", "must", "cannot", "should"], "correct": 0, "explanation": "Possibility: might."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Must: strong deduction based on evidence.",
+            "Might / May / Could: possibility.",
+            "Can't: impossibility.",
+            "Modals do not change form and are followed by the base verb."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not use 'to' after modals.",
+            "Do not use 'can' for deduction; use 'can't' for impossibility.",
+            "Do not confuse 'must' (deduction) with 'must' (obligation)."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "She must be...",
+            "He might be...",
+            "It could be...",
+            "They can't be...",
+            "I'm not sure, but...",
+            "Perhaps... / Maybe..."
+          ]
+        }
+      ]
+    }
+  ]
+}

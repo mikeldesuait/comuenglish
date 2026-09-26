@@ -1,0 +1,226 @@
+{
+  "id": "a2-u14",
+  "title": "Travel and directions",
+  "grammar": "Travel vocabulary, giving directions",
+  "vocabulary": "Transport, airport, hotel, directions",
+  "function": "Travel and ask for directions",
+  "phases": [
+    {
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Asking for directions",
+          "body": "When you are lost, you can ask: Excuse me, where is the...? / How do I get to...? / Is it far?",
+          "list": [
+            "Excuse me, where is the train station?",
+            "How do I get to the airport?",
+            "Is it far from here?",
+            "Can you show me on the map?"
+          ]
+        },
+        {
+          "heading": "Giving directions",
+          "body": "Use imperatives to give directions.",
+          "tableHeader": true,
+          "table": [
+            ["Direction", "Meaning"],
+            ["Turn left", "Go to the left side"],
+            ["Turn right", "Go to the right side"],
+            ["Go straight on", "Continue without turning"],
+            ["Go past the church", "Pass the church and continue"],
+            ["Take the first turning", "Turn at the first street"],
+            ["Cross the road", "Go to the other side"],
+            ["It's on your left / right", "It is on that side"],
+            ["It's opposite the bank", "It is in front of the bank"],
+            ["It's next to the café", "It is beside the café"],
+            ["It's between the shop and the park", "It is in the middle"]
+          ]
+        },
+        {
+          "heading": "At the airport",
+          "body": "Useful expressions for travel.",
+          "list": [
+            "Where is the check-in desk?",
+            "What time does the flight leave?",
+            "Which gate is it?",
+            "Is the flight delayed?",
+            "Where can I collect my luggage?"
+          ]
+        },
+        {
+          "heading": "At the hotel",
+          "list": [
+            "I have a reservation.",
+            "Can I have a room for two nights?",
+            "What time is breakfast?",
+            "Is there Wi-Fi?",
+            "Could I have the key, please?"
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not translate from Spanish. Say 'Turn left' not 'Turn to the left side'.",
+            "Do not say 'go to straight'. Say 'go straight on'.",
+            "Do not forget 'the' before places: 'the station', 'the airport'."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Transport",
+          "list": [
+            { "term": "car", "definition": "We travelled by car." },
+            { "term": "bus", "definition": "I go to school by bus." },
+            { "term": "train", "definition": "The train leaves at 8." },
+            { "term": "plane", "definition": "We flew by plane to Paris." },
+            { "term": "boat", "definition": "They crossed the river by boat." },
+            { "term": "bike", "definition": "She rides her bike to work." },
+            { "term": "taxi", "definition": "We took a taxi to the hotel." },
+            { "term": "underground / metro", "definition": "The metro is fast in London." }
+          ]
+        },
+        {
+          "heading": "Places in the city",
+          "list": [
+            { "term": "train station", "definition": "The train station is near the centre." },
+            { "term": "bus stop", "definition": "Wait at the bus stop." },
+            { "term": "airport", "definition": "The airport is 20 km from the city." },
+            { "term": "hotel", "definition": "We stayed at a small hotel." },
+            { "term": "bank", "definition": "The bank is opposite the park." },
+            { "term": "post office", "definition": "The post office is next to the café." },
+            { "term": "supermarket", "definition": "The supermarket is open until 10." },
+            { "term": "pharmacy", "definition": "The pharmacy is on the corner." }
+          ]
+        },
+        {
+          "heading": "Travel items",
+          "list": [
+            { "term": "ticket", "definition": "I bought a ticket to London." },
+            { "term": "passport", "definition": "Don't forget your passport." },
+            { "term": "suitcase", "definition": "My suitcase is very heavy." },
+            { "term": "backpack", "definition": "She travels with a small backpack." },
+            { "term": "map", "definition": "I looked at the map." },
+            { "term": "luggage", "definition": "Where can I leave my luggage?" },
+            { "term": "boarding pass", "definition": "Show your boarding pass at the gate." }
+          ]
+        },
+        {
+          "heading": "Travel phrases",
+          "list": [
+            { "term": "single ticket", "definition": "A single ticket to Oxford, please." },
+            { "term": "return ticket", "definition": "I'd like a return ticket." },
+            { "term": "direct flight", "definition": "Is there a direct flight?" },
+            { "term": "one night", "definition": "We stayed for one night." },
+            { "term": "check in", "definition": "We checked in at 3 pm." },
+            { "term": "check out", "definition": "We checked out at 11 am." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discovery",
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "Excuse me, where is the train station?",
+        "Go straight on and turn left at the traffic lights.",
+        "The hotel is opposite the bank.",
+        "It's next to the supermarket.",
+        "How do I get to the airport?",
+        "Is it far from here?",
+        "I'd like a return ticket to Oxford, please.",
+        "What time does the flight leave?"
+      ],
+      "questions": [
+        "In sentences 1 and 5, how do we ask for directions?",
+        "In sentence 2, what form of the verb is used to give directions?",
+        "In sentences 3 and 4, what prepositions of place are used?",
+        "In sentence 6, what does 'far' mean?",
+        "In sentences 7 and 8, what expressions are used at the station or airport?"
+      ]
+    },
+    {
+      "name": "Guided practice",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "Excuse me, ___ is the train station?", "options": ["what", "where", "when", "who"], "correct": 1, "explanation": "Where asks about place."},
+        {"prompt": "___ straight on and turn left.", "options": ["Go", "Goes", "Going", "Went"], "correct": 0, "explanation": "Imperative uses the base form: Go."},
+        {"prompt": "The hotel is ___ the bank.", "options": ["opposite", "next", "between", "in"], "correct": 0, "explanation": "Opposite means in front of, on the other side."},
+        {"prompt": "The café is ___ to the supermarket.", "options": ["opposite", "next", "between", "in"], "correct": 1, "explanation": "Next to means beside."},
+        {"prompt": "How do I ___ to the airport?", "options": ["go", "get", "arrive", "come"], "correct": 1, "explanation": "How do I get to...? is a common question."},
+        {"prompt": "Is it ___ from here?", "options": ["long", "far", "near", "close"], "correct": 1, "explanation": "Is it far? asks about distance."},
+        {"prompt": "I'd like a ___ ticket to Oxford, please.", "options": ["single", "return", "round", "back"], "correct": 1, "explanation": "Return ticket = go and come back."},
+        {"prompt": "What time does the flight ___ ?", "options": ["go", "leave", "depart from", "left"], "correct": 1, "explanation": "What time does the flight leave?"},
+        {"prompt": "___ left at the traffic lights.", "options": ["Turn", "Turns", "Turning", "Turned"], "correct": 0, "explanation": "Imperative: Turn left."},
+        {"prompt": "The bank is ___ the corner.", "options": ["in", "on", "at", "to"], "correct": 1, "explanation": "On the corner: fixed expression."}
+      ]
+    },
+    {
+      "name": "Free practice",
+      "type": "task",
+      "prompts": [
+        "Write a short dialogue asking for directions to the nearest bank. Use 'Excuse me, where is...?' and 'Go straight on...'.",
+        "Write 5 sentences about your last trip. Include transport, hotel and what you did.",
+        "Write 5 sentences about a place in your city. Explain how to get there from your house."
+      ]
+    },
+    {
+      "name": "Mini-test",
+      "type": "exercise",
+      "questions": [
+        {"prompt": "Excuse me, how do I ___ to the station?", "options": ["get", "go", "come", "arrive"], "correct": 0, "explanation": "How do I get to...? is the common question."},
+        {"prompt": "___ right at the end of the street.", "options": ["Turn", "Turns", "Turning", "Turned"], "correct": 0, "explanation": "Imperative: Turn right."},
+        {"prompt": "The cinema is ___ the bank.", "options": ["opposite", "in", "on", "at"], "correct": 0, "explanation": "Opposite = in front of."},
+        {"prompt": "Is it ___ from the city centre?", "options": ["far", "long", "many", "much"], "correct": 0, "explanation": "Is it far? asks about distance."},
+        {"prompt": "I'd like a ___ ticket, please.", "options": ["single", "one", "first", "alone"], "correct": 0, "explanation": "Single ticket = one way."},
+        {"prompt": "Where is the ___ desk?", "options": ["check-in", "check", "in", "checking"], "correct": 0, "explanation": "Check-in desk is the correct term."},
+        {"prompt": "We stayed ___ a small hotel.", "options": ["in", "at", "on", "to"], "correct": 1, "explanation": "We stay 'at' a hotel."},
+        {"prompt": "The train ___ at 8 am.", "options": ["leave", "leaves", "leaving", "left"], "correct": 1, "explanation": "Present Simple with 'the train' (it): leaves."},
+        {"prompt": "Where can I ___ my luggage?", "options": ["leave", "let", "live", "let's"], "correct": 0, "explanation": "Leave my luggage = store my bags."},
+        {"prompt": "Go ___ on and turn left.", "options": ["straight", "strait", "street", "direct"], "correct": 0, "explanation": "Go straight on."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Asking: Where is...? / How do I get to...?",
+            "Giving directions: Turn left / right, Go straight on, Take the first turning.",
+            "Prepositions of place: opposite, next to, between, on the corner.",
+            "At the airport: check-in desk, gate, boarding pass, luggage.",
+            "At the hotel: reservation, check in, check out."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not say 'go to straight'. Say 'go straight on'.",
+            "Do not forget 'the' before places.",
+            "Do not mix 'single' (one way) and 'return' (round trip)."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "Excuse me, where is...?",
+            "How do I get to...?",
+            "Turn left / right.",
+            "Go straight on.",
+            "It's opposite / next to / between...",
+            "I'd like a single / return ticket.",
+            "What time does the flight leave?"
+          ]
+        }
+      ]
+    }
+  ]
+}

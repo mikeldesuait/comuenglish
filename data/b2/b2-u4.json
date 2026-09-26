@@ -1,50 +1,224 @@
 {
   "id": "b2-u4",
   "title": "Advanced reported speech",
-  "grammar": "Reported speech with multiple tenses, Reporting verbs",
+  "grammar": "Reported speech with reporting verbs",
   "vocabulary": "Conversations, speeches, rumours",
   "function": "Report what others said with nuance",
   "phases": [
     {
-      "name": "Presentation",
-      "type": "text",
-      "content": "In this unit you will learn advanced reported speech structures, including reporting verbs like admit, deny, suggest, warn."
+      "name": "Grammar explanation",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Reported speech review",
+          "body": "In B1 you learned the basic rules of reported speech (tense shift back, reported questions, reported commands). At B2 we extend this with a wider range of reporting verbs and more complex structures."
+        },
+        {
+          "heading": "Reporting verbs + infinitive",
+          "tableHeader": true,
+          "table": [
+            ["Verb", "Pattern", "Example"],
+            ["offer", "offer to do", "She offered to help me."],
+            ["promise", "promise to do", "He promised to call."],
+            ["agree", "agree to do", "They agreed to come."],
+            ["refuse", "refuse to do", "She refused to answer."],
+            ["threaten", "threaten to do", "He threatened to leave."]
+          ]
+        },
+        {
+          "heading": "Reporting verbs + object + infinitive",
+          "tableHeader": true,
+          "table": [
+            ["Verb", "Pattern", "Example"],
+            ["tell", "tell sb to do", "She told me to wait."],
+            ["ask", "ask sb to do", "He asked me to help."],
+            ["warn", "warn sb to do", "They warned us not to go."],
+            ["remind", "remind sb to do", "She reminded me to call."],
+            ["invite", "invite sb to do", "He invited us to stay."]
+          ]
+        },
+        {
+          "heading": "Reporting verbs + gerund",
+          "tableHeader": true,
+          "table": [
+            ["Verb", "Pattern", "Example"],
+            ["admit", "admit doing", "He admitted stealing the money."],
+            ["deny", "deny doing", "She denied seeing him."],
+            ["suggest", "suggest doing", "He suggested going to the cinema."],
+            ["recommend", "recommend doing", "She recommended trying the soup."],
+            ["apologise for", "apologise for doing", "He apologised for being late."]
+          ]
+        },
+        {
+          "heading": "Reporting verbs + that clause",
+          "tableHeader": true,
+          "table": [
+            ["Verb", "Example"],
+            ["say", "She said that she was tired."],
+            ["admit", "He admitted that he was wrong."],
+            ["complain", "She complained that the food was cold."],
+            ["explain", "He explained that he was late."],
+            ["insist", "She insisted that she was right."]
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not confuse 'say' (no object) with 'tell' (with object).",
+            "Do not use 'to' after 'suggest' + gerund: 'He suggested to go' is wrong.",
+            "The tense shift is still needed in most reported speech."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vocabulary",
+      "type": "vocab",
+      "sections": [
+        {
+          "heading": "Reporting verbs (say)",
+          "list": [
+            { "term": "say", "definition": "She said she was busy." },
+            { "term": "admit", "definition": "He admitted that he was wrong." },
+            { "term": "deny", "definition": "She denied taking the book." },
+            { "term": "explain", "definition": "He explained that he was late." },
+            { "term": "complain", "definition": "She complained about the noise." },
+            { "term": "insist", "definition": "He insisted on paying." },
+            { "term": "mention", "definition": "She mentioned that she was leaving." },
+            { "term": "announce", "definition": "They announced that they were engaged." }
+          ]
+        },
+        {
+          "heading": "Reporting verbs (tell / ask)",
+          "list": [
+            { "term": "tell", "definition": "She told me to wait." },
+            { "term": "ask", "definition": "He asked me to help." },
+            { "term": "warn", "definition": "They warned us not to go." },
+            { "term": "remind", "definition": "She reminded me to bring my keys." },
+            { "term": "invite", "definition": "He invited us to dinner." },
+            { "term": "persuade", "definition": "She persuaded me to stay." }
+          ]
+        },
+        {
+          "heading": "Reporting verbs (offer, promise, etc.)",
+          "list": [
+            { "term": "offer", "definition": "She offered to drive us home." },
+            { "term": "promise", "definition": "He promised to help." },
+            { "term": "agree", "definition": "They agreed to meet on Friday." },
+            { "term": "refuse", "definition": "She refused to answer." },
+            { "term": "threaten", "definition": "He threatened to call the police." },
+            { "term": "apologise", "definition": "She apologised for being late." }
+          ]
+        },
+        {
+          "heading": "Reported speech in news",
+          "list": [
+            { "term": "allegedly", "definition": "He allegedly stole the money." },
+            { "term": "reportedly", "definition": "They reportedly left the country." },
+            { "term": "according to", "definition": "According to sources, the deal is done." },
+            { "term": "it is claimed", "definition": "It is claimed that he knew the truth." },
+            { "term": "sources say", "definition": "Sources say the meeting was tense." }
+          ]
+        }
+      ]
     },
     {
       "name": "Discovery",
-      "type": "text",
-      "content": "Read these sentences. He admitted stealing the money. She denied having seen him. They suggested going to the cinema. Notice how reporting verbs change the structure."
+      "type": "discovery",
+      "intro": "Look at these sentences. Read them carefully and think about the questions below.",
+      "sentences": [
+        "She offered to help me with the project.",
+        "He told me to wait outside.",
+        "She denied seeing him that night.",
+        "He suggested going to the cinema.",
+        "She admitted that she had made a mistake.",
+        "He promised to call me later.",
+        "She warned us not to touch the wire.",
+        "He apologised for being late."
+      ],
+      "questions": [
+        "In sentences 1, 6, 7 and 8, what pattern follows each reporting verb?",
+        "In sentences 2, 6 and 7, which verbs are followed by object + to + verb?",
+        "In sentences 3 and 4, what form of the verb comes after 'deny' and 'suggest'?",
+        "In sentence 5, what pattern is used with 'admit'?",
+        "Do all these structures require a tense shift from the original speech?"
+      ]
     },
     {
       "name": "Guided practice",
       "type": "exercise",
-      "prompt": "She ___ me to close the window.",
-      "options": [
-        "said",
-        "told",
-        "asked",
-        "suggested"
-      ],
-      "correct": 1,
-      "explanation": "Tell is used with an object pronoun: tell someone to do something."
+      "questions": [
+        {"prompt": "She ___ me to close the window.", "options": ["said", "told", "asked", "suggested"], "correct": 1, "explanation": "Tell is used with an object: tell someone to do something."},
+        {"prompt": "He ___ having broken the vase.", "options": ["denied", "refused", "admitted", "suggested"], "correct": 0, "explanation": "Deny + gerund means to say that you did not do something."},
+        {"prompt": "She ___ to help me with my homework.", "options": ["said", "offered", "asked", "told"], "correct": 1, "explanation": "Offer + to + verb."},
+        {"prompt": "He ___ going to the beach.", "options": ["said", "suggested", "told", "asked"], "correct": 1, "explanation": "Suggest + gerund."},
+        {"prompt": "She ___ that she was tired.", "options": ["said", "told", "asked", "promised"], "correct": 0, "explanation": "Say + that clause (no object)."},
+        {"prompt": "They ___ us not to go there.", "options": ["said", "warned", "told", "asked"], "correct": 1, "explanation": "Warn + object + (not) to + verb."},
+        {"prompt": "He ___ to answer the question.", "options": ["denied", "refused", "admitted", "suggested"], "correct": 1, "explanation": "Refuse + to + verb."},
+        {"prompt": "She ___ for being late.", "options": ["apologised", "denied", "refused", "suggested"], "correct": 0, "explanation": "Apologise for + gerund."},
+        {"prompt": "He ___ that he had made a mistake.", "options": ["said", "told", "admitted", "asked"], "correct": 2, "explanation": "Admit + that clause."},
+        {"prompt": "She ___ to call me later.", "options": ["promised", "said", "told", "asked"], "correct": 0, "explanation": "Promise + to + verb."}
+      ]
     },
     {
       "name": "Free practice",
       "type": "task",
-      "prompt": "Report a conversation you had recently using 3 different reporting verbs."
+      "prompts": [
+        "Report a conversation you had recently using 5 different reporting verbs (offer, promise, deny, suggest, admit).",
+        "Rewrite 5 direct sentences into reported speech with tense shift. Vary the reporting verbs.",
+        "Write 5 news-style sentences using 'allegedly', 'reportedly', 'it is claimed'."
+      ]
     },
     {
       "name": "Mini-test",
       "type": "exercise",
-      "prompt": "He ___ having broken the vase.",
-      "options": [
-        "denied",
-        "refused",
-        "admitted",
-        "suggested"
-      ],
-      "correct": 0,
-      "explanation": "Deny + gerund means to say that you did not do something."
+      "questions": [
+        {"prompt": "She ___ to help me with the project.", "options": ["offered", "said", "told", "asked"], "correct": 0, "explanation": "Offer + to + verb."},
+        {"prompt": "He ___ stealing the money.", "options": ["denied", "refused", "offered", "promised"], "correct": 0, "explanation": "Deny + gerund."},
+        {"prompt": "She ___ me to wait outside.", "options": ["said", "told", "asked", "suggested"], "correct": 1, "explanation": "Tell + object + to + verb."},
+        {"prompt": "They ___ going to the cinema.", "options": ["said", "suggested", "told", "promised"], "correct": 1, "explanation": "Suggest + gerund."},
+        {"prompt": "She ___ that she was tired.", "options": ["said", "told", "asked", "promised"], "correct": 0, "explanation": "Say + that clause."},
+        {"prompt": "He ___ us not to touch the wire.", "options": ["warned", "said", "told", "promised"], "correct": 0, "explanation": "Warn + object + not to + verb."},
+        {"prompt": "She ___ to answer the question.", "options": ["refused", "denied", "offered", "promised"], "correct": 0, "explanation": "Refuse + to + verb."},
+        {"prompt": "He ___ for being late.", "options": ["apologised", "denied", "refused", "offered"], "correct": 0, "explanation": "Apologise for + gerund."},
+        {"prompt": "She ___ that she had made a mistake.", "options": ["said", "told", "admitted", "promised"], "correct": 2, "explanation": "Admit + that clause."},
+        {"prompt": "He ___ to help me tomorrow.", "options": ["promised", "said", "told", "asked"], "correct": 0, "explanation": "Promise + to + verb."}
+      ]
+    },
+    {
+      "name": "Summary",
+      "type": "theory",
+      "sections": [
+        {
+          "heading": "Key rules",
+          "list": [
+            "Reporting verbs + to + verb: offer, promise, agree, refuse, threaten.",
+            "Reporting verbs + object + to + verb: tell, ask, warn, remind, invite.",
+            "Reporting verbs + gerund: admit, deny, suggest, recommend, apologise for.",
+            "Reporting verbs + that clause: say, admit, complain, explain, insist.",
+            "Say has no object. Tell requires an object."
+          ]
+        },
+        {
+          "heading": "Common mistakes",
+          "list": [
+            "Do not confuse say and tell.",
+            "Do not use 'to' after suggest + gerund.",
+            "Do not forget the tense shift when reporting."
+          ]
+        },
+        {
+          "heading": "Useful phrases",
+          "list": [
+            "She offered to...",
+            "He denied...-ing.",
+            "They suggested...-ing.",
+            "She admitted that...",
+            "He warned us not to...",
+            "She apologised for...-ing."
+          ]
+        }
+      ]
     }
   ]
 }
