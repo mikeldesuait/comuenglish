@@ -106,12 +106,17 @@ async function bootstrap() {
           hydrateState(remote.data);
           console.log("[cloud] hydrated after login");
         }
+        const inResetScreen = window.location.hash.includes("reset-password");
         if (recoveryInProgress) {
           console.log("[auth] skipping navigate to today (recovery in progress)");
           return;
         }
         if (passwordJustChanged) {
           console.log("[auth] skipping navigate to today (password just changed)");
+          return;
+        }
+        if (inResetScreen) {
+          console.log("[auth] skipping navigate to today (in reset screen)");
           return;
         }
         navigate("today");
