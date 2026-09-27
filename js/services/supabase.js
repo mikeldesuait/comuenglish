@@ -7,8 +7,6 @@ const SUPABASE_KEY = "sb_publishable_CBOv7TBki6pnA_TxkAGOmg_aYaIVu_w";
 export const supabase = createClient(SUPABASE_URL, SUPABASE_KEY, {
   auth: {
     persistSession: true,
-    autoRefreshToken: true,
-    detectSessionInUrl: false,
-    flowType: "pkce"
+    autoRefreshToken: true
   }
 });

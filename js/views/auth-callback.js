@@ -1,17 +1,16 @@
-// Auth callback: procesa el "code" que Supabase manda tras verificar el email.
-// Con PKCE, el enlace del email lleva a "#/auth-callback?code=XXX".
-// Aquí cambiamos ese code por una sesión de recovery.
+// Auth callback: procesa el token_hash que Supabase manda tras verificar el email.
+// El enlace del email lleva a "#/auth-callback?token_hash=XXX&type=recovery".
 
 import { supabase } from "../services/supabase.js";
 import { navigate } from "../router.js";
 
 export async function renderAuthCallback(view) {
-  // Ocultar sidebar
   const sidebar = document.getElementById("sidebar");
   if (sidebar) sidebar.style.display = "none";
   const shell = document.querySelector(".app-shell");
   if (shell) shell.style.gridTemplateColumns = "1fr";
 
+  // Pantalla de "verificando"
   view.innerHTML = `
     <div style="min-height: calc(100vh - 64px); display: grid; place-items: center; padding: 3rem 1rem; background: #fafafa;">
       <div style="text-align: center;">
@@ -22,13 +21,14 @@ export async function renderAuthCallback(view) {
     <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
   `;
 
-  // Leer el "code" de la URL: #/auth-callback?code=XXX
+  // Leer token_hash y type de la URL
   const hash = window.location.hash || "";
   const queryStart = hash.indexOf("?");
   const params = new URLSearchParams(queryStart >= 0 ? hash.slice(queryStart + 1) : "");
-  const code = params.get("code");
+  const tokenHash = params.get("token_hash");
+  const type = params.get("type") || "recovery";
 
-  if (!code) {
+  if (!tokenHash) {
     view.innerHTML = `
       <div style="max-width:420px;margin:6rem auto;padding:2rem;background:#fff;border:1px solid #e5e7eb;border-radius:16px;text-align:center;">
         <h1 style="margin:0 0 1rem;font-size:1.4rem;color:#0f172a;">Enlace no válido</h1>
@@ -40,11 +40,14 @@ export async function renderAuthCallback(view) {
     return;
   }
 
-  console.log("[callback] intercambiando code por sesión");
-  const { error } = await supabase.auth.exchangeCodeForSession(code);
+  console.log("[callback] verificando token_hash");
+  const { error } = await supabase.auth.verifyOtp({
+    token_hash: tokenHash,
+    type: "recovery"
+  });
 
   if (error) {
-    console.error("[callback] exchangeCodeForSession failed:", error.message);
+    console.error("[callback] verifyOtp failed:", error.message);
     view.innerHTML = `
       <div style="max-width:420px;margin:6rem auto;padding:2rem;background:#fff;border:1px solid #e5e7eb;border-radius:16px;text-align:center;">
         <h1 style="margin:0 0 1rem;font-size:1.4rem;color:#0f172a;">Enlace no válido</h1>
