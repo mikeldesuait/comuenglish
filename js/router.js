@@ -73,6 +73,28 @@ export async function render() {
   view.innerHTML = "";
   await renderer(view);
 
+  // Banner de aviso si el usuario llegó por email de recovery
+  // (se inserta AQUÍ porque renderToday limpia view.innerHTML)
+  if (route === "today" && sessionStorage.getItem("show_change_password_notice") === "1") {
+    const notice = document.createElement("div");
+    notice.style.cssText = "background:#fef3c7;border:1px solid #fcd34d;color:#92400e;border-radius:12px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;align-items:center;gap:.75rem;font-size:.92rem;font-weight:600;";
+    notice.innerHTML = '<span style="font-size:1.5rem;">⚠️</span><div style="flex:1;">Has entrado con un enlace de recuperación. <a href="#" id="go-to-settings-notice" style="color:#92400e;text-decoration:underline;font-weight:700;">Ve a Settings → Cambiar contraseña</a> para establecer una nueva.</div><button id="close-notice" style="background:none;border:none;color:#92400e;font-size:1.25rem;cursor:pointer;padding:0 .25rem;">×</button>';
+    view.prepend(notice);
+
+    setTimeout(() => {
+      const b = document.getElementById("go-to-settings-notice");
+      if (b) b.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.getElementById("open-settings")?.click();
+      });
+      const c = document.getElementById("close-notice");
+      if (c) c.addEventListener("click", () => {
+        sessionStorage.removeItem("show_change_password_notice");
+        notice.remove();
+      });
+    }, 50);
+  }
+
   document.querySelectorAll("[data-route]").forEach(btn => {
     btn.classList.toggle("is-active", btn.dataset.route === route);
   });
