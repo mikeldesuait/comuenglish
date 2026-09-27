@@ -21,6 +21,10 @@ async function bootstrap() {
 
     if (tokenHash && type === "recovery") {
       console.log("[auth] processing recovery token_hash");
+      if (sessionStorage.getItem("sent_reset_email") === "1") {
+        console.log("[auth] ignorando recovery: esta pestaña solo envió el email");
+        return;
+      }
       const { error } = await supabase.auth.verifyOtp({
         token_hash: tokenHash,
         type: "recovery"
@@ -95,6 +99,10 @@ async function bootstrap() {
     // Ahora sí navegamos a la pantalla de cambio de contraseña.
     if (event === "PASSWORD_RECOVERY") {
       console.log("[auth] PASSWORD_RECOVERY event detected");
+      if (sessionStorage.getItem("sent_reset_email") === "1") {
+        console.log("[auth] ignorando recovery: esta pestaña solo envió el email");
+        return;
+      }
       recoveryInProgress = true;
       // Marcar bandera: debe cambiar contraseña antes de usar la app
       try {
@@ -151,6 +159,10 @@ async function bootstrap() {
     const type = params.get("type");
     if (tokenHash && type === "recovery") {
       console.log("[auth] hashchange recovery detected");
+      if (sessionStorage.getItem("sent_reset_email") === "1") {
+        console.log("[auth] ignorando recovery: esta pestaña solo envió el email");
+        return;
+      }
       const result = await supabase.auth.verifyOtp({ token_hash: tokenHash, type: "recovery" });
       if (result.error === null) {
         recoveryInProgress = true;

@@ -453,6 +453,8 @@ export async function renderLogin(view) {
           redirectTo: window.location.href.split("#")[0]
         });
         if (error) throw error;
+        // Marcar esta pestaña: solo envió el email, no debe procesar el recovery
+        try { sessionStorage.setItem("sent_reset_email", "1"); } catch {}
         setMsg("Te hemos enviado un email con el enlace para restablecer tu contraseña.", "ok");
         return;
       }
