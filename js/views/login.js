@@ -458,7 +458,6 @@ export async function renderLogin(view) {
         setMsg("Te hemos enviado un email con el enlace para restablecer tu contraseña.", "ok");
         // Tras 1.5s, volver a Home para que esta pestaña no interfiera con el recovery
         setTimeout(() => {
-          try { sessionStorage.removeItem("sent_reset_email"); } catch {}
           navigate("home");
         }, 1500);
         return;
