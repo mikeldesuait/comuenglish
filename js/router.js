@@ -35,14 +35,21 @@ export function navigate(route, params = {}) {
 }
 
 export async function render() {
-  // Si la URL tiene un hash tipo #/reset-password, respetarlo por encima del estado
-  const hashRoute = (window.location.hash || "").replace(/^#\/?/, "").split("?")[0];
-  const validRoutes = Object.keys(routes);
-  if (hashRoute && validRoutes.includes(hashRoute)) {
-    const { currentRoute } = getState();
-    if (currentRoute !== hashRoute) {
-      // No navegamos recursivamente: solo actualizamos el estado y seguimos
-      setState({ currentRoute: hashRoute });
+  // Detectar flujos especiales en el hash de la URL
+  const rawHash = window.location.hash || "";
+
+  // Caso 1: Supabase recovery link (contiene type=recovery)
+  if (rawHash.includes("type=recovery") || rawHash.includes("access_token=")) {
+    setState({ currentRoute: "reset-password" });
+  } else {
+    // Caso 2: hash route normal (#/algo)
+    const hashRoute = rawHash.replace(/^#\/?/, "").split("?")[0];
+    const validRoutes = Object.keys(routes);
+    if (hashRoute && validRoutes.includes(hashRoute)) {
+      const { currentRoute } = getState();
+      if (currentRoute !== hashRoute) {
+        setState({ currentRoute: hashRoute });
+      }
     }
   }
 

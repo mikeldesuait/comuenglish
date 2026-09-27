@@ -450,7 +450,7 @@ export async function renderLogin(view) {
       if (mode === "forgot") {
         setMsg("Enviando enlace…", "info");
         const { error } = await supabase.auth.resetPasswordForEmail(email, {
-          redirectTo: window.location.href.split("#")[0] + "#/reset-password"
+          redirectTo: window.location.href.split("#")[0]
         });
         if (error) throw error;
         setMsg("Te hemos enviado un email con el enlace para restablecer tu contraseña.", "ok");
