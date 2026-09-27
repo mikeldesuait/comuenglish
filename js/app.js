@@ -33,6 +33,13 @@ async function bootstrap() {
         recoveryInProgress = true;
         navigate("reset-password");
         // Limpiar el hash para que el token no quede expuesto
+        try {
+          const { data: { user: recoveryUser } } = await supabase.auth.getUser();
+          if (recoveryUser) {
+            const { markPending } = await import("./core/password-guard.js");
+            markPending(recoveryUser.id);
+          }
+        } catch (e) { console.warn("[guard] markPending bootstrap failed:", e); }
         history.replaceState(null, "", window.location.pathname + "#/reset-password");
       }
     }
@@ -89,6 +96,14 @@ async function bootstrap() {
     if (event === "PASSWORD_RECOVERY") {
       console.log("[auth] PASSWORD_RECOVERY event detected");
       recoveryInProgress = true;
+      // Marcar bandera: debe cambiar contraseña antes de usar la app
+      try {
+        const { data: { user: recoveryUser } } = await supabase.auth.getUser();
+        if (recoveryUser) {
+          const { markPending } = await import("./core/password-guard.js");
+          markPending(recoveryUser.id);
+        }
+      } catch (e) { console.warn("[guard] markPending PASSWORD_RECOVERY failed:", e); }
       navigate("reset-password");
       return;
     }
@@ -106,17 +121,12 @@ async function bootstrap() {
           hydrateState(remote.data);
           console.log("[cloud] hydrated after login");
         }
-        const inResetScreen = window.location.hash.includes("reset-password");
         if (recoveryInProgress) {
           console.log("[auth] skipping navigate to today (recovery in progress)");
           return;
         }
         if (passwordJustChanged) {
           console.log("[auth] skipping navigate to today (password just changed)");
-          return;
-        }
-        if (inResetScreen) {
-          console.log("[auth] skipping navigate to today (in reset screen)");
           return;
         }
         navigate("today");
@@ -133,6 +143,28 @@ async function bootstrap() {
   });
 
   navigate("home");
+  // Escuchar cambios de hash por si el usuario pega un enlace de recovery
+  window.addEventListener("hashchange", async () => {
+    const rawHash = window.location.hash || "";
+    const params = new URLSearchParams(rawHash.split("?")[1] || "");
+    const tokenHash = params.get("token_hash");
+    const type = params.get("type");
+    if (tokenHash && type === "recovery") {
+      console.log("[auth] hashchange recovery detected");
+      const result = await supabase.auth.verifyOtp({ token_hash: tokenHash, type: "recovery" });
+      if (result.error === null) {
+        recoveryInProgress = true;
+        try {
+          const { data: { user: recoveryUser } } = await supabase.auth.getUser();
+          if (recoveryUser) {
+            const { markPending } = await import("./core/password-guard.js");
+            markPending(recoveryUser.id);
+          }
+        } catch (e) { console.warn("[guard] markPending hashchange failed:", e); }
+        navigate("reset-password");
+      }
+    }
+  });
 }
 
 if (document.readyState === "loading") {

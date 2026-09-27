@@ -41,6 +41,18 @@ export async function renderResetPassword(view) {
         border-radius: 18px; padding: 2.25rem 2rem;
         box-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
       }
+      .rp-banner {
+        background: #fef3c7;
+        border: 1px solid #fcd34d;
+        color: #92400e;
+        border-radius: 10px;
+        padding: .75rem 1rem;
+        font-size: .85rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 1.25rem;
+      }
+      .rp-banner__icon { margin-right: .35rem; }
       .rp-logo {
         width: 52px; height: 52px;
         background: #f97316; color: #fff;
@@ -80,6 +92,7 @@ export async function renderResetPassword(view) {
 
     <div class="rp-wrap">
       <div class="rp-card">
+        <div class="rp-banner"><span class="rp-banner__icon">⚠️</span>Para continuar, debes cambiar tu contraseña</div>
         <div class="rp-logo">CE</div>
         <h1 class="rp-title">Nueva contraseña</h1>
         <p class="rp-sub">Escribe tu nueva contraseña para acceder a tu cuenta.</p>
@@ -141,6 +154,17 @@ export async function renderResetPassword(view) {
     try {
       const { data, error } = await supabase.auth.updateUser({ password: p1 });
       console.log("[reset] updateUser result:", { data, error });
+
+      if (!error) {
+      // Limpiar bandera de "cambio de contraseña pendiente"
+      try {
+        const { data: { user: u } } = await supabase.auth.getUser();
+        if (u) {
+          const { clearPending } = await import("../core/password-guard.js");
+          clearPending(u.id);
+        }
+      } catch (e) { console.warn("[reset] clearPending failed:", e); }
+      }
 
       if (error) {
         let msg = error.message || "No se ha podido actualizar la contraseña.";
