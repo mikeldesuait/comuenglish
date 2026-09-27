@@ -85,9 +85,17 @@ async function bootstrap() {
     flushToCloud(getState());
   });
 
-  // No navegar a Home si estamos procesando un recovery
-  navigate("home");
+  // No navegar a Home si la URL ya es una ruta específica (auth-callback, reset-password, etc.)
+  const rawHash = window.location.hash || "";
+  const hashRoute = rawHash.replace(/^#\/?/, "").split("?")[0];
 
+  // Si ya estamos en una ruta válida distinta a home/today, respetarla
+  if (hashRoute === "auth-callback" || hashRoute === "reset-password") {
+    console.log("[app] preservando ruta:", hashRoute);
+    // No navegar: dejar que el router procese la URL actual
+  } else {
+    navigate("home");
+  }
 }
 
 if (document.readyState === "loading") {
