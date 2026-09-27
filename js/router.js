@@ -35,6 +35,17 @@ export function navigate(route, params = {}) {
 }
 
 export async function render() {
+  // Si la URL tiene un hash tipo #/reset-password, respetarlo por encima del estado
+  const hashRoute = (window.location.hash || "").replace(/^#\/?/, "").split("?")[0];
+  const validRoutes = Object.keys(routes);
+  if (hashRoute && validRoutes.includes(hashRoute)) {
+    const { currentRoute } = getState();
+    if (currentRoute !== hashRoute) {
+      // No navegamos recursivamente: solo actualizamos el estado y seguimos
+      setState({ currentRoute: hashRoute });
+    }
+  }
+
   const { currentRoute } = getState();
   const view = document.getElementById("view");
   if (!view) return;
