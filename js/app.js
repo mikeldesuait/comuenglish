@@ -6,6 +6,8 @@ import { startAutoBackupScheduler } from "./core/backup.js";
 import { auth } from "./core/auth.js";
 import { loadProgressFromCloud, flushToCloud, resetCloudSession } from "./core/cloud.js";
 
+let recoveryInProgress = false;
+
 async function bootstrap() {
   // 1. Si hay sesión, cargar progreso de Supabase y aplicar
   try {
@@ -55,6 +57,7 @@ async function bootstrap() {
     // Ahora sí navegamos a la pantalla de cambio de contraseña.
     if (event === "PASSWORD_RECOVERY") {
       console.log("[auth] PASSWORD_RECOVERY event detected");
+      recoveryInProgress = true;
       navigate("reset-password");
       return;
     }
@@ -71,6 +74,10 @@ async function bootstrap() {
         if (remote && remote.data) {
           hydrateState(remote.data);
           console.log("[cloud] hydrated after login");
+        }
+        if (recoveryInProgress) {
+          console.log("[auth] skipping navigate to today (recovery in progress)");
+          return;
         }
         navigate("today");
       } catch (e) {
