@@ -35,21 +35,15 @@ export function navigate(route, params = {}) {
 }
 
 export async function render() {
-  // Detectar flujos especiales en el hash de la URL
+  // El flujo de recovery lo gestiona el evento PASSWORD_RECOVERY en app.js
+  // Aquí solo leemos rutas hash normales (#/today, #/login, etc.)
   const rawHash = window.location.hash || "";
-
-  // Caso 1: Supabase recovery link (contiene type=recovery)
-  if (rawHash.includes("type=recovery") || rawHash.includes("access_token=")) {
-    setState({ currentRoute: "reset-password" });
-  } else {
-    // Caso 2: hash route normal (#/algo)
-    const hashRoute = rawHash.replace(/^#\/?/, "").split("?")[0];
-    const validRoutes = Object.keys(routes);
-    if (hashRoute && validRoutes.includes(hashRoute)) {
-      const { currentRoute } = getState();
-      if (currentRoute !== hashRoute) {
-        setState({ currentRoute: hashRoute });
-      }
+  const hashRoute = rawHash.replace(/^#\/?/, "").split("?")[0];
+  const validRoutes = Object.keys(routes);
+  if (hashRoute && validRoutes.includes(hashRoute)) {
+    const { currentRoute } = getState();
+    if (currentRoute !== hashRoute) {
+      setState({ currentRoute: hashRoute });
     }
   }
 

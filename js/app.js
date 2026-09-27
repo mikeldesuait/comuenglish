@@ -50,6 +50,15 @@ async function bootstrap() {
 
   // Reaccionar a cambios de sesión
   auth.onChange(async (event, user) => {
+    // Recovery: el usuario llega desde el email de reset password.
+    // Supabase ya ha validado el token y creado la sesión temporal.
+    // Ahora sí navegamos a la pantalla de cambio de contraseña.
+    if (event === "PASSWORD_RECOVERY") {
+      console.log("[auth] PASSWORD_RECOVERY event detected");
+      navigate("reset-password");
+      return;
+    }
+
     if (event === "SIGNED_OUT") {
       resetCloudSession();
       navigate("home");
