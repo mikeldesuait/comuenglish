@@ -64,20 +64,26 @@ export async function render() {
   if (shell) shell.style.gridTemplateColumns = "";
 
   const route = currentRoute;
-
   // Guard: si el usuario tiene una contraseña pendiente de cambio, forzar reset-password
-  try {
-    const { data: { session } } = await supabase.auth.getSession();
-    if (session?.user) {
-      const { isPending } = await import("./core/password-guard.js");
-      if (isPending(session.user.id) && route !== "reset-password") {
-        console.log("[guard] forzando reset-password (pendiente de cambio)");
-        return navigate("reset-password");
+  // EXCEPTO si esta pestaña solo envió el email (sent_reset_email), en cuyo caso
+  // no debe reaccionar al recovery que se ejecuta en otra pestaña.
+  if (sessionStorage.getItem("sent_reset_email") === "1") {
+    console.log("[guard] ignorando guard: esta pestaña solo envió el email");
+  } else {
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session?.user) {
+        const { isPending } = await import("./core/password-guard.js");
+        if (isPending(session.user.id) && route !== "reset-password") {
+          console.log("[guard] forzando reset-password (pendiente de cambio)");
+          return navigate("reset-password");
+        }
       }
+    } catch (e) {
+      console.warn("[guard] error:", e);
     }
-  } catch (e) {
-    console.warn("[guard] error:", e);
   }
+
 
   // Proteger "today" (My Plan): requiere sesión
   if (route === "today") {
