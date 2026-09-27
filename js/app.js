@@ -131,7 +131,13 @@ async function bootstrap() {
     flushToCloud(getState());
   });
 
-  navigate("home");
+  // No navegar a Home si estamos procesando un recovery
+  // (si no, pisamos el #/today que puso el bloque de token_hash)
+  if (recoveryInProgress) {
+    console.log("[auth] recovery in progress: leaving current route");
+  } else {
+    navigate("home");
+  }
 
   // Escuchar cambios de hash por si el usuario pega un enlace de recovery
   window.addEventListener("hashchange", async () => {
