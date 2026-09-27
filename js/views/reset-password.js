@@ -1,21 +1,22 @@
-// Reset password screen: shown after user clicks the recovery link.
+// Reset password: el usuario escribe su nueva contraseña.
+// Tras cambiarla, cerramos sesión y mandamos a login.
+
 import { supabase } from "../services/supabase.js";
 import { navigate } from "../router.js";
 
 export async function renderResetPassword(view) {
-  // Ocultar sidebar
   const sidebar = document.getElementById("sidebar");
   if (sidebar) sidebar.style.display = "none";
   const shell = document.querySelector(".app-shell");
   if (shell) shell.style.gridTemplateColumns = "1fr";
 
-  // Comprobar si hay una sesión de recovery activa
+  // Comprobar que hay sesión (viene del callback)
   const { data: { session } } = await supabase.auth.getSession();
   if (!session) {
     view.innerHTML = `
       <div style="max-width:420px;margin:6rem auto;padding:2rem;background:#fff;border:1px solid #e5e7eb;border-radius:16px;text-align:center;">
         <h1 style="margin:0 0 1rem;font-size:1.4rem;color:#0f172a;">Enlace no válido</h1>
-        <p style="color:#64748b;margin:0 0 1.5rem;">El enlace ha caducado o no es válido. Pide uno nuevo desde la pantalla de inicio de sesión.</p>
+        <p style="color:#64748b;margin:0 0 1.5rem;">El enlace ha caducado o no es válido.</p>
         <button id="back-to-login" style="width:100%;padding:.8rem;background:#f97316;color:#fff;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;">Volver al inicio de sesión</button>
       </div>
     `;
@@ -41,18 +42,6 @@ export async function renderResetPassword(view) {
         border-radius: 18px; padding: 2.25rem 2rem;
         box-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
       }
-      .rp-banner {
-        background: #fef3c7;
-        border: 1px solid #fcd34d;
-        color: #92400e;
-        border-radius: 10px;
-        padding: .75rem 1rem;
-        font-size: .85rem;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 1.25rem;
-      }
-      .rp-banner__icon { margin-right: .35rem; }
       .rp-logo {
         width: 52px; height: 52px;
         background: #f97316; color: #fff;
@@ -92,7 +81,6 @@ export async function renderResetPassword(view) {
 
     <div class="rp-wrap">
       <div class="rp-card">
-        <div class="rp-banner"><span class="rp-banner__icon">⚠️</span>Para continuar, debes cambiar tu contraseña</div>
         <div class="rp-logo">CE</div>
         <h1 class="rp-title">Nueva contraseña</h1>
         <p class="rp-sub">Escribe tu nueva contraseña para acceder a tu cuenta.</p>
@@ -152,19 +140,7 @@ export async function renderResetPassword(view) {
     $submit.textContent = "Guardando…";
 
     try {
-      const { data, error } = await supabase.auth.updateUser({ password: p1 });
-      console.log("[reset] updateUser result:", { data, error });
-
-      if (!error) {
-      // Limpiar bandera de "cambio de contraseña pendiente"
-      try {
-        const { data: { user: u } } = await supabase.auth.getUser();
-        if (u) {
-          const { clearPending } = await import("../core/password-guard.js");
-          clearPending(u.id);
-        }
-      } catch (e) { console.warn("[reset] clearPending failed:", e); }
-      }
+      const { error } = await supabase.auth.updateUser({ password: p1 });
 
       if (error) {
         let msg = error.message || "No se ha podido actualizar la contraseña.";
@@ -177,15 +153,18 @@ export async function renderResetPassword(view) {
         return;
       }
 
-      if (window.__setPasswordChanged) window.__setPasswordChanged(true);
+      console.log("[reset] contraseña cambiada, cerrando sesión");
 
-      // Éxito: reemplazar toda la pantalla por mensaje de confirmación
+      // Cerrar sesión para que el usuario entre con la nueva
+      await supabase.auth.signOut();
+
+      // Pantalla de éxito
       view.innerHTML = `
         <div style="min-height: calc(100vh - 64px); display: grid; place-items: center; padding: 3rem 1rem; background: radial-gradient(circle at 20% 20%, #f0fdf4 0%, transparent 55%), radial-gradient(circle at 80% 70%, #fef3c7 0%, transparent 55%), #fafafa;">
           <div style="width: 100%; max-width: 440px; background: #fff; border: 1px solid #e5e7eb; border-radius: 18px; padding: 2.5rem 2rem; box-shadow: 0 8px 32px rgba(15, 23, 42, 0.06); text-align: center;">
             <div style="width: 68px; height: 68px; background: #16a34a; color: #fff; border-radius: 50%; display: grid; place-items: center; margin: 0 auto 1.25rem; font-size: 2rem;">✓</div>
             <h1 style="margin: 0 0 .5rem; font-size: 1.5rem; font-weight: 800; color: #0f172a;">¡Contraseña cambiada!</h1>
-            <p style="margin: 0 0 1.75rem; font-size: .95rem; color: #64748b;">Tu contraseña se ha actualizado correctamente. Entrando a tu plan…</p>
+            <p style="margin: 0 0 1.75rem; font-size: .95rem; color: #64748b;">Ya puedes iniciar sesión con tu nueva contraseña.</p>
             <div style="width: 100%; height: 4px; background: #e5e7eb; border-radius: 2px; overflow: hidden;">
               <div style="height: 100%; background: #16a34a; animation: rp-progress 2s linear forwards;"></div>
             </div>
@@ -199,12 +178,8 @@ export async function renderResetPassword(view) {
         </div>
       `;
 
-      setTimeout(() => {
-        if (window.__setRecoveryReset) window.__setRecoveryReset();
-        navigate("today");
-      }, 2000);
+      setTimeout(() => navigate("login"), 2000);
     } catch (err) {
-      console.error("[reset] updateUser threw:", err);
       setMsg(err?.message || "No se ha podido actualizar la contraseña.", "error");
       $submit.disabled = false;
       $submit.textContent = "Guardar contraseña";

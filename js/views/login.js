@@ -257,6 +257,8 @@ export async function renderLogin(view) {
             <div class="auth-hint" id="pass-hint"></div>
           </label>
 
+          <a class="auth-forgot" id="forgot-link">¿Olvidaste tu contraseña?</a>
+
           <button type="submit" class="auth-btn auth-btn--primary" id="auth-submit">
             <span id="submit-text">Iniciar sesión</span>
           </button>
@@ -448,16 +450,10 @@ export async function renderLogin(view) {
       if (mode === "forgot") {
         setMsg("Enviando enlace…", "info");
         const { error } = await supabase.auth.resetPasswordForEmail(email, {
-          redirectTo: window.location.href.split("#")[0]
+          redirectTo: window.location.href.split("#")[0] + "#/auth-callback"
         });
         if (error) throw error;
-        // Marcar esta pestaña: solo envió el email, no debe procesar el recovery
-        try { sessionStorage.setItem("sent_reset_email", "1"); } catch {}
         setMsg("Te hemos enviado un email con el enlace para restablecer tu contraseña.", "ok");
-        // Tras 1.5s, volver a Home para que esta pestaña no interfiera con el recovery
-        setTimeout(() => {
-          navigate("home");
-        }, 1500);
         return;
       }
     } catch (err) {
