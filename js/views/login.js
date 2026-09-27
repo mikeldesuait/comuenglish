@@ -257,8 +257,6 @@ export async function renderLogin(view) {
             <div class="auth-hint" id="pass-hint"></div>
           </label>
 
-          <a class="auth-forgot" id="forgot-link">¿Olvidaste tu contraseña?</a>
-
           <button type="submit" class="auth-btn auth-btn--primary" id="auth-submit">
             <span id="submit-text">Iniciar sesión</span>
           </button>

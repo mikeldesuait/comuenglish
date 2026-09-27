@@ -7,40 +7,10 @@ import { auth } from "./core/auth.js";
 import { loadProgressFromCloud, flushToCloud, resetCloudSession } from "./core/cloud.js";
 import { supabase } from "./services/supabase.js";
 
-let recoveryInProgress = false;
 let passwordJustChanged = false;
 window.__setPasswordChanged = (v) => { passwordJustChanged = v; };
 
 async function bootstrap() {
-  // 0. Procesar token_hash si venimos de un email de recovery
-  try {
-    const params = new URLSearchParams(window.location.hash.split("?")[1] || "");
-    const tokenHash = params.get("token_hash");
-    const type = params.get("type");
-
-    if (tokenHash && type === "recovery") {
-      console.log("[auth] processing recovery token_hash");
-      if (sessionStorage.getItem("sent_reset_email") === "1") {
-        console.log("[auth] ignorando recovery: esta pestaña solo envió el email");
-        return;
-      }
-      const { error } = await supabase.auth.verifyOtp({
-        token_hash: tokenHash,
-        type: "recovery"
-      });
-      if (error) {
-        console.error("[auth] verifyOtp failed:", error.message);
-      } else {
-        console.log("[auth] recovery session created");
-        recoveryInProgress = true;
-        try { sessionStorage.setItem("show_change_password_notice", "1"); } catch {}
-        history.replaceState(null, "", window.location.pathname + "#/today");
-      }
-    }
-  } catch (e) {
-    console.warn("[auth] token_hash processing failed:", e);
-  }
-
   // 1. Si hay sesión, cargar progreso de Supabase y aplicar
   try {
     const session = await auth.getSession();
@@ -83,18 +53,6 @@ async function bootstrap() {
   });
 
   auth.onChange(async (event, user) => {
-    if (event === "PASSWORD_RECOVERY") {
-      console.log("[auth] PASSWORD_RECOVERY event detected");
-      if (sessionStorage.getItem("sent_reset_email") === "1") {
-        console.log("[auth] ignorando recovery: esta pestaña solo envió el email");
-        return;
-      }
-      recoveryInProgress = true;
-      try { sessionStorage.setItem("show_change_password_notice", "1"); } catch {}
-      navigate("today");
-      return;
-    }
-
     if (event === "SIGNED_OUT") {
       resetCloudSession();
       navigate("home");
@@ -112,10 +70,6 @@ async function bootstrap() {
           hydrateState(remote.data);
           console.log("[cloud] hydrated after login");
         }
-        if (recoveryInProgress) {
-          console.log("[auth] skipping navigate (recovery in progress)");
-          return;
-        }
         if (passwordJustChanged) {
           console.log("[auth] skipping navigate (password just changed)");
           return;
@@ -132,33 +86,8 @@ async function bootstrap() {
   });
 
   // No navegar a Home si estamos procesando un recovery
-  // (si no, pisamos el #/today que puso el bloque de token_hash)
-  if (recoveryInProgress) {
-    console.log("[auth] recovery in progress: leaving current route");
-  } else {
-    navigate("home");
-  }
+  navigate("home");
 
-  // Escuchar cambios de hash por si el usuario pega un enlace de recovery
-  window.addEventListener("hashchange", async () => {
-    const rawHash = window.location.hash || "";
-    const params = new URLSearchParams(rawHash.split("?")[1] || "");
-    const tokenHash = params.get("token_hash");
-    const type = params.get("type");
-    if (tokenHash && type === "recovery") {
-      console.log("[auth] hashchange recovery detected");
-      if (sessionStorage.getItem("sent_reset_email") === "1") {
-        console.log("[auth] ignorando recovery: esta pestaña solo envió el email");
-        return;
-      }
-      const result = await supabase.auth.verifyOtp({ token_hash: tokenHash, type: "recovery" });
-      if (result.error === null) {
-        recoveryInProgress = true;
-        try { sessionStorage.setItem("show_change_password_notice", "1"); } catch {}
-        navigate("today");
-      }
-    }
-  });
 }
 
 if (document.readyState === "loading") {
