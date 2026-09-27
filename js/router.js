@@ -31,6 +31,8 @@ const routes = {
 
 export function navigate(route, params = {}) {
   setState({ currentRoute: route, ...params });
+  const targetHash = "#/" + route;
+  if (window.location.hash !== targetHash) { window.location.hash = targetHash; }
   render();
 }
 
