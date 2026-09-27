@@ -5,10 +5,36 @@ import { initSettingsModal, openSettingsModal } from "./widgets/settings-modal.j
 import { startAutoBackupScheduler } from "./core/backup.js";
 import { auth } from "./core/auth.js";
 import { loadProgressFromCloud, flushToCloud, resetCloudSession } from "./core/cloud.js";
+import { supabase } from "./services/supabase.js";
 
 let recoveryInProgress = false;
 
 async function bootstrap() {
+  // 0. Procesar token_hash si venimos de un email de recovery
+  try {
+    const params = new URLSearchParams(window.location.hash.split("?")[1] || "");
+    const tokenHash = params.get("token_hash");
+    const type = params.get("type");
+
+    if (tokenHash && type === "recovery") {
+      console.log("[auth] processing recovery token_hash");
+      const { error } = await supabase.auth.verifyOtp({
+        token_hash: tokenHash,
+        type: "recovery"
+      });
+      if (error) {
+        console.error("[auth] verifyOtp failed:", error.message);
+      } else {
+        console.log("[auth] recovery session created");
+        navigate("reset-password");
+        // Limpiar el hash para que el token no quede expuesto
+        history.replaceState(null, "", window.location.pathname + "#/reset-password");
+      }
+    }
+  } catch (e) {
+    console.warn("[auth] token_hash processing failed:", e);
+  }
+
   // 1. Si hay sesión, cargar progreso de Supabase y aplicar
   try {
     const session = await auth.getSession();
