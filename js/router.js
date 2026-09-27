@@ -33,6 +33,14 @@ const routes = {
 };
 
 export function navigate(route, params = {}) {
+  // Si hay un reset en curso, bloquear cualquier navegación que no sea reset-password
+  const resetAt = parseInt(localStorage.getItem("reset_in_progress") || "0");
+  const isResetInProgress = resetAt && (Date.now() - resetAt) < 60 * 60 * 1000;
+  if (isResetInProgress && route !== "reset-password" && route !== "auth-callback") {
+    console.log("[router] reset en curso: bloqueando navegación a", route);
+    return;
+  }
+
   setState({ currentRoute: route, ...params });
   const targetHash = "#/" + route;
   if (window.location.hash !== targetHash) { window.location.hash = targetHash; }
