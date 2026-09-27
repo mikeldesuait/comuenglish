@@ -1,6 +1,6 @@
 // Login / sign up screen (v2 · pulido).
 import { auth } from "../core/auth.js";
-import { navigate } from "../router.js";
+import { navigate, render } from "../router.js";
 import { loadProgressFromCloud } from "../core/cloud.js";
 import { hydrateState, setStateUser } from "../state.js";
 import { supabase } from "../services/supabase.js";
@@ -456,6 +456,8 @@ export async function renderLogin(view) {
         // Marcar esta pestaña: está en modo reset. No debe reaccionar al recovery de otras pestañas.
         try { sessionStorage.setItem("pending_reset", Date.now().toString()); } catch {}
         setMsg("Te hemos enviado un email con el enlace para restablecer tu contraseña.", "ok");
+        // Forzar render para que el guard del router muestre el modal bloqueante
+        await render();
         return;
       }
     } catch (err) {

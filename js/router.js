@@ -63,6 +63,22 @@ export async function render() {
 
   const route = currentRoute;
 
+  // Guard: si esta pestaña está en modo "reset pendiente", mostrar modal bloqueante
+  // y no renderizar ninguna vista
+  try {
+    const { isPendingReset, renderPendingResetModal } = await import("./views/pending-reset-modal.js");
+    if (isPendingReset()) {
+      console.log("[guard] reset pendiente: mostrando modal bloqueante");
+      // Vaciar la vista para que no se vea nada detrás
+      view.innerHTML = "";
+      // Mostrar el modal
+      renderPendingResetModal();
+      return;
+    }
+  } catch (e) {
+    console.warn("[guard] pending reset check failed:", e);
+  }
+
   // Proteger "today" (My Plan): requiere sesión
   if (route === "today") {
     const session = await auth.getSession();
