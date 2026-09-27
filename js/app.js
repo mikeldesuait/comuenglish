@@ -59,13 +59,22 @@ async function bootstrap() {
       return;
     }
     if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && user) {
-      // Si esta pestaña está en modo "reset pendiente", ignorar el SIGNED_IN
-      // (viene de otra pestaña que está haciendo el recovery)
-      const pendingAt = parseInt(sessionStorage.getItem("pending_reset") || "0");
-      const isPending = pendingAt && (Date.now() - pendingAt) < 60 * 60 * 1000; // 1 hora
-      if (isPending) {
-        console.log("[auth] ignorando SIGNED_IN: esta pestaña está en modo reset");
-        return;
+      // Si hay un reset en curso (bandera GLOBAL), NO navegar a today.
+      // La pestaña debe quedarse en la pantalla de reset-password hasta que
+      // el usuario cambie la contraseña.
+      const resetAt = parseInt(localStorage.getItem("reset_in_progress") || "0");
+      const isResetInProgress = resetAt && (Date.now() - resetAt) < 60 * 60 * 1000; // 1 hora
+      if (isResetInProgress) {
+        console.log("[auth] reset_in_progress activo: no navegando a today");
+        // Si estamos en la pantalla de reset-password, quedarnos ahí
+        const { currentRoute } = getState();
+        if (currentRoute === "reset-password") {
+          console.log("[auth] ya estamos en reset-password, quedándonos");
+          return;
+        }
+        // Si estamos en otra ruta, forzar reset-password
+        console.log("[auth] forzando reset-password");
+        return navigate("reset-password");
       }
       setStateUser(user.id);
       try {

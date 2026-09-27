@@ -10,6 +10,16 @@ export async function renderResetPassword(view) {
   const shell = document.querySelector(".app-shell");
   if (shell) shell.style.gridTemplateColumns = "1fr";
 
+  // Comprobar si hay un reset en curso
+  const resetAt = parseInt(localStorage.getItem("reset_in_progress") || "0");
+  const isResetInProgress = resetAt && (Date.now() - resetAt) < 60 * 60 * 1000;
+
+  // Si NO hay reset en curso, redirigir a login (no deberíamos estar aquí)
+  if (!isResetInProgress) {
+    console.log("[reset] no hay reset en curso, redirigiendo a login");
+    return navigate("login");
+  }
+
   // Comprobar que hay sesión (viene del callback)
   const { data: { session } } = await supabase.auth.getSession();
   if (!session) {
@@ -155,7 +165,8 @@ export async function renderResetPassword(view) {
 
       console.log("[reset] contraseña cambiada, cerrando sesión");
 
-      // Limpiar la bandera de reset pendiente
+      // Limpiar la bandera de reset en curso
+      try { localStorage.removeItem("reset_in_progress"); } catch {}
       try { sessionStorage.removeItem("pending_reset"); } catch {}
 
       // Cerrar sesión para que el usuario entre con la nueva

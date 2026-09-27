@@ -59,6 +59,8 @@ export async function renderAuthCallback(view) {
     return;
   }
 
-  console.log("[callback] sesión de recovery creada, navegando a reset-password");
+  console.log("[callback] sesión de recovery creada, marcando reset_in_progress");
+  // Marcar que hay un reset en curso (bandera GLOBAL, compartida entre pestañas)
+  try { localStorage.setItem("reset_in_progress", Date.now().toString()); } catch {}
   navigate("reset-password");
 }
