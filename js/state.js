@@ -156,7 +156,6 @@ function markTodayCompleted(taskId) {
   if (!state.dailyLog[today]) state.dailyLog[today] = {};
   state.dailyLog[today][taskId] = true;
 
-  // Actualizar racha
   if (state.streak.lastStudyDate !== today) {
     const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
     if (state.streak.lastStudyDate === yesterday) {
@@ -278,13 +277,12 @@ export function markPhaseDone(level, unitId, phaseIndex) {
   persist();
   emit("phases:change", state.phases);
 
-  // Si todas las fases estan hechas, marcar la unidad como completada
   const totalPhases = 7;
   if (state.phases[level][unitId].length >= totalPhases) {
     markUnit(level, unitId, { completed: true, date: Date.now() });
-    return true; // Unidad completada
+    return true;
   }
-  return false; // Aun no
+  return false;
 }
 
 export function getUnitPhases(level, unitId) {
@@ -304,6 +302,12 @@ export function getUnitProgress(level, unitId) {
 
 
 export function hydrateState(newState) {
+  // Evitar escrituras innecesarias que disparen eventos storage → bucle con Supabase
+  const next = JSON.stringify({ ...defaultState, ...newState });
+  const current = JSON.stringify(state);
+  if (next === current) {
+    return; // Sin cambios: no escribimos nada
+  }
   state = { ...defaultState, ...newState };
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   emit("state:change", state);
