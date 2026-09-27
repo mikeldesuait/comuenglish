@@ -180,3 +180,38 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(refreshAccountUI, 500);
   setTimeout(refreshAccountUI, 1500);
 });
+
+// ---------- Cambiar contraseña ----------
+document.addEventListener("click", async (e) => {
+  if (e.target && e.target.id === "change-password-btn") {
+    e.preventDefault();
+    const newPass = document.getElementById("new-password")?.value;
+    const newPass2 = document.getElementById("new-password2")?.value;
+    const msg = document.getElementById("change-password-msg");
+
+    const setMsg = (text, color = "#64748b") => {
+      if (msg) { msg.textContent = text; msg.style.color = color; }
+    };
+
+    if (!newPass || !newPass2) return setMsg("Rellena todos los campos.", "#dc2626");
+    if (newPass.length < 6) return setMsg("Mínimo 6 caracteres.", "#dc2626");
+    if (newPass !== newPass2) return setMsg("Las contraseñas no coinciden.", "#dc2626");
+
+    setMsg("Cambiando…");
+    try {
+      const { supabase } = await import("../services/supabase.js");
+      const { error } = await supabase.auth.updateUser({ password: newPass });
+      if (error) throw error;
+      setMsg("¡Contraseña cambiada correctamente!", "#16a34a");
+      sessionStorage.removeItem("show_change_password_notice");
+      const cp = document.getElementById("current-password");
+      const np = document.getElementById("new-password");
+      const np2 = document.getElementById("new-password2");
+      if (cp) cp.value = "";
+      if (np) np.value = "";
+      if (np2) np2.value = "";
+    } catch (err) {
+      setMsg(err.message || "Error al cambiar la contraseña.", "#dc2626");
+    }
+  }
+});

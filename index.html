@@ -90,7 +90,30 @@
       <button class="btn btn--ghost" id="view-backups">View backups</button>
     </div>
 
-    <div id="logout-section" style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-bottom: 20px;">
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-bottom: 20px;">
+      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">Cambiar contraseña</h3>
+      <p style="font-size: .82rem; color: #64748b; margin-bottom: 12px;">Actualiza tu contraseña de acceso.</p>
+
+      <label style="display:block;margin-bottom:.75rem;">
+        <span style="font-size:.82rem;color:#334155;font-weight:600;">Contraseña actual (opcional)</span>
+        <input type="password" id="current-password" placeholder="••••••••" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
+      </label>
+
+      <label style="display:block;margin-bottom:.75rem;">
+        <span style="font-size:.82rem;color:#334155;font-weight:600;">Nueva contraseña</span>
+        <input type="password" id="new-password" placeholder="Mínimo 6 caracteres" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
+      </label>
+
+      <label style="display:block;margin-bottom:.75rem;">
+        <span style="font-size:.82rem;color:#334155;font-weight:600;">Confirmar nueva contraseña</span>
+        <input type="password" id="new-password2" placeholder="Repite la contraseña" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
+      </label>
+
+      <button class="btn btn--primary" id="change-password-btn" style="margin-top:.5rem;">Cambiar contraseña</button>
+      <p id="change-password-msg" style="margin:.75rem 0 0;font-size:.85rem;min-height:1.2em;"></p>
+    </div>
+
+<div id="logout-section" style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-bottom: 20px;">
       <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">Account</h3>
       <p style="font-size: .82rem; color: #64748b; margin-bottom: 12px;" id="account-info">Not signed in.</p>
       <button class="btn btn--ghost" id="logout-btn" style="display: none;">Sign out</button>

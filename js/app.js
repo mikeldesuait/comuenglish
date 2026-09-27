@@ -10,7 +10,6 @@ import { supabase } from "./services/supabase.js";
 let recoveryInProgress = false;
 let passwordJustChanged = false;
 window.__setPasswordChanged = (v) => { passwordJustChanged = v; };
-window.__setRecoveryReset = () => { recoveryInProgress = false; };
 
 async function bootstrap() {
   // 0. Procesar token_hash si venimos de un email de recovery
@@ -33,18 +32,9 @@ async function bootstrap() {
         console.error("[auth] verifyOtp failed:", error.message);
       } else {
         console.log("[auth] recovery session created");
-        // Marcar la flag igual que haría PASSWORD_RECOVERY
         recoveryInProgress = true;
-        navigate("reset-password");
-        // Limpiar el hash para que el token no quede expuesto
-        try {
-          const { data: { user: recoveryUser } } = await supabase.auth.getUser();
-          if (recoveryUser) {
-            const { markPending } = await import("./core/password-guard.js");
-            markPending(recoveryUser.id);
-          }
-        } catch (e) { console.warn("[guard] markPending bootstrap failed:", e); }
-        history.replaceState(null, "", window.location.pathname + "#/reset-password");
+        try { sessionStorage.setItem("show_change_password_notice", "1"); } catch {}
+        history.replaceState(null, "", window.location.pathname + "#/today");
       }
     }
   } catch (e) {
@@ -92,11 +82,7 @@ async function bootstrap() {
     if (sel) sel.value = getState().level;
   });
 
-  // Reaccionar a cambios de sesión
   auth.onChange(async (event, user) => {
-    // Recovery: el usuario llega desde el email de reset password.
-    // Supabase ya ha validado el token y creado la sesión temporal.
-    // Ahora sí navegamos a la pantalla de cambio de contraseña.
     if (event === "PASSWORD_RECOVERY") {
       console.log("[auth] PASSWORD_RECOVERY event detected");
       if (sessionStorage.getItem("sent_reset_email") === "1") {
@@ -104,15 +90,8 @@ async function bootstrap() {
         return;
       }
       recoveryInProgress = true;
-      // Marcar bandera: debe cambiar contraseña antes de usar la app
-      try {
-        const { data: { user: recoveryUser } } = await supabase.auth.getUser();
-        if (recoveryUser) {
-          const { markPending } = await import("./core/password-guard.js");
-          markPending(recoveryUser.id);
-        }
-      } catch (e) { console.warn("[guard] markPending PASSWORD_RECOVERY failed:", e); }
-      navigate("reset-password");
+      try { sessionStorage.setItem("show_change_password_notice", "1"); } catch {}
+      navigate("today");
       return;
     }
 
@@ -122,6 +101,10 @@ async function bootstrap() {
       return;
     }
     if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && user) {
+      if (sessionStorage.getItem("sent_reset_email") === "1") {
+        console.log("[auth] ignorando SIGNED_IN: esta pestaña solo envió el email");
+        return;
+      }
       setStateUser(user.id);
       try {
         const remote = await loadProgressFromCloud();
@@ -130,11 +113,11 @@ async function bootstrap() {
           console.log("[cloud] hydrated after login");
         }
         if (recoveryInProgress) {
-          console.log("[auth] skipping navigate to today (recovery in progress)");
+          console.log("[auth] skipping navigate (recovery in progress)");
           return;
         }
         if (passwordJustChanged) {
-          console.log("[auth] skipping navigate to today (password just changed)");
+          console.log("[auth] skipping navigate (password just changed)");
           return;
         }
         navigate("today");
@@ -144,13 +127,12 @@ async function bootstrap() {
     }
   });
 
-  // If plan exists, go to Today; otherwise go to Today (which will redirect to onboarding)
-  // Flush a la nube al cerrar la pestaña (por si hay cambios pendientes)
   window.addEventListener("beforeunload", () => {
     flushToCloud(getState());
   });
 
   navigate("home");
+
   // Escuchar cambios de hash por si el usuario pega un enlace de recovery
   window.addEventListener("hashchange", async () => {
     const rawHash = window.location.hash || "";
@@ -166,14 +148,8 @@ async function bootstrap() {
       const result = await supabase.auth.verifyOtp({ token_hash: tokenHash, type: "recovery" });
       if (result.error === null) {
         recoveryInProgress = true;
-        try {
-          const { data: { user: recoveryUser } } = await supabase.auth.getUser();
-          if (recoveryUser) {
-            const { markPending } = await import("./core/password-guard.js");
-            markPending(recoveryUser.id);
-          }
-        } catch (e) { console.warn("[guard] markPending hashchange failed:", e); }
-        navigate("reset-password");
+        try { sessionStorage.setItem("show_change_password_notice", "1"); } catch {}
+        navigate("today");
       }
     }
   });

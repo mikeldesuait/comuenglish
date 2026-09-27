@@ -38,8 +38,6 @@ export function navigate(route, params = {}) {
 }
 
 export async function render() {
-  // El flujo de recovery lo gestiona el evento PASSWORD_RECOVERY en app.js
-  // Aquí solo leemos rutas hash normales (#/today, #/login, etc.)
   const rawHash = window.location.hash || "";
   const hashRoute = rawHash.replace(/^#\/?/, "").split("?")[0];
   const validRoutes = Object.keys(routes);
@@ -54,36 +52,14 @@ export async function render() {
   const view = document.getElementById("view");
   if (!view) return;
 
-  // Restaurar overflow del body (por si alguna vista lo bloqueo)
   document.body.style.overflow = "";
 
-  // Show sidebar by default; specific views may hide it
   const sidebar = document.getElementById("sidebar");
   if (sidebar) sidebar.style.display = "block";
   const shell = document.querySelector(".app-shell");
   if (shell) shell.style.gridTemplateColumns = "";
 
   const route = currentRoute;
-  // Guard: si el usuario tiene una contraseña pendiente de cambio, forzar reset-password
-  // EXCEPTO si esta pestaña solo envió el email (sent_reset_email), en cuyo caso
-  // no debe reaccionar al recovery que se ejecuta en otra pestaña.
-  if (sessionStorage.getItem("sent_reset_email") === "1") {
-    console.log("[guard] ignorando guard: esta pestaña solo envió el email");
-  } else {
-    try {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (session?.user) {
-        const { isPending } = await import("./core/password-guard.js");
-        if (isPending(session.user.id) && route !== "reset-password") {
-          console.log("[guard] forzando reset-password (pendiente de cambio)");
-          return navigate("reset-password");
-        }
-      }
-    } catch (e) {
-      console.warn("[guard] error:", e);
-    }
-  }
-
 
   // Proteger "today" (My Plan): requiere sesión
   if (route === "today") {
@@ -97,12 +73,10 @@ export async function render() {
   view.innerHTML = "";
   await renderer(view);
 
-  // Marcar botones activos (topbar y sidebar)
   document.querySelectorAll("[data-route]").forEach(btn => {
     btn.classList.toggle("is-active", btn.dataset.route === route);
   });
 
-  // Marcar sidebar link activo
   document.querySelectorAll(".sidebar__link").forEach(link => {
     link.classList.toggle("is-active", link.dataset.route === route);
   });
