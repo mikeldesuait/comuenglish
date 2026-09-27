@@ -10,12 +10,14 @@ import { renderHow } from "./views/how.js";
 import { renderProgress } from "./views/progress.js";
 import { renderOnboarding } from "./views/onboarding.js";
 import { renderLogin } from "./views/login.js";
+import { renderResetPassword } from "./views/reset-password.js";
 import { auth } from "./core/auth.js";
 import { openSettingsModal } from "./widgets/settings-modal.js";
 
 const routes = {
   today: renderToday,
   login: renderLogin,
+  "reset-password": renderResetPassword,
   how: renderHow,
   progress: renderProgress,
   home: renderHome,
