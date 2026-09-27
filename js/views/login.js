@@ -456,6 +456,11 @@ export async function renderLogin(view) {
         // Marcar esta pestaña: solo envió el email, no debe procesar el recovery
         try { sessionStorage.setItem("sent_reset_email", "1"); } catch {}
         setMsg("Te hemos enviado un email con el enlace para restablecer tu contraseña.", "ok");
+        // Tras 1.5s, volver a Home para que esta pestaña no interfiera con el recovery
+        setTimeout(() => {
+          try { sessionStorage.removeItem("sent_reset_email"); } catch {}
+          navigate("home");
+        }, 1500);
         return;
       }
     } catch (err) {
