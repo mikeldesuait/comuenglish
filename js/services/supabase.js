@@ -1,4 +1,6 @@
 // Supabase client (singleton).
+// Usa sessionStorage en lugar de localStorage para que cada pestaña
+// tenga su propia sesión (evita conflictos entre pestañas del mismo navegador).
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const SUPABASE_URL = "https://uexnfoqglhgjovvchqcu.supabase.co";
@@ -8,6 +10,7 @@ export const supabase = createClient(SUPABASE_URL, SUPABASE_KEY, {
   auth: {
     persistSession: true,
     autoRefreshToken: true,
-    detectSessionInUrl: true
+    detectSessionInUrl: true,
+    storage: window.sessionStorage  // ← clave: cada pestaña su propia sesión
   }
 });
