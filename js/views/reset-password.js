@@ -139,12 +139,44 @@ export async function renderResetPassword(view) {
     $submit.textContent = "Guardando…";
 
     try {
-      const { error } = await supabase.auth.updateUser({ password: p1 });
-      if (error) throw error;
-      setMsg("¡Contraseña actualizada! Redirigiendo…", "ok");
-      setTimeout(() => navigate("today"), 1200);
+      const { data, error } = await supabase.auth.updateUser({ password: p1 });
+      console.log("[reset] updateUser result:", { data, error });
+
+      if (error) {
+        let msg = error.message || "No se ha podido actualizar la contraseña.";
+        if (error.code === "same_password") {
+          msg = "La nueva contraseña debe ser distinta a la actual.";
+        }
+        setMsg(msg, "error");
+        $submit.disabled = false;
+        $submit.textContent = "Guardar contraseña";
+        return;
+      }
+
+      // Éxito: reemplazar toda la pantalla por mensaje de confirmación
+      view.innerHTML = `
+        <div style="min-height: calc(100vh - 64px); display: grid; place-items: center; padding: 3rem 1rem; background: radial-gradient(circle at 20% 20%, #f0fdf4 0%, transparent 55%), radial-gradient(circle at 80% 70%, #fef3c7 0%, transparent 55%), #fafafa;">
+          <div style="width: 100%; max-width: 440px; background: #fff; border: 1px solid #e5e7eb; border-radius: 18px; padding: 2.5rem 2rem; box-shadow: 0 8px 32px rgba(15, 23, 42, 0.06); text-align: center;">
+            <div style="width: 68px; height: 68px; background: #16a34a; color: #fff; border-radius: 50%; display: grid; place-items: center; margin: 0 auto 1.25rem; font-size: 2rem;">✓</div>
+            <h1 style="margin: 0 0 .5rem; font-size: 1.5rem; font-weight: 800; color: #0f172a;">¡Contraseña cambiada!</h1>
+            <p style="margin: 0 0 1.75rem; font-size: .95rem; color: #64748b;">Tu contraseña se ha actualizado correctamente. Entrando a tu plan…</p>
+            <div style="width: 100%; height: 4px; background: #e5e7eb; border-radius: 2px; overflow: hidden;">
+              <div style="height: 100%; background: #16a34a; animation: rp-progress 2s linear forwards;"></div>
+            </div>
+            <style>
+              @keyframes rp-progress {
+                from { width: 0%; }
+                to { width: 100%; }
+              }
+            </style>
+          </div>
+        </div>
+      `;
+
+      setTimeout(() => navigate("today"), 2000);
     } catch (err) {
-      setMsg(err.message || "No se ha podido actualizar la contraseña.", "error");
+      console.error("[reset] updateUser threw:", err);
+      setMsg(err?.message || "No se ha podido actualizar la contraseña.", "error");
       $submit.disabled = false;
       $submit.textContent = "Guardar contraseña";
     }
