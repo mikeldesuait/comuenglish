@@ -175,7 +175,10 @@ export async function renderResetPassword(view) {
         </div>
       `;
 
-      setTimeout(() => navigate("today"), 2000);
+      setTimeout(() => {
+        if (window.__setRecoveryReset) window.__setRecoveryReset();
+        navigate("today");
+      }, 2000);
     } catch (err) {
       console.error("[reset] updateUser threw:", err);
       setMsg(err?.message || "No se ha podido actualizar la contraseña.", "error");

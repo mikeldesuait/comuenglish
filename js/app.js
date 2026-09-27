@@ -10,6 +10,7 @@ import { supabase } from "./services/supabase.js";
 let recoveryInProgress = false;
 let passwordJustChanged = false;
 window.__setPasswordChanged = (v) => { passwordJustChanged = v; };
+window.__setRecoveryReset = () => { recoveryInProgress = false; };
 
 async function bootstrap() {
   // 0. Procesar token_hash si venimos de un email de recovery
@@ -28,6 +29,8 @@ async function bootstrap() {
         console.error("[auth] verifyOtp failed:", error.message);
       } else {
         console.log("[auth] recovery session created");
+        // Marcar la flag igual que haría PASSWORD_RECOVERY
+        recoveryInProgress = true;
         navigate("reset-password");
         // Limpiar el hash para que el token no quede expuesto
         history.replaceState(null, "", window.location.pathname + "#/reset-password");
