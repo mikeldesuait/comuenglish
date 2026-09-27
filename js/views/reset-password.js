@@ -153,6 +153,8 @@ export async function renderResetPassword(view) {
         return;
       }
 
+      if (window.__setPasswordChanged) window.__setPasswordChanged(true);
+
       // Éxito: reemplazar toda la pantalla por mensaje de confirmación
       view.innerHTML = `
         <div style="min-height: calc(100vh - 64px); display: grid; place-items: center; padding: 3rem 1rem; background: radial-gradient(circle at 20% 20%, #f0fdf4 0%, transparent 55%), radial-gradient(circle at 80% 70%, #fef3c7 0%, transparent 55%), #fafafa;">

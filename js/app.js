@@ -8,6 +8,8 @@ import { loadProgressFromCloud, flushToCloud, resetCloudSession } from "./core/c
 import { supabase } from "./services/supabase.js";
 
 let recoveryInProgress = false;
+let passwordJustChanged = false;
+window.__setPasswordChanged = (v) => { passwordJustChanged = v; };
 
 async function bootstrap() {
   // 0. Procesar token_hash si venimos de un email de recovery
@@ -103,6 +105,10 @@ async function bootstrap() {
         }
         if (recoveryInProgress) {
           console.log("[auth] skipping navigate to today (recovery in progress)");
+          return;
+        }
+        if (passwordJustChanged) {
+          console.log("[auth] skipping navigate to today (password just changed)");
           return;
         }
         navigate("today");
