@@ -453,6 +453,8 @@ export async function renderLogin(view) {
           redirectTo: window.location.href.split("#")[0]
         });
         if (error) throw error;
+        // Marcar esta pestaña: está en modo reset. No debe reaccionar al recovery de otras pestañas.
+        try { sessionStorage.setItem("pending_reset", Date.now().toString()); } catch {}
         setMsg("Te hemos enviado un email con el enlace para restablecer tu contraseña.", "ok");
         return;
       }

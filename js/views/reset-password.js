@@ -155,6 +155,9 @@ export async function renderResetPassword(view) {
 
       console.log("[reset] contraseña cambiada, cerrando sesión");
 
+      // Limpiar la bandera de reset pendiente
+      try { sessionStorage.removeItem("pending_reset"); } catch {}
+
       // Cerrar sesión para que el usuario entre con la nueva
       await supabase.auth.signOut();
 

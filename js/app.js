@@ -59,8 +59,12 @@ async function bootstrap() {
       return;
     }
     if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && user) {
-      if (sessionStorage.getItem("sent_reset_email") === "1") {
-        console.log("[auth] ignorando SIGNED_IN: esta pestaña solo envió el email");
+      // Si esta pestaña está en modo "reset pendiente", ignorar el SIGNED_IN
+      // (viene de otra pestaña que está haciendo el recovery)
+      const pendingAt = parseInt(sessionStorage.getItem("pending_reset") || "0");
+      const isPending = pendingAt && (Date.now() - pendingAt) < 60 * 60 * 1000; // 1 hora
+      if (isPending) {
+        console.log("[auth] ignorando SIGNED_IN: esta pestaña está en modo reset");
         return;
       }
       setStateUser(user.id);
