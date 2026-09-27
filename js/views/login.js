@@ -453,11 +453,17 @@ export async function renderLogin(view) {
           redirectTo: window.location.href.split("#")[0]
         });
         if (error) throw error;
-        // Marcar esta pestaña: está en modo reset. No debe reaccionar al recovery de otras pestañas.
-        try { sessionStorage.setItem("pending_reset", Date.now().toString()); } catch {}
+
         setMsg("Te hemos enviado un email con el enlace para restablecer tu contraseña.", "ok");
-        // Forzar render para que el guard del router muestre el modal bloqueante
-        await render();
+
+        // Detectar el webmail según el dominio del email
+        const webmailUrl = getWebmailUrl(email);
+
+        // Redirigir FUERA de ComuEnglish al webmail del usuario.
+        // Así esta pestaña no interfiere con el recovery.
+        setTimeout(() => {
+          window.location.href = webmailUrl;
+        }, 1200);
         return;
       }
     } catch (err) {
@@ -501,4 +507,21 @@ export async function renderLogin(view) {
 
   // Foco inicial
   setTimeout(() => $email.focus(), 100);
+}
+
+// Devuelve la URL del webmail correspondiente al dominio del email del usuario.
+function getWebmailUrl(email) {
+  const domain = (email.split("@")[1] || "").toLowerCase();
+
+  if (domain.includes("gmail") || domain.includes("googlemail")) return "https://mail.google.com";
+  if (domain.includes("outlook") || domain.includes("hotmail") || domain.includes("live.com")) return "https://outlook.live.com";
+  if (domain.includes("yahoo")) return "https://mail.yahoo.com";
+  if (domain.includes("icloud") || domain === "me.com" || domain === "mac.com") return "https://www.icloud.com/mail";
+  if (domain.includes("proton")) return "https://mail.proton.me";
+  if (domain.includes("gmx")) return "https://www.gmx.com";
+  if (domain.includes("zoho")) return "https://mail.zoho.com";
+  if (domain.includes("aol")) return "https://mail.aol.com";
+
+  // Dominio desconocido: búsqueda en Google
+  return "https://www.google.com/search?q=" + encodeURIComponent(domain + " webmail");
 }
