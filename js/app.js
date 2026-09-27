@@ -92,7 +92,9 @@ async function bootstrap() {
   // Si ya estamos en una ruta válida distinta a home/today, respetarla
   if (hashRoute === "auth-callback" || hashRoute === "reset-password") {
     console.log("[app] preservando ruta:", hashRoute);
-    // No navegar: dejar que el router procese la URL actual
+    // Forzar render para que el router procese la URL actual
+    const { render } = await import("./router.js");
+    await render();
   } else {
     navigate("home");
   }
