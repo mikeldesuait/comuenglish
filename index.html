@@ -90,17 +90,26 @@
       <div id="change-password-block" style="display: none; margin-top: 16px; padding: 16px; background: #f8fafc; border-radius: 10px;">
         <label style="display:block;margin-bottom:.75rem;">
           <span style="font-size:.82rem;color:#334155;font-weight:600;">Contraseña actual (opcional)</span>
-          <input type="password" id="current-password" placeholder="••••••••" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
+          <div style="position:relative;margin-top:.35rem;">
+            <input type="password" id="current-password" placeholder="••••••••" style="width:100%;padding:.6rem 4.5rem .6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;font-family:inherit;">
+            <button type="button" data-toggle-pass="current-password" style="position:absolute;right:.5rem;top:50%;transform:translateY(-50%);background:transparent;border:none;color:#94a3b8;font-size:.75rem;font-weight:600;cursor:pointer;padding:.3rem .5rem;font-family:inherit;border-radius:6px;">Ver</button>
+          </div>
         </label>
 
         <label style="display:block;margin-bottom:.75rem;">
           <span style="font-size:.82rem;color:#334155;font-weight:600;">Nueva contraseña</span>
-          <input type="password" id="new-password" placeholder="Mínimo 6 caracteres" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
+          <div style="position:relative;margin-top:.35rem;">
+            <input type="password" id="new-password" placeholder="Mínimo 6 caracteres" style="width:100%;padding:.6rem 4.5rem .6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;font-family:inherit;">
+            <button type="button" data-toggle-pass="new-password" style="position:absolute;right:.5rem;top:50%;transform:translateY(-50%);background:transparent;border:none;color:#94a3b8;font-size:.75rem;font-weight:600;cursor:pointer;padding:.3rem .5rem;font-family:inherit;border-radius:6px;">Ver</button>
+          </div>
         </label>
 
         <label style="display:block;margin-bottom:.75rem;">
           <span style="font-size:.82rem;color:#334155;font-weight:600;">Confirmar nueva contraseña</span>
-          <input type="password" id="new-password2" placeholder="Repite la contraseña" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
+          <div style="position:relative;margin-top:.35rem;">
+            <input type="password" id="new-password2" placeholder="Repite la contraseña" style="width:100%;padding:.6rem 4.5rem .6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;font-family:inherit;">
+            <button type="button" data-toggle-pass="new-password2" style="position:absolute;right:.5rem;top:50%;transform:translateY(-50%);background:transparent;border:none;color:#94a3b8;font-size:.75rem;font-weight:600;cursor:pointer;padding:.3rem .5rem;font-family:inherit;border-radius:6px;">Ver</button>
+          </div>
         </label>
 
         <button class="btn btn--primary" id="change-password-btn" style="margin-top:.25rem;">Guardar contraseña</button>

@@ -201,9 +201,37 @@ document.addEventListener("click", async (e) => {
     try {
       const { supabase } = await import("../services/supabase.js");
       const { error } = await supabase.auth.updateUser({ password: newPass });
-      if (error) throw error;
+
+      if (error) {
+        const m = (error.message || "").toLowerCase();
+        let friendly = error.message || "Error al cambiar la contraseña.";
+
+        if (m.includes("same_password") || m.includes("different from the old") || m.includes("should be different")) {
+          friendly = "La nueva contraseña debe ser distinta a la actual.";
+        } else if (m.includes("password should be at least")) {
+          friendly = "La contraseña debe tener al menos 6 caracteres.";
+        } else if (m.includes("weak password") || m.includes("password is too weak")) {
+          friendly = "La contraseña es demasiado débil. Prueba con una más larga.";
+        } else if (m.includes("rate limit")) {
+          friendly = "Demasiados intentos. Espera unos minutos e inténtalo de nuevo.";
+        } else if (m.includes("invalid login credentials")) {
+          friendly = "Contraseña actual incorrecta.";
+        } else if (m.includes("network") || m.includes("fetch") || m.includes("failed to fetch")) {
+          friendly = "Sin conexión. Comprueba tu internet e inténtalo de nuevo.";
+        } else if (m.includes("session") || m.includes("jwt") || m.includes("not authenticated") || m.includes("auth session missing")) {
+          friendly = "Tu sesión ha caducado. Recarga la página y vuelve a iniciar sesión.";
+        } else if (m.includes("user not found")) {
+          friendly = "Usuario no encontrado.";
+        } else if (m.includes("email")) {
+          friendly = "Error relacionado con tu email. Inténtalo de nuevo más tarde.";
+        }
+
+        setMsg(friendly, "#dc2626");
+        return;
+      }
+
       setMsg("¡Contraseña cambiada correctamente!", "#16a34a");
-      sessionStorage.removeItem("show_change_password_notice");
+      try { sessionStorage.removeItem("show_change_password_notice"); } catch {}
       const cp = document.getElementById("current-password");
       const np = document.getElementById("new-password");
       const np2 = document.getElementById("new-password2");
@@ -211,7 +239,14 @@ document.addEventListener("click", async (e) => {
       if (np) np.value = "";
       if (np2) np2.value = "";
     } catch (err) {
-      setMsg(err.message || "Error al cambiar la contraseña.", "#dc2626");
+      const m = (err && err.message ? err.message : "").toLowerCase();
+      let friendly = err && err.message ? err.message : "Error inesperado al cambiar la contraseña.";
+      if (m.includes("failed to fetch") || m.includes("network")) {
+        friendly = "Sin conexión. Comprueba tu internet e inténtalo de nuevo.";
+      } else if (m.includes("session") || m.includes("jwt")) {
+        friendly = "Tu sesión ha caducado. Recarga la página e inténtalo de nuevo.";
+      }
+      setMsg(friendly, "#dc2626");
     }
   }
 });
@@ -290,4 +325,18 @@ document.addEventListener("click", async (e) => {
     btn.disabled = false;
     btn.textContent = "🔄 Reiniciar todo mi progreso";
   }
+});
+
+
+// ---------- Toggle Ver/Ocultar en campos de contraseña ----------
+document.addEventListener("click", (e) => {
+  const btn = e.target && e.target.closest ? e.target.closest("[data-toggle-pass]") : null;
+  if (!btn) return;
+  e.preventDefault();
+  const targetId = btn.getAttribute("data-toggle-pass");
+  const input = document.getElementById(targetId);
+  if (!input) return;
+  const show = input.type === "password";
+  input.type = show ? "text" : "password";
+  btn.textContent = show ? "Ocultar" : "Ver";
 });
