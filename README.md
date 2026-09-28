@@ -328,3 +328,96 @@ The flag must be visible across all tabs of the same origin to prevent any tab f
 ## License
 
 Personal use until commercial release.
+
+---
+
+## Session update (Sep 28-29, 2026)
+
+### What was added/changed
+
+**Password recovery — final design:**
+- Email template uses `{{ .RedirectTo }}?code={{ .Token }}`
+- `auth-callback.js` processes `token_hash` via `verifyOtp`
+- **Redirect to user's webmail** after sending reset email (Gmail, Outlook, etc. based on email domain)
+- **`localStorage.reset_in_progress`** blocks navigation globally while a reset is in progress
+- **Frozen reset form**: the reset-password tab stays on the form until the password is changed
+- **Router blocks navigation** during reset (Home, My Plan, everything)
+- After changing password → `signOut` → login
+
+**Settings modal — redesigned:**
+- Sections: 👤 Cuenta, 🔒 Seguridad, 💾 Datos y backups, ⚠️ Zona peligrosa
+- "Cambiar contraseña" is now collapsible (hidden by default)
+- **Show/Hide password** buttons on all 3 password fields
+- **Specific error messages** (not "failed to fetch"):
+  - Same password → "La nueva contraseña debe ser distinta a la actual."
+  - Too short → "La contraseña debe tener al menos 6 caracteres."
+  - No connection → "Sin conexión. Comprueba tu internet..."
+  - Session expired → "Tu sesión ha caducado..."
+  - etc.
+
+**Reset progress (user can self-reset):**
+- Button "🔄 Reiniciar todo mi progreso" in Settings → ⚠️ Zona peligrosa
+- Double confirmation: `confirm()` + type "RESET"
+- Deletes from localStorage AND Supabase (`deleteCloudProgress()`)
+- Account is NOT deleted — only progress
+- App reloads → user starts fresh
+
+**My Plan — improvements:**
+- **Panel "🎯 Practice freely"** always visible, right after the pass badge
+  - 4 buttons: Fundamentals, Comprehension, Production, Mock Exam
+  - User can practice any module at any time
+- **Calendar reconciliation** (`reconcileCalendar()`):
+  - If user does a task "on the side" (from its module), the calendar auto-marks it as completed
+  - Runs every time My Plan is opened
+  - Only for non-mock tasks (mock has no `progress.mock` entry)
+  - Logs to console: `[reconcile] marcando como hecha: <id> en <date>`
+
+**Home — refinements:**
+- Level badges (discrete): **A2 Elementary · B1 Intermediate · B2 Upper Intermediate**
+- Stat "130 days of plan" replaced with **"YOUR own pace"**
+
+**Users:**
+- Currently users are created manually from Supabase dashboard
+- Registration from the app is possible but not promoted
+- To create a user: Supabase → Authentication → Users → Add user → Auto Confirm User ✅
+
+### Files changed in this session
+
+- `js/views/login.js` — forgot password flow, webmail redirect
+- `js/views/auth-callback.js` — processes token_hash
+- `js/views/reset-password.js` — frozen form, checks `reset_in_progress`
+- `js/views/today.js` — Practice freely panel, calendar reconciliation
+- `js/views/home.js` — level badges, stat change
+- `js/router.js` — blocks navigation during `reset_in_progress`
+- `js/app.js` — respects `reset_in_progress` in SIGNED_IN handler
+- `js/core/cloud.js` — added `deleteCloudProgress()`
+- `js/widgets/settings-modal.js` — redesign, show/hide password, error mapping, reset button
+- `index.html` — modal redesign, show/hide buttons, reset progress button
+- `js/views/pending-reset-modal.js` — created (legacy, could be removed)
+
+### Known issues / cleanup
+
+- `pending-reset-modal.js` is no longer used (replaced by `reset_in_progress` + router block)
+- `password-guard.js` is no longer used
+- `pending_reset` (sessionStorage) is no longer used
+- Can be safely removed in a future cleanup
+
+### Testing checklist for password recovery
+
+1. Request reset from app (logged out) → app redirects to Gmail/Outlook
+2. Open email → click link
+3. Land on `#/auth-callback?token_hash=...` → auto-navigate to `#/reset-password`
+4. **Form should freeze** — try pressing Home, How it works, My Plan → blocked
+5. Leave the tab and come back → still on the form (not logged in)
+6. Enter new password → success screen → redirect to login
+7. Log in with new password → works
+
+### Testing checklist for reset progress
+
+1. Settings → ⚠️ Zona peligrosa → "Reiniciar todo mi progreso"
+2. Confirm dialog → type "RESET"
+3. App reloads → user has no plan, no progress, no calendar
+4. Check Supabase → Table Editor → user_progress → row is deleted
+5. Account still works (email + password intact)
+
+---
