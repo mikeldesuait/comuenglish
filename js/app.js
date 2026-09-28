@@ -6,6 +6,7 @@ import { startAutoBackupScheduler } from "./core/backup.js";
 import { auth } from "./core/auth.js";
 import { loadProgressFromCloud, flushToCloud, resetCloudSession } from "./core/cloud.js";
 import { supabase } from "./services/supabase.js";
+import { injectTempPasswordBanner, markTempPassword } from "./widgets/temp-password-banner.js";
 
 let passwordJustChanged = false;
 window.__setPasswordChanged = (v) => { passwordJustChanged = v; };
@@ -87,6 +88,10 @@ async function bootstrap() {
           console.log("[auth] skipping navigate (password just changed)");
           return;
         }
+        // Inyectar banner de contraseña temporal tras el render
+        setTimeout(() => {
+          injectTempPasswordBanner(user.id);
+        }, 100);
         navigate("today");
       } catch (e) {
         console.warn("[cloud] hydrate after login failed:", e);
@@ -111,6 +116,20 @@ async function bootstrap() {
   } else {
     navigate("home");
   }
+
+  // Marcar contraseña temporal si es la primera vez que entra
+  try {
+    const session = await auth.getSession();
+    if (session?.user) {
+      const uid = session.user.id;
+      const key = "temp_password_" + uid;
+      const alreadyChanged = localStorage.getItem("password_changed_" + uid);
+      if (!localStorage.getItem(key) && !alreadyChanged) {
+        localStorage.setItem(key, "1");
+        console.log("[app] marcando temp_password para:", uid);
+      }
+    }
+  } catch (e) { console.warn("[app] temp password check failed:", e); }
 }
 
 if (document.readyState === "loading") {

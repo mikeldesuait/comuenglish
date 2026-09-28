@@ -232,6 +232,21 @@ document.addEventListener("click", async (e) => {
 
       setMsg("¡Contraseña cambiada correctamente!", "#16a34a");
       try { sessionStorage.removeItem("show_change_password_notice"); } catch {}
+
+      // Borrar flag de contraseña temporal
+      try {
+        const { data: { user } } = await supabase.auth.getUser();
+        if (user) {
+          localStorage.removeItem("temp_password_" + user.id);
+          localStorage.setItem("password_changed_" + user.id, "1");
+          console.log("[settings] temp_password flag cleared for:", user.id);
+        }
+      } catch (e) { console.warn("[settings] clear temp flag failed:", e); }
+
+      // Quitar el banner si está visible
+      const banner = document.getElementById("temp-password-banner");
+      if (banner) banner.remove();
+
       const cp = document.getElementById("current-password");
       const np = document.getElementById("new-password");
       const np2 = document.getElementById("new-password2");
