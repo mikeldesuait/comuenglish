@@ -1,5 +1,5 @@
 // Today: daily study plan with tasks and streak.
-import { getState, getPlan, getDailyLog, getStreak, logDailyTask, getProgress, getCalendar, markCalendarTaskCompleted, getBehindDays } from "../state.js";
+import { getState, getPlan, getDailyLog, getStreak, logDailyTask, getProgress, getCalendar, setCalendar, markCalendarTaskCompleted, getBehindDays } from "../state.js";
 import { daysBetween, todayKey, nextUncompletedUnit, nextUncompletedReading, nextUncompletedListening, nextUncompletedWriting, nextUncompletedSpeaking } from "../core/planner.js";
 import { navigate } from "../router.js";
 
@@ -50,8 +50,16 @@ export async function renderToday(view) {
   view.innerHTML = "";
 
   const today = todayKey();
-  const calendar = getCalendar();
+  let calendar = getCalendar();
   const streak = getStreak();
+
+  // Reconciliar calendario con el progreso real (por si el usuario hizo tareas por libre)
+  const reconcileResult = reconcileCalendar(calendar);
+  if (reconcileResult.changed) {
+    console.log("[reconcile] calendario actualizado con " + reconcileResult.count + " tareas");
+    calendar = reconcileResult.calendar;
+    setCalendar(calendar);
+  }
 
   // Header
   const header = document.createElement("div");
@@ -456,4 +464,58 @@ async function generateTodayTasksFromProgress(level, count) {
   }
 
   return tasks;
+}
+
+// Reconcilia el calendario con el progreso real del usuario.
+// Si el usuario ha hecho una tarea por libre (desde su módulo), la marcamos
+// como completada en el día del calendario en que le tocaba.
+function reconcileCalendar(calendar) {
+  const level = getState().level;
+  const progress = getProgress(level) || {};
+  let changed = false;
+  let count = 0;
+
+  const newCalendar = { ...calendar };
+
+  for (const dateKey of Object.keys(newCalendar)) {
+    const day = newCalendar[dateKey];
+    if (!day || !day.tasks || day.tasks.length === 0) continue;
+
+    if (!day.completed) day.completed = [];
+    const alreadyDone = new Set(day.completed);
+
+    for (const task of day.tasks) {
+      if (alreadyDone.has(task.id)) continue;
+      if (task.type === "mock") continue;
+
+      let isDone = false;
+
+      if (task.type === "fundamentals") {
+        isDone = progress.units?.[task.id]?.completed === true;
+      } else if (task.type === "reading") {
+        isDone = progress.reading?.[task.id]?.completed === true;
+      } else if (task.type === "listening") {
+        isDone = progress.listening?.[task.id]?.completed === true;
+      } else if (task.type === "writing") {
+        isDone = progress.writing?.[task.id]?.completed === true;
+      } else if (task.type === "speaking") {
+        isDone = progress.speaking?.[task.id]?.completed === true;
+      }
+
+      if (isDone) {
+        day.completed.push(task.id);
+        if (day.pending) {
+          day.pending = day.pending.filter(id => id !== task.id);
+        }
+        alreadyDone.add(task.id);
+        changed = true;
+        count++;
+        console.log("[reconcile] marcando como hecha:", task.id, "en", dateKey);
+      }
+    }
+
+    newCalendar[dateKey] = day;
+  }
+
+  return { calendar: newCalendar, changed, count };
 }
