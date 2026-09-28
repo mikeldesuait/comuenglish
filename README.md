@@ -5,6 +5,8 @@ Study app for English exams: A2, B1, B2.
 **Author:** Miguel Garcia
 **Company:** ComuTech
 **Website:** comutec.es/comuenglish (production target)
+**Repo:** github.com/mikeldesuait/comuenglish
+**Production (beta):** mikeldesuait.github.io/comuenglish/
 
 ---
 
@@ -46,12 +48,12 @@ Study app for English exams: A2, B1, B2.
 
 ### Accounts & sync
 - Email/password login (Supabase Auth)
-- Sign up + password recovery
+- Sign up with email confirmation (Resend + custom domain)
+- Password recovery with token_hash flow + smart redirect to user's webmail
+- Change password from Settings (for logged-in users)
 - Persistent session across reloads
-- Sign out from Settings
 - Progress synced to Supabase (cloud) with row-level security
 - Offline-first: localStorage cache + background sync
-- Export / import progress as JSON backup
 
 ---
 
@@ -66,6 +68,7 @@ Study app for English exams: A2, B1, B2.
           │ (cache)              │ Postgres (user_progress, RLS)
           │                      │ Edge Function (deepseek-proxy)
           │                      │ Secrets (DEEPSEEK_API_KEY)
+          │                      │ SMTP (Resend → notifications.comutech.es)
 
 **Key security points:**
 - The DeepSeek API key never reaches the browser
@@ -83,25 +86,29 @@ Study app for English exams: A2, B1, B2.
       js/
         app.js, router.js, state.js
         core/
-          auth.js           ← Supabase auth helpers
-          cloud.js          ← sync with user_progress table
+          auth.js             ← Supabase auth helpers
+          cloud.js            ← sync with user_progress table
+          password-guard.js   ← (legacy, no longer used for critical flow)
           planner.js, storage.js, scoring.js, backup.js
         views/
           home, how, today, progress, onboarding,
           fundamentals, comprehension, production, mock,
-          login.js          ← login / signup / forgot
+          login.js            ← login / signup / forgot password
+          auth-callback.js    ← processes token_hash from email
+          reset-password.js   ← new password form (frozen until changed)
+          pending-reset-modal.js ← (legacy modal, can be removed)
         widgets/
           exercise, audio-player, recorder, progress,
           settings-modal, timer, speech-analyzer, time-tracker
         services/
-          supabase.js       ← client + credentials
-          deepseek.js       ← calls Edge Function (not DeepSeek directly)
+          supabase.js         ← client (PKCE disabled, uses token_hash)
+          deepseek.js         ← calls Edge Function
       supabase/
         functions/
           deepseek-proxy/
-            index.ts        ← Edge Function (Deno)
+            index.ts          ← Edge Function (Deno)
       data/  a2/, b1/, b2/
-      _backups/             ← local .bak files (gitignored)
+      _backups/               ← local .bak files (gitignored)
       docs-coaching-plan.md
 
 ---
@@ -120,6 +127,12 @@ Open http://localhost:8000
 **Project:** ComuEnglish
 **Project ref:** uexnfoqglhgjovvchqcu
 **Region:** Central EU (Frankfurt)
+**Site URL:** https://mikeldesuait.github.io/comuenglish/
+**Redirect URLs (allowed):**
+- http://localhost:8000/**
+- https://mikeldesuait.github.io/comuenglish/**
+- https://mikeldesuait.github.io/comuenglish/#/auth-callback
+- https://comutec.es/comuenglish/**
 
 ### Database
 
@@ -143,6 +156,20 @@ Table `user_progress`:
 - "Confirm email" currently **disabled** (dev mode)
 - **TODO for production:** enable it and configure redirect URLs
 
+### Email template (Reset Password)
+
+Body uses:
+
+    <h2>Reset your password</h2>
+
+    <p>We received a request to reset your password. Follow the link below to choose a new one.</p>
+
+    <p><a href="{{ .RedirectTo }}?code={{ .Token }}">Reset password</a></p>
+
+    <p>If you didn't request this, you can safely ignore this email.</p>
+
+**IMPORTANT:** the flow uses `token_hash` (not PKCE). The client calls `supabase.auth.verifyOtp({ token_hash, type: "recovery" })`.
+
 ### Edge Function: `deepseek-proxy`
 
 Located in `supabase/functions/deepseek-proxy/index.ts`.
@@ -155,8 +182,38 @@ Located in `supabase/functions/deepseek-proxy/index.ts`.
 5. Returns `{ content }` to the frontend
 
 **Required secret:** `DEEPSEEK_API_KEY`
-
 **JWT verification in dashboard:** disabled (handled in code)
+
+---
+
+## Password recovery flow (current design)
+
+**Flow:**
+1. User clicks "¿Olvidaste tu contraseña?" in the login screen
+2. Enters email → app calls `supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.href.split("#")[0] })`
+3. **App redirects the current tab to the user's webmail** (based on email domain — Gmail, Outlook, iCloud, etc.) after 1.2s
+4. User opens the email → clicks the link
+5. Email link goes to `https://mikeldesuait.github.io/comuenglish/#/auth-callback?token_hash=...&type=recovery`
+6. `auth-callback.js`:
+   - Reads `token_hash` from URL
+   - Calls `supabase.auth.verifyOtp({ token_hash, type: "recovery" })`
+   - **Sets `localStorage.reset_in_progress = Date.now()`** (global flag)
+   - Navigates to `#/reset-password`
+7. `reset-password.js`:
+   - Checks `reset_in_progress` → if not active, redirects to login
+   - Shows password form
+   - **The router blocks any navigation while `reset_in_progress` is active**
+   - User changes password → `supabase.auth.updateUser({ password })`
+   - Clears `reset_in_progress`
+   - Calls `supabase.auth.signOut()`
+   - Redirects to login
+8. User logs in with the new password
+
+**Why `token_hash` and not PKCE:**
+PKCE has a bug in certain versions of `supabase-js` where `exchangeCodeForSession` returns `invalid flow state, no valid flow state found`. The `token_hash` + `verifyOtp` flow is more reliable for SPAs without a backend.
+
+**Why `localStorage.reset_in_progress` and not `sessionStorage`:**
+The flag must be visible across all tabs of the same origin to prevent any tab from auto-logging in when the session is created.
 
 ---
 
@@ -177,7 +234,6 @@ Located in `supabase/functions/deepseek-proxy/index.ts`.
 ### High priority (before public launch)
 - [ ] Enable "Confirm email" in Supabase Auth
 - [ ] Configure Supabase redirect URLs for production domain
-- [ ] Password reset completion screen (handle the redirect from the email link)
 - [ ] Verify RLS with two test users
 - [ ] Rotate publishable key + DeepSeek secret (both were shared in chat during setup)
 - [ ] Test full flow on comutec.es/comuenglish after deployment
@@ -191,9 +247,12 @@ Located in `supabase/functions/deepseek-proxy/index.ts`.
 - [ ] Pricing page (Free / Monthly / Lifetime)
 - [ ] Analytics (which modules users actually use)
 
-### Small polish
-- [ ] Fix mismatch between `level` and `currentUnit` when switching levels
-- [ ] Add loading state indicators in views
+### Cleanup / technical debt
+- [ ] Remove `pending-reset-modal.js` (legacy, replaced by `reset_in_progress` flow)
+- [ ] Remove `password-guard.js` (legacy, no longer used)
+- [ ] Remove `pending_reset` (sessionStorage flag, no longer needed)
+- [ ] Remove `sent_reset_email` references if any remain
+- [ ] Consider adding a "change password" option in the reset screen for logged-in users
 - [ ] Rate limiting on `deepseek-proxy` if user base grows
 
 ---
@@ -207,6 +266,7 @@ Located in `supabase/functions/deepseek-proxy/index.ts`.
 - How it works: 3-step method + slideshow + comparison
 - Onboarding: compact horizontal layout
 - Login: tabbed (sign in / sign up), password visibility toggle, forgot password
+- Reset password: frozen form, blocks navigation until changed
 
 ---
 
@@ -226,17 +286,22 @@ Located in `supabase/functions/deepseek-proxy/index.ts`.
 - **Auth logic** → `js/core/auth.js`
 - **Cloud sync** → `js/core/cloud.js`
 - **State store** → `js/state.js` (persists to localStorage + schedules cloud save)
-- **Routing / guards** → `js/router.js` (guards `today` route for logged-in users)
+- **Routing / guards** → `js/router.js` (guards `today` and blocks navigation during `reset_in_progress`)
 - **Login UI** → `js/views/login.js`
-- **Settings modal (account, backups)** → `js/widgets/settings-modal.js`
+- **Auth callback (email link)** → `js/views/auth-callback.js`
+- **Reset password form** → `js/views/reset-password.js`
+- **Settings modal (account, change password, backups)** → `js/widgets/settings-modal.js`
 - **DeepSeek client (frontend)** → `js/services/deepseek.js`
 - **DeepSeek proxy (backend)** → `supabase/functions/deepseek-proxy/index.ts`
 
 ### Common gotchas
 
-- After modifying `index.html`, hard reload with **Ctrl+Shift+R** (aggressive caching)
+- After modifying `index.html` or JS files, hard reload with **Ctrl+Shift+R** (aggressive caching)
 - The `_backups/` folder is gitignored — safe to delete locally
 - localStorage key is `comuenglish-state-v1` (do NOT change without a migration)
+- `reset_in_progress` flag in localStorage blocks navigation globally — do not remove accidentally
+- Email template must use `{{ .RedirectTo }}?code={{ .Token }}` (NOT `{{ .ConfirmationURL }}`)
+- **Auth tokens are single-use** — after clicking a reset link, it can't be used again
 
 ### How to check sync works
 
@@ -244,6 +309,19 @@ Located in `supabase/functions/deepseek-proxy/index.ts`.
 2. Make any change (complete a task, etc.)
 3. Open DevTools console → look for `[cloud] saved at ...`
 4. Check Supabase → Table Editor → `user_progress` → `updated_at` should update
+
+### How to test password recovery
+
+1. Open an incognito window
+2. Request password reset with a valid email
+3. App redirects to Gmail (or other webmail)
+4. Open the email → click the link
+5. Should land on `#/auth-callback?token_hash=...` → then auto-navigate to `#/reset-password`
+6. Enter a new password (different from current)
+7. Should show success screen → then login
+8. Log in with new password
+
+**Important:** tokens are single-use. If you click the email link twice, the second time will fail.
 
 ---
 
