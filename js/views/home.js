@@ -147,38 +147,35 @@ export function renderHome(view) {
   h1.innerHTML = "Learn English.<br><span style='background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block;'>Pass your exam.</span>";
   hero.appendChild(h1);
 
-  // Badges de niveles: A2 · B1 · B2
+  // Niveles: A2 · B1 · B2 (discreto)
   const levelsRow = document.createElement("div");
   levelsRow.style.display = "flex";
   levelsRow.style.alignItems = "center";
   levelsRow.style.justifyContent = "center";
-  levelsRow.style.gap = "10px";
+  levelsRow.style.gap = "14px";
   levelsRow.style.flexWrap = "wrap";
   levelsRow.style.marginBottom = "20px";
+  levelsRow.style.fontSize = "1rem";
+  levelsRow.style.color = "#64748b";
 
   const levels = [
-    { code: "A2", name: "Elementary", color: "#16a34a" },
-    { code: "B1", name: "Intermediate", color: "#2563eb" },
-    { code: "B2", name: "Upper Intermediate", color: "#7c3aed" }
+    { code: "A2", name: "Elementary" },
+    { code: "B1", name: "Intermediate" },
+    { code: "B2", name: "Upper Intermediate" }
   ];
 
-  levels.forEach(lvl => {
-    const pill = document.createElement("div");
-    pill.style.display = "inline-flex";
-    pill.style.alignItems = "center";
-    pill.style.gap = "8px";
-    pill.style.padding = "8px 16px";
-    pill.style.background = "#fff";
-    pill.style.border = "2px solid " + lvl.color;
-    pill.style.borderRadius = "999px";
-    pill.style.fontSize = ".85rem";
-    pill.style.fontWeight = "700";
-    pill.style.color = "#0f172a";
-    pill.style.boxShadow = "0 3px 10px rgba(15,23,42,.06)";
-    pill.innerHTML =
-      "<span style='background: " + lvl.color + "; color: #fff; padding: 3px 10px; border-radius: 999px; font-size: .78rem; font-weight: 800;'>" + lvl.code + "</span>" +
-      "<span style='font-size: .82rem; color: #475569; font-weight: 600;'>" + lvl.name + "</span>";
-    levelsRow.appendChild(pill);
+  levels.forEach((lvl, idx) => {
+    if (idx > 0) {
+      const dot = document.createElement("span");
+      dot.textContent = "·";
+      dot.style.color = "#cbd5e1";
+      dot.style.fontWeight = "700";
+      levelsRow.appendChild(dot);
+    }
+
+    const item = document.createElement("span");
+    item.innerHTML = "<strong style='color:#0f172a; font-weight:800;'>" + lvl.code + "</strong> " + lvl.name;
+    levelsRow.appendChild(item);
   });
 
   hero.appendChild(levelsRow);
