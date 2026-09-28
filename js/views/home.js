@@ -292,7 +292,7 @@ export function renderHome(view) {
 
   const items = [
     { value: "1,009", label: "exercises" },
-    { value: "130", label: "days of plan" },
+    { value: "YOUR", label: "own pace" },
     { value: "AI", label: "instant feedback" },
     { value: "6", label: "mock exams" }
   ];
