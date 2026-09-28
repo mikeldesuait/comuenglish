@@ -72,3 +72,22 @@ export function resetCloudSession() {
 export function setCurrentUserId(id) {
   currentUserId = id;
 }
+
+
+// ---------- Borrar la fila del usuario en Supabase ----------
+export async function deleteCloudProgress() {
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return { success: false, error: "No hay sesión" };
+
+  const { error } = await supabase
+    .from("user_progress")
+    .delete()
+    .eq("user_id", user.id);
+
+  if (error) {
+    console.warn("[cloud] delete error:", error.message);
+    return { success: false, error: error.message };
+  }
+  console.log("[cloud] progreso borrado de Supabase");
+  return { success: true };
+}

@@ -229,3 +229,65 @@ document.addEventListener("click", (e) => {
     }
   }
 });
+
+
+// ---------- Reset progress ----------
+document.addEventListener("click", async (e) => {
+  if (!e.target || e.target.id !== "reset-progress-btn") return;
+
+  // Confirmación doble
+  const step1 = confirm(
+    "⚠️ ¿Estás seguro de que quieres reiniciar TODO tu progreso?\n\n" +
+    "Se borrará:\n" +
+    "- Tu plan y calendario\n" +
+    "- Tu nivel actual\n" +
+    "- Todas las tareas completadas\n" +
+    "- Rachas y tiempo de estudio\n\n" +
+    "Tu cuenta NO se elimina.\n\n" +
+    "Esta acción NO se puede deshacer."
+  );
+  if (!step1) return;
+
+  const step2 = prompt(
+    'Para confirmar, escribe la palabra RESET en mayúsculas:'
+  );
+  if (!step2 || step2.trim() !== "RESET") {
+    alert("Cancelado. No se ha borrado nada.");
+    return;
+  }
+
+  // Deshabilitar botón mientras se procesa
+  const btn = e.target;
+  btn.disabled = true;
+  btn.textContent = "Borrando…";
+
+  try {
+    // 1. Borrar de Supabase
+    const { deleteCloudProgress } = await import("../core/cloud.js");
+    const cloudResult = await deleteCloudProgress();
+    if (!cloudResult.success) {
+      console.warn("[reset] error borrando de la nube:", cloudResult.error);
+    }
+
+    // 2. Borrar de localStorage
+    try { localStorage.removeItem("comuenglish-state-v1"); } catch {}
+
+    // 3. Borrar backups automáticos (opcional)
+    try { localStorage.removeItem("comu-english-auto-backups"); } catch {}
+
+    // 4. Cerrar el modal
+    const modal = document.getElementById("settings-modal");
+    if (modal && modal.close) modal.close();
+
+    // 5. Recargar la app
+    alert("Progreso reiniciado. La app se va a recargar.");
+    window.location.href = window.location.pathname + "#/home";
+    window.location.reload();
+
+  } catch (err) {
+    console.error("[reset] error:", err);
+    alert("Error al reiniciar: " + err.message);
+    btn.disabled = false;
+    btn.textContent = "🔄 Reiniciar todo mi progreso";
+  }
+});
