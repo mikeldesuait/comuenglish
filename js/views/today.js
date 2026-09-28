@@ -142,6 +142,74 @@ export async function renderToday(view) {
   passBadge.textContent = passInfo.icon + " " + passInfo.label + " - Day " + dayData.dayIndex;
   view.appendChild(passBadge);
 
+  // Panel de módulos para estudiar por libre (SIEMPRE visible)
+  const freeBox = document.createElement("div");
+  freeBox.style.marginTop = "24px";
+  freeBox.style.padding = "20px";
+  freeBox.style.background = "#f8fafc";
+  freeBox.style.border = "1px solid #e2e8f0";
+  freeBox.style.borderRadius = "12px";
+
+  const freeTitle = document.createElement("div");
+  freeTitle.textContent = "🎯 Practice freely";
+  freeTitle.style.fontSize = "1rem";
+  freeTitle.style.fontWeight = "700";
+  freeTitle.style.color = "#0f172a";
+  freeTitle.style.marginBottom = "4px";
+  freeBox.appendChild(freeTitle);
+
+  const freeSub = document.createElement("div");
+  freeSub.textContent = "Jump into any module and practice. Your progress is saved automatically.";
+  freeSub.style.fontSize = ".85rem";
+  freeSub.style.color = "#64748b";
+  freeSub.style.marginBottom = "16px";
+  freeBox.appendChild(freeSub);
+
+  const freeGrid = document.createElement("div");
+  freeGrid.style.display = "grid";
+  freeGrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(180px, 1fr))";
+  freeGrid.style.gap = "10px";
+
+  const freeMods = [
+    { icon: "📖", name: "Fundamentals", route: "fundamentals", color: "#2563eb" },
+    { icon: "📚", name: "Comprehension", route: "comprehension", color: "#7c3aed" },
+    { icon: "✍️", name: "Production", route: "production", color: "#ea580c" },
+    { icon: "🎓", name: "Mock Exam", route: "mock", color: "#dc2626" }
+  ];
+
+  freeMods.forEach(m => {
+    const b = document.createElement("button");
+    b.style.padding = "12px 14px";
+    b.style.background = "#fff";
+    b.style.color = "#0f172a";
+    b.style.border = "1px solid #cbd5e1";
+    b.style.borderLeft = "4px solid " + m.color;
+    b.style.borderRadius = "8px";
+    b.style.fontSize = ".9rem";
+    b.style.fontWeight = "700";
+    b.style.cursor = "pointer";
+    b.style.textAlign = "left";
+    b.style.transition = "all .15s";
+    b.style.display = "flex";
+    b.style.alignItems = "center";
+    b.style.gap = "10px";
+    b.innerHTML = "<span style='font-size:1.3rem'>" + m.icon + "</span><span>" + m.name + "</span>";
+    b.addEventListener("mouseenter", () => {
+      b.style.background = "#f1f5f9";
+      b.style.borderColor = m.color;
+    });
+    b.addEventListener("mouseleave", () => {
+      b.style.background = "#fff";
+      b.style.borderColor = "#cbd5e1";
+      b.style.borderLeftColor = m.color;
+    });
+    b.addEventListener("click", () => navigate(m.route));
+    freeGrid.appendChild(b);
+  });
+
+  freeBox.appendChild(freeGrid);
+  view.appendChild(freeBox);
+
   // Titulo de tareas
   const tasksTitle = document.createElement("h2");
   tasksTitle.textContent = "Your tasks for today";
@@ -369,74 +437,6 @@ export async function renderToday(view) {
 
     view.appendChild(extraBox);
   }
-
-  // Panel de módulos para estudiar por libre (SIEMPRE visible)
-  const freeBox = document.createElement("div");
-  freeBox.style.marginTop = "24px";
-  freeBox.style.padding = "20px";
-  freeBox.style.background = "#f8fafc";
-  freeBox.style.border = "1px solid #e2e8f0";
-  freeBox.style.borderRadius = "12px";
-
-  const freeTitle = document.createElement("div");
-  freeTitle.textContent = "🎯 Practice freely";
-  freeTitle.style.fontSize = "1rem";
-  freeTitle.style.fontWeight = "700";
-  freeTitle.style.color = "#0f172a";
-  freeTitle.style.marginBottom = "4px";
-  freeBox.appendChild(freeTitle);
-
-  const freeSub = document.createElement("div");
-  freeSub.textContent = "Jump into any module and practice. Your progress is saved automatically.";
-  freeSub.style.fontSize = ".85rem";
-  freeSub.style.color = "#64748b";
-  freeSub.style.marginBottom = "16px";
-  freeBox.appendChild(freeSub);
-
-  const freeGrid = document.createElement("div");
-  freeGrid.style.display = "grid";
-  freeGrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(180px, 1fr))";
-  freeGrid.style.gap = "10px";
-
-  const freeMods = [
-    { icon: "📖", name: "Fundamentals", route: "fundamentals", color: "#2563eb" },
-    { icon: "📚", name: "Comprehension", route: "comprehension", color: "#7c3aed" },
-    { icon: "✍️", name: "Production", route: "production", color: "#ea580c" },
-    { icon: "🎓", name: "Mock Exam", route: "mock", color: "#dc2626" }
-  ];
-
-  freeMods.forEach(m => {
-    const b = document.createElement("button");
-    b.style.padding = "12px 14px";
-    b.style.background = "#fff";
-    b.style.color = "#0f172a";
-    b.style.border = "1px solid #cbd5e1";
-    b.style.borderLeft = "4px solid " + m.color;
-    b.style.borderRadius = "8px";
-    b.style.fontSize = ".9rem";
-    b.style.fontWeight = "700";
-    b.style.cursor = "pointer";
-    b.style.textAlign = "left";
-    b.style.transition = "all .15s";
-    b.style.display = "flex";
-    b.style.alignItems = "center";
-    b.style.gap = "10px";
-    b.innerHTML = "<span style='font-size:1.3rem'>" + m.icon + "</span><span>" + m.name + "</span>";
-    b.addEventListener("mouseenter", () => {
-      b.style.background = "#f1f5f9";
-      b.style.borderColor = m.color;
-    });
-    b.addEventListener("mouseleave", () => {
-      b.style.background = "#fff";
-      b.style.borderColor = "#cbd5e1";
-      b.style.borderLeftColor = m.color;
-    });
-    b.addEventListener("click", () => navigate(m.route));
-    freeGrid.appendChild(b);
-  });
-
-  freeBox.appendChild(freeGrid);
-  view.appendChild(freeBox);
 
   // Boton unico al final (discreto)
   const actions = document.createElement("div");
