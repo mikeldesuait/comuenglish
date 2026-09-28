@@ -421,3 +421,57 @@ Personal use until commercial release.
 5. Account still works (email + password intact)
 
 ---
+
+---
+
+## Temporary password warning (Sep 29, 2026)
+
+### Problem
+
+When a user is created manually from Supabase (with a temporary password), the user doesn't know:
+1. That their password is temporary
+2. That they **must change it before closing the session**
+3. Otherwise, they lose access (they don't remember the temporary password)
+
+### Solution
+
+A **global warning banner** appears at the top of every view until the user changes their password.
+
+### How it works
+
+**Flag in localStorage:**
+- `temp_password_<user_id>` = `"1"` → user has temporary password
+- `password_changed_<user_id>` = `"1"` → user has already changed password
+
+**Flow:**
+1. When the user logs in for the first time (via normal login or auto-login) → `app.js` sets `temp_password_<user_id> = "1"`
+2. Every view → `injectTempPasswordBanner(userId)` is called after render
+3. If the flag is active → banner appears with:
+   - ⚠️ **"Tu contraseña es temporal"**
+   - Instructions: "pulsa el ⚙️ (arriba a la derecha) y cambia tu contraseña"
+   - Button: **"Cambiar contraseña ahora"** → opens Settings + expands the change-password block + scrolls to it
+   - X to close (but it comes back on reload)
+4. When the user changes the password successfully → flag is cleared → banner disappears
+
+### Files
+
+- `js/widgets/temp-password-banner.js` (NEW) — banner + helpers (`markTempPassword`, `clearTempPassword`, `hasTempPassword`, `injectTempPasswordBanner`)
+- `js/app.js` — sets the flag on first login + injects banner after render
+- `js/widgets/settings-modal.js` — clears the flag when password is changed + removes the banner
+
+### Testing
+
+1. Create a user in Supabase (Auto Confirm ✅)
+2. Open app in incognito with that user's credentials
+3. Banner should appear at the top of the page
+4. Click "Cambiar contraseña ahora" → Settings opens with password block expanded
+5. Change password → banner disappears
+6. Reload → banner does NOT come back
+
+### Notes
+
+- The banner is shown on **every view** (Home, My Plan, Fundamentals, etc.) until the password is changed
+- Clicking X hides the banner **for the current session**, but it comes back on reload
+- The flag is per-user (`temp_password_<user_id>`), so multiple users on the same browser don't interfere
+
+---
