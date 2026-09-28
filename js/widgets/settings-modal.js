@@ -215,3 +215,17 @@ document.addEventListener("click", async (e) => {
     }
   }
 });
+
+
+// ---------- Toggle "Cambiar contraseña" ----------
+document.addEventListener("click", (e) => {
+  if (e.target && e.target.id === "toggle-change-password") {
+    const block = document.getElementById("change-password-block");
+    const btn = document.getElementById("toggle-change-password");
+    if (block) {
+      const visible = block.style.display !== "none";
+      block.style.display = visible ? "none" : "block";
+      btn.textContent = visible ? "Cambiar contraseña" : "Cancelar";
+    }
+  }
+});

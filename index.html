@@ -70,57 +70,61 @@
 
   </div>
 
-  <dialog id="settings-modal" class="modal" style="max-width: 560px;">
+  <dialog id="settings-modal" class="modal" style="max-width: 520px;">
     <h2 class="modal__title">Settings</h2>
 
-      <p style="font-size: .82rem; color: #64748b; margin-bottom: 12px;">Download a backup file with all your progress.</p>
-      <button class="btn btn--primary" id="export-progress">Export progress</button>
+    <!-- CUENTA -->
+    <div style="margin-bottom: 24px;">
+      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">👤 Cuenta</h3>
+      <p style="font-size: .85rem; color: #64748b; margin: 0 0 12px;" id="account-info">Cargando…</p>
+      <button class="btn btn--ghost" id="logout-btn" style="display: none; font-size: .85rem; padding: 8px 16px;">Cerrar sesión</button>
     </div>
 
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-bottom: 20px;">
-      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">Import progress</h3>
-      <p style="font-size: .82rem; color: #64748b; margin-bottom: 12px;">Load a backup file. This will replace your current progress.</p>
-      <input type="file" id="import-progress-file" accept=".json" style="display: none;">
-      <button class="btn btn--ghost" id="import-progress">Import progress</button>
+    <!-- SEGURIDAD -->
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-bottom: 24px;">
+      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">🔒 Seguridad</h3>
+      <p style="font-size: .85rem; color: #64748b; margin: 0 0 12px;">Actualiza tu contraseña de acceso.</p>
+
+      <button class="btn btn--ghost" id="toggle-change-password" style="font-size: .85rem; padding: 8px 16px;">Cambiar contraseña</button>
+
+      <div id="change-password-block" style="display: none; margin-top: 16px; padding: 16px; background: #f8fafc; border-radius: 10px;">
+        <label style="display:block;margin-bottom:.75rem;">
+          <span style="font-size:.82rem;color:#334155;font-weight:600;">Contraseña actual (opcional)</span>
+          <input type="password" id="current-password" placeholder="••••••••" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
+        </label>
+
+        <label style="display:block;margin-bottom:.75rem;">
+          <span style="font-size:.82rem;color:#334155;font-weight:600;">Nueva contraseña</span>
+          <input type="password" id="new-password" placeholder="Mínimo 6 caracteres" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
+        </label>
+
+        <label style="display:block;margin-bottom:.75rem;">
+          <span style="font-size:.82rem;color:#334155;font-weight:600;">Confirmar nueva contraseña</span>
+          <input type="password" id="new-password2" placeholder="Repite la contraseña" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
+        </label>
+
+        <button class="btn btn--primary" id="change-password-btn" style="margin-top:.25rem;">Guardar contraseña</button>
+        <p id="change-password-msg" style="margin:.75rem 0 0;font-size:.85rem;min-height:1.2em;"></p>
+      </div>
     </div>
 
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 20px;">
-      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">Auto-backups</h3>
-      <p style="font-size: .82rem; color: #64748b; margin-bottom: 12px;">Automatic backups saved every 6 hours.</p>
-      <button class="btn btn--ghost" id="view-backups">View backups</button>
-    </div>
+    <!-- DATOS -->
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-bottom: 24px;">
+      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">💾 Datos y backups</h3>
+      <p style="font-size: .85rem; color: #64748b; margin: 0 0 12px;">Descarga o carga una copia de tu progreso.</p>
 
-        <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-bottom: 20px;">
-      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">Cambiar contraseña</h3>
-      <p style="font-size: .82rem; color: #64748b; margin-bottom: 12px;">Actualiza tu contraseña de acceso.</p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="btn btn--primary" id="export-progress" style="font-size: .85rem; padding: 8px 16px;">Exportar progreso</button>
+        <input type="file" id="import-progress-file" accept=".json" style="display: none;">
+        <button class="btn btn--ghost" id="import-progress" style="font-size: .85rem; padding: 8px 16px;">Importar progreso</button>
+      </div>
 
-      <label style="display:block;margin-bottom:.75rem;">
-        <span style="font-size:.82rem;color:#334155;font-weight:600;">Contraseña actual (opcional)</span>
-        <input type="password" id="current-password" placeholder="••••••••" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
-      </label>
-
-      <label style="display:block;margin-bottom:.75rem;">
-        <span style="font-size:.82rem;color:#334155;font-weight:600;">Nueva contraseña</span>
-        <input type="password" id="new-password" placeholder="Mínimo 6 caracteres" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
-      </label>
-
-      <label style="display:block;margin-bottom:.75rem;">
-        <span style="font-size:.82rem;color:#334155;font-weight:600;">Confirmar nueva contraseña</span>
-        <input type="password" id="new-password2" placeholder="Repite la contraseña" style="width:100%;padding:.6rem .75rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;box-sizing:border-box;margin-top:.35rem;font-family:inherit;">
-      </label>
-
-      <button class="btn btn--primary" id="change-password-btn" style="margin-top:.5rem;">Cambiar contraseña</button>
-      <p id="change-password-msg" style="margin:.75rem 0 0;font-size:.85rem;min-height:1.2em;"></p>
-    </div>
-
-<div id="logout-section" style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-bottom: 20px;">
-      <h3 style="font-size: .95rem; font-weight: 700; margin-bottom: 4px; color: #0f172a;">Account</h3>
-      <p style="font-size: .82rem; color: #64748b; margin-bottom: 12px;" id="account-info">Not signed in.</p>
-      <button class="btn btn--ghost" id="logout-btn" style="display: none;">Sign out</button>
+      <p style="font-size: .78rem; color: #94a3b8; margin: 12px 0 8px;">Backups automáticos guardados cada 6 horas.</p>
+      <button class="btn btn--ghost" id="view-backups" style="font-size: .85rem; padding: 8px 16px;">Ver backups automáticos</button>
     </div>
 
     <div class="modal__actions" style="margin-top: 24px;">
-      <button class="btn btn--ghost" id="close-settings">Close</button>
+      <button class="btn btn--ghost" id="close-settings">Cerrar</button>
     </div>
   </dialog>
 
